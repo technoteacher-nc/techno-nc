@@ -4,13 +4,13 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return [
-    { params: { niveau: '5eme' }, props: { label: '5ème' } },
-    { params: { niveau: '4eme' }, props: { label: '4ème' } },
+    { params: { niveau: '5eme' }, props: { label: '5ème', sujet: 'Une maison en Nouvelle-Calédonie' } },
+    { params: { niveau: '4eme' }, props: { label: '4ème', sujet: 'Un support de smartphone' } },
   ];
 }
 
 const { niveau } = Astro.params;
-const { label } = Astro.props;
+const { label, sujet } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const acts = (await getCollection('activites'))
@@ -19,20 +19,23 @@ const acts = (await getCollection('activites'))
 ---
 <Base titre={`${label} — Séquence 05 Conception`} description={`Activités de Technologie ${label}, séquence Conception.`}>
   <section class="hero">
-    <span class="cote">{label} · SÉQUENCE 05</span>
-    <h1>Conception</h1>
-    <p>{acts.length} activités, de l'analyse du besoin à la fabrication.</p>
+    <span class="eyebrow">{label} · Séquence 05</span>
+    <h1>{sujet}</h1>
+    <p>Six étapes, de l'analyse du besoin à la fabrication.</p>
   </section>
 
-  <ul class="liste">
-    {acts.map(a => (
+  <ol class="chaine">
+    {acts.map((a, i) => (
       <li>
-        <a href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
-          <span class="code">{a.data.code}</span>
-          <span class="titre">{a.data.titre}</span>
-          <span class="semaine">{a.data.semaine}</span>
+        <a class="maillon" href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
+          <span class="num">{i + 1}</span>
+          <span class="corps">
+            <span class="phase">{a.data.phase}</span>
+            <span class="titre">{a.data.titre}</span>
+          </span>
+          <span class="aller" aria-hidden="true">→</span>
         </a>
       </li>
     ))}
-  </ul>
+  </ol>
 </Base>

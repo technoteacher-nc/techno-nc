@@ -8,6 +8,7 @@ const activites = defineCollection({
     niveau: z.enum(['5eme', '4eme']),
     niveauLabel: z.string(),
     semaine: z.string(),
+    phase: z.string(),
     titre: z.string(),
     question: z.string(),
     objectif: z.string(),

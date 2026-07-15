@@ -75,6 +75,7 @@ code: "${a.code}"
 niveau: "${a.niveau}"
 niveauLabel: "${a.niveauLabel}"
 semaine: "${a.semaine}"
+phase: ${JSON.stringify(a.phase)}
 titre: ${JSON.stringify(a.titre)}
 question: ${JSON.stringify(a.question)}
 objectif: ${JSON.stringify(a.objectif)}

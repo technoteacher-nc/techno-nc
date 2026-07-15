@@ -6,14 +6,12 @@ const acts = await getCollection('activites');
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const niveaux = [
-  { id: '5eme', label: '5ème' },
-  { id: '4eme', label: '4ème' },
+  { id: '5eme', label: '5ème', sujet: 'Une maison en Nouvelle-Calédonie' },
+  { id: '4eme', label: '4ème', sujet: 'Un support de smartphone' },
 ];
 const parNiveau = Object.fromEntries(
-  niveaux.map(n => [
-    n.id,
-    acts.filter(a => a.data.niveau === n.id).sort((a, b) => a.data.code.localeCompare(b.data.code)),
-  ])
+  niveaux.map(n => [n.id,
+    acts.filter(a => a.data.niveau === n.id).sort((a, b) => a.data.code.localeCompare(b.data.code))]),
 );
 ---
 <Base
@@ -21,28 +19,31 @@ const parNiveau = Object.fromEntries(
   description="Fiches d'activité de Technologie, cycle 4, programme 2024. Collège d'Auteuil, Nouvelle-Calédonie.">
 
   <section class="hero">
-    <span class="cote">SÉQUENCE 05</span>
-    <h1>Conception : du besoin à l'objet fabriqué</h1>
+    <span class="eyebrow">Séquence 05 · S26 → S31</span>
+    <h1>Du besoin à <em>l'objet fabriqué</em></h1>
     <p>
-      Tu as manqué une séance, perdu ta fiche, ou tu veux revoir ce qu'on a projeté ?
-      Chaque activité est ici, en PDF, prête à imprimer.
+      Six étapes, dans l'ordre : chacune part de ce que tu as produit à la précédente.
+      Tu as manqué une séance ou perdu ta fiche ? Tout est ici.
     </p>
   </section>
 
   {niveaux.map(n => (
-    <section>
-      <h2 class="niveau-titre">{n.label}</h2>
-      <ul class="liste">
-        {parNiveau[n.id].map(a => (
+    <section class="niveau-bloc">
+      <h2 class="niveau-titre">{n.label} <span>{n.sujet}</span></h2>
+      <ol class="chaine">
+        {parNiveau[n.id].map((a, i) => (
           <li>
-            <a href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
-              <span class="code">{a.data.code}</span>
-              <span class="titre">{a.data.titre}</span>
-              <span class="semaine">{a.data.semaine}</span>
+            <a class="maillon" href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
+              <span class="num">{i + 1}</span>
+              <span class="corps">
+                <span class="phase">{a.data.phase}</span>
+                <span class="titre">{a.data.titre}</span>
+              </span>
+              <span class="aller" aria-hidden="true">→</span>
             </a>
           </li>
         ))}
-      </ul>
+      </ol>
     </section>
   ))}
 </Base>

@@ -10,6 +10,7 @@ const ACTIVITES = [
   // ---------- 5ÈME ----------
   {
     code: "S5-A01", niveau: "5eme", niveauLabel: "5ème", semaine: "S26",
+    phase: "Analyser",
     titre: "Ma maison en NC : du besoin au cahier des charges",
     question: "Comment passer d'un besoin à un cahier des charges que l'architecte peut utiliser ?",
     objectif: "Distinguer besoin/envie, rédiger un CDC simplifié avec contraintes NC, dimensionner ses pièces (+10 % dégagements).",
@@ -21,6 +22,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A02", niveau: "5eme", niveauLabel: "5ème", semaine: "S27",
+    phase: "Représenter",
     titre: "Le plan aux normes : les codes de représentation",
     question: "Comment dessiner un plan que tout le monde comprend, à la bonne échelle ?",
     objectif: "Connaître les symboles architecturaux, maîtriser l'échelle 1/100, produire SON plan conforme au CDC.",
@@ -32,6 +34,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A03", niveau: "5eme", niveauLabel: "5ème", semaine: "S28",
+    phase: "Modéliser",
     titre: "Sweet Home 3D (1) : pièces et murs",
     question: "Comment transformer mon plan papier en maquette numérique ?",
     objectif: "Identifier les 4 zones du logiciel, créer et nommer les pièces, tracer les murs, contrôler les surfaces vs CDC.",
@@ -43,6 +46,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A04", niveau: "5eme", niveauLabel: "5ème", semaine: "S29",
+    phase: "Modéliser",
     titre: "Sweet Home 3D (2) : ouvertures, meubles et vues",
     question: "Comment finaliser et présenter ma maquette numérique ?",
     objectif: "Poser portes/fenêtres, meubler, produire le dossier client (captures 2D/3D commentées), s'auto-critiquer.",
@@ -54,6 +58,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A05", niveau: "5eme", niveauLabel: "5ème", semaine: "S30",
+    phase: "Fabriquer",
     titre: "La maquette papier de ma pièce préférée (échelle 1/20)",
     question: "Comment passer de la maquette numérique à une maquette en volume, à l'échelle ?",
     objectif: "Convertir à l'échelle 1/20, tracer un patron (sol + 4 murs + languettes), fabriquer, contrôler (±2 mm, équerrage ficelle).",
@@ -65,6 +70,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A06", niveau: "5eme", niveauLabel: "5ème", semaine: "S31",
+    phase: "Produire",
     titre: "L'atelier de fabrication : imprimante 3D et découpe laser",
     question: "Comment une machine fabrique-t-elle un objet à partir d'un simple fichier ?",
     objectif: "Découvrir les procédés additif et soustractif, les règles de sécurité d'atelier, comparer les procédés.",
@@ -78,6 +84,7 @@ const ACTIVITES = [
   // ---------- 4ÈME ----------
   {
     code: "S5-A01", niveau: "4eme", niveauLabel: "4ème", semaine: "S26",
+    phase: "Analyser",
     titre: "Le support de smartphone : du besoin au CDC",
     question: "Comment traduire un besoin flou en cahier des charges précis et vérifiable ?",
     objectif: "Formuler un besoin (3 questions), rédiger un CDC 4 colonnes avec critères mesurables, analyser l'existant.",
@@ -89,6 +96,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A02", niveau: "4eme", niveauLabel: "4ème", semaine: "S27",
+    phase: "Représenter",
     titre: "Croquis coté et perspective",
     question: "Comment représenter une solution pour qu'un autre puisse la fabriquer ?",
     objectif: "Appliquer les règles du croquis coté (mm, cotes uniques), produire 3 solutions dont une perspective, choisir par le CDC.",
@@ -100,6 +108,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A03", niveau: "4eme", niveauLabel: "4ème", semaine: "S28",
+    phase: "Modéliser",
     titre: "SketchUp (1) : formes exactes et poussé-tiré",
     question: "Comment modéliser ma solution aux dimensions exactes de mon croquis ?",
     objectif: "Prendre en main SketchUp (axes, mesures, poussé-tiré), modéliser la base aux cotes exactes, contrôler à l'outil Mètre.",
@@ -111,6 +120,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A04", niveau: "4eme", niveauLabel: "4ème", semaine: "S29",
+    phase: "Modéliser",
     titre: "SketchUp (2) : le modèle final coté",
     question: "Comment finaliser un modèle 3D prêt pour la fabrication ?",
     objectif: "Creuser l'encoche (poussé-tiré négatif), créer la butée, vérifier l'angle, poser les cotes, exporter le dossier.",
@@ -122,6 +132,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A05", niveau: "4eme", niveauLabel: "4ème", semaine: "S30",
+    phase: "Fabriquer",
     titre: "Prototype carton : je teste ma solution",
     question: "Comment fabriquer un prototype et PROUVER qu'il respecte le CDC ?",
     objectif: "Fabriquer le prototype à l'échelle 1:1 (carton + ficelle), définir et appliquer un protocole de test rigoureux.",
@@ -133,6 +144,7 @@ const ACTIVITES = [
   },
   {
     code: "S5-A06", niveau: "4eme", niveauLabel: "4ème", semaine: "S31",
+    phase: "Produire",
     titre: "Atelier : impression 3D et découpe laser du modèle",
     question: "Comment passe-t-on d'un modèle 3D à un objet réel, et quel procédé choisir ?",
     objectif: "Observer la chaîne numérique CFAO (.skp → .stl → g-code → pièce), comparer additif/soustractif, choisir un procédé pour une série.",

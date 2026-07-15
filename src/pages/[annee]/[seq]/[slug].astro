@@ -11,12 +11,12 @@ export async function getStaticPaths() {
     const i = freres.findIndex(x => x.id === a.id);
     return {
       params: { annee: a.data.annee, seq: a.data.seq, slug: a.id },
-      props: { act: a, prec: freres[i - 1] ?? null, suiv: freres[i + 1] ?? null },
+      props: { act: a, prec: freres[i - 1] ?? null, suiv: freres[i + 1] ?? null, rang: i + 1, total: freres.length },
     };
   });
 }
 
-const { act, prec, suiv } = Astro.props;
+const { act, prec, suiv, rang, total } = Astro.props;
 const d = act.data;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
@@ -24,18 +24,18 @@ const u = p => base + p;
 <Base titre={`${d.code} ${d.niveauLabel} — ${d.titre}`} description={d.question}>
 
   <nav class="fil">
-    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / {d.seqTitre}
+    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / Séquence 05
   </nav>
 
   <header class="act-tete">
-    <span class="cote">{d.code} · {d.niveauLabel} · {d.semaine}</span>
+    <span class="eyebrow">{d.phase} · étape {rang} sur {total} · {d.semaine}</span>
     <h1>{d.titre}</h1>
     <p class="question">{d.question}</p>
 
     <div class="docs">
-      <a class="btn btn--fort" href={u(d.fichePdf)}>Télécharger la fiche (PDF)</a>
+      <a class="btn btn--fort" href={u(d.fichePdf)}>Télécharger la fiche</a>
       <a class="btn" href={u(d.ebepPdf)}>Version adaptée</a>
-      <a class="btn" href={u(d.ficheDocx)}>Fiche modifiable (.docx)</a>
+      <a class="btn" href={u(d.ficheDocx)}>Fiche modifiable</a>
     </div>
   </header>
 
@@ -45,9 +45,7 @@ const u = p => base + p;
       <dd>{d.objectif}</dd>
 
       <dt>Compétences</dt>
-      <dd>
-        <ul>{d.competences.map(c => <li>{c}</li>)}</ul>
-      </dd>
+      <dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd>
 
       <dt>Prérequis</dt>
       <dd>{d.prerequis}</dd>
@@ -58,7 +56,7 @@ const u = p => base + p;
   </section>
 
   <section class="qr">
-    <img src={u(d.qr)} alt={`QR code vers l'activité ${d.code} ${d.niveauLabel}`} width="84" height="84" loading="lazy" />
+    <img src={u(d.qr)} alt={`QR code vers l'activité ${d.code} ${d.niveauLabel}`} width="76" height="76" loading="lazy" />
     <p>
       Ce QR code est imprimé sur la fiche papier.<br />
       Il ramène directement à cette page.
@@ -67,10 +65,10 @@ const u = p => base + p;
 
   <nav class="suite">
     {prec
-      ? <a href={u(`/${prec.data.annee}/${prec.data.seq}/${prec.id}`)}>← {prec.data.code}</a>
+      ? <a href={u(`/${prec.data.annee}/${prec.data.seq}/${prec.id}`)}>← {prec.data.phase}</a>
       : <span></span>}
     {suiv
-      ? <a href={u(`/${suiv.data.annee}/${suiv.data.seq}/${suiv.id}`)}>{suiv.data.code} →</a>
+      ? <a href={u(`/${suiv.data.annee}/${suiv.data.seq}/${suiv.id}`)}>{suiv.data.phase} →</a>
       : <span></span>}
   </nav>
 
