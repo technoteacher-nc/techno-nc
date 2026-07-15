@@ -1,0 +1,20 @@
+---
+code: "S5-A03"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S28"
+titre: "SketchUp (1) : formes exactes et poussé-tiré"
+question: "Comment modéliser ma solution aux dimensions exactes de mon croquis ?"
+objectif: "Prendre en main SketchUp (axes, mesures, poussé-tiré), modéliser la base aux cotes exactes, contrôler à l'outil Mètre."
+competences:
+  - "CCRI16 — Modifier une forme à l'aide d'une modélisation"
+prerequis: "S5-A02 (croquis coté)."
+materiel: "SketchUp Make 2017 · fiche S5-A03 · croquis coté de S27"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A03_SketchUp1_4eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A03_SketchUp1_4eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A03_SketchUp1_4eme.pdf"
+qr: "/qr/s5-a03-4eme.png"
+---

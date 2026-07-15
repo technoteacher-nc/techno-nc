@@ -1,0 +1,21 @@
+---
+code: "S5-A05"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S30"
+titre: "Prototype carton : je teste ma solution"
+question: "Comment fabriquer un prototype et PROUVER qu'il respecte le CDC ?"
+objectif: "Fabriquer le prototype à l'échelle 1:1 (carton + ficelle), définir et appliquer un protocole de test rigoureux."
+competences:
+  - "CCRI12 — Fabriquer une solution"
+  - "CCRI22/OST34 — Protocole de test, mesure de performance"
+prerequis: "S5-A04 (cotes réelles du modèle)."
+materiel: "Carton · cutter + tapis + règle métal · ficelle · rapporteur · fiche S5-A05"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A05_Prototype_4eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A05_Prototype_4eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A05_Prototype_4eme.pdf"
+qr: "/qr/s5-a05-4eme.png"
+---

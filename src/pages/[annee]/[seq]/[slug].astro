@@ -1,0 +1,77 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const acts = await getCollection('activites');
+  return acts.map(a => {
+    const freres = acts
+      .filter(x => x.data.niveau === a.data.niveau && x.data.seq === a.data.seq)
+      .sort((x, y) => x.data.code.localeCompare(y.data.code));
+    const i = freres.findIndex(x => x.id === a.id);
+    return {
+      params: { annee: a.data.annee, seq: a.data.seq, slug: a.id },
+      props: { act: a, prec: freres[i - 1] ?? null, suiv: freres[i + 1] ?? null },
+    };
+  });
+}
+
+const { act, prec, suiv } = Astro.props;
+const d = act.data;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+---
+<Base titre={`${d.code} ${d.niveauLabel} — ${d.titre}`} description={d.question}>
+
+  <nav class="fil">
+    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / {d.seqTitre}
+  </nav>
+
+  <header class="act-tete">
+    <span class="cote">{d.code} · {d.niveauLabel} · {d.semaine}</span>
+    <h1>{d.titre}</h1>
+    <p class="question">{d.question}</p>
+
+    <div class="docs">
+      <a class="btn btn--fort" href={u(d.fichePdf)}>Télécharger la fiche (PDF)</a>
+      <a class="btn" href={u(d.ebepPdf)}>Version adaptée</a>
+      <a class="btn" href={u(d.ficheDocx)}>Fiche modifiable (.docx)</a>
+    </div>
+  </header>
+
+  <section class="meta">
+    <dl>
+      <dt>Objectif</dt>
+      <dd>{d.objectif}</dd>
+
+      <dt>Compétences</dt>
+      <dd>
+        <ul>{d.competences.map(c => <li>{c}</li>)}</ul>
+      </dd>
+
+      <dt>Prérequis</dt>
+      <dd>{d.prerequis}</dd>
+
+      <dt>Matériel</dt>
+      <dd>{d.materiel}</dd>
+    </dl>
+  </section>
+
+  <section class="qr">
+    <img src={u(d.qr)} alt={`QR code vers l'activité ${d.code} ${d.niveauLabel}`} width="84" height="84" loading="lazy" />
+    <p>
+      Ce QR code est imprimé sur la fiche papier.<br />
+      Il ramène directement à cette page.
+    </p>
+  </section>
+
+  <nav class="suite">
+    {prec
+      ? <a href={u(`/${prec.data.annee}/${prec.data.seq}/${prec.id}`)}>← {prec.data.code}</a>
+      : <span></span>}
+    {suiv
+      ? <a href={u(`/${suiv.data.annee}/${suiv.data.seq}/${suiv.id}`)}>{suiv.data.code} →</a>
+      : <span></span>}
+  </nav>
+
+</Base>

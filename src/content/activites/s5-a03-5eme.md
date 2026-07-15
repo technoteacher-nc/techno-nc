@@ -1,0 +1,21 @@
+---
+code: "S5-A03"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S28"
+titre: "Sweet Home 3D (1) : pièces et murs"
+question: "Comment transformer mon plan papier en maquette numérique ?"
+objectif: "Identifier les 4 zones du logiciel, créer et nommer les pièces, tracer les murs, contrôler les surfaces vs CDC."
+competences:
+  - "CCRI16 — Réaliser une forme selon une procédure (modélisation)"
+  - "OST13 — Organiser et stocker ses fichiers"
+prerequis: "S5-A02 (plan validé)."
+materiel: "Sweet Home 3D · fiche S5-A03 · plan papier de S27"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A03_SweetHome1_5eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A03_SweetHome1_5eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A03_SweetHome1_5eme.pdf"
+qr: "/qr/s5-a03-5eme.png"
+---

@@ -1,0 +1,20 @@
+---
+code: "S5-A06"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S31"
+titre: "L'atelier de fabrication : imprimante 3D et découpe laser"
+question: "Comment une machine fabrique-t-elle un objet à partir d'un simple fichier ?"
+objectif: "Découvrir les procédés additif et soustractif, les règles de sécurité d'atelier, comparer les procédés."
+competences:
+  - "SFC23 — Découvrir les procédés d'un atelier de fabrication"
+prerequis: "S5-A05 (maquettes fabriquées)."
+materiel: "Imprimante 3D · découpeuse laser · fiche S5-A06 · maquettes de S30"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A06_Atelier3DLaser_5eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A06_Atelier3DLaser_5eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A06_Atelier_5eme.pdf"
+qr: "/qr/s5-a06-5eme.png"
+---

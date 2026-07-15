@@ -1,0 +1,21 @@
+---
+code: "S5-A04"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S29"
+titre: "SketchUp (2) : le modèle final coté"
+question: "Comment finaliser un modèle 3D prêt pour la fabrication ?"
+objectif: "Creuser l'encoche (poussé-tiré négatif), créer la butée, vérifier l'angle, poser les cotes, exporter le dossier."
+competences:
+  - "CCRI16 — Produire la forme voulue"
+  - "OST22 — Revue de conception vs CDC"
+prerequis: "S5-A03 (base modélisée aux cotes)."
+materiel: "SketchUp · fiche S5-A04"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A04_SketchUp2_4eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A04_SketchUp2_4eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A04_SketchUp2_4eme.pdf"
+qr: "/qr/s5-a04-4eme.png"
+---

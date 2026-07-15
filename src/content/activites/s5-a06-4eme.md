@@ -1,0 +1,21 @@
+---
+code: "S5-A06"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S31"
+titre: "Atelier : impression 3D et découpe laser du modèle"
+question: "Comment passe-t-on d'un modèle 3D à un objet réel, et quel procédé choisir ?"
+objectif: "Observer la chaîne numérique CFAO (.skp → .stl → g-code → pièce), comparer additif/soustractif, choisir un procédé pour une série."
+competences:
+  - "SFC23 — Choisir les procédés de réalisation"
+  - "SFC14 — Relier forme d'une pièce et procédé"
+prerequis: "S5-A05 (prototypes testés)."
+materiel: "Imprimante 3D · découpeuse laser · fiche S5-A06"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A06_Atelier_4eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A06_Atelier_4eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A06_Atelier_4eme.pdf"
+qr: "/qr/s5-a06-4eme.png"
+---

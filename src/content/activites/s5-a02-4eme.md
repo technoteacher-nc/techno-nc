@@ -1,0 +1,21 @@
+---
+code: "S5-A02"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S27"
+titre: "Croquis coté et perspective"
+question: "Comment représenter une solution pour qu'un autre puisse la fabriquer ?"
+objectif: "Appliquer les règles du croquis coté (mm, cotes uniques), produire 3 solutions dont une perspective, choisir par le CDC."
+competences:
+  - "CCRI12 — Représenter des solutions (croquis coté)"
+  - "OST22 — Cahier des charges"
+prerequis: "S5-A01 (CDC + largeur d'encoche mesurée)."
+materiel: "Fiche S5-A02 · réglet · équerre"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A02_CroquisCote_4eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A02_CroquisCote_4eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A02_Croquis_4eme.pdf"
+qr: "/qr/s5-a02-4eme.png"
+---

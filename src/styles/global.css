@@ -1,0 +1,302 @@
+/* techno-nc — palette papier / graphite, langage du croquis coté */
+
+:root {
+  --papier:    #FBFBF9;  /* fond, papier à dessin */
+  --calque:    #F1F1ED;  /* aplats, calque */
+  --trait:     #C9C9C2;  /* traits de construction */
+  --graphite:  #26262A;  /* texte, mine de crayon */
+  --mine:      #63636B;  /* texte secondaire */
+  --encre:     #1B4D8F;  /* encre bleue : actions, liens */
+
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --col: 62rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--graphite);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--col);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---------- en-tête ---------- */
+
+.site-head {
+  border-bottom: 1px solid var(--trait);
+  background: var(--papier);
+}
+.site-head .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.site-head a.marque {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--graphite);
+  text-decoration: none;
+}
+.site-head nav {
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+.site-head nav a {
+  color: var(--mine);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.site-head nav a:hover,
+.site-head nav a[aria-current='page'] {
+  color: var(--graphite);
+  border-bottom-color: var(--graphite);
+}
+
+/* ---------- signature : la cote ----------
+   Le code d'activité est posé sur une ligne de cote,
+   avec ses traits d'attache — comme sur un croquis coté. */
+
+.cote {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--mine);
+  white-space: nowrap;
+}
+/* ligne de cote : un trait horizontal, un trait d'attache vertical à chaque bout */
+.cote::before,
+.cote::after {
+  content: '';
+  width: 1.6rem;
+  height: 9px;
+  /* le trait de cote, centré verticalement */
+  background:
+    linear-gradient(var(--trait), var(--trait)) left  center / 100% 1px no-repeat,
+    linear-gradient(var(--trait), var(--trait)) left  center / 1px 100% no-repeat,
+    linear-gradient(var(--trait), var(--trait)) right center / 1px 100% no-repeat;
+}
+
+/* ---------- liste des activités ---------- */
+
+.niveau-titre {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mine);
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--trait);
+}
+
+.liste { list-style: none; margin: 0; padding: 0; }
+
+.liste li { border-bottom: 1px solid var(--trait); }
+
+.liste a {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1rem 0.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+.liste a:hover { background: var(--calque); }
+.liste a:focus-visible { outline: 2px solid var(--encre); outline-offset: -2px; }
+
+.liste .code {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.liste .titre { font-weight: 500; line-height: 1.35; }
+.liste .semaine {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--mine);
+}
+
+@media (max-width: 34rem) {
+  .liste a { grid-template-columns: 1fr auto; row-gap: 0.3rem; }
+  .liste .titre { grid-column: 1 / -1; order: 2; }
+  .liste .code { order: 0; }
+  .liste .semaine { order: 1; text-align: right; }
+}
+
+/* ---------- page activité ---------- */
+
+.fil {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--mine);
+  padding: 1.5rem 0 0;
+}
+.fil a { color: var(--mine); }
+
+.act-tete { padding: 0.75rem 0 1.5rem; border-bottom: 1px solid var(--trait); }
+.act-tete h1 {
+  font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+  line-height: 1.15;
+  margin: 0.75rem 0 0.5rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+.question {
+  font-size: 1.02rem;
+  color: var(--mine);
+  margin: 0;
+  font-style: italic;
+}
+
+/* documents : l'action principale de la page */
+.docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0;
+}
+.btn {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--graphite);
+  color: var(--graphite);
+  background: transparent;
+}
+.btn:hover { background: var(--graphite); color: var(--papier); }
+.btn:focus-visible { outline: 2px solid var(--encre); outline-offset: 2px; }
+.btn--fort {
+  background: var(--encre);
+  border-color: var(--encre);
+  color: #fff;
+}
+.btn--fort:hover { background: var(--graphite); border-color: var(--graphite); }
+
+/* méta */
+.meta { margin: 2rem 0; }
+.meta dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.1rem 1.25rem;
+}
+.meta dt {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mine);
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--trait);
+}
+.meta dd {
+  margin: 0;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--trait);
+}
+.meta ul { margin: 0; padding-left: 1.1rem; }
+.meta li { margin-bottom: 0.2rem; }
+
+@media (max-width: 34rem) {
+  .meta dl { grid-template-columns: 1fr; }
+  .meta dd { border-top: none; padding-top: 0; }
+}
+
+/* QR — outil du prof, pas de l'élève : discret */
+.qr {
+  margin: 2.5rem 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--trait);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.qr img {
+  width: 84px; height: 84px;
+  border: 1px solid var(--trait);
+  background: #fff;
+}
+.qr p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--mine);
+  font-family: var(--mono);
+  line-height: 1.5;
+}
+
+/* navigation activité suivante/précédente */
+.suite {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--trait);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+.suite a { color: var(--encre); text-decoration: none; }
+.suite a:hover { text-decoration: underline; }
+
+/* ---------- accueil ---------- */
+.hero { padding: 3rem 0 1rem; }
+.hero h1 {
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  line-height: 1.1;
+  margin: 1rem 0 0.75rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  max-width: 24ch;
+}
+.hero p { color: var(--mine); margin: 0; max-width: 56ch; }
+
+/* ---------- pied ---------- */
+.site-pied {
+  margin-top: 4rem;
+  border-top: 1px solid var(--trait);
+  background: var(--calque);
+}
+.site-pied .wrap { padding-top: 1.5rem; padding-bottom: 2.5rem; }
+.site-pied p {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--mine);
+  margin: 0 0 0.4rem;
+  line-height: 1.6;
+}
+.site-pied a { color: var(--mine); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

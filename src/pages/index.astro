@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const acts = await getCollection('activites');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const niveaux = [
+  { id: '5eme', label: '5ème' },
+  { id: '4eme', label: '4ème' },
+];
+const parNiveau = Object.fromEntries(
+  niveaux.map(n => [
+    n.id,
+    acts.filter(a => a.data.niveau === n.id).sort((a, b) => a.data.code.localeCompare(b.data.code)),
+  ])
+);
+---
+<Base
+  titre="Académie Technologique — Technologie au collège, Nouvelle-Calédonie"
+  description="Fiches d'activité de Technologie, cycle 4, programme 2024. Collège d'Auteuil, Nouvelle-Calédonie.">
+
+  <section class="hero">
+    <span class="cote">SÉQUENCE 05</span>
+    <h1>Conception : du besoin à l'objet fabriqué</h1>
+    <p>
+      Tu as manqué une séance, perdu ta fiche, ou tu veux revoir ce qu'on a projeté ?
+      Chaque activité est ici, en PDF, prête à imprimer.
+    </p>
+  </section>
+
+  {niveaux.map(n => (
+    <section>
+      <h2 class="niveau-titre">{n.label}</h2>
+      <ul class="liste">
+        {parNiveau[n.id].map(a => (
+          <li>
+            <a href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
+              <span class="code">{a.data.code}</span>
+              <span class="titre">{a.data.titre}</span>
+              <span class="semaine">{a.data.semaine}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>

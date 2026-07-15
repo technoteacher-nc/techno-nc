@@ -1,0 +1,21 @@
+---
+code: "S5-A01"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S26"
+titre: "Ma maison en NC : du besoin au cahier des charges"
+question: "Comment passer d'un besoin à un cahier des charges que l'architecte peut utiliser ?"
+objectif: "Distinguer besoin/envie, rédiger un CDC simplifié avec contraintes NC, dimensionner ses pièces (+10 % dégagements)."
+competences:
+  - "OST22 — Contraintes et exigences d'un CDC"
+  - "CCRI11 — S'inscrire dans un processus de conception"
+prerequis: "Aucun (lancement de séquence)."
+materiel: "Fiche S5-A01 · calculatrice"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A01_BesoinCDC_5eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A01_BesoinCDC_5eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A01_BesoinCDC_5eme.pdf"
+qr: "/qr/s5-a01-5eme.png"
+---

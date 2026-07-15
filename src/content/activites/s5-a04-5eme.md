@@ -1,0 +1,21 @@
+---
+code: "S5-A04"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S29"
+titre: "Sweet Home 3D (2) : ouvertures, meubles et vues"
+question: "Comment finaliser et présenter ma maquette numérique ?"
+objectif: "Poser portes/fenêtres, meubler, produire le dossier client (captures 2D/3D commentées), s'auto-critiquer."
+competences:
+  - "CCRI16 — Réaliser une forme à l'aide d'une modélisation"
+  - "OST13 — Organiser ses fichiers"
+prerequis: "S5-A03 (fichier .sh3d avec pièces et murs)."
+materiel: "Sweet Home 3D · fiche S5-A04"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A04_SweetHome2_5eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A04_SweetHome2_5eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A04_SweetHome2_5eme.pdf"
+qr: "/qr/s5-a04-5eme.png"
+---

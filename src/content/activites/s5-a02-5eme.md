@@ -1,0 +1,21 @@
+---
+code: "S5-A02"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S27"
+titre: "Le plan aux normes : les codes de représentation"
+question: "Comment dessiner un plan que tout le monde comprend, à la bonne échelle ?"
+objectif: "Connaître les symboles architecturaux, maîtriser l'échelle 1/100, produire SON plan conforme au CDC."
+competences:
+  - "OST13/SFC16 — Codes de représentation, échelle"
+  - "OST22 — Cahier des charges"
+prerequis: "S5-A01 (CDC, surfaces)."
+materiel: "Fiche S5-A02 · papier quadrillé · règle"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A02_PlanCodes_5eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A02_PlanCodes_5eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A02_PlanCodes_5eme.pdf"
+qr: "/qr/s5-a02-5eme.png"
+---

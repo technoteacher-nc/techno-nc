@@ -1,0 +1,21 @@
+---
+code: "S5-A05"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S30"
+titre: "La maquette papier de ma pièce préférée (échelle 1/20)"
+question: "Comment passer de la maquette numérique à une maquette en volume, à l'échelle ?"
+objectif: "Convertir à l'échelle 1/20, tracer un patron (sol + 4 murs + languettes), fabriquer, contrôler (±2 mm, équerrage ficelle)."
+competences:
+  - "CCRI12/CCRI15 — Fabriquer, assembler"
+  - "SFC16 — Échelle"
+prerequis: "S5-A04 (dimensions de sa pièce dans Sweet Home)."
+materiel: "Papier 160 g · règle, équerre, ciseaux, colle · ficelle · fiche S5-A05"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A05_MaquettePapier_5eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A05_MaquettePapier_5eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A05_Maquette_5eme.pdf"
+qr: "/qr/s5-a05-5eme.png"
+---

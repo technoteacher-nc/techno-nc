@@ -1,0 +1,21 @@
+---
+code: "S5-A01"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S26"
+titre: "Le support de smartphone : du besoin au CDC"
+question: "Comment traduire un besoin flou en cahier des charges précis et vérifiable ?"
+objectif: "Formuler un besoin (3 questions), rédiger un CDC 4 colonnes avec critères mesurables, analyser l'existant."
+competences:
+  - "OST22 — CDC (critère, niveau)"
+  - "CCRI11 — Processus de conception"
+prerequis: "Retour du brevet blanc."
+materiel: "Fiche S5-A01 · réglet"
+annee: "2026"
+seq: "seq05"
+seqTitre: "Séquence 05 — Conception"
+fichePdf: "/2026/seq05/FICHE_S5-A01_CDC_4eme.pdf"
+ficheDocx: "/2026/seq05/FICHE_S5-A01_CDC_4eme.docx"
+ebepPdf: "/2026/seq05/EBEP_S5-A01_CDC_4eme.pdf"
+qr: "/qr/s5-a01-4eme.png"
+---
