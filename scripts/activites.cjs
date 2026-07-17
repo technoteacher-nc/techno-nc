@@ -219,105 +219,105 @@ const SEQ_SEQ03 = { code: "seq03", num: "03", nom: "DONNÉES", titre: "Séquence
 const ACTIVITES_SEQ03 = [
   {
     code: "S3-A01", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S19",
     phase: "Analyser",
     titre: "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR",
     question: "PROBLÉMATIQUE : Comment les ordinateurs sont-ils organisés en réseaux, et comment deux réseaux différents communiquent-ils ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Identifier terminal/switch/routeur/serveur, comprendre la structure d'une adresse IP et la séparation des réseaux.",
+    competences: ["SFC17 — rôle terminal, commutateur, routeur, serveur ; structure d'une adresse IP"],
+    prerequis: "SEQ01 (périphériques), notion de serveur.",
+    materiel: "PPTX (schéma 2 réseaux admin/pédago + structure IP) · fiches S3-A01 (+ EBEP)",
     fiche: "FICHE_S3-A01_DeuxReseaux_4eme",
     ebep: "EBEP_S3-A01_DeuxReseaux_4eme",
   },
   {
     code: "S3-A01", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S19",
     phase: "Analyser",
     titre: "OÙ VONT MES FICHIERS ? — LE RÉSEAU DU COLLÈGE",
     question: "PROBLÉMATIQUE : Comment mon travail peut-il me suivre d'un ordinateur à l'autre au collège ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Comprendre que les fichiers sont stockés sur un serveur et que la session identifie l'élève ; créer et retrouver son arborescence.",
+    competences: ["OST13 — rôle des systèmes d'information : fichiers, arborescence, stockage","SFC17 — composants d'un réseau local"],
+    prerequis: "SEQ01 : enregistrer, nommer un fichier.",
+    materiel: "Vidéoprojecteur + support PPTX (schéma réseau salle 207) · salle info · fiches S3-A01 (+ EBEP)",
     fiche: "FICHE_S3-A01_ReseauCollege_5eme",
     ebep: "EBEP_S3-A01_ReseauCollege_5eme",
   },
   {
     code: "S3-A02", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S20",
     phase: "Modéliser",
     titre: "FILIUS (1) : MON RÉSEAU LOCAL OPÉRATIONNEL",
     question: "PROBLÉMATIQUE : Comment construire un réseau local et PROUVER qu'il fonctionne ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Construire et tester un réseau local simulé (câble, IP, ping, switch, serveur, ipconfig) et rédiger un compte-rendu de tests.",
+    competences: ["SFC18 — résoudre des problèmes de communication entre terminaux — simulation","SFC17 — rôle terminal, commutateur, routeur, serveur ; structure d'une adresse IP"],
+    prerequis: "S3-A01 (IP, switch).",
+    materiel: "Filius · PPTX (écrans clés) · fiches S3-A02 (+ EBEP)",
     fiche: "FICHE_S3-A02_Filius1_4eme",
     ebep: "EBEP_S3-A02_Filius1_4eme",
   },
   {
     code: "S3-A02", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S20",
     phase: "Représenter",
     titre: "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS",
     question: "PROBLÉMATIQUE : Quel chemin parcourt un message qui voyage sur Internet ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Décrire le trajet d'un message sur Internet (paquets, serveurs, câbles sous-marins) et situer la NC dans le réseau mondial (Gondwana).",
+    competences: ["SFC17 — réseau mondial, rôle d'un serveur, adresse IP"],
+    prerequis: "S3-A01 : serveur, réseau local.",
+    materiel: "PPTX (carte Gondwana + doc chiffres) · vidéo « fonctionnement du réseau » · fiches S3-A02 (+ EBEP)",
     fiche: "FICHE_S3-A02_VoyageMessage_5eme",
     ebep: "EBEP_S3-A02_VoyageMessage_5eme",
   },
   {
     code: "S3-A03", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S21",
     phase: "Modéliser",
     titre: "FILIUS (2) : UN INTERNET MINIATURE — ROUTEUR ET DNS",
     question: "PROBLÉMATIQUE : Comment des réseaux différents communiquent-ils, et comment une URL devient-elle une adresse IP ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Relier deux réseaux par un routeur (passerelles), installer serveur web + DNS et comprendre URL → IP.",
+    competences: ["SFC17 — tables de routage, serveur","SFC18 — paramétrer une IP fixe, compléter une simulation pour valider"],
+    prerequis: "S3-A01, S3-A02.",
+    materiel: "Filius (+ fichier réseau de secours pré-monté) · PPTX (schéma routeur+DNS) · fiches S3-A03 (+ EBEP) · ÉVAL E1",
     fiche: "FICHE_S3-A03_Filius2_4eme",
     ebep: "EBEP_S3-A03_Filius2_4eme",
   },
   {
     code: "S3-A03", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S21",
     phase: "Analyser",
     titre: "NAVIGATEUR, MOTEUR, SYSTÈME : QUI FAIT QUOI ?",
     question: "PROBLÉMATIQUE : Quels logiciels utilisons-nous vraiment pour aller sur Internet, et qui les possède ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Distinguer OS / navigateur / moteur de recherche ; décrire un logiciel par descripteurs ; découvrir le modèle économique des GAFAM.",
+    competences: ["OST13 — systèmes d'information","SFC16 — descripteurs de données","OST14 — recenser, classer"],
+    prerequis: "S3-A01/A02.",
+    materiel: "PPTX (étiquettes 3 familles + tableau GAFAM) · salle info · fiches S3-A03 (+ EBEP) · ÉVAL E1 (15 min, DG)",
     fiche: "FICHE_S3-A03_LogicielsGAFAM_5eme",
     ebep: "EBEP_S3-A03_Logiciels_5eme",
   },
   {
     code: "S3-A04", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S22",
     phase: "Analyser",
     titre: "GRATUITS, VRAIMENT ? URL, MOTEURS ET GAFAM",
     question: "PROBLÉMATIQUE : Que payons-nous vraiment quand un service en ligne est « gratuit » ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Analyser une URL, identifier les données collectées par les services « gratuits » et leur modèle économique ; préparer un débat argumenté.",
+    competences: ["OST13 — systèmes d'information","OST14 — recenser, classer des données","SFC16 — descripteurs"],
+    prerequis: "S3-A03 (DNS, URL → IP).",
+    materiel: "PPTX (anatomie URL + tableau GAFAM/données) · salle info · fiches S3-A04 (+ EBEP)",
     fiche: "FICHE_S3-A04_GAFAM_4eme",
     ebep: "EBEP_S3-A04_GAFAM_4eme",
   },
   {
     code: "S3-A04", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S22",
     phase: "Modéliser",
     titre: "FILIUS : JE CONSTRUIS MON PREMIER RÉSEAU",
     question: "PROBLÉMATIQUE : Comment relier des ordinateurs pour qu'ils communiquent, et comment vérifier que ça marche ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Simuler un réseau de 2 puis 3 machines (switch), attribuer des adresses IP, tester par ping.",
+    competences: ["SFC18 — nécessité d'identifier les terminaux — vérification par simulation","SFC17 — rôle terminal, commutateur, routeur, serveur ; structure d'une adresse IP"],
+    prerequis: "S3-A01 (switch), S3-A02 (adresse IP).",
+    materiel: "Filius installé sur les postes · PPTX (écrans clés Filius) · fiches S3-A04 (+ EBEP)",
     fiche: "FICHE_S3-A04_Filius_5eme",
     ebep: "EBEP_S3-A04_Filius_5eme",
   },
@@ -326,66 +326,66 @@ const SEQ_SEQ04 = { code: "seq04", num: "04", nom: "CYBERSEC", titre: "Séquence
 const ACTIVITES_SEQ04 = [
   {
     code: "S4-A01", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S23",
     phase: "Analyser",
     titre: "PHISHING : L'AUDIT DE LA BOÎTE MAIL",
     question: "PROBLÉMATIQUE : Comment repérer un message piégé, et comment verrouiller ses accès ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Repérer les 5 indices d'un message piégé, auditer un corpus de 6 e-mails avec preuves, comprendre la double authentification.",
+    competences: ["OST15 — Règles pour sécuriser un environnement numérique : identification, authentification"],
+    prerequis: "SEQ03 : URL, nom de domaine (indispensable pour l'indice « adresse imitée »).",
+    materiel: "PPTX (exemple annoté + corpus de 6 e-mails fictifs) · fiches S4-A01 (+ EBEP)",
     fiche: "FICHE_S4-A01_Phishing_4eme",
     ebep: "EBEP_S4-A01_Phishing_4eme",
   },
   {
     code: "S4-A01", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S23",
     phase: "Analyser",
     titre: "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE",
     question: "PROBLÉMATIQUE : Comment protéger efficacement mes comptes ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Comprendre ce qui rend un mot de passe robuste (longueur, phrase de passe), adopter les règles d'or, définir l'identité numérique.",
+    competences: ["OST15 — Identifier des règles pour sécuriser un environnement numérique (identification, authentification)"],
+    prerequis: "SEQ03 : session, identifiants.",
+    materiel: "PPTX (tableau temps de cassage + modèle affichette) · salle info (groupe) · fiches S4-A01 (+ EBEP)",
     fiche: "FICHE_S4-A01_MotsDePasse_5eme",
     ebep: "EBEP_S4-A01_MotsDePasse_5eme",
   },
   {
     code: "S4-A02", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S24",
     phase: "Analyser",
     titre: "TRACES, COOKIES, RGPD : REPRENDRE LA MAIN",
     question: "PROBLÉMATIQUE : Comment nos traces sont-elles exploitées, et quels sont nos droits (RGPD) ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Comprendre la mécanique du ciblage publicitaire (cookies), connaître les 4 droits RGPD, paramétrer bannières et applications.",
+    competences: ["OST15 — Règles pour sécuriser un environnement numérique : identification, authentification","OST16 — Usage raisonné : identité numérique, témoins de connexion, géolocalisation, données personnelles"],
+    prerequis: "S3-A04 (données/GAFAM), S4-A01.",
+    materiel: "PPTX (chaîne du ciblage, droits RGPD, bannière cookies) · fiches S4-A02 (+ EBEP) · ÉVAL E2 · consignes brevet blanc à lire en fin de séance",
     fiche: "FICHE_S4-A02_RGPD_4eme",
     ebep: "EBEP_S4-A02_RGPD_4eme",
   },
   {
     code: "S4-A02", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S24",
     phase: "Analyser",
     titre: "MES TRACES NUMÉRIQUES",
     question: "PROBLÉMATIQUE : Quelles traces est-ce que je laisse sur Internet, et qui peut les voir ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Distinguer traces volontaires/invisibles, comprendre la persistance d'une publication, paramétrer la confidentialité.",
+    competences: ["OST15 — Règles pour sécuriser un environnement numérique : identification, authentification","OST16 — Responsabilité de chacun : atteinte à la vie privée, données personnelles"],
+    prerequis: "S4-A01 (identité numérique).",
+    materiel: "PPTX (parcours d'une photo publiée + écran de réglages fictif) · fiches S4-A02 (+ EBEP) · ÉVAL E2",
     fiche: "FICHE_S4-A02_Traces_5eme",
     ebep: "EBEP_S4-A02_Traces_5eme",
   },
   {
     code: "S4-A03", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S25",
     phase: "Produire",
     titre: "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR",
     question: "PROBLÉMATIQUE : Comment reconnaître le cyberharcèlement, et que faire — que l'on soit victime ou témoin ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Identifier les 3 critères du harcèlement, connaître les réflexes de la victime ET du témoin, mémoriser le 3018.",
+    competences: ["OST16 — Mesurer la responsabilité de chacun dans les dérives : cyberviolence, harcèlement"],
+    prerequis: "S4-A02.",
+    materiel: "PPTX (critères, acteurs/réflexes, modèle d'affiche, 3018) · salle info (groupe) · fiches S4-A03 (+ EBEP)",
     fiche: "FICHE_S4-A03_Cyberharcelement_5eme",
     ebep: "EBEP_S4-A03_Cyberharcelement_5eme",
   },
@@ -394,105 +394,105 @@ const SEQ_SEQ06 = { code: "seq06", num: "06", nom: "MEI", titre: "Séquence 06 �
 const ACTIVITES_SEQ06 = [
   {
     code: "S6-A01", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S32",
     phase: "Analyser",
     titre: "mBOT : UN VRAI SYSTÈME À DÉCORTIQUER",
     question: "PROBLÉMATIQUE : Que se passe-t-il entre l'obstacle détecté et le demi-tour du robot ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Identifier les constituants du mBot, reconstruire ses chaînes d'information et d'énergie sur système réel.",
+    competences: ["SFC15 — Chaîne d'information d'un objet réel","SFC13 — Chaîne d'énergie"],
+    prerequis: "SEQ02 (chaînes vues sur documents) — ici on passe au RÉEL.",
+    materiel: "mBots (4-10, chargés, testés la veille) · PPTX (anatomie + chaînes) · fiches S6-A01 (+ EBEP)",
     fiche: "FICHE_S6-A01_AnatomieMBot_4eme",
     ebep: "EBEP_S6-A01_MBot_4eme",
   },
   {
     code: "S6-A01", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S32",
     phase: "Représenter",
     titre: "LE ROBOT ASPIRATEUR : PROGRAMMER SANS ORDINATEUR",
     question: "PROBLÉMATIQUE : Comment donner des ordres à une machine qui ne comprend que des instructions précises ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Définir instruction/séquence/boucle, exécuter et écrire un algorithme en langage naturel sur quadrillage.",
+    competences: ["SFC33 — Traduire en algorithme en langage naturel","CCRI32 — Analyser un programme simple"],
+    prerequis: "Aucun (lancement de séquence).",
+    materiel: "PPTX (vocabulaire + grille géante) · fiches S6-A01 (+ EBEP) · règles",
     fiche: "FICHE_S6-A01_Debranche_5eme",
     ebep: "EBEP_S6-A01_Debranche_5eme",
   },
   {
     code: "S6-A02", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S33",
     phase: "Modéliser",
     titre: "mBLOCK : MES PREMIERS PROGRAMMES SUR SYSTÈME RÉEL",
     question: "PROBLÉMATIQUE : Comment programmer un robot réel… et régler ce que la simulation ne montre pas ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Téléverser un programme, mesurer une distance parcourue, CALIBRER la rotation 90° par essais successifs, réaliser le carré.",
+    competences: ["CCRI33 — Programme commandant un système réel","SFC33 — Modifier les paramètres"],
+    prerequis: "S6-A01.",
+    materiel: "mBots + câbles USB/dongles · mBlock installé · zones au sol (adhésif) · réglets · fiches S6-A02 (+ EBEP)",
     fiche: "FICHE_S6-A02_mBlock_4eme",
     ebep: "EBEP_S6-A02_mBlock_4eme",
   },
   {
     code: "S6-A02", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S33",
     phase: "Modéliser",
     titre: "SCRATCH (1) : LE PARCOURS CARRÉ",
     question: "PROBLÉMATIQUE : Comment traduire mon algorithme papier en programme qui s'exécute ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Identifier les zones de Scratch, traduire l'algorithme du carré en blocs, réinvestir la boucle, découvrir l'événement.",
+    competences: ["CCRI33 — Réaliser un programme simple","SFC33 — Modifier les paramètres"],
+    prerequis: "S6-A01 (algorithme du carré).",
+    materiel: "Scratch sur les postes · PPTX (interface + programme en pseudo-blocs) · fiches S6-A02 (+ EBEP) · ÉVAL E5",
     fiche: "FICHE_S6-A02_Scratch1_5eme",
     ebep: "EBEP_S6-A02_Scratch1_5eme",
   },
   {
     code: "S6-A03", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S34",
     phase: "Modéliser",
     titre: "CAPTEURS : ÉVITER UN OBSTACLE, SUIVRE UNE LIGNE",
     question: "PROBLÉMATIQUE : Comment un robot peut-il adapter son comportement à ce que mesurent ses capteurs ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Programmer la structure SI/ALORS/SINON avec les capteurs ultrasons et suiveur de ligne, tester sur système réel.",
+    competences: ["CCRI33 — Programme commandant un système réel","SFC33 — Analyser les données des capteurs et modifier le programme"],
+    prerequis: "S6-A02 (calibration, téléversement).",
+    materiel: "mBots · pistes ligne noire (adhésif ou imprimées, préparées la veille) · obstacles · fiches S6-A03 (+ EBEP) · ÉVAL E5",
     fiche: "FICHE_S6-A03_Capteurs_4eme",
     ebep: "EBEP_S6-A03_Capteurs_4eme",
   },
   {
     code: "S6-A03", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S34",
     phase: "Modéliser",
     titre: "SCRATCH (2) : VARIABLES ET ÉVÉNEMENTS",
     question: "PROBLÉMATIQUE : Comment un programme peut-il mémoriser et faire évoluer une valeur ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Créer et faire évoluer une variable (spirale), utiliser un second événement et la condition de rebond.",
+    competences: ["SFC33 — Identifier les données utilisées par un programme (variable)","CCRI33 — Programme commandant un système réel"],
+    prerequis: "S6-A02 (boucle, blocs de base).",
+    materiel: "Scratch · PPTX (programme spirale + table d'exécution) · fiches S6-A03 (+ EBEP)",
     fiche: "FICHE_S6-A03_Scratch2_5eme",
     ebep: "EBEP_S6-A03_Scratch2_5eme",
   },
   {
     code: "S6-A04", niveau: "4eme", niveauLabel: "4ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S35",
     phase: "Produire",
     titre: "LE GRAND DÉFI ROBOT DES MAISONS",
     question: "PROBLÉMATIQUE : Comment mesurer et améliorer objectivement la performance d'un système programmé ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Mesurer une performance selon un protocole strict, améliorer par itérations mesurées, analyser vitesse vs précision.",
+    competences: ["OST34 — Mesurer et comparer une performance à partir d'un protocole","CCRI33 — Programme commandant un système réel"],
+    prerequis: "S6-A02 (calibration) et S6-A03 (capteurs).",
+    materiel: "mBots · parcours au sol (départ, 2 obstacles, arrivée — monté à l'identique pour tous) · chrono officiel · fiches S6-A04 (+ EBEP) · ÉVAL E6 + Kahoot 4ème pour S36",
     fiche: "FICHE_S6-A04_DefiRobot_4eme",
     ebep: "EBEP_S6-A04_Defi_4eme",
   },
   {
     code: "S6-A04", niveau: "5eme", niveauLabel: "5ème",
-    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    semaine: "S35",
     phase: "Produire",
     titre: "LE DÉFI SCRATCH DES MAISONS",
     question: "PROBLÉMATIQUE : Comment concevoir, tester et améliorer un programme qui répond à un cahier des charges ?",
-    objectif: "", // À COMPLÉTER
-    competences: [], // À COMPLÉTER
-    prerequis: "", // À COMPLÉTER
-    materiel: "", // À COMPLÉTER
+    objectif: "Concevoir, tester et améliorer un programme répondant à un cahier des charges (labyrinthe) ; pratiquer la revue de code.",
+    competences: ["CCRI33 — Mettre au point un programme et tester s'il répond au besoin"],
+    prerequis: "S6-A02/A03.",
+    materiel: "Scratch + fond de scène labyrinthe (préparé la veille) · chrono · fiches S6-A04 (+ EBEP) · ÉVAL E6 · Kahoot bilan (S36)",
     fiche: "FICHE_S6-A04_DefiScratch_5eme",
     ebep: "EBEP_S6-A04_Defi_5eme",
   },
