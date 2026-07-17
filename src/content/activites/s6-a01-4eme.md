@@ -1,0 +1,20 @@
+---
+code: "S6-A01"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "mBOT : UN VRAI SYSTÈME À DÉCORTIQUER"
+question: "PROBLÉMATIQUE : Que se passe-t-il entre l'obstacle détecté et le demi-tour du robot ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A01_AnatomieMBot_4eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A01_AnatomieMBot_4eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A01_MBot_4eme.pdf"
+qr: "/qr/s6-a01-4eme.png"
+---

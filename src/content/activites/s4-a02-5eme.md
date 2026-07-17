@@ -1,0 +1,20 @@
+---
+code: "S4-A02"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Analyser"
+titre: "MES TRACES NUMÉRIQUES"
+question: "PROBLÉMATIQUE : Quelles traces est-ce que je laisse sur Internet, et qui peut les voir ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq04"
+seqTitre: "Séquence 04 — CYBERSEC"
+fichePdf: "/2026/seq04/FICHE_S4-A02_Traces_5eme.pdf"
+ficheDocx: "/2026/seq04/FICHE_S4-A02_Traces_5eme.docx"
+ebepPdf: "/2026/seq04/EBEP_S4-A02_Traces_5eme.pdf"
+qr: "/qr/s4-a02-5eme.png"
+---

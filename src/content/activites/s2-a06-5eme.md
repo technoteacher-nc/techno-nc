@@ -1,0 +1,20 @@
+---
+code: "S2-A06"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Analyser"
+titre: "L'EXPÉRIENCE UTILISATEUR — FACILE OU GALÈRE ?"
+question: "PROBLÉMATIQUE : Pourquoi deux objets qui rendent le même service ne sont-ils pas aussi agréables à utiliser ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A06_UX_5eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A06_UX_5eme.docx"
+ebepPdf: ""
+qr: "/qr/s2-a06-5eme.png"
+---

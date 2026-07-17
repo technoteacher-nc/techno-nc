@@ -1,0 +1,20 @@
+---
+code: "S6-A02"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Modéliser"
+titre: "mBLOCK : MES PREMIERS PROGRAMMES SUR SYSTÈME RÉEL"
+question: "PROBLÉMATIQUE : Comment programmer un robot réel… et régler ce que la simulation ne montre pas ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A02_mBlock_4eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A02_mBlock_4eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A02_mBlock_4eme.pdf"
+qr: "/qr/s6-a02-4eme.png"
+---

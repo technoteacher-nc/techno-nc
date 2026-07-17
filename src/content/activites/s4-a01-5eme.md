@@ -1,0 +1,20 @@
+---
+code: "S4-A01"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Analyser"
+titre: "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE"
+question: "PROBLÉMATIQUE : Comment protéger efficacement mes comptes ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq04"
+seqTitre: "Séquence 04 — CYBERSEC"
+fichePdf: "/2026/seq04/FICHE_S4-A01_MotsDePasse_5eme.pdf"
+ficheDocx: "/2026/seq04/FICHE_S4-A01_MotsDePasse_5eme.docx"
+ebepPdf: "/2026/seq04/EBEP_S4-A01_MotsDePasse_5eme.pdf"
+qr: "/qr/s4-a01-5eme.png"
+---

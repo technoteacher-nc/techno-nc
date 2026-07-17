@@ -1,0 +1,20 @@
+---
+code: "S4-A01"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "PHISHING : L'AUDIT DE LA BOÎTE MAIL"
+question: "PROBLÉMATIQUE : Comment repérer un message piégé, et comment verrouiller ses accès ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq04"
+seqTitre: "Séquence 04 — CYBERSEC"
+fichePdf: "/2026/seq04/FICHE_S4-A01_Phishing_4eme.pdf"
+ficheDocx: "/2026/seq04/FICHE_S4-A01_Phishing_4eme.docx"
+ebepPdf: "/2026/seq04/EBEP_S4-A01_Phishing_4eme.pdf"
+qr: "/qr/s4-a01-4eme.png"
+---

@@ -1,0 +1,20 @@
+---
+code: "S6-A03"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Modéliser"
+titre: "SCRATCH (2) : VARIABLES ET ÉVÉNEMENTS"
+question: "PROBLÉMATIQUE : Comment un programme peut-il mémoriser et faire évoluer une valeur ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A03_Scratch2_5eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A03_Scratch2_5eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A03_Scratch2_5eme.pdf"
+qr: "/qr/s6-a03-5eme.png"
+---

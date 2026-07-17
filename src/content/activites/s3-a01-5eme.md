@@ -1,0 +1,20 @@
+---
+code: "S3-A01"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Analyser"
+titre: "OÙ VONT MES FICHIERS ? — LE RÉSEAU DU COLLÈGE"
+question: "PROBLÉMATIQUE : Comment mon travail peut-il me suivre d'un ordinateur à l'autre au collège ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A01_ReseauCollege_5eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A01_ReseauCollege_5eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A01_ReseauCollege_5eme.pdf"
+qr: "/qr/s3-a01-5eme.png"
+---

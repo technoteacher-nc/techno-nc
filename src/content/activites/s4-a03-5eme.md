@@ -1,0 +1,20 @@
+---
+code: "S4-A03"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Produire"
+titre: "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR"
+question: "PROBLÉMATIQUE : Comment reconnaître le cyberharcèlement, et que faire — que l'on soit victime ou témoin ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq04"
+seqTitre: "Séquence 04 — CYBERSEC"
+fichePdf: "/2026/seq04/FICHE_S4-A03_Cyberharcelement_5eme.pdf"
+ficheDocx: "/2026/seq04/FICHE_S4-A03_Cyberharcelement_5eme.docx"
+ebepPdf: "/2026/seq04/EBEP_S4-A03_Cyberharcelement_5eme.pdf"
+qr: "/qr/s4-a03-5eme.png"
+---

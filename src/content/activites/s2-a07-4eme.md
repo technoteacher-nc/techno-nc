@@ -1,0 +1,20 @@
+---
+code: "S2-A07"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "COMPARER POUR CHOISIR — LES ORDINATEURS DE LA SALLE 207"
+question: "PROBLÉMATIQUE : Comment comparer objectivement plusieurs objets techniques pour choisir selon un besoin et un budget ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A07_CHOISIR_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A07_CHOISIR_4eme.docx"
+ebepPdf: ""
+qr: "/qr/s2-a07-4eme.png"
+---

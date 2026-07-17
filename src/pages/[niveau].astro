@@ -4,38 +4,65 @@ import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return [
-    { params: { niveau: '5eme' }, props: { label: '5ème', sujet: 'Une maison en Nouvelle-Calédonie' } },
-    { params: { niveau: '4eme' }, props: { label: '4ème', sujet: 'Un support de smartphone' } },
+    { params: { niveau: '5eme' }, props: { label: '5ème' } },
+    { params: { niveau: '4eme' }, props: { label: '4ème' } },
   ];
 }
 
 const { niveau } = Astro.params;
-const { label, sujet } = Astro.props;
+const { label } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const acts = (await getCollection('activites'))
-  .filter(a => a.data.niveau === niveau)
-  .sort((a, b) => a.data.code.localeCompare(b.data.code));
+const acts = (await getCollection('activites')).filter(a => a.data.niveau === niveau);
+
+// une section par séquence (triée par code de séquence), chaque séquence
+// garde sa propre chaîne numérotée 1 → N — les séquences ne se mélangent pas.
+const parSeq = new Map();
+for (const a of acts) {
+  if (!parSeq.has(a.data.seq)) parSeq.set(a.data.seq, { titre: a.data.seqTitre, items: [] });
+  parSeq.get(a.data.seq).items.push(a);
+}
+const sequences = [...parSeq.entries()]
+  .sort(([codeA], [codeB]) => codeA.localeCompare(codeB))
+  .map(([code, v]) => ({
+    code,
+    titre: v.titre,
+    items: v.items.sort((x, y) => x.data.code.localeCompare(y.data.code)),
+  }));
 ---
-<Base titre={`${label} — Séquence 05 Conception`} description={`Activités de Technologie ${label}, séquence Conception.`}>
+<Base
+  titre={`${label} — Technologie, Académie Technologique`}
+  description={`Activités de Technologie ${label}, toutes séquences, Collège d'Auteuil.`}>
+
   <section class="hero">
-    <span class="eyebrow">{label} · Séquence 05</span>
-    <h1>{sujet}</h1>
-    <p>Six étapes, de l'analyse du besoin à la fabrication.</p>
+    <span class="eyebrow">{label}</span>
+    <h1>Tes séquences de <em>Technologie</em></h1>
+    <p>
+      Choisis ta séquence ci-dessous. Dans chacune, les étapes sont dans l'ordre :
+      chaque activité part de ce que tu as produit à la précédente.
+    </p>
   </section>
 
-  <ol class="chaine">
-    {acts.map((a, i) => (
-      <li>
-        <a class="maillon" href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
-          <span class="num">{i + 1}</span>
-          <span class="corps">
-            <span class="phase">{a.data.phase}</span>
-            <span class="titre">{a.data.titre}</span>
-          </span>
-          <span class="aller" aria-hidden="true">→</span>
-        </a>
-      </li>
-    ))}
-  </ol>
+  {sequences.map(seq => (
+    <section class="niveau-bloc">
+      <h2 class="niveau-titre">
+        {seq.titre}
+        <span>{seq.items.length} activité{seq.items.length > 1 ? 's' : ''}</span>
+      </h2>
+      <ol class="chaine">
+        {seq.items.map((a, i) => (
+          <li>
+            <a class="maillon" data-phase={a.data.phase} href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
+              <span class="num">{i + 1}</span>
+              <span class="corps">
+                {a.data.phase && <span class="phase">{a.data.phase}</span>}
+                <span class="titre">{a.data.titre}</span>
+              </span>
+              <span class="aller" aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
 </Base>

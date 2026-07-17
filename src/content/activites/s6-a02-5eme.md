@@ -1,0 +1,20 @@
+---
+code: "S6-A02"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Modéliser"
+titre: "SCRATCH (1) : LE PARCOURS CARRÉ"
+question: "PROBLÉMATIQUE : Comment traduire mon algorithme papier en programme qui s'exécute ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A02_Scratch1_5eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A02_Scratch1_5eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A02_Scratch1_5eme.pdf"
+qr: "/qr/s6-a02-5eme.png"
+---

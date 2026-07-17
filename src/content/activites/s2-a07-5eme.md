@@ -1,0 +1,20 @@
+---
+code: "S2-A07"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Analyser"
+titre: "BIEN CHOISIR UN OBJET TECHNIQUE"
+question: "PROBLÉMATIQUE : Comment choisir l'objet le plus adapté à un besoin, sans se tromper ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A07_CHOISIR_5eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A07_CHOISIR_5eme.docx"
+ebepPdf: ""
+qr: "/qr/s2-a07-5eme.png"
+---

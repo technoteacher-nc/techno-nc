@@ -1,0 +1,20 @@
+---
+code: "S3-A04"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "GRATUITS, VRAIMENT ? URL, MOTEURS ET GAFAM"
+question: "PROBLÉMATIQUE : Que payons-nous vraiment quand un service en ligne est « gratuit » ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A04_GAFAM_4eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A04_GAFAM_4eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A04_GAFAM_4eme.pdf"
+qr: "/qr/s3-a04-4eme.png"
+---

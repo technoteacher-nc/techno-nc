@@ -1,0 +1,20 @@
+---
+code: "S3-A04"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Modéliser"
+titre: "FILIUS : JE CONSTRUIS MON PREMIER RÉSEAU"
+question: "PROBLÉMATIQUE : Comment relier des ordinateurs pour qu'ils communiquent, et comment vérifier que ça marche ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A04_Filius_5eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A04_Filius_5eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A04_Filius_5eme.pdf"
+qr: "/qr/s3-a04-5eme.png"
+---

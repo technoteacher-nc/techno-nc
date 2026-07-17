@@ -1,0 +1,20 @@
+---
+code: "S3-A02"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Représenter"
+titre: "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS"
+question: "PROBLÉMATIQUE : Quel chemin parcourt un message qui voyage sur Internet ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A02_VoyageMessage_5eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A02_VoyageMessage_5eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A02_VoyageMessage_5eme.pdf"
+qr: "/qr/s3-a02-5eme.png"
+---

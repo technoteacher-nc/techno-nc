@@ -1,0 +1,20 @@
+---
+code: "S3-A02"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Modéliser"
+titre: "FILIUS (1) : MON RÉSEAU LOCAL OPÉRATIONNEL"
+question: "PROBLÉMATIQUE : Comment construire un réseau local et PROUVER qu'il fonctionne ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A02_Filius1_4eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A02_Filius1_4eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A02_Filius1_4eme.pdf"
+qr: "/qr/s3-a02-4eme.png"
+---

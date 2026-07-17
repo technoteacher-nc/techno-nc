@@ -1,0 +1,20 @@
+---
+code: "S4-A02"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "TRACES, COOKIES, RGPD : REPRENDRE LA MAIN"
+question: "PROBLÉMATIQUE : Comment nos traces sont-elles exploitées, et quels sont nos droits (RGPD) ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq04"
+seqTitre: "Séquence 04 — CYBERSEC"
+fichePdf: "/2026/seq04/FICHE_S4-A02_RGPD_4eme.pdf"
+ficheDocx: "/2026/seq04/FICHE_S4-A02_RGPD_4eme.docx"
+ebepPdf: "/2026/seq04/EBEP_S4-A02_RGPD_4eme.pdf"
+qr: "/qr/s4-a02-4eme.png"
+---

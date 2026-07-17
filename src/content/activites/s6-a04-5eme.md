@@ -1,0 +1,20 @@
+---
+code: "S6-A04"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Produire"
+titre: "LE DÉFI SCRATCH DES MAISONS"
+question: "PROBLÉMATIQUE : Comment concevoir, tester et améliorer un programme qui répond à un cahier des charges ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A04_DefiScratch_5eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A04_DefiScratch_5eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A04_Defi_5eme.pdf"
+qr: "/qr/s6-a04-5eme.png"
+---

@@ -1,0 +1,20 @@
+---
+code: "S3-A01"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR"
+question: "PROBLÉMATIQUE : Comment les ordinateurs sont-ils organisés en réseaux, et comment deux réseaux différents communiquent-ils ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A01_DeuxReseaux_4eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A01_DeuxReseaux_4eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A01_DeuxReseaux_4eme.pdf"
+qr: "/qr/s3-a01-4eme.png"
+---

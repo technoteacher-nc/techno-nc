@@ -1,0 +1,20 @@
+---
+code: "S2-A06"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Analyser"
+titre: "L'EXPÉRIENCE UTILISATEUR — CONCEVOIR POUR L'UTILISATEUR"
+question: "PROBLÉMATIQUE : Comment améliorer un objet ou un service numérique sans changer sa fonction d'usage ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A06_UX_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A06_UX_4eme.docx"
+ebepPdf: ""
+qr: "/qr/s2-a06-4eme.png"
+---

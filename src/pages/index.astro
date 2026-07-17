@@ -6,44 +6,41 @@ const acts = await getCollection('activites');
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const niveaux = [
-  { id: '5eme', label: '5ème', sujet: 'Une maison en Nouvelle-Calédonie' },
-  { id: '4eme', label: '4ème', sujet: 'Un support de smartphone' },
+  { id: '5eme', label: '5ème' },
+  { id: '4eme', label: '4ème' },
 ];
-const parNiveau = Object.fromEntries(
-  niveaux.map(n => [n.id,
-    acts.filter(a => a.data.niveau === n.id).sort((a, b) => a.data.code.localeCompare(b.data.code))]),
-);
+
+function resume(niveauId) {
+  const items = acts.filter(a => a.data.niveau === niveauId);
+  const nbSequences = new Set(items.map(a => a.data.seq)).size;
+  return { nbActivites: items.length, nbSequences };
+}
 ---
 <Base
   titre="Académie Technologique — Technologie au collège, Nouvelle-Calédonie"
   description="Fiches d'activité de Technologie, cycle 4, programme 2024. Collège d'Auteuil, Nouvelle-Calédonie.">
 
   <section class="hero">
-    <span class="eyebrow">Séquence 05 · S26 → S31</span>
-    <h1>Du besoin à <em>l'objet fabriqué</em></h1>
+    <span class="eyebrow">Académie Technologique</span>
+    <h1>Toutes tes séquences de <em>Technologie</em></h1>
     <p>
-      Six étapes, dans l'ordre : chacune part de ce que tu as produit à la précédente.
-      Tu as manqué une séance ou perdu ta fiche ? Tout est ici.
+      Tu as manqué une séance ou perdu ta fiche ? Choisis ta classe : chaque
+      séquence est classée à part, dans l'ordre de ses activités.
     </p>
   </section>
 
-  {niveaux.map(n => (
-    <section class="niveau-bloc">
-      <h2 class="niveau-titre">{n.label} <span>{n.sujet}</span></h2>
-      <ol class="chaine">
-        {parNiveau[n.id].map((a, i) => (
-          <li>
-            <a class="maillon" href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
-              <span class="num">{i + 1}</span>
-              <span class="corps">
-                <span class="phase">{a.data.phase}</span>
-                <span class="titre">{a.data.titre}</span>
-              </span>
-              <span class="aller" aria-hidden="true">→</span>
-            </a>
-          </li>
-        ))}
-      </ol>
-    </section>
-  ))}
+  <div class="accueil-niveaux">
+    {niveaux.map(n => {
+      const r = resume(n.id);
+      return (
+        <a class="accueil-carte" href={`${base}/${n.id}`}>
+          <span class="accueil-carte-titre">{n.label}</span>
+          <span class="accueil-carte-resume">
+            {r.nbSequences} séquence{r.nbSequences > 1 ? 's' : ''} · {r.nbActivites} activité{r.nbActivites > 1 ? 's' : ''}
+          </span>
+          <span class="aller" aria-hidden="true">→</span>
+        </a>
+      );
+    })}
+  </div>
 </Base>

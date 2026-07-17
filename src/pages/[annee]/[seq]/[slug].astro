@@ -24,36 +24,34 @@ const u = p => base + p;
 <Base titre={`${d.code} ${d.niveauLabel} — ${d.titre}`} description={d.question}>
 
   <nav class="fil">
-    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / Séquence 05
+    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / {d.seqTitre}
   </nav>
 
   <header class="act-tete">
-    <span class="eyebrow">{d.phase} · étape {rang} sur {total} · {d.semaine}</span>
+    <div class="act-repere">
+      {d.phase && <span class="phase" data-phase={d.phase}>{d.phase}</span>}
+      <span class="eyebrow-mini">étape {rang} sur {total}{d.semaine && ` · ${d.semaine}`}</span>
+    </div>
     <h1>{d.titre}</h1>
     <p class="question">{d.question}</p>
 
     <div class="docs">
       <a class="btn btn--fort" href={u(d.fichePdf)}>Télécharger la fiche</a>
-      <a class="btn" href={u(d.ebepPdf)}>Version adaptée</a>
+      {d.ebepPdf && <a class="btn" href={u(d.ebepPdf)}>Version adaptée</a>}
       <a class="btn" href={u(d.ficheDocx)}>Fiche modifiable</a>
     </div>
   </header>
 
-  <section class="meta">
-    <dl>
-      <dt>Objectif</dt>
-      <dd>{d.objectif}</dd>
-
-      <dt>Compétences</dt>
-      <dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd>
-
-      <dt>Prérequis</dt>
-      <dd>{d.prerequis}</dd>
-
-      <dt>Matériel</dt>
-      <dd>{d.materiel}</dd>
-    </dl>
-  </section>
+  {(d.objectif || d.competences.length || d.prerequis || d.materiel) && (
+    <section class="meta">
+      <dl>
+        {d.objectif && <><dt>Objectif</dt><dd>{d.objectif}</dd></>}
+        {d.competences.length > 0 && <><dt>Compétences</dt><dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd></>}
+        {d.prerequis && <><dt>Prérequis</dt><dd>{d.prerequis}</dd></>}
+        {d.materiel && <><dt>Matériel</dt><dd>{d.materiel}</dd></>}
+      </dl>
+    </section>
+  )}
 
   <section class="qr">
     <img src={u(d.qr)} alt={`QR code vers l'activité ${d.code} ${d.niveauLabel}`} width="76" height="76" loading="lazy" />

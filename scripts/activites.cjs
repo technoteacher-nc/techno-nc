@@ -6,7 +6,7 @@
 const ANNEE = "2026";
 const SEQ = { code: "seq05", num: "05", nom: "CONCEPTION", titre: "Séquence 05 — Conception" };
 
-const ACTIVITES = [
+const ACTIVITES_SEQ05 = [
   // ---------- 5ÈME ----------
   {
     code: "S5-A01", niveau: "5eme", niveauLabel: "5ème", semaine: "S26",
@@ -159,4 +159,351 @@ const ACTIVITES = [
 // slug URL : s5-a01-5eme
 const slug = a => `${a.code.toLowerCase()}-${a.niveau}`;
 
-module.exports = { ANNEE, SEQ, ACTIVITES, slug };
+// --- SEQ_MERGE_MARKER --- (les séquences migrées sont insérées après ce point)
+const SEQ_SEQ02 = { code: "seq02", num: "02", nom: "USAGES", titre: "Séquence 02 — USAGES" };
+const ACTIVITES_SEQ02 = [
+  {
+    code: "S2-A06", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "L'EXPÉRIENCE UTILISATEUR — CONCEVOIR POUR L'UTILISATEUR",
+    question: "PROBLÉMATIQUE : Comment améliorer un objet ou un service numérique sans changer sa fonction d'usage ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S2-A06_UX_4eme",
+    ebep: null,
+  },
+  {
+    code: "S2-A06", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "L'EXPÉRIENCE UTILISATEUR — FACILE OU GALÈRE ?",
+    question: "PROBLÉMATIQUE : Pourquoi deux objets qui rendent le même service ne sont-ils pas aussi agréables à utiliser ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S2-A06_UX_5eme",
+    ebep: null,
+  },
+  {
+    code: "S2-A07", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "COMPARER POUR CHOISIR — LES ORDINATEURS DE LA SALLE 207",
+    question: "PROBLÉMATIQUE : Comment comparer objectivement plusieurs objets techniques pour choisir selon un besoin et un budget ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S2-A07_CHOISIR_4eme",
+    ebep: null,
+  },
+  {
+    code: "S2-A07", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "BIEN CHOISIR UN OBJET TECHNIQUE",
+    question: "PROBLÉMATIQUE : Comment choisir l'objet le plus adapté à un besoin, sans se tromper ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S2-A07_CHOISIR_5eme",
+    ebep: null,
+  },
+];
+const SEQ_SEQ03 = { code: "seq03", num: "03", nom: "DONNÉES", titre: "Séquence 03 — DONNÉES" };
+const ACTIVITES_SEQ03 = [
+  {
+    code: "S3-A01", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR",
+    question: "PROBLÉMATIQUE : Comment les ordinateurs sont-ils organisés en réseaux, et comment deux réseaux différents communiquent-ils ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A01_DeuxReseaux_4eme",
+    ebep: "EBEP_S3-A01_DeuxReseaux_4eme",
+  },
+  {
+    code: "S3-A01", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "OÙ VONT MES FICHIERS ? — LE RÉSEAU DU COLLÈGE",
+    question: "PROBLÉMATIQUE : Comment mon travail peut-il me suivre d'un ordinateur à l'autre au collège ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A01_ReseauCollege_5eme",
+    ebep: "EBEP_S3-A01_ReseauCollege_5eme",
+  },
+  {
+    code: "S3-A02", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "FILIUS (1) : MON RÉSEAU LOCAL OPÉRATIONNEL",
+    question: "PROBLÉMATIQUE : Comment construire un réseau local et PROUVER qu'il fonctionne ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A02_Filius1_4eme",
+    ebep: "EBEP_S3-A02_Filius1_4eme",
+  },
+  {
+    code: "S3-A02", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Représenter",
+    titre: "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS",
+    question: "PROBLÉMATIQUE : Quel chemin parcourt un message qui voyage sur Internet ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A02_VoyageMessage_5eme",
+    ebep: "EBEP_S3-A02_VoyageMessage_5eme",
+  },
+  {
+    code: "S3-A03", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "FILIUS (2) : UN INTERNET MINIATURE — ROUTEUR ET DNS",
+    question: "PROBLÉMATIQUE : Comment des réseaux différents communiquent-ils, et comment une URL devient-elle une adresse IP ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A03_Filius2_4eme",
+    ebep: "EBEP_S3-A03_Filius2_4eme",
+  },
+  {
+    code: "S3-A03", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "NAVIGATEUR, MOTEUR, SYSTÈME : QUI FAIT QUOI ?",
+    question: "PROBLÉMATIQUE : Quels logiciels utilisons-nous vraiment pour aller sur Internet, et qui les possède ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A03_LogicielsGAFAM_5eme",
+    ebep: "EBEP_S3-A03_Logiciels_5eme",
+  },
+  {
+    code: "S3-A04", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "GRATUITS, VRAIMENT ? URL, MOTEURS ET GAFAM",
+    question: "PROBLÉMATIQUE : Que payons-nous vraiment quand un service en ligne est « gratuit » ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A04_GAFAM_4eme",
+    ebep: "EBEP_S3-A04_GAFAM_4eme",
+  },
+  {
+    code: "S3-A04", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "FILIUS : JE CONSTRUIS MON PREMIER RÉSEAU",
+    question: "PROBLÉMATIQUE : Comment relier des ordinateurs pour qu'ils communiquent, et comment vérifier que ça marche ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S3-A04_Filius_5eme",
+    ebep: "EBEP_S3-A04_Filius_5eme",
+  },
+];
+const SEQ_SEQ04 = { code: "seq04", num: "04", nom: "CYBERSEC", titre: "Séquence 04 — CYBERSEC" };
+const ACTIVITES_SEQ04 = [
+  {
+    code: "S4-A01", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "PHISHING : L'AUDIT DE LA BOÎTE MAIL",
+    question: "PROBLÉMATIQUE : Comment repérer un message piégé, et comment verrouiller ses accès ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S4-A01_Phishing_4eme",
+    ebep: "EBEP_S4-A01_Phishing_4eme",
+  },
+  {
+    code: "S4-A01", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE",
+    question: "PROBLÉMATIQUE : Comment protéger efficacement mes comptes ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S4-A01_MotsDePasse_5eme",
+    ebep: "EBEP_S4-A01_MotsDePasse_5eme",
+  },
+  {
+    code: "S4-A02", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "TRACES, COOKIES, RGPD : REPRENDRE LA MAIN",
+    question: "PROBLÉMATIQUE : Comment nos traces sont-elles exploitées, et quels sont nos droits (RGPD) ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S4-A02_RGPD_4eme",
+    ebep: "EBEP_S4-A02_RGPD_4eme",
+  },
+  {
+    code: "S4-A02", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "MES TRACES NUMÉRIQUES",
+    question: "PROBLÉMATIQUE : Quelles traces est-ce que je laisse sur Internet, et qui peut les voir ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S4-A02_Traces_5eme",
+    ebep: "EBEP_S4-A02_Traces_5eme",
+  },
+  {
+    code: "S4-A03", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Produire",
+    titre: "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR",
+    question: "PROBLÉMATIQUE : Comment reconnaître le cyberharcèlement, et que faire — que l'on soit victime ou témoin ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S4-A03_Cyberharcelement_5eme",
+    ebep: "EBEP_S4-A03_Cyberharcelement_5eme",
+  },
+];
+const SEQ_SEQ06 = { code: "seq06", num: "06", nom: "MEI", titre: "Séquence 06 — MEI" };
+const ACTIVITES_SEQ06 = [
+  {
+    code: "S6-A01", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Analyser",
+    titre: "mBOT : UN VRAI SYSTÈME À DÉCORTIQUER",
+    question: "PROBLÉMATIQUE : Que se passe-t-il entre l'obstacle détecté et le demi-tour du robot ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A01_AnatomieMBot_4eme",
+    ebep: "EBEP_S6-A01_MBot_4eme",
+  },
+  {
+    code: "S6-A01", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Représenter",
+    titre: "LE ROBOT ASPIRATEUR : PROGRAMMER SANS ORDINATEUR",
+    question: "PROBLÉMATIQUE : Comment donner des ordres à une machine qui ne comprend que des instructions précises ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A01_Debranche_5eme",
+    ebep: "EBEP_S6-A01_Debranche_5eme",
+  },
+  {
+    code: "S6-A02", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "mBLOCK : MES PREMIERS PROGRAMMES SUR SYSTÈME RÉEL",
+    question: "PROBLÉMATIQUE : Comment programmer un robot réel… et régler ce que la simulation ne montre pas ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A02_mBlock_4eme",
+    ebep: "EBEP_S6-A02_mBlock_4eme",
+  },
+  {
+    code: "S6-A02", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "SCRATCH (1) : LE PARCOURS CARRÉ",
+    question: "PROBLÉMATIQUE : Comment traduire mon algorithme papier en programme qui s'exécute ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A02_Scratch1_5eme",
+    ebep: "EBEP_S6-A02_Scratch1_5eme",
+  },
+  {
+    code: "S6-A03", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "CAPTEURS : ÉVITER UN OBSTACLE, SUIVRE UNE LIGNE",
+    question: "PROBLÉMATIQUE : Comment un robot peut-il adapter son comportement à ce que mesurent ses capteurs ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A03_Capteurs_4eme",
+    ebep: "EBEP_S6-A03_Capteurs_4eme",
+  },
+  {
+    code: "S6-A03", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Modéliser",
+    titre: "SCRATCH (2) : VARIABLES ET ÉVÉNEMENTS",
+    question: "PROBLÉMATIQUE : Comment un programme peut-il mémoriser et faire évoluer une valeur ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A03_Scratch2_5eme",
+    ebep: "EBEP_S6-A03_Scratch2_5eme",
+  },
+  {
+    code: "S6-A04", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Produire",
+    titre: "LE GRAND DÉFI ROBOT DES MAISONS",
+    question: "PROBLÉMATIQUE : Comment mesurer et améliorer objectivement la performance d'un système programmé ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A04_DefiRobot_4eme",
+    ebep: "EBEP_S6-A04_Defi_4eme",
+  },
+  {
+    code: "S6-A04", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "", // À COMPLÉTER — non extrait automatiquement
+    phase: "Produire",
+    titre: "LE DÉFI SCRATCH DES MAISONS",
+    question: "PROBLÉMATIQUE : Comment concevoir, tester et améliorer un programme qui répond à un cahier des charges ?",
+    objectif: "", // À COMPLÉTER
+    competences: [], // À COMPLÉTER
+    prerequis: "", // À COMPLÉTER
+    materiel: "", // À COMPLÉTER
+    fiche: "FICHE_S6-A04_DefiScratch_5eme",
+    ebep: "EBEP_S6-A04_Defi_5eme",
+  },
+];
+
+const SEQUENCES = [
+  { SEQ, ACTIVITES: ACTIVITES_SEQ05 },
+  { SEQ: SEQ_SEQ02, ACTIVITES: ACTIVITES_SEQ02 },
+  { SEQ: SEQ_SEQ03, ACTIVITES: ACTIVITES_SEQ03 },
+  { SEQ: SEQ_SEQ04, ACTIVITES: ACTIVITES_SEQ04 },
+  { SEQ: SEQ_SEQ06, ACTIVITES: ACTIVITES_SEQ06 },
+];
+
+module.exports = { ANNEE, SEQ, ACTIVITES: ACTIVITES_SEQ05, SEQUENCES, slug };

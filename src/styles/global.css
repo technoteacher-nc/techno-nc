@@ -100,6 +100,46 @@ body {
 }
 .hero p { color: var(--mine); margin: 0; max-width: 54ch; font-size: 1.02rem; }
 
+/* ---------- accueil : cartes niveau ---------- */
+.accueil-niveaux {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  margin: 2.5rem 0 1rem;
+}
+.accueil-carte {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: 1.5rem 1.5rem 1.35rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait);
+  text-decoration: none; color: inherit; position: relative;
+}
+.accueil-carte:hover { border-color: var(--encre); background: var(--calque); }
+.accueil-carte:hover .aller { transform: translateX(3px); opacity: 1; }
+.accueil-carte:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.accueil-carte-titre {
+  font-family: var(--display); font-weight: 700; font-size: 1.6rem;
+  letter-spacing: -.02em;
+}
+.accueil-carte-resume {
+  font-family: var(--mono); font-size: .74rem; color: var(--mine);
+  letter-spacing: .02em;
+}
+.accueil-carte .aller {
+  position: absolute; top: 1.4rem; right: 1.4rem;
+}
+@media (max-width: 32rem) {
+  .accueil-niveaux { grid-template-columns: 1fr; }
+}
+
+/* ---------- code couleur des phases (identité, jamais la seule porteuse
+   de sens : le texte de la phase reste toujours visible à côté) ----------
+   Palette validée (six checks CVD/contraste, scripts/validate_palette.js),
+   dans l'ordre pédagogique fixe Analyser → Représenter → Modéliser →
+   Fabriquer → Produire. */
+[data-phase="Analyser"]     { --phase: var(--bleu); }
+[data-phase="Représenter"]  { --phase: #C8447A; }
+[data-phase="Modéliser"]    { --phase: var(--vif); }
+[data-phase="Fabriquer"]    { --phase: #D9791E; }
+[data-phase="Produire"]     { --phase: #6B4FCC; }
+
 /* ---------- SIGNATURE : la chaîne du processus ---------- */
 .niveau-bloc { margin: 3rem 0 0; }
 .niveau-titre {
@@ -134,7 +174,7 @@ body {
   border-radius: var(--r);
 }
 .maillon:hover { background: var(--calque); }
-.maillon:hover .num { border-color: var(--vif); color: var(--encre); }
+.maillon:hover .num { border-color: var(--phase, var(--vif)); color: var(--encre); }
 .maillon:hover .aller { transform: translateX(3px); opacity: 1; }
 .maillon:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
 
@@ -143,16 +183,23 @@ body {
   width: 40px; height: 40px; border-radius: 50%;
   display: grid; place-items: center;
   background: var(--papier);
-  border: 2px solid var(--trait);
+  border: 2px solid var(--phase, var(--trait));
   font-family: var(--display); font-weight: 700; font-size: .95rem;
-  color: var(--mine);
+  color: var(--phase, var(--mine));
   transition: border-color .15s, color .15s;
 }
 
 .corps { min-width: 0; }
 .phase {
-  font-family: var(--mono); font-size: .66rem; font-weight: 600;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--vif);
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-family: var(--mono); font-size: .64rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--encre);
+  padding: .18rem .55rem .18rem .45rem; border-radius: 100px;
+  background: color-mix(in srgb, var(--phase, var(--mine)) 15%, transparent);
+}
+.phase::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%; flex: none;
+  background: var(--phase, var(--mine));
 }
 .titre {
   font-family: var(--display); font-weight: 600; font-size: 1.02rem;
@@ -180,6 +227,11 @@ body {
 .fil a:hover { color: var(--bleu); }
 
 .act-tete { padding: .5rem 0 1.75rem; }
+.act-repere { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+.eyebrow-mini {
+  font-family: var(--mono); font-size: .7rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--mine);
+}
 .act-tete h1 {
   font-family: var(--display);
   font-size: clamp(1.6rem, 5vw, 2.5rem);

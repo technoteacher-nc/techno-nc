@@ -1,0 +1,20 @@
+---
+code: "S6-A04"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: ""
+phase: "Produire"
+titre: "LE GRAND DÉFI ROBOT DES MAISONS"
+question: "PROBLÉMATIQUE : Comment mesurer et améliorer objectivement la performance d'un système programmé ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A04_DefiRobot_4eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A04_DefiRobot_4eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A04_Defi_4eme.pdf"
+qr: "/qr/s6-a04-4eme.png"
+---

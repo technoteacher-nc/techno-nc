@@ -1,0 +1,20 @@
+---
+code: "S3-A03"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: ""
+phase: "Analyser"
+titre: "NAVIGATEUR, MOTEUR, SYSTÈME : QUI FAIT QUOI ?"
+question: "PROBLÉMATIQUE : Quels logiciels utilisons-nous vraiment pour aller sur Internet, et qui les possède ?"
+objectif: ""
+competences: []
+prerequis: ""
+materiel: ""
+annee: "2026"
+seq: "seq03"
+seqTitre: "Séquence 03 — DONNÉES"
+fichePdf: "/2026/seq03/FICHE_S3-A03_LogicielsGAFAM_5eme.pdf"
+ficheDocx: "/2026/seq03/FICHE_S3-A03_LogicielsGAFAM_5eme.docx"
+ebepPdf: "/2026/seq03/EBEP_S3-A03_Logiciels_5eme.pdf"
+qr: "/qr/s3-a03-5eme.png"
+---
