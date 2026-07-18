@@ -8,7 +8,7 @@ titre: "LE DÉFI SCRATCH DES MAISONS"
 question: "PROBLÉMATIQUE : Comment concevoir, tester et améliorer un programme qui répond à un cahier des charges ?"
 objectif: "Concevoir, tester et améliorer un programme répondant à un cahier des charges (labyrinthe) ; pratiquer la revue de code."
 competences:
-  - "CCRI33 — Mettre au point un programme et tester s'il répond au besoin"
+  - "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests"
 prerequis: "S6-A02/A03."
 materiel: "Scratch + fond de scène labyrinthe (préparé la veille) · chrono · fiches S6-A04 (+ EBEP) · ÉVAL E6 · Kahoot bilan (S36)"
 annee: "2026"

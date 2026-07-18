@@ -8,7 +8,7 @@ titre: "PHISHING : L'AUDIT DE LA BOÎTE MAIL"
 question: "PROBLÉMATIQUE : Comment repérer un message piégé, et comment verrouiller ses accès ?"
 objectif: "Repérer les 5 indices d'un message piégé, auditer un corpus de 6 e-mails avec preuves, comprendre la double authentification."
 competences:
-  - "OST15 — Règles pour sécuriser un environnement numérique : identification, authentification"
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "SEQ03 : URL, nom de domaine (indispensable pour l'indice « adresse imitée »)."
 materiel: "PPTX (exemple annoté + corpus de 6 e-mails fictifs) · fiches S4-A01 (+ EBEP)"
 annee: "2026"

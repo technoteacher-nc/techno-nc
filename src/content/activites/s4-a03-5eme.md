@@ -8,7 +8,7 @@ titre: "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR"
 question: "PROBLÉMATIQUE : Comment reconnaître le cyberharcèlement, et que faire — que l'on soit victime ou témoin ?"
 objectif: "Identifier les 3 critères du harcèlement, connaître les réflexes de la victime ET du témoin, mémoriser le 3018."
 competences:
-  - "OST16 — Mesurer la responsabilité de chacun dans les dérives : cyberviolence, harcèlement"
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "S4-A02."
 materiel: "PPTX (critères, acteurs/réflexes, modèle d'affiche, 3018) · salle info (groupe) · fiches S4-A03 (+ EBEP)"
 annee: "2026"

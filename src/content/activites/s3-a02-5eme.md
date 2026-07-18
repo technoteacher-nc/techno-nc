@@ -8,7 +8,7 @@ titre: "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS"
 question: "PROBLÉMATIQUE : Quel chemin parcourt un message qui voyage sur Internet ?"
 objectif: "Décrire le trajet d'un message sur Internet (paquets, serveurs, câbles sous-marins) et situer la NC dans le réseau mondial (Gondwana)."
 competences:
-  - "SFC17 — réseau mondial, rôle d'un serveur, adresse IP"
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "S3-A01 : serveur, réseau local."
 materiel: "PPTX (carte Gondwana + doc chiffres) · vidéo « fonctionnement du réseau » · fiches S3-A02 (+ EBEP)"
 annee: "2026"

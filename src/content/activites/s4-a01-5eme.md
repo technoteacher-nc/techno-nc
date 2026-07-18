@@ -8,7 +8,7 @@ titre: "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE"
 question: "PROBLÉMATIQUE : Comment protéger efficacement mes comptes ?"
 objectif: "Comprendre ce qui rend un mot de passe robuste (longueur, phrase de passe), adopter les règles d'or, définir l'identité numérique."
 competences:
-  - "OST15 — Identifier des règles pour sécuriser un environnement numérique (identification, authentification)"
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "SEQ03 : session, identifiants."
 materiel: "PPTX (tableau temps de cassage + modèle affichette) · salle info (groupe) · fiches S4-A01 (+ EBEP)"
 annee: "2026"

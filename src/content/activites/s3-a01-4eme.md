@@ -8,7 +8,7 @@ titre: "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR"
 question: "PROBLÉMATIQUE : Comment les ordinateurs sont-ils organisés en réseaux, et comment deux réseaux différents communiquent-ils ?"
 objectif: "Identifier terminal/switch/routeur/serveur, comprendre la structure d'une adresse IP et la séparation des réseaux."
 competences:
-  - "SFC17 — rôle terminal, commutateur, routeur, serveur ; structure d'une adresse IP"
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "SEQ01 (périphériques), notion de serveur."
 materiel: "PPTX (schéma 2 réseaux admin/pédago + structure IP) · fiches S3-A01 (+ EBEP)"
 annee: "2026"

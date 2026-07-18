@@ -8,7 +8,7 @@ titre: "L'atelier de fabrication : imprimante 3D et découpe laser"
 question: "Comment une machine fabrique-t-elle un objet à partir d'un simple fichier ?"
 objectif: "Découvrir les procédés additif et soustractif, les règles de sécurité d'atelier, comparer les procédés."
 competences:
-  - "SFC23 — Découvrir les procédés d'un atelier de fabrication"
+  - "Thème 2 — Identifier un dysfonctionnement d'un objet technique et y remédier"
 prerequis: "S5-A05 (maquettes fabriquées)."
 materiel: "Imprimante 3D · découpeuse laser · fiche S5-A06 · maquettes de S30"
 annee: "2026"

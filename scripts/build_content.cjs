@@ -63,10 +63,8 @@ function yamlList(arr) {
   for (const { SEQ, ACTIVITES } of SEQUENCES) {
     const srcDocx = path.join(SRC_ROOT, SEQ.code);
     const srcPdf = path.join(srcDocx, "pdf");
-    if (!fs.existsSync(srcDocx)) {
-      ignorees.push(SEQ.code);
-      continue;
-    }
+    const hasSource = fs.existsSync(srcDocx);
+    if (!hasSource) ignorees.push(SEQ.code); // docx/pdf déjà en place : pas de recopie, mais le markdown se régénère quand même
 
     const pubDocs = path.join(ROOT, "public", ANNEE, SEQ.code);
     fs.mkdirSync(pubDocs, { recursive: true });
@@ -76,11 +74,13 @@ function yamlList(arr) {
       const s = slug(a);
       const url = `${BASE_URL}/${ANNEE}/${SEQ.code}/${s}`;
 
-      // --- documents
-      const f = copie(a.fiche, srcDocx, srcPdf, pubDocs);
-      const e = copie(a.ebep, srcDocx, srcPdf, pubDocs);
-      if (a.fiche && !f.pdf) manquants.push(a.fiche + ".pdf");
-      if (a.ebep && !e.pdf) manquants.push(a.ebep + ".pdf");
+      // --- documents (uniquement si un dossier source est disponible)
+      if (hasSource) {
+        const f = copie(a.fiche, srcDocx, srcPdf, pubDocs);
+        const e = copie(a.ebep, srcDocx, srcPdf, pubDocs);
+        if (a.fiche && !f.pdf) manquants.push(a.fiche + ".pdf");
+        if (a.ebep && !e.pdf) manquants.push(a.ebep + ".pdf");
+      }
 
       // --- QR code (pointe vers la page activité, pas vers le PDF :
       //     l'URL de page reste stable même si le nom de fichier change)
