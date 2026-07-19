@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base
+  titre="Page introuvable — Académie Technologique"
+  description="Cette page n'existe pas ou a été déplacée."
+  robots="noindex">
+
+  <section class="hero">
+    <span class="eyebrow">Erreur 404</span>
+    <h1>Page <em>introuvable</em></h1>
+    <p>
+      Cette page n'existe pas ou a été déplacée. Si tu as scanné un QR code,
+      reprends depuis ta classe : chaque activité y est listée dans l'ordre.
+    </p>
+  </section>
+
+  <div class="accueil-niveaux">
+    <a class="accueil-carte" href={base + '/5eme'}>
+      <span class="accueil-carte-titre">5ème</span>
+      <span class="accueil-carte-resume">toutes les séquences</span>
+      <span class="aller" aria-hidden="true">→</span>
+    </a>
+    <a class="accueil-carte" href={base + '/4eme'}>
+      <span class="accueil-carte-titre">4ème</span>
+      <span class="accueil-carte-resume">toutes les séquences</span>
+      <span class="aller" aria-hidden="true">→</span>
+    </a>
+  </div>
+</Base>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://technoteacher-nc.github.io/techno-nc/sitemap-index.xml

@@ -1,8 +1,11 @@
 ---
 import '../styles/global.css';
-const { titre, description } = Astro.props;
+const { titre, description, robots = 'index,follow' } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const path = Astro.url.pathname;
+const canonique = new URL(path.endsWith('/') ? path : path + '/', Astro.site);
+const imageOg = new URL(base + '/og-cover.png', Astro.site);
+const annee = new Date().getFullYear();
 ---
 <!doctype html>
 <html lang="fr">
@@ -11,27 +14,55 @@ const path = Astro.url.pathname;
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{titre}</title>
   <meta name="description" content={description} />
-  <meta name="robots" content="index,follow" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>⚙</text></svg>" />
+  <meta name="robots" content={robots} />
+  <meta name="theme-color" content="#FCFCFA" />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="canonical" href={canonique} />
+
+  <meta property="og:site_name" content="Académie Technologique" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content={titre} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonique} />
+  <meta property="og:image" content={imageOg} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Académie Technologique — toutes tes séquences de Technologie" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={titre} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={imageOg} />
+
+  <link rel="icon" href={base + '/favicon.svg'} type="image/svg+xml" />
+  <link rel="icon" href={base + '/favicon-32.png'} type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href={base + '/apple-touch-icon.png'} />
+  <link rel="manifest" href={base + '/site.webmanifest'} />
+  <link rel="sitemap" href={base + '/sitemap-index.xml'} />
+  <link rel="preload" href={base + '/fonts/space-grotesk-latin-wght-normal.woff2'}
+        as="font" type="font/woff2" crossorigin />
+  <slot name="tete" />
 </head>
 <body>
+  <a class="acces" href="#contenu">Aller au contenu</a>
+
   <header class="site-head">
     <div class="wrap">
       <a class="marque" href={base + '/'}>ACADÉMIE TECHNOLOGIQUE</a>
-      <nav>
+      <nav aria-label="Navigation principale">
         <a href={base + '/5eme'} aria-current={path.includes('/5eme') ? 'page' : undefined}>5ème</a>
         <a href={base + '/4eme'} aria-current={path.includes('/4eme') ? 'page' : undefined}>4ème</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
+  <main id="contenu" class="wrap">
     <slot />
   </main>
 
   <footer class="site-pied">
     <div class="wrap">
-      <p>Collège d'Auteuil — Nouvelle-Calédonie · Programme 2024 (BO n°9)</p>
+      <p>© {annee} Collège d'Auteuil — Nouvelle-Calédonie · Programme 2024 (BO n°9)</p>
       <p>Ressources sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license">CC BY-NC-SA 4.0</a> — réutilisables en citant la source.</p>
       <p>Aucun compte, aucun cookie, aucun traceur.</p>
     </div>

@@ -1,6 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { statSync } from 'node:fs';
+import path from 'node:path';
 
 export async function getStaticPaths() {
   const acts = await getCollection('activites');
@@ -20,11 +22,53 @@ const { act, prec, suiv, rang, total } = Astro.props;
 const d = act.data;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
+
+// Poids d'un document de public/, mesuré au build : affiché sur le bouton
+// pour que l'élève sache ce qu'il télécharge (connexions lentes).
+function poids(rel) {
+  if (!rel) return null;
+  try {
+    const octets = statSync(path.join(process.cwd(), 'public', rel)).size;
+    return octets >= 1048576
+      ? (octets / 1048576).toFixed(1).replace('.', ',') + ' Mo'
+      : Math.max(1, Math.round(octets / 1024)) + ' Ko';
+  } catch { return null; }
+}
+const pFiche = poids(d.fichePdf), pEbep = poids(d.ebepPdf), pDocx = poids(d.ficheDocx);
+
+const urlPage = new URL(u(`/${d.annee}/${d.seq}/${act.id}`) + '/', Astro.site).href;
+const donneesLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: new URL(u('/'), Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: d.niveauLabel, item: new URL(u('/' + d.niveau) + '/', Astro.site).href },
+      { '@type': 'ListItem', position: 3, name: d.titre, item: urlPage },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: `${d.code} — ${d.titre}`,
+    description: d.question,
+    url: urlPage,
+    inLanguage: 'fr',
+    educationalLevel: d.niveauLabel,
+    learningResourceType: "Fiche d'activité",
+    isAccessibleForFree: true,
+    license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+    isPartOf: { '@type': 'Course', name: d.seqTitre },
+    provider: { '@type': 'EducationalOrganization', name: "Collège d'Auteuil" },
+  },
+];
 ---
 <Base titre={`${d.code} ${d.niveauLabel} — ${d.titre}`} description={d.question}>
 
-  <nav class="fil">
-    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / {d.seqTitre}
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / <a href={u('/' + d.niveau) + '#' + d.seq}>{d.seqTitre}</a>
   </nav>
 
   <header class="act-tete">
@@ -36,14 +80,20 @@ const u = p => base + p;
     <p class="question">{d.question}</p>
 
     <div class="docs">
-      <a class="btn btn--fort" href={u(d.fichePdf)}>Télécharger la fiche</a>
-      {d.ebepPdf && <a class="btn" href={u(d.ebepPdf)}>Version adaptée</a>}
-      <a class="btn" href={u(d.ficheDocx)}>Fiche modifiable</a>
+      <a class="btn btn--fort" href={u(d.fichePdf)} download>
+        Télécharger la fiche{pFiche && <span class="btn-meta">PDF · {pFiche}</span>}
+      </a>
+      {d.ebepPdf && <a class="btn" href={u(d.ebepPdf)} download>
+        Version adaptée{pEbep && <span class="btn-meta">PDF · {pEbep}</span>}
+      </a>}
+      <a class="btn" href={u(d.ficheDocx)} download>
+        Fiche modifiable{pDocx && <span class="btn-meta">DOCX · {pDocx}</span>}
+      </a>
     </div>
   </header>
 
   {(d.objectif || d.competences.length || d.prerequis || d.materiel) && (
-    <section class="meta">
+    <section class="meta" aria-label="Repères de l'activité">
       <dl>
         {d.objectif && <><dt>Objectif</dt><dd>{d.objectif}</dd></>}
         {d.competences.length > 0 && <><dt>Compétences</dt><dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd></>}
@@ -61,12 +111,18 @@ const u = p => base + p;
     </p>
   </section>
 
-  <nav class="suite">
+  <nav class="suite" aria-label="Activités voisines dans la séquence">
     {prec
-      ? <a href={u(`/${prec.data.annee}/${prec.data.seq}/${prec.id}`)}>← {prec.data.phase}</a>
+      ? <a class="suite-lien" rel="prev" href={u(`/${prec.data.annee}/${prec.data.seq}/${prec.id}`)}>
+          <span class="suite-dir">← Étape {rang - 1} · {prec.data.phase}</span>
+          <span class="suite-titre">{prec.data.titre}</span>
+        </a>
       : <span></span>}
     {suiv
-      ? <a href={u(`/${suiv.data.annee}/${suiv.data.seq}/${suiv.id}`)}>{suiv.data.phase} →</a>
+      ? <a class="suite-lien suite-lien--droite" rel="next" href={u(`/${suiv.data.annee}/${suiv.data.seq}/${suiv.id}`)}>
+          <span class="suite-dir">Étape {rang + 1} · {suiv.data.phase} →</span>
+          <span class="suite-titre">{suiv.data.titre}</span>
+        </a>
       : <span></span>}
   </nav>
 

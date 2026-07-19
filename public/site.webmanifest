@@ -1,0 +1,15 @@
+{
+  "name": "Académie Technologique",
+  "short_name": "Techno NC",
+  "description": "Fiches d'activité de Technologie, cycle 4, programme 2024 — Collège d'Auteuil, Nouvelle-Calédonie.",
+  "start_url": "/techno-nc/",
+  "scope": "/techno-nc/",
+  "display": "minimal-ui",
+  "background_color": "#FCFCFA",
+  "theme_color": "#FCFCFA",
+  "lang": "fr",
+  "icons": [
+    { "src": "/techno-nc/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/techno-nc/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

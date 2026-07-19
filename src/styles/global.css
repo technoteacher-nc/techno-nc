@@ -42,6 +42,16 @@ body {
 
 .wrap { max-width: var(--col); margin: 0 auto; padding: 0 1.25rem; }
 
+/* lien d'évitement : invisible jusqu'au focus clavier */
+.acces {
+  position: absolute; left: 1rem; top: -3rem; z-index: 20;
+  font-family: var(--display); font-weight: 600; font-size: .85rem;
+  color: var(--papier); background: var(--encre);
+  padding: .55rem 1rem; border-radius: 0 0 var(--r) var(--r);
+  text-decoration: none; transition: top .15s;
+}
+.acces:focus-visible { top: 0; outline: 2px solid var(--vif); outline-offset: 2px; }
+
 /* ---------- en-tête ---------- */
 .site-head {
   border-bottom: 1px solid var(--trait);
@@ -141,7 +151,7 @@ body {
 [data-phase="Produire"]     { --phase: #6B4FCC; }
 
 /* ---------- SIGNATURE : la chaîne du processus ---------- */
-.niveau-bloc { margin: 3rem 0 0; }
+.niveau-bloc { margin: 3rem 0 0; scroll-margin-top: 4.5rem; /* ancres sous l'en-tête collant */ }
 .niveau-titre {
   font-family: var(--display); font-weight: 700;
   font-size: 1.35rem; letter-spacing: -.02em;
@@ -261,6 +271,13 @@ body {
   background: var(--encre); border-color: var(--encre); color: var(--papier);
 }
 .btn--fort:hover { background: var(--bleu); border-color: var(--bleu); }
+.btn-meta {
+  font-family: var(--mono); font-weight: 500; font-size: .68rem;
+  letter-spacing: .04em; color: var(--mine);
+  padding-left: .55rem; margin-left: .1rem;
+  border-left: 1px solid var(--trait);
+}
+.btn--fort .btn-meta { color: var(--papier); opacity: .75; border-left-color: rgba(252, 252, 250, .35); }
 
 /* méta */
 .meta { margin: 2.25rem 0; }
@@ -292,14 +309,28 @@ body {
 }
 .qr p { margin: 0; font-size: .85rem; color: var(--mine); line-height: 1.5; }
 
-/* suite */
+/* suite : étape précédente / suivante */
 .suite {
   display: flex; justify-content: space-between; gap: 1rem;
   margin: 2rem 0 0; padding-top: 1.25rem; border-top: 1px solid var(--trait);
-  font-family: var(--display); font-weight: 600; font-size: .88rem;
 }
-.suite a { color: var(--bleu); text-decoration: none; }
-.suite a:hover { text-decoration: underline; }
+.suite-lien {
+  display: flex; flex-direction: column; gap: .2rem;
+  max-width: 46%; text-decoration: none;
+  padding: .5rem .65rem; margin: -.5rem -.65rem; border-radius: var(--r);
+}
+.suite-lien:hover { background: var(--calque); }
+.suite-lien:hover .suite-titre { color: var(--bleu); }
+.suite-lien:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.suite-lien--droite { text-align: right; margin-left: auto; }
+.suite-dir {
+  font-family: var(--mono); font-size: .68rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--mine);
+}
+.suite-titre {
+  font-family: var(--display); font-weight: 600; font-size: .95rem;
+  line-height: 1.3; color: var(--encre); letter-spacing: -.01em;
+}
 
 /* ---------- pied ---------- */
 .site-pied { margin-top: 4rem; border-top: 1px solid var(--trait); }
@@ -313,4 +344,15 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+
+/* ---------- impression : la page activité devient une fiche sobre ---------- */
+@media print {
+  .acces, .site-head nav, .site-pied, .suite, .fil { display: none !important; }
+  .site-head { position: static; border-bottom: 2px solid var(--encre); }
+  body { font-size: 12pt; background: #fff; }
+  .btn { border: 1px solid var(--trait); }
+  .btn--fort { background: #fff; color: var(--encre); }
+  .btn--fort .btn-meta { color: var(--mine); opacity: 1; }
+  a { color: var(--encre); }
 }

@@ -44,8 +44,8 @@ const sequences = [...parSeq.entries()]
   </section>
 
   {sequences.map(seq => (
-    <section class="niveau-bloc">
-      <h2 class="niveau-titre">
+    <section class="niveau-bloc" id={seq.code} aria-labelledby={`titre-${seq.code}`}>
+      <h2 class="niveau-titre" id={`titre-${seq.code}`}>
         {seq.titre}
         <span>{seq.items.length} activité{seq.items.length > 1 ? 's' : ''}</span>
       </h2>

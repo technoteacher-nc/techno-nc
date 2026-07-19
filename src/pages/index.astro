@@ -15,10 +15,26 @@ function resume(niveauId) {
   const nbSequences = new Set(items.map(a => a.data.seq)).size;
   return { nbActivites: items.length, nbSequences };
 }
+
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Académie Technologique',
+  url: new URL(base + '/', Astro.site).href,
+  description: "Fiches d'activité de Technologie, cycle 4, programme 2024. Collège d'Auteuil, Nouvelle-Calédonie.",
+  inLanguage: 'fr',
+  publisher: {
+    '@type': 'EducationalOrganization',
+    name: "Collège d'Auteuil",
+    address: { '@type': 'PostalAddress', addressRegion: 'Nouvelle-Calédonie', addressCountry: 'FR' },
+  },
+};
 ---
 <Base
   titre="Académie Technologique — Technologie au collège, Nouvelle-Calédonie"
   description="Fiches d'activité de Technologie, cycle 4, programme 2024. Collège d'Auteuil, Nouvelle-Calédonie.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
   <section class="hero">
     <span class="eyebrow">Académie Technologique</span>
