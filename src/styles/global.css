@@ -356,6 +356,24 @@ body {
   margin: .3rem 0 .95rem; color: var(--mine); max-width: 68ch;
   line-height: 1.55;
 }
+.synth-grille {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  margin: 1.25rem 0 0;
+}
+.synth-carte {
+  display: flex; flex-direction: column; gap: .4rem;
+  padding: 1.25rem 1.25rem 1.1rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait);
+}
+.synth-carte h3 {
+  font-family: var(--display); font-weight: 700; font-size: 1.15rem;
+  letter-spacing: -.015em; margin: 0;
+}
+.synth-carte p { margin: 0; color: var(--mine); font-size: .92rem; line-height: 1.5; }
+.synth-carte .docs { margin-top: .85rem; }
+@media (max-width: 40rem) {
+  .synth-grille { grid-template-columns: 1fr; }
+}
 
 /* ---------- pied ---------- */
 .site-pied { margin-top: 4rem; border-top: 1px solid var(--trait); }

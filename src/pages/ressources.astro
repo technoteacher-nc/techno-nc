@@ -19,6 +19,21 @@ const pdfLexique = '/ressources/LEXIQUE_Technologie_Cycle4.pdf';
 const docxLexique = '/ressources/LEXIQUE_Technologie_Cycle4.docx';
 const pPdf = poids(pdfLexique), pDocx = poids(docxLexique);
 
+const syntheses = [
+  {
+    titre: "Les deux chaînes d'un objet",
+    description: "Chaîne d'information (capteur, microcontrôleur) et chaîne d'énergie (actionneur), avec l'exemple du robot mBot. Schémas + quiz.",
+    pdf: '/ressources/SYNTHESE_ChainesEnergieInformation_Cycle4.pdf',
+    docx: '/ressources/SYNTHESE_ChainesEnergieInformation_Cycle4.docx',
+  },
+  {
+    titre: "Le cycle de vie d'un objet",
+    description: "Des matières premières à la fin de vie : les 5 étapes, la réparabilité et le cas particulier de la Nouvelle-Calédonie. Schéma + quiz.",
+    pdf: '/ressources/SYNTHESE_CycleDeVie_Cycle4.pdf',
+    docx: '/ressources/SYNTHESE_CycleDeVie_Cycle4.docx',
+  },
+];
+
 const sections = [
   {
     titre: 'Analyser et concevoir les objets et systèmes techniques',
@@ -103,6 +118,30 @@ const donneesLd = [
       toute l'année, en 5ème comme en 4ème. Commence par le lexique — ces mots
       sont ceux de l'épreuve de technologie du Brevet.
     </p>
+  </section>
+
+  <section class="lexique-section" aria-label="Fiches de synthèse">
+    <h2 class="niveau-titre">Fiches de synthèse <span>À RELIRE AVANT UNE ÉVAL</span></h2>
+    <div class="synth-grille">
+      {syntheses.map(s => {
+        const sp = poids(s.pdf), sd = poids(s.docx);
+        return (
+          <article class="synth-carte">
+            <span class="eyebrow-mini">Synthèse · cycle 4</span>
+            <h3>{s.titre}</h3>
+            <p>{s.description}</p>
+            <div class="docs">
+              <a class="btn btn--fort" href={u(s.pdf)} download>
+                PDF{sp && <span class="btn-meta">{sp}</span>}
+              </a>
+              <a class="btn" href={u(s.docx)} download>
+                DOCX{sd && <span class="btn-meta">{sd}</span>}
+              </a>
+            </div>
+          </article>
+        );
+      })}
+    </div>
   </section>
 
   <article class="ressource" aria-labelledby="lexique-titre">
