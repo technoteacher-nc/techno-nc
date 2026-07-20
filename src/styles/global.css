@@ -332,6 +332,31 @@ body {
   line-height: 1.3; color: var(--encre); letter-spacing: -.01em;
 }
 
+/* ---------- ressources : lexique ---------- */
+.ressource { margin-top: 1rem; }
+.ressource-titre {
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 4.5vw, 2.1rem);
+  line-height: 1.1; letter-spacing: -.025em; font-weight: 700;
+  margin: .6rem 0 .75rem;
+}
+.lexique-section { margin: 2.75rem 0 0; }
+.lexique { margin: 1rem 0 0; }
+.lexique dt {
+  font-family: var(--display); font-weight: 600; font-size: 1rem;
+  letter-spacing: -.01em;
+  padding-top: .8rem; border-top: 1px solid var(--trait);
+}
+.lexique dt::before {
+  content: ''; display: inline-block; width: 7px; height: 7px;
+  margin-right: .55rem; border-radius: 2px;
+  background: var(--vif); transform: rotate(45deg) translateY(-1px);
+}
+.lexique dd {
+  margin: .3rem 0 .95rem; color: var(--mine); max-width: 68ch;
+  line-height: 1.55;
+}
+
 /* ---------- pied ---------- */
 .site-pied { margin-top: 4rem; border-top: 1px solid var(--trait); }
 .site-pied .wrap { padding-top: 1.5rem; padding-bottom: 2.5rem; }

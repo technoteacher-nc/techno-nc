@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro';
+import { statSync } from 'node:fs';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+// Poids d'un document de public/, mesuré au build (même logique que la page activité).
+function poids(rel) {
+  try {
+    const octets = statSync(path.join(process.cwd(), 'public', rel)).size;
+    return octets >= 1048576
+      ? (octets / 1048576).toFixed(1).replace('.', ',') + ' Mo'
+      : Math.max(1, Math.round(octets / 1024)) + ' Ko';
+  } catch { return null; }
+}
+const pdfLexique = '/ressources/LEXIQUE_Technologie_Cycle4.pdf';
+const docxLexique = '/ressources/LEXIQUE_Technologie_Cycle4.docx';
+const pPdf = poids(pdfLexique), pDocx = poids(docxLexique);
+
+const sections = [
+  {
+    titre: 'Analyser et concevoir les objets et systèmes techniques',
+    repere: 'OST',
+    termes: [
+      ['Objet et Système Technique (OST)', "Ensemble des produits, services, logiciels et programmes créés pour répondre à un besoin. On passe de l'objet seul (une montre connectée) au système (la montre reliée à un réseau de géolocalisation)."],
+      ['Besoin', "Nécessité ou désir éprouvé par un utilisateur, auquel l'objet technique doit répondre."],
+      ['Cahier des charges (CDC)', "Document qui liste les fonctions attendues, les contraintes (sécurité, environnement…) et les critères de performance d'un objet."],
+      ['Contrainte', "Exigence liée à l'usage, à la sécurité, à l'ergonomie ou au développement durable, que le concepteur doit respecter."],
+      ['Cycle de vie', "Ensemble des étapes de la vie d'un objet, de l'extraction des matières premières à sa fin de vie (recyclage ou déchet), en passant par sa fabrication et son utilisation."],
+    ],
+  },
+  {
+    titre: 'La structure interne — Matière, Énergie, Information',
+    repere: 'MEI',
+    termes: [
+      ["Chaîne d'énergie", "Ensemble des constituants qui permettent de réaliser une action (mouvement, chaleur, lumière). Ses fonctions : alimenter (batterie), distribuer (relais), convertir (moteur, lampe) et transmettre (engrenages)."],
+      ["Chaîne d'information", "Ensemble des constituants qui permettent d'acquérir des données, de les traiter et de les communiquer."],
+      ['Capteur', "Élément de la chaîne d'information qui prélève une grandeur physique (température, présence, distance…) et la transforme en signal exploitable."],
+      ['Actionneur', "Élément de la chaîne d'énergie qui transforme l'énergie reçue en un effet physique (rotation d'un moteur, mouvement d'un vérin…)."],
+      ['Microcontrôleur', "Unité de traitement de l'information qui exécute le programme pour piloter les actionneurs en fonction des données des capteurs."],
+    ],
+  },
+  {
+    titre: 'Informatique et programmation',
+    repere: 'CODE',
+    termes: [
+      ['Algorithme', "Description précise, étape par étape, de la manière de résoudre un problème."],
+      ['Programme (codage)', "Assemblage d'instructions informatiques (souvent par blocs au collège) qui guide un robot ou un objet connecté."],
+      ['Instruction conditionnelle', "Structure de type « Si… alors… sinon » qui exécute des actions différentes selon une condition."],
+      ['Variable', "Donnée stockée par le programme (nombre, mot ou booléen) dont la valeur peut changer pendant l'exécution."],
+      ['Réseau local', "Ensemble d'équipements informatiques (terminaux, commutateurs…) reliés entre eux pour échanger des données au sein d'un bâtiment."],
+    ],
+  },
+  {
+    titre: 'Innovation et prototypage',
+    repere: 'PROTO',
+    termes: [
+      ['Prototypage', "Réalisation d'un modèle concret, souvent simplifié, pour tester et valider des solutions techniques avant la fabrication finale."],
+      ['CAO / Modélisation numérique', "Utilisation de logiciels (Sweet Home 3D, SketchUp, Tinkercad…) pour créer une représentation virtuelle d'un objet en 3D et simuler son comportement."],
+      ['Fabrication additive', "Procédé de fabrication par ajout de matière, couramment appelé impression 3D."],
+    ],
+  },
+];
+
+const urlPage = new URL(u('/ressources/'), Astro.site).href;
+const donneesLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: new URL(u('/'), Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Ressources', item: urlPage },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: 'Lexique de Technologie — Cycle 4 & Brevet',
+    description: 'Le vocabulaire de Technologie à maîtriser en 5ème et en 4ème pour le Brevet des collèges (DNB).',
+    url: urlPage,
+    inLanguage: 'fr',
+    educationalLevel: 'Cycle 4',
+    learningResourceType: 'Lexique',
+    isAccessibleForFree: true,
+    license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+    provider: { '@type': 'EducationalOrganization', name: "Collège d'Auteuil" },
+  },
+];
+---
+<Base
+  titre="Ressources — Lexique de Technologie, cycle 4 & Brevet"
+  description="Documents ressources de Technologie : le lexique du cycle 4 (5ème et 4ème) à maîtriser pour le Brevet des collèges, à lire en ligne ou à imprimer.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <section class="hero">
+    <span class="eyebrow">Documents à conserver</span>
+    <h1>Tes <em>ressources</em> de l'année</h1>
+    <p>
+      Ici, pas d'activité à rendre : des documents de référence qui servent
+      toute l'année, en 5ème comme en 4ème. Commence par le lexique — ces mots
+      sont ceux de l'épreuve de technologie du Brevet.
+    </p>
+  </section>
+
+  <article class="ressource" aria-labelledby="lexique-titre">
+    <header class="act-tete">
+      <div class="act-repere">
+        <span class="eyebrow-mini">Document ressource · cycle 4</span>
+      </div>
+      <h2 id="lexique-titre" class="ressource-titre">Lexique de Technologie — Cycle 4 &amp; Brevet</h2>
+      <p class="question">Quels mots dois-je savoir utiliser pour parler comme un technologue ?</p>
+
+      <div class="docs">
+        <a class="btn btn--fort" href={u(pdfLexique)} download>
+          Télécharger le lexique{pPdf && <span class="btn-meta">PDF · {pPdf}</span>}
+        </a>
+        <a class="btn" href={u(docxLexique)} download>
+          Version modifiable{pDocx && <span class="btn-meta">DOCX · {pDocx}</span>}
+        </a>
+      </div>
+    </header>
+
+    {sections.map((s, i) => (
+      <section class="lexique-section" aria-label={s.titre}>
+        <h3 class="niveau-titre">{i + 1}. {s.titre} <span>{s.repere}</span></h3>
+        <dl class="lexique">
+          {s.termes.map(([mot, def]) => (
+            <>
+              <dt>{mot}</dt>
+              <dd>{def}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+    ))}
+  </article>
+
+  <section class="qr">
+    <img src={u('/qr/ressources.png')} alt="QR code vers la page Ressources" width="76" height="76" loading="lazy" />
+    <p>
+      Ce QR code est imprimé sur le lexique papier.<br />
+      Il ramène directement à cette page.
+    </p>
+  </section>
+
+</Base>
