@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-27T00:00:00Z",
+  "title": "Design System: Académie Technologique",
+  "extensions": {
+    "colorMeta": {
+      "vif": { "role": "primary", "displayName": "Turquoise de progression", "canonical": "oklch(68% 0.13 180)", "tonalRamp": ["oklch(20% 0.03 180)", "oklch(30% 0.06 180)", "oklch(40% 0.09 180)", "oklch(50% 0.11 180)", "oklch(60% 0.13 180)", "oklch(68% 0.13 180)", "oklch(82% 0.09 180)", "oklch(94% 0.03 180)"] },
+      "bleu": { "role": "secondary", "displayName": "Bleu de tracé", "canonical": "oklch(48% 0.17 260)", "tonalRamp": ["oklch(15% 0.05 260)", "oklch(25% 0.09 260)", "oklch(35% 0.13 260)", "oklch(42% 0.16 260)", "oklch(48% 0.17 260)", "oklch(60% 0.15 260)", "oklch(78% 0.08 260)", "oklch(92% 0.03 260)"] },
+      "encre": { "role": "neutral", "displayName": "Encre", "canonical": "oklch(24% 0.05 260)", "tonalRamp": ["oklch(10% 0.02 260)", "oklch(18% 0.04 260)", "oklch(24% 0.05 260)", "oklch(35% 0.05 260)", "oklch(50% 0.04 260)", "oklch(65% 0.03 260)", "oklch(85% 0.015 260)", "oklch(97% 0.005 260)"] },
+      "papier": { "role": "neutral", "displayName": "Papier", "canonical": "oklch(98.5% 0.004 90)", "tonalRamp": ["oklch(20% 0.01 90)", "oklch(35% 0.01 90)", "oklch(55% 0.008 90)", "oklch(75% 0.006 90)", "oklch(90% 0.005 90)", "oklch(96% 0.004 90)", "oklch(98.5% 0.004 90)", "oklch(100% 0 90)"] },
+      "calque": { "role": "neutral", "displayName": "Calque froid", "canonical": "oklch(94% 0.015 250)" },
+      "trait": { "role": "neutral", "displayName": "Trait de construction", "canonical": "oklch(82% 0.03 250)" },
+      "mine": { "role": "neutral", "displayName": "Mine de crayon", "canonical": "oklch(50% 0.03 250)" },
+      "phase-representer": { "role": "accent", "displayName": "Rose de repère", "canonical": "oklch(53% 0.17 355)" },
+      "phase-fabriquer": { "role": "accent", "displayName": "Orange atelier", "canonical": "oklch(62% 0.15 55)" },
+      "phase-produire": { "role": "accent", "displayName": "Violet final", "canonical": "oklch(48% 0.19 295)" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Space Grotesk", "purpose": "Titres H1/H2, marque, nombres de la chaîne d'activités." },
+      "label": { "displayName": "Mono technique", "purpose": "Eyebrows, badges de phase, métadonnées de fichier, jamais de texte long." }
+    },
+    "motion": [
+      { "name": "hover-standard", "value": "150ms ease", "purpose": "Transition de bordure, couleur et translation des flèches. Jamais de rebond." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton primaire",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Téléchargement principal d'une fiche (PDF).",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Télécharger la fiche<span class=\"ds-btn-meta\">PDF · 122 Ko</span></a>",
+      "css": ".ds-btn { font-family: 'Space Grotesk', ui-sans-serif, sans-serif; font-weight: 600; font-size: 0.88rem; text-decoration: none; padding: 0.7rem 1.15rem; border-radius: 100px; display: inline-flex; align-items: center; gap: 0.45rem; transition: background 150ms ease, border-color 150ms ease; } .ds-btn-primary { background: #11223D; border: 1.5px solid #11223D; color: #FCFCFA; } .ds-btn-primary:hover { background: #1C5FBF; border-color: #1C5FBF; } .ds-btn-primary:focus-visible { outline: 2px solid #1C5FBF; outline-offset: 2px; } .ds-btn-meta { font-family: ui-monospace, monospace; font-weight: 500; font-size: 0.68rem; letter-spacing: 0.04em; opacity: 0.75; padding-left: 0.55rem; border-left: 1px solid rgba(252,252,250,0.35); }"
+    },
+    {
+      "name": "Maillon de chaîne",
+      "kind": "custom",
+      "refersTo": "chain-node",
+      "description": "Un élément de la chaîne d'activités : numéro, phase, titre.",
+      "html": "<a class=\"ds-maillon\" href=\"#\"><span class=\"ds-num\">3</span><span class=\"ds-corps\"><span class=\"ds-phase\">Modéliser</span><span class=\"ds-titre\">Sweet Home 3D : pièces et murs</span></span><span class=\"ds-fleche\">→</span></a>",
+      "css": ".ds-maillon { display: grid; grid-template-columns: 40px 1fr auto; gap: 0 1rem; align-items: center; padding: 0.6rem 0.75rem 0.6rem 0; text-decoration: none; color: #11223D; border-radius: 10px; } .ds-maillon:hover { background: #EDF1F6; } .ds-num { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: #FCFCFA; border: 2px solid #00B3A4; font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #00B3A4; } .ds-phase { display: inline-flex; align-items: center; gap: 0.35rem; font-family: ui-monospace, monospace; font-size: 0.64rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.18rem 0.55rem 0.18rem 0.45rem; border-radius: 100px; background: color-mix(in srgb, #00B3A4 15%, transparent); } .ds-titre { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 1.02rem; display: block; margin-top: 0.1rem; } .ds-fleche { font-family: ui-monospace, monospace; font-size: 1.1rem; color: #1C5FBF; opacity: 0.35; transition: transform 150ms ease, opacity 150ms ease; } .ds-maillon:hover .ds-fleche { transform: translateX(3px); opacity: 1; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le carnet de plans de l'atelier",
+    "overview": "Ce n'est pas un site web scolaire, c'est le carnet de plans d'un enseignant de Technologie ouvert sur la table : traits de construction, cotes, grilles, annotations à la main. La 3G calédonienne est la ligne de base de conception, pas le cas dégradé.",
+    "keyCharacteristics": [
+      "Fond papier clair, encre foncée, aucun noir pur ni blanc pur",
+      "Une seule couleur d'accent vive (turquoise) réservée à ce qui progresse réellement",
+      "Aucune ombre : la profondeur vient du trait et du contraste de fond",
+      "La couleur ne porte jamais seule une information"
+    ],
+    "rules": [
+      { "name": "La règle de la rareté du vif", "body": "Le turquoise ne dépasse jamais 10% d'une page.", "section": "colors" },
+      { "name": "La règle du double codage", "body": "Aucune information ne repose sur la couleur seule.", "section": "colors" },
+      { "name": "La règle du plan plat", "body": "Aucun box-shadow décoratif ; la hiérarchie vient du trait et du fond.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do garder le turquoise sous les 10% de couverture visuelle",
+      "Do doubler toute couleur porteuse de sens d'un texte visible",
+      "Do afficher le poids et le format d'un fichier avant téléchargement"
+    ],
+    "donts": [
+      "Don't ajouter de mascotte, couleur bonbon ou forme arrondie façon appli pour enfants",
+      "Don't utiliser de dégradé décoratif ni de bloc gros-chiffre façon SaaS",
+      "Don't charger de police, image ou script qui alourdirait le premier chargement en 3G"
+    ]
+  }
+}

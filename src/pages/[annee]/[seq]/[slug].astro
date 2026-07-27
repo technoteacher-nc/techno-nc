@@ -71,15 +71,15 @@ const donneesLd = [
     <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> / <a href={u('/' + d.niveau) + '#' + d.seq}>{d.seqTitre}</a>
   </nav>
 
-  <header class="act-tete">
-    <div class="act-repere">
+  <header class="act-tete leve">
+    <div class="act-repere leve leve-1">
       {d.phase && <span class="phase" data-phase={d.phase}>{d.phase}</span>}
       <span class="eyebrow-mini">étape {rang} sur {total}{d.semaine && ` · ${d.semaine}`}</span>
     </div>
-    <h1>{d.titre}</h1>
-    <p class="question">{d.question}</p>
+    <h1 class="leve leve-1">{d.titre}</h1>
+    <p class="question leve leve-2">{d.question}</p>
 
-    <div class="docs">
+    <div class="docs leve leve-3">
       <a class="btn btn--fort" href={u(d.fichePdf)} download>
         Télécharger la fiche{pFiche && <span class="btn-meta">PDF · {pFiche}</span>}
       </a>
