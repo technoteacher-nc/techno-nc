@@ -8,13 +8,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const niveaux = [
   {
     id: '5eme', label: '5ème',
-    // pièce à main levée, symétrique : le point de départ du programme
-    icone: '<path d="M8 28V12l12-6 12 6v16" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M8 12l12 6 12-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M20 18v16" stroke="currentColor" stroke-width="1.6"/>',
+    // cube isométrique : la modélisation 3D, cœur de la séquence Conception
+    icone: '<path d="M20 6 32 13 32 27 20 34 8 27 8 13Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M20 20V6M20 20 32 27M20 20 8 27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>',
   },
   {
     id: '4eme', label: '4ème',
-    // engrenage : la mécanique/l'automatisation qui arrive en 4e
-    icone: '<circle cx="20" cy="20" r="6.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M20 8.5v4M20 27.5v4M31.5 20h-4M12.5 20h-4M28.1 11.9l-2.8 2.8M14.7 25.3l-2.8 2.8M28.1 28.1l-2.8-2.8M14.7 14.7l-2.8-2.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
+    // soleil : simple, direct, distingue le niveau au premier coup d'œil
+    icone: '<circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M20 5v5M20 30v5M35 20h-5M10 20h-5M30.6 9.4l-3.5 3.5M12.9 27.1l-3.5 3.5M30.6 30.6l-3.5-3.5M12.9 12.9l-3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
   },
 ];
 
