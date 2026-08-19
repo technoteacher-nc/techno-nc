@@ -1,0 +1,452 @@
+{
+ "code": "AMPLI-A02",
+ "niveau": "3eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE PLAN D'EXPÉRIENCE DE LA CLASSE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Huit groupes vont fabriquer huit pavillons. Si chacun change tout en même temps — la forme, la matière, la longueur — personne ne saura ce qui a produit le gain.",
+    "La classe construit donc un PLAN D'EXPÉRIENCE : une configuration de référence identique pour tous, et une seule grandeur qui change par groupe."
+   ],
+   "question": "Comment huit groupes peuvent-ils explorer seize configurations sans mélanger les résultats ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "La configuration de référence"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les valeurs de référence décidées par la classe. Elles sont les mêmes pour tout le monde."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Grandeur",
+    "Valeur de référence"
+   ],
+   "largeurs": [
+    5200,
+    4160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "carton ondulé 2 mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Diamètre de la grande ouverture"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Longueur du pavillon"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Angle d'ouverture"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " °"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Téléphone source"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "le même pour toute la classe"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Ma variable et mes deux modalités"
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la variable attribuée à ton groupe."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le diamètre de sortie",
+     "points": 0
+    },
+    {
+     "label": "la longueur du pavillon",
+     "points": 0
+    },
+    {
+     "label": "la matière",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les deux valeurs que ton groupe va comparer."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "",
+    "Ma modalité 1",
+    "Ma modalité 2"
+   ],
+   "largeurs": [
+    3120,
+    3120,
+    3120
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — longueur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "150 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "250 mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma variable : "
+         },
+         {
+          "t": "champ",
+          "points": 18
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la phrase juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "je change ma variable ET la longueur en même temps",
+     "points": 0
+    },
+    {
+     "label": "je ne change QUE ma variable",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Mon croquis coté"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dessine ton pavillon vu de côté, puis écris les trois cotes : diamètre de sortie, longueur, diamètre d'entrée."
+  },
+  {
+   "type": "zone",
+   "label": "Croquis coté du pavillon, vu de côté — au crayon, à la règle, cotes en mm :",
+   "hauteur": 2800
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "On ne change qu'une grandeur à la fois parce que sinon, on ne saurait pas "
+    },
+    {
+     "t": "champ",
+     "points": 42
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Une "
+     },
+     {
+      "t": "champ",
+      "points": 18
+     },
+     {
+      "t": "texte",
+      "v": " est la grandeur que l'on fait varier exprès."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Toutes les autres grandeurs restent "
+     },
+     {
+      "t": "champ",
+      "points": 18
+     },
+     {
+      "t": "texte",
+      "v": " : ce sont les grandeurs contrôlées."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un plan d'expérience permet à "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " groupes de produire un seul tableau exploitable."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Changer deux choses à la fois, c'est perdre les deux résultats.",
+   "auteur": ""
+  }
+ ]
+}

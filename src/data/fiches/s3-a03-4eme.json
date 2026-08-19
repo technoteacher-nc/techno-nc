@@ -21,7 +21,16 @@
   },
   {
    "type": "consigne",
-   "texte": "Reprends ton réseau de S3-A02 (ou le fichier fourni), puis :"
+   "texte": "Ouvre ton réseau de la séance précédente (ou le fichier fourni par le professeur)."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RAPPEL — Il y a maintenant DEUX réseaux : les machines en 192.168.0.xx d'un côté, les machines en 192.168.1.xx de l'autre. C'est le troisième nombre qui change (0 ou 1) : c'est lui qui fait deux réseaux différents. Le routeur est la seule machine qui appartient aux deux."
+    }
+   ]
   },
   {
    "type": "tableau",
@@ -120,7 +129,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Simulation ▶ : ping du PC 0.10 vers 1.10 → note le message en 1a."
+          "v": "Simulation ▶ : ping du PC 192.168.0.10 vers 192.168.1.10 → note le message en 1a."
          }
         ]
        }
@@ -182,7 +191,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Refais le ping 0.10 → 1.10 : il doit réussir."
+          "v": "Refais le ping de 192.168.0.10 vers 192.168.1.10 : il doit réussir."
          }
         ]
        }
@@ -399,7 +408,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ?"
+     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ? Complète : « Le serveur DNS … »"
     }
    ]
   },
@@ -415,7 +424,7 @@
   },
   {
    "type": "consigne",
-   "texte": "Complète la chaîne avec : adresse IP — serveur DNS — serveur web — navigateur."
+   "texte": "Écris dans chaque case l'un de ces quatre mots : adresse IP — serveur DNS — serveur web — navigateur. Chaque mot ne sert qu'une fois."
   },
   {
    "type": "texte",

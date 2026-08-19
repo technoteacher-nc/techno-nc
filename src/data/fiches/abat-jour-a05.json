@@ -1,0 +1,520 @@
+{
+ "code": "ABAT-A05",
+ "niveau": "4eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "DÉCOUPE, MONTAGE ET DOUBLE MESURE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton abat-jour existe enfin. Reste à savoir s'il tient ses deux promesses : diffuser assez de lumière, et ne pas s'affaisser.",
+    "Deux mesures, donc — et une seule d'entre elles peut s'améliorer sans que l'autre se dégrade. C'est là tout le problème."
+   ],
+   "question": "Comment prouver un compromis, plutôt que de l'affirmer ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je découpe et je monte"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque étape une fois faite. La découpeuse ne démarre jamais sans le professeur."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    1100,
+    8260
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. J'ouvre mon DXF dans xTool Creative Space et je vérifie les cotes."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Je lance la découpe AVEC le professeur, capot fermé, aspiration en marche."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. Je roule le panneau et je le colle sur 20 mm de recouvrement."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4. J'emboîte le panneau roulé dans la gorge de la collerette imprimée."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Mesure 1 — l'éclairement diffusé"
+  },
+  {
+   "type": "consigne",
+   "texte": "Place le téléphone à 300 mm, luxmètre phyphox. Écris tes valeurs."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je mesure",
+    "Éclairement (lux)"
+   ],
+   "largeurs": [
+    6200,
+    3160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — un autre groupe"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "480"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe seule (référence)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe avec MON abat-jour"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le verdict par rapport au cahier des charges."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "au-dessus du niveau exigé",
+     "points": 0
+    },
+    {
+     "label": "en dessous du niveau exigé",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Mesure 2 — la tenue de la structure"
+  },
+  {
+   "type": "consigne",
+   "texte": "Pose des masses de 50 g sur le dessus, une par une. Arrête-toi dès qu'un pli reste marqué après avoir retiré la masse."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je relève",
+    "Valeur"
+   ],
+   "largeurs": [
+    6200,
+    3160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — un autre groupe"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "250 g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Dernière masse SANS déformation"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masse à la première déformation permanente"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le verdict."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "conforme au cahier des charges",
+     "points": 0
+    },
+    {
+     "label": "non conforme",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Mon abat-jour respecte "
+    },
+    {
+     "t": "champ",
+     "points": 5
+    },
+    {
+     "t": "texte",
+     "v": " des deux critères. Celui qui pose problème est "
+    },
+    {
+     "t": "champ",
+     "points": 38
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Une déformation est "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " quand elle reste après avoir retiré la charge."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Deux mesures faites à des distances différentes ne se "
+     },
+     {
+      "t": "champ",
+      "points": 18
+     },
+     {
+      "t": "texte",
+      "v": " pas."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un objet peut être conforme sur un critère et non conforme sur "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Affirmer coûte une seconde ; prouver coûte une mesure. Seule la seconde compte.",
+   "auteur": ""
+  }
+ ]
+}

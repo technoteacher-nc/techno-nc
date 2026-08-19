@@ -546,7 +546,7 @@
   },
   {
    "type": "consigne",
-   "texte": "Quel modèle conseilles-tu au collège ? Justifie ta réponse avec au moins DEUX critères chiffrés du tableau de la partie 1."
+   "texte": "Écris le modèle que tu conseilles au collège, puis complète : « Je conseille le modèle … parce que … et parce que … ». Chaque raison doit citer un chiffre du tableau de la partie 1."
   },
   {
    "type": "texte",

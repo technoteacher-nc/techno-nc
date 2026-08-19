@@ -1,0 +1,731 @@
+{
+ "code": "ABAT-A04",
+ "niveau": "4eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "SKETCHUP (2) : LA COLLERETTE ET LES MÉTHODES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le panneau roulé ne tient pas tout seul, et la douille de la lampe doit être fixée quelque part. C'est le rôle de la collerette : une pièce en volume, donc imprimée en 3D.",
+    "Le bureau des méthodes, dans une entreprise, décide quel procédé fabrique quelle pièce — et combien de temps machine cela coûte. Aujourd'hui, c'est toi."
+   ],
+   "question": "Quel procédé pour quelle pièce, et combien de temps machine cela coûte-t-il ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je modélise la collerette"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque étape une fois faite."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    1100,
+    8260
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. Je trace un cercle du même Ø que mon abat-jour (le D de la séance 3)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Je trace un second cercle 6 mm plus petit, au même centre : c'est la gorge."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. Je pousse-tire de 8 mm de haut pour donner du volume."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4. Je perce au centre le trou de passage de la douille (Ø 28 mm)."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "J'exporte et je relève les temps"
+  },
+  {
+   "type": "consigne",
+   "texte": "Exporte chaque pièce dans le bon format, puis écris les valeurs lues dans le logiciel."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Pièce",
+    "Procédé",
+    "Format",
+    "Temps machine",
+    "Masse"
+   ],
+   "largeurs": [
+    2100,
+    1900,
+    1600,
+    2000,
+    1760
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — une plaque test"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "laser"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "DXF"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2 min"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4 g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon panneau"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " min"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma collerette"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " min"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le verdict pour chaque pièce."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Panneau — temps de découpe ≤ 10 min ?   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "oui",
+     "points": 0
+    },
+    {
+     "label": "non",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Collerette — temps d'impression ≤ 45 min ?   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "oui",
+     "points": 0
+    },
+    {
+     "label": "non",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "La règle du bureau des méthodes"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris LASER ou 3D en face de chaque pièce."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "La pièce est…",
+    "Exemple",
+    "Procédé"
+   ],
+   "largeurs": [
+    3200,
+    3400,
+    2760
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — plate, découpée dans une plaque"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "le panneau ajouré"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "LASER"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "En volume, avec une épaisseur variable"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "la collerette"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Plate, à découper dans du carton"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une rondelle de calage"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "LA RÈGLE (complète) : à plat = ................ , volume = ................",
+   "n": 1
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "On n'imprime pas le panneau en 3D parce que cela coûterait "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Une pièce plate se découpe au "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " ; une pièce en volume s'imprime en "
+     },
+     {
+      "t": "champ",
+      "points": 8
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le format d'export du laser est le "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " , celui de l'imprimante 3D est le "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le temps "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " est un coût : il fait partie du cahier des charges."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le bon procédé n'est pas le plus impressionnant : c'est le plus rapide qui fait le travail.",
+   "auteur": ""
+  }
+ ]
+}

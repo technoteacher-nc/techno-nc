@@ -60,9 +60,9 @@ const donneesLd = {
 
   {projet.etat === 'preparation' && (
     <p class="proj-avis">
-      <strong>Projet en préparation.</strong> Le déroulé est arrêté, les fiches
-      élèves restent à produire. Il est publié ici pour être discuté et ajusté
-      avant sa première mise en œuvre.
+      <strong>Projet en préparation.</strong> Le déroulé et les fiches élèves
+      sont prêts, mais le projet n'a pas encore été mené en classe. Il est
+      publié ici pour être discuté et ajusté avant sa première mise en œuvre.
     </p>
   )}
 
@@ -70,7 +70,7 @@ const donneesLd = {
     <h2 class="niveau-titre">Le déroulé <span>{projet.defi.toUpperCase()}</span></h2>
     <ol class="proj-chaine">
       {projet.activites.map((a, i) => (
-        <li>
+        <li id={a.id}>
           <span class="num" data-phase={a.phase}>{i + 1}</span>
           <div class="proj-seance">
             <p class="proj-seance-repere">
@@ -90,6 +90,13 @@ const donneesLd = {
                 {a.transversal && <><dt>Autres disciplines</dt><dd>{a.transversal}</dd></>}
               </dl>
             </details>
+            {a.fichePdf && (
+              <p class="proj-fiche">
+                <a class="btn btn--fiche" href={u(a.fichePdf)} download>
+                  Fiche élève — PDF à imprimer
+                </a>
+              </p>
+            )}
           </div>
         </li>
       ))}
@@ -109,6 +116,18 @@ const donneesLd = {
         </ul>
       </>
     )}
+  </section>
+
+  <!-- Le QR mène à CETTE page : c'est lui qui est imprimé en tête de chaque
+       fiche du projet, et il ramène l'élève au déroulé complet — pas à
+       l'accueil, d'où il faudrait re-naviguer. -->
+  <section class="qr">
+    <img src={u(`/qr/projet-${projet.slug}.png`)} alt={`QR code vers le projet ${projet.titre}`}
+         width="76" height="76" loading="lazy" />
+    <p>
+      <strong>Ce projet, en QR code.</strong><br />
+      C'est celui imprimé en haut de chaque fiche élève du projet.
+    </p>
   </section>
 
   <nav class="res-suite">

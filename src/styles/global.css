@@ -104,7 +104,10 @@ body {
   background: var(--vif); border-radius: 2px;
   transform: rotate(45deg);
 }
-.site-head nav { display: flex; gap: .5rem; }
+/* Sans le retour à la ligne, les cinq onglets font 419 px de large : sur un
+   téléphone de 375 px, TOUTE page du site débordait horizontalement — et
+   c'est par QR code, donc au téléphone, que les élèves arrivent. */
+.site-head nav { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: flex-end; }
 .site-head nav a {
   font-family: var(--display); font-weight: 600; font-size: .85rem;
   color: var(--mine); text-decoration: none;
@@ -114,6 +117,13 @@ body {
 .site-head nav a:hover { color: var(--encre); background: var(--calque); }
 .site-head nav a[aria-current='page'] {
   color: var(--papier); background: var(--encre); border-color: var(--encre);
+}
+/* Sur un écran de téléphone, les onglets se resserrent avant de se replier :
+   deux lignes d'onglets valent mieux qu'une barre coupée. */
+@media (max-width: 30rem) {
+  .site-head .wrap { gap: .6rem; padding-top: .7rem; padding-bottom: .7rem; }
+  .site-head nav { gap: .3rem; row-gap: .4rem; }
+  .site-head nav a { padding: .3rem .62rem; font-size: .8rem; }
 }
 
 /* ---------- hero ---------- */
@@ -330,9 +340,12 @@ body {
   text-transform: uppercase; color: var(--mine);
   padding: .75rem 0; border-top: 1px solid var(--trait);
 }
-.meta dd { margin: 0; padding: .75rem 0; border-top: 1px solid var(--trait); }
+/* La colonne de droite héritait de toute la largeur restante : 97 caractères
+   par ligne, mesuré, là où la lecture décroche au-delà de ~75. C'est le seul
+   endroit du site où le texte n'était pas borné. */
+.meta dd { margin: 0; padding: .75rem 0; border-top: 1px solid var(--trait); max-width: 72ch; }
 .meta ul { margin: 0; padding-left: 1.1rem; }
-.meta li { margin-bottom: .2rem; }
+.meta li { margin-bottom: .35rem; max-width: 72ch; line-height: 1.55; }
 @media (max-width: 34rem) {
   .meta dl { grid-template-columns: 1fr; }
   .meta dd { border-top: none; padding-top: 0; }
@@ -349,6 +362,37 @@ body {
   border-radius: 6px; background: #fff; padding: 4px;
 }
 .qr p { margin: 0; font-size: .85rem; color: var(--mine); line-height: 1.5; }
+/* Le QR de l'accueil est le seul qu'on projette au tableau : il doit rester
+   lisible depuis le fond de la salle, donc il est plus grand que les autres. */
+.qr--accueil { border: 1.5px solid var(--trait); }
+.qr--accueil img { width: 112px; height: 112px; }
+.qr--accueil p { font-size: .92rem; }
+
+/* ---------- accueil : à quoi sert ce site ----------
+   Trois usages, numérotés dans l'ordre où ils servent vraiment. Le
+   remplissage en ligne vient après, en note : c'est un recours, pas le mode
+   de travail — en classe on écrit à la main. */
+.accueil-roles { margin: 3rem 0 0; }
+.accueil-roles > h2 {
+  font-family: var(--display); font-weight: 700; font-size: 1.15rem;
+  letter-spacing: -.02em; margin: 0 0 1.25rem;
+}
+.roles { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.roles li { display: grid; grid-template-columns: 2rem 1fr; gap: 0 .9rem; align-items: start; }
+.roles-num {
+  font-family: var(--mono); font-size: .8rem; font-weight: 600;
+  width: 2rem; height: 2rem; display: grid; place-items: center;
+  border: 1.5px solid var(--trait); border-radius: 50%; color: var(--bleu);
+}
+.roles h3 {
+  font-family: var(--display); font-weight: 700; font-size: 1rem;
+  margin: .25rem 0 .2rem; letter-spacing: -.01em;
+}
+.roles p { margin: 0; color: var(--mine); font-size: .93rem; line-height: 1.55; max-width: 60ch; }
+.roles-note {
+  margin: 1.4rem 0 0; padding-top: 1rem; border-top: 1px solid var(--trait);
+  font-size: .9rem; color: var(--mine); line-height: 1.6; max-width: 66ch;
+}
 
 /* suite : étape précédente / suivante */
 .suite {
@@ -1084,8 +1128,24 @@ body {
 .proj-detail dt { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
   text-transform: uppercase; color: var(--mine); padding: .5rem 0; border-top: 1px solid var(--trait); }
 .proj-detail dd { margin: 0; padding: .5rem 0; border-top: 1px solid var(--trait);
-  font-size: .92rem; line-height: 1.55; }
+  font-size: .92rem; line-height: 1.55; max-width: 72ch; }
 .proj-detail ul { margin: 0; padding-left: 1.1rem; }
+/* Le lien vers la fiche papier est ce que le professeur et l'élève absent
+   viennent chercher : il sort du repli « Voir le détail » et reste visible
+   sans avoir à déplier quoi que ce soit. */
+.proj-fiche { margin: .75rem 0 0; }
+.btn--fiche { font-size: .82rem; padding: .42rem .8rem; }
+.btn--fiche::before { content: "↓"; margin-right: .45rem; opacity: .65; }
+
+/* Une séance ciblée par un QR code doit se signaler quand on arrive dessus,
+   sinon l'élève atterrit au milieu d'une liste de six et cherche laquelle. */
+.proj-chaine li { scroll-margin-top: 1.5rem; }
+.proj-chaine li:target .proj-seance {
+  border-left-color: var(--bleu); border-left-width: 3px;
+  background: color-mix(in srgb, var(--bleu) 5%, transparent);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+
 .proj-sous-titre { font-family: var(--display); font-weight: 700; font-size: 1rem;
   margin: 1.5rem 0 .5rem; }
 .proj-comp { margin: 1.25rem 0 0; padding-left: 1.2rem; }
@@ -1174,4 +1234,15 @@ body {
 
   .fl-situation, .fl-bilan, .fl-dessin { background: none !important; border: 1px solid #bbb; }
   .fl-schema img { max-height: 90mm; width: auto; }
+}
+
+/* ---------- mode d'emploi : le rappel du papier ----------
+   Encadré volontairement sobre et placé haut : il corrige la lecture naturelle
+   de la page, qui décrirait sinon le remplissage en ligne comme le mode de
+   travail normal. */
+.mde-cadre {
+  margin: 1.75rem 0 0; padding: 1rem 1.2rem;
+  border-radius: var(--r); border-left: 3px solid var(--bleu);
+  background: var(--calque);
+  font-size: .95rem; line-height: 1.65; max-width: 68ch;
 }

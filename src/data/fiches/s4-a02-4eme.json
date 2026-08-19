@@ -198,7 +198,7 @@
   },
   {
    "type": "consigne",
-   "texte": "Le RGPD (Règlement Général sur la Protection des Données, 2018) donne des droits à chacun. Relie chaque droit à sa situation."
+   "texte": "Le RGPD (Règlement Général sur la Protection des Données, 2018) donne des droits à chacun. Écris le numéro de la situation en face du droit qui lui correspond."
   },
   {
    "type": "tableau",
@@ -220,7 +220,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "Droit d'ACCÈS  →"
+          "v": "Droit d'ACCÈS → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -234,7 +238,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "« Je veux savoir quelles données vous avez sur moi. »"
+          "v": "① « Supprimez mon compte et mes données. »"
          }
         ]
        }
@@ -250,7 +254,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "Droit de RECTIFICATION  →"
+          "v": "Droit de RECTIFICATION → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -264,7 +272,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "« Ma date de naissance est fausse, corrigez-la. »"
+          "v": "② « Ma date de naissance est fausse, corrigez-la. »"
          }
         ]
        }
@@ -280,7 +288,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "Droit à l'EFFACEMENT  →"
+          "v": "Droit à l'EFFACEMENT → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -294,7 +306,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "« Supprimez mon compte et mes données. »"
+          "v": "③ « Je refuse que mes données servent à la publicité. »"
          }
         ]
        }
@@ -310,7 +322,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "Droit d'OPPOSITION  →"
+          "v": "Droit d'OPPOSITION → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -324,7 +340,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "« Je refuse que mes données servent à la publicité. »"
+          "v": "④ « Je veux savoir quelles données vous avez sur moi. »"
          }
         ]
        }
@@ -353,7 +369,11 @@
   },
   {
    "type": "consigne",
-   "texte": "Sur la bannière de cookies projetée et le compte d'entraînement, fais tes choix et justifie-les."
+   "texte": "Sur la bannière de cookies projetée, coche les réglages que tu choisis."
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète ensuite : « Je refuse … parce que … »."
   },
   {
    "type": "tableau",

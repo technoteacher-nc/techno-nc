@@ -1,0 +1,417 @@
+{
+ "code": "PONT-A02",
+ "niveau": "5eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "TROIS PROFILS IMPOSÉS : TUBE, U, ACCORDÉON"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Chaque groupe reçoit UN profil imposé : le tube, le U ou l'accordéon. Tous partent de la même feuille A4, donc de la même quantité de papier et de la même masse.",
+    "À la fin de la séquence, les trois profils seront chargés jusqu'à la rupture. Aujourd'hui, tu dessines le tien et tu écris ton pronostic — avant de savoir qui gagne."
+   ],
+   "question": "À quantité de matière égale, quelle forme résiste le mieux — et pourquoi ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Mon profil"
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure le profil attribué à ton groupe."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "A — le tube",
+     "points": 0
+    },
+    {
+     "label": "B — le U",
+     "points": 0
+    },
+    {
+     "label": "C — l'accordéon",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/projets/schemas/pont-profils.png"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les trois mesures de ton profil, en millimètres."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Grandeur",
+    "Ma valeur (mm)",
+    "Comment je la mesure"
+   ],
+   "largeurs": [
+    3000,
+    2200,
+    4160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — longueur du pont"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "297"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "la feuille A4 dans le sens de la longueur"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Hauteur du profil"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "du bas au point le plus haut, au réglet"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Largeur du profil"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "d'un bord à l'autre, vu en bout"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Nombre de plis"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "je les compte sur la feuille"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Mon croquis coté"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dessine ton profil VU EN BOUT (comme sur le schéma ci-dessus), puis écris les deux cotes que tu viens de mesurer."
+  },
+  {
+   "type": "zone",
+   "label": "Croquis du profil vu en bout — au crayon, à la règle, avec les cotes en mm :",
+   "hauteur": 2600
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Mon pronostic"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le profil qui, selon toi, portera la charge la plus lourde."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "A — le tube",
+     "points": 0
+    },
+    {
+     "label": "B — le U",
+     "points": 0
+    },
+    {
+     "label": "C — l'accordéon",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la raison qui te paraît la plus juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "parce qu'il utilise plus de papier",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "parce qu'il est plus haut, donc plus éloigné de la fibre neutre",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "parce qu'il est plus lourd",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Attention : les trois profils utilisent EXACTEMENT la même feuille. Une seule des trois raisons peut donc être vraie."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Tu la relirras après les essais, en séance 5."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je pense que le profil "
+    },
+    {
+     "t": "champ",
+     "points": 5
+    },
+    {
+     "t": "texte",
+     "v": " portera le plus, car sa forme "
+    },
+    {
+     "t": "champ",
+     "points": 52
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Trois profils faits de la même feuille ont la même "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " mais pas la même résistance."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Plus la matière est "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " de la fibre neutre, plus la structure résiste."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un pronostic écrit AVANT l'essai permet de savoir si on avait "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Prévoir, puis mesurer : c'est la seule façon d'apprendre quelque chose d'un essai.",
+   "auteur": ""
+  }
+ ]
+}

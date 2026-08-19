@@ -96,15 +96,19 @@ const donneesLd = [
     <h1 class="leve leve-1">{d.titre}</h1>
     <p class="question leve leve-2">{d.question}</p>
 
+    {/* La fiche papier passe en premier : c'est elle qu'on utilise en classe,
+        et l'écriture à la main est ce que le brevet demande. Le remplissage en
+        ligne reste offert, mais annoncé pour ce qu'il sert vraiment —
+        rattraper une absence et relire la correction. */}
     <div class="docs leve leve-3">
-      {aFicheEnLigne && <a class="btn btn--fort" href={u(`/${d.annee}/${d.seq}/${act.id}/en-ligne`)}>
-        Remplir en ligne<span class="btn-meta">sans compte</span>
-      </a>}
-      <a class={aFicheEnLigne ? 'btn' : 'btn btn--fort'} href={u(d.fichePdf)} download>
+      <a class="btn btn--fort" href={u(d.fichePdf)} download>
         Télécharger la fiche{pFiche && <span class="btn-meta">PDF · {pFiche}</span>}
       </a>
       {d.ebepPdf && <a class="btn" href={u(d.ebepPdf)} download>
         Version adaptée{pEbep && <span class="btn-meta">PDF · {pEbep}</span>}
+      </a>}
+      {aFicheEnLigne && <a class="btn" href={u(`/${d.annee}/${d.seq}/${act.id}/en-ligne`)}>
+        Remplir en ligne<span class="btn-meta">rattrapage · correction</span>
       </a>}
       <a class="btn" href={u(d.ficheDocx)} download>
         Fiche modifiable{pDocx && <span class="btn-meta">DOCX · {pDocx}</span>}

@@ -1,0 +1,505 @@
+{
+ "code": "PONT-A03",
+ "niveau": "5eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "SWEET HOME 3D : IMPLANTER ET COTER L'OUVRAGE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton plan de maison est déjà ouvert dans Sweet Home 3D depuis le projet « Ma maison en NC ». Le creek passe sur ce terrain : c'est LUI qui décide de la portée à franchir, pas toi.",
+    "Tu vas mesurer cette portée sur le plan, puis la convertir à l'échelle de ta maquette en papier."
+   ],
+   "question": "Quelle portée mon ouvrage doit-il réellement franchir, et comment la lire sur mon plan ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je relève la portée sur le plan"
+  },
+  {
+   "type": "consigne",
+   "texte": "Ouvre ton plan, place l'ouvrage au-dessus du creek, puis utilise l'outil « Créer des cotes » entre les deux berges."
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris la valeur lue, en centimètres puis en millimètres."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je relève",
+    "Valeur lue",
+    "Unité"
+   ],
+   "largeurs": [
+    4400,
+    2600,
+    2360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — largeur de la terrasse"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "350"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "cm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Portée réelle à franchir (sur le plan)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "cm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La même portée, convertie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "mm"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le calcul qui convertit des centimètres en millimètres."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "je divise par 10",
+     "points": 0
+    },
+    {
+     "label": "je multiplie par 10",
+     "points": 0
+    },
+    {
+     "label": "je multiplie par 100",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je passe à l'échelle de la maquette"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ta maquette de pont ne peut pas faire 3 mètres : elle doit tenir sur une table. On la construit donc à l'ÉCHELLE 1/10."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le tableau. À l'échelle 1/10, la maquette est 10 fois plus PETITE que la réalité."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Grandeur",
+    "En vrai (mm)",
+    "Sur la maquette (mm)"
+   ],
+   "largeurs": [
+    3400,
+    2980,
+    2980
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — une porte"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2000"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "200"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La portée relevée sur le plan"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La largeur du tablier (donnée : 600 mm)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "600"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la phrase juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "à l'échelle 1/10, je multiplie les cotes réelles par 10",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "à l'échelle 1/10, je divise les cotes réelles par 10",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Ma vue 3D cotée  (si tu as le temps)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Passe en vue 3D, cadre l'ouvrage et le creek, puis appelle le professeur pour la capture d'écran."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Fait :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "vue 3D cadrée",
+     "points": 0
+    },
+    {
+     "label": "cote de la portée visible",
+     "points": 0
+    },
+    {
+     "label": "capture enregistrée sous mon nom",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "La portée de mon pont ne se choisit pas : elle est imposée par "
+    },
+    {
+     "t": "champ",
+     "points": 52
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "La portée d'un ouvrage est imposée par le "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " à franchir, pas par le constructeur."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "1 cm = "
+     },
+     {
+      "t": "champ",
+      "points": 8
+     },
+     {
+      "t": "texte",
+      "v": " mm."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "À l'échelle 1/10, une cote réelle est "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " par 10 pour obtenir la maquette."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le terrain décide toujours en premier ; l'ingénieur décide ensuite.",
+   "auteur": ""
+  }
+ ]
+}

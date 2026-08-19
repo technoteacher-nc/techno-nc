@@ -231,7 +231,7 @@
   },
   {
    "type": "consigne",
-   "texte": "Coche VRAI ou FAUX, puis justifie en une phrase la ligne de ton choix."
+   "texte": "Coche VRAI ou FAUX pour chaque ligne. Choisis ensuite UNE ligne et complète : « C'est … parce que … »."
   },
   {
    "type": "tableau",

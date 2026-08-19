@@ -1,0 +1,661 @@
+{
+ "code": "ABAT-A06",
+ "niveau": "4eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LES DEUX COURBES ET LE POINT DE COMPROMIS"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Chaque groupe a fabriqué un taux d'ajour différent. Rassemblés, les résultats de la classe dessinent deux courbes qui vont en sens contraire.",
+    "L'endroit où elles se croisent n'est pas magique : c'est simplement là où l'on perd le moins des deux côtés."
+   ],
+   "question": "Où placer le curseur entre diffuser et résister, et comment le défendre ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je reporte les données de la classe"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les résultats projetés, du taux le plus faible au plus fort."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Taux d'ajour (%)",
+    "Éclairement (lux)",
+    "Masse tenue (g)"
+   ],
+   "largeurs": [
+    3120,
+    3120,
+    3120
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — 5"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "210"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "400"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche les deux tendances que tu lis dans le tableau."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quand le taux d'ajour augmente, l'éclairement :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "augmente",
+     "points": 0
+    },
+    {
+     "label": "diminue",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quand le taux d'ajour augmente, la masse tenue :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "augmente",
+     "points": 0
+    },
+    {
+     "label": "diminue",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je trace les deux courbes"
+  },
+  {
+   "type": "consigne",
+   "texte": "Trace les deux courbes sur le même graphique : le taux d'ajour en abscisse, une courbe pour l'éclairement, une pour la masse tenue."
+  },
+  {
+   "type": "zone",
+   "label": "Graphique — abscisse : taux d'ajour (%). Deux courbes, deux couleurs, une légende :",
+   "hauteur": 3000
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Mon point de fonctionnement"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris le taux d'ajour que tu recommandes à la classe."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je recommande un taux d'ajour de "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " %."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ce qui justifie ton choix."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "c'est là que les deux critères sont respectés en même temps",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "c'est le taux qui donne le plus de lumière",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "c'est le taux qui tient la plus grosse masse",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Carton ou PLA ?  (si tu as le temps)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris une croix dans la colonne du matériau le plus avantageux, ligne par ligne."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère",
+    "Carton",
+    "PLA imprimé"
+   ],
+   "largeurs": [
+    4360,
+    2500,
+    2500
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — temps machine"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "X"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masse"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Coût"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Fin de vie (recyclage)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. C'est la conclusion du projet."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le point de compromis est le taux où "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Deux critères antagonistes donnent deux courbes qui vont en sens "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le point de "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " n'est le meilleur nulle part : il est le moins mauvais partout."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une recommandation se défend avec un "
+     },
+     {
+      "t": "champ",
+      "points": 18
+     },
+     {
+      "t": "texte",
+      "v": " lu sur le graphique."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le compromis n'est pas une faiblesse : c'est la seule solution qui respecte tout le cahier des charges.",
+   "auteur": ""
+  }
+ ]
+}

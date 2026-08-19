@@ -287,7 +287,11 @@
   },
   {
    "type": "consigne",
-   "texte": "Complète avec : COMMUNIQUER — ACQUÉRIR — TRAITER, puis associe le bon composant sous chaque bloc."
+   "texte": "Écris dans la ligne du haut l'un de ces trois mots : ACQUÉRIR — TRAITER — COMMUNIQUER. Chaque mot ne sert qu'une fois."
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris ensuite, sous chaque bloc, le nom du composant du mBot qui fait ce travail."
   },
   {
    "type": "tableau",

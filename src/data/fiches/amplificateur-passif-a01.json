@@ -1,0 +1,800 @@
+{
+ "code": "AMPLI-A01",
+ "niveau": "3eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "AMPLIFIER OU DIRIGER : DEUX OBJETS, DEUX CHAÎNES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Une enceinte Bluetooth contient une pile, un circuit et un haut-parleur. Un pavillon en carton ne contient rien du tout — et pourtant, un téléphone posé dedans s'entend nettement mieux.",
+    "L'un consomme de l'énergie, l'autre non. Ce projet consiste à mesurer ce que gagne le second, en décibels."
+   ],
+   "question": "Peut-on rendre un téléphone audible à six sans lui apporter la moindre énergie ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Deux objets, deux chaînes"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche oui ou non pour chaque objet."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Cet objet contient…",
+    "Enceinte Bluetooth",
+    "Pavillon en carton"
+   ],
+   "largeurs": [
+    3760,
+    2800,
+    2800
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — un boîtier"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "oui"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "oui"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une source d'énergie (pile, secteur)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "un haut-parleur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "un circuit électronique"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une chaîne d'énergie complète"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la conclusion juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le pavillon fabrique du son",
+     "points": 0
+    },
+    {
+     "label": "le pavillon dirige le son que le téléphone produit déjà",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je mesure au sonomètre"
+  },
+  {
+   "type": "consigne",
+   "texte": "Ouvre phyphox, choisis « Sonomètre ». Place le téléphone de mesure à 1,00 m, dans l'axe. Écris tes trois relevés."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je mesure",
+    "Niveau (dB)"
+   ],
+   "largeurs": [
+    6200,
+    3160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — un autre groupe, téléphone nu"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "58"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le bruit de fond de la salle (rien ne joue)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le téléphone source, posé nu sur la table"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le même téléphone, posé dans un pavillon témoin"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Calcule le gain du pavillon témoin."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "gain = niveau avec pavillon − niveau nu = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " − "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " dB"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Notre cahier des charges"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les niveaux annoncés par le professeur."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère",
+    "Niveau à atteindre",
+    "Comment on le vérifie"
+   ],
+   "largeurs": [
+    3200,
+    3080,
+    3080
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "carton 2 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "à la commande"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Gain sonore à 1,00 m"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au moins "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " dB"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "phyphox, sonomètre"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Énergie apportée à l'objet"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "aucune pile, aucun fil"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Encombrement"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "tient dans un cube de "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au réglet"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "UN OBJET PASSIF (écris ce que cela veut dire)",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. C'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le pavillon augmente le niveau sonore sans énergie parce qu'il "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un objet "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " ne consomme aucune énergie : il n'a pas de chaîne d'énergie."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le niveau sonore se mesure en "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " , avec un sonomètre."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un gain est une "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " entre deux mesures, jamais une mesure seule."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "On ne crée pas de son : on l'empêche seulement de partir dans toutes les directions.",
+   "auteur": ""
+  }
+ ]
+}

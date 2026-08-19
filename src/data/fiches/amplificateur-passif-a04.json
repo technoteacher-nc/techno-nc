@@ -1,0 +1,612 @@
+{
+ "code": "AMPLI-A04",
+ "niveau": "3eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "DÉCOUPE LASER DES DÉVELOPPÉS ET MONTAGE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton groupe fabrique DEUX pavillons : la modalité 1 et la modalité 2 de ta variable. Tout le reste doit être rigoureusement identique entre les deux.",
+    "S'ils diffèrent par autre chose — un collage plus serré, un carton plus épais — la comparaison de la séance 5 ne vaudra rien."
+   ],
+   "question": "Comment garantir que mes deux exemplaires ne se distinguent que par ma variable ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je découpe et je monte"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque étape une fois faite, pour CHACUN des deux pavillons."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Étape",
+    "Pavillon 1",
+    "Pavillon 2"
+   ],
+   "largeurs": [
+    5360,
+    2000,
+    2000
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. DXF ouvert et cotes vérifiées"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Découpe laser faite avec le professeur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. Roulé et collé sur la languette"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4. Embout imprimé emboîté"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je vérifie que seule ma variable diffère"
+  },
+  {
+   "type": "consigne",
+   "texte": "Mesure les deux pavillons. Écris « = » si les valeurs sont identiques, sinon écris l'écart."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Grandeur",
+    "Pavillon 1",
+    "Pavillon 2",
+    "Identique ?"
+   ],
+   "largeurs": [
+    2800,
+    2200,
+    2200,
+    2160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "carton 2 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "carton 2 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "="
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Diamètre de sortie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Longueur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masse"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le verdict."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "une seule ligne diffère : mes deux pavillons sont comparables",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "deux lignes ou plus diffèrent : je dois refaire un des deux pavillons",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Si mes deux pavillons différaient par deux grandeurs, je ne pourrais pas savoir "
+    },
+    {
+     "t": "champ",
+     "points": 42
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Deux objets ne se comparent que s'ils ne diffèrent que par "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " grandeur."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une grandeur que l'on maintient identique s'appelle une grandeur "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le contrôle se fait avec un instrument, avant la mesure — jamais "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "La rigueur de la mesure se joue à la fabrication, pas au moment de mesurer.",
+   "auteur": ""
+  }
+ ]
+}

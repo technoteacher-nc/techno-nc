@@ -1,0 +1,483 @@
+{
+ "code": "PONT-A06",
+ "niveau": "5eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LA V2 ET LES DONNÉES DE LA CLASSE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Toute la classe a mesuré. Le tableau projeté rassemble les 8 ratios : c'est maintenant lui qui commande, et non les impressions de chacun.",
+    "Tu ne changes QU'UNE SEULE chose sur ton pont — et tu dois pouvoir montrer d'où vient cette idée dans le tableau."
+   ],
+   "question": "Que changer, et comment prouver que ce choix vient des mesures et non d'une impression ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je lis le tableau de la classe"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les trois valeurs lues sur le tableau projeté."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Question",
+    "Réponse lue dans le tableau"
+   ],
+   "largeurs": [
+    5200,
+    4160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — combien de groupes ont testé ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "8"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Quel profil a le meilleur ratio ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 24
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Quelle est la valeur de ce meilleur ratio ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 24
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Quel profil a le plus petit ratio ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 24
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Ma modification, et une seule"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la modification que tu vas appliquer à ta version 2."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "augmenter la hauteur de mon profil",
+     "points": 0
+    },
+    {
+     "label": "ajouter des plis",
+     "points": 0
+    },
+    {
+     "label": "mieux coller les extrémités",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris le chiffre du tableau qui justifie ton choix."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je m'appuie sur le ratio de "
+    },
+    {
+     "t": "champ",
+     "points": 18
+    },
+    {
+     "t": "texte",
+     "v": " obtenu par le profil "
+    },
+    {
+     "t": "champ",
+     "points": 18
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Refabrique, reteste avec le MÊME protocole, puis complète."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "",
+    "Masse (g)",
+    "Charge de rupture (g)",
+    "Ratio"
+   ],
+   "largeurs": [
+    2400,
+    2320,
+    2320,
+    2320
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma v1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma v2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le résultat."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ma v2 fait :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "mieux que la v1",
+     "points": 0
+    },
+    {
+     "label": "moins bien",
+     "points": 0
+    },
+    {
+     "label": "pareil",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le nuage de points de la classe  (si tu as le temps)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Place les points de la classe : la v1 en abscisse, la v2 en ordonnée. Un point au-dessus de la diagonale = une amélioration."
+  },
+  {
+   "type": "zone",
+   "label": "Nuage de points v1 / v2 — un point par groupe :",
+   "hauteur": 2600
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. C'est la conclusion de tout le projet."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Avec une seule feuille A4, on peut porter beaucoup parce que la résistance vient de "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Pour savoir si une modification est bonne, on n'en change qu'"
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " à la fois."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une décision se justifie par un "
+     },
+     {
+      "t": "champ",
+      "points": 18
+     },
+     {
+      "t": "texte",
+      "v": " du tableau, pas par une impression."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Dans une structure, c'est la "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " qui fait la résistance, pas la quantité de matière."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "L'ingénieur n'a pas d'avis : il a des mesures.",
+   "auteur": ""
+  }
+ ]
+}

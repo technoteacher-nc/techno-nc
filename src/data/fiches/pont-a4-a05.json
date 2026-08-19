@@ -1,0 +1,532 @@
+{
+ "code": "PONT-A05",
+ "niveau": "5eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "L'ESSAI DESTRUCTIF : CHARGE DE RUPTURE ET RATIO"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Huit groupes, huit ponts, huit résultats — qui ne voudront rien dire si chacun teste à sa façon. Le protocole ci-dessous est le même pour toute la classe.",
+    "Le pont le plus résistant n'est pas forcément le vainqueur : on compare ce qu'il porte RAPPORTÉ À SA PROPRE MASSE."
+   ],
+   "question": "Comment mesurer une performance de façon identique pour tous les groupes ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le protocole, le même pour tous"
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/projets/schemas/pont-banc.png"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque règle après l'avoir relue à voix haute dans ton groupe."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le gobelet est posé au MILIEU de la portée",
+     "points": 0
+    },
+    {
+     "label": "j'ajoute 50 g, puis j'attends 10 s",
+     "points": 0
+    },
+    {
+     "label": "la rupture, c'est quand le tablier touche la table",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Mes mesures"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris tes valeurs au fur et à mesure de l'essai."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je mesure",
+    "Ma valeur",
+    "Unité"
+   ],
+   "largeurs": [
+    4400,
+    2600,
+    2360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — masse du gobelet vide"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "15"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masse de ma structure (séance 4)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Charge au dernier palier tenu"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Charge de rupture"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "g"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Calcule ton ratio. Pose le calcul, puis écris le résultat arrondi au dixième."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "ratio = charge de rupture ÷ masse de la structure = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " ÷ "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ce que signifie un ratio de 40."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le pont porte 40 grammes",
+     "points": 0
+    },
+    {
+     "label": "le pont porte 40 fois sa propre masse",
+     "points": 0
+    },
+    {
+     "label": "le pont pèse 40 g",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je confronte à mon pronostic"
+  },
+  {
+   "type": "consigne",
+   "texte": "Relis ton pronostic de la séance 2, puis coche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Mon pronostic était :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "juste",
+     "points": 0
+    },
+    {
+     "label": "faux",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Reporte les résultats de la classe."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Profil",
+    "Meilleur ratio de la classe"
+   ],
+   "largeurs": [
+    4680,
+    4680
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "A — le tube"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "B — le U"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "C — l'accordéon"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le profil "
+    },
+    {
+     "t": "champ",
+     "points": 5
+    },
+    {
+     "t": "texte",
+     "v": " obtient le meilleur ratio car sa forme "
+    },
+    {
+     "t": "champ",
+     "points": 48
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Deux mesures ne se comparent que si le "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " est identique."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le ratio se calcule en divisant la charge de rupture par la "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " de la structure."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un ratio n'a pas d'unité : c'est un nombre de "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un résultat sans protocole n'est pas un résultat : c'est une anecdote.",
+   "auteur": ""
+  }
+ ]
+}

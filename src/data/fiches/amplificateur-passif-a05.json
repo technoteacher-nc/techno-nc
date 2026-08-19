@@ -1,0 +1,673 @@
+{
+ "code": "AMPLI-A05",
+ "niveau": "3eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "CAMPAGNE DE MESURES : LE GAIN EN DÉCIBELS"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Toute la classe mesure aujourd'hui, avec le même téléphone source et le même protocole. Le tableau commun n'aura de valeur que si personne ne s'en écarte.",
+    "Trois répétitions par configuration : c'est ce qui permet de savoir si une mesure est fiable ou si elle a bougé."
+   ],
+   "question": "À quelles conditions deux mesures faites par deux groupes différents sont-elles comparables ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le protocole commun"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe le schéma, puis coche chaque règle après l'avoir relue à voix haute."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/projets/schemas/ampli-protocole.png"
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "téléphone source unique",
+     "points": 0
+    },
+    {
+     "label": "1,00 m dans l'axe",
+     "points": 0
+    },
+    {
+     "label": "volume verrouillé",
+     "points": 0
+    },
+    {
+     "label": "bruit de fond relevé",
+     "points": 0
+    },
+    {
+     "label": "3 répétitions",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Mes mesures"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris tes relevés en décibels, trois fois pour chaque configuration."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Configuration",
+    "Essai 1",
+    "Essai 2",
+    "Essai 3",
+    "Moyenne"
+   ],
+   "largeurs": [
+    3000,
+    1590,
+    1590,
+    1590,
+    1590
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — bruit de fond"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "41"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "40"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "42"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "41"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Téléphone nu (référence)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma modalité 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma modalité 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Calcule l'étendue de tes trois essais sur la modalité 1 : c'est l'écart entre la plus grande et la plus petite valeur."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "étendue = "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " − "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " = "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " dB"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ce que cela signifie."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "étendue ≤ 2 dB : mes mesures sont fiables",
+     "points": 0
+    },
+    {
+     "label": "étendue > 2 dB : je recommence, quelque chose a bougé",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Mes deux gains"
+  },
+  {
+   "type": "consigne",
+   "texte": "Calcule le gain de chaque modalité par rapport au téléphone nu."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "",
+    "Moyenne (dB)",
+    "Téléphone nu (dB)",
+    "Gain (dB)"
+   ],
+   "largeurs": [
+    2400,
+    2320,
+    2320,
+    2320
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Modalité 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Modalité 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la modalité qui gagne."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "ma modalité 1",
+     "points": 0
+    },
+    {
+     "label": "ma modalité 2",
+     "points": 0
+    },
+    {
+     "label": "les deux sont à égalité (écart ≤ 1 dB)",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Sur ma variable, la modalité "
+    },
+    {
+     "t": "champ",
+     "points": 5
+    },
+    {
+     "t": "texte",
+     "v": " donne le meilleur gain, ce qui montre que "
+    },
+    {
+     "t": "champ",
+     "points": 40
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un gain se calcule en faisant la "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " entre la mesure et la référence."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "L'"
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " de plusieurs essais indique si la mesure est fiable."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le bruit de fond se relève AVANT : sans lui, on ne sait pas ce qu'on a mesuré."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Une mesure faite une seule fois n'est pas une mesure : c'est un chiffre.",
+   "auteur": ""
+  }
+ ]
+}

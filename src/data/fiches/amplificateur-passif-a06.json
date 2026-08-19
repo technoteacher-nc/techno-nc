@@ -1,0 +1,720 @@
+{
+ "code": "AMPLI-A06",
+ "niveau": "3eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LES GAINS S'ADDITIONNENT-ILS ? BILAN ET RISQUES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Chaque groupe a trouvé sa meilleure modalité. Si on assemblait toutes les meilleures modalités dans un seul pavillon, obtiendrait-on la somme de tous les gains ?",
+    "La classe fabrique ce pavillon de synthèse. Tu écris ta prévision AVANT de le mesurer."
+   ],
+   "question": "Si je combine les meilleures modalités, obtiendrai-je la somme des gains ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le tableau de la classe"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris la meilleure modalité et son gain, pour chaque variable étudiée."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Variable",
+    "Meilleure modalité",
+    "Gain (dB)"
+   ],
+   "largeurs": [
+    3200,
+    3080,
+    3080
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — longueur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "250 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "5"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Diamètre de sortie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Longueur du pavillon"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Additionne les trois gains."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "somme des gains = "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " + "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " + "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " = "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " dB"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Ma prévision, puis la mesure"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ta prévision AVANT que le pavillon de synthèse soit mesuré."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le gain sera égal à la somme",
+     "points": 0
+    },
+    {
+     "label": "il sera plus petit que la somme",
+     "points": 0
+    },
+    {
+     "label": "il sera plus grand",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris maintenant la mesure faite en classe."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "",
+    "Valeur (dB)"
+   ],
+   "largeurs": [
+    6200,
+    3160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Somme des gains prévue"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Gain réellement mesuré sur le pavillon de synthèse"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Écart entre les deux"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le résultat."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ma prévision était :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "juste",
+     "points": 0
+    },
+    {
+     "label": "fausse",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le niveau sonore et mes oreilles"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Règle à connaître : à partir de 85 dB, chaque augmentation de 3 dB DIVISE PAR DEUX la durée d'écoute sans danger."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le tableau en appliquant la règle."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Niveau",
+    "Durée d'exposition sans danger"
+   ],
+   "largeurs": [
+    3200,
+    6160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — 85 dB"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "8 heures"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "88 dB"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         },
+         {
+          "t": "texte",
+          "v": " heures"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "91 dB"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         },
+         {
+          "t": "texte",
+          "v": " heures"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "94 dB"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         },
+         {
+          "t": "texte",
+          "v": " heure"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "120 dB"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "seuil de la douleur : danger immédiat"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la phrase juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "un casque à 100 dB est sans danger toute la journée",
+     "points": 0
+    },
+    {
+     "label": "plus le niveau monte, moins on peut écouter longtemps",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. C'est la conclusion du projet."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Les gains ne s'additionnent pas exactement parce que "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un objet sans chaîne d'énergie peut quand même améliorer un résultat : il "
+     },
+     {
+      "t": "champ",
+      "points": 18
+     },
+     {
+      "t": "texte",
+      "v": " mieux."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Les gains de plusieurs modalités ne s'"
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " pas exactement."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Au-delà de 85 dB, chaque +3 dB divise par "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " la durée d'écoute sans danger."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le meilleur de chaque partie ne fait pas toujours le meilleur ensemble.",
+   "auteur": ""
+  }
+ ]
+}

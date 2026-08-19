@@ -1,0 +1,566 @@
+{
+ "code": "ABAT-A03",
+ "niveau": "4eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "SKETCHUP (1) : LE PANNEAU DÉVELOPPÉ"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "La découpeuse laser travaille à plat. Ton abat-jour, lui, est un cylindre. Il faut donc le DÉROULER avant de le découper.",
+    "L'erreur la plus fréquente de la séance : découper un panneau à la largeur du diamètre. Le panneau serait trois fois trop court."
+   ],
+   "question": "Pourquoi un objet cylindrique se dessine-t-il à plat avant d'être roulé ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Du cylindre au rectangle"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe le schéma, puis complète les phrases."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/projets/schemas/abatjour-developpe.png"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "a. La longueur du panneau à plat est égale au "
+    },
+    {
+     "t": "champ",
+     "points": 24
+    },
+    {
+     "t": "texte",
+     "v": " du cercle."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "b. On la calcule avec la formule L = π × "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Calcule la longueur développée de TON panneau. Suis la ligne EXEMPLE."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Étape",
+    "EXEMPLE (D = 120 mm)",
+    "Mon calcul"
+   ],
+   "largeurs": [
+    2400,
+    3400,
+    3560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon diamètre D"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "D = 120 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "D = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Longueur développée L"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L = 3,14 × 120 = 377 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L = 3,14 × "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " = "
+         },
+         {
+          "t": "champ",
+          "points": 12
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Hauteur h (donnée)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "h = 150 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "h = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je trace dans SketchUp"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque étape une fois faite. Travaille toujours en millimètres."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    1100,
+    8260
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. Je trace un rectangle de L × h avec les valeurs calculées ci-dessus."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Je trace UN cercle du bon Ø, à 15 mm du bord gauche et à 15 mm du bord haut."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. Je copie ce cercle vers la droite avec l'entraxe choisi (outil Déplacer + Ctrl)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4. Je multiplie la copie pour remplir la ligne (taper « x » puis le nombre)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "5. Je copie la ligne entière vers le bas, autant de fois que de rangées."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je contrôle mes ponts de matière"
+  },
+  {
+   "type": "consigne",
+   "texte": "Mesure la matière restant entre deux trous voisins, puis calcule-la pour vérifier."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "pont de matière = entraxe − Ø = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " − "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " mm"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le verdict."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "mon pont fait 3 mm ou plus : je peux découper",
+     "points": 0
+    },
+    {
+     "label": "mon pont fait moins de 3 mm : je dois augmenter l'entraxe",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un panneau développé se dessine à plat parce que la machine "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le développé d'un cylindre est un "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " de longueur L = π × D."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "π vaut environ "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le pont de matière est ce qui reste entre deux trous : au moins "
+     },
+     {
+      "t": "champ",
+      "points": 8
+     },
+     {
+      "t": "texte",
+      "v": " mm, sinon le carton se déchire."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Toute surface courbe cache un dessin plat — il suffit de la dérouler.",
+   "auteur": ""
+  }
+ ]
+}

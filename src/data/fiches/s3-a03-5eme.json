@@ -307,7 +307,11 @@
   },
   {
    "type": "consigne",
-   "texte": "À l'aide du document projeté, relie chaque service à son entreprise, puis réponds à la question d'enquêteur."
+   "texte": "À l'aide du document projeté, écris le nom de l'entreprise propriétaire en face de chaque service."
+  },
+  {
+   "type": "consigne",
+   "texte": "Réponds ensuite à la question d'enquêteur, en commençant par : « Ces entreprises gagnent de l'argent en … »"
   },
   {
    "type": "tableau",

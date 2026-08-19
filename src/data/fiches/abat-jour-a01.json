@@ -1,0 +1,785 @@
+{
+ "code": "ABAT-A01",
+ "niveau": "4eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "ÉCLAIRER SANS ÉBLOUIR : DEUX EXIGENCES OPPOSÉES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Une ampoule nue éclaire beaucoup, mais elle éblouit. Un abat-jour fermé n'éblouit plus, mais il n'éclaire presque plus rien. Entre les deux, il faut choisir.",
+    "Tu vas écrire le cahier des charges d'un abat-jour à percer : plus il y aura de trous, mieux la lumière passera — et moins la structure tiendra. Les deux exigences se contredisent : c'est voulu."
+   ],
+   "question": "Que faire quand deux exigences du cahier des charges se contredisent ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "J'observe les abat-jour du commerce"
+  },
+  {
+   "type": "consigne",
+   "texte": "Prends un abat-jour sur la table, puis coche ce que tu constates. La première ligne est un exemple."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Abat-jour",
+    "Matière",
+    "On voit l'ampoule ?",
+    "Il laisse passer"
+   ],
+   "largeurs": [
+    2200,
+    2200,
+    2480,
+    2480
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — le blanc"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "tissu"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "non"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "beaucoup"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "beaucoup",
+          "points": 0
+         },
+         {
+          "label": "peu",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "beaucoup",
+          "points": 0
+         },
+         {
+          "label": "peu",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la phrase juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "plus un abat-jour est fermé, plus il éclaire",
+     "points": 0
+    },
+    {
+     "label": "plus un abat-jour est fermé, moins il éclaire",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je mesure la lumière au luxmètre"
+  },
+  {
+   "type": "consigne",
+   "texte": "Ouvre phyphox, choisis « Luxmètre ». Place le téléphone à 300 mm de la lampe, toujours au même endroit. Écris tes trois mesures."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je mesure",
+    "Éclairement (lux)"
+   ],
+   "largeurs": [
+    6200,
+    3160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — la salle, lampe éteinte"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "120"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe seule, sans abat-jour"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe avec un abat-jour très ajouré"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe avec un abat-jour fermé"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure le mot juste : quand on ferme l'abat-jour, l'éclairement AUGMENTE / DIMINUE."
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Notre cahier des charges"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les niveaux annoncés par le professeur."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère",
+    "Niveau à atteindre",
+    "Comment on le vérifie"
+   ],
+   "largeurs": [
+    3000,
+    3180,
+    3180
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "carton 2 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "à la commande"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Éclairement diffusé à 300 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au moins "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " lux"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "phyphox, luxmètre"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tenue de la structure"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "aucune déformation sous "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "masse posée 1 min"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Temps de découpe laser"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au maximum "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " min"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "logiciel xTool"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Temps d'impression 3D"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au maximum "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " min"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "le trancheur"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "DEUX CRITÈRES ANTAGONISTES (écris ce que cela veut dire)",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. C'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Les deux critères s'opposent : si j'augmente le nombre de trous, alors "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un critère se mesure ; un avis ne se mesure pas. Un cahier des charges ne contient que des "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Deux critères sont "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " quand améliorer l'un dégrade l'autre."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "L'éclairement se mesure en "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " , avec un luxmètre."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Quand deux critères s'opposent, on ne choisit pas : on cherche un "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Concevoir, c'est choisir ce qu'on accepte de perdre.",
+   "auteur": ""
+  }
+ ]
+}

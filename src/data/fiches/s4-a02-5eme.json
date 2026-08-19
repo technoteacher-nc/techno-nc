@@ -157,7 +157,11 @@
   },
   {
    "type": "consigne",
-   "texte": "Sur le compte d'entraînement projeté, choisis les bons réglages et justifie tes choix."
+   "texte": "Sur le compte d'entraînement projeté, coche le réglage que tu choisis pour chaque ligne."
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète ensuite : « Je choisis … parce que … »."
   },
   {
    "type": "tableau",

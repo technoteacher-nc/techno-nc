@@ -273,7 +273,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Quel objet offre la meilleure expérience ? Pourquoi ? "
+     "v": "Quel objet offre la meilleure expérience ? Complète : « L'objet … offre la meilleure expérience parce que … » "
     },
     {
      "t": "champ",
@@ -690,7 +690,11 @@
   },
   {
    "type": "consigne",
-   "texte": "Observe les écrans des distributeurs A et B projetés au tableau. Relève deux différences, puis conclus."
+   "texte": "Regarde les écrans des distributeurs A et B projetés au tableau, puis écris deux différences."
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ensuite le distributeur le plus facile, et complète : « Le distributeur … est plus facile parce que … »."
   },
   {
    "type": "texte",

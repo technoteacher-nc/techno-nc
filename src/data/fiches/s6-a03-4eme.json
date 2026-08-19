@@ -242,6 +242,310 @@
    ]
   },
   {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Le programme cassé  (dépannage)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Lis le programme ci-dessous SANS le modifier. Il est chargé dans le mBot de ton îlot."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RÉPÉTER INDÉFINIMENT :   SI  distance mesurée  >  10 cm   ALORS  [ reculer 0,5 s ; tourner à droite ]   SINON  [ avancer à 50 % ]"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ce que fait RÉELLEMENT ce programme. Ne coche pas ce qu'il devrait faire."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quand le robot est LOIN du mur (plus de 10 cm) :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "il avance",
+     "points": 0
+    },
+    {
+     "label": "il recule et tourne",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quand le robot est PRÈS du mur (moins de 10 cm) :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "il avance",
+     "points": 0
+    },
+    {
+     "label": "il recule et tourne",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le comportement attendu d'un robot qui évite les obstacles."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "il recule quand il est près du mur",
+     "points": 0
+    },
+    {
+     "label": "il recule quand il est loin du mur",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche l'écart entre les deux."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le robot fait :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "exactement l'inverse de ce qu'on attend",
+     "points": 0
+    },
+    {
+     "label": "la même chose que ce qu'on attend",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la cause du dysfonctionnement. Une seule est juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le capteur à ultrasons est débranché",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "la comparaison a été écrite à l'envers : > au lieu de <",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "la vitesse d'avance est trop grande",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris la ligne corrigée, puis applique la correction dans mBlock et téléverse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "SI  distance mesurée  "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": "  10 cm   ALORS  [ reculer 0,5 s ; tourner à droite ]   SINON  [ avancer à 50 % ]"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Contrôle"
+   ],
+   "largeurs": [
+    1100,
+    8260
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. J'ai corrigé la comparaison dans mBlock et téléversé."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Posé face au mur, le robot recule AVANT de le toucher."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. J'ai relevé la distance réelle à laquelle il réagit : "
+         },
+         {
+          "t": "champ",
+          "points": 12
+         },
+         {
+          "t": "texte",
+          "v": " cm."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. C'est la seule phrase à rédiger de cette partie."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un seul signe changé suffisait à tout inverser, parce que la condition "
+    },
+    {
+     "t": "champ",
+     "points": 44
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
    "type": "bilan",
    "lignes": [
     [

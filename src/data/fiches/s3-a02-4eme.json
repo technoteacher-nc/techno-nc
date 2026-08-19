@@ -21,7 +21,25 @@
   },
   {
    "type": "consigne",
-   "texte": "Réalise puis coche. En cas de blocage : relis, réessaie, PUIS lève la main."
+   "texte": "Fais les étapes dans l'ordre. Coche chaque case dès que l'étape est réussie."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RAPPEL — Une adresse IP a quatre nombres séparés par des points : 192.168.0.10. Les trois premiers (192.168.0) désignent le RÉSEAU et sont les mêmes pour toutes les machines de la salle. Le dernier désigne LA MACHINE : c'est le seul qui change."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RAPPEL — La commande ping envoie un petit message à une machine et attend sa réponse. 0 % de paquets perdus : elle répond, la communication fonctionne. 100 % perdus : elle ne répond pas."
+    }
+   ]
   },
   {
    "type": "tableau",
@@ -58,7 +76,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Glisse 2 portables, relie-les par un câble."
+          "v": "Glisse 2 portables sur le plan, puis branche un câble entre les deux."
          }
         ]
        }
@@ -120,7 +138,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Mode simulation ▶ → sur le PC .10, installe la « Ligne de commande »."
+          "v": "Mode simulation ▶ → sur le PC 192.168.0.10, installe la « Ligne de commande »."
          }
         ]
        }
@@ -196,7 +214,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "1a. ping .11 : "
+     "v": "1a. ping vers 192.168.0.11 : "
     },
     {
      "t": "champ",
@@ -243,7 +261,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "1b. ping .12 : "
+     "v": "1b. ping vers 192.168.0.12 : "
     },
     {
      "t": "champ",
@@ -361,7 +379,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Simulation ▶ : ping du PC .10 vers .11 PUIS vers .12 → 0 % perdus exigé."
+          "v": "Simulation ▶ : ping du PC 192.168.0.10 vers 192.168.0.11, PUIS vers 192.168.0.12 → 0 % perdus exigé."
          }
         ]
        }
@@ -392,7 +410,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Tape ipconfig sur le PC .10 et relève les informations en 2a."
+          "v": "Tape ipconfig sur le PC 192.168.0.10 et relève les informations en 2a."
          }
         ]
        }
@@ -583,7 +601,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "3a. Pourquoi la topologie en étoile (avec switch) est-elle utilisée dans les vraies salles plutôt que des câbles entre chaque paire de machines ?"
+     "v": "3a. Pourquoi la topologie en étoile (avec switch) est-elle utilisée dans les vraies salles plutôt qu'un câble entre chaque paire de machines ? Commence par : « L'étoile est utilisée parce que … »"
     }
    ]
   },

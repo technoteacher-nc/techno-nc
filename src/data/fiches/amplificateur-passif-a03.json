@@ -1,0 +1,673 @@
+{
+ "code": "AMPLI-A03",
+ "niveau": "3eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE DÉVELOPPÉ DU CÔNE : PYTHAGORE PUIS PROPORTION"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton pavillon est un cône. La découpeuse laser, elle, ne sait travailler qu'à plat. Il faut donc trouver la forme plate qui, une fois roulée, donnera exactement ce cône.",
+    "Cette forme est un secteur de disque. Deux calculs la définissent, et dans cet ordre : d'abord son rayon, ensuite son angle."
+   ],
+   "question": "Quelle forme à plat faut-il découper pour obtenir le pavillon voulu ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Calcul 1 — la génératrice, par Pythagore"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe le schéma, puis complète le calcul. La ligne EXEMPLE est entièrement faite."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/projets/schemas/cone-developpe.png"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Étape",
+    "EXEMPLE (r = 45 mm, h = 108 mm)",
+    "Mon calcul"
+   ],
+   "largeurs": [
+    2200,
+    3600,
+    3560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mes deux données"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "r = 45 mm  ·  h = 108 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "r = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm  ·  h = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "r × r"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "45 × 45 = 2 025"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " × "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "h × h"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "108 × 108 = 11 664"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " × "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "g × g = somme"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2 025 + 11 664 = 13 689"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " + "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "g = racine carrée"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "√13 689 = 117 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "√"
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " = "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Calcul 2 — l'angle du secteur"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le calcul avec TES valeurs. Attention à l'ordre : la génératrice g vient du calcul 1."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "θ = 360° × r ÷ g = 360 × "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " ÷ "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " °"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le contrôle de vraisemblance."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Mon angle est compris entre 0° et 360° :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "oui, je continue",
+     "points": 0
+    },
+    {
+     "label": "non, je refais le calcul",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je trace en CAO"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque étape une fois faite."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    1100,
+    8260
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. Je trace un cercle de rayon g (la valeur du calcul 1)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Je découpe le secteur d'angle θ (la valeur du calcul 2)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. J'ajoute une languette de 15 mm le long d'un rayon, pour le collage."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4. J'exporte le développé en DXF pour le laser."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "5. Je modélise l'embout d'adaptation au téléphone et je l'exporte en STL."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Il faut calculer g AVANT θ parce que la formule de l'angle "
+    },
+    {
+     "t": "champ",
+     "points": 44
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Dans un triangle rectangle, g × g = r × r + h × h : c'est le théorème de "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "L'angle du secteur se calcule par θ = 360° × r ÷ "
+     },
+     {
+      "t": "champ",
+      "points": 8
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le développé d'un cône est un "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " de disque, jamais un rectangle."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Une forme courbe bien calculée se découpe à plat, du premier coup.",
+   "auteur": ""
+  }
+ ]
+}

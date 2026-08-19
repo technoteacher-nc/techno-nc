@@ -1,0 +1,528 @@
+{
+ "code": "PONT-A01",
+ "niveau": "5eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "FRANCHIR LE CREEK : LE CAHIER DES CHARGES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Sur le terrain de ta maison en Nouvelle-Calédonie, un creek coupe le chemin qui mène au portail. Après une grosse pluie, on ne passe plus. Il faut une passerelle.",
+    "Le collège te fournit UNE feuille A4 et 300 mm de ruban adhésif. Rien d'autre. Ta passerelle devra tenir toute seule entre les deux berges, et supporter une charge."
+   ],
+   "question": "Pourquoi une feuille posée à plat s'effondre-t-elle, alors que la même feuille roulée porte cent fois plus ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je lis le cahier des charges"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la colonne de droite avec les valeurs données par le professeur. La première ligne est un exemple : ne la remplis pas."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que le cahier des charges impose",
+    "La valeur à respecter"
+   ],
+   "largeurs": [
+    5200,
+    4160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — la matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "exactement 1 feuille A4 de 80 g"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La longueur de ruban adhésif"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au maximum "
+         },
+         {
+          "t": "champ",
+          "points": 16
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La portée à franchir (distance entre les 2 appuis)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les appuis au milieu de la portée"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "autorisés",
+          "points": 0
+         },
+         {
+          "label": "interdits",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ce qu'on mesurera à la fin"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "la charge de rupture divisée par la "
+         },
+         {
+          "t": "champ",
+          "points": 26
+         },
+         {
+          "t": "texte",
+          "v": " de la structure"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un cahier des charges (CDC) dit CE QU'IL FAUT OBTENIR, jamais COMMENT l'obtenir. C'est toi qui choisis la solution."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je manipule : la même feuille, deux fois"
+  },
+  {
+   "type": "consigne",
+   "texte": "Pose la feuille à plat sur les deux éponges, puis pose la gomme au milieu. Coche ce que tu vois."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Essai n°1 — la feuille est POSÉE À PLAT :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "elle tient",
+     "points": 0
+    },
+    {
+     "label": "elle s'affaisse",
+     "points": 0
+    },
+    {
+     "label": "elle se déchire",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Roule maintenant la même feuille en tube serré, colle-la avec 30 mm de ruban, repose-la sur les éponges et remets la gomme."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Essai n°2 — la feuille est ROULÉE EN TUBE :   "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "elle tient",
+     "points": 0
+    },
+    {
+     "label": "elle s'affaisse",
+     "points": 0
+    },
+    {
+     "label": "elle se déchire",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Entre les deux essais, une seule chose a changé. Coche laquelle."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "la quantité de papier",
+     "points": 0
+    },
+    {
+     "label": "la forme du papier",
+     "points": 0
+    },
+    {
+     "label": "la masse de la gomme",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le vocabulaire de la structure"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe le schéma, puis complète les phrases avec les mots de la banque."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/projets/schemas/pont-flexion.png"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (tu peux en utiliser un plusieurs fois) : appui · portée · charge · comprimée · tendue"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "a. Chaque berge sur laquelle repose le pont est un "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "b. La distance entre les deux appuis s'appelle la "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "c. Le poids posé sur le pont s'appelle la "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "d. Quand le pont fléchit, le dessus se raccourcit : c'est la zone "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "e. Toujours quand le pont fléchit, le dessous s'allonge : c'est la zone "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "LA PORTÉE (recopie la phrase b. avec tes mots)",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le tube tient mieux que la feuille à plat parce que sa "
+    },
+    {
+     "t": "champ",
+     "points": 58
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un "
+     },
+     {
+      "t": "champ",
+      "points": 30
+     },
+     {
+      "t": "texte",
+      "v": " des charges dit ce qu'il faut obtenir, pas comment le faire."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La "
+     },
+     {
+      "t": "champ",
+      "points": 30
+     },
+     {
+      "t": "texte",
+      "v": " est la distance entre les deux appuis."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Quand une poutre fléchit, le dessus est "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " et le dessous est "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "À quantité de matière égale, c'est la "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " qui fait la résistance."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Donne-moi une feuille de papier et je te construis un pont — à condition de pouvoir la plier.",
+   "auteur": ""
+  }
+ ]
+}

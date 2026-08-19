@@ -1,0 +1,593 @@
+{
+ "code": "PONT-A04",
+ "niveau": "5eme",
+ "seq": "projets",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "FABRICATION DU PONT V1 ET CONTRÔLE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu as ton profil, ta portée et tes cotes. Il reste à fabriquer — proprement, et avec exactement ce que le cahier des charges autorise : une feuille, 300 mm de ruban.",
+    "Aucun essai ne sera lancé avant que la fiche de conformité ci-dessous soit remplie et signée par le professeur."
+   ],
+   "question": "Comment fabriquer proprement, et prouver que mon pont respecte les quatre contraintes ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je fabrique, étape par étape"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque étape une fois qu'elle est terminée."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    1100,
+    8260
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. Je trace mes plis au crayon et à la règle, sur toute la longueur de la feuille."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Je plie ou je roule en suivant mes traits, sans forcer sur le papier."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. Je colle avec le ruban — et je mesure ce que j'ai utilisé."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "4. Je vérifie que mon pont pose bien à plat sur les deux appuis, sans bosse."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Ma fiche de conformité"
+  },
+  {
+   "type": "consigne",
+   "texte": "Mesure, puis écris tes valeurs. Coche « conforme » seulement si la valeur respecte le cahier des charges."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce que je contrôle",
+    "Ma mesure",
+    "Le CDC exige",
+    "Conforme ?"
+   ],
+   "largeurs": [
+    2900,
+    1800,
+    2860,
+    1800
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — matière"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1 feuille"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1 feuille A4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "oui"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ruban utilisé"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au maximum 300 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Portée franchie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "la valeur de la séance 3, à ±3 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Appui au milieu"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "aucun"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masse de ma structure"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " g"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "à peser au gramme près"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "pesée",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Signature du professeur (contrôle avant essai) : "
+    },
+    {
+     "t": "champ",
+     "points": 32
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "On pèse la structure AVANT l'essai parce que le résultat final se calcule en "
+    },
+    {
+     "t": "champ",
+     "points": 48
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Être conforme, c'est respecter TOUTES les contraintes, pas seulement les plus faciles."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La masse de la structure se mesure avant l'essai, au "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " près."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un contrôle se fait avec un instrument, jamais "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Ce qui n'est pas mesuré n'est pas contrôlé.",
+   "auteur": ""
+  }
+ ]
+}

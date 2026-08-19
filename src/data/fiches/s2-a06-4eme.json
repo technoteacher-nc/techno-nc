@@ -26,13 +26,13 @@
   },
   {
    "type": "consigne",
-   "texte": "Relie chaque critère UX à la question qui lui correspond. Attention, l'ordre a été mélangé."
+   "texte": "Écris le numéro de la question en face du critère qui lui correspond. L'ordre est mélangé exprès."
   },
   {
    "type": "tableau",
    "entetes": [
     "Critère UX",
-    "Question que se pose l'utilisateur (à relier au bon critère)"
+    "Question que se pose l'utilisateur"
    ],
    "largeurs": [
     3200,
@@ -48,7 +48,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "EFFICACITÉ  •"
+          "v": "EFFICACITÉ → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -62,7 +66,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "•  « Est-ce agréable, sans effort ni geste inutile ? »"
+          "v": "① « Est-ce agréable, sans effort ni geste inutile ? »"
          }
         ]
        }
@@ -78,7 +82,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "FACILITÉ D'APPRENTISSAGE  •"
+          "v": "FACILITÉ D'APPRENTISSAGE → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -92,7 +100,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "•  « Tout le monde peut-il l'utiliser, quel que soit son âge ou son handicap ? »"
+          "v": "② « Tout le monde peut-il l'utiliser, quel que soit son âge ou son handicap ? »"
          }
         ]
        }
@@ -108,7 +116,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "CONFORT  •"
+          "v": "CONFORT → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -122,7 +134,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "•  « Est-ce que j'atteins mon but à coup sûr, sans erreur ? »"
+          "v": "③ « Est-ce que j'atteins mon but à coup sûr, sans erreur ? »"
          }
         ]
        }
@@ -138,7 +150,11 @@
         "v": [
          {
           "t": "texte",
-          "v": "ACCESSIBILITÉ  •"
+          "v": "ACCESSIBILITÉ → n° "
+         },
+         {
+          "t": "champ",
+          "points": 6
          }
         ]
        }
@@ -152,7 +168,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "•  « Est-ce que je comprends comment m'en servir vite, sans notice ? »"
+          "v": "④ « Est-ce que je comprends comment m'en servir vite, sans notice ? »"
          }
         ]
        }
@@ -168,7 +184,15 @@
   },
   {
    "type": "consigne",
-   "texte": "Observe les deux versions de l'application projetées au tableau. Note chaque version de 0 à 5 pour chaque critère, et justifie par un fait précis (nombre d'étapes, taille des boutons, contraste…)."
+   "texte": "Regarde les deux versions de l'application projetées au tableau."
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris une note de 0 à 5 à chaque version, pour chaque critère. 0 = très mauvais, 5 = parfait."
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris ensuite UN fait précis qui explique ta note : « … parce que la version B demande 4 étapes au lieu de 2 »."
   },
   {
    "type": "tableau",
@@ -306,7 +330,11 @@
   },
   {
    "type": "consigne",
-   "texte": "La nouvelle application doit être utilisable par une personne malvoyante. Propose DEUX modifications précises et justifie chacune en citant le critère UX concerné."
+   "texte": "La nouvelle application doit être utilisable par une personne malvoyante. Écris DEUX modifications précises."
+  },
+  {
+   "type": "consigne",
+   "texte": "Pour chaque modification, complète l'amorce : « Je propose … parce que cela améliore le critère … »."
   },
   {
    "type": "texte",

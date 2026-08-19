@@ -318,7 +318,15 @@
   },
   {
    "type": "consigne",
-   "texte": "Repasse en mode conception (marteau). Ajoute un 3e portable (192.168.0.12) et un SWITCH, puis relie les 3 PC au switch (comme les rayons d'une étoile). Vérifie par un ping depuis chaque machine."
+   "texte": "Repasse en mode conception (le marteau), puis ajoute un 3e portable (192.168.0.12) et un SWITCH."
+  },
+  {
+   "type": "consigne",
+   "texte": "Branche ensuite un câble entre chaque PC et le switch, comme les rayons d'une étoile."
+  },
+  {
+   "type": "consigne",
+   "texte": "Repasse en mode simulation et lance un ping depuis chaque machine : les trois doivent afficher 0 % perdus."
   },
   {
    "type": "coches",
