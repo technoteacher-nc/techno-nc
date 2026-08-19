@@ -238,7 +238,8 @@
           "label": "1",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -268,7 +269,8 @@
           "label": "2",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -298,7 +300,8 @@
           "label": "3",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -328,7 +331,8 @@
           "label": "4",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -358,7 +362,8 @@
           "label": "5",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -464,7 +469,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -534,7 +540,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -600,7 +607,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -614,7 +622,8 @@
      "label": "Diagonales égales (équerrage ficelle) ✋ vérification professeur",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

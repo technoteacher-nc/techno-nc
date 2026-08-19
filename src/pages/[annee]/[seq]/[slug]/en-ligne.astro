@@ -72,10 +72,11 @@ const retour = u(`/${d.annee}/${d.seq}/${act.id}`);
       </p>
     </div>
     <div class="fl-barre-actions">
-      <button type="button" class="btn" id="fl-imprimer">Imprimer / PDF</button>
+      <button type="button" class="btn" id="fl-imprimer">Imprimer<span class="btn-meta">ou PDF</span></button>
+      <button type="button" class="btn" id="fl-word">Exporter<span class="btn-meta">Word</span></button>
+      <button type="button" class="btn" id="fl-enregistrer">Sauvegarder<span class="btn-meta">pour reprendre</span></button>
+      <label class="btn" for="fl-reprendre">Reprendre<span class="btn-meta">un fichier</span></label>
       <button type="button" class="btn" id="fl-copier">Copier mes réponses</button>
-      <button type="button" class="btn" id="fl-enregistrer">Enregistrer dans un fichier</button>
-      <label class="btn" for="fl-reprendre">Reprendre un fichier</label>
       <input type="file" id="fl-reprendre" accept=".json,application/json" hidden />
       <button type="button" class="btn fl-btn-danger" id="fl-effacer">Tout effacer</button>
     </div>
@@ -253,6 +254,53 @@ Ouvre la bonne activité, puis reprends ton fichier.`);
           alert("Ce fichier n'est pas lisible. Reprends celui que tu as enregistré depuis cette page.");
         }
         ev.target.value = '';
+      });
+
+      // Export Word.
+      //
+      // Le fichier de sauvegarde est du JSON : c'est ce qu'il faut pour que
+      // « Reprendre un fichier » retrouve chaque réponse à sa place, mais ça ne
+      // s'ouvre pas dans un traitement de texte. Pour rendre ou archiver son
+      // travail, l'élève a besoin d'un document lisible — d'où cet export.
+      // Word ouvre nativement un fichier HTML portant l'extension .doc :
+      // aucune bibliothèque à charger, et le rendu conserve les tableaux.
+      document.getElementById('fl-word').addEventListener('click', () => {
+        const copie = document.getElementById('fl-fiche').cloneNode(true);
+
+        // Les champs de saisie deviennent du texte : un <input> ne s'imprime pas
+        // dans Word, seule sa valeur compte.
+        for (const el of copie.querySelectorAll('input, textarea')) {
+          if (el.type === 'checkbox') {
+            const marque = document.createElement('span');
+            marque.textContent = el.checked ? '☑ ' : '☐ ';
+            el.replaceWith(marque);
+          } else {
+            const texte = document.createElement('span');
+            texte.className = 'rep';
+            texte.textContent = el.value || '………';
+            el.replaceWith(texte);
+          }
+        }
+        for (const el of copie.querySelectorAll('.fl-attendu, .fl-note-prof')) el.remove();
+
+        const nom = (document.getElementById('fl-nom').value || '').trim();
+        const entete = `<h1>${document.querySelector('.act-tete h1').textContent}</h1>`
+          + (nom ? `<p><b>${nom}</b></p>` : '');
+        const style = 'body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#000}'
+          + 'h1{font-size:16pt}h2{font-size:14pt}h3{font-size:12pt;background:#eee;padding:4pt}'
+          + 'table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:4pt;'
+          + 'vertical-align:top}.rep{color:#0a3d8f;font-weight:bold}'
+          + 'ul{margin:0;padding-left:14pt}';
+        const doc = '<html xmlns:o="urn:schemas-microsoft-com:office:office" '
+          + 'xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">'
+          + `<head><meta charset="utf-8"><title>${document.title}</title><style>${style}</style></head>`
+          + `<body>${entete}${copie.innerHTML}</body></html>`;
+
+        const lien = document.createElement('a');
+        lien.href = URL.createObjectURL(new Blob(['﻿' + doc], { type: 'application/msword' }));
+        lien.download = nomFichier().replace(/\.json$/, '.doc');
+        lien.click();
+        URL.revokeObjectURL(lien.href);
       });
 
       // ------------------------------------------------------ la correction

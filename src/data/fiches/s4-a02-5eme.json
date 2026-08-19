@@ -200,10 +200,11 @@
           "points": 0
          },
          {
-          "label": "Moi seul  — car",
-          "points": 17
+          "label": "Moi seul",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }
@@ -234,10 +235,11 @@
           "points": 0
          },
          {
-          "label": "Désactivée  — car",
-          "points": 17
+          "label": "Désactivée",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }
@@ -268,10 +270,11 @@
           "points": 0
          },
          {
-          "label": "Privé  — car",
-          "points": 17
+          "label": "Privé",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }
@@ -302,10 +305,11 @@
           "points": 0
          },
          {
-          "label": "Refuser/signaler  — car",
-          "points": 17
+          "label": "Refuser/signaler",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }

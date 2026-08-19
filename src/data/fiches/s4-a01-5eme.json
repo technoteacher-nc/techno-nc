@@ -280,7 +280,8 @@
      "label": "1 symbole",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "definition",
@@ -336,7 +337,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -370,7 +372,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -404,7 +407,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -438,7 +442,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -452,7 +457,8 @@
      "label": "Mon affichette « 3 règles d'or » est enregistrée dans TECHNO/SEQ04 sous le nom NOM_S4A01. ✋",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

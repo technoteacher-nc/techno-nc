@@ -1,7 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { simulateursDe } from '../../../data/ressources';
+import { simulateursDe, motsDe } from '../../../data/ressources';
+import { notionsDe } from '../../../data/consolidation';
 import { statSync, existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -45,6 +46,12 @@ const aFicheEnLigne = existsSync(path.join(process.cwd(), 'src', 'data', 'fiches
 // un index : au moment où l'élève bloque, il est sur la fiche, pas sur la page
 // Ressources.
 const pourAllerPlusLoin = simulateursDe(act.id);
+
+// Le vocabulaire réellement mobilisé par CETTE activité, lexique et
+// consolidation confondus. Mieux vaut trois mots au bon endroit qu'une liste
+// de dix-huit définitions à trier soi-même.
+const mots = motsDe(act.id);
+const notions = notionsDe(act.id);
 
 const urlPage = new URL(u(`/${d.annee}/${d.seq}/${act.id}`) + '/', Astro.site).href;
 const donneesLd = [
@@ -113,6 +120,28 @@ const donneesLd = [
         {d.prerequis && <><dt>Prérequis</dt><dd>{d.prerequis}</dd></>}
         {d.materiel && <><dt>Matériel</dt><dd>{d.materiel}</dd></>}
       </dl>
+    </section>
+  )}
+
+  {(mots.length > 0 || notions.length > 0) && (
+    <section class="mots-cles" aria-labelledby="mots-cles-titre">
+      <h2 id="mots-cles-titre">Le vocabulaire de cette activité</h2>
+      {mots.length > 0 && (
+        <dl class="mots-liste">
+          {mots.map(m => (<><dt>{m.mot}</dt><dd>{m.def}</dd></>))}
+        </dl>
+      )}
+      {notions.length > 0 && (
+        <p class="mots-notions">
+          <span class="mots-notions-label">À maîtriser aussi</span>
+          {notions.map(n => (
+            <a class="mots-puce" href={u('/ressources/lexique#consolidation')}>
+              {n.nom}{n.symbole && <em>{n.symbole}</em>}
+            </a>
+          ))}
+        </p>
+      )}
+      <p class="mots-lien"><a href={u('/ressources/lexique')}>Tout le lexique →</a></p>
     </section>
   )}
 

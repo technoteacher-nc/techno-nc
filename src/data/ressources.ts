@@ -64,42 +64,42 @@ export const lexique = [
     titre: 'Analyser et concevoir les objets et systèmes techniques',
     repere: 'OST',
     termes: [
-      ['Objet et Système Technique (OST)', "Ensemble des produits, services, logiciels et programmes créés pour répondre à un besoin. On passe de l'objet seul (une montre connectée) au système (la montre reliée à un réseau de géolocalisation)."],
-      ['Besoin', "Nécessité ou désir éprouvé par un utilisateur, auquel l'objet technique doit répondre."],
-      ['Cahier des charges (CDC)', "Document qui liste les fonctions attendues, les contraintes (sécurité, environnement…) et les critères de performance d'un objet."],
-      ['Contrainte', "Exigence liée à l'usage, à la sécurité, à l'ergonomie ou au développement durable, que le concepteur doit respecter."],
-      ['Cycle de vie', "Ensemble des étapes de la vie d'un objet, de l'extraction des matières premières à sa fin de vie (recyclage ou déchet), en passant par sa fabrication et son utilisation."],
+      ['Objet et Système Technique (OST)', "Ensemble des produits, services, logiciels et programmes créés pour répondre à un besoin. On passe de l'objet seul (une montre connectée) au système (la montre reliée à un réseau de géolocalisation).", ['s2-a06-4eme','s2-a06-5eme','s2-a07-4eme','s2-a07-5eme']],
+      ['Besoin', "Nécessité ou désir éprouvé par un utilisateur, auquel l'objet technique doit répondre.", ['s5-a01-4eme','s5-a01-5eme','s2-a07-5eme']],
+      ['Cahier des charges (CDC)', "Document qui liste les fonctions attendues, les contraintes (sécurité, environnement…) et les critères de performance d'un objet.", ['s5-a01-4eme','s5-a01-5eme','s5-a02-4eme','s5-a04-4eme','s5-a05-4eme','s5-a03-5eme']],
+      ['Contrainte', "Exigence liée à l'usage, à la sécurité, à l'ergonomie ou au développement durable, que le concepteur doit respecter.", ['s5-a01-4eme','s5-a01-5eme']],
+      ['Cycle de vie', "Ensemble des étapes de la vie d'un objet, de l'extraction des matières premières à sa fin de vie (recyclage ou déchet), en passant par sa fabrication et son utilisation.", ['s2-a07-4eme']],
     ],
   },
   {
     titre: 'La structure interne — Matière, Énergie, Information',
     repere: 'MEI',
     termes: [
-      ["Chaîne d'énergie", "Ensemble des constituants qui permettent de réaliser une action (mouvement, chaleur, lumière). Ses fonctions : alimenter (batterie), distribuer (relais), convertir (moteur, lampe) et transmettre (engrenages)."],
-      ["Chaîne d'information", "Ensemble des constituants qui permettent d'acquérir des données, de les traiter et de les communiquer."],
-      ['Capteur', "Élément de la chaîne d'information qui prélève une grandeur physique (température, présence, distance…) et la transforme en signal exploitable."],
-      ['Actionneur', "Élément de la chaîne d'énergie qui transforme l'énergie reçue en un effet physique (rotation d'un moteur, mouvement d'un vérin…)."],
-      ['Microcontrôleur', "Unité de traitement de l'information qui exécute le programme pour piloter les actionneurs en fonction des données des capteurs."],
+      ["Chaîne d'énergie", "Ensemble des constituants qui permettent de réaliser une action (mouvement, chaleur, lumière). Ses fonctions : alimenter (batterie), distribuer (relais), convertir (moteur, lampe) et transmettre (engrenages).", ['s6-a01-4eme']],
+      ["Chaîne d'information", "Ensemble des constituants qui permettent d'acquérir des données, de les traiter et de les communiquer.", ['s6-a01-4eme','s6-a03-4eme']],
+      ['Capteur', "Élément de la chaîne d'information qui prélève une grandeur physique (température, présence, distance…) et la transforme en signal exploitable.", ['s6-a01-4eme','s6-a03-4eme']],
+      ['Actionneur', "Élément de la chaîne d'énergie qui transforme l'énergie reçue en un effet physique (rotation d'un moteur, mouvement d'un vérin…).", ['s6-a01-4eme']],
+      ['Microcontrôleur', "Unité de traitement de l'information qui exécute le programme pour piloter les actionneurs en fonction des données des capteurs.", ['s6-a01-4eme','s6-a02-4eme']],
     ],
   },
   {
     titre: 'Informatique et programmation',
     repere: 'CODE',
     termes: [
-      ['Algorithme', 'Description précise, étape par étape, de la manière de résoudre un problème.'],
-      ['Programme (codage)', "Assemblage d'instructions informatiques (souvent par blocs au collège) qui guide un robot ou un objet connecté."],
-      ['Instruction conditionnelle', 'Structure de type « Si… alors… sinon » qui exécute des actions différentes selon une condition.'],
-      ['Variable', "Donnée stockée par le programme (nombre, mot ou booléen) dont la valeur peut changer pendant l'exécution."],
-      ['Réseau local', "Ensemble d'équipements informatiques (terminaux, commutateurs…) reliés entre eux pour échanger des données au sein d'un bâtiment."],
+      ['Algorithme', 'Description précise, étape par étape, de la manière de résoudre un problème.', ['s6-a01-5eme','s6-a02-5eme']],
+      ['Programme (codage)', "Assemblage d'instructions informatiques (souvent par blocs au collège) qui guide un robot ou un objet connecté.", ['s6-a02-4eme','s6-a02-5eme','s6-a04-4eme','s6-a04-5eme']],
+      ['Instruction conditionnelle', 'Structure de type « Si… alors… sinon » qui exécute des actions différentes selon une condition.', ['s6-a03-4eme','s6-a03-5eme']],
+      ['Variable', "Donnée stockée par le programme (nombre, mot ou booléen) dont la valeur peut changer pendant l'exécution.", ['s6-a03-5eme']],
+      ['Réseau local', "Ensemble d'équipements informatiques (terminaux, commutateurs…) reliés entre eux pour échanger des données au sein d'un bâtiment.", ['s3-a01-4eme','s3-a01-5eme','s3-a02-4eme','s3-a04-5eme']],
     ],
   },
   {
     titre: 'Innovation et prototypage',
     repere: 'PROTO',
     termes: [
-      ['Prototypage', "Réalisation d'un modèle concret, souvent simplifié, pour tester et valider des solutions techniques avant la fabrication finale."],
-      ['CAO / Modélisation numérique', "Utilisation de logiciels (Sweet Home 3D, SketchUp, Tinkercad…) pour créer une représentation virtuelle d'un objet en 3D et simuler son comportement."],
-      ['Fabrication additive', 'Procédé de fabrication par ajout de matière, couramment appelé impression 3D.'],
+      ['Prototypage', "Réalisation d'un modèle concret, souvent simplifié, pour tester et valider des solutions techniques avant la fabrication finale.", ['s5-a05-4eme','s5-a05-5eme','s5-a06-4eme','s5-a06-5eme']],
+      ['CAO / Modélisation numérique', "Utilisation de logiciels (Sweet Home 3D, SketchUp, Tinkercad…) pour créer une représentation virtuelle d'un objet en 3D et simuler son comportement.", ['s5-a03-4eme','s5-a03-5eme','s5-a04-4eme','s5-a04-5eme']],
+      ['Fabrication additive', 'Procédé de fabrication par ajout de matière, couramment appelé impression 3D.', ['s5-a06-4eme','s5-a06-5eme']],
     ],
   },
 ];
@@ -217,3 +217,13 @@ export const simulateursDe = (slug: string): Simulateur[] =>
 
 export const nbSimulateurs = simulateurs.reduce((n, g) => n + g.items.length, 0);
 export const nbTermes = lexique.reduce((n, s) => n + s.termes.length, 0);
+
+// Les mots du lexique employés dans une activité donnée. Le troisième élément
+// d'un terme liste les activités où il est réellement mobilisé : c'est ce qui
+// permet d'afficher le vocabulaire utile SUR la fiche, plutôt que de renvoyer
+// l'élève à une liste de 18 définitions dont 2 le concernent.
+export const motsDe = (slug: string) =>
+  lexique.flatMap(s =>
+    s.termes
+      .filter(t => (t[2] as string[] | undefined)?.includes(slug))
+      .map(t => ({ mot: t[0] as string, def: t[1] as string, theme: s.repere })));

@@ -215,7 +215,8 @@
           "label": "1",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -245,7 +246,8 @@
           "label": "2",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -275,7 +277,8 @@
           "label": "3",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -305,7 +308,8 @@
           "label": "4",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -335,7 +339,8 @@
           "label": "5",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -437,7 +442,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -503,7 +509,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -569,7 +576,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -635,7 +643,8 @@
           "label": "non",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -649,7 +658,8 @@
      "label": "Toutes mes pièces sont nommées et conformes — vérification professeur ✋",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

@@ -9,6 +9,7 @@
 
 import Base from '../../layouts/Base.astro';
 import { syntheses, nbTermes, nbSimulateurs } from '../../data/ressources';
+import { nbNotions } from '../../data/consolidation';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
@@ -22,10 +23,10 @@ const entrees = [
     href: '/ressources/syntheses',
   },
   {
-    titre: 'Lexique',
+    titre: 'Lexique & consolidation',
     quand: 'Quand un mot bloque',
-    resume: `Le vocabulaire à savoir utiliser en 5ème et en 4ème, et à maîtriser pour l'épreuve de technologie du Brevet.`,
-    compte: `${nbTermes} définitions`,
+    resume: `Le vocabulaire de Technologie attendu au Brevet, et les notions de maths et de physique-chimie qui servent dans les activités : unités, conversions, échelles, pourcentages.`,
+    compte: `${nbTermes} mots + ${nbNotions} notions`,
     href: '/ressources/lexique',
   },
   {

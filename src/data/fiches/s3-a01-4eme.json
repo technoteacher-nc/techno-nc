@@ -452,10 +452,11 @@
           "points": 0
          },
          {
-          "label": "non — car",
-          "points": 37
+          "label": "non",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 37
        }
       ]
      }

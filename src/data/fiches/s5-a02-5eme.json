@@ -231,7 +231,8 @@
           "label": "non)",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -271,7 +272,8 @@
      "label": "Vérifié par le professeur ✋",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

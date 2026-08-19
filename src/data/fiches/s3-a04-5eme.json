@@ -81,7 +81,8 @@
           "label": "1",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -111,7 +112,8 @@
           "label": "2",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -141,7 +143,8 @@
           "label": "3",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -171,7 +174,8 @@
           "label": "4",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -201,7 +205,8 @@
           "label": "5",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -231,7 +236,8 @@
           "label": "6",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      },
@@ -288,7 +294,8 @@
      "label": "non",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "texte",
@@ -320,7 +327,8 @@
      "label": "Mes 3 ordinateurs se répondent tous au ping (0 % perdus).",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "coches",
@@ -329,7 +337,8 @@
      "label": "J'ai montré ma simulation au professeur. ✋",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "texte",

@@ -273,7 +273,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -307,7 +308,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -341,7 +343,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -375,7 +378,8 @@
           "label": "FAUX",
           "points": 0
          }
-        ]
+        ],
+        "justif": 0
        }
       ]
      }
@@ -420,7 +424,8 @@
      "label": "J'ouvre MA session (jamais celle d'un camarade).",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "coches",
@@ -429,7 +434,8 @@
      "label": "Dans mon espace personnel, je crée le dossier TECHNO, puis dedans le dossier SEQ03.",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "coches",
@@ -438,7 +444,8 @@
      "label": "J'ouvre le traitement de texte, j'écris mon prénom et la date.",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "coches",
@@ -447,7 +454,8 @@
      "label": "J'enregistre dans SEQ03 sous le nom : NOM_Prenom_S3A01.",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "coches",
@@ -456,7 +464,8 @@
      "label": "Je ferme tout, puis je RETROUVE mon fichier depuis l'explorateur. ✋ Vérification professeur.",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

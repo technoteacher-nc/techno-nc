@@ -264,10 +264,11 @@
           "points": 0
          },
          {
-          "label": "PIÈGE — preuve :",
-          "points": 45
+          "label": "PIÈGE",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 45
        }
       ]
      }
@@ -298,10 +299,11 @@
           "points": 0
          },
          {
-          "label": "PIÈGE — preuve :",
-          "points": 45
+          "label": "PIÈGE",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 45
        }
       ]
      }
@@ -332,10 +334,11 @@
           "points": 0
          },
          {
-          "label": "PIÈGE — preuve :",
-          "points": 45
+          "label": "PIÈGE",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 45
        }
       ]
      }
@@ -366,10 +369,11 @@
           "points": 0
          },
          {
-          "label": "PIÈGE — preuve :",
-          "points": 45
+          "label": "PIÈGE",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 45
        }
       ]
      }
@@ -400,10 +404,11 @@
           "points": 0
          },
          {
-          "label": "PIÈGE — preuve :",
-          "points": 45
+          "label": "PIÈGE",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 45
        }
       ]
      }
@@ -434,10 +439,11 @@
           "points": 0
          },
          {
-          "label": "PIÈGE — preuve :",
-          "points": 45
+          "label": "PIÈGE",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 45
        }
       ]
      }

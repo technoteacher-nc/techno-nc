@@ -396,10 +396,11 @@
           "points": 0
          },
          {
-          "label": "Personnaliser — car",
-          "points": 17
+          "label": "Personnaliser",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }
@@ -434,10 +435,11 @@
           "points": 0
          },
          {
-          "label": "Jamais — car",
-          "points": 17
+          "label": "Jamais",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }
@@ -468,10 +470,11 @@
           "points": 0
          },
          {
-          "label": "Désactivée — car",
-          "points": 17
+          "label": "Désactivée",
+          "points": 0
          }
-        ]
+        ],
+        "justif": 17
        }
       ]
      }
@@ -498,7 +501,8 @@
      "label": "un délit puni par la loi",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

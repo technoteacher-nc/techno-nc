@@ -256,7 +256,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -265,7 +271,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -274,7 +286,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -299,7 +317,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -308,7 +332,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -317,7 +347,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -342,7 +378,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -351,7 +393,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -360,7 +408,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }

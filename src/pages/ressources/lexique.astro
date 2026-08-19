@@ -1,11 +1,19 @@
 ---
-// Lexique — le vocabulaire du cycle 4 et du Brevet.
+// Lexique & consolidation.
 //
-// Les quatre thèmes sont repliés par défaut (<details>, sans JavaScript) :
-// l'élève arrive sur une page qui tient à l'écran et ouvre ce qu'il cherche,
-// au lieu de faire défiler 17 définitions pour en trouver une.
+// Deux contenus de nature différente sur une même page, et c'est voulu : quand
+// un élève bute sur un mot, il ne sait pas d'avance si c'est du vocabulaire de
+// Technologie (« actionneur ») ou une notion de maths qui lui manque (« 1 m²
+// ne fait pas 100 cm² »). Il cherche au même endroit.
+//
+// Ils restent visuellement distincts — la consolidation a son propre bandeau,
+// ses tableaux d'unités et ses encadrés « piège » — et les thèmes sont repliés
+// par défaut (<details>, sans JavaScript) pour que la page tienne à l'écran.
+// À l'impression, tout s'ouvre : c'est le mémo qu'on colle dans le cahier.
+
 import Base from '../../layouts/Base.astro';
 import { lexique, lexiquePdf, lexiqueDocx, nbTermes } from '../../data/ressources';
+import { consolidation, nbNotions } from '../../data/consolidation';
 import { statSync } from 'node:fs';
 import path from 'node:path';
 
@@ -21,22 +29,25 @@ function poids(rel) {
 const pPdf = poids(lexiquePdf), pDocx = poids(lexiqueDocx);
 
 const urlPage = new URL(u('/ressources/lexique/'), Astro.site).href;
-const donneesLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'DefinedTermSet',
-    name: 'Lexique de Technologie — Cycle 4 & Brevet',
-    url: urlPage,
-    inLanguage: 'fr',
-    hasDefinedTerm: lexique.flatMap(s => s.termes.map(([mot, def]) => ({
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTermSet',
+  name: 'Lexique de Technologie — Cycle 4 & Brevet',
+  url: urlPage,
+  inLanguage: 'fr',
+  hasDefinedTerm: [
+    ...lexique.flatMap(s => s.termes.map(([mot, def]) => ({
       '@type': 'DefinedTerm', name: mot, description: def,
     }))),
-  },
-];
+    ...consolidation.flatMap(b => b.notions.map(n => ({
+      '@type': 'DefinedTerm', name: n.nom + (n.symbole ? ` (${n.symbole})` : ''), description: n.def,
+    }))),
+  ],
+};
 ---
 <Base
-  titre="Lexique de Technologie — cycle 4 & Brevet"
-  description="Les mots à savoir utiliser en Technologie en 5ème et en 4ème, et à maîtriser pour l'épreuve du Brevet des collèges.">
+  titre="Lexique & consolidation — Technologie cycle 4"
+  description="Le vocabulaire de Technologie du cycle 4 et du Brevet, et les notions de maths et de physique-chimie nécessaires aux activités : unités, conversions, échelles, pourcentages.">
 
   <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
@@ -46,21 +57,29 @@ const donneesLd = [
 
   <section class="hero hero--court leve">
     <span class="eyebrow leve leve-1">Document ressource · cycle 4</span>
-    <h1 class="leve leve-1">Le <em>lexique</em></h1>
+    <h1 class="leve leve-1">Lexique &amp; <em>consolidation</em></h1>
     <p class="leve leve-2">
-      Quels mots dois-tu savoir utiliser pour parler comme un technologue ?
-      {nbTermes} définitions, rangées en quatre thèmes. Ouvre celui qui te
-      concerne.
+      {nbTermes} mots de Technologie à savoir employer, et {nbNotions} notions de
+      maths et de physique-chimie sans lesquelles les activités ne peuvent pas
+      être faites. Ouvre le thème qui te concerne.
     </p>
     <div class="docs leve leve-3">
       <a class="btn btn--fort" href={u(lexiquePdf)} download>
-        Télécharger le lexique{pPdf && <span class="btn-meta">PDF · {pPdf}</span>}
+        Lexique en PDF{pPdf && <span class="btn-meta">{pPdf}</span>}
       </a>
       <a class="btn" href={u(lexiqueDocx)} download>
         Version modifiable{pDocx && <span class="btn-meta">DOCX · {pDocx}</span>}
       </a>
+      <button type="button" class="btn" id="lex-imprimer">
+        Imprimer cette page<span class="btn-meta">tout déplié</span>
+      </button>
     </div>
   </section>
+
+  <!-- ---------- vocabulaire de Technologie ---------- -->
+  <h2 class="lex-bandeau" id="lexique">
+    Vocabulaire de Technologie<span>{nbTermes} mots · attendus au Brevet</span>
+  </h2>
 
   <div class="lex-themes">
     {lexique.map((s, i) => (
@@ -70,13 +89,51 @@ const donneesLd = [
           <span class="lex-theme-meta">{s.repere} · {s.termes.length} mots</span>
         </summary>
         <dl class="lexique">
-          {s.termes.map(([mot, def]) => (
-            <>
-              <dt>{mot}</dt>
-              <dd>{def}</dd>
-            </>
-          ))}
+          {s.termes.map(([mot, def]) => (<><dt>{mot}</dt><dd>{def}</dd></>))}
         </dl>
+      </details>
+    ))}
+  </div>
+
+  <!-- ---------- consolidation maths / physique-chimie ---------- -->
+  <h2 class="lex-bandeau lex-bandeau--conso" id="consolidation">
+    Consolidation — maths &amp; physique-chimie<span>{nbNotions} notions · les bases à maîtriser</span>
+  </h2>
+  <p class="conso-intro">
+    Ce ne sont pas des leçons d'une autre matière : ce sont les points précis sur
+    lesquels on bute en Technologie. Convertir des millimètres, calculer une
+    surface, appliquer une échelle, ajouter un pourcentage. Chaque notion donne
+    un <strong>ordre de grandeur concret</strong> et, quand il y en a un, le
+    <strong>piège</strong> dans lequel on tombe vraiment.
+  </p>
+
+  <div class="lex-themes">
+    {consolidation.map(b => (
+      <details class="lex-theme lex-theme--conso">
+        <summary>
+          <span class="lex-theme-titre">{b.titre}</span>
+          <span class="lex-theme-meta">{b.repere} · {b.notions.length} notions</span>
+        </summary>
+        <div class="conso-corps">
+          <p class="conso-chapeau">{b.intro}</p>
+          {b.schema && (
+            <figure class="conso-schema">
+              <img src={u(b.schema)} alt={`Schéma — ${b.titre}`} loading="lazy" />
+            </figure>
+          )}
+          <ul class="conso-liste">
+            {b.notions.map(n => (
+              <li>
+                <p class="conso-nom">
+                  {n.nom}{n.symbole && <code>{n.symbole}</code>}
+                </p>
+                <p class="conso-def">{n.def}</p>
+                {n.repere && <p class="conso-repere"><span>Ordre de grandeur</span>{n.repere}</p>}
+                {n.piege && <p class="conso-piege"><span>Piège</span>{n.piege}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
       </details>
     ))}
   </div>
@@ -85,5 +142,20 @@ const donneesLd = [
     <a class="btn" href={u('/ressources/syntheses')}>Fiches de synthèse →</a>
     <a class="btn" href={u('/ressources/animations')}>Animations &amp; logiciels →</a>
   </nav>
+
+  <script>
+    // Impression : tout déplier d'abord, sinon un thème replié s'imprime
+    // replié et le mémo collé dans le cahier est vide.
+    const bouton = document.getElementById('lex-imprimer');
+    if (bouton) {
+      const tout = () => document.querySelectorAll('details.lex-theme');
+      bouton.addEventListener('click', () => {
+        tout().forEach(d => d.open = true);
+        window.print();
+      });
+      // Ctrl+P direct : même précaution.
+      window.addEventListener('beforeprint', () => tout().forEach(d => d.open = true));
+    }
+  </script>
 
 </Base>

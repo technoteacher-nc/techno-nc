@@ -88,23 +88,29 @@ for (const b of blocs) {
 
     case 'coches':
       return (
-        <ul class="fl-coches">
-          {b.items.map(it => {
-            const cid = id();
-            return (
-              <li>
-                <input type="checkbox" id={cid} data-champ={cid} />
-                <label for={cid}>{it.label}</label>
-                {/* « ☐ Personnaliser — car ……… » : la justification est une
-                    réponse à part entière, elle a donc son propre champ. */}
-                {it.points > 0 && (
-                  <input class="fl-champ fl-champ--justif" type="text" data-champ={id()}
-                         aria-label={`Justification : ${it.label}`} placeholder="car…" />
-                )}
-              </li>
-            );
-          })}
-        </ul>
+        <>
+          <ul class="fl-coches">
+            {b.items.map(it => {
+              const cid = id();
+              return (
+                <li>
+                  <input type="checkbox" id={cid} data-champ={cid} />
+                  <label for={cid}>{it.label}</label>
+                </li>
+              );
+            })}
+          </ul>
+          {/* La justification porte sur le CHOIX : elle est placée sous le
+              groupe entier, pas en face d'une option — sinon le champ désigne
+              une réponse. */}
+          {b.justif > 0 && (
+            <p class="fl-justif">
+              <label for={`j-${code}-${n}`}>Justifie ton choix</label>
+              <input class="fl-champ fl-champ--justif" type="text" id={`j-${code}-${n}`}
+                     data-champ={id()} placeholder="parce que…" />
+            </p>
+          )}
+        </>
       );
 
     case 'definition':
@@ -140,7 +146,7 @@ for (const b of blocs) {
             <tbody>
               {b.lignes.map(ligne => (
                 <tr>
-                  {ligne.map(c => (
+                  {ligne.map((c, ic) => (
                     <td class={c.shade ? 'fl-td-fort' : undefined}>
                       {c.contenu.map(item => item.t === 'coches'
                         ? (
@@ -148,16 +154,17 @@ for (const b of blocs) {
                             {item.items.map(x => {
                               const cid = id();
                               return (
-                                <span class="fl-coche-inline">
-                                  <input type="checkbox" id={cid} data-champ={cid} />
-                                  <label for={cid}>{x.label}</label>
-                                  {x.points > 0 && (
-                                    <input class="fl-champ fl-champ--justif" type="text" data-champ={id()}
-                                           aria-label={`Justification : ${x.label}`} placeholder="car…" />
-                                  )}
+                                <span class={x.label ? 'fl-coche-inline' : 'fl-coche-inline fl-coche-inline--nue'}>
+                                  <input type="checkbox" id={cid} data-champ={cid}
+                                         aria-label={x.label || b.entetes?.[ic] || 'Cocher'} />
+                                  {x.label && <label for={cid}>{x.label}</label>}
                                 </span>
                               );
                             })}
+                            {item.justif > 0 && (
+                              <input class="fl-champ fl-champ--justif" type="text" data-champ={id()}
+                                     aria-label="Justifie ton choix" placeholder="parce que…" />
+                            )}
                           </span>
                         )
                         : (
@@ -165,7 +172,7 @@ for (const b of blocs) {
                             {item.v.map(s => s.t === 'texte'
                               ? <span>{s.v}</span>
                               : <input class="fl-champ fl-champ--cell" type="text" data-champ={id()}
-                                       aria-label="Réponse" />)}
+                                       style={`width:${largeur(s.points)}ch`} aria-label="Réponse" />)}
                           </span>
                         ))}
                     </td>

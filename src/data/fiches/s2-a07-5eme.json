@@ -252,7 +252,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -261,7 +267,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -270,7 +282,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -295,7 +313,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -304,7 +328,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -313,7 +343,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -338,7 +374,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -347,7 +389,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -356,7 +404,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -381,7 +435,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -390,7 +450,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -399,7 +465,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -424,7 +496,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -433,7 +511,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      },
@@ -442,7 +526,13 @@
       "contenu": [
        {
         "t": "coches",
-        "items": []
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
        }
       ]
      }
@@ -479,10 +569,11 @@
      "points": 0
     },
     {
-     "label": "C  parce que",
-     "points": 20
+     "label": "C",
+     "points": 0
     }
-   ]
+   ],
+   "justif": 20
   },
   {
    "type": "lignes",
@@ -562,7 +653,8 @@
      "label": "non",
      "points": 0
     }
-   ]
+   ],
+   "justif": 0
   },
   {
    "type": "bilan",

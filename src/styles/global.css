@@ -486,6 +486,45 @@ body {
   .mde-num { width: 2rem; height: 2rem; font-size: .9rem; }
 }
 
+/* Le vocabulaire de l'activité : les mots dont l'élève a besoin ICI */
+.mots-cles {
+  margin: 2.25rem 0; padding: 1.15rem 1.35rem;
+  border-radius: var(--r); background: var(--calque);
+  border-left: 3px solid var(--bleu);
+}
+.mots-cles h2 {
+  font-family: var(--mono); font-size: .7rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--mine);
+  margin: 0 0 .85rem;
+}
+.mots-liste { margin: 0; }
+.mots-liste dt {
+  font-family: var(--display); font-weight: 700; font-size: .98rem;
+  letter-spacing: -.01em; margin-top: .8rem;
+}
+.mots-liste dt:first-of-type { margin-top: 0; }
+.mots-liste dd { margin: .15rem 0 0; color: var(--mine); font-size: .92rem; line-height: 1.5; max-width: 66ch; }
+.mots-notions {
+  display: flex; align-items: center; flex-wrap: wrap; gap: .4rem;
+  margin: 1.1rem 0 0; padding-top: .9rem; border-top: 1px solid var(--trait);
+}
+.mots-notions-label {
+  font-family: var(--mono); font-size: .66rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--mine);
+  margin-right: .3rem;
+}
+.mots-puce {
+  display: inline-flex; align-items: baseline; gap: .3rem;
+  padding: .2rem .6rem; border-radius: 100px;
+  background: var(--papier); border: 1px solid var(--trait);
+  font-size: .84rem; color: var(--encre); text-decoration: none;
+}
+.mots-puce:hover { border-color: var(--bleu); color: var(--bleu); }
+.mots-puce:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.mots-puce em { font-style: normal; font-family: var(--mono); font-size: .74rem; color: var(--mine); }
+.mots-lien { margin: .9rem 0 0; font-size: .85rem; }
+.mots-lien a { color: var(--bleu); }
+
 /* « Pour revoir cette notion » : une ou deux animations, sur la fiche même */
 .plus-loin {
   margin: 2.25rem 0; padding: 1.15rem 1.35rem;
@@ -573,6 +612,56 @@ body {
 }
 .lex-theme .lexique { margin: 0; padding: 0 1.15rem 1rem; }
 .lex-theme .lexique dt:first-of-type { border-top: none; padding-top: 0; }
+
+/* bandeaux de section du lexique */
+.lex-bandeau {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: .4rem .8rem;
+  font-family: var(--display); font-weight: 700; font-size: 1.3rem;
+  letter-spacing: -.025em; margin: 3rem 0 1rem;
+  padding-bottom: .5rem; border-bottom: 2px solid var(--encre);
+  scroll-margin-top: 4.5rem;
+}
+.lex-bandeau span {
+  font-family: var(--mono); font-size: .68rem; font-weight: 500;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--mine);
+}
+.lex-bandeau--conso { border-bottom-color: #6B4FCC; }
+.lex-bandeau--conso span { color: #6B4FCC; }
+
+.conso-intro { color: var(--mine); max-width: 66ch; margin: 0 0 1.25rem; line-height: 1.6; }
+.lex-theme--conso[open] { border-color: #6B4FCC; }
+.conso-corps { padding: 0 1.15rem 1.1rem; }
+.conso-chapeau { margin: 0 0 1rem; color: var(--mine); font-size: .93rem; line-height: 1.55; max-width: 66ch; }
+.conso-schema { margin: 0 0 1.25rem; text-align: center; }
+.conso-schema img {
+  max-width: 100%; height: auto;
+  border: 1px solid var(--trait); border-radius: 6px; background: #fff;
+}
+.conso-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
+.conso-liste li { break-inside: avoid; }
+.conso-nom {
+  display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap; margin: 0 0 .2rem;
+  font-family: var(--display); font-weight: 700; font-size: 1rem; letter-spacing: -.01em;
+}
+.conso-nom code {
+  font-family: var(--mono); font-size: .78rem; font-weight: 600; color: #4B35A0;
+  background: color-mix(in srgb, #6B4FCC 12%, transparent);
+  padding: .1rem .45rem; border-radius: 100px;
+}
+.conso-def { margin: 0; color: var(--mine); line-height: 1.55; max-width: 68ch; }
+.conso-repere, .conso-piege {
+  display: flex; gap: .55rem; flex-wrap: wrap; align-items: baseline;
+  margin: .45rem 0 0; padding: .4rem .7rem; border-radius: 6px;
+  font-size: .89rem; line-height: 1.5; max-width: 68ch;
+}
+.conso-repere { background: color-mix(in srgb, var(--vif) 10%, transparent); }
+.conso-piege { background: color-mix(in srgb, #D9791E 13%, transparent); }
+.conso-repere span, .conso-piege span {
+  font-family: var(--mono); font-size: .62rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; flex: none;
+}
+.conso-repere span { color: #0B7A70; }
+.conso-piege span { color: #9A5410; }
 
 /* ---------- simulateurs & animations ----------
    Ces ressources remplacent le manuel que les élèves n'ont pas chez eux.
@@ -750,7 +839,7 @@ body {
   outline: none; border-bottom: 1.5px solid var(--bleu);
   background: color-mix(in srgb, var(--bleu) 8%, transparent);
 }
-.fl-champ--cell { width: 100%; min-width: 3ch; }
+.fl-champ--cell { min-width: 3ch; max-width: 100%; }   /* la largeur vient du gabarit */
 .fl-champ--bilan { color: var(--bleu); font-weight: 600; }
 
 .fl-zone {
@@ -780,6 +869,17 @@ body {
 }
 .fl-coches label { cursor: pointer; line-height: 1.5; }
 .fl-coche-inline { display: inline-flex; align-items: center; gap: .35rem; margin-right: .9rem; }
+/* case sans libellé : c'est l'en-tête de colonne qui nomme le choix */
+.fl-coche-inline--nue { margin-right: 0; justify-content: center; width: 100%; }
+.fl-justif {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: .4rem .6rem;
+  margin: -.4rem 0 1.1rem;
+}
+.fl-justif label {
+  font-family: var(--mono); font-size: .68rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--mine);
+}
+.fl-champ--justif { flex: 1 1 16rem; min-width: 10rem; }
 .fl-coche-inline label { font-size: .9rem; cursor: pointer; }
 
 .fl-definition {
@@ -953,6 +1053,17 @@ body {
   .fl-partie, .fl-consigne, .fl-titre, .fl-definition h4, .fl-bilan h4 {
     break-after: avoid !important; page-break-after: avoid !important;
   }
+  /* lexique : mémo à coller dans le cahier — tout ouvert, rien de coupé */
+  .lex-theme { border: none !important; break-inside: auto; }
+  .lex-theme summary { padding: .4rem 0; border-bottom: 1px solid #999; }
+  .lex-theme summary::after { display: none; }
+  .lex-theme .lexique, .conso-corps { padding: .3rem 0 .6rem; }
+  .lex-bandeau { break-before: page; }
+  .conso-liste li, .conso-repere, .conso-piege, .conso-schema { break-inside: avoid; }
+  .conso-repere, .conso-piege { background: none !important; border-left: 2px solid #999; }
+  .conso-nom code { background: none !important; border: 1px solid #999; }
+  .res-suite, #lex-imprimer { display: none !important; }
+
   /* mode d'emploi : s'imprime en A4 pour être collé dans le cahier */
   .mde-etape, .mde-attention, .mde-astuce, .mde-bloc { break-inside: avoid !important; }
   .mde-num { background: none !important; color: var(--encre) !important; border: 1.5px solid var(--encre); }
