@@ -1,0 +1,72 @@
+---
+// Fiches de synthèse — la ressource de révision n°1 avant une évaluation.
+import Base from '../../layouts/Base.astro';
+import { syntheses } from '../../data/ressources';
+import { statSync } from 'node:fs';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+// Poids mesuré au build : l'élève sait ce qu'il télécharge (connexions lentes).
+function poids(rel) {
+  try {
+    const o = statSync(path.join(process.cwd(), 'public', rel)).size;
+    return o >= 1048576 ? (o / 1048576).toFixed(1).replace('.', ',') + ' Mo'
+                        : Math.max(1, Math.round(o / 1024)) + ' Ko';
+  } catch { return null; }
+}
+
+const urlPage = new URL(u('/ressources/syntheses/'), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Fiches de synthèse — Technologie cycle 4',
+  url: urlPage,
+  itemListElement: syntheses.map((s, i) => ({
+    '@type': 'ListItem', position: i + 1, name: s.titre,
+  })),
+};
+---
+<Base
+  titre="Fiches de synthèse — Technologie cycle 4"
+  description="Les notions du cycle 4 résumées en une page chacune, avec schémas et quiz : les deux chaînes, le cycle de vie, les matériaux, le diagnostic de panne.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/ressources')}>Ressources</a> / Fiches de synthèse
+  </nav>
+
+  <section class="hero hero--court leve">
+    <span class="eyebrow leve leve-1">À relire avant une éval</span>
+    <h1 class="leve leve-1">Fiches de <em>synthèse</em></h1>
+    <p class="leve leve-2">
+      Une notion par fiche, une page chacune : l'essentiel, un schéma et un quiz
+      pour te tester. Prends-les en PDF pour lire hors connexion.
+    </p>
+  </section>
+
+  <div class="synth-grille leve leve-3">
+    {syntheses.map(s => {
+      const sp = poids(s.pdf), sd = poids(s.docx);
+      return (
+        <article class="synth-carte">
+          <span class="eyebrow-mini">Synthèse · cycle 4</span>
+          <h2>{s.titre}</h2>
+          <p>{s.description}</p>
+          <div class="docs">
+            <a class="btn btn--fort" href={u(s.pdf)} download>PDF{sp && <span class="btn-meta">{sp}</span>}</a>
+            <a class="btn" href={u(s.docx)} download>DOCX{sd && <span class="btn-meta">{sd}</span>}</a>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  <nav class="res-suite">
+    <a class="btn" href={u('/ressources/lexique')}>Lexique →</a>
+    <a class="btn" href={u('/ressources/animations')}>Animations &amp; logiciels →</a>
+  </nav>
+
+</Base>

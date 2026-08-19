@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { simulateursDe } from '../../../data/ressources';
 import { statSync, existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -39,6 +40,11 @@ const pFiche = poids(d.fichePdf), pEbep = poids(d.ebepPdf), pDocx = poids(d.fich
 // Une version remplissable en ligne n'existe que si l'extraction du DOCX a
 // abouti (tools/extraire-fiches.cjs) : le bouton ne s'affiche que dans ce cas.
 const aFicheEnLigne = existsSync(path.join(process.cwd(), 'src', 'data', 'fiches', act.id + '.json'));
+
+// Les animations qui parlent de CETTE activité. Proposées ici plutôt que dans
+// un index : au moment où l'élève bloque, il est sur la fiche, pas sur la page
+// Ressources.
+const pourAllerPlusLoin = simulateursDe(act.id);
 
 const urlPage = new URL(u(`/${d.annee}/${d.seq}/${act.id}`) + '/', Astro.site).href;
 const donneesLd = [
@@ -107,6 +113,28 @@ const donneesLd = [
         {d.prerequis && <><dt>Prérequis</dt><dd>{d.prerequis}</dd></>}
         {d.materiel && <><dt>Matériel</dt><dd>{d.materiel}</dd></>}
       </dl>
+    </section>
+  )}
+
+  {pourAllerPlusLoin.length > 0 && (
+    <section class="plus-loin" aria-labelledby="plus-loin-titre">
+      <h2 id="plus-loin-titre">Pour revoir cette notion</h2>
+      <ul>
+        {pourAllerPlusLoin.map(s => (
+          <li>
+            <a href={s.url} rel="noopener external" target="_blank">
+              {s.nom}<span class="simu-fleche" aria-hidden="true">↗</span>
+            </a>
+            <p>{s.desc}</p>
+            <p class="simu-meta">
+              {s.source}
+              {s.navigateur
+                ? <span class="simu-tag">en ligne</span>
+                : <span class="simu-tag simu-tag--install">à installer</span>}
+            </p>
+          </li>
+        ))}
+      </ul>
     </section>
   )}
 

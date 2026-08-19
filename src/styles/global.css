@@ -486,6 +486,94 @@ body {
   .mde-num { width: 2rem; height: 2rem; font-size: .9rem; }
 }
 
+/* « Pour revoir cette notion » : une ou deux animations, sur la fiche même */
+.plus-loin {
+  margin: 2.25rem 0; padding: 1.15rem 1.35rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait);
+  background: var(--papier);
+}
+.plus-loin h2 {
+  font-family: var(--mono); font-size: .7rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--mine);
+  margin: 0 0 .85rem;
+}
+.plus-loin ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .9rem; }
+.plus-loin a {
+  font-family: var(--display); font-weight: 600; font-size: 1rem;
+  letter-spacing: -.01em; color: var(--encre); text-decoration: none;
+  display: inline-flex; align-items: baseline; gap: .3rem;
+}
+.plus-loin a:hover { color: var(--bleu); text-decoration: underline; text-underline-offset: 3px; }
+.plus-loin a:focus-visible { outline: 2px solid var(--bleu); outline-offset: 3px; border-radius: 3px; }
+.plus-loin p { margin: .15rem 0 0; color: var(--mine); font-size: .9rem; line-height: 1.5; }
+
+/* ---------- ressources : aiguillage et thèmes du lexique ----------
+   Une intention = une page. Les trois cartes affichent un décompte parce que
+   « 17 définitions » aide à décider de cliquer, là où « Lexique » seul ne dit
+   rien de ce qu'on va trouver. */
+
+.hero--court { padding-bottom: .5rem; }
+.hero--court h1 { max-width: 20ch; }
+
+.res-hub { display: grid; gap: 1rem; margin: 2.5rem 0 1rem; }
+.res-carte {
+  display: flex; flex-direction: column; gap: .4rem;
+  padding: 1.5rem 3.5rem 1.35rem 1.5rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait);
+  background: var(--papier); position: relative;
+  text-decoration: none; color: inherit;
+  transition: border-color .15s, transform .15s;
+}
+.res-carte:hover { border-color: var(--encre); background: var(--calque); transform: translateY(-3px); }
+.res-carte:hover .aller { transform: translateX(3px); opacity: 1; }
+.res-carte:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.res-quand {
+  font-family: var(--mono); font-size: .68rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--bleu);
+}
+.res-titre {
+  font-family: var(--display); font-weight: 700; font-size: 1.45rem;
+  letter-spacing: -.02em; line-height: 1.15;
+}
+.res-carte p { margin: .1rem 0 .35rem; color: var(--mine); max-width: 58ch; line-height: 1.55; }
+.res-carte .aller { position: absolute; top: 1.5rem; right: 1.5rem; }
+
+.res-suite {
+  display: flex; flex-wrap: wrap; gap: .6rem;
+  margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--trait);
+}
+
+/* thèmes du lexique, repliés par défaut — <details>, aucun JavaScript */
+.lex-themes { display: grid; gap: .6rem; margin: 2.5rem 0 0; }
+.lex-theme {
+  border: 1.5px solid var(--trait); border-radius: var(--r);
+  background: var(--papier); overflow: hidden;
+}
+.lex-theme[open] { border-color: var(--encre); }
+.lex-theme summary {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: .5rem 1rem; flex-wrap: wrap;
+  padding: .9rem 1.15rem; cursor: pointer; list-style: none;
+}
+.lex-theme summary::-webkit-details-marker { display: none; }
+.lex-theme summary::after {
+  content: '+'; font-family: var(--display); font-weight: 700;
+  font-size: 1.2rem; color: var(--bleu); line-height: 1; order: 3;
+}
+.lex-theme[open] summary::after { content: '−'; }
+.lex-theme summary:hover { background: var(--calque); }
+.lex-theme summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: -2px; }
+.lex-theme-titre {
+  font-family: var(--display); font-weight: 700; font-size: 1.02rem;
+  letter-spacing: -.015em; flex: 1 1 auto;
+}
+.lex-theme-meta {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--mine);
+}
+.lex-theme .lexique { margin: 0; padding: 0 1.15rem 1rem; }
+.lex-theme .lexique dt:first-of-type { border-top: none; padding-top: 0; }
+
 /* ---------- simulateurs & animations ----------
    Ces ressources remplacent le manuel que les élèves n'ont pas chez eux.
    L'étiquette « en ligne / à installer » est l'information qui décide de
@@ -765,6 +853,68 @@ body {
   .fl-ligne { line-height: 2.6; }
 }
 
+/* ---------- la correction, une fois déverrouillée ----------
+   La réponse attendue se pose À CÔTÉ de celle de l'élève, jamais à sa place :
+   c'est l'écart entre les deux qui enseigne. D'où une couleur distincte de
+   celle des champs de saisie, et la flèche qui marque « voici ce qu'on
+   attendait ». */
+
+.fl-corrige-zone { flex: 1 0 100%; display: flex; flex-wrap: wrap; gap: .6rem; align-items: flex-start; }
+.fl-btn-corrige {
+  border-color: color-mix(in srgb, #6B4FCC 45%, var(--trait));
+  color: #4B35A0;
+}
+.fl-btn-corrige:hover { border-color: #6B4FCC; }
+.fl-corrige-form {
+  flex: 1 1 22rem; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+  padding: .7rem .85rem; border-radius: var(--r);
+  border: 1.5px solid color-mix(in srgb, #6B4FCC 35%, var(--trait));
+  background: color-mix(in srgb, #6B4FCC 6%, transparent);
+}
+.fl-corrige-form label {
+  flex: 1 0 100%;
+  font-family: var(--mono); font-size: .68rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--mine);
+}
+.fl-corrige-form input {
+  flex: 1 1 12rem; font: inherit; font-size: .92rem;
+  padding: .4rem .6rem; border-radius: 6px;
+  border: 1.5px solid var(--trait); background: var(--papier); color: var(--encre);
+}
+.fl-corrige-form input:focus-visible { outline: none; border-color: #6B4FCC; }
+.fl-corrige-form .btn { padding: .45rem .9rem; font-size: .82rem; cursor: pointer; }
+.fl-corrige-msg {
+  flex: 1 0 100%; margin: 0; font-size: .84rem; color: var(--mine); line-height: 1.45;
+}
+.fl-corrige-msg[data-etat='ko'] { color: #9B2226; }
+
+/* la réponse attendue */
+.fl-attendu {
+  font-size: .9rem; line-height: 1.5;
+  color: #4B35A0; background: color-mix(in srgb, #6B4FCC 11%, transparent);
+  border-left: 3px solid #6B4FCC; border-radius: 0 5px 5px 0;
+  padding: .12rem .5rem; margin-left: .4rem;
+}
+.fl-attendu::before { content: '→ '; opacity: .7; }
+.fl-attendu[data-type='bloc'] {
+  display: block; margin: -.6rem 0 1.1rem; padding: .55rem .75rem;
+}
+.fl-attendu[data-type='ligne'] { display: inline-block; }
+.fl-fiche:not(.fl-fiche--corrigee) .fl-attendu,
+.fl-fiche:not(.fl-fiche--corrigee) .fl-note-prof { display: none; }
+
+.fl-note-prof {
+  margin: -.2rem 0 1.1rem; padding: .7rem .9rem;
+  border-radius: 8px; font-size: .89rem; line-height: 1.55;
+  background: #FFF8E7; border-left: 3px solid #B45309; color: var(--encre);
+  break-inside: avoid;
+}
+.fl-note-prof strong { color: #B45309; }
+
+@media (prefers-color-scheme: dark) {
+  .fl-note-prof { background: color-mix(in srgb, #B45309 12%, transparent); }
+}
+
 /* ---------- pied ---------- */
 .site-pied { margin-top: 4rem; border-top: 1px solid var(--trait); }
 .site-pied .wrap { padding-top: 1.5rem; padding-bottom: 2.5rem; }
@@ -807,6 +957,11 @@ body {
   .mde-etape, .mde-attention, .mde-astuce, .mde-bloc { break-inside: avoid !important; }
   .mde-num { background: none !important; color: var(--encre) !important; border: 1.5px solid var(--encre); }
   .mde-attention, .mde-astuce { background: none !important; border-left: 3px solid #999; }
+
+  /* la correction s'imprime avec la fiche : c'est le support de révision */
+  .fl-corrige-zone { display: none !important; }
+  .fl-attendu { background: none !important; color: #000 !important; border-left: 2px solid #666; }
+  .fl-note-prof { background: none !important; border-left: 2px solid #666; }
 
   .fl-tableau-boite { overflow: visible !important; }
   .fl-tableau thead { display: table-header-group; }   /* en-tête répété si rupture */

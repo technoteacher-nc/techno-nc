@@ -21,13 +21,23 @@ export async function getStaticPaths() {
   const dossier = path.join(process.cwd(), 'src', 'data', 'fiches');
   return acts
     .filter(a => fs.existsSync(path.join(dossier, a.id + '.json')))
-    .map(a => ({
-      params: { annee: a.data.annee, seq: a.data.seq, slug: a.id },
-      props: { act: a, fiche: JSON.parse(fs.readFileSync(path.join(dossier, a.id + '.json'), 'utf8')) },
-    }));
+    .map(a => {
+      // Le corrigé voyage CHIFFRÉ dans la page (tools/gen-corriges-eleves.cjs).
+      // Inline plutôt qu'en requête séparée : il reste disponible une fois la
+      // page chargée, y compris si la connexion tombe ensuite.
+      const chemin = path.join(process.cwd(), 'src', 'data', 'corriges', a.id + '.json');
+      return {
+        params: { annee: a.data.annee, seq: a.data.seq, slug: a.id },
+        props: {
+          act: a,
+          fiche: JSON.parse(fs.readFileSync(path.join(dossier, a.id + '.json'), 'utf8')),
+          corrige: fs.existsSync(chemin) ? fs.readFileSync(chemin, 'utf8') : null,
+        },
+      };
+    });
 }
 
-const { act, fiche } = Astro.props;
+const { act, fiche, corrige } = Astro.props;
 const d = act.data;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
@@ -70,7 +80,24 @@ const retour = u(`/${d.annee}/${d.seq}/${act.id}`);
       <button type="button" class="btn fl-btn-danger" id="fl-effacer">Tout effacer</button>
     </div>
     <p class="fl-progres" id="fl-progres" hidden></p>
+
+    {corrige && (
+      <div class="fl-corrige-zone">
+        <button type="button" class="btn fl-btn-corrige" id="fl-voir-corrige">
+          Voir la correction<span class="btn-meta">mot donné en classe</span>
+        </button>
+        <form class="fl-corrige-form" id="fl-corrige-form" hidden>
+          <label for="fl-motdepasse">Mot de passe de l'activité</label>
+          <input type="text" id="fl-motdepasse" autocomplete="off" autocapitalize="none"
+                 spellcheck="false" placeholder="ex. lagon-204-banian" />
+          <button type="submit" class="btn btn--fort">Ouvrir</button>
+          <p class="fl-corrige-msg" id="fl-corrige-msg" role="status"></p>
+        </form>
+      </div>
+    )}
   </div>
+
+  {corrige && <script type="application/json" id="fl-corrige-donnees" set:html={corrige} />}
 
   <!-- Une seule ligne d'identité, imprimée seulement si elle est remplie :
        le bandeau NOM/PRÉNOM/CLASSE/MAISON de la fiche papier mangeait une
@@ -227,6 +254,105 @@ Ouvre la bonne activité, puis reprends ton fichier.`);
         }
         ev.target.value = '';
       });
+
+      // ------------------------------------------------------ la correction
+      //
+      // Le corrigé est chiffré dans la page : sans le mot donné en classe, il
+      // n'y a rien à lire, même dans le code source. On le déchiffre ici, et
+      // on affiche la réponse attendue À CÔTÉ de celle de l'élève — c'est la
+      // comparaison qui fait apprendre, pas la réponse seule.
+      const paquetEl = document.getElementById('fl-corrige-donnees');
+      if (paquetEl) {
+        const paquet = JSON.parse(paquetEl.textContent);
+        const cleMot = 'techno-nc:mot:' + barre.dataset.fiche;
+        const bouton = document.getElementById('fl-voir-corrige');
+        const form = document.getElementById('fl-corrige-form');
+        const saisie = document.getElementById('fl-motdepasse');
+        const msg = document.getElementById('fl-corrige-msg');
+        let affiche = false;
+
+        const versOctets = t => Uint8Array.from(atob(t), c => c.charCodeAt(0));
+
+        const dechiffrer = async (mot) => {
+          const base = await crypto.subtle.importKey(
+            'raw', new TextEncoder().encode(mot), 'PBKDF2', false, ['deriveKey']);
+          const k = await crypto.subtle.deriveKey(
+            { name: 'PBKDF2', salt: versOctets(paquet.sel), iterations: paquet.it, hash: 'SHA-256' },
+            base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+          const clair = await crypto.subtle.decrypt(
+            { name: 'AES-GCM', iv: versOctets(paquet.iv) }, k, versOctets(paquet.charge));
+          return JSON.parse(new TextDecoder().decode(clair));
+        };
+
+        const poser = (corrige) => {
+          for (const el of champs) {
+            const attendu = corrige.champs[el.dataset.champ];
+            if (!attendu || el.nextElementSibling?.classList.contains('fl-attendu')) continue;
+            const bulle = document.createElement('span');
+            bulle.className = 'fl-attendu';
+            bulle.dataset.type = el.tagName === 'TEXTAREA' ? 'bloc' : 'ligne';
+            bulle.textContent = attendu;
+            el.insertAdjacentElement('afterend', bulle);
+          }
+          for (const bloc of document.querySelectorAll('[data-partie]')) {
+            const note = corrige.notes[bloc.dataset.partie];
+            if (!note || bloc.nextElementSibling?.classList.contains('fl-note-prof')) continue;
+            const p = document.createElement('p');
+            p.className = 'fl-note-prof';
+            p.innerHTML = '<strong>À retenir —</strong> ';
+            p.append(note);
+            bloc.insertAdjacentElement('afterend', p);
+          }
+          document.getElementById('fl-fiche').classList.add('fl-fiche--corrigee');
+          affiche = true;
+          bouton.textContent = 'Masquer la correction';
+          form.hidden = true;
+        };
+
+        const basculer = () => {
+          affiche = !affiche;
+          document.getElementById('fl-fiche').classList.toggle('fl-fiche--corrigee', affiche);
+          bouton.textContent = affiche ? 'Masquer la correction' : 'Afficher la correction';
+        };
+
+        const ouvrir = async (mot, silencieux) => {
+          try {
+            const corrige = await dechiffrer(mot);
+            // Le mot est celui de toute la classe : le garder évite de le
+            // ressaisir à chaque visite. Il n'ouvre que CETTE activité.
+            localStorage.setItem(cleMot, mot);
+            poser(corrige);
+            msg.textContent = '';
+            return true;
+          } catch {
+            if (!silencieux) {
+              msg.textContent = "Ce mot de passe n'ouvre pas cette activité. Vérifie les tirets, "
+                + "et qu'il s'agit bien du mot de CETTE fiche.";
+              msg.dataset.etat = 'ko';
+            }
+            return false;
+          }
+        };
+
+        bouton.addEventListener('click', () => {
+          if (affiche || document.querySelector('.fl-attendu')) { basculer(); return; }
+          form.hidden = !form.hidden;
+          if (!form.hidden) saisie.focus();
+        });
+
+        form.addEventListener('submit', async (ev) => {
+          ev.preventDefault();
+          const mot = saisie.value.trim().toLowerCase();
+          if (!mot) return;
+          msg.dataset.etat = '';
+          msg.textContent = 'Ouverture…';
+          await ouvrir(mot, false);
+        });
+
+        // Déjà ouvert lors d'une visite précédente : on rétablit sans rien demander.
+        const memorise = localStorage.getItem(cleMot);
+        if (memorise) ouvrir(memorise, true);
+      }
 
       // « Copier mes réponses » : de quoi coller son travail dans l'ENT, un mail
       // ou un traitement de texte quand le professeur demande un rendu numérique.

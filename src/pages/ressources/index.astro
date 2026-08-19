@@ -1,0 +1,88 @@
+---
+// Ressources — page d'aiguillage.
+//
+// Elle ne contient plus AUCUNE ressource : elle oriente vers trois pages, une
+// par intention réelle de l'élève — « je révise », « je bloque sur un mot »,
+// « je veux revoir en animation ». C'est la raison d'être de la page, et la
+// raison pour laquelle les trois cartes affichent un décompte : l'élève sait
+// ce qu'il va trouver avant de cliquer.
+
+import Base from '../../layouts/Base.astro';
+import { syntheses, nbTermes, nbSimulateurs } from '../../data/ressources';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+const entrees = [
+  {
+    titre: 'Fiches de synthèse',
+    quand: 'Avant une évaluation',
+    resume: `Les ${syntheses.length} notions du cycle 4 résumées en une page chacune, avec schémas et quiz : les deux chaînes, le cycle de vie, les matériaux, le diagnostic de panne.`,
+    compte: `${syntheses.length} fiches`,
+    href: '/ressources/syntheses',
+  },
+  {
+    titre: 'Lexique',
+    quand: 'Quand un mot bloque',
+    resume: `Le vocabulaire à savoir utiliser en 5ème et en 4ème, et à maîtriser pour l'épreuve de technologie du Brevet.`,
+    compte: `${nbTermes} définitions`,
+    href: '/ressources/lexique',
+  },
+  {
+    titre: 'Animations & logiciels',
+    quand: 'Pour revoir en manipulant',
+    resume: `Des animations et des logiciels gratuits, rangés par séquence. La plupart s'ouvrent directement dans le navigateur, sans rien installer.`,
+    compte: `${nbSimulateurs} ressources`,
+    href: '/ressources/animations',
+  },
+];
+
+const urlPage = new URL(u('/ressources/'), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Ressources de Technologie — cycle 4',
+  description: 'Fiches de synthèse, lexique du Brevet et animations pour réviser la Technologie au collège.',
+  url: urlPage,
+  inLanguage: 'fr',
+};
+---
+<Base
+  titre="Ressources — réviser la Technologie, cycle 4"
+  description="Fiches de synthèse, lexique du Brevet et animations gratuites pour réviser la Technologie en 5ème et en 4ème.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <section class="hero leve">
+    <span class="eyebrow leve leve-1">Documents à conserver</span>
+    <h1 class="leve leve-1">Tes <em>ressources</em> de l'année</h1>
+    <p class="leve leve-2">
+      Ici, pas d'activité à rendre : ce qui sert toute l'année, en 5ème comme en
+      4ème. Choisis selon ce que tu cherches.
+    </p>
+  </section>
+
+  <div class="res-hub leve leve-3">
+    {entrees.map(e => (
+      <a class="res-carte" href={u(e.href)}>
+        <span class="res-quand">{e.quand}</span>
+        <span class="res-titre">{e.titre}</span>
+        <p>{e.resume}</p>
+        <span class="cote">
+          <svg width="18" height="8" viewBox="0 0 18 8" aria-hidden="true"><path d="M0 4h18M0 4l3-2.5M0 4l3 2.5M18 4l-3-2.5M18 4l-3 2.5" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+          {e.compte}
+        </span>
+        <span class="aller" aria-hidden="true">→</span>
+      </a>
+    ))}
+  </div>
+
+  <section class="qr">
+    <img src={u('/qr/ressources.png')} alt="QR code vers la page Ressources" width="76" height="76" loading="lazy" />
+    <p>
+      Ce QR code est imprimé sur le lexique papier.<br />
+      Il ramène directement à cette page.
+    </p>
+  </section>
+
+</Base>

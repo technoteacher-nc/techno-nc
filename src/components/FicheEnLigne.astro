@@ -53,7 +53,9 @@ for (const b of blocs) {
 
     case 'partie':
       return (
-        <h3 class="fl-partie"><span>Partie {b.numero}</span>{b.titre}</h3>
+        <h3 class="fl-partie" data-partie={`Partie ${b.numero} — ${b.titre}`}>
+          <span>Partie {b.numero}</span>{b.titre}
+        </h3>
       );
 
     case 'consigne':
@@ -177,7 +179,7 @@ for (const b of blocs) {
 
     case 'bilan':
       return (
-        <section class="fl-bloc fl-bilan">
+        <section class="fl-bloc fl-bilan" data-partie="Bilan">
           <h4>Bilan — ce que je retiens</h4>
           <ul>
             {b.lignes.map(segs => (

@@ -1,0 +1,74 @@
+---
+// Animations & logiciels — l'index complet.
+//
+// Les mêmes liens sont proposés en contexte, sur la page de l'activité
+// concernée (« Pour aller plus loin ») : cette page est l'index de secours,
+// pour l'élève qui cherche par notion plutôt que par activité.
+import Base from '../../layouts/Base.astro';
+import { simulateurs, nbSimulateurs } from '../../data/ressources';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+const urlPage = new URL(u('/ressources/animations/'), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Animations et logiciels de Technologie',
+  url: urlPage,
+  itemListElement: simulateurs.flatMap(g => g.items).map((s, i) => ({
+    '@type': 'ListItem', position: i + 1, name: s.nom, url: s.url,
+  })),
+};
+---
+<Base
+  titre="Animations & logiciels de Technologie — cycle 4"
+  description="Des animations et des logiciels gratuits pour revoir une notion de Technologie, rangés par séquence. La plupart s'ouvrent dans le navigateur, sans rien installer.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/ressources')}>Ressources</a> / Animations &amp; logiciels
+  </nav>
+
+  <section class="hero hero--court leve">
+    <span class="eyebrow leve leve-1">Pour revoir en manipulant</span>
+    <h1 class="leve leve-1">Animations &amp; <em>logiciels</em></h1>
+    <p class="leve leve-2">
+      {nbSimulateurs} ressources gratuites pour revoir une notion, rattraper une
+      séance ou t'entraîner à la maison. Celles marquées
+      <span class="simu-tag">en ligne</span> s'ouvrent dans le navigateur, sans
+      rien installer et sans compte.
+    </p>
+  </section>
+
+  {simulateurs.map(groupe => (
+    <section class="simu-groupe">
+      <h2 class="simu-groupe-titre">
+        {groupe.titre}<span class="eyebrow-mini">{groupe.repere}</span>
+      </h2>
+      <ul class="simu-liste">
+        {groupe.items.map(it => (
+          <li>
+            <a href={it.url} rel="noopener external" target="_blank">
+              {it.nom}<span class="simu-fleche" aria-hidden="true">↗</span>
+            </a>
+            <p>{it.desc}</p>
+            <p class="simu-meta">
+              {it.source}
+              {it.navigateur
+                ? <span class="simu-tag">en ligne</span>
+                : <span class="simu-tag simu-tag--install">à installer</span>}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <nav class="res-suite">
+    <a class="btn" href={u('/ressources/syntheses')}>Fiches de synthèse →</a>
+    <a class="btn" href={u('/ressources/lexique')}>Lexique →</a>
+  </nav>
+
+</Base>

@@ -65,6 +65,15 @@ const etapes = [
       '« Copier mes réponses » copie tout ton texte : tu peux le coller dans un document ou un message si le professeur demande un rendu numérique.',
     ],
   },
+  {
+    titre: 'Compare avec la correction',
+    corps: [
+      "En fin de séance, le professeur écrit un mot de passe au tableau. Clique sur « Voir la correction », saisis ce mot, et la réponse attendue apparaît à côté de chacune des tiennes.",
+      "Le but n'est pas d'avoir écrit exactement les mêmes mots, mais d'avoir dit la même chose. Relis les deux, repère où tu t'es écarté, et corrige.",
+    ],
+    attention: "Remplis la fiche AVANT de demander le mot de passe. Sans tes réponses à côté, la correction ne t'apprend rien — tu ne verras pas où tu t'es trompé.",
+    astuce: "Une fois ouverte, la correction reste disponible sur cet appareil. « Masquer la correction » la cache pour te re-tester, et « Imprimer / PDF » l'imprime avec la fiche : ça fait une excellente fiche de révision.",
+  },
 ];
 
 const soucis = [
@@ -87,6 +96,10 @@ const soucis = [
   {
     q: 'Le site est lent',
     r: 'Chaque bouton de téléchargement indique le poids du document (par exemple « PDF · 241 Ko ») : tu sais avant de cliquer ce que ça va coûter à ta connexion.',
+  },
+  {
+    q: 'Le mot de passe de la correction ne marche pas',
+    r: "Vérifie les tirets et l'orthographe : le mot ressemble à lagon-204-banian, tout en minuscules. Vérifie aussi que c'est bien le mot de CETTE activité — chaque fiche a le sien. Si tu étais absent, redemande-le au professeur.",
   },
   {
     q: 'J\'ai fait n\'importe quoi, je veux recommencer',
@@ -123,7 +136,7 @@ const donneesLd = [
 ---
 <Base
   titre="Mode d'emploi — comment utiliser le site"
-  description="Comment trouver ton activité, la remplir en ligne, garder ton travail d'une séance à l'autre et le rendre. Six étapes, sans compte.">
+  description="Comment trouver ton activité, la remplir en ligne, garder ton travail d'une séance à l'autre et le rendre. Sept étapes, sans compte.">
 
   <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
@@ -131,9 +144,10 @@ const donneesLd = [
     <span class="eyebrow leve leve-1">À lire une fois, en début d'année</span>
     <h1 class="leve leve-1">Comment ça <em>marche</em></h1>
     <p class="leve leve-2">
-      Six étapes pour trouver ton activité, la remplir directement en ligne et
-      garder ton travail d'une séance à l'autre. Pas de compte à créer, pas de
-      mot de passe : tu cliques et tu écris.
+      Sept étapes pour trouver ton activité, la remplir directement en ligne,
+      garder ton travail d'une séance à l'autre et le comparer à la correction.
+      Aucun compte à créer : tu cliques et tu écris. Le seul mot de passe est
+      celui que le professeur donne en classe, à la dernière étape.
     </p>
   </section>
 
@@ -152,7 +166,7 @@ const donneesLd = [
   </ol>
 
   <section class="mde-bloc">
-    <h2 class="niveau-titre">Si ça coince <span>LES 6 QUESTIONS QUI REVIENNENT</span></h2>
+    <h2 class="niveau-titre">Si ça coince <span>LES QUESTIONS QUI REVIENNENT</span></h2>
     <dl class="mde-faq">
       {soucis.map(s => (
         <>

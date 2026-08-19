@@ -1,0 +1,89 @@
+---
+// Lexique — le vocabulaire du cycle 4 et du Brevet.
+//
+// Les quatre thèmes sont repliés par défaut (<details>, sans JavaScript) :
+// l'élève arrive sur une page qui tient à l'écran et ouvre ce qu'il cherche,
+// au lieu de faire défiler 17 définitions pour en trouver une.
+import Base from '../../layouts/Base.astro';
+import { lexique, lexiquePdf, lexiqueDocx, nbTermes } from '../../data/ressources';
+import { statSync } from 'node:fs';
+import path from 'node:path';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+function poids(rel) {
+  try {
+    const o = statSync(path.join(process.cwd(), 'public', rel)).size;
+    return o >= 1048576 ? (o / 1048576).toFixed(1).replace('.', ',') + ' Mo'
+                        : Math.max(1, Math.round(o / 1024)) + ' Ko';
+  } catch { return null; }
+}
+const pPdf = poids(lexiquePdf), pDocx = poids(lexiqueDocx);
+
+const urlPage = new URL(u('/ressources/lexique/'), Astro.site).href;
+const donneesLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTermSet',
+    name: 'Lexique de Technologie — Cycle 4 & Brevet',
+    url: urlPage,
+    inLanguage: 'fr',
+    hasDefinedTerm: lexique.flatMap(s => s.termes.map(([mot, def]) => ({
+      '@type': 'DefinedTerm', name: mot, description: def,
+    }))),
+  },
+];
+---
+<Base
+  titre="Lexique de Technologie — cycle 4 & Brevet"
+  description="Les mots à savoir utiliser en Technologie en 5ème et en 4ème, et à maîtriser pour l'épreuve du Brevet des collèges.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/ressources')}>Ressources</a> / Lexique
+  </nav>
+
+  <section class="hero hero--court leve">
+    <span class="eyebrow leve leve-1">Document ressource · cycle 4</span>
+    <h1 class="leve leve-1">Le <em>lexique</em></h1>
+    <p class="leve leve-2">
+      Quels mots dois-tu savoir utiliser pour parler comme un technologue ?
+      {nbTermes} définitions, rangées en quatre thèmes. Ouvre celui qui te
+      concerne.
+    </p>
+    <div class="docs leve leve-3">
+      <a class="btn btn--fort" href={u(lexiquePdf)} download>
+        Télécharger le lexique{pPdf && <span class="btn-meta">PDF · {pPdf}</span>}
+      </a>
+      <a class="btn" href={u(lexiqueDocx)} download>
+        Version modifiable{pDocx && <span class="btn-meta">DOCX · {pDocx}</span>}
+      </a>
+    </div>
+  </section>
+
+  <div class="lex-themes">
+    {lexique.map((s, i) => (
+      <details class="lex-theme" open={i === 0}>
+        <summary>
+          <span class="lex-theme-titre">{i + 1}. {s.titre}</span>
+          <span class="lex-theme-meta">{s.repere} · {s.termes.length} mots</span>
+        </summary>
+        <dl class="lexique">
+          {s.termes.map(([mot, def]) => (
+            <>
+              <dt>{mot}</dt>
+              <dd>{def}</dd>
+            </>
+          ))}
+        </dl>
+      </details>
+    ))}
+  </div>
+
+  <nav class="res-suite">
+    <a class="btn" href={u('/ressources/syntheses')}>Fiches de synthèse →</a>
+    <a class="btn" href={u('/ressources/animations')}>Animations &amp; logiciels →</a>
+  </nav>
+
+</Base>
