@@ -1,0 +1,309 @@
+{
+ "code": "S6-A03",
+ "niveau": "4eme",
+ "seq": "seq06",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "CAPTEURS : ÉVITER UN OBSTACLE, SUIVRE UNE LIGNE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton robot roule droit… dans le mur. Il lui manque l'essentiel : DÉCIDER en fonction de ce qu'il perçoit. La structure « SI … ALORS … SINON » va lui donner un début d'intelligence."
+   ],
+   "question": "Comment un robot peut-il adapter son comportement à ce que mesurent ses capteurs ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "La structure conditionnelle SI / SINON"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète l'algorithme de l'évitement :"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RÉPÉTER INDÉFINIMENT :  SI distance mesurée < "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " cm  ALORS [ reculer 0,5 s ; tourner à "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " ]  SINON [ "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " ]"
+    }
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "CAPTEUR À ULTRASONS — comment mesure-t-il la distance ?",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Atelier 1 : l'évitement d'obstacle  (rotation d'ateliers)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Construis le programme : répéter indéfiniment → si (distance ultrasons < 10) alors [reculer, tourner] sinon [avancer 50 %]."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Téléverse. Pose le robot face à un mur à 50 cm : il doit éviter SEUL."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Test des limites : approche ta main par surprise — réagit-il ? Note la distance de réaction réelle : "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Atelier 2 : le suiveur de ligne"
+  },
+  {
+   "type": "consigne",
+   "texte": "Le capteur sous le robot « voit » noir ou blanc (infrarouge). Complète puis teste sur la piste."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "SI le capteur voit la ligne "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " ALORS avancer ; SINON tourner pour "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " la ligne."
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Mon robot suit la piste noire sans la perdre sur un tour complet ✋",
+     "points": 0
+    },
+    {
+     "label": "Programmes enregistrés : NOM_S6A03",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Évitement et suivi de ligne utilisent la MÊME structure. Laquelle ? "
+    },
+    {
+     "t": "champ",
+     "points": 32
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "La structure "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " / ALORS / SINON permet au programme de décider selon la mesure d'un "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le capteur à ultrasons mesure une "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " ; le capteur du dessous distingue noir et "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "« Répéter indéfiniment » fait tester la condition en "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un capteur sans condition, c'est un œil sans cerveau.",
+   "auteur": ""
+  }
+ ]
+}

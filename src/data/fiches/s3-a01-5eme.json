@@ -1,0 +1,514 @@
+{
+ "code": "S3-A01",
+ "niveau": "5eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "OÙ VONT MES FICHIERS ? — LE RÉSEAU DU COLLÈGE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Lundi, tu enregistres ton exposé sur l'ordinateur n°4 de la salle 207. Jeudi, tu ouvres ta session sur l'ordinateur n°9… et ton exposé est là ! « C'est magique », dit Kaï. « Non, il s'est copié partout », répond Léna. Les deux se trompent."
+   ],
+   "question": "Comment mon travail peut-il me suivre d'un ordinateur à l'autre au collège ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le voyage de mon fichier  (schéma ci-dessous)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe le schéma du réseau de la salle 207. Reporte chaque numéro devant le bon mot, puis complète sa fonction. Attention : la liste ci-dessous est mélangée et contient UN intrus."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq03/schemas/reseau207.png"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Liste mélangée : câble réseau — imprimante — serveur — poste de travail — commutateur (switch)"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Élément du schéma",
+    "À quoi il sert"
+   ],
+   "largeurs": [
+    3800,
+    5560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "①  Mot : "
+         },
+         {
+          "t": "champ",
+          "points": 21
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sa fonction : "
+         },
+         {
+          "t": "champ",
+          "points": 40
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "②  Mot : "
+         },
+         {
+          "t": "champ",
+          "points": 21
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sa fonction : "
+         },
+         {
+          "t": "champ",
+          "points": 40
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "③  Mot : "
+         },
+         {
+          "t": "champ",
+          "points": 21
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sa fonction : "
+         },
+         {
+          "t": "champ",
+          "points": 40
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "④  Mot : "
+         },
+         {
+          "t": "champ",
+          "points": 21
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sa fonction : "
+         },
+         {
+          "t": "champ",
+          "points": 40
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "L'intrus est : "
+    },
+    {
+     "t": "champ",
+     "points": 15
+    },
+    {
+     "t": "texte",
+     "v": "  car il n'est pas indispensable pour que le fichier circule."
+    }
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "SERVEUR",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Vrai ou faux ? Prouve-le !"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche VRAI ou FAUX, puis justifie en une phrase la ligne de ton choix."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Affirmation",
+    "Réponse"
+   ],
+   "largeurs": [
+    6600,
+    2760
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon fichier est stocké à l'intérieur de l'écran."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon fichier est stocké sur le serveur du collège."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ma session (identifiant + mot de passe) dit au serveur qui je suis."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Si je ne ferme pas ma session, le suivant peut lire mes fichiers."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ma justification (ligne n° "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": ") : "
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Mission pratique — sur ton ordinateur"
+  },
+  {
+   "type": "consigne",
+   "texte": "Réalise chaque action puis coche. Appelle le professeur à la dernière case."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre MA session (jamais celle d'un camarade).",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Dans mon espace personnel, je crée le dossier TECHNO, puis dedans le dossier SEQ03.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre le traitement de texte, j'écris mon prénom et la date.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'enregistre dans SEQ03 sous le nom : NOM_Prenom_S3A01.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Je ferme tout, puis je RETROUVE mon fichier depuis l'explorateur. ✋ Vérification professeur.",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Au collège, mes fichiers ne sont pas dans l'ordinateur mais sur le "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Ma "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " m'identifie sur le réseau : je dois la fermer en partant."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Les ordinateurs de la salle sont reliés entre eux par un "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " : c'est un réseau local."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un fichier bien rangé est un fichier déjà retrouvé.",
+   "auteur": "proverbe de la salle 207"
+  }
+ ]
+}

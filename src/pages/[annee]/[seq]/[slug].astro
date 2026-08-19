@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { statSync } from 'node:fs';
+import { statSync, existsSync } from 'node:fs';
 import path from 'node:path';
 
 export async function getStaticPaths() {
@@ -35,6 +35,10 @@ function poids(rel) {
   } catch { return null; }
 }
 const pFiche = poids(d.fichePdf), pEbep = poids(d.ebepPdf), pDocx = poids(d.ficheDocx);
+
+// Une version remplissable en ligne n'existe que si l'extraction du DOCX a
+// abouti (tools/extraire-fiches.cjs) : le bouton ne s'affiche que dans ce cas.
+const aFicheEnLigne = existsSync(path.join(process.cwd(), 'src', 'data', 'fiches', act.id + '.json'));
 
 const urlPage = new URL(u(`/${d.annee}/${d.seq}/${act.id}`) + '/', Astro.site).href;
 const donneesLd = [
@@ -80,7 +84,10 @@ const donneesLd = [
     <p class="question leve leve-2">{d.question}</p>
 
     <div class="docs leve leve-3">
-      <a class="btn btn--fort" href={u(d.fichePdf)} download>
+      {aFicheEnLigne && <a class="btn btn--fort" href={u(`/${d.annee}/${d.seq}/${act.id}/en-ligne`)}>
+        Remplir en ligne<span class="btn-meta">sans compte</span>
+      </a>}
+      <a class={aFicheEnLigne ? 'btn' : 'btn btn--fort'} href={u(d.fichePdf)} download>
         Télécharger la fiche{pFiche && <span class="btn-meta">PDF · {pFiche}</span>}
       </a>
       {d.ebepPdf && <a class="btn" href={u(d.ebepPdf)} download>

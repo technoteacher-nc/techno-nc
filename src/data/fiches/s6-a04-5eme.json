@@ -1,0 +1,523 @@
+{
+ "code": "S6-A04",
+ "niveau": "5eme",
+ "seq": "seq06",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE DÉFI SCRATCH DES MAISONS"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Grand final : chaque équipe programme son lutin pour traverser le labyrinthe projeté, du départ A à l'arrivée B, SANS toucher les murs. Le code le plus élégant marque des points bonus."
+   ],
+   "question": "Comment concevoir, tester et améliorer un programme qui répond à un cahier des charges ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le cahier des charges du défi"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Exigence",
+    "Points"
+   ],
+   "largeurs": [
+    7360,
+    2000
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le lutin va de A à B sans toucher les murs (si mur touché : retour au départ !)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "10 pts"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le programme utilise au moins UNE boucle (élégance du code)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "+ 5 pts"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le stylo trace le chemin parcouru"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "+ 5 pts"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Bonus vitesse : parmi les équipes à 20 pts, la traversée la plus rapide"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "+ 5 pts"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. AVANT de coder : trace au brouillon le chemin prévu et découpe-le en tronçons (avancer …, tourner …)."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Réalisation et itérations  (séance en groupe)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Charge le fond de scène « labyrinthe » fourni par le professeur (ou reproduis-le au stylo)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Place le lutin au départ A : blocs « aller à x… y… » et « s'orienter à 90° » au début du script (départ IDENTIQUE à chaque essai)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Programme la traversée tronçon par tronçon : teste, corrige, re-teste (c'est l'ITÉRATION)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ajoute la règle : « si couleur du mur touchée, retourner au départ »."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Chronomètre officiel du professeur : 2 essais maximum. ✋"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Essai",
+    "Résultat (B atteint ? mur touché ?)",
+    "Ce que nous avons modifié"
+   ],
+   "largeurs": [
+    1000,
+    4200,
+    4160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "La revue de code entre équipes"
+  },
+  {
+   "type": "consigne",
+   "texte": "Échange d'écran avec une autre équipe : lis LEUR programme."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Une qualité de leur code : "
+    },
+    {
+     "t": "champ",
+     "points": 71
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3b. Une amélioration possible : "
+    },
+    {
+     "t": "champ",
+     "points": 69
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Programmer, c'est un cycle : coder → "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " → corriger → recommencer."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un départ "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " (position + orientation fixées) rend les essais comparables."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Lire le code des autres fait "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " son propre niveau."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le premier programme qui marche du premier coup n'existe pas.",
+   "auteur": ""
+  }
+ ]
+}

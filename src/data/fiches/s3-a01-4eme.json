@@ -1,0 +1,512 @@
+{
+ "code": "S3-A01",
+ "niveau": "4eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Depuis la salle des professeurs (réseau administratif), impossible d'ouvrir les dossiers de la salle 207 (réseau pédagogique). Pourtant, tout est « au collège » ! Le schéma ci-dessous montre les deux réseaux… et une bizarrerie : des ordinateurs ont la MÊME adresse IP."
+   ],
+   "question": "Comment les ordinateurs sont-ils organisés en réseaux, et comment deux réseaux différents communiquent-ils ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Anatomie du réseau  (schéma ci-dessous)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Reporte chaque numéro du schéma devant le bon élément et indique son rôle. Liste mélangée avec UN intrus."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq03/schemas/deux_reseaux.png"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Liste mélangée : routeur — processeur — serveur — commutateur (switch) — terminal (poste) — câble réseau"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Élément",
+    "Rôle dans le réseau"
+   ],
+   "largeurs": [
+    3600,
+    5760
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "①  "
+         },
+         {
+          "t": "champ",
+          "points": 27
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Rôle : "
+         },
+         {
+          "t": "champ",
+          "points": 51
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "②  "
+         },
+         {
+          "t": "champ",
+          "points": 27
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Rôle : "
+         },
+         {
+          "t": "champ",
+          "points": 51
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "③  "
+         },
+         {
+          "t": "champ",
+          "points": 27
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Rôle : "
+         },
+         {
+          "t": "champ",
+          "points": 51
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "④  "
+         },
+         {
+          "t": "champ",
+          "points": 27
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Rôle : "
+         },
+         {
+          "t": "champ",
+          "points": 51
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "⑤  "
+         },
+         {
+          "t": "champ",
+          "points": 27
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Rôle : "
+         },
+         {
+          "t": "champ",
+          "points": 51
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "L'intrus : "
+    },
+    {
+     "t": "champ",
+     "points": 20
+    }
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "COMMUTATEUR (SWITCH) / ROUTEUR — quelle différence ?",
+   "n": 3
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Enquête sur le schéma : réponds et justifie"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Les ordinateurs 1 à 6 font-ils tous partie du même réseau local ? Justifie avec les adresses IP."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. L'ordinateur 2 veut parler à l'ordinateur 3 (même réseau). Quelle adresse IP utilise-t-il ? "
+    },
+    {
+     "t": "champ",
+     "points": 25
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2c. L'ordinateur 2 (réseau admin) appelle 192.168.1.3 pour joindre l'ordinateur 6 (réseau pédago). Que se passe-t-il, et pourquoi ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2d. Par quel équipement le message doit-il passer pour changer de réseau ? "
+    },
+    {
+     "t": "champ",
+     "points": 25
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "La structure d'une adresse IP"
+  },
+  {
+   "type": "consigne",
+   "texte": "Une adresse IP comme 192.168.1.3 se lit en deux parties : la partie RÉSEAU (192.168.1) et la partie MACHINE (.3). Complète."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Adresse",
+    "Décomposition"
+   ],
+   "largeurs": [
+    4200,
+    5160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "192.168.1.3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Partie réseau : "
+         },
+         {
+          "t": "champ",
+          "points": 11
+         },
+         {
+          "t": "texte",
+          "v": "  |  Partie machine : "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "192.168.0.15"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Partie réseau : "
+         },
+         {
+          "t": "champ",
+          "points": 11
+         },
+         {
+          "t": "texte",
+          "v": "  |  Partie machine : "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Deux machines du même réseau peuvent-elles avoir la même IP complète ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non — car",
+          "points": 37
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Dans un réseau local, le "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " relie les machines ; pour passer d'un réseau à un autre, il faut un "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une adresse IP contient une partie "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " et une partie machine : elle doit être unique dans son réseau."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Sur un réseau, avoir une adresse, c'est exister.",
+   "auteur": ""
+  }
+ ]
+}

@@ -1,0 +1,637 @@
+{
+ "code": "S3-A02",
+ "niveau": "4eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "FILIUS (1) : MON RÉSEAU LOCAL OPÉRATIONNEL"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le collège doit équiper une nouvelle salle informatique. Avant d'acheter des kilomètres de câbles, le technicien SIMULE le réseau : c'est ton travail aujourd'hui, avec le logiciel Filius."
+   ],
+   "question": "Comment construire un réseau local et PROUVER qu'il fonctionne ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Deux machines qui se parlent"
+  },
+  {
+   "type": "consigne",
+   "texte": "Réalise puis coche. En cas de blocage : relis, réessaie, PUIS lève la main."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Glisse 2 portables, relie-les par un câble."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Double-clic sur chaque PC → adresse IP : 192.168.0.10 et 192.168.0.11 (masque 255.255.255.0). Mets l'IP comme nom."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mode simulation ▶ → sur le PC .10, installe la « Ligne de commande »."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tape : ping 192.168.0.11 → note le résultat en 1a."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tape : ping 192.168.0.12 (adresse inexistante) → note en 1b."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. ping .11 : "
+    },
+    {
+     "t": "champ",
+     "points": 7
+    },
+    {
+     "t": "texte",
+     "v": " paquets transmis, "
+    },
+    {
+     "t": "champ",
+     "points": 7
+    },
+    {
+     "t": "texte",
+     "v": " reçus, "
+    },
+    {
+     "t": "champ",
+     "points": 7
+    },
+    {
+     "t": "texte",
+     "v": " % perdus  →  communication : "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "OK",
+     "points": 0
+    },
+    {
+     "label": "échec",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1b. ping .12 : "
+    },
+    {
+     "t": "champ",
+     "points": 7
+    },
+    {
+     "t": "texte",
+     "v": " % perdus. Interprétation : "
+    },
+    {
+     "t": "champ",
+     "points": 54
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Le réseau en étoile, comme une vraie salle"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "6",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mode conception : supprime le câble direct, ajoute un SWITCH et un SERVEUR (192.168.0.12)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "7",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Relie PC et serveur au switch (topologie en étoile)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "8",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Simulation ▶ : ping du PC .10 vers .11 PUIS vers .12 → 0 % perdus exigé."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "9",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tape ipconfig sur le PC .10 et relève les informations en 2a."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. ipconfig → Adresse IP : "
+    },
+    {
+     "t": "champ",
+     "points": 13
+    },
+    {
+     "t": "texte",
+     "v": " | Masque : "
+    },
+    {
+     "t": "champ",
+     "points": 13
+    },
+    {
+     "t": "texte",
+     "v": " | Adresse MAC : "
+    },
+    {
+     "t": "champ",
+     "points": 13
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Compte-rendu du technicien"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le rapport de tests, comme un vrai technicien réseau."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Test effectué",
+    "Rapport"
+   ],
+   "largeurs": [
+    3400,
+    5960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ping 192.168.0.11"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Résultat : "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " | Conclusion : "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ping 192.168.0.12 (avant le serveur)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Résultat : "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " | Conclusion : "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ping 192.168.0.12 (étoile terminée)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Résultat : "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " | Conclusion : "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Pourquoi la topologie en étoile (avec switch) est-elle utilisée dans les vraies salles plutôt que des câbles entre chaque paire de machines ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "La commande "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " teste la communication ; "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " affiche la configuration réseau d'une machine."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "En topologie "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " , toutes les machines sont reliées à un commutateur central."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Tester, c'est prouver.",
+   "auteur": "devise du technicien réseau"
+  }
+ ]
+}

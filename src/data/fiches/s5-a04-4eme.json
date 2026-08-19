@@ -1,0 +1,536 @@
+{
+ "code": "S5-A04",
+ "niveau": "4eme",
+ "seq": "seq05",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "SKETCHUP (2) : LE MODÈLE FINAL COTÉ"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton volume de base existe. Il manque l'essentiel : l'encoche qui tient le téléphone, la butée, et les COTES affichées — sans elles, l'atelier refuse le dossier."
+   ],
+   "question": "Comment finaliser un modèle 3D prêt pour la fabrication ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les fonctions du produit  (séance en groupe)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L'ENCOCHE : dessine un rectangle sur le socle (largeur du téléphone + 2 mm de jeu), puis Pousser/Tirer VERS LE BAS → une rainure se creuse."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "LA BUTÉE : petit rectangle en avant de l'encoche + Pousser/Tirer vers le haut (8 mm) → le téléphone ne glisse plus."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Vérifie l'angle du dossier avec l'outil Rapporteur : entre 30° et 60° (CDC !)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Outil Cotation : clique deux arêtes → la cote s'affiche. Pose au moins 3 cotes (longueur, largeur, hauteur)."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je livre le dossier de fabrication"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Fichier → Exporter → Graphique 2D : image de ton modèle AVEC les cotes visibles."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "6",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Colle l'image dans un document texte NOM_S5A04 + une phrase : « matériau prévu : carton / PLA »."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "7",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Enregistre le tout dans TECHNO/SEQ05. ✋ Vérification professeur."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Revue de conception : mon modèle face au CDC"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Exigence du CDC",
+    "Niveau",
+    "Mon modèle",
+    "Conforme ?"
+   ],
+   "largeurs": [
+    3400,
+    2200,
+    2400,
+    1360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Angle d'inclinaison"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "30–60°"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": "°"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Encoche adaptée au téléphone"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "largeur tél. + 2 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Butée anti-glissement"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "présente"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "présente",
+          "points": 0
+         },
+         {
+          "label": "absente",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Pousser/Tirer vers le bas permet de "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " la matière (encoche, rainure)."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un modèle prêt pour l'atelier comporte ses "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " affichées."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La revue de conception compare point par point le modèle au "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un modèle sans cotes est un dessin, pas un plan.",
+   "auteur": ""
+  }
+ ]
+}

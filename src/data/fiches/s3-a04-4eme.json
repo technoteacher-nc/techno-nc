@@ -1,0 +1,531 @@
+{
+ "code": "S3-A04",
+ "niveau": "4eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "GRATUITS, VRAIMENT ? URL, MOTEURS ET GAFAM"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Zéro franc pour le moteur de recherche, la messagerie, les vidéos, les cartes… Pourtant ces entreprises comptent parmi les plus riches du monde. Un détective se demanderait : d'où vient l'argent ?"
+   ],
+   "question": "Que payons-nous vraiment quand un service en ligne est « gratuit » ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Anatomie d'une adresse web (URL)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Analyse l'URL suivante :   https://www.mobitag.nc/ncl"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Morceau",
+    "Ce qu'il signifie"
+   ],
+   "largeurs": [
+    2400,
+    6960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "https"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Signification : connexion "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "mobitag.nc"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "C'est le nom de "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": ".nc"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Cela indique "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "/ncl"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "C'est "
+         },
+         {
+          "t": "champ",
+          "points": 35
+         },
+         {
+          "t": "texte",
+          "v": " du site"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Pour accéder au serveur, l'URL doit d'abord être traduite en "
+    },
+    {
+     "t": "champ",
+     "points": 18
+    },
+    {
+     "t": "texte",
+     "v": " par le serveur "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "L'enquête données  (document projeté)"
+  },
+  {
+   "type": "consigne",
+   "texte": "À l'aide du document projeté, complète le tableau de l'enquêteur : quelles données chaque service collecte-t-il, et pour quoi faire ?"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Service « gratuit »",
+    "Ce qu'il collecte sur moi"
+   ],
+   "largeurs": [
+    3200,
+    6160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Moteur de recherche"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Données collectées : "
+         },
+         {
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Vidéos (plateforme)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Données collectées : "
+         },
+         {
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Réseau social"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Données collectées : "
+         },
+         {
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Cartes / GPS"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Données collectées : "
+         },
+         {
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. À quoi servent principalement toutes ces données ? "
+    },
+    {
+     "t": "champ",
+     "points": 47
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. GAFAM signifie : G"
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " A"
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " F"
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " A"
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " M"
+    },
+    {
+     "t": "champ",
+     "points": 6
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le débat de l'enquêteur"
+  },
+  {
+   "type": "consigne",
+   "texte": "Prépare ton argumentation pour le débat de fin de séance (2 arguments de chaque côté, avec un exemple précis)."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Deux avantages des services gratuits :"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Deux risques pour l'utilisateur :"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. En Europe et en NC, un règlement protège nos données personnelles. Son nom : "
+    },
+    {
+     "t": "champ",
+     "points": 9
+    },
+    {
+     "t": "texte",
+     "v": " (on l'étudiera en SEQ04 !)"
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Une URL est traduite en adresse IP par le serveur "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " avant d'atteindre le serveur web."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Les services « gratuits » se financent grâce à la "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " ciblée, construite à partir de nos "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " personnelles."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Quand c'est gratuit, la marchandise, c'est ton attention.",
+   "auteur": ""
+  }
+ ]
+}

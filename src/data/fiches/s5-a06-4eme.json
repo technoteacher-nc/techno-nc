@@ -1,0 +1,622 @@
+{
+ "code": "S5-A06",
+ "niveau": "4eme",
+ "seq": "seq05",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "ATELIER : IMPRESSION 3D ET DÉCOUPE LASER DU MODÈLE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le prototype gagnant passe en fabrication réelle : impression 3D du modèle SketchUp, découpe laser du profil. Tu observes la chaîne numérique complète — du fichier à l'objet."
+   ],
+   "question": "Comment passe-t-on d'un modèle 3D à un objet réel, et quel procédé choisir ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "La chaîne numérique (CFAO)  (démo imprimante 3D)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Remets les 4 étapes dans l'ordre observé pendant la démo."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "N°",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le logiciel de tranchage découpe le modèle en couches et calcule le trajet de la buse (g-code)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le modèle est dessiné dans SketchUp (.skp)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L'imprimante dépose le fil de PLA fondu, couche après couche."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le modèle est exporté dans un format d'échange 3D (.stl)."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Ce procédé est dit ADDITIF car "
+    },
+    {
+     "t": "champ",
+     "points": 69
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Démo découpe laser + sécurité"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Observation",
+    "À compléter"
+   ],
+   "largeurs": [
+    3000,
+    6360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le laser"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " la matière en suivant un dessin 2D : procédé SOUSTRACTIF."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Matériaux découpés ici"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "carton, "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " (MDF) — jamais de PVC (fumées toxiques)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sécurité n°1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "capot "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " pendant la découpe, extraction des fumées en marche."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Vitesse"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "quelques "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " pour un profil — bien plus rapide que l'impression 3D."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "L'ingénieur choisit son procédé"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère",
+    "Prototype carton",
+    "Impression 3D (PLA)",
+    "Découpe laser (MDF)"
+   ],
+   "largeurs": [
+    2200,
+    2300,
+    2500,
+    2360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Précision"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "± 2 mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "± "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " mm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "± 0,2 mm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Rigidité"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "faible"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "bonne"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Temps pour 1 pièce"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "20 min"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "quelques min"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Le collège veut 30 supports identiques pour toutes les salles. Quel procédé recommandes-tu ? Justifie avec DEUX critères chiffrés du tableau."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "La chaîne numérique : modèle 3D → fichier "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " → tranchage → fabrication."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Impression 3D = procédé "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " ; découpe laser = procédé "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le choix du procédé dépend du "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " , de la précision et de la quantité."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "La machine exécute ; c'est l'humain qui choisit.",
+   "auteur": ""
+  }
+ ]
+}

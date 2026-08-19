@@ -1,0 +1,438 @@
+{
+ "code": "S5-A02",
+ "niveau": "4eme",
+ "seq": "seq05",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "CROQUIS COTÉ ET PERSPECTIVE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton idée est dans ta tête… mais le bureau d'études ne lit pas dans les pensées ! Le croquis coté est le langage universel entre celui qui imagine et celui qui fabrique."
+   ],
+   "question": "Comment représenter une solution pour qu'un autre puisse la fabriquer ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les règles du croquis coté  (exemple annoté ci-dessous)"
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq05/schemas/croquis_cote.png"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Règle",
+    "À retenir"
+   ],
+   "largeurs": [
+    4200,
+    5160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les cotes s'écrivent en"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " (unité de l'industrie)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une cote se compose de"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2 traits d'attache + 1 ligne de cote fléchée + la "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "On cote"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "chaque dimension UNE seule fois, jamais deux"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La perspective cavalière sert à"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "montrer le "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " (3D) d'un seul coup d'œil"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Mes 3 solutions  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dessine 3 solutions DIFFÉRENTES de support (au moins une en perspective). Puis cote complètement ta préférée en mm."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Solution 1",
+    "Solution 2",
+    "Solution 3 (perspective)"
+   ],
+   "largeurs": [
+    3120,
+    3120,
+    3120
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ]
+   ]
+  },
+  {
+   "type": "zone",
+   "label": "Ma solution préférée, COTÉE en mm (grande case) :",
+   "hauteur": 2240
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le choix argumenté : retour au CDC"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère du CDC",
+    "Sol. 1",
+    "Sol. 2",
+    "Sol. 3"
+   ],
+   "largeurs": [
+    4800,
+    1520,
+    1520,
+    1520
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Angle 30–60° possible"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Stable (3 poussées)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Fabricable carton + ficelle"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je retiens la solution n° "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " car "
+    },
+    {
+     "t": "champ",
+     "points": 68
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un croquis coté s'exprime en "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " et chaque dimension n'apparaît qu'"
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " fois."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "On choisit une solution en la confrontant aux "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " du CDC, pas au hasard."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Dessiner, c'est déjà fabriquer.",
+   "auteur": ""
+  }
+ ]
+}

@@ -1,0 +1,672 @@
+{
+ "code": "S5-A05",
+ "niveau": "5eme",
+ "seq": "seq05",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LA MAQUETTE PAPIER DE MA PIÈCE PRÉFÉRÉE (ÉCHELLE 1/20)"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "L'écran, c'est bien ; le vrai volume, c'est mieux ! Les architectes fabriquent TOUJOURS des maquettes. Tu vas construire ta pièce préférée en papier, à l'échelle 1/20."
+   ],
+   "question": "Comment passer de la maquette numérique à une maquette en volume, à l'échelle ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "L'échelle 1/20 : 1 cm sur la maquette = 20 cm en vrai"
+  },
+  {
+   "type": "consigne",
+   "texte": "Convertis les dimensions de TA pièce (reprends les mesures dans Sweet Home 3D)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Dimension",
+    "En vrai",
+    "Sur la maquette (÷ 20)"
+   ],
+   "largeurs": [
+    3200,
+    3200,
+    2960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Longueur de la pièce"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " m = "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Largeur de la pièce"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " m = "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Hauteur des murs"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2,4 m = 240 cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Le patron : tracer, découper, plier, coller  (séance en groupe · schéma ci-dessous)"
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq05/schemas/patron.png"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur le papier épais, trace le SOL aux dimensions calculées (règle + équerre)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Trace les 4 MURS rabattus autour du sol (hauteur 12 cm) + une languette de collage par mur."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Dessine portes et fenêtres sur les murs À PLAT (plus facile) — découpe les fenêtres."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Découpe le patron complet, plie les murs vers le haut, colle les languettes."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ÉQUERRAGE À LA FICELLE : tends une ficelle sur les 2 diagonales du sol — si elles sont égales, ta pièce est bien d'équerre !"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Contrôle qualité (tolérance ± 2 mm)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Mesure",
+    "Prévu (Partie 1)",
+    "Mesuré sur ma maquette",
+    "Écart ≤ 2 mm ?"
+   ],
+   "largeurs": [
+    2400,
+    2500,
+    3000,
+    1460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Longueur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Largeur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Hauteur murs"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "12 cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Diagonales égales (équerrage ficelle) ✋ vérification professeur",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "À l'échelle 1/20, je "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " toutes les dimensions réelles par 20."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " est le dessin à plat qui, une fois plié, donne le volume."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Deux diagonales "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " prouvent que les angles sont droits."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Mesurer deux fois, couper une fois.",
+   "auteur": "proverbe d'atelier"
+  }
+ ]
+}

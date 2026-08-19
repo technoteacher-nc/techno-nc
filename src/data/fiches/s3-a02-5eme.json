@@ -1,0 +1,342 @@
+{
+ "code": "S3-A02",
+ "niveau": "5eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu envoies une photo à ta correspondante à Paris. Deux secondes plus tard, elle répond « trop belle ! ». Pourtant, Paris est à plus de 16 000 km, de l'autre côté de la planète."
+   ],
+   "question": "Quel chemin parcourt un message qui voyage sur Internet ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Remets le voyage dans l'ordre"
+  },
+  {
+   "type": "consigne",
+   "texte": "Numérote de 1 à 6 les étapes du voyage de la photo. Attention, elles sont mélangées !"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "N°",
+    "Étape du voyage"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La photo arrive sur le téléphone de ma correspondante à Paris."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon téléphone envoie la photo à l'antenne ou à la box la plus proche."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le serveur de la messagerie reçoit la photo et la garde pour la destinataire."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La photo traverse l'océan dans le câble sous-marin Gondwana."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "J'appuie sur « envoyer » : la photo est découpée en petits paquets de données."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les paquets circulent de serveur en serveur à travers le monde."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Gondwana : la NC branchée au monde  (document projeté)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Lis le document projeté sur les câbles Gondwana 1 et 2, puis réponds."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Pourquoi pose-t-on les câbles Internet au fond de l'océan plutôt que dans les airs ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. Que transporte la fibre optique à l'intérieur du câble ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2c. Gondwana 1 existe déjà. À quoi sert Gondwana 2 ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "definition",
+   "label": "ADRESSE IP",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Ma carte du réseau mondial"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dans le cadre : dessine la Nouvelle-Calédonie, l'Australie et la France, puis trace le trajet de ta photo. Légende au moins 3 éléments (câble Gondwana, serveur, antenne/box)."
+  },
+  {
+   "type": "zone",
+   "label": "Ma carte :",
+   "hauteur": 2250
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Sur Internet, les messages sont découpés en "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " qui voyagent séparément."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La Nouvelle-Calédonie est reliée au monde par des câbles "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " posés au fond de l'océan."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Chaque machine possède une adresse "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " pour que le message trouve sa destination."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "L'information voyage à la vitesse de la lumière… au fond de l'océan.",
+   "auteur": ""
+  }
+ ]
+}

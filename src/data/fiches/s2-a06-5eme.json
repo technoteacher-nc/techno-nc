@@ -1,0 +1,701 @@
+{
+ "code": "S2-A06",
+ "niveau": "5eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "L'EXPÉRIENCE UTILISATEUR — FACILE OU GALÈRE ?"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Deux distributeurs de boissons vendent exactement les mêmes produits, au même prix. Devant le premier, tout le monde achète en quelques secondes. Devant le second, les clients s'énervent, se trompent… puis abandonnent."
+   ],
+   "question": "Pourquoi deux objets qui rendent le même service ne sont-ils pas aussi agréables à utiliser ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je teste des objets de la salle"
+  },
+  {
+   "type": "consigne",
+   "texte": "Manipule réellement chaque objet, puis complète le tableau. Sois honnête : c'est ton ressenti d'utilisateur qui compte."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Objet testé",
+    "Je comprends tout de suite ?",
+    "Effort demandé",
+    "Note d'expérience /5"
+   ],
+   "largeurs": [
+    3600,
+    1500,
+    1830,
+    2430
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. La porte de la salle 207"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "faible",
+          "points": 0
+         },
+         {
+          "label": "moyen",
+          "points": 0
+         },
+         {
+          "label": "fort",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " / 5"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2. Une souris d'ordinateur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "faible",
+          "points": 0
+         },
+         {
+          "label": "moyen",
+          "points": 0
+         },
+         {
+          "label": "fort",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " / 5"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3. Ta trousse (ouverture / fermeture)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "faible",
+          "points": 0
+         },
+         {
+          "label": "moyen",
+          "points": 0
+         },
+         {
+          "label": "fort",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " / 5"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quel objet offre la meilleure expérience ? Pourquoi ? "
+    },
+    {
+     "t": "champ",
+     "points": 33
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Trois mots à ne pas confondre"
+  },
+  {
+   "type": "definition",
+   "label": "USAGE / UTILITÉ / EXPÉRIENCE UTILISATEUR (UX)",
+   "n": 3
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la bonne colonne pour chaque phrase : USAGE (USA), UTILITÉ (UTI) ou EXPÉRIENCE UTILISATEUR (UX)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "À propos d'écouteurs Bluetooth, on entend…",
+    "USA",
+    "UTI",
+    "UX"
+   ],
+   "largeurs": [
+    7060,
+    760,
+    760,
+    780
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« L'appairage Bluetooth est pénible : je dois m'y reprendre à trois fois. »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Ils servent à écouter de la musique sans fil. »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Mon frère s'en sert pour jouer, moi plutôt dans le bus. »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Ils sont si confortables que je les oublie dans mes oreilles. »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Ils permettent aussi de répondre au téléphone. »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Je les utilise surtout le soir, pour ne pas déranger la maison. »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Deux écrans, un gagnant  (document projeté au tableau)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe les écrans des distributeurs A et B projetés au tableau. Relève deux différences, puis conclus."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Différence 1 : "
+    },
+    {
+     "t": "champ",
+     "points": 67
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Différence 2 : "
+    },
+    {
+     "t": "champ",
+     "points": 67
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le distributeur le plus facile à utiliser est le "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "A",
+     "points": 0
+    },
+    {
+     "label": "B   car",
+     "points": 35
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "À toi de jouer : j'améliore un objet"
+  },
+  {
+   "type": "consigne",
+   "texte": "Choisis un objet de la salle dont l'expérience utilisateur est mauvaise. Dessine-le en annotant ce qui gêne, puis propose UNE amélioration (flèche + légende). La fonction de l'objet ne doit pas changer !"
+  },
+  {
+   "type": "zone",
+   "label": "Croquis annoté :",
+   "hauteur": 0
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "L'expérience utilisateur (UX), c'est ce que "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " l'utilisateur quand il se sert d'un objet."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un objet peut être très "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " mais désagréable à utiliser."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Pour améliorer l'UX d'un objet, on observe et on écoute de vrais "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le design, ce n'est pas seulement l'apparence. Le design, c'est comment ça fonctionne.",
+   "auteur": "Steve Jobs"
+  }
+ ]
+}

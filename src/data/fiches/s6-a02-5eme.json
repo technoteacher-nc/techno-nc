@@ -1,0 +1,460 @@
+{
+ "code": "S6-A02",
+ "niveau": "5eme",
+ "seq": "seq06",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "SCRATCH (1) : LE PARCOURS CARRÉ"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton algorithme papier fonctionne. Place au vrai langage : dans Scratch, chaque instruction est un BLOC qu'on emboîte. Le lutin exécute — sans jamais discuter."
+   ],
+   "question": "Comment traduire mon algorithme papier en programme qui s'exécute ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "L'interface de Scratch  (document projeté)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Zone",
+    "Son rôle"
+   ],
+   "largeurs": [
+    3200,
+    6160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La SCÈNE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "C'est là que le "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " se déplace et dessine."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La palette de BLOCS"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les instructions, rangées par couleur (Mouvement, Contrôle, "
+         },
+         {
+          "t": "champ",
+          "points": 3
+         },
+         {
+          "t": "texte",
+          "v": ")."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La zone de SCRIPT"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "J'y "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " les blocs pour construire mon programme."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le drapeau vert"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L'"
+         },
+         {
+          "t": "champ",
+          "points": 10
+         },
+         {
+          "t": "texte",
+          "v": " qui lance le programme."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Pas-à-pas : le carré  (séance en groupe)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ouvre Scratch. Blocs Mouvement : glisse « avancer de 10 pas » dans la zone de script, change 10 en 100."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ajoute « tourner de 15 degrés » → change en 90. Puis Contrôle : « attendre 1 seconde » → 0,5."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Contrôle : entoure le tout d'un bloc « répéter 10 fois » → change en 4."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Événements : pose « quand drapeau vert cliqué » au sommet. Clique le drapeau : le lutin trace un CARRÉ ?"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Bonus stylo : ajoute « stylo en position d'écriture » (extension Stylo) pour voir la trace. ✋"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Défi : le parcours en escalier"
+  },
+  {
+   "type": "consigne",
+   "texte": "Programme le parcours ci-dessous (escalier de 3 marches : avancer 50, tourner gauche 90, avancer 50, tourner droite 90, à répéter). Trouve la version AVEC boucle !"
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq06/schemas/escalier.png"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Mon programme en boucle : Répéter "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " fois : [ "
+    },
+    {
+     "t": "champ",
+     "points": 56
+    },
+    {
+     "t": "texte",
+     "v": " ]"
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Mon escalier s'affiche à l'écran",
+     "points": 0
+    },
+    {
+     "label": "Programme enregistré : NOM_S6A02 ✋",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Dans Scratch, chaque instruction est un "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " que l'on emboîte."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le bloc « "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " » exécute plusieurs fois les blocs qu'il contient."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le drapeau vert est un "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " : il déclenche le programme."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un programme, c'est un algorithme qui a trouvé sa langue.",
+   "auteur": ""
+  }
+ ]
+}

@@ -1,0 +1,417 @@
+{
+ "code": "S6-A03",
+ "niveau": "5eme",
+ "seq": "seq06",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "SCRATCH (2) : VARIABLES ET ÉVÉNEMENTS"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le robot aspirateur nettoie en SPIRALE : à chaque virage, il avance un peu PLUS loin. Impossible avec une simple boucle… il lui faut une mémoire : la VARIABLE."
+   ],
+   "question": "Comment un programme peut-il mémoriser et faire évoluer une valeur ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "La variable : la mémoire du programme"
+  },
+  {
+   "type": "definition",
+   "label": "VARIABLE — à compléter ensemble",
+   "n": 2
+  },
+  {
+   "type": "consigne",
+   "texte": "Lis le programme spirale, puis complète le tableau de son exécution :"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "mettre pas à 20 · répéter 4 fois : [ avancer de « pas » ; tourner de 90° ; ajouter 20 à « pas » ]"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Tour de boucle",
+    "Valeur de « pas » au moment d'avancer"
+   ],
+   "largeurs": [
+    3800,
+    5560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tour 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "20"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tour 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tour 3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Tour 4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Pas-à-pas : la spirale  (séance en groupe)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Variables → « Créer une variable » : nomme-la  pas ."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Construis : quand drapeau cliqué → mettre pas à 20 → répéter 8 fois [ avancer de (pas) ; tourner de 90° ; attendre 0,5 s ; ajouter 20 à pas ]."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Active le stylo : la SPIRALE se dessine. Efface tout (bloc « effacer tout ») et relance."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Modifie : ajouter 10 au lieu de 20 — que devient la spirale ? Note ta réponse en 2a. ✋"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Avec « ajouter 10 », la spirale devient "
+    },
+    {
+     "t": "champ",
+     "points": 53
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "L'événement et la condition : le rebond"
+  },
+  {
+   "type": "consigne",
+   "texte": "Ajoute : « si touche le bord, rebondir » dans la boucle. Puis un 2e script : « quand touche espace pressée → relever le stylo »."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Un ÉVÉNEMENT déclenche un script. Cite les 2 événements de ton programme : "
+    },
+    {
+     "t": "champ",
+     "points": 29
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Mon lutin rebondit sur les bords",
+     "points": 0
+    },
+    {
+     "label": "Programme enregistré : NOM_S6A03 ✋",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Une "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " mémorise une valeur que le programme peut lire et modifier."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "« Ajouter 20 à pas » fait "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " la valeur à chaque tour de boucle."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " (drapeau, touche, contact) déclenche un script."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Une variable, c'est une boîte : on regarde dedans, on change ce qu'il y a dedans.",
+   "auteur": ""
+  }
+ ]
+}

@@ -1,0 +1,411 @@
+{
+ "code": "S2-A07",
+ "niveau": "4eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "COMPARER POUR CHOISIR — LES ORDINATEURS DE LA SALLE 207"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Cinq ordinateurs de la salle 207 doivent être remplacés. Le collège a reçu trois devis (projetés au tableau). Le budget est de 600 000 F CFP pour les 5 postes. Usage prévu : traitement de texte, recherches, programmation. La gestionnaire te demande une recommandation argumentée."
+   ],
+   "question": "Comment comparer objectivement plusieurs objets techniques pour choisir selon un besoin et un budget ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je dépouille les devis  (documents projetés au tableau)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le tableau comparatif à partir des trois devis projetés."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Caractéristique",
+    "PC A — OfficeBox 300",
+    "PC B — ProLine 15",
+    "PC C — GamerZ Ultra"
+   ],
+   "largeurs": [
+    2860,
+    2160,
+    2160,
+    2180
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Prix unitaire (F CFP)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Processeur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mémoire vive (RAM)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Stockage"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Garantie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice de réparabilité /10"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "SAV en Nouvelle-Calédonie ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "J'analyse les caractéristiques"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Quel PC fait dépasser le budget de 600 000 F CFP pour 5 postes ? Prouve-le par un calcul."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. Pourquoi 4 Go de mémoire vive (RAM) est-il insuffisant aujourd'hui ? (souviens-toi de la SEQ01 !)"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2c. Quel avantage un stockage SSD offre-t-il par rapport à un disque dur HDD ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Ma recommandation  (raisonnement type brevet)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Rédige un paragraphe argumenté recommandant UN modèle pour l'usage prévu au collège. Exigences : au moins TROIS critères chiffrés tirés du tableau, et une phrase sur le respect du budget."
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Le vrai coût d'un ordinateur"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "4a. Le PC B affiche un indice de réparabilité de 8/10 : sa RAM et son SSD se remplacent facilement. Explique en quoi cela réduit le coût réel de l'ordinateur sur 5 ans."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "4b. Le PC C n'a pas de SAV en Nouvelle-Calédonie : il repart en métropole en cas de panne. Cite UNE conséquence concrète pour le collège."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Choisir un OST, c'est croiser un "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " , des critères de comparaison et des contraintes (le budget, par exemple)."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Les caractéristiques "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " (prix, RAM, garantie…) permettent une comparaison objective, dans un tableau."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le coût réel d'un objet inclut sa durée de vie : la "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " et le SAV local en font partie."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "On ne peut améliorer que ce que l'on mesure.",
+   "auteur": "d'après W. Edwards Deming, ingénieur"
+  }
+ ]
+}

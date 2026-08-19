@@ -1,0 +1,401 @@
+{
+ "code": "S3-A04",
+ "niveau": "5eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "FILIUS : JE CONSTRUIS MON PREMIER RÉSEAU"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Impossible de débrancher les 15 ordinateurs de la salle pour faire des essais ! Les techniciens font comme les ingénieurs : avant de câbler pour de vrai, ils SIMULENT le réseau sur un logiciel."
+   ],
+   "question": "Comment relier des ordinateurs pour qu'ils communiquent, et comment vérifier que ça marche ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Avant de cliquer : ce que je vais construire"
+  },
+  {
+   "type": "consigne",
+   "texte": "Réponds grâce à ce que tu as appris en S3-A01 et S3-A02."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Pour relier seulement 2 ordinateurs, de quoi ai-je besoin entre eux ? "
+    },
+    {
+     "t": "champ",
+     "points": 30
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1b. Pourquoi chaque ordinateur doit-il recevoir une adresse IP différente ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Pas-à-pas Filius : deux ordinateurs qui se parlent"
+  },
+  {
+   "type": "consigne",
+   "texte": "Suis les étapes dans l'ordre. Coche chaque étape réussie."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ouvre Filius. Glisse 2 ordinateurs portables dans la zone de travail."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Relie-les avec un câble (menu de gauche)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Double-clique sur chaque PC : adresse IP 192.168.0.10 pour le premier, 192.168.0.11 pour le second."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Passe en mode simulation (flèche verte ▶)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur le PC .10 : « Installation des logiciels » → installe la « Ligne de commande »."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "6",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ouvre la ligne de commande et tape :  ping 192.168.0.11"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Résultat de mon ping : "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " paquets transmis, "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    },
+    {
+     "t": "texte",
+     "v": " paquets perdus. Le réseau fonctionne : "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "oui",
+     "points": 0
+    },
+    {
+     "label": "non",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. Tape maintenant  ping 192.168.0.12  (une adresse qui n'existe pas). Que se passe-t-il, et pourquoi ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Défi : le réseau en étoile"
+  },
+  {
+   "type": "consigne",
+   "texte": "Repasse en mode conception (marteau). Ajoute un 3e portable (192.168.0.12) et un SWITCH, puis relie les 3 PC au switch (comme les rayons d'une étoile). Vérifie par un ping depuis chaque machine."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Mes 3 ordinateurs se répondent tous au ping (0 % perdus).",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ai montré ma simulation au professeur. ✋",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. À ton avis, pourquoi le switch est-il indispensable dès qu'il y a plus de 2 ordinateurs ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Pour communiquer, chaque machine du réseau doit avoir une adresse "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " unique."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La commande "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " permet de tester si deux machines communiquent."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " relie plusieurs machines entre elles, comme le centre d'une étoile."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Simuler, c'est se tromper sans rien casser.",
+   "auteur": "devise des ingénieurs réseau"
+  }
+ ]
+}

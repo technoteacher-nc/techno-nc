@@ -1,0 +1,189 @@
+---
+// Mode d'emploi élève — la page à donner en début d'année, à projeter la
+// première fois, et à laisser en marque-page.
+//
+// Elle est écrite pour être lue SEUL, par un élève de 11-15 ans, souvent
+// pendant que le professeur est occupé ailleurs. D'où trois partis pris :
+//   - les étapes sont numérotées parce qu'elles sont réellement séquentielles,
+//     et chacune tient en une action ;
+//   - les boutons sont nommés EXACTEMENT comme ils apparaissent à l'écran ;
+//   - le point qui fait perdre du travail (le poste partagé) n'est pas relégué
+//     dans une note de bas de page, il est une étape à part entière.
+// La page s'imprime en A4 pour être collée dans le cahier.
+
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+const site = 'technoteacher-nc.github.io/techno-nc';
+
+const etapes = [
+  {
+    titre: 'Ouvre le site',
+    corps: [
+      'Scanne le QR code imprimé sur ta fiche papier — il t\'amène directement à la bonne activité.',
+      `Sans fiche sous la main, tape l'adresse : ${site}`,
+    ],
+    astuce: 'Mets le site en favori la première fois : tu ne retaperas plus jamais l\'adresse.',
+  },
+  {
+    titre: 'Trouve ton activité',
+    corps: [
+      'Clique sur ton niveau : 5ème ou 4ème.',
+      'Les activités sont rangées par séquence, dans l\'ordre de l\'année. Le numéro de ta fiche (par exemple S3-A01) est écrit en haut de chaque fiche papier.',
+    ],
+  },
+  {
+    titre: 'Clique sur « Remplir en ligne »',
+    corps: [
+      'C\'est le premier bouton, en haut de la page de l\'activité.',
+      'Tu retrouves exactement la même fiche que sur papier : mêmes parties, mêmes questions, mêmes schémas. Tu écris directement dans les cases.',
+    ],
+    astuce: 'Les cadres de réponse s\'agrandissent tout seuls quand tu écris : tu ne manqueras jamais de place.',
+  },
+  {
+    titre: 'Écris — c\'est enregistré tout seul',
+    corps: [
+      'Aucun bouton « enregistrer » à cliquer : dès que tu écris, c\'est gardé.',
+      'En haut de la fiche, la pastille devient verte et compte tes réponses. Tu peux fermer la page et revenir plus tard : tout est encore là.',
+    ],
+    attention: 'Tes réponses restent sur CET ordinateur et dans CE navigateur. Rien n\'est envoyé sur Internet : personne d\'autre ne les voit, mais tu ne les retrouveras pas sur un autre poste. D\'où l\'étape 5.',
+  },
+  {
+    titre: 'Avant de partir : « Enregistrer dans un fichier »',
+    corps: [
+      'Si tu risques de changer d\'ordinateur la prochaine fois (et au collège, c\'est presque sûr), clique sur « Enregistrer dans un fichier ».',
+      'Range le fichier dans ton espace personnel, dossier TECHNO — celui qui te suit d\'un poste à l\'autre grâce au serveur du collège.',
+      'La fois suivante, ouvre la même activité et clique sur « Reprendre un fichier » : tout revient.',
+    ],
+    astuce: 'Écris ton nom en haut de la fiche avant d\'enregistrer : le fichier portera ton nom, tu le retrouveras plus vite.',
+  },
+  {
+    titre: 'Rends ton travail',
+    corps: [
+      '« Imprimer / PDF » produit une fiche propre, avec tes réponses, prête à rendre. Aucun bloc n\'est coupé entre deux pages.',
+      '« Copier mes réponses » copie tout ton texte : tu peux le coller dans un document ou un message si le professeur demande un rendu numérique.',
+    ],
+  },
+];
+
+const soucis = [
+  {
+    q: 'Mes réponses ont disparu',
+    r: 'Tu es sûrement sur un autre ordinateur, ou dans un autre navigateur (Chrome / Firefox / Edge ne partagent rien entre eux). Ouvre l\'activité et clique sur « Reprendre un fichier » si tu en avais enregistré un.',
+  },
+  {
+    q: 'La pastille reste grise et rien ne s\'enregistre',
+    r: 'Tu navigues probablement en navigation privée : dans ce mode, le navigateur oublie tout à la fermeture. Sors de la navigation privée, ou termine par « Imprimer / PDF » avant de fermer.',
+  },
+  {
+    q: 'J\'ai perdu ma fiche papier / j\'étais absent',
+    r: 'Rien n\'est perdu : chaque activité reste en ligne toute l\'année. Tu peux la remplir en ligne, ou télécharger le PDF et l\'imprimer.',
+  },
+  {
+    q: 'Je n\'ai pas Internet à la maison',
+    r: 'Ouvre la page une fois au collège : une fois chargée, elle continue de fonctionner et d\'enregistrer tes réponses même sans connexion. Sinon, télécharge le PDF pendant que tu es connecté.',
+  },
+  {
+    q: 'Le site est lent',
+    r: 'Chaque bouton de téléchargement indique le poids du document (par exemple « PDF · 241 Ko ») : tu sais avant de cliquer ce que ça va coûter à ta connexion.',
+  },
+  {
+    q: 'J\'ai fait n\'importe quoi, je veux recommencer',
+    r: '« Tout effacer » remet la fiche à zéro. Attention, c\'est définitif — enregistre d\'abord un fichier si tu veux garder une trace.',
+  },
+];
+
+const urlPage = new URL(u('/mode-demploi/'), Astro.site).href;
+const donneesLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Utiliser le site de Technologie',
+    description: 'Trouver son activité, la remplir en ligne, garder son travail et le rendre.',
+    inLanguage: 'fr',
+    url: urlPage,
+    step: etapes.map((e, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: e.titre,
+      text: e.corps.join(' '),
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: soucis.map(s => ({
+      '@type': 'Question',
+      name: s.q,
+      acceptedAnswer: { '@type': 'Answer', text: s.r },
+    })),
+  },
+];
+---
+<Base
+  titre="Mode d'emploi — comment utiliser le site"
+  description="Comment trouver ton activité, la remplir en ligne, garder ton travail d'une séance à l'autre et le rendre. Six étapes, sans compte.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <section class="hero leve">
+    <span class="eyebrow leve leve-1">À lire une fois, en début d'année</span>
+    <h1 class="leve leve-1">Comment ça <em>marche</em></h1>
+    <p class="leve leve-2">
+      Six étapes pour trouver ton activité, la remplir directement en ligne et
+      garder ton travail d'une séance à l'autre. Pas de compte à créer, pas de
+      mot de passe : tu cliques et tu écris.
+    </p>
+  </section>
+
+  <ol class="mde-etapes">
+    {etapes.map((e, i) => (
+      <li class="mde-etape">
+        <span class="mde-num" aria-hidden="true">{i + 1}</span>
+        <div class="mde-corps">
+          <h2>{e.titre}</h2>
+          {e.corps.map(p => <p>{p}</p>)}
+          {e.attention && <p class="mde-attention"><strong>À savoir :</strong> {e.attention}</p>}
+          {e.astuce && <p class="mde-astuce"><strong>Astuce :</strong> {e.astuce}</p>}
+        </div>
+      </li>
+    ))}
+  </ol>
+
+  <section class="mde-bloc">
+    <h2 class="niveau-titre">Si ça coince <span>LES 6 QUESTIONS QUI REVIENNENT</span></h2>
+    <dl class="mde-faq">
+      {soucis.map(s => (
+        <>
+          <dt>{s.q}</dt>
+          <dd>{s.r}</dd>
+        </>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mde-bloc">
+    <h2 class="niveau-titre">Pour réviser <span>TOUTE L'ANNÉE</span></h2>
+    <p class="mde-intro">
+      La page <a href={u('/ressources')}>Ressources</a> rassemble ce qui sert
+      hors des activités : le lexique du Brevet, les fiches de synthèse à relire
+      avant une évaluation, et des animations et logiciels gratuits pour revoir
+      une notion — la plupart s'ouvrent directement dans le navigateur.
+    </p>
+    <div class="docs">
+      <a class="btn btn--fort" href={u('/5eme')}>Mes activités de 5ème</a>
+      <a class="btn btn--fort" href={u('/4eme')}>Mes activités de 4ème</a>
+      <a class="btn" href={u('/ressources')}>Ressources</a>
+    </div>
+  </section>
+
+  <section class="qr">
+    <img src={u('/qr/accueil.png')} alt="QR code vers l'accueil du site" width="76" height="76" loading="lazy" />
+    <p>
+      Scanne ce code pour retrouver le site depuis ton téléphone.<br />
+      Adresse complète : <strong>{site}</strong>
+    </p>
+  </section>
+
+</Base>

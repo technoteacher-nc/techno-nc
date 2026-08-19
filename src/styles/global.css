@@ -414,6 +414,357 @@ body {
   .synth-grille { grid-template-columns: 1fr; }
 }
 
+/* encart d'accueil vers le mode d'emploi */
+.accueil-mde {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1rem 1.5rem; margin: 2rem 0 0; padding: 1.35rem 1.5rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait);
+  background: var(--calque);
+}
+.accueil-mde h2 {
+  font-family: var(--display); font-weight: 700; font-size: 1.15rem;
+  letter-spacing: -.02em; margin: 0 0 .35rem;
+}
+.accueil-mde p { margin: 0; color: var(--mine); max-width: 52ch; font-size: .95rem; line-height: 1.55; }
+.accueil-mde .btn { flex: none; }
+
+/* ---------- mode d'emploi élève ----------
+   La numérotation n'est pas décorative : ces six étapes se font dans l'ordre,
+   et l'étape 5 (garder son travail) n'a de sens qu'après la 4. Le numéro est
+   donc traité comme une donnée, au même titre que les maillons d'une séquence. */
+
+.mde-etapes {
+  list-style: none; margin: 2.5rem 0 0; padding: 0;
+  display: grid; gap: 1.75rem;
+}
+.mde-etape {
+  display: grid; grid-template-columns: 2.5rem 1fr; gap: 0 1.1rem;
+  break-inside: avoid; page-break-inside: avoid;
+}
+.mde-num {
+  width: 2.5rem; height: 2.5rem; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+  color: var(--papier); background: var(--encre);
+}
+.mde-corps h2 {
+  font-family: var(--display); font-weight: 700; font-size: 1.2rem;
+  letter-spacing: -.02em; line-height: 1.25; margin: .35rem 0 .5rem;
+  text-wrap: balance;
+}
+.mde-corps p { margin: 0 0 .5rem; max-width: 62ch; line-height: 1.6; }
+.mde-corps p:last-child { margin-bottom: 0; }
+
+.mde-attention, .mde-astuce {
+  padding: .6rem .85rem; border-radius: 8px; font-size: .92rem;
+}
+.mde-attention {
+  background: color-mix(in srgb, #D9791E 14%, transparent);
+  border-left: 3px solid #D9791E;
+}
+.mde-astuce {
+  background: var(--calque);
+  border-left: 3px solid var(--vif);
+}
+
+.mde-bloc { margin: 3rem 0 0; }
+.mde-intro { color: var(--mine); max-width: 62ch; margin: 1rem 0 0; }
+.mde-bloc .docs { margin-top: 1.25rem; }
+
+.mde-faq { margin: 1.25rem 0 0; }
+.mde-faq dt {
+  font-family: var(--display); font-weight: 600; font-size: 1rem;
+  padding-top: .85rem; border-top: 1px solid var(--trait);
+  break-after: avoid; page-break-after: avoid;
+}
+.mde-faq dd {
+  margin: .3rem 0 1rem; color: var(--mine); max-width: 68ch; line-height: 1.55;
+}
+
+@media (max-width: 30rem) {
+  .mde-etape { grid-template-columns: 2rem 1fr; gap: 0 .8rem; }
+  .mde-num { width: 2rem; height: 2rem; font-size: .9rem; }
+}
+
+/* ---------- simulateurs & animations ----------
+   Ces ressources remplacent le manuel que les élèves n'ont pas chez eux.
+   L'étiquette « en ligne / à installer » est l'information qui décide de
+   l'usage à la maison : elle est donc traitée comme une donnée, pas comme
+   une décoration. */
+
+.simu-intro {
+  margin: 1rem 0 0; max-width: 68ch;
+  color: var(--mine); font-size: .95rem; line-height: 1.55;
+}
+.simu-groupe { margin: 2rem 0 0; }
+.simu-groupe-titre {
+  display: flex; align-items: baseline; gap: .7rem; flex-wrap: wrap;
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+  letter-spacing: -.015em; margin: 0 0 .6rem;
+  padding-bottom: .5rem; border-bottom: 1px solid var(--trait);
+}
+.simu-liste {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: .35rem 1.5rem;
+}
+.simu-liste li { padding: .7rem 0; }
+.simu-liste a {
+  font-family: var(--display); font-weight: 600; font-size: .97rem;
+  letter-spacing: -.01em; color: var(--encre); text-decoration: none;
+  display: inline-flex; align-items: baseline; gap: .3rem;
+}
+.simu-liste a:hover { color: var(--bleu); text-decoration: underline; text-underline-offset: 3px; }
+.simu-liste a:focus-visible { outline: 2px solid var(--bleu); outline-offset: 3px; border-radius: 3px; }
+.simu-fleche { font-size: .78rem; color: var(--vif); }
+.simu-liste p { margin: .15rem 0 0; color: var(--mine); font-size: .87rem; line-height: 1.45; }
+.simu-meta {
+  display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
+  margin-top: .35rem !important;
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .04em;
+}
+.simu-tag {
+  display: inline-block;
+  font-family: var(--mono); font-size: .62rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: .12rem .45rem; border-radius: 100px;
+  color: var(--encre); background: color-mix(in srgb, var(--vif) 22%, transparent);
+}
+.simu-tag--install { background: color-mix(in srgb, #D9791E 22%, transparent); }
+@media (max-width: 44rem) {
+  .simu-liste { grid-template-columns: 1fr; }
+}
+
+/* ---------- fiche remplissable en ligne ----------
+   Principe directeur : un bloc pédagogique ne se coupe JAMAIS. Une partie, un
+   tableau, un schéma, un bilan sont des unités de sens ; les couper en deux
+   (à l'écran comme sur papier) casse la lecture de l'élève. D'où le
+   `break-inside: avoid` systématique sur .fl-bloc et sur chaque rangée. */
+
+.fl-tete { padding-bottom: 1rem; }
+
+/* barre d'état : ce que l'élève doit savoir sur ses réponses, tout le temps */
+.fl-barre {
+  position: sticky; top: 3.6rem; z-index: 8;
+  display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem;
+  padding: .8rem 1rem;
+  margin: 0 0 2rem;
+  border: 1.5px solid var(--trait); border-radius: var(--r);
+  background: rgba(252, 252, 250, .94);
+  backdrop-filter: blur(8px);
+}
+.fl-barre-etat { display: flex; align-items: center; gap: .6rem; flex: 1 1 20rem; min-width: 0; }
+.fl-barre-etat p { margin: 0; font-size: .84rem; color: var(--mine); line-height: 1.45; }
+.fl-barre-actions { display: flex; flex-wrap: wrap; gap: .45rem; }
+.fl-barre .btn { padding: .5rem .85rem; font-size: .8rem; cursor: pointer; }
+.fl-btn-danger { color: #9B2226; border-color: color-mix(in srgb, #9B2226 35%, var(--trait)); }
+.fl-btn-danger:hover { border-color: #9B2226; }
+.fl-progres {
+  flex: 1 0 100%; margin: 0;
+  font-family: var(--mono); font-size: .72rem; color: var(--mine); letter-spacing: .02em;
+}
+.fl-pastille {
+  width: 9px; height: 9px; flex: none; border-radius: 50%;
+  background: var(--trait); transition: background .2s;
+}
+.fl-pastille[data-etat='ok'] { background: var(--vif); }
+.fl-pastille[data-etat='ko'] { background: #D9791E; }
+
+/* ligne d'identité : compacte, discrète, facultative */
+.fl-identite {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem .8rem;
+  padding-bottom: 1.25rem; margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--trait);
+}
+.fl-identite label {
+  font-family: var(--mono); font-size: .7rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--mine);
+}
+.fl-identite label span { text-transform: none; letter-spacing: .02em; font-weight: 500; }
+.fl-identite input {
+  flex: 1 1 14rem; max-width: 24rem;
+  font: inherit; color: var(--encre);
+  padding: .35rem .1rem; background: none;
+  border: none; border-bottom: 1.5px solid var(--trait);
+}
+.fl-identite input:focus-visible { outline: none; border-bottom-color: var(--bleu); }
+
+/* --- corps de la fiche --- */
+.fl-fiche { margin: 0 0 2.5rem; }
+
+.fl-bloc { break-inside: avoid; page-break-inside: avoid; }
+
+.fl-titre {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.15rem, 3.4vw, 1.5rem); letter-spacing: -.02em;
+  line-height: 1.2; margin: 0 0 1.25rem;
+  padding-bottom: .7rem; border-bottom: 2px solid var(--encre);
+}
+
+.fl-situation {
+  padding: 1.1rem 1.25rem; margin: 0 0 1.75rem;
+  border-radius: var(--r); background: var(--calque);
+  border-left: 3px solid var(--bleu);
+}
+.fl-situation p { margin: 0 0 .6rem; font-size: .97rem; line-height: 1.6; }
+.fl-probleme {
+  margin: .8rem 0 0 !important;
+  font-family: var(--display); font-weight: 600; font-size: 1rem !important;
+  letter-spacing: -.01em; color: var(--encre);
+}
+.fl-probleme::before {
+  content: '?'; font-family: var(--display); font-weight: 700;
+  color: var(--vif); margin-right: .4rem;
+}
+
+.fl-partie {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: .3rem .75rem;
+  font-family: var(--display); font-weight: 700; font-size: 1.2rem;
+  letter-spacing: -.02em; line-height: 1.25;
+  margin: 2.75rem 0 .85rem; padding-top: 1.1rem;
+  border-top: 1px solid var(--trait);
+  break-after: avoid; page-break-after: avoid;   /* jamais seul en bas de page */
+}
+.fl-partie:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+.fl-partie span {
+  font-family: var(--mono); font-size: .66rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--papier);
+  background: var(--encre); padding: .22rem .6rem; border-radius: 100px;
+}
+
+.fl-consigne {
+  margin: 0 0 1rem; padding-left: 1.4rem; position: relative;
+  color: var(--mine); font-size: .95rem; line-height: 1.55;
+  break-after: avoid; page-break-after: avoid;
+}
+.fl-consigne::before {
+  content: '➤'; position: absolute; left: 0; top: 0;
+  color: var(--vif); font-size: .85rem;
+}
+
+.fl-schema { margin: 0 0 1.5rem; text-align: center; }
+.fl-schema img {
+  max-width: 100%; height: auto;
+  border: 1px solid var(--trait); border-radius: 6px; background: #fff;
+}
+
+.fl-ligne { margin: 0 0 1rem; line-height: 2.4; }
+
+/* Champs : le trait de réponse du papier, transposé. Souligné plutôt
+   qu'encadré — c'est le geste du cahier, pas celui du formulaire administratif. */
+.fl-champ {
+  font: inherit; font-size: .97rem; color: var(--bleu);
+  padding: .1rem .35rem; min-width: 4ch; max-width: 100%;
+  background: color-mix(in srgb, var(--vif) 6%, transparent);
+  border: none; border-bottom: 1.5px dotted var(--trait);
+  border-radius: 3px 3px 0 0;
+}
+.fl-champ:focus-visible {
+  outline: none; border-bottom: 1.5px solid var(--bleu);
+  background: color-mix(in srgb, var(--bleu) 8%, transparent);
+}
+.fl-champ--cell { width: 100%; min-width: 3ch; }
+.fl-champ--bilan { color: var(--bleu); font-weight: 600; }
+
+.fl-zone {
+  display: block; width: 100%; margin: 0 0 1.1rem;
+  font: inherit; font-size: .97rem; color: var(--encre);
+  line-height: 1.9; padding: .6rem .75rem;
+  background: color-mix(in srgb, var(--vif) 5%, transparent);
+  border: 1.5px solid var(--trait); border-radius: var(--r);
+  resize: vertical; overflow: hidden;      /* la hauteur suit le contenu (script) */
+  /* lignes de cahier : l'élève voit où écrire, même vide */
+  background-image: repeating-linear-gradient(
+    transparent, transparent calc(1.9em - 1px),
+    color-mix(in srgb, var(--trait) 60%, transparent) calc(1.9em - 1px), color-mix(in srgb, var(--trait) 60%, transparent) 1.9em);
+  background-position: 0 .6rem;
+}
+.fl-zone:focus-visible { outline: none; border-color: var(--bleu); }
+
+.fl-coches { list-style: none; margin: 0 0 1.25rem; padding: 0; }
+.fl-coches li {
+  display: flex; align-items: flex-start; gap: .6rem;
+  padding: .4rem 0; break-inside: avoid; page-break-inside: avoid;
+}
+.fl-coches input[type='checkbox'],
+.fl-coche-inline input[type='checkbox'] {
+  flex: none; width: 1.15rem; height: 1.15rem; margin: .2rem 0 0;
+  accent-color: var(--vif); cursor: pointer;
+}
+.fl-coches label { cursor: pointer; line-height: 1.5; }
+.fl-coche-inline { display: inline-flex; align-items: center; gap: .35rem; margin-right: .9rem; }
+.fl-coche-inline label { font-size: .9rem; cursor: pointer; }
+
+.fl-definition {
+  margin: 0 0 1.5rem; padding: 1rem 1.15rem;
+  border: 1.5px solid var(--encre); border-radius: var(--r);
+}
+.fl-definition h4, .fl-bilan h4 {
+  font-family: var(--mono); font-size: .7rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--mine);
+  margin: 0 0 .7rem;
+}
+.fl-definition .fl-zone { margin-bottom: 0; }
+
+.fl-dessin {
+  margin: 0 0 1.5rem; padding: 1rem 1.15rem;
+  border: 1.5px dashed var(--trait); border-radius: var(--r);
+  background: var(--calque);
+}
+.fl-dessin-note {
+  margin: 0 0 .7rem; font-size: .85rem; color: var(--mine);
+  font-family: var(--mono); letter-spacing: .01em;
+}
+.fl-dessin .fl-zone { margin-bottom: 0; background-color: var(--papier); }
+
+/* tableaux : la boîte gère le débordement horizontal sur mobile,
+   la table ne se coupe jamais verticalement */
+.fl-tableau-boite { overflow-x: auto; margin: 0 0 1.5rem; }
+.fl-tableau {
+  width: 100%; border-collapse: collapse; font-size: .93rem;
+}
+.fl-tableau th, .fl-tableau td {
+  border: 1px solid var(--trait);
+  padding: .55rem .65rem; text-align: left; vertical-align: top;
+}
+.fl-tableau th {
+  font-family: var(--display); font-weight: 600; font-size: .82rem;
+  background: var(--calque); letter-spacing: -.005em;
+}
+.fl-tableau tr { break-inside: avoid; page-break-inside: avoid; }
+.fl-td-fort { background: var(--calque); font-weight: 600; }
+.fl-cell { display: block; line-height: 2.1; }
+
+.fl-bilan {
+  margin: 2.25rem 0 1.5rem; padding: 1.15rem 1.35rem;
+  border-radius: var(--r); background: var(--calque);
+  border-left: 3px solid var(--vif);
+}
+.fl-bilan ul { margin: 0; padding-left: 1.1rem; }
+.fl-bilan li { margin-bottom: .75rem; line-height: 2.2; }
+.fl-bilan li:last-child { margin-bottom: 0; }
+
+.fl-citation {
+  margin: 0 0 2rem; padding: 0; text-align: center;
+  font-style: italic; color: var(--mine); font-size: .95rem;
+}
+.fl-citation::before { content: '« '; }
+.fl-citation::after { content: ' »'; }
+.fl-citation cite {
+  display: block; margin-top: .3rem; font-style: normal;
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .06em;
+}
+.fl-citation cite::before { content: '— '; }
+
+.fl-pied {
+  display: flex; flex-wrap: wrap; gap: .6rem;
+  padding-top: 1.5rem; border-top: 1px solid var(--trait);
+}
+
+@media (max-width: 34rem) {
+  .fl-barre { position: static; }
+  .fl-ligne { line-height: 2.6; }
+}
+
 /* ---------- pied ---------- */
 .site-pied { margin-top: 4rem; border-top: 1px solid var(--trait); }
 .site-pied .wrap { padding-top: 1.5rem; padding-bottom: 2.5rem; }
@@ -437,4 +788,41 @@ body {
   .btn--fort { background: #fff; color: var(--encre); }
   .btn--fort .btn-meta { color: var(--mine); opacity: 1; }
   a { color: var(--encre); }
+
+  /* --- fiche remplissable : on imprime le travail de l'élève, pas l'interface.
+     Règle absolue héritée du défaut de la fiche papier : aucun bloc coupé. --- */
+  @page { margin: 12mm 10mm; }
+
+  .fl-barre, .fl-pied, .qr { display: none !important; }
+
+  .fl-fiche { margin: 0; }
+  .fl-bloc, .fl-coches li, .fl-tableau tr, .fl-definition,
+  .fl-bilan, .fl-situation, .fl-dessin, .fl-schema, .fl-tableau-boite {
+    break-inside: avoid !important; page-break-inside: avoid !important;
+  }
+  .fl-partie, .fl-consigne, .fl-titre, .fl-definition h4, .fl-bilan h4 {
+    break-after: avoid !important; page-break-after: avoid !important;
+  }
+  /* mode d'emploi : s'imprime en A4 pour être collé dans le cahier */
+  .mde-etape, .mde-attention, .mde-astuce, .mde-bloc { break-inside: avoid !important; }
+  .mde-num { background: none !important; color: var(--encre) !important; border: 1.5px solid var(--encre); }
+  .mde-attention, .mde-astuce { background: none !important; border-left: 3px solid #999; }
+
+  .fl-tableau-boite { overflow: visible !important; }
+  .fl-tableau thead { display: table-header-group; }   /* en-tête répété si rupture */
+
+  /* les réponses de l'élève doivent rester lisibles une fois imprimées */
+  .fl-champ, .fl-zone {
+    background: none !important; background-image: none !important;
+    color: #000 !important; border-color: #999 !important;
+  }
+  .fl-champ { border-bottom: 1px solid #999 !important; }
+  .fl-zone { border: 1px solid #bbb !important; overflow: visible !important; }
+  .fl-identite input { border-bottom: 1px solid #999; }
+
+  /* une ligne d'identité vide n'a pas à consommer de place sur le papier */
+  .fl-identite:has(input:placeholder-shown:not(:focus)) { display: none; }
+
+  .fl-situation, .fl-bilan, .fl-dessin { background: none !important; border: 1px solid #bbb; }
+  .fl-schema img { max-height: 90mm; width: auto; }
 }

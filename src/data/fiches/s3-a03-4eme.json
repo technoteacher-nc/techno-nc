@@ -1,0 +1,513 @@
+{
+ "code": "S3-A03",
+ "niveau": "4eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "FILIUS (2) : UN INTERNET MINIATURE — ROUTEUR ET DNS"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton réseau local fonctionne. Mais Internet, ce sont des MILLIONS de réseaux reliés entre eux, et personne ne tape d'adresse IP : on tape www.filius.com. Aujourd'hui, tu construis un mini-Internet complet."
+   ],
+   "question": "Comment des réseaux différents communiquent-ils, et comment une URL devient-elle une adresse IP ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Relier deux réseaux par un routeur"
+  },
+  {
+   "type": "consigne",
+   "texte": "Reprends ton réseau de S3-A02 (ou le fichier fourni), puis :"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "1",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Crée un 2e réseau : 3 PC (192.168.1.10 / .11 / .12) + un switch."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "2",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ajoute un ROUTEUR entre les deux switchs (2 interfaces : 192.168.0.1 et 192.168.1.1)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "3",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Simulation ▶ : ping du PC 0.10 vers 1.10 → note le message en 1a."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "4",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Configure la PASSERELLE de chaque PC (192.168.0.1 côté gauche, 192.168.1.1 côté droit)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "5",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Refais le ping 0.10 → 1.10 : il doit réussir."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Message avant la passerelle : « "
+    },
+    {
+     "t": "champ",
+     "points": 33
+    },
+    {
+     "t": "texte",
+     "v": " ». Pourquoi ? Parce que le PC ne sait pas"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "comment "
+    },
+    {
+     "t": "champ",
+     "points": 85
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Un site web et son annuaire (DNS)"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "6",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur le serveur 192.168.0.12 : installe « Serveur web » et démarre-le."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "7",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur le PC 1.10 : installe « Navigateur web », tape http://192.168.0.12 → la page FILIUS s'affiche."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "8",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ajoute un PC « Serveur DNS » (192.168.2.10) relié au routeur (3e interface 192.168.2.1)."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "9",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Dans le serveur DNS : associe www.filius.com → 192.168.0.12, puis DÉMARRE le serveur DNS."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "10",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Renseigne « Serveur DNS : 192.168.2.10 » sur les PC, puis tape http://www.filius.com → ✋ vérification prof."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Transfert : et quand JE surfe au collège ?"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la chaîne avec : adresse IP — serveur DNS — serveur web — navigateur."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je tape une URL dans le ①"
+    },
+    {
+     "t": "champ",
+     "points": 13
+    },
+    {
+     "t": "texte",
+     "v": " → il interroge le ②"
+    },
+    {
+     "t": "champ",
+     "points": 13
+    },
+    {
+     "t": "texte",
+     "v": " qui traduit l'URL en"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "③"
+    },
+    {
+     "t": "champ",
+     "points": 13
+    },
+    {
+     "t": "texte",
+     "v": " → la demande traverse les routeurs jusqu'au ④"
+    },
+    {
+     "t": "champ",
+     "points": 13
+    },
+    {
+     "t": "texte",
+     "v": " qui renvoie la page."
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " aiguille les données d'un réseau vers un autre grâce aux adresses IP et à sa table de routage."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " d'un PC est l'adresse du routeur qui lui sert de porte de sortie."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le serveur "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " est l'annuaire d'Internet : il traduit les URL en adresses IP."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Le DNS, c'est l'annuaire d'Internet.",
+   "auteur": ""
+  }
+ ]
+}

@@ -1,0 +1,620 @@
+{
+ "code": "S2-A07",
+ "niveau": "5eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "BIEN CHOISIR UN OBJET TECHNIQUE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le collège veut équiper 15 postes de la salle 207 avec des écouteurs pour les activités sur ordinateur. Trois modèles sont proposés (fiches produits projetées au tableau). Le budget est de 4 000 F CFP maximum par poste. C'est toi qui conseilles le collège !"
+   ],
+   "question": "Comment choisir l'objet le plus adapté à un besoin, sans se tromper ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je lis les fiches produits  (documents projetés au tableau)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le tableau comparatif à partir des trois fiches produits projetées."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Caractéristique",
+    "Modèle A — Kidsound",
+    "Modèle B — AirBuds S",
+    "Modèle C — SportX"
+   ],
+   "largeurs": [
+    2760,
+    2200,
+    2200,
+    2200
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Prix (F CFP)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Connexion"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Autonomie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Garantie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice de réparabilité /10"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "SAV en Nouvelle-Calédonie ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Des critères différents selon le besoin"
+  },
+  {
+   "type": "consigne",
+   "texte": "Pour chaque utilisateur, coche les DEUX critères les plus importants. Il n'y a pas qu'une seule bonne réponse : c'est le besoin qui décide !"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère",
+    "Le collège",
+    "Un sportif",
+    "Un voyageur"
+   ],
+   "largeurs": [
+    4160,
+    1730,
+    1730,
+    1740
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un prix bas (petit budget)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La solidité et la réparabilité"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La résistance à l'eau et à la sueur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une grande autonomie de batterie"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un SAV proche en cas de panne"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": []
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je choisis et je justifie"
+  },
+  {
+   "type": "consigne",
+   "texte": "Quel modèle conseilles-tu au collège ? Justifie ta réponse avec au moins DEUX critères chiffrés du tableau de la partie 1."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je conseille le modèle "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "A",
+     "points": 0
+    },
+    {
+     "label": "B",
+     "points": 0
+    },
+    {
+     "label": "C  parce que",
+     "points": 20
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Et pour un sportif qui court sous la pluie, quel serait le bon choix ? Pourquoi ? "
+    },
+    {
+     "t": "champ",
+     "points": 18
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Le compte est bon ?"
+  },
+  {
+   "type": "consigne",
+   "texte": "Calcule le coût pour équiper les 15 postes avec le modèle que tu as choisi. Le budget total de 60 000 F CFP est-il respecté ? Pose ton calcul."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Calcul : "
+    },
+    {
+     "t": "champ",
+     "points": 70
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Coût total = "
+    },
+    {
+     "t": "champ",
+     "points": 12
+    },
+    {
+     "t": "texte",
+     "v": " F CFP     Budget respecté :  "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "oui",
+     "points": 0
+    },
+    {
+     "label": "non",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Il n'existe pas de « meilleur » objet dans l'absolu : le bon choix dépend du "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " de l'utilisateur."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Pour comparer objectivement plusieurs objets, on range leurs caractéristiques dans un "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le prix d'achat n'est pas le seul critère : la "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " et le SAV comptent aussi sur la durée."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Choisir, c'est renoncer.",
+   "auteur": "André Gide"
+  }
+ ]
+}

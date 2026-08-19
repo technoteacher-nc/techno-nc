@@ -1,0 +1,414 @@
+{
+ "code": "S4-A03",
+ "niveau": "5eme",
+ "seq": "seq04",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Depuis une semaine, le téléphone de Théo vibre sans arrêt : moqueries répétées d'un groupe de la classe, photo détournée, exclusion du groupe de discussion. Théo n'ose rien dire à personne."
+   ],
+   "question": "Comment reconnaître le cyberharcèlement, et que faire — que l'on soit victime ou témoin ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Harcèlement ou pas ?"
+  },
+  {
+   "type": "consigne",
+   "texte": "Le cyberharcèlement, c'est : des attaques RÉPÉTÉES + la VOLONTÉ DE NUIRE + une victime qui ne peut pas se défendre seule. Coche les situations qui correspondent."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Situation",
+    "Harcèl. ?"
+   ],
+   "largeurs": [
+    7600,
+    1760
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Deux camarades se disputent une fois sur le choix d'une équipe, puis se réconcilient."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "OUI",
+          "points": 0
+         },
+         {
+          "label": "NON",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Chaque jour, un groupe envoie des moqueries au même élève, qui ne répond plus."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "OUI",
+          "points": 0
+         },
+         {
+          "label": "NON",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une photo détournée d'un élève est repartagée pendant des semaines pour rire de lui."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "OUI",
+          "points": 0
+         },
+         {
+          "label": "NON",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un ami fait une blague à un autre, qui rit aussi."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "OUI",
+          "points": 0
+         },
+         {
+          "label": "NON",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un élève est volontairement exclu de tous les groupes, et on encourage les autres à l'ignorer."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "OUI",
+          "points": 0
+         },
+         {
+          "label": "NON",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Souligne dans les situations cochées OUI les mots qui montrent la RÉPÉTITION."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Les bons réflexes de chacun"
+  },
+  {
+   "type": "consigne",
+   "texte": "Relie chaque personne à SES bons réflexes (plusieurs flèches possibles)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Qui ?",
+    "Réflexes"
+   ],
+   "largeurs": [
+    3200,
+    6160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Je suis VICTIME  →"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Je ne réponds pas · je bloque · je garde des preuves (captures) · j'en parle à un adulte ou au 3018"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Je suis TÉMOIN  →"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Je ne partage pas · je soutiens la victime · je préviens un adulte"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Bon à savoir sur l'AUTEUR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le harcèlement, même en ligne, est puni par la loi — ce n'est jamais « juste une blague »."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "3018",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Notre affiche « 3 réflexes »  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Par Maison, réalisez une affiche numérique « 3 réflexes contre le cyberharcèlement » (traitement de texte, modèle projeté). Elle doit contenir le 3018."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Nos 3 réflexes sont clairs et positifs",
+     "points": 0
+    },
+    {
+     "label": "Le 3018 est visible",
+     "points": 0
+    },
+    {
+     "label": "Affiche enregistrée : MAISON_S4A03 ✋",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le cyberharcèlement, c'est des attaques "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " avec la volonté de nuire."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Victime ou témoin : je ne reste jamais "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " — j'en parle à un adulte de confiance ou au 3018."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Garder des "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " (captures d'écran) permet de prouver les faits."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Parler n'est pas trahir : c'est protéger.",
+   "auteur": ""
+  }
+ ]
+}

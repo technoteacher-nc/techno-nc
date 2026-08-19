@@ -1,0 +1,315 @@
+{
+ "code": "S5-A02",
+ "niveau": "5eme",
+ "seq": "seq05",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE PLAN AUX NORMES : LES CODES DE REPRÉSENTATION"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu envoies ton croquis au maçon… et il construit une porte au milieu du salon ! Sans codes communs, chacun comprend ce qu'il veut. Les architectes du monde entier utilisent les MÊMES symboles."
+   ],
+   "question": "Comment dessiner un plan que tout le monde comprend, à la bonne échelle ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les codes de l'architecte  (codes ci-dessous)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe les symboles ci-dessous, puis reproduis chacun dans sa case."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq05/schemas/codes_architecte.png"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Mur porteur",
+    "Porte (avec son ouverture)",
+    "Fenêtre à battants",
+    "Fenêtre coulissante"
+   ],
+   "largeurs": [
+    2340,
+    2340,
+    2340,
+    2340
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "L'échelle 1/100 : 1 cm sur le plan = 1 m en vrai"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Dimension réelle",
+    "Sur le plan au 1/100"
+   ],
+   "largeurs": [
+    5200,
+    4160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un séjour de 4 m × 3 m"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm × "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un mur de 7,5 m"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " cm"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur le plan, ma chambre mesure 3 cm × 3 cm : surface réelle ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " m × "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " m = "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " m²  (≥ 9 m² ? "
+         }
+        ]
+       },
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "oui",
+          "points": 0
+         },
+         {
+          "label": "non)",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "MON plan au 1/100  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Sur le quadrillage (1 carreau = 1 m), dessine le plan de TA maison : respecte ton CDC de S5-A01, les surfaces minimales, les symboles, et les 10 % de dégagements."
+  },
+  {
+   "type": "zone",
+   "label": "Mon plan (1 carreau = 1 m — nomme chaque pièce et indique sa surface) :",
+   "hauteur": 60
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Toutes mes pièces du CDC sont là et nommées",
+     "points": 0
+    },
+    {
+     "label": "Surfaces ≥ minimales",
+     "points": 0
+    },
+    {
+     "label": "Portes et fenêtres codées",
+     "points": 0
+    },
+    {
+     "label": "Vérifié par le professeur ✋",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " de représentation permet à tous de lire le même plan."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "À l'échelle 1/100, 1 cm sur le plan représente "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " en réalité."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un bon plan se lit sans son auteur.",
+   "auteur": ""
+  }
+ ]
+}

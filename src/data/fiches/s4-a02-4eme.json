@@ -1,0 +1,556 @@
+{
+ "code": "S4-A02",
+ "niveau": "4eme",
+ "seq": "seq04",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "TRACES, COOKIES, RGPD : REPRENDRE LA MAIN"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu cherches UNE fois des chaussures de sport. Pendant deux semaines, des publicités de chaussures te suivent sur tous les sites. Coïncidence ? Non : une mécanique précise… encadrée par une loi qui te donne des droits."
+   ],
+   "question": "Comment nos traces sont-elles exploitées, et quels sont nos droits (RGPD) ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "La mécanique du ciblage publicitaire"
+  },
+  {
+   "type": "consigne",
+   "texte": "Numérote de 1 à 5 les étapes du ciblage (elles sont mélangées)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "N°",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une publicité de chaussures s'affiche sur un site de sport… puis partout."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Je visite un site de chaussures."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon profil (« aime le sport, cherche des chaussures ») est construit et partagé avec des régies publicitaires."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un cookie est déposé dans mon navigateur : il me « reconnaît » de site en site."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les annonceurs enchérissent en quelques millisecondes pour m'afficher LEUR pub."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "COOKIE (témoin de connexion) — à compléter ensemble",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Mes droits : le RGPD"
+  },
+  {
+   "type": "consigne",
+   "texte": "Le RGPD (Règlement Général sur la Protection des Données, 2018) donne des droits à chacun. Relie chaque droit à sa situation."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Droit",
+    "Situation"
+   ],
+   "largeurs": [
+    3400,
+    5960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Droit d'ACCÈS  →"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Je veux savoir quelles données vous avez sur moi. »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Droit de RECTIFICATION  →"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Ma date de naissance est fausse, corrigez-la. »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Droit à l'EFFACEMENT  →"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Supprimez mon compte et mes données. »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Droit d'OPPOSITION  →"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« Je refuse que mes données servent à la publicité. »"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Avant 15 ans, l'inscription à un réseau social nécessite en plus : "
+    },
+    {
+     "t": "champ",
+     "points": 39
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Atelier réglages  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Sur la bannière de cookies projetée et le compte d'entraînement, fais tes choix et justifie-les."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Réglage",
+    "Mon choix justifié"
+   ],
+   "largeurs": [
+    3400,
+    5960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Bannière cookies"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Tout accepter",
+          "points": 0
+         },
+         {
+          "label": "Tout refuser",
+          "points": 0
+         },
+         {
+          "label": "Personnaliser — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Géolocalisation de l'application"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Toujours",
+          "points": 0
+         },
+         {
+          "label": "Pendant l'usage",
+          "points": 0
+         },
+         {
+          "label": "Jamais — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Publicité personnalisée"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Activée",
+          "points": 0
+         },
+         {
+          "label": "Désactivée — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Se faire passer pour quelqu'un d'autre en ligne (usurpation d'identité) est : "
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "une blague",
+     "points": 0
+    },
+    {
+     "label": "un délit puni par la loi",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Les "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " me suivent de site en site pour construire mon profil publicitaire."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " me donne des droits sur mes données : accès, rectification, effacement, opposition."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Sur chaque bannière, je peux "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " les cookies non essentiels — c'est mon droit."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Tes données ont de la valeur : c'est pour ça qu'on te les demande gratuitement.",
+   "auteur": ""
+  }
+ ]
+}

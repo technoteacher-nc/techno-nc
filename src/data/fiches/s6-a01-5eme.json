@@ -1,0 +1,258 @@
+{
+ "code": "S6-A01",
+ "niveau": "5eme",
+ "seq": "seq06",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE ROBOT ASPIRATEUR : PROGRAMMER SANS ORDINATEUR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Un robot aspirateur ne comprend ni « va là-bas », ni les gestes, ni les cris. Il ne comprend qu'une chose : des instructions EXACTES, exécutées dans l'ordre, bêtement."
+   ],
+   "question": "Comment donner des ordres à une machine qui ne comprend que des instructions précises ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le vocabulaire du programmeur"
+  },
+  {
+   "type": "definition",
+   "label": "INSTRUCTION / SÉQUENCE / BOUCLE — à compléter ensemble",
+   "n": 3
+  },
+  {
+   "type": "consigne",
+   "texte": "Dans l'algorithme suivant, entoure la BOUCLE et souligne une INSTRUCTION :"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Répéter 4 fois : [ avancer de 2 cases ; tourner à droite ]  puis  s'arrêter."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "J'exécute comme un robot  (grille projetée = ta grille ci-dessous)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Départ case D (coin bas-gauche), regard vers le HAUT. Exécute : avance 3 · tourne à droite · avance 2 · tourne à droite · avance 1. Dessine le trajet et marque la case d'arrivée d'une ★."
+  },
+  {
+   "type": "zone",
+   "label": "Ma grille 6 × 6 (1 case = 1,5 cm — D = départ, la flèche = sens du regard) :",
+   "hauteur": 60
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "J'écris l'algorithme du carré (jeu de l'élève-robot)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris l'algorithme d'un parcours CARRÉ de 3 cases de côté : d'abord SANS boucle, puis AVEC. Ton binôme l'exécute au doigt sur la grille : s'il se perd, corrige !"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Version",
+    "Mon algorithme"
+   ],
+   "largeurs": [
+    3200,
+    6160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "SANS boucle (longue version)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "1. "
+         },
+         {
+          "t": "champ",
+          "points": 31
+         },
+         {
+          "t": "texte",
+          "v": "  2. "
+         },
+         {
+          "t": "champ",
+          "points": 31
+         },
+         {
+          "t": "texte",
+          "v": "\n3. "
+         },
+         {
+          "t": "champ",
+          "points": 31
+         },
+         {
+          "t": "texte",
+          "v": "  4. "
+         },
+         {
+          "t": "champ",
+          "points": 31
+         },
+         {
+          "t": "texte",
+          "v": " (…)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "AVEC boucle (version pro)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Répéter "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         },
+         {
+          "t": "texte",
+          "v": " fois : [ "
+         },
+         {
+          "t": "champ",
+          "points": 36
+         },
+         {
+          "t": "texte",
+          "v": " ; "
+         },
+         {
+          "t": "champ",
+          "points": 36
+         },
+         {
+          "t": "texte",
+          "v": " ]"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Combien de lignes économisées grâce à la boucle ? "
+    },
+    {
+     "t": "champ",
+     "points": 6
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un algorithme est une suite d'"
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " exécutées dans l'ordre."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " évite de réécrire plusieurs fois les mêmes instructions."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le robot fait EXACTEMENT ce qu'on lui dit — surtout quand l'ordre est "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "L'ordinateur fait exactement ce qu'on lui demande… surtout quand c'est faux.",
+   "auteur": ""
+  }
+ ]
+}

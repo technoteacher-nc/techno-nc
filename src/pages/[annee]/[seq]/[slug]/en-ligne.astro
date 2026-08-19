@@ -1,0 +1,253 @@
+---
+// Fiche remplissable en ligne — la version « je travaille directement ici »
+// de la fiche papier. Aucun compte, aucun envoi : les réponses restent dans le
+// navigateur de l'élève (localStorage), conformément à la promesse du pied de
+// page (« aucun compte, aucun cookie, aucun traceur »).
+//
+// C'est la seule page du site qui embarque du JavaScript. Elle le justifie :
+// sans lui il n'y a ni sauvegarde ni reprise après une coupure réseau — et la
+// coupure réseau est la norme, pas l'exception (voir PRODUCT.md).
+// Le rendu, lui, est entièrement statique : la fiche est lisible et
+// imprimable même si le script ne s'exécute jamais.
+
+import Base from '../../../../layouts/Base.astro';
+import FicheEnLigne from '../../../../components/FicheEnLigne.astro';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export async function getStaticPaths() {
+  const acts = await getCollection('activites');
+  const dossier = path.join(process.cwd(), 'src', 'data', 'fiches');
+  return acts
+    .filter(a => fs.existsSync(path.join(dossier, a.id + '.json')))
+    .map(a => ({
+      params: { annee: a.data.annee, seq: a.data.seq, slug: a.id },
+      props: { act: a, fiche: JSON.parse(fs.readFileSync(path.join(dossier, a.id + '.json'), 'utf8')) },
+    }));
+}
+
+const { act, fiche } = Astro.props;
+const d = act.data;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+const retour = u(`/${d.annee}/${d.seq}/${act.id}`);
+---
+<Base
+  titre={`${d.code} ${d.niveauLabel} — ${d.titre}, à remplir en ligne`}
+  description={`Remplis l'activité « ${d.titre} » directement en ligne : tes réponses sont enregistrées sur ton appareil, sans compte.`}
+  robots="index,follow">
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/' + d.niveau)}>{d.niveauLabel}</a> /
+    <a href={retour}>{d.code}</a> / En ligne
+  </nav>
+
+  <header class="act-tete fl-tete">
+    <div class="act-repere">
+      {d.phase && <span class="phase" data-phase={d.phase}>{d.phase}</span>}
+      <span class="eyebrow-mini">{d.seqTitre} · {d.niveauLabel}</span>
+    </div>
+    <h1>{d.titre}</h1>
+    <p class="question">{d.question}</p>
+  </header>
+
+  <!-- Barre d'état : tout ce que l'élève doit savoir sur ses réponses.
+       Statique et honnête si le script ne tourne pas. -->
+  <div class="fl-barre" id="fl-barre" data-fiche={act.id}>
+    <div class="fl-barre-etat">
+      <span class="fl-pastille" id="fl-pastille" aria-hidden="true"></span>
+      <p id="fl-etat">
+        Tes réponses restent <strong>sur cet appareil</strong>. Rien n'est envoyé, aucun compte.
+      </p>
+    </div>
+    <div class="fl-barre-actions">
+      <button type="button" class="btn" id="fl-imprimer">Imprimer / PDF</button>
+      <button type="button" class="btn" id="fl-copier">Copier mes réponses</button>
+      <button type="button" class="btn" id="fl-enregistrer">Enregistrer dans un fichier</button>
+      <label class="btn" for="fl-reprendre">Reprendre un fichier</label>
+      <input type="file" id="fl-reprendre" accept=".json,application/json" hidden />
+      <button type="button" class="btn fl-btn-danger" id="fl-effacer">Tout effacer</button>
+    </div>
+    <p class="fl-progres" id="fl-progres" hidden></p>
+  </div>
+
+  <!-- Une seule ligne d'identité, imprimée seulement si elle est remplie :
+       le bandeau NOM/PRÉNOM/CLASSE/MAISON de la fiche papier mangeait une
+       zone de réponse entière pour une information que le professeur connaît
+       déjà dans neuf cas sur dix. -->
+  <div class="fl-identite">
+    <label for="fl-nom">Ton nom <span>(seulement si tu imprimes pour rendre)</span></label>
+    <!-- placeholder vide : permet à la règle d'impression de masquer la ligne
+         quand l'élève ne l'a pas remplie (:placeholder-shown) -->
+    <input type="text" id="fl-nom" data-champ={`${d.code}-identite`} autocomplete="name" placeholder=" " />
+  </div>
+
+  <article class="fl-fiche" id="fl-fiche">
+    <FicheEnLigne blocs={fiche.blocs} code={d.code} />
+  </article>
+
+  <section class="fl-pied">
+    <a class="btn btn--fort" href={u(d.fichePdf)} download>Version papier (PDF)</a>
+    {d.ebepPdf && <a class="btn" href={u(d.ebepPdf)} download>Version adaptée (PDF)</a>}
+    <a class="btn" href={retour}>Retour à l'activité</a>
+  </section>
+
+  <script>
+    // Sauvegarde locale des réponses. Volontairement court et sans dépendance :
+    // il doit s'exécuter avant que l'élève ait fini de lire la première consigne,
+    // y compris sur un téléphone d'entrée de gamme en 3G.
+    const barre = document.getElementById('fl-barre');
+    if (barre) {
+      const cle = 'techno-nc:' + barre.dataset.fiche;
+      const champs = [...document.querySelectorAll('[data-champ]')];
+      const etat = document.getElementById('fl-etat');
+      const pastille = document.getElementById('fl-pastille');
+      const progres = document.getElementById('fl-progres');
+
+      const lire = () => {
+        try { return JSON.parse(localStorage.getItem(cle) || '{}'); } catch { return {}; }
+      };
+
+      // --- restauration
+      const donnees = lire();
+      let restaure = 0;
+      for (const el of champs) {
+        const v = donnees[el.dataset.champ];
+        if (v === undefined) continue;
+        if (el.type === 'checkbox') el.checked = !!v;
+        else el.value = v;
+        restaure++;
+      }
+
+      const remplis = () => champs.filter(
+        el => el.type === 'checkbox' ? el.checked : el.value.trim() !== '',
+      ).length;
+
+      const majProgres = () => {
+        progres.hidden = false;
+        progres.textContent = `${remplis()} réponse(s) sur ${champs.length} — enregistré sur cet appareil.`;
+      };
+
+      let horloge;
+      const enregistrer = () => {
+        const o = {};
+        for (const el of champs) {
+          const v = el.type === 'checkbox' ? el.checked : el.value;
+          if (v !== '' && v !== false) o[el.dataset.champ] = v;
+        }
+        try {
+          localStorage.setItem(cle, JSON.stringify(o));
+          pastille.dataset.etat = 'ok';
+          etat.innerHTML = 'Enregistré <strong>sur cet appareil</strong> — tu peux fermer la page et revenir.';
+        } catch {
+          pastille.dataset.etat = 'ko';
+          etat.textContent = "Impossible d'enregistrer (navigation privée ?). Imprime ta fiche avant de fermer.";
+        }
+        majProgres();
+      };
+
+      // Les zones de texte grandissent avec la réponse : plus jamais de manque de place.
+      const ajuster = el => {
+        if (el.tagName !== 'TEXTAREA') return;
+        el.style.height = 'auto';
+        el.style.height = el.scrollHeight + 'px';
+      };
+      champs.forEach(ajuster);
+
+      for (const el of champs) {
+        el.addEventListener('input', () => {
+          ajuster(el);
+          clearTimeout(horloge);
+          horloge = setTimeout(enregistrer, 400);
+        });
+        el.addEventListener('change', enregistrer);
+      }
+
+      if (restaure) { pastille.dataset.etat = 'ok'; majProgres(); }
+
+      document.getElementById('fl-imprimer').addEventListener('click', () => window.print());
+
+      document.getElementById('fl-effacer').addEventListener('click', () => {
+        if (!confirm('Effacer toutes tes réponses de cette fiche ? C\'est définitif.')) return;
+        localStorage.removeItem(cle);
+        for (const el of champs) {
+          if (el.type === 'checkbox') el.checked = false; else el.value = '';
+          ajuster(el);
+        }
+        pastille.removeAttribute('data-etat');
+        etat.innerHTML = 'Réponses effacées. Tes réponses restent <strong>sur cet appareil</strong>.';
+        majProgres();
+      });
+
+      // Enregistrer / reprendre un fichier.
+      //
+      // Le stockage local est attaché à UNE machine. Au collège les postes sont
+      // partagés : un élève qui change de salle ou de poste ne retrouve rien.
+      // Le fichier règle ça, et il le règle avec ce que la séquence 03 vient
+      // justement d'enseigner — on l'enregistre dans son espace personnel, sur
+      // le serveur, et il suit l'élève d'un poste à l'autre.
+      const nomFichier = () => {
+        // Les accents sont translittérés plutôt que supprimés : sans cela
+        // « Léna » donnait le fichier « L-NA », que l'élève ne reconnaît pas.
+        const nom = (document.getElementById('fl-nom').value || '').trim()
+          .normalize('NFD').replace(/[̀-ͯ]/g, '')
+          .toUpperCase().replace(/[^A-Z0-9]+/g, '-').replace(/^-|-$/g, '');
+        return (nom ? nom + '_' : '') + barre.dataset.fiche + '.json';
+      };
+
+      document.getElementById('fl-enregistrer').addEventListener('click', () => {
+        const contenu = JSON.stringify({ fiche: barre.dataset.fiche, reponses: lire() }, null, 1);
+        const lien = document.createElement('a');
+        lien.href = URL.createObjectURL(new Blob([contenu], { type: 'application/json' }));
+        lien.download = nomFichier();
+        lien.click();
+        URL.revokeObjectURL(lien.href);
+      });
+
+      document.getElementById('fl-reprendre').addEventListener('change', async (ev) => {
+        const fichier = ev.target.files[0];
+        if (!fichier) return;
+        try {
+          const donnees = JSON.parse(await fichier.text());
+          if (donnees.fiche !== barre.dataset.fiche) {
+            alert(`Ce fichier est celui d’une autre activité (${donnees.fiche}).
+Ouvre la bonne activité, puis reprends ton fichier.`);
+            return;
+          }
+          for (const el of champs) {
+            const v = donnees.reponses[el.dataset.champ];
+            if (v === undefined) continue;
+            if (el.type === 'checkbox') el.checked = !!v; else el.value = v;
+            ajuster(el);
+          }
+          enregistrer();
+        } catch {
+          alert("Ce fichier n'est pas lisible. Reprends celui que tu as enregistré depuis cette page.");
+        }
+        ev.target.value = '';
+      });
+
+      // « Copier mes réponses » : de quoi coller son travail dans l'ENT, un mail
+      // ou un traitement de texte quand le professeur demande un rendu numérique.
+      document.getElementById('fl-copier').addEventListener('click', async (ev) => {
+        const lignes = [document.title, ''];
+        for (const el of document.querySelectorAll('#fl-fiche .fl-partie, [data-champ]')) {
+          if (el.classList.contains('fl-partie')) { lignes.push('', '## ' + el.textContent.trim()); continue; }
+          const v = el.type === 'checkbox' ? (el.checked ? 'oui' : '') : el.value.trim();
+          if (!v) continue;
+          const contexte = el.closest('li, p, td, section')?.textContent.trim().slice(0, 90) || '';
+          lignes.push('- ' + (contexte ? contexte + ' → ' : '') + v);
+        }
+        const texte = lignes.join('\n');
+        try {
+          await navigator.clipboard.writeText(texte);
+          ev.target.textContent = 'Copié !';
+        } catch {
+          ev.target.textContent = 'Copie impossible';
+        }
+        setTimeout(() => { ev.target.textContent = 'Copier mes réponses'; }, 2200);
+      });
+    }
+  </script>
+</Base>

@@ -1,0 +1,555 @@
+{
+ "code": "S4-A01",
+ "niveau": "4eme",
+ "seq": "seq04",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "PHISHING : L'AUDIT DE LA BOÎTE MAIL"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ce matin, la boîte mail du secrétariat du collège contient 6 messages. Plusieurs sont des pièges (hameçonnage, ou « phishing ») : un seul clic malheureux et les comptes du collège sont piratés. La direction te recrute comme auditeur sécurité."
+   ],
+   "question": "Comment repérer un message piégé, et comment verrouiller ses accès ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les 5 indices d'un message piégé  (document projeté)"
+  },
+  {
+   "type": "consigne",
+   "texte": "À partir de l'exemple annoté projeté, complète la liste des 5 indices."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Indice",
+    "Description"
+   ],
+   "largeurs": [
+    1800,
+    7560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une adresse d'expéditeur "
+         },
+         {
+          "t": "champ",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un ton d'"
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " ou de menace (« dans 24 h… »)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice 3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un lien qui ne mène pas où il "
+         },
+         {
+          "t": "champ",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice 4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Des "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " d'orthographe ou une mise en page étrange"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Indice 5"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une demande d'"
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " ou de coordonnées bancaires"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "L'audit : 6 messages au crible  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Pour chaque message projeté, rends ton verdict ET cite l'indice précis qui le prouve. Un verdict sans preuve ne compte pas !"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Message",
+    "Verdict + preuve"
+   ],
+   "largeurs": [
+    1800,
+    7560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Message 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "SÛR",
+          "points": 0
+         },
+         {
+          "label": "PIÈGE — preuve :",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Message 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "SÛR",
+          "points": 0
+         },
+         {
+          "label": "PIÈGE — preuve :",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Message 3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "SÛR",
+          "points": 0
+         },
+         {
+          "label": "PIÈGE — preuve :",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Message 4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "SÛR",
+          "points": 0
+         },
+         {
+          "label": "PIÈGE — preuve :",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Message 5"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "SÛR",
+          "points": 0
+         },
+         {
+          "label": "PIÈGE — preuve :",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Message 6"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "SÛR",
+          "points": 0
+         },
+         {
+          "label": "PIÈGE — preuve :",
+          "points": 45
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Que fait-on d'un message piégé ? On ne clique pas, on ne répond pas, on le "
+    },
+    {
+     "t": "champ",
+     "points": 12
+    },
+    {
+     "t": "texte",
+     "v": " et on prévient."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Verrouiller ses accès : l'authentification forte"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Parmi ces candidats, entoure le meilleur mot de passe et justifie : « P@ss1 » — « collège2026 » — « Tortue-Verte-Boit-9-Cafés! »"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3b. La double authentification ajoute une 2e preuve d'identité (code reçu sur téléphone). Pourquoi protège-t-elle même si le mot de passe est volé ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le phishing (hameçonnage) cherche à me faire "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " sur un lien ou donner mes identifiants."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Face au doute : je ne clique pas, je vérifie l'"
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " de l'expéditeur, je signale."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Mot de passe long (phrase de passe) + "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " authentification = accès verrouillé."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Dans un e-mail piégé, l'urgence est toujours suspecte.",
+   "auteur": ""
+  }
+ ]
+}

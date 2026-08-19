@@ -1,0 +1,438 @@
+{
+ "code": "S2-A06",
+ "niveau": "4eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "L'EXPÉRIENCE UTILISATEUR — CONCEVOIR POUR L'UTILISATEUR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "La compagnie maritime TransPacifik perd des clients : sur son application de réservation, acheter un billet demande 12 étapes, les boutons sont minuscules et rien n'est prévu pour les personnes malvoyantes. La direction te recrute pour réaliser un audit UX et proposer une nouvelle version."
+   ],
+   "question": "Comment améliorer un objet ou un service numérique sans changer sa fonction d'usage ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Le vocabulaire de l'UX"
+  },
+  {
+   "type": "definition",
+   "label": "EXPÉRIENCE UTILISATEUR (UX)",
+   "n": 2
+  },
+  {
+   "type": "consigne",
+   "texte": "Relie chaque critère UX à la question qui lui correspond. Attention, l'ordre a été mélangé."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère UX",
+    "Question que se pose l'utilisateur (à relier au bon critère)"
+   ],
+   "largeurs": [
+    3200,
+    6160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EFFICACITÉ  •"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "•  « Est-ce agréable, sans effort ni geste inutile ? »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FACILITÉ D'APPRENTISSAGE  •"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "•  « Tout le monde peut-il l'utiliser, quel que soit son âge ou son handicap ? »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "CONFORT  •"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "•  « Est-ce que j'atteins mon but à coup sûr, sans erreur ? »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ACCESSIBILITÉ  •"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "•  « Est-ce que je comprends comment m'en servir vite, sans notice ? »"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "L'audit UX  (documents projetés au tableau)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe les deux versions de l'application projetées au tableau. Note chaque version de 0 à 5 pour chaque critère, et justifie par un fait précis (nombre d'étapes, taille des boutons, contraste…)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Critère UX",
+    "Version A  /5",
+    "Version B  /5",
+    "Justification (un fait précis observé)"
+   ],
+   "largeurs": [
+    3160,
+    1550,
+    1550,
+    3100
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Efficacité"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Facilité d'apprentissage"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Confort"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Accessibilité"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     },
+     {
+      "shade": false,
+      "contenu": []
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "L'accessibilité, un droit  (raisonnement type brevet)"
+  },
+  {
+   "type": "consigne",
+   "texte": "La nouvelle application doit être utilisable par une personne malvoyante. Propose DEUX modifications précises et justifie chacune en citant le critère UX concerné."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Modification 1 : "
+    },
+    {
+     "t": "champ",
+     "points": 65
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Justification : "
+    },
+    {
+     "t": "champ",
+     "points": 66
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Modification 2 : "
+    },
+    {
+     "t": "champ",
+     "points": 65
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Justification : "
+    },
+    {
+     "t": "champ",
+     "points": 66
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Le croquis d'écran (maquette)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dessine la maquette de l'écran d'accueil de la nouvelle application : 3 boutons maximum, textes lisibles. Légende au moins 3 éléments qui améliorent l'UX."
+  },
+  {
+   "type": "zone",
+   "label": "Maquette de l'écran d'accueil :",
+   "hauteur": 0
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "L'UX désigne le "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " global de l'utilisateur pendant l'utilisation d'un objet ou d'un service."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "On l'évalue avec 4 critères : efficacité, "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " d'apprentissage, confort et "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Améliorer l'UX ne change pas la "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " d'usage de l'objet : le service rendu reste le même."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Si l'utilisateur a besoin d'un mode d'emploi pour un geste simple, c'est la conception qui a échoué.",
+   "auteur": "d'après Don Norman, ingénieur en design"
+  }
+ ]
+}

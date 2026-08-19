@@ -1,0 +1,510 @@
+{
+ "code": "S4-A01",
+ "niveau": "5eme",
+ "seq": "seq04",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le compte de jeu de Loïc a été piraté : son pseudo insulte ses amis, ses objets ont disparu. Son mot de passe ? « loic2013 ». Il l'utilisait aussi pour sa messagerie…"
+   ],
+   "question": "Comment protéger efficacement mes comptes ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Autopsie d'un piratage : du plus faible au plus fort"
+  },
+  {
+   "type": "consigne",
+   "texte": "Classe ces 6 mots de passe du plus FAIBLE (1) au plus FORT (6). Aide-toi du tableau projeté « temps pour casser un mot de passe »."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Rang",
+    "Mot de passe"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Chat!"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Vélo-Bleu-Mange-3-Nuages!"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "123456"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "jaimelefoot"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "K7#pLm2$"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "loic2013"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Qu'est-ce qui rend un mot de passe vraiment difficile à casser : sa longueur ou ses symboles ? Justifie avec le tableau projeté."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Ma méthode : la phrase de passe"
+  },
+  {
+   "type": "consigne",
+   "texte": "Fabrique une phrase de passe (fictive, ne l'utilise pas vraiment ici !) avec la recette : 4 mots qui font une image + 1 chiffre + 1 symbole."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ma phrase de passe d'entraînement : "
+    },
+    {
+     "t": "champ",
+     "points": 70
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Je vérifie :"
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Au moins 12 caractères",
+     "points": 0
+    },
+    {
+     "label": "4 mots ou plus",
+     "points": 0
+    },
+    {
+     "label": "1 chiffre",
+     "points": 0
+    },
+    {
+     "label": "1 symbole",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "IDENTITÉ NUMÉRIQUE",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Les règles d'or  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Vrai ou faux ? Puis, sur l'ordinateur, mets en page l'affichette « Mes 3 règles d'or » (modèle projeté)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Affirmation",
+    "Réponse"
+   ],
+   "largeurs": [
+    6800,
+    2560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Je peux donner mon mot de passe à mon meilleur ami."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Un mot de passe différent pour chaque compte important."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« azerty » est un bon mot de passe car facile à retenir."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La double vérification (code reçu sur téléphone) renforce la protection."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "VRAI",
+          "points": 0
+         },
+         {
+          "label": "FAUX",
+          "points": 0
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Mon affichette « 3 règles d'or » est enregistrée dans TECHNO/SEQ04 sous le nom NOM_S4A01. ✋",
+     "points": 0
+    }
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un mot de passe fort est avant tout "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " (12 caractères ou plus) : la phrase de passe est idéale."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Je ne "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " jamais mon mot de passe, même à un ami."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Mon identité numérique, c'est tout ce que le réseau sait de "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un bon mot de passe est une phrase que je suis seul à connaître.",
+   "auteur": ""
+  }
+ ]
+}

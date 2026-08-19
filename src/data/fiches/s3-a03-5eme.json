@@ -1,0 +1,505 @@
+{
+ "code": "S3-A03",
+ "niveau": "5eme",
+ "seq": "seq03",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "NAVIGATEUR, MOTEUR, SYSTÈME : QUI FAIT QUOI ?"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "« Ouvre Google ! » dit Téo. Mais Google quoi ? Le moteur de recherche ? Le navigateur Chrome ? Le téléphone Android ? Trois choses différentes, souvent confondues… et fabriquées par la même entreprise."
+   ],
+   "question": "Quels logiciels utilisons-nous vraiment pour aller sur Internet, et qui les possède ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Trois familles de logiciels"
+  },
+  {
+   "type": "definition",
+   "label": "SYSTÈME D'EXPLOITATION (OS) / NAVIGATEUR / MOTEUR DE RECHERCHE",
+   "n": 3
+  },
+  {
+   "type": "consigne",
+   "texte": "Range chaque étiquette dans la bonne famille. La liste est mélangée !"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Étiquettes : Chrome — Android — Qwant — Windows — Firefox — Google Search — iOS — Edge — Ecosia"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Famille",
+    "Étiquettes"
+   ],
+   "largeurs": [
+    3400,
+    5960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Système d'exploitation (OS)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 61
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Navigateur"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 61
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Moteur de recherche"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 61
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Décrire un logiciel avec des descripteurs"
+  },
+  {
+   "type": "consigne",
+   "texte": "En informatique, on décrit les objets d'une collection avec des descripteurs. Complète la collection « logiciels » (une ligne est déjà remplie)."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Objet",
+    "Descripteurs (famille · éditeur · gratuit ?)"
+   ],
+   "largeurs": [
+    3000,
+    6360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Nom : Firefox"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Famille : navigateur | Éditeur : Mozilla | Gratuit : oui"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Nom : "
+         },
+         {
+          "t": "champ",
+          "points": 11
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Famille : "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " | Éditeur : "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " | Gratuit : "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Nom : "
+         },
+         {
+          "t": "champ",
+          "points": 11
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Famille : "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " | Éditeur : "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " | Gratuit : "
+         },
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "L'enquête GAFAM  (document projeté)"
+  },
+  {
+   "type": "consigne",
+   "texte": "À l'aide du document projeté, relie chaque service à son entreprise, puis réponds à la question d'enquêteur."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Service → Entreprise",
+    "Service → Entreprise"
+   ],
+   "largeurs": [
+    4680,
+    4680
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "YouTube  →  "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "WhatsApp / Instagram  →  "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Windows  →  "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "iPhone / iOS  →  "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Recherche Google  →  "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Amazon.fr  →  "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Question d'enquêteur : ces services sont « gratuits ». Avec quoi ces entreprises gagnent-elles alors des milliards ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " fait fonctionner l'appareil, le navigateur affiche les pages, le moteur "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " des pages."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Quand un service est gratuit, l'entreprise gagne de l'argent grâce à mes "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " et à la publicité."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Si c'est gratuit, c'est peut-être toi le produit.",
+   "auteur": "adage du numérique"
+  }
+ ]
+}

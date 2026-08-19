@@ -1,0 +1,565 @@
+{
+ "code": "S6-A01",
+ "niveau": "4eme",
+ "seq": "seq06",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "mBOT : UN VRAI SYSTÈME À DÉCORTIQUER"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Le mBot roule, rencontre un obstacle… et fait demi-tour tout seul. Entre l'obstacle et le demi-tour, il s'est passé quelque chose d'invisible — et c'est exactement ce que tu vas mettre au jour, robot en main."
+   ],
+   "question": "Que se passe-t-il entre l'obstacle détecté et le demi-tour du robot ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Anatomie du robot  (robot en main + schéma ci-dessous)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Retrouve chaque élément sur TON robot et complète. Liste mélangée avec UN intrus : moteurs + roues — carte mCore (microcontrôleur) — écran tactile — capteur à ultrasons — capteur suiveur de ligne — support de piles — LED."
+  },
+  {
+   "type": "schema",
+   "index": 0,
+   "src": "/2026/seq06/schemas/mbot.png"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "N° sur le schéma",
+    "Élément",
+    "Je le trouve…"
+   ],
+   "largeurs": [
+    1800,
+    4200,
+    3360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "①"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 20
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "à l'avant (les « yeux »)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "②"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 20
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "sous le robot, pointé vers le sol"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "③"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 20
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "au centre : le « cerveau »"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "④"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 20
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "de chaque côté, elles font avancer"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "⑤"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 20
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "dessous : l'énergie embarquée"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "L'intrus : "
+    },
+    {
+     "t": "champ",
+     "points": 20
+    },
+    {
+     "t": "texte",
+     "v": " (le mBot n'en a pas !)"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "La chaîne d'information du demi-tour"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète avec : COMMUNIQUER — ACQUÉRIR — TRAITER, puis associe le bon composant sous chaque bloc."
+  },
+  {
+   "type": "tableau",
+   "entetes": null,
+   "largeurs": [
+    3120,
+    3120,
+    3120
+   ],
+   "lignes": [
+    [
+     {
+      "shade": true,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 11
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": true,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 11
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": true,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 11
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "l'obstacle est détecté"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "le programme décide"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "l'ordre part vers les moteurs"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Composant : "
+         },
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Composant : "
+         },
+         {
+          "t": "champ",
+          "points": 12
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Composant : IHM / signal aux "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Et la chaîne d'énergie ?"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète avec : TRANSMETTRE — ALIMENTER — CONVERTIR — DISTRIBUER."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "champ",
+     "points": 12
+    },
+    {
+     "t": "texte",
+     "v": " (piles) → "
+    },
+    {
+     "t": "champ",
+     "points": 12
+    },
+    {
+     "t": "texte",
+     "v": " (carte) → "
+    },
+    {
+     "t": "champ",
+     "points": 12
+    },
+    {
+     "t": "texte",
+     "v": " (moteur : électricité → rotation) → "
+    },
+    {
+     "t": "champ",
+     "points": 12
+    },
+    {
+     "t": "texte",
+     "v": " (roues)"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "3a. Pourquoi les piles n'apparaissent-elles PAS dans la chaîne d'information ?"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Chaîne d'information : "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " → TRAITER → COMMUNIQUER."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le capteur à ultrasons ACQUIERT, la carte mCore (microcontrôleur) "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Les piles appartiennent à la chaîne d'"
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " , pas à celle de l'information."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un robot, c'est deux chaînes qui travaillent ensemble : l'une pense, l'autre pousse.",
+   "auteur": ""
+  }
+ ]
+}

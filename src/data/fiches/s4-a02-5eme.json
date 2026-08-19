@@ -1,0 +1,368 @@
+{
+ "code": "S4-A02",
+ "niveau": "5eme",
+ "seq": "seq04",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "MES TRACES NUMÉRIQUES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Maëva poste une photo « juste pour les copines ». Trois jours plus tard, un inconnu la commente. Elle la supprime… mais une camarade lui montre une capture d'écran qui circule encore."
+   ],
+   "question": "Quelles traces est-ce que je laisse sur Internet, et qui peut les voir ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Traces volontaires, traces invisibles"
+  },
+  {
+   "type": "consigne",
+   "texte": "Classe chaque trace dans la bonne colonne : photo postée — géolocalisation — commentaire — cookies — « j'aime » — historique de recherche."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Type de trace",
+    "Exemples"
+   ],
+   "largeurs": [
+    4700,
+    4660
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Traces VOLONTAIRES (je choisis de les laisser)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 61
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Traces INVISIBLES (laissées sans que je m'en rende compte)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 61
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1a. Laquelle de ces traces t'étonne le plus ? Pourquoi ? "
+    },
+    {
+     "t": "champ",
+     "points": 53
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Le voyage d'une photo publiée  (document projeté)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Observe le schéma projeté du parcours d'une photo publiée, puis réponds."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Supprimer la photo de mon compte suffit-il à la faire disparaître d'Internet ? Justifie avec le schéma."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 77
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. Cite deux endroits où la photo peut continuer d'exister : "
+    },
+    {
+     "t": "champ",
+     "points": 43
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je reprends la main  (séance en groupe)"
+  },
+  {
+   "type": "consigne",
+   "texte": "Sur le compte d'entraînement projeté, choisis les bons réglages et justifie tes choix."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Réglage",
+    "Mon choix justifié"
+   ],
+   "largeurs": [
+    3400,
+    5960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Qui peut voir mes photos ?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Tout le monde",
+          "points": 0
+         },
+         {
+          "label": "Mes amis",
+          "points": 0
+         },
+         {
+          "label": "Moi seul  — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Géolocalisation des publications"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Activée",
+          "points": 0
+         },
+         {
+          "label": "Désactivée  — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mon profil"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Public",
+          "points": 0
+         },
+         {
+          "label": "Privé  — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Demande d'ami d'un inconnu"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "Accepter",
+          "points": 0
+         },
+         {
+          "label": "Refuser/signaler  — car",
+          "points": 17
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Sur Internet, une publication peut être "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " et continuer de circuler même après suppression."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Certaines traces sont laissées sans que je le sache : cookies, "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " , historique."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Avant de publier, je me demande : « suis-je d'accord pour que "
+     },
+     {
+      "t": "champ",
+      "points": 21
+     },
+     {
+      "t": "texte",
+      "v": " voie ceci dans 10 ans ? »"
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Internet n'oublie presque jamais.",
+   "auteur": ""
+  }
+ ]
+}

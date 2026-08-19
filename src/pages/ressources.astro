@@ -46,6 +46,105 @@ const syntheses = [
   },
 ];
 
+// Simulateurs et animations — le manuel que les élèves n'ont pas.
+//
+// Les élèves n'ont ni le Nathan ni le Delagrave à la maison : quand ils
+// révisent ou rattrapent une séance, il ne leur reste que la fiche. Cette
+// liste comble ce trou avec des ressources gratuites, sans compte, et
+// rangées PAR SÉQUENCE — pas par éditeur — pour qu'un élève de S3 trouve en
+// un coup d'œil ce qui parle de son activité en cours.
+//
+// Chaque lien a été vérifié (réponse 200) au moment de la mise en ligne.
+// `navigateur: true` = rien à installer, ça marche sur le poste du collège
+// comme sur le téléphone : c'est l'information décisive pour un élève.
+const simulateurs = [
+  {
+    seq: 'seq03', titre: 'Réseaux et données', repere: 'SÉQUENCE 03',
+    items: [
+      { nom: 'Le réseau du collège', source: 'Techno-Flash', navigateur: true,
+        desc: "L'animation qui reprend exactement le schéma de S3-A01 : poste, switch, serveur.",
+        url: 'https://techno-flash.com/animations/reseau_college/reseau_college.html' },
+      { nom: 'Fonctionnement des réseaux', source: 'Techno-Flash', navigateur: true,
+        desc: 'Adresse IP, paquets, routage : le voyage du message pas à pas.',
+        url: 'https://techno-flash.com/animations/FRju49qz/Fonctionnement_reseaux.html' },
+      { nom: 'Filius', source: 'Logiciel libre', navigateur: false,
+        desc: 'Le simulateur de réseau utilisé en classe (S3-A04). Gratuit, à installer.',
+        url: 'https://www.lernsoftware-filius.de/' },
+      { nom: "L'unité centrale · Les périphériques", source: 'Techno-Flash', navigateur: true,
+        desc: "Ce qu'il y a dans un ordinateur, pièce par pièce.",
+        url: 'https://techno-flash.com/animations/unicenligne/unite_centrale.html' },
+    ],
+  },
+  {
+    seq: 'seq04', titre: 'Sécurité et citoyenneté numérique', repere: 'SÉQUENCE 04',
+    items: [
+      { nom: 'Cybertech', source: 'Techno-Flash', navigateur: true,
+        desc: 'Mots de passe, hameçonnage, traces : le jeu-parcours de la cybersécurité.',
+        url: 'https://techno-flash.com/animations/Cybertech-45ejsu78f/cybertech.html' },
+      { nom: 'Internet Sans Crainte', source: 'Programme national', navigateur: true,
+        desc: 'Cyberharcèlement, données personnelles : ressources pour les 11-15 ans.',
+        url: 'https://www.internetsanscrainte.fr/' },
+      { nom: 'Cybermalveillance.gouv.fr', source: 'Service public', navigateur: true,
+        desc: 'Que faire en cas de piratage ou d\'arnaque — la référence officielle.',
+        url: 'https://www.cybermalveillance.gouv.fr/' },
+      { nom: 'Pix', source: 'Service public', navigateur: true,
+        desc: 'Teste et certifie tes compétences numériques (utilisé au collège et au lycée).',
+        url: 'https://pix.fr/' },
+    ],
+  },
+  {
+    seq: 'seq05', titre: 'Concevoir, représenter, modéliser', repere: 'SÉQUENCE 05',
+    items: [
+      { nom: 'Le cahier des charges fonctionnel', source: 'Techno-Flash', navigateur: true,
+        desc: 'Besoin, fonctions, contraintes : exactement la démarche de S5-A01.',
+        url: 'https://techno-flash.com/animations/cahier_des_charges/cahier_des_charges_fonctionnel.html' },
+      { nom: 'Le dessin technique', source: 'Techno-Flash', navigateur: true,
+        desc: 'Échelles, vues, codes de représentation — pour réviser S5-A02.',
+        url: 'https://techno-flash.com/animations/dessin_technique/dessin_technique.html' },
+      { nom: 'Sweet Home 3D', source: 'Logiciel libre', navigateur: false,
+        desc: 'La maquette numérique de la maison (5ème). Gratuit, version en ligne possible.',
+        url: 'https://www.sweethome3d.com/fr/' },
+      { nom: 'Tinkercad', source: 'Autodesk', navigateur: true,
+        desc: 'Modélisation 3D directement dans le navigateur (compte gratuit).',
+        url: 'https://www.tinkercad.com/' },
+      { nom: 'SketchUp', source: 'Trimble', navigateur: true,
+        desc: 'La modélisation 3D utilisée en 4ème, version web gratuite.',
+        url: 'https://www.sketchup.com/fr' },
+    ],
+  },
+  {
+    seq: 'seq06', titre: 'Programmer et piloter', repere: 'SÉQUENCE 06',
+    items: [
+      { nom: "Chaîne d'énergie · Chaîne d'information", source: 'Techno-Flash', navigateur: true,
+        desc: 'Les deux chaînes en animation — le cœur de la synthèse à réviser.',
+        url: 'https://techno-flash.com/animations/chaine_information/chaine_information.html' },
+      { nom: 'Capteurs, actionneurs, interface', source: 'Techno-Flash', navigateur: true,
+        desc: 'Qui capte, qui décide, qui agit : à voir avant de programmer le mBot.',
+        url: 'https://techno-flash.com/animations/CAIkf46es/capteurs_actionneurs_interface.html' },
+      { nom: 'Scratch', source: 'MIT', navigateur: true,
+        desc: 'La programmation par blocs (5ème), directement en ligne.',
+        url: 'https://scratch.mit.edu/' },
+      { nom: 'mBlock', source: 'Makeblock', navigateur: true,
+        desc: 'Programmer le robot mBot par blocs (4ème), version en ligne.',
+        url: 'https://ide.mblock.cc/' },
+    ],
+  },
+  {
+    seq: null, titre: 'Matériaux, énergie, cycle de vie', repere: 'POUR LES SYNTHÈSES',
+    items: [
+      { nom: 'Les familles de matériaux', source: 'Techno-Flash', navigateur: true,
+        desc: 'Métalliques, organiques, minéraux, composites — à croiser avec la synthèse.',
+        url: 'https://techno-flash.com/animations/familles_materiaux2/familles_materiaux.html' },
+      { nom: 'La résistance des matériaux', source: 'Techno-Flash', navigateur: true,
+        desc: 'Flexion, traction, compression : pourquoi une feuille pliée devient rigide.',
+        url: 'https://techno-flash.com/animations/resistance_materiaux/resistance_materiaux.html' },
+      { nom: 'Evolutech', source: 'Techno-Flash', navigateur: true,
+        desc: "L'évolution des objets techniques dans le temps.",
+        url: 'https://techno-flash.com/animations/Evoulutech-dgka75bx/Evolutech.html' },
+    ],
+  },
+];
+
 const sections = [
   {
     titre: 'Analyser et concevoir les objets et systèmes techniques',
@@ -154,6 +253,41 @@ const donneesLd = [
         );
       })}
     </div>
+  </section>
+
+  <section class="lexique-section" aria-labelledby="simu-titre">
+    <h2 class="niveau-titre" id="simu-titre">Simulateurs &amp; animations <span>À OUVRIR PENDANT L'ACTIVITÉ</span></h2>
+    <p class="simu-intro">
+      Des animations et des logiciels gratuits pour revoir une notion, rattraper
+      une séance ou t'entraîner à la maison. Les ressources marquées
+      <span class="simu-tag">en ligne</span> s'ouvrent directement dans le
+      navigateur, sans rien installer et sans compte.
+    </p>
+
+    {simulateurs.map(groupe => (
+      <div class="simu-groupe">
+        <h3 class="simu-groupe-titre">
+          {groupe.titre}<span class="eyebrow-mini">{groupe.repere}</span>
+        </h3>
+        <ul class="simu-liste">
+          {groupe.items.map(it => (
+            <li>
+              <a href={it.url} rel="noopener external" target="_blank">
+                {it.nom}
+                <span class="simu-fleche" aria-hidden="true">↗</span>
+              </a>
+              <p>{it.desc}</p>
+              <p class="simu-meta">
+                {it.source}
+                {it.navigateur
+                  ? <span class="simu-tag">en ligne</span>
+                  : <span class="simu-tag simu-tag--install">à installer</span>}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </section>
 
   <article class="ressource" aria-labelledby="lexique-titre">

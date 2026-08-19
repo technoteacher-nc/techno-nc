@@ -1,0 +1,206 @@
+---
+// FicheEnLigne.astro — rend une fiche d'activité extraite du DOCX
+// (tools/extraire-fiches.cjs) en formulaire remplissable.
+//
+// Deux règles de conception gouvernent ce composant :
+//
+// 1. AUCUN BLOC N'EST COUPÉ. Chaque partie, chaque tableau, chaque schéma est
+//    une unité typographique insécable (`break-inside: avoid`) à l'écran comme
+//    à l'impression. C'est le défaut n°1 de la fiche papier actuelle.
+// 2. LA PLACE EST CELLE DU CONTENU, PAS DU GABARIT. Les pointillés du DOCX
+//    disaient combien de place le professeur réservait : on garde cette
+//    intention (un champ court reste court) mais un champ de réponse longue
+//    devient une zone qui grandit avec ce que l'élève écrit — le manque de
+//    place ne peut plus se produire.
+
+const { blocs, code } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Identifiant stable d'un champ : sa position dans le document. Il sert de clé
+// de sauvegarde locale — il doit donc rester constant d'un build à l'autre.
+let n = 0;
+const id = () => `${code}-c${n++}`;
+
+// Un champ long (beaucoup de pointillés) devient une zone extensible ;
+// un champ court reste sur la ligne, à la largeur que le professeur avait prévue.
+const LONG = 55;
+const largeur = pts => Math.min(46, Math.max(6, Math.round(pts * 0.62)));
+
+// Regroupe les paragraphes de pointillés consécutifs en une seule zone de
+// réponse : trois lignes de points dans le DOCX = une réponse de trois lignes,
+// pas trois champs distincts.
+const groupes = [];
+for (const b of blocs) {
+  const prec = groupes[groupes.length - 1];
+  if (b.type === 'lignes' && prec && prec.type === 'lignes') { prec.n += b.n; continue; }
+  groupes.push(b.type === 'lignes' ? { ...b } : b);
+}
+---
+
+{groupes.map((b) => {
+  switch (b.type) {
+
+    case 'titre':
+      return <h2 class="fl-titre">{b.texte}</h2>;
+
+    case 'situation':
+      return (
+        <section class="fl-bloc fl-situation">
+          {b.lignes.map(l => <p>{l}</p>)}
+          <p class="fl-probleme">{b.question}</p>
+        </section>
+      );
+
+    case 'partie':
+      return (
+        <h3 class="fl-partie"><span>Partie {b.numero}</span>{b.titre}</h3>
+      );
+
+    case 'consigne':
+      return <p class="fl-consigne">{b.texte}</p>;
+
+    case 'schema':
+      return b.src ? (
+        <figure class="fl-bloc fl-schema">
+          <img src={base + b.src} alt={`Schéma de l'activité ${code}`} loading="lazy" />
+        </figure>
+      ) : null;
+
+    case 'texte':
+      return (
+        <p class="fl-ligne">
+          {b.segments.map(s => s.t === 'texte'
+            ? <span>{s.v}</span>
+            : (s.points >= LONG
+                ? <textarea class="fl-zone" rows="2" data-champ={id()} aria-label="Réponse"></textarea>
+                : <input class="fl-champ" type="text" data-champ={id()}
+                         style={`width:${largeur(s.points)}ch`} aria-label="Réponse" />))}
+        </p>
+      );
+
+    case 'lignes':
+      return (
+        <textarea class="fl-zone" rows={Math.max(2, b.n * 2)} data-champ={id()}
+                  aria-label="Ta réponse"></textarea>
+      );
+
+    case 'coches':
+      return (
+        <ul class="fl-coches">
+          {b.items.map(it => {
+            const cid = id();
+            return (
+              <li>
+                <input type="checkbox" id={cid} data-champ={cid} />
+                <label for={cid}>{it.label}</label>
+                {/* « ☐ Personnaliser — car ……… » : la justification est une
+                    réponse à part entière, elle a donc son propre champ. */}
+                {it.points > 0 && (
+                  <input class="fl-champ fl-champ--justif" type="text" data-champ={id()}
+                         aria-label={`Justification : ${it.label}`} placeholder="car…" />
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      );
+
+    case 'definition':
+      return (
+        <section class="fl-bloc fl-definition">
+          <h4>Définition — {b.label}</h4>
+          <textarea class="fl-zone" rows={Math.max(2, b.n)} data-champ={id()}
+                    aria-label={`Définition de ${b.label}`}></textarea>
+        </section>
+      );
+
+    case 'zone':
+      return (
+        <section class="fl-bloc fl-dessin">
+          <p class="fl-dessin-note">
+            {b.label || 'Zone de dessin'} — à faire sur la fiche papier ou dans le logiciel.
+          </p>
+          <textarea class="fl-zone" rows="3" data-champ={id()}
+                    aria-label="Décris ce que tu as dessiné"
+                    placeholder="Tu peux décrire ici ce que tu as dessiné, ou noter tes mesures."></textarea>
+        </section>
+      );
+
+    case 'tableau':
+      return (
+        <div class="fl-bloc fl-tableau-boite">
+          <table class="fl-tableau">
+            {b.entetes && (
+              <thead>
+                <tr>{b.entetes.map(h => <th>{h}</th>)}</tr>
+              </thead>
+            )}
+            <tbody>
+              {b.lignes.map(ligne => (
+                <tr>
+                  {ligne.map(c => (
+                    <td class={c.shade ? 'fl-td-fort' : undefined}>
+                      {c.contenu.map(item => item.t === 'coches'
+                        ? (
+                          <span class="fl-coches-ligne">
+                            {item.items.map(x => {
+                              const cid = id();
+                              return (
+                                <span class="fl-coche-inline">
+                                  <input type="checkbox" id={cid} data-champ={cid} />
+                                  <label for={cid}>{x.label}</label>
+                                  {x.points > 0 && (
+                                    <input class="fl-champ fl-champ--justif" type="text" data-champ={id()}
+                                           aria-label={`Justification : ${x.label}`} placeholder="car…" />
+                                  )}
+                                </span>
+                              );
+                            })}
+                          </span>
+                        )
+                        : (
+                          <span class="fl-cell">
+                            {item.v.map(s => s.t === 'texte'
+                              ? <span>{s.v}</span>
+                              : <input class="fl-champ fl-champ--cell" type="text" data-champ={id()}
+                                       aria-label="Réponse" />)}
+                          </span>
+                        ))}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
+    case 'bilan':
+      return (
+        <section class="fl-bloc fl-bilan">
+          <h4>Bilan — ce que je retiens</h4>
+          <ul>
+            {b.lignes.map(segs => (
+              <li>
+                {segs.map(s => s.t === 'texte'
+                  ? <span>{s.v}</span>
+                  : <input class="fl-champ fl-champ--bilan" type="text" data-champ={id()}
+                           style={`width:${largeur(s.points)}ch`} aria-label="Mot manquant" />)}
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+
+    case 'citation':
+      return (
+        <blockquote class="fl-citation">
+          {b.texte}
+          {b.auteur && <cite>{b.auteur}</cite>}
+        </blockquote>
+      );
+
+    default:
+      return null;
+  }
+})}
