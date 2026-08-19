@@ -185,6 +185,11 @@ body {
 [data-phase="Modéliser"]    { --phase: var(--vif); }
 [data-phase="Fabriquer"]    { --phase: #D9791E; }
 [data-phase="Produire"]     { --phase: #6B4FCC; }
+/* Deux phases propres aux projets de fabrication : on ne teste et on
+   n'optimise que lorsqu'un objet existe. Contraste vérifié sur le papier
+   (4,9 et 4,8 : au-dessus de la moyenne des cinq autres). */
+[data-phase="Tester"]       { --phase: #0E7C7B; }
+[data-phase="Optimiser"]    { --phase: #8A6D1F; }
 
 /* ---------- SIGNATURE : la chaîne du processus ---------- */
 .niveau-bloc { margin: 3rem 0 0; scroll-margin-top: 4.5rem; /* ancres sous l'en-tête collant */ }
@@ -1013,6 +1018,84 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .fl-note-prof { background: color-mix(in srgb, #B45309 12%, transparent); }
+}
+
+/* ---------- projets de fabrication ---------- */
+
+.proj-liste { display: grid; gap: 1.25rem; margin: 2.5rem 0 0; }
+.proj-carte {
+  padding: 1.6rem 1.6rem 1.4rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait); background: var(--papier);
+}
+.proj-carte--preparation { border-style: dashed; }
+.proj-tete { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .5rem; }
+.proj-niveau {
+  font-family: var(--display); font-weight: 700; font-size: .8rem;
+  letter-spacing: .02em; color: var(--papier); background: var(--encre);
+  padding: .2rem .7rem; border-radius: 100px;
+}
+.proj-etat {
+  font-family: var(--mono); font-size: .64rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: #9A5410;
+  background: color-mix(in srgb, #D9791E 18%, transparent);
+  padding: .2rem .6rem; border-radius: 100px;
+}
+.proj-carte h2 { font-family: var(--display); font-weight: 700; font-size: 1.5rem;
+  letter-spacing: -.025em; line-height: 1.1; margin: 0 0 .2rem; }
+.proj-carte h2 a { color: inherit; text-decoration: none; }
+.proj-carte h2 a:hover { color: var(--bleu); }
+.proj-carte h2 a:focus-visible { outline: 2px solid var(--bleu); outline-offset: 3px; border-radius: 3px; }
+.proj-sous { margin: 0 0 .7rem; font-family: var(--mono); font-size: .74rem;
+  letter-spacing: .04em; color: var(--bleu); }
+.proj-resume { margin: 0 0 1rem; color: var(--mine); line-height: 1.55; max-width: 64ch; }
+.proj-chiffres { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 0 0 1rem; }
+.proj-chiffres dt { font-family: var(--mono); font-size: .64rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--mine); }
+.proj-chiffres dd { margin: .15rem 0 0; font-family: var(--display); font-weight: 600; font-size: .98rem; }
+.proj-phases { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 1.1rem; }
+
+.proj-note { margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--trait); }
+.proj-note h2 { font-family: var(--display); font-weight: 700; font-size: 1.15rem;
+  letter-spacing: -.02em; margin: 0 0 .6rem; }
+.proj-note p { color: var(--mine); max-width: 68ch; line-height: 1.6; margin: 0 0 .8rem; }
+
+.proj-avis {
+  margin: 1.5rem 0; padding: .85rem 1.1rem; border-radius: var(--r);
+  background: color-mix(in srgb, #D9791E 12%, transparent);
+  border-left: 3px solid #D9791E; font-size: .93rem; line-height: 1.55; max-width: 68ch;
+}
+.proj-bloc { margin: 3rem 0 0; }
+.proj-chaine { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
+.proj-chaine li { display: grid; grid-template-columns: 40px 1fr; gap: 0 1rem; align-items: start; }
+.proj-seance {
+  border-left: 2px solid var(--trait); padding: 0 0 .3rem 1.1rem; margin-left: -.4rem;
+}
+.proj-seance-repere { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin: 0 0 .3rem; }
+.proj-seance h3 { font-family: var(--display); font-weight: 700; font-size: 1.08rem;
+  letter-spacing: -.015em; line-height: 1.25; margin: 0 0 .25rem; text-wrap: balance; }
+.proj-question { margin: 0; color: var(--mine); font-size: .93rem; line-height: 1.5; max-width: 62ch; }
+.proj-detail { margin: .6rem 0 0; }
+.proj-detail summary {
+  cursor: pointer; font-family: var(--mono); font-size: .68rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--bleu);
+}
+.proj-detail summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; border-radius: 3px; }
+.proj-detail dl { margin: .7rem 0 0; display: grid; grid-template-columns: 9rem 1fr; gap: 0 1.2rem; }
+.proj-detail dt { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--mine); padding: .5rem 0; border-top: 1px solid var(--trait); }
+.proj-detail dd { margin: 0; padding: .5rem 0; border-top: 1px solid var(--trait);
+  font-size: .92rem; line-height: 1.55; }
+.proj-detail ul { margin: 0; padding-left: 1.1rem; }
+.proj-sous-titre { font-family: var(--display); font-weight: 700; font-size: 1rem;
+  margin: 1.5rem 0 .5rem; }
+.proj-comp { margin: 1.25rem 0 0; padding-left: 1.2rem; }
+.proj-comp li { margin-bottom: .5rem; line-height: 1.55; max-width: 72ch; }
+.proj-comp--transversal li { color: var(--mine); font-size: .93rem; }
+
+@media (max-width: 34rem) {
+  .proj-detail dl { grid-template-columns: 1fr; }
+  .proj-detail dd { border-top: none; padding-top: 0; }
+  .proj-chaine li { grid-template-columns: 32px 1fr; gap: 0 .7rem; }
 }
 
 /* ---------- pied ---------- */

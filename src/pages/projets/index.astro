@@ -1,0 +1,89 @@
+---
+// Projets de fabrication — le pendant concret des séquences.
+//
+// Pourquoi une section à part plutôt qu'une septième séquence : ces trois
+// projets ne se déroulent pas comme les autres. Ils partent d'un objet à
+// fabriquer, tiennent sur six semaines consécutives, et se terminent par une
+// mesure — pas par un bilan écrit. Les ranger avec les séquences aurait
+// masqué ce qui fait leur intérêt, et créé une collision de codes : le
+// registre les numérote S5-A01…A06, comme la séquence 05 déjà en ligne.
+
+import Base from '../../layouts/Base.astro';
+import donnees from '../../data/projets.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+const projets = donnees.projets;
+
+const urlPage = new URL(u('/projets/'), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Projets de fabrication — Technologie cycle 4',
+  url: urlPage,
+  itemListElement: projets.map((p, i) => ({
+    '@type': 'ListItem', position: i + 1, name: `${p.niveauLabel} — ${p.titre}`,
+  })),
+};
+---
+<Base
+  titre="Projets de fabrication — Technologie cycle 4"
+  description="Trois projets de fabrication, un par niveau : le pont en une feuille A4 (5ème), l'abat-jour paramétrique (4ème), l'amplificateur de son passif (3ème).">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <section class="hero leve">
+    <span class="eyebrow leve leve-1">Concevoir, fabriquer, mesurer</span>
+    <h1 class="leve leve-1">Les <em>projets</em> de fabrication</h1>
+    <p class="leve leve-2">
+      Un objet à fabriquer par niveau, sur six semaines. On part d'un cahier des
+      charges, on conçoit, on fabrique pour de vrai — puis on mesure si ça tient
+      la promesse. C'est la mesure qui tranche, pas l'avis du professeur.
+    </p>
+  </section>
+
+  <div class="proj-liste leve leve-3">
+    {projets.map(p => (
+      <article class={`proj-carte${p.etat === 'preparation' ? ' proj-carte--preparation' : ''}`}>
+        <div class="proj-tete">
+          <span class="proj-niveau">{p.niveauLabel}</span>
+          {p.etat === 'preparation' && <span class="proj-etat">En préparation</span>}
+        </div>
+        <h2><a href={u(`/projets/${p.slug}`)}>{p.titre}</a></h2>
+        <p class="proj-sous">{p.sousTitre}</p>
+        <p class="proj-resume">{p.resume}</p>
+        <dl class="proj-chiffres">
+          <div><dt>Ce qu'on mesure</dt><dd>{p.defi}</dd></div>
+          <div><dt>Durée</dt><dd>{p.activites.length} séances</dd></div>
+        </dl>
+        <p class="proj-phases">
+          {[...new Set(p.activites.map(a => a.phase))].map(ph => (
+            <span class="phase" data-phase={ph}>{ph}</span>
+          ))}
+        </p>
+        <a class="btn" href={u(`/projets/${p.slug}`)}>Voir le déroulé →</a>
+      </article>
+    ))}
+  </div>
+
+  <section class="proj-note">
+    <h2>Pourquoi ces trois objets</h2>
+    <p>
+      Ils suivent une même montée en exigence. En 5ème, le cahier des charges est
+      donné et les solutions à tester sont fournies : on découvre qu'une
+      <strong>forme</strong> fait la résistance. En 4ème, les critères
+      s'opposent — plus on ajoure, moins ça tient — et il faut trouver un
+      <strong>compromis</strong> chiffré. En 3ème, la classe construit son propre
+      <strong>plan d'expérience</strong> et n'accepte une conclusion que si la
+      mesure la soutient.
+    </p>
+    <p>
+      Chaque projet mobilise aussi des maths et de la physique-chimie
+      identifiées à l'avance : proportionnalité et échelles pour le pont,
+      périmètre et développé pour l'abat-jour, théorème de Pythagore et niveau
+      sonore pour l'amplificateur. Ces notions sont rassemblées dans la
+      <a href={u('/ressources/lexique#consolidation')}>consolidation du lexique</a>.
+    </p>
+  </section>
+
+</Base>

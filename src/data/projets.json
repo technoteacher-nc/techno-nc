@@ -1,0 +1,418 @@
+{
+ "projets": [
+  {
+   "slug": "pont-a4",
+   "niveau": "5eme",
+   "niveauLabel": "5ème",
+   "titre": "Le pont en une feuille A4",
+   "sousTitre": "Franchir un creek avec une feuille de papier",
+   "resume": "Une seule feuille A4 et 300 mm de ruban pour franchir une portée imposée. On découvre qu'une forme, pas une quantité de matière, fait la résistance : la même feuille roulée porte cent fois ce qu'elle porte à plat.",
+   "defi": "Masse supportée ÷ masse de la structure",
+   "etat": "pret",
+   "activites": [
+    {
+     "id": "pont-a4-a01",
+     "code": "S5-A01",
+     "semaine": "S26",
+     "phase": "Analyser",
+     "titre": "Franchir le creek : le cahier des charges de la passerelle",
+     "question": "Pourquoi une feuille posée à plat s'effondre-t-elle, alors que la même feuille roulée porte cent fois plus ?",
+     "objectif": "S'approprier un CDC imposé (1 feuille A4, 300 mm de ruban, portée imposée, aucun appui intermédiaire) ; nommer structure, appui, portée, charge ; repérer zone comprimée et zone tendue sur une poutre fléchie.",
+     "competences": [
+      "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T2a",
+      "T3a"
+     ],
+     "prerequis": "Projet « Ma maison en NC » en cours (plan Sweet Home 3D existant).",
+     "materiel": "Fiche S5-A01 · feuille A4 · éponge ou mousse · réglet",
+     "transversal": "Physique-chimie : action mécanique de contact, notion de charge.",
+     "fichePdf": null
+    },
+    {
+     "id": "pont-a4-a02",
+     "code": "S5-A02",
+     "semaine": "S27",
+     "phase": "Représenter",
+     "titre": "Trois profils imposés : tube, U, accordéon",
+     "question": "À quantité de matière égale, quelle forme résiste le mieux — et pourquoi ?",
+     "objectif": "Produire le croquis coté du profil attribué au groupe et rédiger une prévision argumentée à confronter aux essais ; constater qu'à matière égale, la forme change la résistance.",
+     "competences": [
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T1c",
+      "T3a"
+     ],
+     "prerequis": "S5-A01 (CDC lu, vocabulaire des sollicitations).",
+     "materiel": "Fiche S5-A02 · réglet · équerre · règle plate pour la manipulation",
+     "transversal": "Mathématiques : proportionnalité, rapport.",
+     "fichePdf": null
+    },
+    {
+     "id": "pont-a4-a03",
+     "code": "S5-A03",
+     "semaine": "S28",
+     "phase": "Modéliser",
+     "titre": "Sweet Home 3D : implanter et coter l'ouvrage dans le plan",
+     "question": "Quelle portée mon ouvrage doit-il réellement franchir, et comment la lire sur mon plan ?",
+     "objectif": "Rouvrir le plan de la maison, implanter l'ouvrage de franchissement, relever la portée réelle à l'outil de cote, la convertir à l'échelle de la maquette et produire une vue 3D cotée.",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin",
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+     ],
+     "codesCompetences": [
+      "T3a",
+      "T1c"
+     ],
+     "prerequis": "S5-A02 (profil attribué) et plan Sweet Home 3D de la maison.",
+     "materiel": "Sweet Home 3D · plan de la maison · fiche S5-A03",
+     "transversal": "Mathématiques : échelles, conversion d'unités.",
+     "fichePdf": null
+    },
+    {
+     "id": "pont-a4-a04",
+     "code": "S5-A04",
+     "semaine": "S29",
+     "phase": "Fabriquer",
+     "titre": "Fabrication du pont v1 et contrôle de conformité",
+     "question": "Comment fabriquer proprement, et prouver que mon pont respecte les quatre contraintes ?",
+     "objectif": "Plier, rouler et assembler avec une quantité de ruban imposée ; peser la structure au gramme, contrôler la portée à ±3 mm, remplir la fiche de conformité avant tout essai.",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin",
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests"
+     ],
+     "codesCompetences": [
+      "T3a",
+      "T3b"
+     ],
+     "prerequis": "S5-A03 (portée de la maquette établie).",
+     "materiel": "Feuille A4 80 g · 300 mm de ruban prédécoupé · balance 1 g · réglet · fiche S5-A04",
+     "transversal": null,
+     "fichePdf": null
+    },
+    {
+     "id": "pont-a4-a05",
+     "code": "S5-A05",
+     "semaine": "S30",
+     "phase": "Tester",
+     "titre": "L'essai destructif : charge de rupture et ratio",
+     "question": "Comment mesurer une performance de façon identique pour tous les groupes ?",
+     "objectif": "Appliquer le protocole d'essai (gobelet au centre, paliers de 50 g / 10 s, critère de rupture unique) ; calculer le ratio charge de rupture ÷ masse de structure ; confronter au pronostic écrit en A02.",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T1c"
+     ],
+     "prerequis": "S5-A04 (pont v1 conforme et pesé).",
+     "materiel": "Banc d'essai (2 appuis) · gobelets · eau · balance 1 g · chronomètre · fiche S5-A05",
+     "transversal": "Physique-chimie : masse et poids, P = m × g (g ≈ 9,8 N/kg), modélisation par une force.",
+     "fichePdf": null
+    },
+    {
+     "id": "pont-a4-a06",
+     "code": "S5-A06",
+     "semaine": "S31",
+     "phase": "Optimiser",
+     "titre": "La v2 et l'exploitation des données de la classe",
+     "question": "Que changer, et comment prouver que ce choix vient des mesures et non d'une impression ?",
+     "objectif": "Appliquer UNE modification justifiée par le tableau de classe, refabriquer et retester ; saisir les résultats au tableur, tracer le nuage de points v1/v2 et rédiger la synthèse sur la résistance des structures.",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T3a"
+     ],
+     "prerequis": "S5-A05 (tableau de classe complété).",
+     "materiel": "Feuille A4 · ruban · banc d'essai · tableur · vidéoprojecteur · fiche S5-A06",
+     "transversal": "Mathématiques : lecture et construction d'un nuage de points.",
+     "fichePdf": null
+    }
+   ]
+  },
+  {
+   "slug": "abat-jour",
+   "niveau": "4eme",
+   "niveauLabel": "4ème",
+   "titre": "L'abat-jour paramétrique",
+   "sousTitre": "Éclairer sans éblouir",
+   "resume": "Un cahier des charges à critères opposés : plus on ajoure, mieux la lumière passe, moins la structure tient. L'élève paramètre un motif de perforation, développe le panneau en CAO, découpe et mesure — puis cherche le point de compromis.",
+   "defi": "Le compromis diffusion / résistance",
+   "etat": "pret",
+   "activites": [
+    {
+     "id": "abat-jour-a01",
+     "code": "S5-A01",
+     "semaine": "S26",
+     "phase": "Analyser",
+     "titre": "Éclairer sans éblouir : un CDC à critères opposés",
+     "question": "Que faire quand deux exigences du cahier des charges se contredisent ?",
+     "objectif": "Analyser l'existant, puis rédiger un CDC comportant deux critères antagonistes (éclairement diffusé minimal à 300 mm / tenue sans déformation) et une contrainte de production (≤ 10 min laser, ≤ 45 min impression par groupe).",
+     "competences": [
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T1c",
+      "T3a"
+     ],
+     "prerequis": "Retour du brevet blanc.",
+     "materiel": "Fiche S5-A01 · abat-jours du commerce · lampe de smartphone · phyphox (luxmètre)",
+     "transversal": "Physique-chimie : source primaire, objet diffusant.",
+     "fichePdf": null
+    },
+    {
+     "id": "abat-jour-a02",
+     "code": "S5-A02",
+     "semaine": "S27",
+     "phase": "Représenter",
+     "titre": "Paramétrer un motif : diamètre, entraxe, taux d'ajour",
+     "question": "Comment définir un motif par des grandeurs, au lieu de le dessiner trou par trou ?",
+     "objectif": "Décrire le motif par trois paramètres (Ø de perçage, entraxe, nombre de rangées), produire trois variantes de densité et calculer à la main le taux d'ajour de chacune.",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin",
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+     ],
+     "codesCompetences": [
+      "T3a",
+      "T1c"
+     ],
+     "prerequis": "S5-A01 (CDC à critères opposés).",
+     "materiel": "Fiche S5-A02 · calculatrice · papier quadrillé · réglet",
+     "transversal": "Mathématiques : aire du disque, pourcentage.",
+     "fichePdf": null
+    },
+    {
+     "id": "abat-jour-a03",
+     "code": "S5-A03",
+     "semaine": "S28",
+     "phase": "Modéliser",
+     "titre": "SketchUp (1) : le panneau développé, L = π × D",
+     "question": "Pourquoi un objet cylindrique se dessine-t-il à plat avant d'être roulé ?",
+     "objectif": "Établir que le panneau à plat mesure π × D de long, tracer le rectangle développé, y répartir la trame de perçages par copies régulières et contrôler les ponts de matière (≥ 3 mm).",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin",
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+     ],
+     "codesCompetences": [
+      "T3a",
+      "T1c"
+     ],
+     "prerequis": "S5-A02 (variante retenue, taux d'ajour calculé).",
+     "materiel": "SketchUp · fiche S5-A03",
+     "transversal": "Mathématiques : périmètre du cercle, développement du cylindre.",
+     "fichePdf": null
+    },
+    {
+     "id": "abat-jour-a04",
+     "code": "S5-A04",
+     "semaine": "S29",
+     "phase": "Modéliser",
+     "titre": "SketchUp (2) : la collerette et le bureau des méthodes",
+     "question": "Quel procédé pour quelle pièce, et combien de temps machine cela coûte-t-il ?",
+     "objectif": "Modéliser la collerette (pièce volumique tenant le panneau roulé et la source), exporter DXF pour le laser et STL pour la Witbox, relever temps machine et masse dans les deux chaînes et justifier la règle « à plat = laser, volume = 3D ».",
+     "competences": [
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T1c",
+      "T3a"
+     ],
+     "prerequis": "S5-A03 (panneau développé validé).",
+     "materiel": "SketchUp · trancheur (Cura/PrusaSlicer) · xTool Creative Space · fiche S5-A04",
+     "transversal": null,
+     "fichePdf": null
+    },
+    {
+     "id": "abat-jour-a05",
+     "code": "S5-A05",
+     "semaine": "S30",
+     "phase": "Fabriquer",
+     "titre": "Découpe, montage et double mesure",
+     "question": "Comment prouver un compromis, plutôt que de l'affirmer ?",
+     "objectif": "Découper les panneaux au laser (carton), monter l'objet avec la collerette imprimée, puis mesurer l'éclairement diffusé au luxmètre à 300 mm et la charge à la première déformation permanente.",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T3a"
+     ],
+     "prerequis": "S5-A04 (fichiers exportés et validés).",
+     "materiel": "Découpeuse xTool · carton · Witbox 2 · phyphox (luxmètre) · masses ou gobelet d'eau · balance · fiche S5-A05",
+     "transversal": "Physique-chimie : propagation rectiligne, ombre propre et ombre portée.",
+     "fichePdf": null
+    },
+    {
+     "id": "abat-jour-a06",
+     "code": "S5-A06",
+     "semaine": "S31",
+     "phase": "Produire",
+     "titre": "Les deux courbes et le point de compromis",
+     "question": "Où placer le curseur entre diffuser et résister, et comment le défendre ?",
+     "objectif": "Tracer éclairement et tenue en fonction du taux d'ajour à partir des données de la classe, désigner et défendre son point de fonctionnement, puis comparer carton et PLA (masse, coût, temps machine, fin de vie).",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T2a"
+     ],
+     "prerequis": "S5-A05 (relevés de la classe).",
+     "materiel": "Tableur · vidéoprojecteur · fiche S5-A06",
+     "transversal": "Mathématiques : lecture graphique, croisement de deux courbes.",
+     "fichePdf": null
+    }
+   ]
+  },
+  {
+   "slug": "amplificateur-passif",
+   "niveau": "3eme",
+   "niveauLabel": "3ème",
+   "titre": "L'amplificateur de son passif",
+   "sousTitre": "Amplifier sans électricité",
+   "resume": "Un objet sans pile ni haut-parleur, qui amplifie pourtant le son d'un smartphone. Plan d'expérience de classe, développé du cône calculé au théorème de Pythagore, découpe laser, puis campagne de mesures en décibels.",
+   "defi": "Le gain mesuré, en décibels",
+   "etat": "preparation",
+   "activites": [
+    {
+     "id": "amplificateur-passif-a01",
+     "code": "S5-A01",
+     "semaine": "S26",
+     "phase": "Analyser",
+     "titre": "Amplifier ou diriger : deux objets, deux chaînes",
+     "question": "Peut-on rendre un téléphone audible à six sans lui apporter la moindre énergie ?",
+     "objectif": "Tracer les chaînes d'énergie et d'information d'une enceinte Bluetooth et d'un pavillon passif, constater que le second n'en a aucune, et co-rédiger un CDC dont le critère principal est chiffré (gain ≥ 4 dB à 1 m).",
+     "competences": [
+      "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)",
+      "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+     ],
+     "codesCompetences": [
+      "T2a",
+      "T1a"
+     ],
+     "prerequis": "Aucun (lancement de séquence).",
+     "materiel": "Fiche S5-A01 · enceinte Bluetooth · pavillon témoin · phyphox (sonomètre)",
+     "transversal": "Physique-chimie : chaîne d'énergie, conversion et rendement ; niveau sonore en dB.",
+     "fichePdf": null
+    },
+    {
+     "id": "amplificateur-passif-a02",
+     "code": "S5-A02",
+     "semaine": "S27",
+     "phase": "Représenter",
+     "titre": "Le plan d'expérience de la classe",
+     "question": "Comment huit groupes peuvent-ils explorer seize configurations sans mélanger les résultats ?",
+     "objectif": "Construire collectivement le plan d'expérience : une variable par groupe, deux modalités chacune, et une configuration de référence figée pour tous ; produire le croquis coté de sa solution.",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T3a"
+     ],
+     "prerequis": "S5-A01 (CDC co-construit).",
+     "materiel": "Fiche S5-A02 · réglet · tableau du plan d'expérience",
+     "transversal": "Mathématiques : variable, grandeur contrôlée.",
+     "fichePdf": null
+    },
+    {
+     "id": "amplificateur-passif-a03",
+     "code": "S5-A03",
+     "semaine": "S28",
+     "phase": "Modéliser",
+     "titre": "Le développé du cône : Pythagore puis proportion",
+     "question": "Quelle forme à plat faut-il découper pour obtenir le pavillon voulu ?",
+     "objectif": "Calculer la génératrice par le théorème de Pythagore, puis l'angle du secteur par proportion (θ = 360° × r / g) ; tracer le développé en CAO avec languette et gorge, exporter en DXF ; modéliser en 3D l'embout d'adaptation au téléphone.",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin",
+      "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+     ],
+     "codesCompetences": [
+      "T3a",
+      "T1c"
+     ],
+     "prerequis": "S5-A02 (variable et modalités attribuées).",
+     "materiel": "SketchUp ou Tinkercad · calculatrice · fiche S5-A03",
+     "transversal": "Mathématiques : théorème de Pythagore, proportionnalité, angle au centre.",
+     "fichePdf": null
+    },
+    {
+     "id": "amplificateur-passif-a04",
+     "code": "S5-A04",
+     "semaine": "S29",
+     "phase": "Fabriquer",
+     "titre": "Découpe laser des développés et montage",
+     "question": "Comment garantir que mes deux exemplaires ne se distinguent que par ma variable ?",
+     "objectif": "Découper au laser les deux développés du groupe, rouler et coller, monter l'embout imprimé, puis vérifier que toutes les grandeurs autres que la variable annoncée sont restées identiques.",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin",
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests"
+     ],
+     "codesCompetences": [
+      "T3a",
+      "T3b"
+     ],
+     "prerequis": "S5-A03 (DXF et STL validés).",
+     "materiel": "Découpeuse xTool · carton · Witbox 2 · colle · réglet · balance · fiche S5-A04",
+     "transversal": null,
+     "fichePdf": null
+    },
+    {
+     "id": "amplificateur-passif-a05",
+     "code": "S5-A05",
+     "semaine": "S30",
+     "phase": "Tester",
+     "titre": "Campagne de mesures : le gain en décibels",
+     "question": "À quelles conditions deux mesures faites par deux groupes différents sont-elles comparables ?",
+     "objectif": "Appliquer le protocole commun (téléphone source unique, 1,00 m dans l'axe, volume verrouillé, bruit de fond relevé, 3 répétitions), calculer le gain par rapport au téléphone nu et l'étendue des répétitions.",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T2a"
+     ],
+     "prerequis": "S5-A04 (deux pavillons fabriqués).",
+     "materiel": "Téléphone source unique · phyphox (sonomètre) · mètre ruban · fiche S5-A05",
+     "transversal": "Physique-chimie : propagation et réflexion du son, échelle du décibel.",
+     "fichePdf": null
+    },
+    {
+     "id": "amplificateur-passif-a06",
+     "code": "S5-A06",
+     "semaine": "S31",
+     "phase": "Produire",
+     "titre": "Les gains s'additionnent-ils ? Bilan et risques auditifs",
+     "question": "Si je combine les meilleures modalités, obtiendrai-je la somme des gains ?",
+     "objectif": "Dépouiller le tableau de classe, identifier la meilleure modalité de chaque variable, formuler puis vérifier une prévision sur le pavillon de synthèse ; conclure sur l'objet sans chaîne d'énergie et sur les risques auditifs liés au niveau sonore.",
+     "competences": [
+      "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests",
+      "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+     ],
+     "codesCompetences": [
+      "T3b",
+      "T1a"
+     ],
+     "prerequis": "S5-A05 (tableau de classe complété).",
+     "materiel": "Tableur · pavillon de synthèse · phyphox · fiche S5-A06",
+     "transversal": "Physique-chimie : niveau sonore, durée d'exposition, prévention des risques auditifs.",
+     "fichePdf": null
+    }
+   ]
+  }
+ ]
+}

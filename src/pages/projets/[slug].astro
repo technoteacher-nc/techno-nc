@@ -1,0 +1,119 @@
+---
+// Le déroulé d'un projet : six séances qui s'enchaînent.
+//
+// L'essentiel tient dans la chaîne visible en haut de page — analyser,
+// représenter, modéliser, fabriquer, tester, optimiser. Le détail de chaque
+// séance (objectif, compétences du BO, matériel, lien vers les autres
+// disciplines) est replié : un collègue qui découvre le projet lit la chaîne
+// en dix secondes, celui qui va le mener ouvre ce dont il a besoin.
+
+import Base from '../../layouts/Base.astro';
+import donnees from '../../data/projets.json';
+
+export function getStaticPaths() {
+  return donnees.projets.map(p => ({ params: { slug: p.slug }, props: { projet: p } }));
+}
+
+const { projet } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+// Les compétences réellement travaillées, dédoublonnées : c'est ce qu'un
+// inspecteur regarde en premier.
+const competences = [...new Set(projet.activites.flatMap(a => a.competences))].sort();
+const transversal = [...new Set(projet.activites.map(a => a.transversal).filter(Boolean))];
+
+const urlPage = new URL(u(`/projets/${projet.slug}/`), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LearningResource',
+  name: `${projet.titre} — projet ${projet.niveauLabel}`,
+  description: projet.resume,
+  url: urlPage,
+  inLanguage: 'fr',
+  educationalLevel: projet.niveauLabel,
+  learningResourceType: 'Projet de fabrication',
+  isAccessibleForFree: true,
+  teaches: competences,
+  provider: { '@type': 'EducationalOrganization', name: "Collège d'Auteuil" },
+};
+---
+<Base
+  titre={`${projet.titre} — projet ${projet.niveauLabel}`}
+  description={projet.resume.slice(0, 155)}>
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/projets')}>Projets</a> / {projet.niveauLabel}
+  </nav>
+
+  <header class="act-tete leve">
+    <div class="act-repere leve leve-1">
+      <span class="proj-niveau">{projet.niveauLabel}</span>
+      <span class="eyebrow-mini">{projet.activites.length} séances · {projet.sousTitre}</span>
+      {projet.etat === 'preparation' && <span class="proj-etat">En préparation</span>}
+    </div>
+    <h1 class="leve leve-1">{projet.titre}</h1>
+    <p class="question leve leve-2">{projet.resume}</p>
+  </header>
+
+  {projet.etat === 'preparation' && (
+    <p class="proj-avis">
+      <strong>Projet en préparation.</strong> Le déroulé est arrêté, les fiches
+      élèves restent à produire. Il est publié ici pour être discuté et ajusté
+      avant sa première mise en œuvre.
+    </p>
+  )}
+
+  <section class="proj-bloc">
+    <h2 class="niveau-titre">Le déroulé <span>{projet.defi.toUpperCase()}</span></h2>
+    <ol class="proj-chaine">
+      {projet.activites.map((a, i) => (
+        <li>
+          <span class="num" data-phase={a.phase}>{i + 1}</span>
+          <div class="proj-seance">
+            <p class="proj-seance-repere">
+              <span class="phase" data-phase={a.phase}>{a.phase}</span>
+              <span class="eyebrow-mini">{a.semaine}</span>
+            </p>
+            <h3>{a.titre}</h3>
+            <p class="proj-question">{a.question}</p>
+            <details class="proj-detail">
+              <summary>Voir le détail</summary>
+              <dl>
+                <dt>Objectif</dt><dd>{a.objectif}</dd>
+                <dt>Compétences du programme</dt>
+                <dd><ul>{a.competences.map(c => <li>{c}</li>)}</ul></dd>
+                {a.prerequis && <><dt>Prérequis</dt><dd>{a.prerequis}</dd></>}
+                {a.materiel && <><dt>Matériel</dt><dd>{a.materiel}</dd></>}
+                {a.transversal && <><dt>Autres disciplines</dt><dd>{a.transversal}</dd></>}
+              </dl>
+            </details>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="proj-bloc">
+    <h2 class="niveau-titre">Ce que le projet fait travailler <span>BO N°9 DU 29/02/2024</span></h2>
+    <ul class="proj-comp">
+      {competences.map(c => <li>{c}</li>)}
+    </ul>
+    {transversal.length > 0 && (
+      <>
+        <h3 class="proj-sous-titre">Liens avec les autres disciplines</h3>
+        <ul class="proj-comp proj-comp--transversal">
+          {transversal.map(t => <li>{t}</li>)}
+        </ul>
+      </>
+    )}
+  </section>
+
+  <nav class="res-suite">
+    <a class="btn" href={u('/projets')}>← Tous les projets</a>
+    <a class="btn" href={u('/ressources/lexique#consolidation')}>Consolidation maths →</a>
+  </nav>
+
+</Base>
