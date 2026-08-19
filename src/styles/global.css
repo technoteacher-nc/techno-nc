@@ -1110,7 +1110,11 @@ body {
 }
 .proj-bloc { margin: 3rem 0 0; }
 .proj-chaine { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
-.proj-chaine li { display: grid; grid-template-columns: 40px 1fr; gap: 0 1rem; align-items: start; }
+/* « > li » et non « li » : sans l'enfant direct, cette règle attrapait aussi
+   les <li> de la liste des compétences, repliée dans chaque séance. Un <li> en
+   display:grid empile ses mots un par ligne — le libellé d'une compétence
+   s'affichait sur vingt lignes, en colonne. */
+.proj-chaine > li { display: grid; grid-template-columns: 40px 1fr; gap: 0 1rem; align-items: start; }
 .proj-seance {
   border-left: 2px solid var(--trait); padding: 0 0 .3rem 1.1rem; margin-left: -.4rem;
 }
@@ -1139,8 +1143,8 @@ body {
 
 /* Une séance ciblée par un QR code doit se signaler quand on arrive dessus,
    sinon l'élève atterrit au milieu d'une liste de six et cherche laquelle. */
-.proj-chaine li { scroll-margin-top: 1.5rem; }
-.proj-chaine li:target .proj-seance {
+.proj-chaine > li { scroll-margin-top: 1.5rem; }
+.proj-chaine > li:target .proj-seance {
   border-left-color: var(--bleu); border-left-width: 3px;
   background: color-mix(in srgb, var(--bleu) 5%, transparent);
   border-radius: 0 var(--r) var(--r) 0;
@@ -1155,7 +1159,7 @@ body {
 @media (max-width: 34rem) {
   .proj-detail dl { grid-template-columns: 1fr; }
   .proj-detail dd { border-top: none; padding-top: 0; }
-  .proj-chaine li { grid-template-columns: 32px 1fr; gap: 0 .7rem; }
+  .proj-chaine > li { grid-template-columns: 32px 1fr; gap: 0 .7rem; }
 }
 
 /* ---------- pied ---------- */
@@ -1245,4 +1249,96 @@ body {
   border-radius: var(--r); border-left: 3px solid var(--bleu);
   background: var(--calque);
   font-size: .95rem; line-height: 1.65; max-width: 68ch;
+}
+
+/* ---------- quiz de révision ----------
+   Une question à la fois, correction immédiate. Le vert et le rouge ne portent
+   jamais l'information seuls : le verdict est aussi écrit en toutes lettres,
+   et la bonne réponse porte une coche. */
+.quiz { margin: 2.5rem 0 0; }
+.quiz-barre { display: flex; align-items: center; gap: 1rem; margin: 0 0 1rem; }
+.quiz-jauge {
+  flex: 1; height: 6px; border-radius: 3px; background: var(--calque);
+  overflow: hidden;
+}
+.quiz-jauge span {
+  display: block; height: 100%; width: 0; background: var(--vif);
+  transition: width .25s cubic-bezier(.16,1,.3,1);
+}
+.quiz-compteur {
+  margin: 0; flex: none;
+  font-family: var(--mono); font-size: .74rem; letter-spacing: .04em; color: var(--mine);
+}
+.quiz-carte-q {
+  border: 1.5px solid var(--trait); border-radius: var(--r);
+  padding: 1.5rem 1.6rem; background: var(--papier);
+}
+.quiz-question {
+  font-family: var(--display); font-weight: 700; font-size: 1.2rem;
+  letter-spacing: -.015em; line-height: 1.35; margin: 0 0 1.2rem;
+  max-width: 60ch; text-wrap: balance;
+}
+.quiz-reponses { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.quiz-choix {
+  width: 100%; text-align: left; cursor: pointer;
+  font: inherit; font-size: .98rem; line-height: 1.45;
+  padding: .8rem 1rem; border-radius: 8px;
+  border: 1.5px solid var(--trait); background: var(--papier); color: inherit;
+  transition: border-color .12s, background .12s;
+}
+.quiz-choix:hover:not(:disabled) { border-color: var(--encre); background: var(--calque); }
+.quiz-choix:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.quiz-choix:disabled { cursor: default; opacity: .75; }
+.quiz-choix--juste {
+  border-color: #0B7A70; background: color-mix(in srgb, #00B3A4 14%, transparent);
+  opacity: 1; font-weight: 600;
+}
+.quiz-choix--juste::before { content: "✓ "; color: #0B7A70; font-weight: 700; }
+.quiz-choix--faux {
+  border-color: #B3261E; background: color-mix(in srgb, #B3261E 10%, transparent); opacity: 1;
+}
+.quiz-choix--faux::before { content: "✗ "; color: #B3261E; font-weight: 700; }
+.quiz-verdict {
+  margin: 1rem 0 0; font-size: .95rem; font-weight: 600;
+}
+.quiz-verdict--juste { color: #0B7A70; }
+.quiz-verdict--faux { color: #B3261E; }
+.quiz-carte-q .btn { margin-top: 1.1rem; cursor: pointer; }
+
+.quiz-fin {
+  border: 1.5px solid var(--trait); border-radius: var(--r);
+  padding: 1.6rem; background: var(--calque); text-align: center;
+}
+.quiz-fin h2 { font-family: var(--display); margin: 0 0 .5rem; font-size: 1.3rem; }
+.quiz-score { margin: 0 0 .3rem; font-size: 1.5rem; font-weight: 700; font-family: var(--display); }
+.quiz-conseil { margin: 0 0 1.2rem; color: var(--mine); max-width: 52ch; margin-inline: auto; }
+.quiz-fin .docs { justify-content: center; }
+
+/* index des quiz */
+.quiz-liste { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0 0; }
+.quiz-carte {
+  position: relative; display: flex; flex-direction: column; gap: .4rem;
+  padding: 1.25rem 1.4rem; border-radius: var(--r); border: 1.5px solid var(--trait);
+  background: var(--papier); text-decoration: none; color: inherit;
+  transition: border-color .15s, transform .15s;
+}
+.quiz-carte:hover { border-color: var(--encre); background: var(--calque); transform: translateY(-3px); }
+.quiz-carte:hover .aller { transform: translateX(3px); opacity: 1; }
+.quiz-carte:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.quiz-seq {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--bleu);
+}
+.quiz-carte h3 {
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+  letter-spacing: -.015em; margin: 0; text-wrap: balance;
+}
+.quiz-carte p { margin: 0; color: var(--mine); font-size: .9rem; line-height: 1.5; max-width: 48ch; }
+.quiz-carte .aller { position: absolute; top: 1.2rem; right: 1.3rem; }
+
+@media (max-width: 40rem) {
+  .quiz-liste { grid-template-columns: 1fr; }
+  .quiz-carte-q { padding: 1.2rem 1.1rem; }
+  .quiz-question { font-size: 1.08rem; }
+  .quiz-barre { gap: .7rem; }
 }

@@ -1,0 +1,94 @@
+---
+// Réviser — les QCM d'entraînement.
+//
+// Les élèves réclamaient des Kahoot pour réviser. Plutôt que de dépendre d'une
+// séance en classe, les mêmes questions sont ici jouables seul, sans compte :
+// c'est le prolongement direct de ce que le site sait déjà faire — mémoire,
+// correction, rattrapage.
+//
+// Le même jeu de questions sert aux deux usages : le classeur d'import Kahoot
+// est produit par le même script (tools/gen-quiz.cjs), donc les deux ne peuvent
+// pas diverger.
+
+import Base from '../../layouts/Base.astro';
+import donnees from '../../data/quiz.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+const ORDRE = ['5eme', '4eme', '3eme'];
+const parNiveau = ORDRE
+  .map(n => ({ niveau: n, liste: donnees.quiz.filter(q => q.niveau === n) }))
+  .filter(g => g.liste.length);
+
+const total = donnees.quiz.reduce((n, q) => n + q.questions.length, 0);
+
+const urlPage = new URL(u('/reviser/'), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Quiz de révision — Technologie cycle 4',
+  url: urlPage,
+  itemListElement: donnees.quiz.map((q, i) => ({
+    '@type': 'ListItem', position: i + 1, name: q.titre,
+  })),
+};
+---
+<Base
+  titre="Réviser — quiz de Technologie"
+  description={`${donnees.quiz.length} quiz d'entraînement, ${total} questions, une séquence par quiz. Sans compte, correction immédiate.`}>
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <section class="hero hero--court leve">
+    <span class="eyebrow leve leve-1">Entraînement</span>
+    <h1 class="leve leve-1">Réviser en <em>quiz</em></h1>
+    <p class="leve leve-2">
+      Un quiz par séquence, dix questions chacun. Tu réponds, la correction
+      s'affiche tout de suite avec l'explication. Aucun compte, aucune note :
+      c'est pour t'entraîner, pas pour être évalué.
+    </p>
+  </section>
+
+  {parNiveau.map(g => (
+    <section class="niveau-bloc leve leve-3">
+      <h2 class="niveau-titre">
+        {g.niveau === '5eme' ? '5ème' : g.niveau === '4eme' ? '4ème' : '3ème'}
+        <span>{g.liste.length} QUIZ</span>
+      </h2>
+      <div class="quiz-liste">
+        {g.liste.map(q => (
+          <a class="quiz-carte" href={u(`/reviser/${q.id}`)}>
+            <span class="quiz-seq">{q.seqTitre}</span>
+            <h3>{q.titre}</h3>
+            <p>{q.sous}</p>
+            <span class="cote">
+              <svg width="18" height="8" viewBox="0 0 18 8" aria-hidden="true"><path d="M0 4h18M0 4l3-2.5M0 4l3 2.5M18 4l-3-2.5M18 4l-3 2.5" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+              {q.questions.length} questions
+            </span>
+            <span class="aller" aria-hidden="true">→</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="qr">
+    <img src={u('/qr/reviser.png')} alt="QR code vers les quiz de révision" width="76" height="76" loading="lazy" />
+    <p>
+      <strong>Les quiz, en QR code.</strong><br />
+      À projeter en fin de séquence, avant une évaluation.
+    </p>
+  </section>
+
+  <section class="proj-note">
+    <h2>Pour le professeur</h2>
+    <p>
+      Chaque quiz se télécharge aussi au format d'import <strong>Kahoot</strong> :
+      le bouton se trouve en bas de la page du quiz. Les questions sont les mêmes
+      des deux côtés — elles viennent d'un fichier unique, elles ne peuvent pas
+      diverger.
+    </p>
+  </section>
+
+</Base>

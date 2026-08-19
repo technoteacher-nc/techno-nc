@@ -1,0 +1,186 @@
+---
+// Un quiz jouable, sans compte et sans réseau après le chargement.
+//
+// Choix assumés :
+//   - une question à la fois, pour que l'élève ne survole pas ;
+//   - la correction s'affiche AU CLIC, pas à la fin : on révise en se
+//     trompant, pas en découvrant son score dix questions plus tard ;
+//   - l'ordre des questions ET celui des réponses sont tirés au sort à chaque
+//     partie. Rejouer trois fois ne doit pas revenir à mémoriser « c'est la
+//     deuxième case » ;
+//   - aucun score enregistré, aucune donnée envoyée.
+
+import Base from '../../layouts/Base.astro';
+import donnees from '../../data/quiz.json';
+
+export function getStaticPaths() {
+  return donnees.quiz.map(q => ({ params: { id: q.id }, props: { quiz: q } }));
+}
+
+const { quiz } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+---
+<Base
+  titre={`${quiz.titre} — quiz de révision`}
+  description={`${quiz.questions.length} questions pour réviser : ${quiz.sous}`}>
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/reviser')}>Réviser</a> / {quiz.niveauLabel}
+  </nav>
+
+  <header class="act-tete leve">
+    <div class="act-repere leve leve-1">
+      <span class="proj-niveau">{quiz.niveauLabel}</span>
+      <span class="eyebrow-mini">{quiz.seqTitre} · {quiz.questions.length} questions</span>
+    </div>
+    <h1 class="leve leve-1">{quiz.titre}</h1>
+    <p class="question leve leve-2">{quiz.sous}</p>
+  </header>
+
+  <div class="quiz" data-quiz>
+    <script type="application/json" data-questions set:html={JSON.stringify(quiz.questions)} />
+
+    <div class="quiz-barre">
+      <div class="quiz-jauge"><span data-jauge></span></div>
+      <p class="quiz-compteur" data-compteur>Question 1 / {quiz.questions.length}</p>
+    </div>
+
+    <section class="quiz-carte-q">
+      <p class="quiz-question" data-question>…</p>
+      <ul class="quiz-reponses" data-reponses></ul>
+      <p class="quiz-verdict" data-verdict hidden></p>
+      <button class="btn btn--fort" type="button" data-suivant hidden>Question suivante →</button>
+    </section>
+
+    <section class="quiz-fin" data-fin hidden>
+      <h2>Terminé</h2>
+      <p class="quiz-score" data-score></p>
+      <p class="quiz-conseil" data-conseil></p>
+      <div class="docs">
+        <button class="btn btn--fort" type="button" data-rejouer>Recommencer</button>
+        <a class="btn" href={u('/reviser')}>Les autres quiz</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="proj-note">
+    <h2>Pour le professeur</h2>
+    <p>
+      Ces dix questions se jouent aussi en classe : le fichier ci-dessous
+      s'importe directement dans Kahoot.
+    </p>
+    <p>
+      <a class="btn" href={u(quiz.xlsx)} download>Import Kahoot — XLSX</a>
+    </p>
+  </section>
+
+</Base>
+
+<script>
+  // Tirage sans biais (Fisher-Yates). Un simple sort(() => Math.random() - .5)
+  // ne mélange PAS uniformément : certaines positions restent bien plus
+  // probables que d'autres, ce qui reproduirait exactement le défaut qu'on
+  // cherche à éviter.
+  function melanger(t) {
+    const a = t.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  const racine = document.querySelector('[data-quiz]');
+  if (racine) {
+    const brutes = JSON.parse(racine.querySelector('[data-questions]').textContent);
+    const elQuestion = racine.querySelector('[data-question]');
+    const elReponses = racine.querySelector('[data-reponses]');
+    const elVerdict = racine.querySelector('[data-verdict]');
+    const elSuivant = racine.querySelector('[data-suivant]');
+    const elCompteur = racine.querySelector('[data-compteur]');
+    const elJauge = racine.querySelector('[data-jauge]');
+    const elFin = racine.querySelector('[data-fin]');
+    const elScore = racine.querySelector('[data-score]');
+    const elConseil = racine.querySelector('[data-conseil]');
+    const carte = racine.querySelector('.quiz-carte-q');
+
+    let liste = [], i = 0, justes = 0;
+
+    function preparer() {
+      liste = melanger(brutes).map(q => {
+        const ordre = melanger(q.r.map((texte, k) => ({ texte, juste: k + 1 === q.bonne })));
+        return { q: q.q, options: ordre };
+      });
+      i = 0; justes = 0;
+      elFin.hidden = true;
+      carte.hidden = false;
+      racine.querySelector('.quiz-barre').hidden = false;
+      afficher();
+    }
+
+    function afficher() {
+      const q = liste[i];
+      elQuestion.textContent = q.q;
+      elCompteur.textContent = `Question ${i + 1} / ${liste.length}`;
+      elJauge.style.width = (i / liste.length * 100) + '%';
+      elVerdict.hidden = true;
+      elVerdict.className = 'quiz-verdict';
+      elSuivant.hidden = true;
+      elReponses.innerHTML = '';
+
+      q.options.forEach(opt => {
+        const li = document.createElement('li');
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'quiz-choix';
+        b.textContent = opt.texte;
+        b.addEventListener('click', () => repondre(b, opt.juste, q));
+        li.appendChild(b);
+        elReponses.appendChild(li);
+      });
+    }
+
+    function repondre(bouton, juste, q) {
+      // Une fois répondu, les autres boutons ne réagissent plus : on ne
+      // « repioche » pas jusqu'à tomber juste.
+      elReponses.querySelectorAll('.quiz-choix').forEach(b => {
+        b.disabled = true;
+        const estJuste = q.options.find(o => o.texte === b.textContent).juste;
+        if (estJuste) b.classList.add('quiz-choix--juste');
+      });
+      if (!juste) bouton.classList.add('quiz-choix--faux');
+      if (juste) justes++;
+
+      elVerdict.textContent = juste
+        ? 'Juste.'
+        : 'Ce n\'est pas ça — la bonne réponse est en vert.';
+      elVerdict.classList.add(juste ? 'quiz-verdict--juste' : 'quiz-verdict--faux');
+      elVerdict.hidden = false;
+      elSuivant.hidden = false;
+      elSuivant.textContent = (i === liste.length - 1) ? 'Voir mon résultat →' : 'Question suivante →';
+      elSuivant.focus();
+    }
+
+    elSuivant.addEventListener('click', () => {
+      i++;
+      if (i < liste.length) { afficher(); return; }
+      carte.hidden = true;
+      racine.querySelector('.quiz-barre').hidden = true;
+      elJauge.style.width = '100%';
+      elScore.textContent = justes <= 1
+        ? `${justes} bonne réponse sur ${liste.length}.`
+        : `${justes} bonnes réponses sur ${liste.length}.`;
+      elConseil.textContent = justes === liste.length
+        ? 'Rien à revoir. Essaie un autre quiz.'
+        : justes >= liste.length * 0.7
+          ? 'Bien. Reprends la fiche des questions ratées, puis recommence.'
+          : 'Reprends le bilan des fiches de la séquence avant de rejouer.';
+      elFin.hidden = false;
+      elFin.scrollIntoView({ block: 'nearest' });
+    });
+
+    racine.querySelector('[data-rejouer]').addEventListener('click', preparer);
+    preparer();
+  }
+</script>
