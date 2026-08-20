@@ -12,6 +12,7 @@
 // À l'impression, tout s'ouvre : c'est le mémo qu'on colle dans le cahier.
 
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import { lexique, lexiquePdf, lexiqueDocx, nbTermes } from '../../data/ressources';
 import { consolidation, nbNotions, conversions } from '../../data/consolidation';
 import { statSync } from 'node:fs';
@@ -67,7 +68,7 @@ const donneesLd = {
 ---
 <Base
   titre="Lexique & consolidation — Technologie cycle 4"
-  description="Le vocabulaire de Technologie du cycle 4 et du Brevet, et les notions de maths et de physique-chimie nécessaires aux activités : unités, conversions, échelles, pourcentages.">
+  description="Le vocabulaire de Technologie du cycle 4 et du Brevet, plus les notions de maths et de physique-chimie utiles aux activités : unités, conversions, échelles.">
 
   <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
@@ -263,5 +264,7 @@ const donneesLd = {
       Il est imprimé sur le lexique papier et ramène directement ici.
     </p>
   </section>
+
+  <Citation cle="lexique" />
 
 </Base>

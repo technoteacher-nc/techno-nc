@@ -14,7 +14,10 @@
 :root {
   --encre:    #11223D;   /* bleu de plan, texte */
   --bleu:     #1C5FBF;   /* trait de construction, liens */
-  --vif:      #00B3A4;   /* accent vivant : la progression */
+  --vif:      #00B3A4;   /* accent vivant : la progression — ORNEMENT SEULEMENT.
+                            2,56:1 sur papier : jamais pour du texte qui informe. */
+  --vif-lisible: #0B7A70; /* le même turquoise, assombri jusqu'à 5,07:1 : c'est
+                            lui qu'on emploie dès que la couleur porte un mot. */
   --papier:   #FCFCFA;
   --calque:   #EDF1F6;   /* aplats froids */
   --trait:    #C3CEDC;
@@ -190,16 +193,28 @@ body {
    Palette validée (six checks CVD/contraste, scripts/validate_palette.js),
    dans l'ordre pédagogique fixe Analyser → Représenter → Modéliser →
    Fabriquer → Produire. */
-[data-phase="Analyser"]     { --phase: var(--bleu); }
-[data-phase="Représenter"]  { --phase: #C8447A; }
-[data-phase="Modéliser"]    { --phase: var(--vif); }
-[data-phase="Fabriquer"]    { --phase: #D9791E; }
-[data-phase="Produire"]     { --phase: #6B4FCC; }
+/* DEUX couleurs par phase, et la distinction n'est pas cosmétique :
+
+   `--phase`       la couleur d'identité. Elle ne sert qu'à des aplats et à la
+                   pastille de 6 px — du décor, jamais une information seule.
+   `--phase-encre` la même teinte assombrie jusqu'à passer 4,5:1 sur papier ET
+                   sur aplat froid. C'est elle, et elle seule, qui a le droit de
+                   colorer du texte ou une bordure porteuse de sens.
+
+   Pourquoi : le NUMÉRO d'étape de la chaîne prenait `--phase` en couleur de
+   texte. En « Modéliser » cela donnait #00B3A4 sur papier, soit 2,56:1 pour du
+   texte de 15 px — sous le minimum WCAG AA, et sur onze activités des deux
+   niveaux. « Fabriquer » n'était guère mieux (3,05:1). Le repère principal de
+   la page de niveau était donc le moins lisible. */
+[data-phase="Analyser"]     { --phase: var(--bleu); --phase-encre: #1C5FBF; }
+[data-phase="Représenter"]  { --phase: #C8447A;     --phase-encre: #B03567; }
+[data-phase="Modéliser"]    { --phase: var(--vif);  --phase-encre: #0B7A70; }
+[data-phase="Fabriquer"]    { --phase: #D9791E;     --phase-encre: #9C5410; }
+[data-phase="Produire"]     { --phase: #6B4FCC;     --phase-encre: #6B4FCC; }
 /* Deux phases propres aux projets de fabrication : on ne teste et on
-   n'optimise que lorsqu'un objet existe. Contraste vérifié sur le papier
-   (4,9 et 4,8 : au-dessus de la moyenne des cinq autres). */
-[data-phase="Tester"]       { --phase: #0E7C7B; }
-[data-phase="Optimiser"]    { --phase: #8A6D1F; }
+   n'optimise que lorsqu'un objet existe. */
+[data-phase="Tester"]       { --phase: #0E7C7B;     --phase-encre: #0C6E6D; }
+[data-phase="Optimiser"]    { --phase: #8A6D1F;     --phase-encre: #7A6019; }
 
 /* ---------- SIGNATURE : la chaîne du processus ---------- */
 .niveau-bloc { margin: 3rem 0 0; scroll-margin-top: 4.5rem; /* ancres sous l'en-tête collant */ }
@@ -235,7 +250,7 @@ body {
   border-radius: var(--r);
 }
 .maillon:hover { background: var(--calque); }
-.maillon:hover .num { border-color: var(--phase, var(--vif)); color: var(--encre); }
+.maillon:hover .num { border-color: var(--phase-encre, var(--vif)); color: var(--encre); }
 .maillon:hover .aller { transform: translateX(3px); opacity: 1; }
 .maillon:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
 
@@ -244,9 +259,10 @@ body {
   width: 40px; height: 40px; border-radius: 50%;
   display: grid; place-items: center;
   background: var(--papier);
-  border: 2px solid var(--phase, var(--trait));
+  /* la teinte lisible, jamais la teinte d'identité : ce numéro est du texte */
+  border: 2px solid var(--phase-encre, var(--trait));
   font-family: var(--display); font-weight: 700; font-size: .95rem;
-  color: var(--phase, var(--mine));
+  color: var(--phase-encre, var(--mine));
   transition: border-color .15s, color .15s;
 }
 
@@ -1430,8 +1446,10 @@ body {
   display: grid; grid-template-columns: 2rem 1fr; gap: 0 .8rem;
   padding: .45rem 0; border-top: 1px solid var(--trait);
 }
+/* La lettre est un repère de navigation, pas un ornement : elle doit se lire.
+   En --vif elle tombait à 2,56:1. */
 .lex-alpha-lettre {
-  font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: var(--vif);
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: var(--vif-lisible);
 }
 .lex-alpha ul {
   margin: 0; padding: 0; list-style: none;
@@ -1439,7 +1457,13 @@ body {
 }
 .lex-alpha li::after { content: '·'; color: var(--trait); margin-left: .5rem; }
 .lex-alpha li:last-child::after { content: ''; }
-.lex-alpha a { color: var(--encre); text-decoration: none; font-size: .92rem; }
+/* Quatre-vingt-deux mots à toucher du pouce : sans hauteur minimale, chaque
+   entrée faisait 20 px de haut, sous le minimum de 24 px (WCAG 2.5.8), et sur
+   un téléphone on ouvrait le mot d'à côté. */
+.lex-alpha a {
+  color: var(--encre); text-decoration: none; font-size: .92rem;
+  display: inline-flex; align-items: center; min-height: 24px;
+}
 .lex-alpha a:hover { color: var(--bleu); text-decoration: underline; }
 
 /* Le mot visé par l'index, mis en évidence une seconde : dans soixante-dix
@@ -1465,4 +1489,81 @@ body {
    d'une remontée de pouce. */
 @media (max-width: 30rem) {
   .site-head { position: static; }
+}
+
+/* ---------- LES CITATIONS ----------
+   Les fiches en portent une depuis le début, en bas de page. Elles n'apparaissaient
+   nulle part sur le site : la page d'activité, celle que l'élève ouvre en scannant
+   son QR, s'arrêtait sur la navigation « activité suivante ». Elles reviennent ici,
+   en dernier — après le contenu, avant le pied de site.
+
+   Deux tailles seulement. La normale est une respiration : discrète, on peut ne
+   pas la lire. La forte (--fort) est réservée à l'accueil, une seule page du
+   site : c'est la phrase qui guide tout le reste, et elle ne guide plus rien si
+   elle est partout. */
+.citation {
+  margin: 3.5rem 0 0;
+  padding: 1.75rem 1.25rem 0;
+  border-top: 1px solid var(--trait);
+  text-align: center;
+}
+.citation blockquote {
+  margin: 0;
+  font-family: var(--display); font-weight: 500; font-style: italic;
+  font-size: 1.05rem; line-height: 1.5; letter-spacing: -.01em;
+  color: var(--mine);
+  text-wrap: balance;
+}
+.citation blockquote::before { content: '« '; }
+.citation blockquote::after  { content: ' »'; }
+.citation figcaption {
+  margin-top: .5rem;
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .08em;
+  color: var(--mine);
+}
+.citation figcaption::before { content: '— '; }
+
+/* L'accueil. Pas de trait de séparation : un aplat, parce que c'est un moment
+   de la page et non sa fin. Le guillemet ouvrant sert de repère visuel — c'est
+   le seul ornement du site, et il n'apparaît qu'ici. */
+.citation--fort {
+  margin: 3.5rem 0 0;
+  padding: 2.25rem 1.5rem;
+  border: 0; border-radius: var(--r);
+  background: var(--calque);
+  position: relative;
+}
+.citation--fort::before {
+  content: '“';
+  position: absolute; top: -.15em; left: .35rem;
+  font-family: var(--display); font-size: 4.5rem; line-height: 1;
+  color: var(--trait); pointer-events: none;
+}
+.citation--fort blockquote {
+  position: relative;
+  font-size: 1.32rem; font-weight: 600; font-style: normal;
+  color: var(--encre);
+}
+.citation--fort blockquote::before,
+.citation--fort blockquote::after { content: none; }
+
+@media (max-width: 34rem) {
+  .citation { margin-top: 2.5rem; padding-top: 1.4rem; }
+  .citation blockquote { font-size: .98rem; }
+  .citation--fort { padding: 1.75rem 1.15rem; }
+  .citation--fort blockquote { font-size: 1.12rem; }
+}
+
+/* À l'impression, la citation n'apporte rien : l'élève imprime pour écrire. */
+@media print { .citation { display: none; } }
+
+/* ---------- texte réservé aux lecteurs d'écran ----------
+   Les liens vers les animations extérieures ouvrent un nouvel onglet. La flèche
+   « ↗ » le signale à l'œil, mais elle est aria-hidden : un élève qui navigue au
+   lecteur d'écran se retrouvait dans un onglet qu'il n'avait pas demandé, sans
+   rien pour le lui dire. */
+.hors-ecran {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap; border: 0;
 }

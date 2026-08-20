@@ -1,9 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Citation from '../../../components/Citation.astro';
 import { getCollection } from 'astro:content';
 import { simulateursDe, motsDe } from '../../../data/ressources';
 import { notionsDe } from '../../../data/consolidation';
-import { statSync, existsSync } from 'node:fs';
+import { statSync, existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 export async function getStaticPaths() {
@@ -40,7 +41,20 @@ const pFiche = poids(d.fichePdf), pEbep = poids(d.ebepPdf), pDocx = poids(d.fich
 
 // Une version remplissable en ligne n'existe que si l'extraction du DOCX a
 // abouti (tools/extraire-fiches.cjs) : le bouton ne s'affiche que dans ce cas.
-const aFicheEnLigne = existsSync(path.join(process.cwd(), 'src', 'data', 'fiches', act.id + '.json'));
+const cheminFiche = path.join(process.cwd(), 'src', 'data', 'fiches', act.id + '.json');
+const aFicheEnLigne = existsSync(cheminFiche);
+
+// La citation de la fiche. Elle est imprimée en bas du PDF depuis le début, et
+// l'extraction la conserve — mais aucune page du site ne la montrait, sauf
+// « remplir en ligne », que la plupart des élèves n'ouvrent jamais. Elle
+// appartient pourtant à l'activité : c'est sa phrase de fin.
+let citation = null;
+if (aFicheEnLigne) {
+  try {
+    const blocs = JSON.parse(readFileSync(cheminFiche, 'utf8')).blocs || [];
+    citation = blocs.find(b => b.type === 'citation') || null;
+  } catch { citation = null; }
+}
 
 // Les animations qui parlent de CETTE activité. Proposées ici plutôt que dans
 // un index : au moment où l'élève bloque, il est sur la fiche, pas sur la page
@@ -163,7 +177,7 @@ const donneesLd = [
         {pourAllerPlusLoin.map(s => (
           <li>
             <a href={s.url} rel="noopener external" target="_blank">
-              {s.nom}<span class="simu-fleche" aria-hidden="true">↗</span>
+              {s.nom}<span class="hors-ecran"> (nouvel onglet)</span><span class="simu-fleche" aria-hidden="true">↗</span>
             </a>
             <p>{s.desc}</p>
             <p class="simu-meta">
@@ -200,5 +214,7 @@ const donneesLd = [
         </a>
       : <span></span>}
   </nav>
+
+  {citation && <Citation texte={citation.texte} auteur={citation.auteur} />}
 
 </Base>

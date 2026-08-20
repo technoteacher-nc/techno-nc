@@ -1,0 +1,31 @@
+---
+// La citation de bas de page.
+//
+// Elle se place en dernier, après le contenu et avant le pied de site : c'est
+// une respiration, pas une information. Un élève qui l'ignore n'a rien perdu ;
+// un élève qui la lit repart avec une phrase.
+//
+// Deux emplois :
+//   <Citation cle="5eme" />                     → la citation de la catégorie
+//   <Citation texte="…" auteur="…" />           → celle d'une fiche précise
+//
+// Le `variante="fort"` est réservé à l'accueil : c'est la citation principale
+// du site, celle qui guide tout le reste. Elle est plus grande et sur fond
+// froid — une seule page l'utilise, sinon elle ne guide plus rien.
+
+import { citationDe } from '../data/citations';
+
+// `cle` accepte un repli : <Citation cle={[projet.slug, 'projets']} /> prend la
+// citation propre au projet si elle existe, celle de la catégorie sinon.
+const { cle, texte, auteur, variante } = Astro.props;
+const cles = Array.isArray(cle) ? cle : (cle ? [cle] : []);
+const c = cles.length
+  ? cles.reduce((trouve, k) => trouve || citationDe(k), null)
+  : (texte ? { texte, auteur } : null);
+---
+{c && (
+  <figure class:list={['citation', variante === 'fort' && 'citation--fort']}>
+    <blockquote>{c.texte}</blockquote>
+    {c.auteur && <figcaption>{c.auteur}</figcaption>}
+  </figure>
+)}

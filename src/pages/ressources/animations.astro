@@ -5,6 +5,7 @@
 // concernée (« Pour aller plus loin ») : cette page est l'index de secours,
 // pour l'élève qui cherche par notion plutôt que par activité.
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import { simulateurs, nbSimulateurs } from '../../data/ressources';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -51,7 +52,7 @@ const donneesLd = {
         {groupe.items.map(it => (
           <li>
             <a href={it.url} rel="noopener external" target="_blank">
-              {it.nom}<span class="simu-fleche" aria-hidden="true">↗</span>
+              {it.nom}<span class="hors-ecran"> (nouvel onglet)</span><span class="simu-fleche" aria-hidden="true">↗</span>
             </a>
             <p>{it.desc}</p>
             <p class="simu-meta">
@@ -79,5 +80,7 @@ const donneesLd = {
       Pratique en salle informatique : chacun ouvre la liste sur son poste.
     </p>
   </section>
+
+  <Citation cle="animations" />
 
 </Base>

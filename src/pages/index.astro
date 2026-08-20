@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Citation from '../components/Citation.astro';
 import { getCollection } from 'astro:content';
 
 const acts = await getCollection('activites');
@@ -70,6 +71,13 @@ const donneesLd = {
       );
     })}
   </div>
+
+  <!-- La citation principale du site. Elle est placée ICI, juste après les deux
+       cartes de classe, et non en bas de page : l'accueil fait près de 2 000 px,
+       et une phrase qui doit guider l'année ne peut pas dépendre d'un élève qui
+       défile jusqu'au bout. Elle ne repousse pas pour autant l'action attendue —
+       « choisis ta classe » reste le premier écran. -->
+  <Citation cle="accueil" variante="fort" />
 
   <!-- Avant d'expliquer l'outil, dire à quoi sert la matière. Un élève qui
        arrive ici en septembre ne sait pas ce qu'est la Technologie — beaucoup

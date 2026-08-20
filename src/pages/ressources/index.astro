@@ -8,6 +8,7 @@
 // ce qu'il va trouver avant de cliquer.
 
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import { syntheses, nbTermes, nbSimulateurs } from '../../data/ressources';
 import { nbNotions } from '../../data/consolidation';
 
@@ -85,5 +86,7 @@ const donneesLd = {
       Il ramène directement à cette page.
     </p>
   </section>
+
+  <Citation cle="ressources" />
 
 </Base>

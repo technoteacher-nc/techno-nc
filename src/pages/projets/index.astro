@@ -9,6 +9,7 @@
 // registre les numérote S5-A01…A06, comme la séquence 05 déjà en ligne.
 
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import donnees from '../../data/projets.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -94,5 +95,7 @@ const donneesLd = {
       À coller sur la porte de l'atelier pendant la période de fabrication.
     </p>
   </section>
+
+  <Citation cle="projets" />
 
 </Base>

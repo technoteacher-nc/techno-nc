@@ -1,6 +1,7 @@
 ---
 // Fiches de synthèse — la ressource de révision n°1 avant une évaluation.
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import { syntheses } from '../../data/ressources';
 import { statSync } from 'node:fs';
 import path from 'node:path';
@@ -77,5 +78,7 @@ const donneesLd = {
       À projeter en fin de séance, quand on renvoie à une synthèse.
     </p>
   </section>
+
+  <Citation cle="syntheses" />
 
 </Base>

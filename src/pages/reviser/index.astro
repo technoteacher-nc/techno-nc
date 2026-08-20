@@ -11,6 +11,7 @@
 // pas diverger.
 
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import donnees from '../../data/quiz.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -80,5 +81,7 @@ const donneesLd = {
       À projeter en fin de séquence, avant une évaluation.
     </p>
   </section>
+
+  <Citation cle="reviser" />
 
 </Base>

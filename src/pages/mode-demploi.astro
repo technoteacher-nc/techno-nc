@@ -12,6 +12,7 @@
 // La page s'imprime en A4 pour être collée dans le cahier.
 
 import Base from '../layouts/Base.astro';
+import Citation from '../components/Citation.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
@@ -251,5 +252,7 @@ const donneesLd = [
       Adresse complète : <strong>{site}</strong>
     </p>
   </section>
+
+  <Citation cle="mode-demploi" />
 
 </Base>

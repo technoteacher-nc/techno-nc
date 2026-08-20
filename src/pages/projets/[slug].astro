@@ -8,6 +8,7 @@
 // en dix secondes, celui qui va le mener ouvre ce dont il a besoin.
 
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import donnees from '../../data/projets.json';
 
 export function getStaticPaths() {
@@ -139,5 +140,7 @@ const donneesLd = {
     <a class="btn" href={u('/projets')}>← Tous les projets</a>
     <a class="btn" href={u('/ressources/lexique#consolidation')}>Consolidation maths →</a>
   </nav>
+
+  <Citation cle={[projet.slug, 'projets']} />
 
 </Base>

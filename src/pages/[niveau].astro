@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Citation from '../components/Citation.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -65,4 +66,6 @@ const sequences = [...parSeq.entries()]
       </ol>
     </section>
   ))}
+  <Citation cle={niveau} />
+
 </Base>

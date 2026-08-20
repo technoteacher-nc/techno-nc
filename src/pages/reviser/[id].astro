@@ -141,9 +141,12 @@ const u = p => base + p;
       if (!juste) bouton.classList.add('quiz-choix--faux');
       if (juste) justes++;
 
+      // Ne JAMAIS désigner la bonne réponse par sa couleur : un élève
+      // daltonien lit la consigne et ne peut pas l'exécuter. Le repère donné
+      // est la coche, qui est aussi ce que le surlignage vert accompagne.
       elVerdict.textContent = juste
         ? 'Juste.'
-        : 'Ce n\'est pas ça — la bonne réponse est en vert.';
+        : 'Ce n\'est pas ça — la bonne réponse est celle marquée ✓.';
       elVerdict.classList.add(juste ? 'quiz-verdict--juste' : 'quiz-verdict--faux');
       elVerdict.hidden = false;
       elSuivant.hidden = false;
