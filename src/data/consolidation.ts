@@ -138,6 +138,19 @@ export const consolidation: BlocConsolidation[] = [
         activites: ['s5-a01-4eme', 's5-a05-4eme'],
       },
       {
+        nom: 'Masse et poids', symbole: 'kg et N',
+        def: "Deux grandeurs différentes, qu'on appelle pareil dans la vie de tous les jours. "
+          + "La MASSE est la quantité de matière : elle se mesure en kilogrammes, à la balance, "
+          + "et elle ne change jamais. Le POIDS est la force avec laquelle la Terre attire cet objet : "
+          + "il se mesure en newtons (N), au dynamomètre, et il dépend de l'endroit où l'on se trouve. "
+          + "On passe de l'un à l'autre par P = m × g, avec g ≈ 9,8 N/kg sur Terre.",
+        repere: "Une charge de 250 g a une masse de 0,25 kg et un poids de 0,25 × 9,8 ≈ 2,5 N. "
+          + "Sur la Lune, sa masse serait toujours 0,25 kg, mais son poids six fois plus faible.",
+        piege: "« Je pèse 50 kg » est un abus de langage : 50 kg est une masse. Le poids correspondant "
+          + "vaut environ 490 N. Sur une fiche, on écrit une masse en kg ou en g, jamais en newtons.",
+        activites: ['s5-a05-4eme', 'pont-a4-a05', 'abat-jour-a05'],
+      },
+      {
         nom: 'Seconde, minute, heure', symbole: 's, min, h',
         def: '1 min = 60 s et 1 h = 60 min. Les durées ne se comptent pas en base 10.',
         piege: '1,5 min ne fait pas 1 min 50 s mais 1 min 30 s.',
@@ -283,7 +296,8 @@ export const conversions: TableauConversion[] = [
       '250 g = 0,25 kg',
       '1 g = 1 000 mg',
     ],
-    piege: 'Entre la tonne et le kilogramme il y a trois colonnes, pas une : 1 t = 1 000 kg.',
+    piege: 'Entre la tonne et le kilogramme il y a trois colonnes, pas une : 1 t = 1 000 kg. '
+      + 'Ce tableau ne concerne que la MASSE : le poids, lui, est une force et se mesure en newtons.',
   },
   {
     titre: 'Durées',
@@ -299,10 +313,17 @@ export const conversions: TableauConversion[] = [
   },
   {
     titre: 'Puissance et énergie',
-    regle: 'D’une unité à la suivante : × 1 000.',
-    unites: ['mW', 'W', 'kW', 'MW'],
+    // Les unités vont de la PLUS GRANDE à gauche à la plus petite à droite,
+    // comme dans les cinq tableaux précédents et comme au tableau en classe.
+    // Ce tableau était écrit à l'envers : un élève qui apprend « je vais vers
+    // la droite, je multiplie » y lisait l'inverse de ce qu'il venait de lire
+    // sur les longueurs et sur les masses.
+    regle: 'D’une colonne à la suivante vers la droite : × 1 000. Vers la gauche : ÷ 1 000.',
+    unites: ['MW', 'kW', 'W', 'mW'],
     egalites: [
+      '1 MW = 1 000 kW',
       '1 kW = 1 000 W',
+      '1 W = 1 000 mW',
       '1 kWh = 1 000 Wh',
       'Une LED de 8 W allumée 10 h consomme 80 Wh',
     ],

@@ -1137,7 +1137,9 @@ body {
 /* Le lien vers la fiche papier est ce que le professeur et l'élève absent
    viennent chercher : il sort du repli « Voir le détail » et reste visible
    sans avoir à déplier quoi que ce soit. */
-.proj-fiche { margin: .75rem 0 0; }
+/* Deux boutons possibles : la fiche ordinaire et la version adaptée. Ils se
+   mettent l'un sous l'autre plutôt que de déborder sur un écran de téléphone. */
+.proj-fiche { display: flex; flex-wrap: wrap; gap: .6rem; margin: .75rem 0 0; }
 .btn--fiche { font-size: .82rem; padding: .42rem .8rem; }
 .btn--fiche::before { content: "↓"; margin-right: .45rem; opacity: .65; }
 

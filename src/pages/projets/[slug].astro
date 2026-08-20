@@ -95,6 +95,11 @@ const donneesLd = {
                 <a class="btn btn--fiche" href={u(a.fichePdf)} download>
                   Fiche élève — PDF à imprimer
                 </a>
+                {a.ebepPdf && (
+                  <a class="btn" href={u(a.ebepPdf)} download>
+                    Version adaptée — 1 page
+                  </a>
+                )}
               </p>
             )}
           </div>
