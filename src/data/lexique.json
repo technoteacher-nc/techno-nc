@@ -11,7 +11,9 @@
             "s1-a03-5eme",
             "s1-a03-4eme",
             "s1-a04-5eme",
-            "s1-a04-4eme"
+            "s1-a04-4eme",
+            "s1-a01-5eme",
+            "s1-a01-4eme"
           ]
         },
         {
@@ -214,7 +216,8 @@
             "s1-a06-5eme",
             "s1-a06-4eme",
             "s2-a05-5eme",
-            "s2-a05-4eme"
+            "s2-a05-4eme",
+            "s1-a03-4eme"
           ]
         },
         {
@@ -302,7 +305,9 @@
             "s5-a01-5eme",
             "s1-a06-5eme",
             "s1-a06-4eme",
-            "s2-a01-4eme"
+            "s2-a01-4eme",
+            "s1-a05-5eme",
+            "s1-a05-4eme"
           ]
         },
         {
@@ -405,7 +410,9 @@
             "s6-a01-5eme",
             "s2-a07-4eme",
             "s1-a05-4eme",
-            "s2-a01-4eme"
+            "s2-a01-4eme",
+            "s5-a06-5eme",
+            "s5-a06-4eme"
           ]
         },
         {
@@ -560,7 +567,10 @@
             "s6-a02-4eme",
             "s6-a02-5eme",
             "s6-a04-4eme",
-            "s6-a04-5eme"
+            "s6-a04-5eme",
+            "s2-a05-5eme",
+            "s2-a05-4eme",
+            "s6-a01-4eme"
           ]
         },
         {
@@ -641,7 +651,8 @@
           "activites": [
             "s3-a01-4eme",
             "s3-a02-4eme",
-            "s3-a04-5eme"
+            "s3-a04-5eme",
+            "s3-a01-5eme"
           ]
         },
         {
@@ -795,7 +806,10 @@
           "activites": [
             "s3-a02-5eme",
             "s3-a03-4eme",
-            "s3-a01-5eme"
+            "s3-a01-5eme",
+            "s2-a03-4eme",
+            "s3-a01-4eme",
+            "s3-a02-4eme"
           ]
         },
         {
@@ -846,7 +860,9 @@
           "mot": "Mot de passe",
           "def": "La clé qui protège un compte. Ce qui le rend solide est d'abord sa LONGUEUR, pas les caractères bizarres — et il ne sert que pour un seul site.",
           "activites": [
-            "s4-a01-5eme"
+            "s4-a01-5eme",
+            "s1-a01-5eme",
+            "s1-a01-4eme"
           ]
         },
         {

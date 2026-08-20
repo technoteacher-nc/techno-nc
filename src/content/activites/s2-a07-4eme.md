@@ -16,6 +16,6 @@ seq: "seq02"
 seqTitre: "Séquence 02 — USAGES"
 fichePdf: "/2026/seq02/FICHE_S2-A07_CHOISIR_4eme.pdf"
 ficheDocx: "/2026/seq02/FICHE_S2-A07_CHOISIR_4eme.docx"
-ebepPdf: ""
+ebepPdf: "/2026/seq02/EBEP_S2-A07_CHOISIR_4eme.pdf"
 qr: "/qr/s2-a07-4eme.png"
 ---

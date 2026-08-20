@@ -927,9 +927,14 @@ body {
   display: flex; align-items: flex-start; gap: .6rem;
   padding: .4rem 0; break-inside: avoid; page-break-inside: avoid;
 }
+/* 24 px, jamais moins. C'était 1,15 rem — 18 px — soit sous le minimum de
+   24 × 24 exigé par le WCAG 2.2 (2.5.8). Un élève de 11 ans qui coche au doigt
+   sur un téléphone rate une case de 18 px une fois sur trois, et coche la
+   voisine. Même correctif que celui appliqué aux 82 entrées de l'index du
+   lexique le 20/08 : la cible tactile prime sur la densité. */
 .fl-coches input[type='checkbox'],
 .fl-coche-inline input[type='checkbox'] {
-  flex: none; width: 1.15rem; height: 1.15rem; margin: .2rem 0 0;
+  flex: none; width: 1.5rem; height: 1.5rem; margin: .05rem 0 0;
   accent-color: var(--vif); cursor: pointer;
 }
 .fl-coches label { cursor: pointer; line-height: 1.5; }
