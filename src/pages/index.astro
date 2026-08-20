@@ -72,12 +72,21 @@ const donneesLd = {
     })}
   </div>
 
+  <!-- « Reprendre » : rempli par le navigateur si la mémoire locale contient
+       une dernière activité ouverte. Caché tant qu'il n'y a rien à reprendre —
+       un bouton vide au premier passage ne servirait qu'à occuper la place. -->
+  <p class="reprendre" data-reprendre hidden>
+    <span class="reprendre-label">Tu étais sur</span>
+    <a class="btn btn--fort" data-reprendre-lien href="#"></a>
+  </p>
+
   <!-- La citation principale du site. Elle est placée ICI, juste après les deux
        cartes de classe, et non en bas de page : l'accueil fait près de 2 000 px,
        et une phrase qui doit guider l'année ne peut pas dépendre d'un élève qui
        défile jusqu'au bout. Elle ne repousse pas pour autant l'action attendue —
        « choisis ta classe » reste le premier écran. -->
   <Citation cle="accueil" variante="fort" />
+
 
   <!-- Avant d'expliquer l'outil, dire à quoi sert la matière. Un élève qui
        arrive ici en septembre ne sait pas ce qu'est la Technologie — beaucoup
@@ -156,3 +165,16 @@ const donneesLd = {
     </p>
   </section>
 </Base>
+
+<script>
+  import { dernierePage } from '../scripts/memoire.js';
+
+  const d = dernierePage();
+  const bloc = document.querySelector('[data-reprendre]');
+  if (d && d.lien && bloc) {
+    const a = bloc.querySelector('[data-reprendre-lien]');
+    a.href = d.lien;
+    a.textContent = d.titre + ' →';
+    bloc.hidden = false;
+  }
+</script>

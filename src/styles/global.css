@@ -1567,3 +1567,101 @@ body {
   padding: 0; margin: -1px; overflow: hidden;
   clip-path: inset(50%); white-space: nowrap; border: 0;
 }
+
+/* ---------- l'explication du quiz ----------
+   Elle s'affiche sous le verdict, à chaque réponse. Sans elle, un QCM apprend
+   à l'élève qu'il s'est trompé et rien d'autre : il retient une position de
+   case, pas une notion. */
+.quiz-expli {
+  margin: .6rem 0 0;
+  padding: .75rem .9rem;
+  background: var(--calque);
+  border-left: 3px solid var(--bleu);
+  border-radius: 0 6px 6px 0;
+  font-size: .95rem; line-height: 1.55;
+}
+
+/* ---------- « à revoir » : les questions ratées, à la fin ---------- */
+.quiz-revoir { margin: 1.75rem 0 0; }
+.quiz-revoir h3 {
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem;
+  margin: 0 0 .8rem;
+}
+.quiz-revoir ol {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-direction: column; gap: .9rem;
+}
+.quiz-revoir li {
+  padding: .9rem 1rem;
+  border: 1px solid var(--trait);
+  border-radius: 8px;
+  background: var(--papier);
+}
+.quiz-revoir-q {
+  margin: 0; font-family: var(--display); font-weight: 600;
+  font-size: .98rem; line-height: 1.35;
+}
+/* La bonne réponse porte la coche, comme dans le quiz : le même repère d'un
+   bout à l'autre, et jamais la couleur seule. */
+.quiz-revoir-r {
+  margin: .45rem 0 0; font-size: .95rem; color: var(--encre);
+}
+.quiz-revoir-r::before { content: '✓ '; color: #0B7A70; font-weight: 700; }
+.quiz-revoir-e {
+  margin: .35rem 0 0; font-size: .92rem; color: var(--mine); line-height: 1.5;
+}
+.quiz-revoir-lien {
+  display: inline-flex; align-items: center; min-height: 24px;
+  margin-top: .55rem;
+  font-family: var(--display); font-weight: 600; font-size: .9rem;
+  color: var(--bleu); text-decoration: none;
+}
+.quiz-revoir-lien:hover { text-decoration: underline; }
+
+/* ---------- LA MÉMOIRE LOCALE ----------
+   Trois marques discrètes, remplies par le navigateur : l'activité déjà
+   ouverte, le record d'un quiz, la reprise sur l'accueil. Rien n'est envoyé
+   nulle part — voir src/scripts/memoire.js. */
+
+/* « Reprendre » sur l'accueil */
+.reprendre {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem;
+  margin: 1.5rem 0 0; padding: .9rem 1.1rem;
+  border: 1px dashed var(--trait); border-radius: var(--r);
+}
+.reprendre-label {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--mine);
+}
+
+/* L'activité déjà ouverte, dans la chaîne d'une séquence */
+.maillon--vu .num { background: var(--calque); }
+.maillon-vu {
+  display: inline-block; margin-top: .2rem;
+  font-family: var(--mono); font-size: .6rem; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--mine);
+}
+.maillon-vu::before { content: '✓ '; color: var(--vif-lisible); font-weight: 700; }
+
+/* Le record d'un quiz, sur sa carte */
+.quiz-record {
+  display: inline-flex; align-items: center; align-self: flex-start;
+  margin-top: .5rem; padding: .2rem .55rem; border-radius: 100px;
+  background: var(--calque);
+  font-family: var(--mono); font-size: .64rem; font-weight: 600;
+  letter-spacing: .06em; color: var(--mine);
+  font-variant-numeric: tabular-nums;
+}
+.quiz-record--plein {
+  background: color-mix(in srgb, var(--vif) 16%, transparent);
+  color: var(--vif-lisible);
+}
+.quiz-record--plein::before { content: '✓ '; font-weight: 700; }
+
+@media print { .reprendre, .maillon-vu, .quiz-record { display: none; } }
+
+.mde-efface {
+  align-self: center;
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .06em;
+  color: var(--vif-lisible);
+}

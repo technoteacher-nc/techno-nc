@@ -217,4 +217,17 @@ const donneesLd = [
 
   {citation && <Citation texte={citation.texte} auteur={citation.auteur} />}
 
+  {/* Les données passent par des attributs plutôt que par `define:vars` : un
+      script à variables injectées reste en ligne et n'est pas assemblé par
+      Astro, donc son `import` ne serait pas résolu. */}
+  <div hidden data-visite data-slug={act.id} data-titre={d.titre}
+       data-lien={u(`/${d.annee}/${d.seq}/${act.id}`)}></div>
+
 </Base>
+
+<script>
+  import { noterVisite } from '../../../scripts/memoire.js';
+  // Ouvrir la page suffit à marquer l'activité : l'élève n'a rien à cocher.
+  const n = document.querySelector('[data-visite]');
+  if (n) noterVisite(n.dataset.slug, n.dataset.titre, n.dataset.lien);
+</script>

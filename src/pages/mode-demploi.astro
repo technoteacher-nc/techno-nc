@@ -245,6 +245,31 @@ const donneesLd = [
     </div>
   </section>
 
+  {/* La mémoire locale doit être expliquée là où l'élève peut la couper. Un
+      site qui promet « aucun traceur » et retient quelque chose sans le dire
+      trahirait sa promesse, même si ce quelque chose ne quitte jamais
+      l'appareil. */}
+  <section class="mde-bloc">
+    <h2 class="niveau-titre">Ce que le site retient <span>SUR TON APPAREIL</span></h2>
+    <p class="mde-intro">
+      Pour te retrouver d'une visite à l'autre, le site garde trois choses :
+      les activités que tu as <strong>déjà ouvertes</strong>, ton
+      <strong> meilleur score</strong> à chaque quiz, et la <strong>dernière
+      page</strong> que tu as consultée.
+    </p>
+    <p class="mde-intro">
+      Tout cela reste <strong>dans ton navigateur</strong> et n'est envoyé nulle
+      part : ce site n'a pas de serveur qui pourrait le recevoir. Il n'y a
+      toujours ni compte, ni cookie, ni traceur, et rien qui porte ton nom.
+      Attention quand même : sur un téléphone partagé, c'est la mémoire de
+      l'appareil, pas la tienne.
+    </p>
+    <div class="docs">
+      <button class="btn" type="button" data-effacer-memoire>Effacer ce que le site a retenu</button>
+      <span class="mde-efface" data-efface-fait hidden>C'est effacé.</span>
+    </div>
+  </section>
+
   <section class="qr">
     <img src={u('/qr/accueil.png')} alt="QR code vers l'accueil du site" width="76" height="76" loading="lazy" />
     <p>
@@ -256,3 +281,17 @@ const donneesLd = [
   <Citation cle="mode-demploi" />
 
 </Base>
+
+<script>
+  import { toutEffacer } from '../scripts/memoire.js';
+
+  const bouton = document.querySelector('[data-effacer-memoire]');
+  const fait = document.querySelector('[data-efface-fait]');
+  if (bouton) {
+    bouton.addEventListener('click', () => {
+      toutEffacer();
+      if (fait) fait.hidden = false;
+      bouton.disabled = true;
+    });
+  }
+</script>

@@ -16,7 +16,9 @@
       "Quatre",
       "Six"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Efficacité, facilité d'apprentissage, accessibilité, confort : ce sont les quatre critères de la fiche.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "« Est-ce que j'atteins mon but à coup sûr, sans erreur ? » Quel critère ?",
@@ -25,7 +27,9 @@
       "Le confort",
       "L'accessibilité"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'efficacité, c'est atteindre le but visé, à coup sûr et sans erreur.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "« Est-ce que je comprends comment m'en servir vite, sans notice ? »",
@@ -34,7 +38,9 @@
       "L'accessibilité",
       "La facilité d'apprentissage"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Comprendre vite et sans notice, c'est la facilité d'apprentissage : elle se joue à la première utilisation.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "« Tout le monde peut-il l'utiliser, quel que soit son âge ou son handicap ? »",
@@ -43,7 +49,9 @@
       "L'efficacité",
       "Le confort"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'accessibilité, c'est « utilisable par tous », quels que soient l'âge et le handicap.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "« Est-ce agréable, sans effort ni geste inutile ? » Quel critère ?",
@@ -52,7 +60,9 @@
       "L'accessibilité",
       "Le confort"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le confort, c'est l'absence d'effort et de geste inutile, une fois qu'on sait s'en servir.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "Augmenter fortement le contraste d'un écran améliore surtout…",
@@ -61,7 +71,9 @@
       "l'accessibilité",
       "la facilité d'apprentissage"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Un fort contraste sert d'abord à ceux qui voient mal : c'est de l'accessibilité.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "Rendre une application utilisable par une personne handicapée, c'est…",
@@ -70,7 +82,9 @@
       "une amélioration facultative",
       "un droit"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "L'accessibilité numérique est une obligation légale, pas une option commerciale.",
+     "act": "s2-a06-4eme"
     },
     {
      "q": "Pour choisir un ordinateur pour la salle, on s'appuie sur…",
@@ -79,7 +93,9 @@
       "la marque la plus connue",
       "l'avis du vendeur"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "C'est le cahier des charges qui décide, pas la marque ni le vendeur.",
+     "act": "s2-a07-4eme"
     },
     {
      "q": "Dans un devis, le prix TTC est…",
@@ -88,7 +104,9 @@
       "le prix réellement payé",
       "le prix hors livraison"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "TTC signifie « toutes taxes comprises » : c'est la somme qui sort réellement du budget.",
+     "act": "s2-a07-4eme"
     },
     {
      "q": "Une recommandation solide s'appuie sur…",
@@ -97,7 +115,9 @@
       "au moins deux critères chiffrés",
       "le prix seulement"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Un seul critère ne suffit pas à défendre un choix : deux chiffres valent mieux qu'une impression.",
+     "act": "s2-a07-4eme"
     }
    ]
   },
@@ -117,7 +137,9 @@
       "L'expérience utilisateur",
       "Une marque d'ordinateur"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "UX vient de l'anglais « user experience » : ce que tu ressens en te servant de l'objet, pas ce qu'il fait.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "« Ces écouteurs servent à écouter de la musique sans fil. » Cette phrase parle de…",
@@ -126,7 +148,9 @@
       "l'usage",
       "l'expérience utilisateur"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'utilité répond à « à quoi ça sert ? ». La phrase donne le service rendu, rien d'autre.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "« L'appairage est pénible : je m'y reprends à trois fois. » Cette phrase parle de…",
@@ -135,7 +159,9 @@
       "l'expérience utilisateur",
       "l'usage"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "La phrase parle de ce qu'on ressent en s'en servant : c'est exactement l'expérience utilisateur.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "« Je les utilise surtout le soir, pour ne pas déranger. » Cette phrase parle de…",
@@ -144,7 +170,9 @@
       "l'utilité",
       "l'expérience utilisateur"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'usage dit QUAND et DANS QUELLES CIRCONSTANCES on se sert de l'objet.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "Un objet peut être très utile et pourtant…",
@@ -153,7 +181,9 @@
       "être désagréable à utiliser",
       "coûter cher"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Utilité et expérience utilisateur sont deux choses différentes : un objet peut rendre le service et rester pénible.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "Pour améliorer l'expérience utilisateur d'un objet, on commence par…",
@@ -162,7 +192,9 @@
       "baisser son prix",
       "observer de vrais utilisateurs"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "On ne devine pas l'expérience d'un utilisateur, on l'observe. C'est la première étape de toute amélioration.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "Améliorer l'UX d'un objet change-t-il sa fonction d'usage ?",
@@ -171,7 +203,9 @@
       "Non : le service rendu reste le même",
       "Seulement si on change la matière"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Améliorer l'UX change la façon de s'en servir, pas le service rendu : des écouteurs restent des écouteurs.",
+     "act": "s2-a06-5eme"
     },
     {
      "q": "Pour comparer deux objets techniques, il faut d'abord…",
@@ -180,7 +214,9 @@
       "regarder la publicité",
       "choisir des critères mesurables"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Sans critère mesurable, une comparaison n'est qu'une opinion. C'est ce qui sépare un choix technique d'une préférence.",
+     "act": "s2-a07-5eme"
     },
     {
      "q": "Parmi ces phrases, laquelle est un critère CHIFFRÉ ?",
@@ -189,7 +225,9 @@
       "« Il est joli »",
       "« Il a bonne réputation »"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Un critère chiffré se vérifie avec un instrument. « Joli » et « bonne réputation » ne se mesurent pas.",
+     "act": "s2-a07-5eme"
     },
     {
      "q": "Le modèle le moins cher est-il toujours le meilleur choix ?",
@@ -198,7 +236,9 @@
       "Non : il doit répondre au besoin",
       "Oui, si la marque est connue"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le prix n'est qu'un critère parmi d'autres : un objet qui ne répond pas au besoin est cher, même bon marché.",
+     "act": "s2-a07-5eme"
     }
    ]
   },
@@ -218,7 +258,9 @@
       "La machine",
       "Le pays"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Les premiers nombres désignent le réseau, le dernier désigne la machine à l'intérieur de ce réseau.",
+     "act": "s3-a01-4eme"
     },
     {
      "q": "Une machine en 192.168.0.10 et une en 192.168.1.10 sont…",
@@ -227,7 +269,9 @@
       "sur deux réseaux différents",
       "reliées par un simple câble"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "192.168.0 et 192.168.1 ne sont pas le même réseau : il faut un routeur pour les faire communiquer.",
+     "act": "s3-a01-4eme"
     },
     {
      "q": "La passerelle configurée sur un PC, c'est…",
@@ -236,7 +280,9 @@
       "l'adresse du serveur web à joindre",
       "l'adresse du routeur, sa porte de sortie"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "La passerelle est l'adresse du routeur : tout ce qui ne part pas vers le réseau local sort par elle.",
+     "act": "s3-a03-4eme"
     },
     {
      "q": "À quoi sert un serveur DNS ?",
@@ -245,7 +291,9 @@
       "À stocker les pages web",
       "À chiffrer les mots de passe"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le DNS traduit un nom lisible en adresse IP. Sans lui, il faudrait retenir les chiffres.",
+     "act": "s3-a03-4eme"
     },
     {
      "q": "Que montre la commande ipconfig ?",
@@ -254,7 +302,9 @@
       "La configuration réseau de la machine",
       "La vitesse de la connexion Internet"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "ipconfig affiche la configuration de la machine : son adresse IP, son masque et sa passerelle.",
+     "act": "s3-a02-4eme"
     },
     {
      "q": "Dans https://www.mobitag.nc/ncl, que désigne « .nc » ?",
@@ -263,7 +313,9 @@
       "Le chemin de la page demandée",
       "Le domaine de premier niveau"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le domaine de premier niveau se lit tout à droite du nom de domaine : .nc, .fr, .com.",
+     "act": "s3-a04-4eme"
     },
     {
      "q": "Le « s » de https indique que la connexion est…",
@@ -272,7 +324,9 @@
       "chiffrée",
       "gratuite"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le « s » signifie « sécurisé » : les données sont chiffrées entre le navigateur et le site.",
+     "act": "s3-a04-4eme"
     },
     {
      "q": "Un service en ligne « gratuit » se paie le plus souvent…",
@@ -281,7 +335,9 @@
       "par l'État",
       "par les dons des utilisateurs"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Quand le service est gratuit, ce sont l'attention et les données des utilisateurs qui le financent.",
+     "act": "s3-a04-4eme"
     },
     {
      "q": "YouTube appartient à…",
@@ -290,7 +346,9 @@
       "Microsoft, éditeur de Windows",
       "Google (Alphabet)"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "YouTube a été racheté par Google en 2006 : les deux appartiennent au groupe Alphabet.",
+     "act": "s3-a04-4eme"
     },
     {
      "q": "WhatsApp et Instagram appartiennent à…",
@@ -299,7 +357,9 @@
       "Apple, le fabricant de l'iPhone",
       "Amazon, le site de vente"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Les deux appartiennent à Meta, la société qui possède aussi Facebook.",
+     "act": "s3-a04-4eme"
     }
    ]
   },
@@ -319,7 +379,9 @@
       "À protéger un fichier",
       "À accélérer Internet"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Chaque machine a son adresse, comme chaque maison a la sienne : sans elle, on ne sait pas où livrer.",
+     "act": "s3-a01-5eme"
     },
     {
      "q": "Combien de nombres compte une adresse IP comme 192.168.0.10 ?",
@@ -328,7 +390,9 @@
       "Quatre",
       "Six"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Une adresse IPv4 s'écrit avec quatre nombres séparés par des points, par exemple 192.168.0.10.",
+     "act": "s3-a01-5eme"
     },
     {
      "q": "Quel appareil relie entre elles les machines d'une même salle ?",
@@ -337,7 +401,9 @@
       "Le modem",
       "Le switch (commutateur)"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le commutateur (switch) relie les machines d'un MÊME réseau : c'est le centre de l'étoile.",
+     "act": "s3-a01-5eme"
     },
     {
      "q": "Quel appareil fait communiquer DEUX réseaux différents ?",
@@ -346,7 +412,9 @@
       "Le switch",
       "Le serveur"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le routeur fait le lien entre DEUX réseaux différents : c'est la porte de sortie.",
+     "act": "s3-a01-5eme"
     },
     {
      "q": "Windows, Android et iOS sont…",
@@ -355,7 +423,9 @@
       "des systèmes d'exploitation",
       "des moteurs de recherche"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le système d'exploitation fait fonctionner la machine elle-même ; il est là avant toute application.",
+     "act": "s3-a03-5eme"
     },
     {
      "q": "Chrome, Firefox et Edge sont…",
@@ -364,7 +434,9 @@
       "des systèmes d'exploitation",
       "des navigateurs"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le navigateur AFFICHE les pages web. Il ne les cherche pas : c'est le moteur qui cherche.",
+     "act": "s3-a03-5eme"
     },
     {
      "q": "Qwant, Google Search et Ecosia sont…",
@@ -373,7 +445,9 @@
       "des navigateurs",
       "des réseaux sociaux"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le moteur de recherche CHERCHE les pages, et on s'en sert DANS un navigateur.",
+     "act": "s3-a03-5eme"
     },
     {
      "q": "À quoi sert la commande ping ?",
@@ -382,7 +456,9 @@
       "À vérifier qu'une machine répond",
       "À afficher une page web"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "ping envoie un petit message et attend la réponse : c'est le test le plus simple pour savoir si une machine est joignable.",
+     "act": "s3-a02-5eme"
     },
     {
      "q": "Un ping qui affiche « 0 % perdus » signifie que…",
@@ -391,7 +467,9 @@
       "le câble est débranché",
       "la communication fonctionne"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Aucun paquet perdu : tous les messages envoyés sont revenus, donc la liaison fonctionne.",
+     "act": "s3-a04-5eme"
     },
     {
      "q": "Dans une topologie en étoile, toutes les machines sont reliées…",
@@ -400,7 +478,9 @@
       "les unes aux autres deux à deux",
       "au serveur uniquement"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Dans une étoile, tout passe par le centre : si le commutateur tombe, plus rien ne communique.",
+     "act": "s3-a01-5eme"
     }
    ]
   },
@@ -420,7 +500,9 @@
       "Mon avis sur un produit",
       "Une réponse polie"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'hameçonnage cherche à te faire donner toi-même ce qu'il ne peut pas voler.",
+     "act": "s4-a01-4eme"
     },
     {
      "q": "Devant un mail suspect, le premier réflexe est…",
@@ -429,7 +511,9 @@
       "de vérifier l'adresse de l'expéditeur",
       "de le transférer à un ami"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "L'adresse réelle de l'expéditeur trahit presque toujours la fraude ; le nom affiché, lui, s'imite facilement.",
+     "act": "s4-a01-4eme"
     },
     {
      "q": "Un message qui met la pression (« sous 24 h ou compte fermé ») est…",
@@ -438,7 +522,9 @@
       "une preuve de sérieux",
       "un signal d'alerte"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "L'urgence sert à empêcher de réfléchir. Aucun organisme sérieux ne menace de fermer un compte sous 24 h.",
+     "act": "s4-a01-4eme"
     },
     {
      "q": "En quelle année le RGPD est-il entré en application ?",
@@ -447,7 +533,9 @@
       "2012",
       "2021"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le RGPD s'applique depuis mai 2018 dans toute l'Union européenne.",
+     "act": "s4-a02-4eme"
     },
     {
      "q": "« Je veux savoir quelles données vous avez sur moi. » Quel droit ?",
@@ -456,7 +544,9 @@
       "Le droit d'accès",
       "Le droit à l'effacement"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le droit d'accès permet d'obtenir la copie des données détenues sur toi.",
+     "act": "s4-a02-4eme"
     },
     {
      "q": "« Supprimez mon compte et mes données. » Quel droit ?",
@@ -465,7 +555,9 @@
       "Le droit d'accès",
       "Le droit à l'effacement"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le droit à l'effacement, ou « droit à l'oubli », fait supprimer les données.",
+     "act": "s4-a02-4eme"
     },
     {
      "q": "« Je refuse que mes données servent à la publicité. » Quel droit ?",
@@ -474,7 +566,9 @@
       "Le droit à l'effacement",
       "Le droit d'accès"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le droit d'opposition permet de refuser un usage précis, ici la publicité ciblée.",
+     "act": "s4-a02-4eme"
     },
     {
      "q": "Sur une bannière de cookies, quel choix protège le plus ?",
@@ -483,7 +577,9 @@
       "Tout refuser",
       "Fermer la fenêtre"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Tout refuser ne bloque que les cookies non nécessaires : le site continue de fonctionner.",
+     "act": "s4-a02-4eme"
     },
     {
      "q": "Désactiver la publicité personnalisée…",
@@ -492,7 +588,9 @@
       "ralentit la navigation",
       "ne supprime pas la publicité"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Les publicités restent, mais elles cessent d'être choisies d'après ton profil.",
+     "act": "s4-a02-4eme"
     },
     {
      "q": "À quoi servent les cookies dits « essentiels » ?",
@@ -501,7 +599,9 @@
       "À la publicité ciblée",
       "À mesurer l'audience"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Les cookies essentiels servent au site lui-même — panier, connexion, langue. Ce sont les seuls qui ne se refusent pas.",
+     "act": "s4-a02-4eme"
     }
    ]
   },
@@ -521,7 +621,9 @@
       "La présence d'un chiffre",
       "Le fait qu'on s'en souvienne"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "C'est la longueur qui fait exploser le nombre d'essais à tenter — bien plus qu'un chiffre ajouté à la fin.",
+     "act": "s4-a01-5eme"
     },
     {
      "q": "Peut-on utiliser le même mot de passe sur plusieurs sites ?",
@@ -530,7 +632,9 @@
       "Non, jamais",
       "Oui, si les sites sont connus"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Un seul site piraté suffirait alors à ouvrir tous tes autres comptes.",
+     "act": "s4-a01-5eme"
     },
     {
      "q": "Une trace numérique, c'est…",
@@ -539,7 +643,9 @@
       "une information laissée par mon activité en ligne",
       "un fichier téléchargé"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Naviguer laisse des traces sans qu'on fasse rien de particulier, et elles s'accumulent.",
+     "act": "s4-a02-5eme"
     },
     {
      "q": "Quel est le numéro national contre le cyberharcèlement ?",
@@ -548,7 +654,9 @@
       "17",
       "3018"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le 3018 est le numéro national contre les violences numériques : gratuit, confidentiel, sept jours sur sept.",
+     "act": "s4-a03-5eme"
     },
     {
      "q": "Témoin d'un cyberharcèlement, mon premier réflexe est…",
@@ -557,7 +665,9 @@
       "de répondre à l'auteur",
       "d'ignorer complètement"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Partager, même pour dénoncer, fait circuler le contenu davantage. L'adulte, lui, peut agir.",
+     "act": "s4-a03-5eme"
     },
     {
      "q": "Victime de cyberharcèlement, il est important de…",
@@ -566,7 +676,9 @@
       "garder des preuves (captures d'écran)",
       "répondre pour se défendre"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Sans captures d'écran il ne reste rien à montrer : l'auteur peut effacer ses messages.",
+     "act": "s4-a03-5eme"
     },
     {
      "q": "Le harcèlement en ligne est…",
@@ -575,7 +687,9 @@
       "toléré s'il est anonyme",
       "un délit puni par la loi"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le harcèlement en ligne est puni par la loi, y compris quand son auteur se croit anonyme.",
+     "act": "s4-a03-5eme"
     },
     {
      "q": "À quoi sert un cookie déposé par un site ?",
@@ -584,7 +698,9 @@
       "À accélérer mon ordinateur",
       "À bloquer les publicités"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le cookie permet au site de te retrouver d'une visite à l'autre — et parfois de te suivre d'un site à l'autre.",
+     "act": "s4-a02-5eme"
     },
     {
      "q": "Se faire passer pour quelqu'un d'autre en ligne est…",
@@ -593,7 +709,9 @@
       "un délit",
       "sans conséquence"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Se faire passer pour quelqu'un d'autre est une usurpation d'identité, punie même « pour rire ».",
+     "act": "s4-a03-5eme"
     },
     {
      "q": "Avant 15 ans, s'inscrire à un réseau social nécessite en plus…",
@@ -602,7 +720,9 @@
       "un numéro de téléphone",
       "l'autorisation d'un parent"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Avant 15 ans, l'accord d'un parent est exigé pour que tes données soient traitées.",
+     "act": "s4-a02-5eme"
     }
    ]
   },
@@ -622,7 +742,9 @@
       "Des cotes en millimètres",
       "Une légende"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "En Technologie, toutes les cotes s'écrivent en millimètres : c'est ce qui évite de confondre 1,5 m et 150 mm.",
+     "act": "s5-a02-4eme"
     },
     {
      "q": "Dans une perspective cavalière, les fuyantes sont…",
@@ -631,7 +753,9 @@
       "convergentes vers un point",
       "toujours verticales"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "En perspective cavalière les fuyantes restent parallèles — c'est ce qui la distingue d'une perspective à point de fuite.",
+     "act": "s5-a02-4eme"
     },
     {
      "q": "À quoi sert l'outil « Pousser/Tirer » de SketchUp ?",
@@ -640,7 +764,9 @@
       "À mesurer une distance",
       "À donner du volume à une surface"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Pousser/Tirer transforme une surface plane en volume : c'est le geste de base de SketchUp.",
+     "act": "s5-a03-4eme"
     },
     {
      "q": "À quoi sert un prototype ?",
@@ -649,7 +775,9 @@
       "À vendre l'objet",
       "À remplacer le cahier des charges"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Un prototype sert à découvrir les problèmes tant qu'ils ne coûtent presque rien à corriger.",
+     "act": "s5-a05-4eme"
     },
     {
      "q": "Dans le support de smartphone, quel est le rôle de la ficelle ?",
@@ -658,7 +786,9 @@
       "Bloquer l'angle du dossier",
       "Tenir le téléphone"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "La ficelle empêche le dossier de s'ouvrir davantage : c'est elle qui tient l'inclinaison.",
+     "act": "s5-a05-4eme"
     },
     {
      "q": "Un test n'a de valeur que si son protocole est…",
@@ -667,7 +797,9 @@
       "original",
       "précis et reproductible"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Si un autre groupe ne peut pas refaire le test à l'identique, le résultat ne prouve rien.",
+     "act": "s5-a05-4eme"
     },
     {
      "q": "Le cahier des charges impose un angle d'inclinaison compris entre…",
@@ -676,7 +808,9 @@
       "0° et 15°",
       "70° et 90°"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "C'est la plage imposée par le cahier des charges du support de smartphone.",
+     "act": "s5-a01-4eme"
     },
     {
      "q": "Quel format faut-il exporter pour une impression 3D ?",
@@ -685,7 +819,9 @@
       "STL",
       "PDF"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le STL décrit un volume : c'est le format de l'impression 3D.",
+     "act": "s5-a06-4eme"
     },
     {
      "q": "Quel format faut-il exporter pour une découpe laser ?",
@@ -694,7 +830,9 @@
       "JPG",
       "DXF"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Le DXF décrit des tracés à plat : c'est le format de la découpe laser.",
+     "act": "s5-a06-4eme"
     },
     {
      "q": "La charge imposée par le protocole de test est de…",
@@ -703,7 +841,9 @@
       "1 kg pendant 10 s",
       "50 g pendant 5 minutes"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "C'est la charge et la durée fixées par le protocole, identiques pour tous les groupes.",
+     "act": "s5-a05-4eme"
     }
    ]
   },
@@ -723,7 +863,9 @@
       "Ce qu'il faut obtenir",
       "Combien de temps cela prendra"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le cahier des charges fixe le RÉSULTAT attendu et laisse le concepteur libre du moyen d'y arriver.",
+     "act": "s5-a01-5eme"
     },
     {
      "q": "Pour être utilisable, un critère du cahier des charges doit être…",
@@ -732,7 +874,9 @@
       "original",
       "court"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Un critère qui ne se mesure pas ne permet pas de dire si l'objet convient ou non.",
+     "act": "s5-a01-5eme"
     },
     {
      "q": "À l'échelle 1/20, une cote réelle est…",
@@ -741,7 +885,9 @@
       "divisée par 20",
       "inchangée"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "À l'échelle 1/20, le dessin est vingt fois plus petit que la réalité.",
+     "act": "s5-a05-5eme"
     },
     {
      "q": "1 mètre, combien de centimètres ?",
@@ -750,7 +896,9 @@
       "1 000",
       "100"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "1 m = 100 cm. Deux colonnes du tableau séparent le mètre du centimètre.",
+     "act": "s5-a05-5eme"
     },
     {
      "q": "Une pièce de 4 m dessinée à l'échelle 1/20 mesure sur le plan…",
@@ -759,7 +907,9 @@
       "80 cm",
       "2 cm"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "4 m font 400 cm, et 400 ÷ 20 = 20 cm.",
+     "act": "s5-a05-5eme"
     },
     {
      "q": "Sur un plan d'architecte, une porte se représente par…",
@@ -768,7 +918,9 @@
       "un arc de cercle",
       "une croix"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "L'arc figure le débattement du battant : il montre de quel côté la porte s'ouvre.",
+     "act": "s5-a02-5eme"
     },
     {
      "q": "À quoi sert Sweet Home 3D ?",
@@ -777,7 +929,9 @@
       "À calculer un devis",
       "À dessiner un plan et le voir en 3D"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Sweet Home 3D dessine le plan en 2D et le montre en volume au même moment.",
+     "act": "s5-a03-5eme"
     },
     {
      "q": "À quoi sert une maquette ?",
@@ -786,7 +940,9 @@
       "À décorer la salle",
       "À remplacer le plan"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "La maquette coûte une feuille. L'erreur qu'elle révèle coûterait bien plus cher sur un vrai mur.",
+     "act": "s5-a05-5eme"
     },
     {
      "q": "Comment une imprimante 3D fabrique-t-elle une pièce ?",
@@ -795,7 +951,9 @@
       "En ajoutant de la matière couche par couche",
       "En pliant une plaque"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "L'impression 3D est une fabrication ADDITIVE : elle ajoute la matière au lieu d'en retirer.",
+     "act": "s5-a06-5eme"
     },
     {
      "q": "La découpeuse laser travaille sur…",
@@ -804,7 +962,9 @@
       "des liquides",
       "des matériaux à plat"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "La découpeuse laser ne travaille que dans un plan : tout volume doit d'abord être mis à plat.",
+     "act": "s5-a06-5eme"
     }
    ]
   },
@@ -824,7 +984,9 @@
       "ACQUÉRIR → TRAITER → COMMUNIQUER",
       "COMMUNIQUER → TRAITER → ACQUÉRIR"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "On mesure d'abord, on décide ensuite, on agit en dernier.",
+     "act": "s6-a01-4eme"
     },
     {
      "q": "Que mesure le capteur à ultrasons du mBot ?",
@@ -833,7 +995,9 @@
       "Une température",
       "Une vitesse"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'ultrason mesure le temps que met l'écho à revenir, et en déduit la distance à l'obstacle.",
+     "act": "s6-a03-4eme"
     },
     {
      "q": "Dans le mBot, quel élément TRAITE l'information ?",
@@ -842,7 +1006,9 @@
       "Le capteur",
       "La carte mCore"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "La carte est l'unité de traitement : elle exécute le programme et pilote les moteurs.",
+     "act": "s6-a01-4eme"
     },
     {
      "q": "Que distingue le capteur suiveur de ligne ?",
@@ -851,7 +1017,9 @@
       "Le noir et le blanc",
       "Le proche et le lointain"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le suiveur de ligne mesure la lumière renvoyée : le noir en renvoie peu, le blanc beaucoup.",
+     "act": "s6-a03-4eme"
     },
     {
      "q": "À quoi sert la structure SI / ALORS / SINON ?",
@@ -860,7 +1028,9 @@
       "À répéter une action",
       "À enregistrer une valeur"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "SI / ALORS / SINON est ce qui rend le robot capable de réagir au lieu de seulement répéter.",
+     "act": "s6-a03-4eme"
     },
     {
      "q": "« Répéter indéfiniment » fait tester la condition…",
@@ -869,7 +1039,9 @@
       "au démarrage seulement",
       "en boucle, sans arrêt"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "« Répéter indéfiniment » teste la condition à chaque tour, tant que le programme tourne.",
+     "act": "s6-a02-4eme"
     },
     {
      "q": "Que veut dire « téléverser » un programme ?",
@@ -878,7 +1050,9 @@
       "L'envoyer dans le robot",
       "Le sauvegarder sur le PC"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Téléverser copie le programme dans la carte : le robot peut ensuite fonctionner sans le PC.",
+     "act": "s6-a02-4eme"
     },
     {
      "q": "Un programme d'évitement où « > » remplace « < » fait que le robot…",
@@ -887,7 +1061,9 @@
       "ne démarre pas",
       "avance plus vite"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "En inversant la comparaison, on inverse la décision : le robot fonce là où il devait éviter.",
+     "act": "s6-a03-4eme"
     },
     {
      "q": "Un capteur dont la mesure n'est reliée à aucune condition…",
@@ -896,7 +1072,9 @@
       "accélère le programme",
       "ne sert à rien : rien n'est décidé"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Une mesure qu'aucune condition n'utilise ne change rien au comportement du robot.",
+     "act": "s6-a03-4eme"
     },
     {
      "q": "Dans quel ordre se lit la chaîne d'énergie ?",
@@ -905,7 +1083,9 @@
       "ALIMENTER → DISTRIBUER → CONVERTIR → TRANSMETTRE",
       "CONVERTIR → TRANSMETTRE → ALIMENTER → DISTRIBUER"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "L'énergie vient de la batterie, passe par la distribution, se convertit en mouvement, puis se transmet aux roues.",
+     "act": "s6-a01-4eme"
     }
    ]
   },
@@ -925,7 +1105,9 @@
       "Une suite d'instructions exécutées dans l'ordre",
       "Un langage de programmation"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Un algorithme se décrit avant tout programme : c'est la méthode, pas le logiciel.",
+     "act": "s6-a01-5eme"
     },
     {
      "q": "À quoi sert une boucle dans un programme ?",
@@ -934,7 +1116,9 @@
       "À arrêter le programme",
       "À créer une variable"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "La boucle évite de réécrire dix fois la même instruction.",
+     "act": "s6-a02-5eme"
     },
     {
      "q": "« Répéter 4 fois : avancer, tourner à droite » trace…",
@@ -943,7 +1127,9 @@
       "une ligne droite",
       "un carré"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Quatre côtés et quatre quarts de tour : la figure se referme sur elle-même.",
+     "act": "s6-a02-5eme"
     },
     {
      "q": "Dans Scratch, qu'est-ce qui déclenche le programme ?",
@@ -952,7 +1138,9 @@
       "L'ouverture du fichier",
       "Le branchement du câble"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Un programme Scratch attend un événement pour démarrer. Sans lui, rien ne se passe.",
+     "act": "s6-a03-5eme"
     },
     {
      "q": "À quoi sert une variable ?",
@@ -961,7 +1149,9 @@
       "À mémoriser une valeur",
       "À ralentir le programme"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "La variable garde une valeur pour la réutiliser plus loin : un score, un compteur, une distance.",
+     "act": "s6-a03-5eme"
     },
     {
      "q": "Pour tracer un carré, combien de fois répète-t-on « avancer puis tourner » ?",
@@ -970,7 +1160,9 @@
       "6 fois",
       "4 fois"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Un carré a quatre côtés, donc quatre répétitions d'« avancer puis tourner ».",
+     "act": "s6-a02-5eme"
     },
     {
      "q": "Un ordinateur exécute…",
@@ -979,7 +1171,9 @@
       "ce qu'il pense être juste",
       "ce qui est le plus rapide"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "L'ordinateur n'interprète pas : une erreur de programme est toujours une erreur de celui qui l'a écrit.",
+     "act": "s6-a01-5eme"
     },
     {
      "q": "De combien de degrés tourne-t-on à chaque coin d'un carré ?",
@@ -988,7 +1182,9 @@
       "90 degrés",
       "180 degrés"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Un tour complet fait 360°, et à chaque coin du carré on en tourne le quart.",
+     "act": "s6-a02-5eme"
     },
     {
      "q": "Une instruction, c'est…",
@@ -997,7 +1193,9 @@
       "une boucle",
       "un ordre élémentaire"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "L'instruction est la plus petite action possible ; un programme en assemble beaucoup.",
+     "act": "s6-a01-5eme"
     },
     {
      "q": "Écrire l'algorithme AVEC une boucle plutôt que sans permet…",
@@ -1006,7 +1204,9 @@
       "d'aller plus vite à l'écran",
       "de changer le résultat"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "La boucle raccourcit le programme sans changer ce qu'il fait, donc sans changer le résultat.",
+     "act": "s6-a02-5eme"
     }
    ]
   },
@@ -1026,7 +1226,9 @@
       "Un objet qui fonctionne sur batterie",
       "Un objet sans aucune pièce mobile"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Pas de pile, pas de branchement : le pavillon n'a aucune chaîne d'énergie.",
+     "act": null
     },
     {
      "q": "En quelle unité mesure-t-on le niveau sonore ?",
@@ -1035,7 +1237,9 @@
       "En décibels",
       "En lux"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le décibel mesure le niveau sonore ; le hertz mesure une fréquence.",
+     "act": null
     },
     {
      "q": "Un GAIN, c'est…",
@@ -1044,7 +1248,9 @@
       "la moyenne des trois essais",
       "la différence entre deux mesures"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Un gain se calcule toujours par rapport à une référence, jamais seul.",
+     "act": null
     },
     {
      "q": "Dans un plan d'expérience, combien de grandeurs change-t-on à la fois ?",
@@ -1053,7 +1259,9 @@
       "Deux",
       "Toutes"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "C'est la règle du plan d'expérience : sinon, on ne sait plus ce qui a produit l'effet.",
+     "act": null
     },
     {
      "q": "Comment calcule-t-on la génératrice g d'un cône ?",
@@ -1062,7 +1270,9 @@
       "g² = r² + h²",
       "g = 2 × π × r"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le rayon, la hauteur et la génératrice forment un triangle rectangle : c'est le théorème de Pythagore.",
+     "act": null
     },
     {
      "q": "Comment calcule-t-on l'angle du secteur à découper ?",
@@ -1071,7 +1281,9 @@
       "θ = 360° × h ÷ g",
       "θ = 360° × r ÷ g"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "L'angle se déduit d'une proportion entre le tour du cercle de base et celui du secteur.",
+     "act": null
     },
     {
      "q": "Le développé d'un cône est…",
@@ -1080,7 +1292,9 @@
       "un rectangle très allongé",
       "un triangle isocèle"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Une fois roulé, le secteur referme exactement le cône.",
+     "act": null
     },
     {
      "q": "Au-delà de 85 dB, chaque hausse de 3 dB divise la durée sans danger par…",
@@ -1089,7 +1303,9 @@
       "2",
       "10"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Chaque hausse de 3 dB double l'énergie sonore reçue : la durée sans danger est divisée par deux.",
+     "act": null
     },
     {
      "q": "À quoi sert de calculer l'étendue de trois essais ?",
@@ -1098,7 +1314,9 @@
       "À trouver la valeur moyenne",
       "À savoir si la mesure est fiable"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Une étendue faible veut dire que rien n'a bougé entre les essais : la mesure est fiable.",
+     "act": null
     },
     {
      "q": "Si on combine les meilleures modalités, le gain obtenu est…",
@@ -1107,7 +1325,9 @@
       "exactement égal à la somme des gains",
       "deux fois la somme des gains"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Les effets se recouvrent en partie : ils ne s'additionnent pas exactement.",
+     "act": null
     }
    ]
   },
@@ -1127,7 +1347,9 @@
       "améliorer l'un dégrade l'autre",
       "ils sont tous les deux chiffrés"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "C'est ce qui interdit de tout optimiser en même temps : il faudra choisir un compromis.",
+     "act": null
     },
     {
      "q": "En quelle unité mesure-t-on l'éclairement ?",
@@ -1136,7 +1358,9 @@
       "En watts",
       "En décibels"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le lux mesure l'éclairement reçu par une surface ; le watt mesure une puissance.",
+     "act": null
     },
     {
      "q": "Comment calcule-t-on l'aire d'un disque ?",
@@ -1145,7 +1369,9 @@
       "2 × π × r",
       "π × r × r"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "π × D donne le périmètre, pas l'aire. L'aire se calcule avec le rayon, multiplié deux fois.",
+     "act": null
     },
     {
      "q": "Le développé d'un cylindre est…",
@@ -1154,7 +1380,9 @@
       "un rectangle de longueur π × D",
       "un triangle"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Déroulé, le tour du cylindre devient la longueur du rectangle.",
+     "act": null
     },
     {
      "q": "Pour un diamètre de 120 mm, la longueur développée vaut environ…",
@@ -1163,7 +1391,9 @@
       "120 mm",
       "240 mm"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "3,14 × 120 = 377 : le panneau est trois fois plus long que le diamètre.",
+     "act": null
     },
     {
      "q": "Le pont de matière entre deux perçages doit valoir au moins…",
@@ -1172,7 +1402,9 @@
       "10 mm",
       "3 mm"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "En dessous de cette valeur, le carton se déchire au montage.",
+     "act": null
     },
     {
      "q": "Une pièce PLATE se fabrique de préférence…",
@@ -1181,7 +1413,9 @@
       "à la découpeuse laser",
       "à la main"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le laser travaille à plat et va vite ; imprimer en 3D une pièce plate serait long et inutile.",
+     "act": null
     },
     {
      "q": "Quel format exporte-t-on pour la découpe laser ?",
@@ -1190,7 +1424,9 @@
       "STL",
       "OBJ"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Le DXF décrit des tracés à plat, ce que la découpeuse sait suivre.",
+     "act": null
     },
     {
      "q": "Le taux d'ajour d'un panneau est…",
@@ -1199,7 +1435,9 @@
       "une masse",
       "un pourcentage"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "C'est la part percée de la surface totale : un rapport, donc un pourcentage.",
+     "act": null
     },
     {
      "q": "Le point de compromis, c'est le réglage où…",
@@ -1208,7 +1446,9 @@
       "les deux critères passent encore",
       "la structure est la plus solide"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le compromis n'est le meilleur nulle part : il est le moins mauvais partout.",
+     "act": null
     }
    ]
   },
@@ -1228,7 +1468,9 @@
       "La distance entre les deux appuis",
       "La hauteur du tablier"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "La portée ne se choisit pas : c'est le vide à franchir qui l'impose.",
+     "act": null
     },
     {
      "q": "Quand une poutre fléchit sous une charge, le DESSUS est…",
@@ -1237,7 +1479,9 @@
       "tendu",
       "sans contrainte"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "En fléchissant, le dessus se raccourcit : il est comprimé.",
+     "act": null
     },
     {
      "q": "Quand une poutre fléchit sous une charge, le DESSOUS est…",
@@ -1246,7 +1490,9 @@
       "sans contrainte",
       "tendu"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "En fléchissant, le dessous s'allonge : il est tendu.",
+     "act": null
     },
     {
      "q": "À quantité de matière égale, qu'est-ce qui fait la résistance ?",
@@ -1255,7 +1501,9 @@
       "La forme",
       "Le poids"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Toutes les feuilles A4 ont la même matière et la même masse : seule la forme peut expliquer l'écart.",
+     "act": null
     },
     {
      "q": "Comment calcule-t-on le ratio du projet ?",
@@ -1264,7 +1512,9 @@
       "Charge de rupture × masse",
       "Charge de rupture ÷ masse de la structure"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "On rapporte ce que le pont porte à ce qu'il pèse : c'est ce qui rend les groupes comparables.",
+     "act": null
     },
     {
      "q": "Un ratio de 40 signifie que le pont porte…",
@@ -1273,7 +1523,9 @@
       "40 fois sa propre masse",
       "40 % de sa masse"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Le ratio n'a pas d'unité : c'est un nombre de fois.",
+     "act": null
     },
     {
      "q": "Où le gobelet doit-il être posé pendant l'essai ?",
@@ -1282,7 +1534,9 @@
       "Près d'un appui",
       "Sur un appui"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "Au milieu, la flexion est maximale. C'est le cas le plus défavorable, et il doit être le même pour tous.",
+     "act": null
     },
     {
      "q": "Deux mesures ne se comparent que si…",
@@ -1291,7 +1545,9 @@
       "le protocole est identique",
       "les groupes ont le même effectif"
      ],
-     "bonne": 2
+     "bonne": 2,
+     "expli": "Deux essais menés différemment ne mesurent pas la même chose.",
+     "act": null
     },
     {
      "q": "Pour savoir si une modification améliore le pont, on change…",
@@ -1300,7 +1556,9 @@
       "au moins deux choses",
       "une seule chose à la fois"
      ],
-     "bonne": 3
+     "bonne": 3,
+     "expli": "Si on change deux choses à la fois, on ne sait plus laquelle a produit l'effet.",
+     "act": null
     },
     {
      "q": "La fibre neutre d'une poutre…",
@@ -1309,7 +1567,9 @@
       "casse en premier",
       "est toujours en bas"
      ],
-     "bonne": 1
+     "bonne": 1,
+     "expli": "La fibre neutre est la ligne du milieu : ni comprimée, ni tendue.",
+     "act": null
     }
    ]
   }

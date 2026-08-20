@@ -1,3 +1,10 @@
+// ⚠ LE LEXIQUE N'EST PLUS ÉCRIT ICI. Il vit dans src/data/lexique.json, lu
+// aussi par gen_lexique.js pour produire le document imprimable. Tant que le
+// fichier portait sa propre copie des termes, les deux ont divergé sans que
+// rien ne le signale : 82 mots en ligne, 18 dans le PDF que les élèves
+// impriment. Modifier un terme se fait donc dans le JSON.
+import donneesLexique from './lexique.json';
+
 // Données des ressources, partagées entre les pages qui les affichent.
 //
 // Elles vivaient toutes dans une seule page `/ressources` qui avait fini à
@@ -59,146 +66,14 @@ export const syntheses = [
 export const lexiquePdf = '/ressources/LEXIQUE_Technologie_Cycle4.pdf';
 export const lexiqueDocx = '/ressources/LEXIQUE_Technologie_Cycle4.docx';
 
-export const lexique = [
-  {
-    titre: 'Analyser et concevoir les objets et systèmes techniques',
-    repere: 'OST',
-    termes: [
-      ['Objet et Système Technique (OST)', "Tout ce qui a été fabriqué par l'homme pour répondre à un besoin : un objet, mais aussi un service, un logiciel ou un programme. Une montre connectée est un objet ; la montre reliée au réseau qui la localise forme un système.", ['s2-a06-4eme','s2-a06-5eme','s2-a07-4eme','s2-a07-5eme']],
-      ['Besoin', "Ce qui manque à quelqu'un et que l'objet doit venir combler. On le formule du point de vue de l'utilisateur, pas de celui qui fabrique.", ['s5-a01-4eme','s5-a01-5eme','s2-a07-5eme','s2-a06-4eme']],
-      ['Cahier des charges (CDC)', "La liste écrite de ce que l'objet doit faire et des limites à respecter : les fonctions attendues, les contraintes et les critères mesurables. Il dit CE QU'IL FAUT OBTENIR, jamais comment s'y prendre.", ['s5-a01-4eme','s5-a01-5eme','s5-a02-4eme','s5-a04-4eme','s5-a05-4eme','s5-a03-5eme','pont-a4-a01','abat-jour-a01','amplificateur-passif-a01']],
-      ['Usage', "La façon dont on se sert d'un objet, et dans quelles circonstances. « Je mets mes écouteurs le soir, pour ne pas déranger » décrit un usage.", ['s2-a06-4eme','s2-a06-5eme','s2-a07-5eme']],
-      ['Utilité', "Ce à quoi l'objet sert, sa raison d'exister. « Des écouteurs servent à écouter de la musique sans fil » décrit l'utilité.", ['s2-a06-5eme','s2-a07-4eme']],
-      ['Expérience utilisateur (UX)', "Ce que ressent une personne pendant qu'elle se sert d'un objet : facile ou pénible, agréable ou agaçant. Un objet peut être très utile et désagréable à utiliser.", ['s2-a06-4eme','s2-a06-5eme']],
-      ['Critère', "Ce qu'on décide de mesurer pour dire si l'objet convient. Un critère se vérifie avec un instrument, jamais au jugé : « tient 250 g pendant 1 minute » est un critère, « solide » n'en est pas un.", ['s2-a07-4eme','s2-a07-5eme','s5-a01-4eme','s5-a01-5eme']],
-      ['Compromis', "La solution retenue quand deux critères s'opposent et qu'on ne peut pas satisfaire les deux à fond. On perd un peu des deux côtés, exprès.", ['s2-a07-4eme','s5-a01-4eme']],
-      ['Réparabilité', "La facilité avec laquelle un objet peut être réparé : pièces trouvables, vis accessibles, notice disponible. Plus un objet est réparable, plus il dure.", ['s2-a07-4eme','s2-a07-5eme']],
-      ['Contrainte', "Une obligation que le concepteur ne peut pas contourner : la sécurité, le prix, la place disponible, le respect de l'environnement. Elle limite les solutions possibles.", ['s5-a01-4eme','s5-a01-5eme']],
-      ['Cycle de vie', "Toutes les étapes de la vie d'un objet, dans l'ordre : on extrait la matière, on fabrique, on transporte, on utilise, puis on jette ou on recycle. Chaque étape a un coût pour l'environnement.", ['s2-a07-4eme']],
-    ],
-  },
-  {
-    titre: 'La structure interne — Matière, Énergie, Information',
-    repere: 'MEI',
-    // Le thème s'appelait « Matière, Énergie, Information » sans définir aucun
-    // des trois mots : il commençait directement par les deux chaînes. Un élève
-    // qui ne sait pas ce qu'est l'énergie ne comprend pas ce qu'une chaîne
-    // d'énergie enchaîne. Les trois mots viennent donc en premier, chacun avec
-    // ses formes et des exemples pris dans les objets de l'année.
-    termes: [
-      ['Système technique', "Un objet, ou un ensemble d'objets, qui rend un service en faisant circuler trois choses : de la matière, de l'énergie et de l'information. Le réseau du collège en est un : des câbles et un commutateur (matière), les prises qui les alimentent (énergie), les données qui y circulent (information).", ['s3-a01-4eme','s3-a01-5eme','s6-a01-4eme','s6-a01-5eme']],
-      ['Matière', "Tout ce dont l'objet est fait, et tout ce qu'il transforme ou déplace. Le carton de l'abat-jour, la feuille du pont, l'acier d'un vélo, les câbles du réseau. Un système technique reçoit de la matière, la travaille, et en ressort autre chose.", ['s6-a01-4eme','s6-a01-5eme','s2-a07-4eme']],
-      ['Énergie', "Ce qui fait fonctionner l'objet : sans elle, rien ne bouge, ne chauffe et ne s'allume. Elle existe sous plusieurs formes — électrique (la prise, la pile), mécanique (un mouvement, le vent), thermique (la chaleur), lumineuse (le soleil), chimique (l'essence, la nourriture). Un objet technique fait passer l'énergie d'une forme à une autre : une lampe transforme de l'électricité en lumière, un moteur en mouvement.", ['s6-a01-4eme','s6-a01-5eme']],
-      ['Énergie fossile', "Une énergie tirée de matières enfouies dans le sol depuis des millions d'années : charbon, pétrole, gaz. Deux conséquences : le stock ne se refait pas à notre échelle, et les brûler rejette du CO₂. En Nouvelle-Calédonie, une grande part de l'électricité vient encore de centrales thermiques.", ['s2-a07-4eme','s6-a01-4eme']],
-      ['Énergie renouvelable', "Une énergie dont la source se reconstitue en permanence : le soleil (photovoltaïque), le vent (éolien), l'eau qui tombe (hydraulique), la biomasse. Elle ne s'épuise pas, mais elle n'est pas disponible à volonté : un panneau ne produit rien la nuit. En Nouvelle-Calédonie, l'hydraulique de Yaté et les fermes solaires y prennent une place croissante.", ['s2-a07-4eme','s6-a01-4eme']],
-      ['Information', "Ce qui renseigne ou ce qui commande — et qui ne pèse rien : une valeur, un signal, un message. Dans un objet technique elle suit toujours le même chemin : on l'ACQUIERT avec un capteur, on la TRAITE avec un microcontrôleur, on la COMMUNIQUE par un écran, une LED ou un réseau. Elle change de forme en route : courant électrique dans un câble, lumière dans une fibre, ondes radio dans le Wi-Fi, texte ou image sur un écran.", ['s6-a01-4eme','s6-a01-5eme','s3-a02-5eme']],
-      ['Signal analogique et signal numérique', "Un signal analogique varie de façon continue, comme l'aiguille d'un thermomètre qui monte doucement. Un signal numérique ne prend que deux états, 0 ou 1. Un ordinateur ne sait traiter que du numérique : le capteur mesure d'abord, puis convertit.", ['s6-a01-4eme','s6-a03-4eme']],
-      ["Chaîne d'énergie", "La suite des éléments qui amènent l'énergie jusqu'à l'action voulue — un mouvement, de la chaleur, de la lumière. Quatre étapes : alimenter (la batterie), distribuer (le relais), convertir (le moteur, la lampe), transmettre (les engrenages).", ['s6-a01-4eme','s6-a01-5eme']],
-      ["Chaîne d'information", "La suite des éléments qui prennent une information, la traitent et la transmettent : le capteur mesure, le microcontrôleur décide, l'écran ou la LED répond. C'est elle qui commande la chaîne d'énergie.", ['s6-a01-4eme','s6-a03-4eme']],
-      ['Capteur', "Élément de la chaîne d'information qui prélève une grandeur physique (température, présence, distance…) et la transforme en signal exploitable.", ['s6-a01-4eme','s6-a03-4eme']],
-      ['Actionneur', "Élément de la chaîne d'énergie qui transforme l'énergie reçue en un effet physique (rotation d'un moteur, mouvement d'un vérin…).", ['s6-a01-4eme']],
-      ['Microcontrôleur', "Unité de traitement de l'information qui exécute le programme pour piloter les actionneurs en fonction des données des capteurs.", ['s6-a01-4eme','s6-a02-4eme']],
-    ],
-  },
-  {
-    titre: 'Informatique et programmation',
-    repere: 'CODE',
-    termes: [
-      ['Algorithme', 'Description précise, étape par étape, de la manière de résoudre un problème.', ['s6-a01-5eme','s6-a02-5eme']],
-      ['Programme (codage)', "Assemblage d'instructions informatiques (souvent par blocs au collège) qui guide un robot ou un objet connecté.", ['s6-a02-4eme','s6-a02-5eme','s6-a04-4eme','s6-a04-5eme']],
-      ['Instruction conditionnelle', 'Structure de type « Si… alors… sinon » qui exécute des actions différentes selon une condition.', ['s6-a03-4eme','s6-a03-5eme']],
-      ['Variable', "Donnée stockée par le programme (nombre, mot ou booléen) dont la valeur peut changer pendant l'exécution.", ['s6-a03-5eme']],
-      ['Boucle', "Bloc de programme qui répète des instructions au lieu de les réécrire. « Répéter 4 fois » remplace quatre lignes identiques.", ['s6-a01-5eme','s6-a02-5eme','s6-a02-4eme']],
-      ['Événement', "Ce qui déclenche un programme : un clic sur le drapeau vert, l'appui sur une touche, un capteur qui change d'état. Sans événement, rien ne démarre.", ['s6-a02-5eme','s6-a03-5eme']],
-      ['Téléverser', "Envoyer le programme depuis l'ordinateur vers l'objet qui va l'exécuter — la carte du robot, par exemple. Tant qu'on n'a pas téléversé, le robot exécute l'ancien programme.", ['s6-a02-4eme','s6-a03-4eme','s6-a04-4eme']],
-      ['Réseau local', "Ensemble d'équipements informatiques (terminaux, commutateurs…) reliés entre eux pour échanger des données au sein d'un bâtiment.", ['s3-a01-4eme','s3-a01-5eme','s3-a02-4eme','s3-a04-5eme']],
-      // Les élèves se sont perdus en salle Filius faute d'une définition
-      // explicite : ils lisaient « 192.168.0.10 » comme un nombre unique, sans
-      // voir les quatre parties ni comprendre que les valeurs sont attribuées.
-      ['Adresse IP', "Le numéro qui identifie une machine sur un réseau, comme un numéro de maison identifie une maison dans une rue. Elle s'écrit avec QUATRE nombres séparés par des points : 192.168.0.10. Chaque nombre va de 0 à 255, jamais plus. Ces valeurs ne se calculent pas et ne veulent rien dire en elles-mêmes : elles sont attribuées. Dans la salle, les trois premiers nombres (192.168.0) sont les mêmes pour toutes les machines — c'est le RÉSEAU ; seul le dernier change d'une machine à l'autre — c'est LA MACHINE.", ['s3-a01-4eme','s3-a01-5eme','s3-a02-4eme','s3-a03-4eme','s3-a04-5eme']],
-      ['Masque de sous-réseau', "Le nombre qui dit quelle partie de l'adresse IP désigne le réseau et quelle partie désigne la machine. Avec 255.255.255.0, les trois premiers nombres sont le réseau et le dernier est la machine.", ['s3-a02-4eme','s3-a04-5eme']],
-      ['Commutateur (switch)', "Boîtier qui relie entre elles les machines d'un MÊME réseau. Chaque machine y est branchée par un câble : c'est la topologie en étoile.", ['s3-a01-4eme','s3-a02-4eme','s3-a04-5eme']],
-      ['Routeur', "Appareil qui fait communiquer DEUX réseaux différents. Il possède une adresse dans chacun d'eux et aiguille les données de l'un vers l'autre.", ['s3-a01-4eme','s3-a03-4eme']],
-      ['Passerelle', "L'adresse du routeur, enregistrée dans chaque machine : c'est la porte de sortie du réseau. Sans elle, une machine ne peut joindre que ses voisines directes.", ['s3-a03-4eme']],
-      ['Serveur DNS', "L'annuaire d'Internet : il traduit une adresse écrite en toutes lettres (www.exemple.nc) en adresse IP, la seule que les machines savent utiliser.", ['s3-a03-4eme']],
-      ['ping', "Commande qui envoie un petit message à une machine et attend sa réponse. 0 % de paquets perdus : elle répond, la communication fonctionne. 100 % perdus : elle ne répond pas.", ['s3-a02-4eme','s3-a04-5eme']],
-    ],
-  },
-  {
-    titre: 'Innovation et prototypage',
-    repere: 'PROTO',
-    termes: [
-      ['Prototypage', "Réalisation d'un modèle concret, souvent simplifié, pour tester et valider des solutions techniques avant la fabrication finale.", ['s5-a05-4eme','s5-a05-5eme','s5-a06-4eme','s5-a06-5eme','pont-a4-a04','abat-jour-a05']],
-      ['CAO / Modélisation numérique', "Utilisation de logiciels (Sweet Home 3D, SketchUp, Tinkercad…) pour créer une représentation virtuelle d'un objet en 3D et simuler son comportement.", ['s5-a03-4eme','s5-a03-5eme','s5-a04-4eme','s5-a04-5eme']],
-      ['Fabrication soustractive', "Procédé qui fabrique en RETIRANT de la matière : la découpe laser, la scie, la perceuse. C'est l'inverse de la fabrication additive.", ['s5-a06-4eme','s5-a06-5eme']],
-      ['Découpe laser', "Machine qui découpe une plaque à plat en la brûlant sur un trait très fin. Elle ne sait travailler que le plat : un volume doit d'abord être développé.", ['s5-a06-4eme','s5-a06-5eme']],
-      ['DXF', "Le format de fichier envoyé à la découpe laser. Il ne contient que des traits, à plat.", ['s5-a06-4eme']],
-      ['STL', "Le format de fichier envoyé à l'imprimante 3D. Il contient un volume.", ['s5-a06-4eme','s5-a06-5eme']],
-      ['Temps machine', "La durée pendant laquelle une machine est occupée par TA pièce. C'est un coût : pendant ce temps, personne d'autre ne peut l'utiliser.", ['s5-a06-4eme','s5-a06-5eme']],
-      ['Fabrication additive', 'Procédé de fabrication par ajout de matière, couramment appelé impression 3D.', ['s5-a06-4eme','s5-a06-5eme']],
-    ],
-  },
-  {
-    titre: 'Internet, données et citoyenneté numérique',
-    repere: 'NUM',
-    termes: [
-      ['URL', "L'adresse d'une page sur Internet, celle qu'on tape dans la barre du navigateur. Elle se lit par morceaux : https://www.exemple.nc/page — le protocole, le nom du site, le pays, puis la page.", ['s3-a03-5eme','s3-a04-4eme']],
-      ['Navigateur', "Le logiciel qui affiche les pages web : Chrome, Firefox, Edge, Safari. Il n'est pas un moteur de recherche — c'est la fenêtre, pas le moteur.", ['s3-a03-5eme','s3-a04-4eme','s3-a03-4eme']],
-      ['Moteur de recherche', "Le service qui cherche des pages à partir de mots-clés : Google, Qwant, Ecosia. Il s'utilise DANS un navigateur.", ['s3-a03-5eme','s3-a04-4eme']],
-      ["Système d'exploitation", "Le logiciel de base qui fait fonctionner l'appareil et lance tous les autres : Windows, Android, iOS, Linux.", ['s3-a03-5eme']],
-      ['Serveur', "Un ordinateur allumé en permanence qui rend un service aux autres : stocker des fichiers, héberger un site, distribuer des pages. Le tien, en face, est le client.", ['s3-a02-5eme','s3-a03-4eme','s3-a01-5eme']],
-      ['Paquet', "Un message envoyé sur un réseau est découpé en petits morceaux, les paquets. Chacun voyage de son côté et porte l'adresse d'arrivée ; ils sont remis dans l'ordre à la fin.", ['s3-a02-5eme']],
-      ['Donnée personnelle', "Toute information qui permet de te reconnaître : nom, âge, photo, adresse, mais aussi la liste des sites que tu visites. Elle t'appartient, et la loi te donne des droits dessus.", ['s4-a02-4eme','s4-a02-5eme']],
-      ['Trace numérique', "Ce que ton activité laisse derrière elle sans que tu l'aies écrit : sites visités, heures de connexion, position. Tu en laisses même quand tu ne publies rien.", ['s4-a02-4eme','s4-a02-5eme']],
-      ['Cookie', "Petit fichier qu'un site dépose dans ton navigateur pour te reconnaître d'une visite à l'autre. Certains sont utiles au site, d'autres servent à suivre ce que tu fais ailleurs.", ['s4-a02-4eme','s4-a02-5eme']],
-      ['RGPD', "La loi européenne de 2018 sur les données personnelles. Elle te donne quatre droits : savoir ce qu'on a sur toi, faire corriger, faire effacer, refuser un usage.", ['s4-a02-4eme']],
-      ['Mot de passe', "La clé qui protège un compte. Ce qui le rend solide est d'abord sa LONGUEUR, pas les caractères bizarres — et il ne sert que pour un seul site.", ['s4-a01-5eme']],
-      ['Hameçonnage (phishing)', "Un faux message qui imite une vraie entreprise pour te faire donner ton mot de passe ou ta carte bancaire. Il met presque toujours la pression : « sous 24 h ».", ['s4-a01-4eme']],
-      ['Cyberharcèlement', "Des propos ou des actes répétés en ligne qui blessent une personne. C'est un délit puni par la loi, même « pour rire ». Le numéro national est le 3018.", ['s4-a03-5eme']],
-      ['Service « gratuit »', "Un service qu'on ne paie pas en argent, mais avec ses données et son attention : l'entreprise revend la possibilité de t'afficher de la publicité ciblée.", ['s3-a04-4eme','s3-a04-5eme']],
-    ],
-  },
-  {
-    titre: 'Structures : ce qui tient debout',
-    repere: 'STRUCT',
-    termes: [
-      ['Structure', "La partie d'un objet qui supporte les efforts sans se déformer : la charpente d'une maison, le tablier d'un pont, le cadre d'un vélo.", ['pont-a4-a01']],
-      ['Appui', "L'endroit où la structure repose. Un pont a deux appuis : une berge de chaque côté.", ['pont-a4-a01']],
-      ['Portée', "La distance entre les deux appuis — et rien d'autre. Ce n'est pas la longueur totale du pont, qui dépasse souvent de ses appuis.", ['pont-a4-a01','pont-a4-a03']],
-      ['Charge', "Le poids que la structure doit supporter, en plus du sien.", ['pont-a4-a01','pont-a4-a05']],
-      ['Flexion', "La déformation d'une poutre qui plie sous une charge. En fléchissant, elle se raccourcit d'un côté et s'allonge de l'autre.", ['pont-a4-a01']],
-      ['Zone comprimée', "La partie de la poutre dont les fibres se rapprochent : le DESSUS, quand la charge est posée au milieu.", ['pont-a4-a01']],
-      ['Zone tendue', "La partie de la poutre dont les fibres s'écartent : le DESSOUS, dans le même cas.", ['pont-a4-a01']],
-      ['Fibre neutre', "La ligne du milieu de la poutre, qui ne se raccourcit ni ne s'allonge. Plus la matière en est éloignée, plus la structure résiste.", ['pont-a4-a01','pont-a4-a02']],
-      ['Ratio', "Le résultat d'une division qui compare deux grandeurs. Ici : la charge de rupture divisée par la masse de la structure. Un ratio n'a pas d'unité : c'est un nombre de fois.", ['pont-a4-a05','pont-a4-a06']],
-    ],
-  },
-  {
-    titre: 'Mesurer et prouver',
-    repere: 'MESURE',
-    termes: [
-      ['Protocole', "La liste précise des gestes à faire pour une mesure, écrite AVANT de mesurer. Deux résultats ne se comparent que s'ils viennent du même protocole.", ['s5-a05-4eme','pont-a4-a05','amplificateur-passif-a05']],
-      ['Grandeur contrôlée', "Une grandeur qu'on maintient identique exprès, pour qu'elle n'explique pas le résultat.", ['amplificateur-passif-a02','amplificateur-passif-a04']],
-      ['Variable expérimentale', "La grandeur qu'on fait varier exprès, et la seule. Si on en change deux à la fois, on ne sait plus laquelle a produit l'effet.", ['amplificateur-passif-a02']],
-      ["Plan d'expérience", "L'organisation d'une campagne de mesures entre plusieurs groupes : une variable par groupe, tout le reste identique. C'est ce qui rend le tableau de classe exploitable.", ['amplificateur-passif-a02']],
-      ['Étendue', "L'écart entre la plus grande et la plus petite de plusieurs mesures répétées. Une étendue faible veut dire que la mesure est fiable.", ['amplificateur-passif-a05']],
-      ['Gain', "La différence entre une mesure et une mesure de référence. Un gain seul ne veut rien dire : il faut savoir par rapport à quoi.", ['amplificateur-passif-a01','amplificateur-passif-a05']],
-      ['Objet passif', "Un objet qui ne consomme aucune énergie : ni pile, ni branchement. Il ne crée rien, il se contente de mieux diriger ce qui existe déjà.", ['amplificateur-passif-a01']],
-    ],
-  },
-  {
-    titre: 'Dessiner pour fabriquer',
-    repere: 'DESSIN',
-    termes: [
-      ['Développé', "Le dessin à plat d'un objet en volume, tel qu'il faut le découper avant de le rouler ou de le plier. Le développé d'un cylindre est un rectangle de longueur π × D.", ['abat-jour-a03','amplificateur-passif-a03']],
-      ['Génératrice', "Sur un cône, la distance qui va de la pointe au bord du cercle en suivant la surface. Elle se calcule avec le théorème de Pythagore.", ['amplificateur-passif-a03']],
-      ['Entraxe', "La distance entre les centres de deux perçages voisins. Elle se mesure de centre à centre, pas de bord à bord.", ['abat-jour-a02','abat-jour-a03']],
-      ['Pont de matière', "Ce qui reste de matière entre deux perçages. En dessous de 3 mm, le carton se déchire au montage.", ['abat-jour-a03']],
-      ["Taux d'ajour", "Le pourcentage de la surface qui est percée. Plus il est élevé, plus la lumière passe — et moins la pièce tient.", ['abat-jour-a02','abat-jour-a06']],
-      ['Cotation', "L'écriture des dimensions sur un dessin. En Technologie, toutes les cotes s'écrivent en millimètres.", ['s5-a02-4eme','s5-a02-5eme','s5-a05-5eme','s5-a03-5eme']],
-    ],
-  },
-];
+export const lexique = donneesLexique.themes.map(t => ({
+  titre: t.titre,
+  repere: t.repere,
+  // La forme historique — [mot, définition, activités] — est conservée : c'est
+  // celle que lit la page du lexique et celle que lit `motsDe`. Seule la
+  // SOURCE change.
+  termes: t.termes.map(x => [x.mot, x.def, x.activites] as [string, string, string[]]),
+}));
 
 // Chaque lien a été vérifié (réponse 200) au moment de la mise en ligne.
 // `navigateur: true` = rien à installer : c'est l'information décisive pour un

@@ -59,7 +59,7 @@ const donneesLd = {
       </h2>
       <div class="quiz-liste">
         {g.liste.map(q => (
-          <a class="quiz-carte" href={u(`/reviser/${q.id}`)}>
+          <a class="quiz-carte" href={u(`/reviser/${q.id}`)} data-quiz-carte={q.id}>
             <span class="quiz-seq">{q.seqTitre}</span>
             <h3>{q.titre}</h3>
             <p>{q.sous}</p>
@@ -85,3 +85,21 @@ const donneesLd = {
   <Citation cle="reviser" />
 
 </Base>
+
+<script>
+  import { scoresQuiz } from '../../scripts/memoire.js';
+
+  // Le meilleur score déjà obtenu, sur la carte du quiz. Ce n'est pas une note :
+  // c'est un repère personnel, et une raison de rejouer pour le battre.
+  const scores = scoresQuiz();
+  document.querySelectorAll('[data-quiz-carte]').forEach(carte => {
+    const s = scores[carte.dataset.quizCarte];
+    if (!s) return;
+    const b = document.createElement('span');
+    b.className = 'quiz-record' + (s.justes === s.total ? ' quiz-record--plein' : '');
+    b.textContent = s.justes === s.total
+      ? 'sans faute'
+      : `ton record : ${s.justes}/${s.total}`;
+    carte.appendChild(b);
+  });
+</script>

@@ -53,7 +53,7 @@ const sequences = [...parSeq.entries()]
       <ol class="chaine">
         {seq.items.map((a, i) => (
           <li>
-            <a class="maillon" data-phase={a.data.phase} href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
+            <a class="maillon" data-phase={a.data.phase} data-slug={a.id} href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
               <span class="num">{i + 1}</span>
               <span class="corps">
                 {a.data.phase && <span class="phase">{a.data.phase}</span>}
@@ -69,3 +69,20 @@ const sequences = [...parSeq.entries()]
   <Citation cle={niveau} />
 
 </Base>
+
+<script>
+  import { activitesVues } from '../scripts/memoire.js';
+
+  // Une pastille sur les activités déjà ouvertes. Elle ne dit pas « réussi »
+  // — le site ne le sait pas — mais « déjà vu » : c'est ce qui permet à un
+  // élève de retrouver où il en était dans une chaîne de six séances.
+  const vues = activitesVues();
+  document.querySelectorAll('.maillon[data-slug]').forEach(a => {
+    if (!vues[a.dataset.slug]) return;
+    a.classList.add('maillon--vu');
+    const marque = document.createElement('span');
+    marque.className = 'maillon-vu';
+    marque.textContent = 'déjà ouverte';
+    a.querySelector('.corps').appendChild(marque);
+  });
+</script>

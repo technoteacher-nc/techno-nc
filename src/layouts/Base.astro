@@ -72,7 +72,14 @@ const annee = new Date().getFullYear();
         <a href={base + '/ressources/lexique'}>Lexique</a>
         <a href={base + '/reviser'}>Quiz de révision</a>
       </p>
-      <p>Aucun compte, aucun cookie, aucun traceur.</p>
+      {/* La promesse est maintenue et précisée : depuis que le site retient les
+          activités ouvertes et les scores de quiz, il faut dire OÙ cela reste.
+          « Sur ton appareil » est vérifiable — le site est statique, il n'a pas
+          de serveur qui pourrait recevoir quoi que ce soit. */}
+      <p>
+        Aucun compte, aucun cookie, aucun traceur.
+        <a href={base + '/mode-demploi#contenu'}>Ce que le site retient reste sur ton appareil.</a>
+      </p>
     </div>
   </footer>
 </body>

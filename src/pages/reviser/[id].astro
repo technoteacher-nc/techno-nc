@@ -11,7 +11,10 @@
 //   - aucun score enregistré, aucune donnée envoyée.
 
 import Base from '../../layouts/Base.astro';
+import Citation from '../../components/Citation.astro';
 import donnees from '../../data/quiz.json';
+import projets from '../../data/projets.json';
+import { getCollection } from 'astro:content';
 
 export function getStaticPaths() {
   return donnees.quiz.map(q => ({ params: { id: q.id }, props: { quiz: q } }));
@@ -20,6 +23,28 @@ export function getStaticPaths() {
 const { quiz } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
+
+// Où renvoyer l'élève quand il a raté une question. Le lien est résolu ICI, au
+// build, et non dans le script : l'année et la séquence sont connues du site,
+// elles n'ont pas à être devinées côté navigateur.
+const activites = await getCollection('activites');
+const parSlug = new Map(activites.map(a => [a.id, a]));
+
+const projetDuNiveau = projets.projets.find(p => p.niveau === quiz.niveau);
+
+function renvoi(act) {
+  if (act && parSlug.has(act)) {
+    const a = parSlug.get(act);
+    return { lien: u(`/${a.data.annee}/${a.data.seq}/${a.id}`), titre: a.data.titre };
+  }
+  // Les projets n'ont pas de page par séance : on renvoie au projet entier.
+  if (quiz.seq === 'projets' && projetDuNiveau) {
+    return { lien: u(`/projets/${projetDuNiveau.slug}`), titre: projetDuNiveau.titre };
+  }
+  return null;
+}
+
+const questions = quiz.questions.map(q => ({ ...q, renvoi: renvoi(q.act) }));
 ---
 <Base
   titre={`${quiz.titre} — quiz de révision`}
@@ -38,8 +63,8 @@ const u = p => base + p;
     <p class="question leve leve-2">{quiz.sous}</p>
   </header>
 
-  <div class="quiz" data-quiz>
-    <script type="application/json" data-questions set:html={JSON.stringify(quiz.questions)} />
+  <div class="quiz" data-quiz data-quiz-id={quiz.id}>
+    <script type="application/json" data-questions set:html={JSON.stringify(questions)} />
 
     <div class="quiz-barre">
       <div class="quiz-jauge"><span data-jauge></span></div>
@@ -50,6 +75,7 @@ const u = p => base + p;
       <p class="quiz-question" data-question>…</p>
       <ul class="quiz-reponses" data-reponses></ul>
       <p class="quiz-verdict" data-verdict hidden></p>
+      <p class="quiz-expli" data-expli hidden></p>
       <button class="btn btn--fort" type="button" data-suivant hidden>Question suivante →</button>
     </section>
 
@@ -57,12 +83,24 @@ const u = p => base + p;
       <h2>Terminé</h2>
       <p class="quiz-score" data-score></p>
       <p class="quiz-conseil" data-conseil></p>
+
+      {/* Le moment où l'élève sait exactement ce qu'il n'a pas compris était
+          aussi celui où le site cessait de l'aider : il n'avait qu'un score.
+          Ici, chaque question ratée revient avec sa bonne réponse, son
+          explication, et le lien vers l'activité qui la traite. */}
+      <div class="quiz-revoir" data-revoir hidden>
+        <h3>À revoir</h3>
+        <ol data-manquees></ol>
+      </div>
+
       <div class="docs">
         <button class="btn btn--fort" type="button" data-rejouer>Recommencer</button>
         <a class="btn" href={u('/reviser')}>Les autres quiz</a>
       </div>
     </section>
   </div>
+
+  <Citation cle="reviser" />
 
 </Base>
 
@@ -92,16 +130,19 @@ const u = p => base + p;
     const elFin = racine.querySelector('[data-fin]');
     const elScore = racine.querySelector('[data-score]');
     const elConseil = racine.querySelector('[data-conseil]');
+    const elExpli = racine.querySelector('[data-expli]');
+    const elRevoir = racine.querySelector('[data-revoir]');
+    const elManquees = racine.querySelector('[data-manquees]');
     const carte = racine.querySelector('.quiz-carte-q');
 
-    let liste = [], i = 0, justes = 0;
+    let liste = [], i = 0, justes = 0, manquees = [];
 
     function preparer() {
       liste = melanger(brutes).map(q => {
         const ordre = melanger(q.r.map((texte, k) => ({ texte, juste: k + 1 === q.bonne })));
-        return { q: q.q, options: ordre };
+        return { q: q.q, options: ordre, expli: q.expli, renvoi: q.renvoi, bonne: q.r[q.bonne - 1] };
       });
-      i = 0; justes = 0;
+      i = 0; justes = 0; manquees = [];
       elFin.hidden = true;
       carte.hidden = false;
       racine.querySelector('.quiz-barre').hidden = false;
@@ -115,6 +156,7 @@ const u = p => base + p;
       elJauge.style.width = (i / liste.length * 100) + '%';
       elVerdict.hidden = true;
       elVerdict.className = 'quiz-verdict';
+      elExpli.hidden = true;
       elSuivant.hidden = true;
       elReponses.innerHTML = '';
 
@@ -139,7 +181,7 @@ const u = p => base + p;
         if (estJuste) b.classList.add('quiz-choix--juste');
       });
       if (!juste) bouton.classList.add('quiz-choix--faux');
-      if (juste) justes++;
+      if (juste) justes++; else manquees.push(q);
 
       // Ne JAMAIS désigner la bonne réponse par sa couleur : un élève
       // daltonien lit la consigne et ne peut pas l'exécuter. Le repère donné
@@ -149,6 +191,12 @@ const u = p => base + p;
         : 'Ce n\'est pas ça — la bonne réponse est celle marquée ✓.';
       elVerdict.classList.add(juste ? 'quiz-verdict--juste' : 'quiz-verdict--faux');
       elVerdict.hidden = false;
+
+      // L'explication s'affiche que la réponse soit juste ou fausse : celui qui
+      // a coché au hasard et tombé juste a autant besoin du pourquoi que
+      // celui qui s'est trompé.
+      if (q.expli) { elExpli.textContent = q.expli; elExpli.hidden = false; }
+
       elSuivant.hidden = false;
       elSuivant.textContent = (i === liste.length - 1) ? 'Voir mon résultat →' : 'Question suivante →';
       elSuivant.focus();
@@ -166,11 +214,65 @@ const u = p => base + p;
       elConseil.textContent = justes === liste.length
         ? 'Rien à revoir. Essaie un autre quiz.'
         : justes >= liste.length * 0.7
-          ? 'Bien. Reprends la fiche des questions ratées, puis recommence.'
-          : 'Reprends le bilan des fiches de la séquence avant de rejouer.';
+          ? 'Bien. Relis les questions ci-dessous, puis recommence.'
+          : 'Reprends les activités listées ci-dessous avant de rejouer.';
+
+      construireRevoir();
+      enregistrer(justes, liste.length);
       elFin.hidden = false;
       elFin.scrollIntoView({ block: 'nearest' });
     });
+
+    // Le meilleur score est retenu sur l'appareil, rien n'est envoyé. Il
+    // s'affiche ensuite sur la liste des quiz : c'est ce qui donne une raison
+    // de revenir battre son propre résultat.
+    function enregistrer(justes, total) {
+      const id = racine.dataset.quizId;
+      import('../../scripts/memoire.js')
+        .then(m => m.noterQuiz(id, justes, total))
+        .catch(() => {});
+    }
+
+    // Le récapitulatif : une entrée par question ratée, avec la bonne réponse,
+    // le pourquoi, et le lien vers l'activité qui la traite. Les questions
+    // réussies n'y figurent pas — l'élève est déjà revenu sur chacune au
+    // moment où il a répondu.
+    function construireRevoir() {
+      elManquees.innerHTML = '';
+      if (!manquees.length) { elRevoir.hidden = true; return; }
+
+      manquees.forEach(q => {
+        const li = document.createElement('li');
+
+        const question = document.createElement('p');
+        question.className = 'quiz-revoir-q';
+        question.textContent = q.q;
+        li.appendChild(question);
+
+        const rep = document.createElement('p');
+        rep.className = 'quiz-revoir-r';
+        rep.textContent = q.bonne;
+        li.appendChild(rep);
+
+        if (q.expli) {
+          const e = document.createElement('p');
+          e.className = 'quiz-revoir-e';
+          e.textContent = q.expli;
+          li.appendChild(e);
+        }
+
+        if (q.renvoi) {
+          const a = document.createElement('a');
+          a.className = 'quiz-revoir-lien';
+          a.href = q.renvoi.lien;
+          a.textContent = q.renvoi.titre + ' →';
+          li.appendChild(a);
+        }
+
+        elManquees.appendChild(li);
+      });
+      elRevoir.hidden = false;
+    }
 
     racine.querySelector('[data-rejouer]').addEventListener('click', preparer);
     preparer();
