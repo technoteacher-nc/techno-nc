@@ -1,0 +1,711 @@
+{
+ "code": "S1-A06",
+ "niveau": "5eme",
+ "seq": "seq01",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE CAHIER DES CHARGES — DIRE CE QU'ON ATTEND D'UN OBJET"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Avant de fabriquer quoi que ce soit, un ingénieur écrit ce que l'objet devra faire — et ce qu'il devra respecter. Ce document s'appelle le cahier des charges, ou CDC.",
+    "Il ne dit jamais COMMENT fabriquer : il dit CE QU'IL FAUT OBTENIR. C'est ce qui permet à deux équipes de proposer deux solutions différentes, toutes les deux valables."
+   ],
+   "question": "Comment écrire ce qu'on attend d'un objet, d'une façon que tout le monde comprenne pareil ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je me rappelle l'activité 05"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète les trois phrases avec les mots de la banque."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (un mot peut servir plusieurs fois, un mot peut ne pas servir) : limites · conçu · service · humains"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "a. Un OST est un objet "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " par des "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " ."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "b. La FP dit quel "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " l'objet rend."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "c. Les FC disent quelles "
+    },
+    {
+     "t": "champ",
+     "points": 22
+    },
+    {
+     "t": "texte",
+     "v": " l'objet doit respecter."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "FP ou FC : je fais le tri"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la bonne colonne pour chaque phrase. Une seule case par ligne. La première ligne est un exemple."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "À propos de l'ordinateur de la salle 207",
+    "FP",
+    "FC"
+   ],
+   "largeurs": [
+    6160,
+    1600,
+    1600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — « il doit permettre de travailler sur les fiches »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« il doit démarrer en moins d'une minute »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« il doit tenir sur la table sans la remplir »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« il doit permettre d'accéder aux ressources du site »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« il doit résister à la chaleur de la salle 207 »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le CDC de l'ordinateur de la salle 207"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris une phrase complète par ligne, en commençant par « il doit ». La première ligne est un exemple."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Type",
+    "La phrase à écrire"
+   ],
+   "largeurs": [
+    1800,
+    7560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — FP"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "il doit permettre à un élève de rédiger et d'enregistrer son travail"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 62
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 62
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC 3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 62
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Mon CDC — un OST de Nouvelle-Calédonie"
+  },
+  {
+   "type": "consigne",
+   "texte": "Choisis un OST de ton quotidien, autre que l'ordinateur, puis écris son CDC."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "L'OST que je choisis : "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Type",
+    "La phrase à écrire"
+   ],
+   "largeurs": [
+    1800,
+    7560
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FP"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 62
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC 1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 62
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC 2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 62
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un cahier des charges ne dit jamais comment fabriquer l'objet, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un cahier des "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " dit ce qu'il faut obtenir, pas comment le faire."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " dit le service rendu ; les FC disent les limites à respecter."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une phrase de CDC commence par « il "
+     },
+     {
+      "t": "champ",
+      "points": 10
+     },
+     {
+      "t": "texte",
+      "v": " » : c'est une exigence."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Deux "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " différentes peuvent respecter le même cahier des charges."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Un objet sans cahier des charges, c'est un projet sans direction.",
+   "auteur": ""
+  }
+ ]
+}

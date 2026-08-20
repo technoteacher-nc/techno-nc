@@ -1,0 +1,21 @@
+---
+code: "S1-A02"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S5"
+phase: "Représenter"
+titre: "LE SOMMAIRE — UN TABLEAU QUI RANGE L'ANNÉE"
+question: "PROBLÉMATIQUE : Pourquoi range-t-on des informations dans un tableau plutôt qu'à la suite les unes des autres ?"
+objectif: "Insérer un tableau de 3 colonnes et 12 lignes, fixer la hauteur de ligne, fusionner une ligne d'en-tête, et comprendre à quoi sert un sommaire dans un classeur."
+competences:
+  - "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
+prerequis: "S1-A01 — la page de garde est enregistrée dans le dossier Technologie."
+materiel: "Un poste par élève · traitement de texte · la page de garde de l'activité 01 déjà enregistrée"
+annee: "2026"
+seq: "seq01"
+seqTitre: "Séquence 01 — L'ORDINATEUR"
+fichePdf: "/2026/seq01/FICHE_S1-A02_Sommaire_4eme.pdf"
+ficheDocx: "/2026/seq01/FICHE_S1-A02_Sommaire_4eme.docx"
+ebepPdf: "/2026/seq01/EBEP_S1-A02_Sommaire_4eme.pdf"
+qr: "/qr/s1-a02-4eme.png"
+---

@@ -1,0 +1,21 @@
+---
+code: "S2-A01"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S13"
+phase: "Analyser"
+titre: "LES OBJETS TECHNIQUES AUTOUR DE MOI"
+question: "PROBLÉMATIQUE : Un même objet rend-il le même service à tout le monde ?"
+objectif: "Repérer trois objets techniques de son quotidien calédonien, nommer leur fonction principale et leurs fonctions secondaires (5ème) ou leurs contraintes et leurs flux MEI (4ème), puis les classer par domaine d'usage."
+competences:
+  - "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
+prerequis: "S1-A05 et S1-A06 — OST, fonction principale, contrainte. Ici on repart du même vocabulaire, mais du point de vue de l'USAGE."
+materiel: "Fiche S2-A01 · objets réels de la salle · diaporama « usages »"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A01_OSTAutourDeMoi_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A01_OSTAutourDeMoi_4eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A01_OSTAutourDeMoi_4eme.pdf"
+qr: "/qr/s2-a01-4eme.png"
+---

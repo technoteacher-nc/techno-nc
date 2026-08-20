@@ -1,0 +1,882 @@
+{
+ "code": "S2-A05",
+ "niveau": "4eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "L'ÉVOLUTION DES OBJETS TECHNIQUES"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Cinq objets pour s'éclairer, cent cinquante ans d'écart entre le premier et le dernier. Le besoin n'a pas bougé d'un pouce.",
+    "Ce qui a changé, ce sont les solutions techniques — et à chaque fois, on peut dire POURQUOI : une contrainte devenue insupportable, une énergie devenue disponible, une information devenue calculable."
+   ],
+   "question": "Pourquoi les objets techniques évoluent-ils au fil du temps ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Je remets la frise dans l'ordre"
+  },
+  {
+   "type": "consigne",
+   "texte": "Numérote les cinq objets de 1 (le plus ancien) à 5 (le plus récent), puis écris l'énergie qui les fait fonctionner."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (un mot peut servir plusieurs fois, un mot peut ne pas servir) : électrique (pile) · chimique (combustion) · électrique + information · électrique (secteur)"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Objet d'éclairage",
+    "N°",
+    "Énergie utilisée"
+   ],
+   "largeurs": [
+    4560,
+    1200,
+    3600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ampoule LED connectée"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Bougie en cire"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Lampe torche à pile"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Lampe à pétrole"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ampoule à filament"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le besoin satisfait par ces cinq objets est :   le même   /   différent"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je chiffre le progrès"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Pour donner autant de lumière, une ampoule à filament consomme 60 W, une ampoule LED 8 W."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète les trois calculs."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "a. Énergie économisée par ampoule : 60 − 8 = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " W"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "b. Pour 10 ampoules d'une maison : "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " × 10 = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " W"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "c. La LED consomme environ "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " fois moins que le filament (60 ÷ 8)."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la conclusion juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "La LED éclaire moins.",
+     "points": 0
+    },
+    {
+     "label": "La LED éclaire autant en consommant moins.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Les quatre moteurs de l'évolution"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris la lettre de la raison qui explique chaque amélioration. Attention : une lettre est un INTRUS, elle ne sert pas."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "A. SÉCURITÉ   ·   B. NOUVEAU MATÉRIAU DÉCOUVERT   ·   C. CONFORT D'UTILISATION   ·   D. ÉCONOMIE D'ÉNERGIE   ·   E. AUTONOMIE (objet nomade)"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "L'amélioration",
+    "Lettre"
+   ],
+   "largeurs": [
+    7360,
+    2000
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — la torche ne dégage pas de fumée"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "A"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La LED consomme 8 fois moins que le filament."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe torche fonctionne sans être branchée."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La lampe LED s'allume à la voix, sans se lever."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L'ampoule ne peut pas mettre le feu au rideau."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "La lettre qui ne sert pas (l'intrus) : "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Le flux ajouté — les trackers de Pouembout"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Sur la route de Pouembout, des panneaux solaires sont montés sur des « trackers » qui tournent seuls pour suivre le soleil. Le panneau fixe ne sait rien ; le tracker sait où est le soleil."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète le tableau des flux du tracker."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Flux",
+    "Panneau fixe",
+    "Panneau sur tracker"
+   ],
+   "largeurs": [
+    2160,
+    3600,
+    3600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — E entrante"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "lumière du soleil"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "lumière du soleil"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "E sortante"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 32
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 32
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "I entrante"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "aucune"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 32
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Élément ajouté"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "aucun"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 32
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "definition",
+   "label": "L'ÉVOLUTION D'UN OBJET TECHNIQUE (écris-la avec tes mots)",
+   "n": 2
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ajouter un capteur et un programme à un panneau solaire fait gagner de l'énergie, alors que ce capteur en consomme lui-même, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le besoin ne change presque jamais ; c'est la "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " technique qui change."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Quatre moteurs : sécurité, confort, "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " , autonomie."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une LED donne autant de lumière pour "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " fois moins de puissance."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un objet récent reçoit un flux d'"
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " : capteur et programme."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "On ne fait pas mieux qu'hier avec les outils d'hier.",
+   "auteur": "Adage d'atelier"
+  }
+ ]
+}

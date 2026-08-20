@@ -1,0 +1,529 @@
+{
+ "code": "S1-A02",
+ "niveau": "5eme",
+ "seq": "seq01",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE SOMMAIRE — UN TABLEAU QUI RANGE L'ANNÉE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Ton classeur de Technologie va recevoir une vingtaine de fiches d'ici décembre. Sans sommaire, retrouver « la fiche sur les périphériques » demandera de toutes les feuilleter.",
+    "Un sommaire est un tableau : un code, un titre, un numéro de page. Tu vas le construire une fois, et le remplir toute l'année."
+   ],
+   "question": "Pourquoi range-t-on des informations dans un tableau plutôt qu'à la suite les unes des autres ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "J'insère le tableau"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque case dès que tu as fait ce qui est écrit."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre ma page de garde et j'ajoute une page après elle.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Menu Insertion → Tableau → Insérer un tableau.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Je demande 3 colonnes et 12 lignes.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Je sélectionne le tableau → clic droit → Propriétés du tableau → Ligne → hauteur 1,5 cm.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris les deux nombres que tu viens de taper."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Nombre de colonnes : "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": "        Nombre de lignes : "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Hauteur d'une ligne : "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": " cm"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je remplis l'en-tête"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la première ligne de ton tableau avec les trois titres, puis recopie-les ici. La ligne d'exemple est déjà remplie : ne la remplis pas."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Colonne",
+    "Titre à écrire",
+    "Ce qu'on y mettra"
+   ],
+   "largeurs": [
+    1600,
+    3400,
+    4360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Code"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "S1-A01, S1-A02, S1-A03…"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "2"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 22
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "le nom de l'activité"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "3"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 22
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "le numéro de la page"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "La ligne des titres doit être :   fusionnée   /   en gras   /   les deux"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Fusionner deux cellules, c'est en faire une seule. On le fait pour le TITRE « SOMMAIRE », pas pour la ligne des trois titres de colonnes."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je range trois fiches"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris le code qui manque dans la colonne de gauche. La première ligne est un exemple."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (un mot peut servir plusieurs fois, un mot peut ne pas servir) : S1-A04 · S1-A02 · S1-A06 · S1-A03"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Code",
+    "Titre de l'activité"
+   ],
+   "largeurs": [
+    2400,
+    6960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "S1-A01"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La page de garde"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le sommaire"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "L'unité centrale"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les périphériques"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un sommaire fait gagner du temps parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un tableau range l'information en "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " et en lignes."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Mon sommaire a "
+     },
+     {
+      "t": "champ",
+      "points": 8
+     },
+     {
+      "t": "texte",
+      "v": " colonnes : code, titre, page."
+     }
+    ],
+    [
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " deux cellules, c'est en faire une seule."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La hauteur d'une ligne se règle dans les "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " du tableau."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Ranger n'est pas une corvée : c'est ce qui permet de retrouver.",
+   "auteur": ""
+  }
+ ]
+}

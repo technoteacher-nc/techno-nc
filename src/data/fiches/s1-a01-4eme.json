@@ -1,0 +1,686 @@
+{
+ "code": "S1-A01",
+ "niveau": "4eme",
+ "seq": "seq01",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu retrouves la salle 207 et un poste identique à celui de l'an dernier. Mais cette année, ton classeur de Technologie sera relevé, et sa page de garde sera notée sur la CONFORMITÉ : chaque écart à la consigne se voit.",
+    "L'exercice ressemble à celui de 5ème. La différence tient en un mot : on n'y regarde plus si c'est joli, on y regarde si c'est conforme."
+   ],
+   "question": "Comment donner un ordre précis à un ordinateur pour qu'il écrive exactement ce que je veux ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "J'ouvre ma session et je prépare mon espace"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque case dès que tu as fait ce qui est écrit."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'allume le poste et j'ouvre ma session.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre mon espace personnel et je vérifie que le dossier TECHNOLOGIE existe.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Si le dossier n'existe pas, je le crée et je le nomme TECHNOLOGIE.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre le traitement de texte et j'enregistre TOUT DE SUITE, avant d'écrire quoi que ce soit.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Enregistrer avant d'écrire, ça sert à :   gagner du temps   /   ne rien perdre en cas de coupure"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "En cas de coupure de courant, l'ordinateur perd ce qui est dans sa mémoire vive (RAM) et garde ce qui est enregistré sur le disque. Tu retrouveras la RAM en activité 03."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je respecte la consigne au point près"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la colonne de droite en lisant la consigne projetée. La première ligne est un exemple : ne la remplis pas."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Élément",
+    "Police",
+    "Taille",
+    "Mise en forme"
+   ],
+   "largeurs": [
+    3000,
+    2000,
+    1400,
+    2960
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — Collège Edmée Varin"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "12"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "gras, centré"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "TECHNOLOGIE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "majuscules, "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "NOM Prénom"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "NOM en "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Maison"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "16"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 14
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Année"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "aligné à "
+         },
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la définition juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Une police est la taille des lettres.",
+     "points": 0
+    },
+    {
+     "label": "Une police est le dessin des lettres.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Les images et le droit d'auteur"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque case quand l'image est placée, puis réponds aux deux questions."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Logo officiel du collège, en haut à gauche.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Blason de ma Maison, en haut à droite.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Image en rapport avec la Technologie, placée DERRIÈRE le texte.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Une licence Creative Commons dit :   ce que je peux faire   /   le prix de l'image"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Une image sans licence indiquée est :   libre   /   protégée par défaut"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris l'adresse du site où tu as trouvé ton image."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Source de mon image : "
+    },
+    {
+     "t": "champ",
+     "points": 54
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "J'enregistre, je vérifie, je nomme"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète les trois lignes, puis coche les vérifications."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Nom de mon fichier : "
+    },
+    {
+     "t": "champ",
+     "points": 40
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Chemin du dossier : "
+    },
+    {
+     "t": "champ",
+     "points": 40
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Format d'enregistrement (l'extension, après le point) : "
+    },
+    {
+     "t": "champ",
+     "points": 16
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Mon nom apparaît dans le nom du fichier.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Le nom ne contient ni accent ni espace.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ai réenregistré après ma dernière modification.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Deux pages de garde peuvent être toutes les deux belles et une seule être conforme, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Une "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " est le dessin des lettres ; la taille se mesure en points."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Ce qui n'est pas enregistré est dans la "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " vive : une coupure l'efface."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une image sans licence indiquée est "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " par défaut."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un nom de fichier sans accent ni "
+     },
+     {
+      "t": "champ",
+      "points": 20
+     },
+     {
+      "t": "texte",
+      "v": " se retrouve sur n'importe quel poste."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Être conforme, ce n'est pas être sage : c'est être vérifiable.",
+   "auteur": ""
+  }
+ ]
+}

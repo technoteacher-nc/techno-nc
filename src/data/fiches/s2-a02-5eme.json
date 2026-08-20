@@ -1,0 +1,606 @@
+{
+ "code": "S2-A02",
+ "niveau": "5eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE STYLO 4 COULEURS — DÉMONTER POUR COMPRENDRE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu as un stylo 4 couleurs dans ta trousse. Tu appuies sur un bouton, une mine sort ; tu appuies sur un autre, la première rentre toute seule.",
+    "Personne ne t'a jamais expliqué comment il fait. Pourtant tout est là, sous tes doigts : quelques pièces, chacune avec un rôle."
+   ],
+   "question": "Comment un seul stylo peut-il écrire de quatre couleurs sans jamais les mélanger ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "J'observe"
+  },
+  {
+   "type": "consigne",
+   "texte": "Pose ton stylo devant toi et regarde-le sous tous les angles, puis complète."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Nombre de couleurs : "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    },
+    {
+     "t": "texte",
+     "v": "        Nombre de boutons : "
+    },
+    {
+     "t": "champ",
+     "points": 8
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ce qui se passe quand tu appuies sur un bouton."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "une mine sort par le bas",
+     "points": 0
+    },
+    {
+     "label": "le stylo s'ouvre",
+     "points": 0
+    },
+    {
+     "label": "rien ne bouge",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je manipule"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque case dès que tu as fait ce qui est écrit."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'appuie sur un bouton : une mine sort. Je trace un trait.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'appuie sur un autre bouton : la première mine rentre.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'essaie les quatre couleurs, l'une après l'autre.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Deux mines peuvent sortir en même temps :   oui   /   non"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche l'explication qui convient."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Il n'y a qu'un seul trou en bas du stylo.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Les mines sont trop courtes.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Le stylo n'a pas assez d'encre.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je dessine mon stylo"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dessine ton stylo vu de côté, puis écris le nom de chaque partie au bout d'une flèche : le corps, les boutons, la pointe, le clip, la bague."
+  },
+  {
+   "type": "zone",
+   "label": "Mon stylo vu de côté — utilise tout le cadre.",
+   "hauteur": 2600
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "À quoi sert chaque partie"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le rôle de chaque partie. Une seule case par ligne. La première ligne est un exemple."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Partie",
+    "Tenir",
+    "Actionner",
+    "Écrire",
+    "Accrocher"
+   ],
+   "largeurs": [
+    3360,
+    1500,
+    1500,
+    1500,
+    1500
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — le corps"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les boutons"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La pointe"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le clip"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Chaque partie d'un objet technique a une fonction. Aucune n'est là par hasard."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quand j'appuie sur le deuxième bouton, la première mine rentre toute seule, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un objet technique est fait de plusieurs "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Chaque partie a un "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " bien précis."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Appuyer sur un bouton fait sortir une "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une seule mine à la fois : il n'y a qu'une seule "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " en bas."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Tout objet du quotidien cache une mécanique. Pour comprendre, il faut regarder de près.",
+   "auteur": ""
+  }
+ ]
+}

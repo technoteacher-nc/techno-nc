@@ -1,0 +1,21 @@
+---
+code: "S2-A02"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S14"
+phase: "Analyser"
+titre: "QUAND LA MAISON S'ALLUME TOUTE SEULE"
+question: "PROBLÉMATIQUE : Comment plusieurs objets se mettent-ils d'accord pour rendre un service que ni l'un ni l'autre ne rend seul ?"
+objectif: "Identifier capteur, microcontrôleur, actionneur et IHM dans un système automatisé, et suivre la chaîne d'information ACQUÉRIR → TRAITER → COMMUNIQUER."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S2-A01 — fonction principale et fonctions secondaires."
+materiel: "Fiche S2-A02 · diaporama du scénario · schéma SysML tracé au tableau"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A02_Domotique_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A02_Domotique_4eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A02_Domotique_4eme.pdf"
+qr: "/qr/s2-a02-4eme.png"
+---

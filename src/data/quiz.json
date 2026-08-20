@@ -1,14 +1,322 @@
 {
  "quiz": [
   {
+   "id": "seq01-4eme",
+   "seq": "seq01",
+   "seqTitre": "Séquence 01 — L'ordinateur",
+   "niveau": "4eme",
+   "niveauLabel": "4ème",
+   "titre": "L'ordinateur — 4ème",
+   "sous": "Lire une fiche technique, classer un périphérique, distinguer objet et système, quantifier une exigence.",
+   "questions": [
+    {
+     "q": "Le gigaoctet (Go) mesure…",
+     "r": [
+      "une vitesse de calcul",
+      "une quantité de mémoire",
+      "une puissance électrique"
+     ],
+     "bonne": 2,
+     "expli": "Le Go mesure une quantité de place. Piège : plus de Go de RAM ne rend pas la machine plus rapide, cela lui donne plus de place.",
+     "act": "s1-a03-4eme"
+    },
+    {
+     "q": "Comparé à un disque à plateaux, un SSD…",
+     "r": [
+      "lit beaucoup plus vite",
+      "stocke toujours plus",
+      "consomme toujours plus"
+     ],
+     "bonne": 1,
+     "expli": "Le SSD n'a aucune pièce mobile : il lit environ dix fois plus vite, mais coûte plus cher au Go.",
+     "act": "s1-a03-4eme"
+    },
+    {
+     "q": "Dans quelle unité se mesure la puissance d'une alimentation ?",
+     "r": [
+      "Le gigahertz",
+      "Le gigaoctet",
+      "Le watt"
+     ],
+     "bonne": 3,
+     "expli": "Le watt mesure une puissance électrique : c'est ce que l'alimentation fournit aux composants.",
+     "act": "s1-a03-4eme"
+    },
+    {
+     "q": "Un écran tactile est un périphérique…",
+     "r": [
+      "de sortie",
+      "d'entrée-sortie",
+      "d'entrée"
+     ],
+     "bonne": 2,
+     "expli": "Il affiche (sortie) et reçoit la position des doigts (entrée) : le même appareil change de type selon la fonction.",
+     "act": "s1-a04-4eme"
+    },
+    {
+     "q": "Que transporte une prise RJ45 (Ethernet) ?",
+     "r": [
+      "Les données du réseau",
+      "Le son du casque",
+      "L'image de l'écran"
+     ],
+     "bonne": 1,
+     "expli": "La prise RJ45 relie le poste au réseau du collège. C'est par elle que passe tout ce qu'on étudiera en séquence 03.",
+     "act": "s1-a04-4eme"
+    },
+    {
+     "q": "Qu'est-ce qui distingue un système technique d'un objet simple ?",
+     "r": [
+      "Il coûte plus cher",
+      "Il contient de l'électronique",
+      "Plusieurs OST reliés par des flux"
+     ],
+     "bonne": 3,
+     "expli": "Un système est fait de plusieurs OST qui échangent de la matière, de l'énergie ou de l'information.",
+     "act": "s1-a05-4eme"
+    },
+    {
+     "q": "La chaleur qui sort d'un processeur est un flux…",
+     "r": [
+      "de matière",
+      "d'énergie",
+      "d'information"
+     ],
+     "bonne": 2,
+     "expli": "La chaleur est une forme d'énergie. Ce qui circule comme information, ce sont les instructions et les résultats.",
+     "act": "s1-a05-4eme"
+    },
+    {
+     "q": "Dans un cahier des charges, le « niveau exigé » est…",
+     "r": [
+      "une valeur chiffrée avec son unité",
+      "le nom de la contrainte",
+      "la façon de mesurer"
+     ],
+     "bonne": 1,
+     "expli": "Le niveau dit à partir de quelle valeur c'est accepté : « ≥ 10 Mbit/s ». Sans unité, ce n'est pas un niveau.",
+     "act": "s1-a06-4eme"
+    },
+    {
+     "q": "« L'écran doit être assez grand » est une exigence…",
+     "r": [
+      "souple mais utile",
+      "correcte et suffisante",
+      "invérifiable"
+     ],
+     "bonne": 3,
+     "expli": "« Assez grand » ne se mesure pas : deux personnes le comprendront différemment. Il faut écrire « au moins 24 pouces ».",
+     "act": "s1-a06-4eme"
+    },
+    {
+     "q": "À quoi sert la colonne « critère d'évaluation » d'un cahier des charges ?",
+     "r": [
+      "À donner la valeur à atteindre",
+      "À dire comment on mesure",
+      "À nommer la fonction"
+     ],
+     "bonne": 2,
+     "expli": "Le critère décrit le TEST ou la MESURE. La valeur à atteindre, elle, est dans la colonne « niveau exigé ».",
+     "act": "s1-a06-4eme"
+    }
+   ]
+  },
+  {
+   "id": "seq01-5eme",
+   "seq": "seq01",
+   "seqTitre": "Séquence 01 — L'ordinateur",
+   "niveau": "5eme",
+   "niveauLabel": "5ème",
+   "titre": "L'ordinateur — 5ème",
+   "sous": "L'unité centrale, les périphériques, les objets techniques et le cahier des charges.",
+   "questions": [
+    {
+     "q": "Que fait le processeur (CPU) ?",
+     "r": [
+      "Il stocke les fichiers",
+      "Il exécute les instructions",
+      "Il affiche les images"
+     ],
+     "bonne": 2,
+     "expli": "Le processeur est le cerveau : il exécute les instructions. Stocker est le rôle du disque, afficher celui de la carte graphique.",
+     "act": "s1-a03-5eme"
+    },
+    {
+     "q": "Que devient le contenu de la mémoire vive (RAM) quand on éteint l'ordinateur ?",
+     "r": [
+      "Il part sur internet",
+      "Il est recopié sur le disque",
+      "Il s'efface"
+     ],
+     "bonne": 3,
+     "expli": "La RAM a besoin de courant pour retenir : tout ce qui n'a pas été enregistré est perdu à l'extinction.",
+     "act": "s1-a03-5eme"
+    },
+    {
+     "q": "Où tes fichiers sont-ils gardés quand l'ordinateur est éteint ?",
+     "r": [
+      "Sur le disque dur",
+      "Dans la mémoire vive",
+      "Sur la carte mère"
+     ],
+     "bonne": 1,
+     "expli": "Le disque dur est la mémoire permanente : il garde les fichiers sans courant électrique.",
+     "act": "s1-a03-5eme"
+    },
+    {
+     "q": "Le gigahertz (GHz) mesure…",
+     "r": [
+      "une quantité de mémoire",
+      "une puissance électrique",
+      "une vitesse de calcul"
+     ],
+     "bonne": 3,
+     "expli": "Le GHz compte le nombre d'opérations par seconde : c'est une vitesse. La quantité de mémoire se mesure en Go.",
+     "act": "s1-a03-5eme"
+    },
+    {
+     "q": "Le clavier est un périphérique…",
+     "r": [
+      "de sortie",
+      "d'entrée",
+      "d'entrée-sortie"
+     ],
+     "bonne": 2,
+     "expli": "Le clavier ENVOIE de l'information vers l'unité centrale : c'est un périphérique d'entrée.",
+     "act": "s1-a04-5eme"
+    },
+    {
+     "q": "L'écran est un périphérique…",
+     "r": [
+      "de sortie",
+      "d'entrée",
+      "d'entrée-sortie"
+     ],
+     "bonne": 1,
+     "expli": "L'écran REÇOIT l'information depuis l'unité centrale et l'affiche : c'est une sortie.",
+     "act": "s1-a04-5eme"
+    },
+    {
+     "q": "Une clé USB est un périphérique…",
+     "r": [
+      "d'entrée",
+      "de sortie",
+      "d'entrée-sortie"
+     ],
+     "bonne": 3,
+     "expli": "On y écrit ET on y lit : l'information circule dans les deux sens.",
+     "act": "s1-a04-5eme"
+    },
+    {
+     "q": "Qu'est-ce qu'un OST (objet ou système technique) ?",
+     "r": [
+      "Tout ce qui existe",
+      "Un objet conçu par des humains",
+      "Un objet en métal"
+     ],
+     "bonne": 2,
+     "expli": "Ce qui fait un OST, c'est d'avoir été conçu pour rendre un service — pas sa matière ni sa taille.",
+     "act": "s1-a05-5eme"
+    },
+    {
+     "q": "Le vent qui fait tourner une éolienne est-il un OST ?",
+     "r": [
+      "Non : personne ne l'a conçu",
+      "Oui : il produit de l'électricité",
+      "Oui : il fait fonctionner un objet"
+     ],
+     "bonne": 1,
+     "expli": "L'éolienne est un OST, le vent non : il existait bien avant nous, personne ne l'a fabriqué.",
+     "act": "s1-a05-5eme"
+    },
+    {
+     "q": "Que dit un cahier des charges ?",
+     "r": [
+      "Comment fabriquer l'objet",
+      "Le prix de l'objet",
+      "Ce que l'objet doit obtenir"
+     ],
+     "bonne": 3,
+     "expli": "Le CDC dit ce qu'il faut OBTENIR, jamais comment le faire : c'est ce qui laisse plusieurs solutions possibles.",
+     "act": "s1-a06-5eme"
+    }
+   ]
+  },
+  {
    "id": "seq02-4eme",
    "seq": "seq02",
    "seqTitre": "Séquence 02 — Usages",
    "niveau": "4eme",
    "niveauLabel": "4ème",
    "titre": "Usages — 4ème",
-   "sous": "Les quatre critères de l'expérience utilisateur, l'accessibilité et le choix argumenté.",
+   "sous": "Chaîne d'information, capteurs, réparabilité, expérience utilisateur et choix argumenté.",
    "questions": [
+    {
+     "q": "Dans un système automatisé, l'élément qui détecte s'appelle…",
+     "r": [
+      "un actionneur",
+      "une IHM",
+      "un capteur"
+     ],
+     "bonne": 3,
+     "expli": "Le capteur acquiert une grandeur physique. L'actionneur agit, l'IHM parle à l'utilisateur.",
+     "act": "s2-a02-4eme"
+    },
+    {
+     "q": "La chaîne d'information suit trois étapes : acquérir, traiter et…",
+     "r": [
+      "communiquer",
+      "fabriquer",
+      "alimenter"
+     ],
+     "bonne": 1,
+     "expli": "Acquérir, traiter, communiquer : toujours dans cet ordre, dans tout système automatisé.",
+     "act": "s2-a02-4eme"
+    },
+    {
+     "q": "Que mesure un accéléromètre dans une montre connectée ?",
+     "r": [
+      "la température",
+      "le mouvement",
+      "la position"
+     ],
+     "bonne": 2,
+     "expli": "L'accéléromètre capte le mouvement : c'est lui qui permet de compter les pas. La position, c'est le GPS.",
+     "act": "s2-a03-4eme"
+    },
+    {
+     "q": "L'indice de réparabilité est une note sur…",
+     "r": [
+      "100",
+      "20",
+      "10"
+     ],
+     "bonne": 3,
+     "expli": "Une note sur 10, affichée sur l'étiquette. Plus elle est haute, plus l'appareil se répare facilement.",
+     "act": "s2-a04-4eme"
+    },
+    {
+     "q": "Une batterie collée dans le boîtier…",
+     "r": [
+      "fait baisser l'indice de réparabilité",
+      "protège mieux l'appareil",
+      "ne change rien à l'indice"
+     ],
+     "bonne": 1,
+     "expli": "Une batterie collée ne se remplace pas : c'est le critère « démontabilité » qui chute.",
+     "act": "s2-a04-4eme"
+    },
+    {
+     "q": "Pourquoi dit-on que la bougie et l'ampoule LED se ressemblent ?",
+     "r": [
+      "elles utilisent la même énergie",
+      "elles répondent au même besoin",
+      "elles ont le même prix"
+     ],
+     "bonne": 2,
+     "expli": "Le besoin — s'éclairer — n'a pas changé en cent cinquante ans ; seule la solution technique a changé.",
+     "act": "s2-a05-4eme"
+    },
     {
      "q": "Combien de critères d'expérience utilisateur la fiche retient-elle ?",
      "r": [
@@ -128,8 +436,74 @@
    "niveau": "5eme",
    "niveauLabel": "5ème",
    "titre": "Usages — 5ème",
-   "sous": "L'expérience utilisateur, et comment bien choisir un objet technique.",
+   "sous": "Fonctions, objets qui pensent, cycle de vie, expérience utilisateur et choix argumenté.",
    "questions": [
+    {
+     "q": "La fonction principale d'un objet, c'est…",
+     "r": [
+      "ce qu'il fait en plus",
+      "la raison pour laquelle il a été inventé",
+      "sa matière"
+     ],
+     "bonne": 2,
+     "expli": "La FP est la raison d'être de l'objet : la retirer, c'est retirer sa raison d'exister.",
+     "act": "s2-a01-5eme"
+    },
+    {
+     "q": "La lampe torche d'un téléphone portable est…",
+     "r": [
+      "sa fonction principale",
+      "une contrainte",
+      "une fonction secondaire"
+     ],
+     "bonne": 3,
+     "expli": "Un téléphone sans lampe torche reste un téléphone : la lampe est un service en plus.",
+     "act": "s2-a01-5eme"
+    },
+    {
+     "q": "Dans un stylo 4 couleurs, à quoi sert le clip ?",
+     "r": [
+      "à l'accrocher à une poche",
+      "à faire sortir les mines",
+      "à écrire sur la feuille"
+     ],
+     "bonne": 1,
+     "expli": "Chaque partie a un rôle : le corps tient, les boutons actionnent, la pointe écrit, le clip accroche.",
+     "act": "s2-a02-5eme"
+    },
+    {
+     "q": "Un objet « qui pense » capte une information, puis…",
+     "r": [
+      "il attend qu'on appuie",
+      "il s'éteint",
+      "il agit tout seul"
+     ],
+     "bonne": 3,
+     "expli": "Les deux conditions vont ensemble : capter, puis agir sans qu'on appuie sur un bouton.",
+     "act": "s2-a03-5eme"
+    },
+    {
+     "q": "De la bougie à l'ampoule LED, qu'est-ce qui n'a PAS changé ?",
+     "r": [
+      "le besoin d'éclairer",
+      "l'énergie utilisée",
+      "la sécurité"
+     ],
+     "bonne": 1,
+     "expli": "Le besoin reste le même ; ce sont les solutions techniques qui changent au fil du temps.",
+     "act": "s2-a05-5eme"
+    },
+    {
+     "q": "Pour un téléphone, quelle étape consomme le plus d'énergie ?",
+     "r": [
+      "son utilisation",
+      "sa fabrication",
+      "son transport"
+     ],
+     "bonne": 2,
+     "expli": "La fabrication compte pour environ 80 % de l'énergie de toute la vie de l'objet : le garder plus longtemps est ce qui pèse le plus.",
+     "act": "s2-a04-5eme"
+    },
     {
      "q": "Que désigne « UX » ?",
      "r": [

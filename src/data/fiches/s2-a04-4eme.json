@@ -1,0 +1,666 @@
+{
+ "code": "S2-A04",
+ "niveau": "4eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "En Nouvelle-Calédonie, un appareil hors d'usage ne peut pas être recyclé sur place : il repart par bateau, à 18 000 km, ou il reste sur le territoire.",
+    "Choisir un objet réparable n'est donc pas un geste symbolique ici : c'est une décision technique, et elle se lit sur une étiquette."
+   ],
+   "question": "Où va un objet technique quand on ne s'en sert plus, et pourquoi est-ce un problème en Nouvelle-Calédonie ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les cinq étapes, et leur coût"
+  },
+  {
+   "type": "consigne",
+   "texte": "Numérote les cinq étapes de 1 à 5, dans l'ordre. Attention : elles ne sont pas dans le bon ordre."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Étape",
+    "N°"
+   ],
+   "largeurs": [
+    7360,
+    2000
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Distribution : transport et vente"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Extraction des matières premières"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Fin de vie : collecte, recyclage ou décharge"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Utilisation par le client"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Fabrication et assemblage"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche l'étape qui consomme le plus d'énergie pour un smartphone."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "extraction + fabrication",
+     "points": 0
+    },
+    {
+     "label": "utilisation",
+     "points": 0
+    },
+    {
+     "label": "fin de vie",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je calcule"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Fabriquer un smartphone demande environ 250 kg de matières premières et 80 kg de CO₂. L'utiliser pendant un an en demande environ 10 kg."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète les trois calculs."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "a. CO₂ d'un téléphone gardé 2 ans : 80 + (10 × 2) = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " kg"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "b. CO₂ d'un téléphone gardé 4 ans : 80 + (10 × 4) = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " kg"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "c. Deux téléphones gardés 2 ans chacun : "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " × 2 = "
+    },
+    {
+     "t": "champ",
+     "points": 10
+    },
+    {
+     "t": "texte",
+     "v": " kg"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Sur 4 ans, garder un seul téléphone émet :   moins   /   plus   que d'en changer"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "L'indice de réparabilité"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "L'indice de réparabilité note un appareil sur 10 selon cinq critères : documentation, démontabilité, disponibilité des pièces, prix des pièces, et un critère propre à la famille de produits."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris le critère concerné par chaque phrase, en le choisissant dans la banque."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (un mot peut servir plusieurs fois, un mot peut ne pas servir) : prix des pièces · démontabilité · documentation · disponibilité des pièces"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "La phrase",
+    "Le critère"
+   ],
+   "largeurs": [
+    5760,
+    3600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — « la notice de démontage est en ligne »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "documentation"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« la batterie est collée, pas vissée »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« un écran neuf coûte la moitié du téléphone »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« la marque ne vend plus de pièces après 3 ans »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Lis les deux étiquettes projetées, écris leur note et coche celui que tu conseilles."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Appareil",
+    "Indice /10",
+    "Je le conseille"
+   ],
+   "largeurs": [
+    4160,
+    2600,
+    2600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Appareil A"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Appareil B"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un indice de réparabilité élevé compte davantage en Nouvelle-Calédonie qu'en métropole, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le cycle de vie compte cinq étapes, de l'"
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " à la fin de vie."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Pour un smartphone, la "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " pèse le plus lourd en énergie."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "L'indice de réparabilité note l'appareil sur "
+     },
+     {
+      "t": "champ",
+      "points": 6
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une pièce introuvable rend l'appareil "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " , même s'il est simple."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Sur une île, tout ce qui arrive doit repartir : c'est ce qui rend la réparation stratégique.",
+   "auteur": ""
+  }
+ ]
+}

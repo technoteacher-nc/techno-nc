@@ -1,0 +1,21 @@
+---
+code: "S2-A05"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S16"
+phase: "Analyser"
+titre: "L'ÉVOLUTION DES OBJETS TECHNIQUES"
+question: "PROBLÉMATIQUE : Pourquoi les objets techniques évoluent-ils au fil du temps ?"
+objectif: "Remettre une frise d'objets dans l'ordre, distinguer le besoin (qui ne change pas) de la solution technique (qui change), et nommer les quatre moteurs d'évolution."
+competences:
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+prerequis: "S2-A04 — cycle de vie et réparabilité."
+materiel: "Fiche S2-A05 · diaporama de la frise (5 vignettes en désordre) · ardoises de Maison"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A05_Evolution_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A05_Evolution_4eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A05_Evolution_4eme.pdf"
+qr: "/qr/s2-a05-4eme.png"
+---

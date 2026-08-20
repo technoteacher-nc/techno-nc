@@ -1,0 +1,21 @@
+---
+code: "S1-A05"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S10"
+phase: "Analyser"
+titre: "LES OBJETS ET SYSTÈMES TECHNIQUES DE NOUVELLE-CALÉDONIE"
+question: "PROBLÉMATIQUE : Qu'est-ce qui distingue un objet technique d'un objet trouvé dans la nature ?"
+objectif: "Définir un OST, nommer son utilisateur, sa fonction principale et une contrainte ; en 4ème, distinguer l'OST simple du système technique et repérer les flux matière, énergie, information."
+competences:
+  - "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
+prerequis: "S1-A03 et S1-A04 — l'ordinateur est le premier OST étudié."
+materiel: "Fiche S1-A05 · diaporama d'images NC (parabole, lampe solaire, pirogue) · ardoises de Maison"
+annee: "2026"
+seq: "seq01"
+seqTitre: "Séquence 01 — L'ORDINATEUR"
+fichePdf: "/2026/seq01/FICHE_S1-A05_OST_5eme.pdf"
+ficheDocx: "/2026/seq01/FICHE_S1-A05_OST_5eme.docx"
+ebepPdf: "/2026/seq01/EBEP_S1-A05_OST_5eme.pdf"
+qr: "/qr/s1-a05-5eme.png"
+---

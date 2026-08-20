@@ -1,0 +1,21 @@
+---
+code: "S2-A03"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S15"
+phase: "Analyser"
+titre: "LES OBJETS QUI PENSENT"
+question: "PROBLÉMATIQUE : Qu'est-ce qu'un objet doit savoir faire pour agir sans qu'on appuie sur un bouton ?"
+objectif: "Distinguer un objet simple d'un objet qui capte une information et agit tout seul."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S2-A02 — capteur, actionneur, chaîne d'information."
+materiel: "Fiche S2-A03 · objets connectés de la salle"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A03_ObjetsQuiPensent_5eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A03_ObjetsQuiPensent_5eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A03_ObjetsQuiPensent_5eme.pdf"
+qr: "/qr/s2-a03-5eme.png"
+---

@@ -1,0 +1,21 @@
+---
+code: "S1-A06"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S12"
+phase: "Modéliser"
+titre: "LE CAHIER DES CHARGES — DIRE CE QU'ON ATTEND D'UN OBJET"
+question: "PROBLÉMATIQUE : Comment écrire ce qu'on attend d'un objet, d'une façon que tout le monde comprenne pareil ?"
+objectif: "Rédiger un cahier des charges : fonction principale et fonctions de contrainte ; en 4ème, y ajouter le critère d'évaluation et le niveau exigé, chiffré et vérifiable."
+competences:
+  - "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+prerequis: "S1-A05 — OST, fonction principale, fonction de contrainte."
+materiel: "Fiche S1-A06 · l'ordinateur de la salle 207 comme support · exemples de CDC projetés"
+annee: "2026"
+seq: "seq01"
+seqTitre: "Séquence 01 — L'ORDINATEUR"
+fichePdf: "/2026/seq01/FICHE_S1-A06_CahierDesCharges_5eme.pdf"
+ficheDocx: "/2026/seq01/FICHE_S1-A06_CahierDesCharges_5eme.docx"
+ebepPdf: "/2026/seq01/EBEP_S1-A06_CahierDesCharges_5eme.pdf"
+qr: "/qr/s1-a06-5eme.png"
+---

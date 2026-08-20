@@ -1,0 +1,524 @@
+{
+ "code": "S1-A01",
+ "niveau": "5eme",
+ "seq": "seq01",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Tu entres pour la première fois en salle 207. Devant toi : un ordinateur éteint, un identifiant, un mot de passe.",
+    "Ta première mission n'est pas de comprendre la machine — ce sera pour l'activité 03 — mais de lui faire écrire EXACTEMENT ce qu'on te demande : la page de garde de ton classeur de Technologie."
+   ],
+   "question": "Comment donner un ordre précis à un ordinateur pour qu'il écrive exactement ce que je veux ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "J'ouvre ma session"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque case dès que tu as fait ce qui est écrit."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'allume l'écran, puis l'unité centrale (le gros boîtier).",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Je tape mon identifiant, puis mon mot de passe.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre le traitement de texte.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ouvre le dossier TECHNOLOGIE de mon espace personnel.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris ton identifiant ci-dessous. N'écris JAMAIS ton mot de passe sur une feuille."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Mon identifiant : "
+    },
+    {
+     "t": "champ",
+     "points": 38
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Mon mot de passe : je ne l'écris pas — je le retiens."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je lis la consigne de mise en forme"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la colonne de droite en lisant la consigne projetée au tableau. La première ligne est un exemple : ne la remplis pas."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Ce qu'il faut écrire",
+    "La mise en forme demandée"
+   ],
+   "largeurs": [
+    4200,
+    5160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — Collège Edmée Varin"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri, taille 12, gras, centré"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "TECHNOLOGIE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri, taille "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " , majuscules, "
+         },
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "NOM Prénom"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri, taille "
+         },
+         {
+          "t": "champ",
+          "points": 8
+         },
+         {
+          "t": "texte",
+          "v": " , NOM en "
+         },
+         {
+          "t": "champ",
+          "points": 20
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Classe"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri, taille 22"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Maison"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Calibri, taille 16, "
+         },
+         {
+          "t": "champ",
+          "points": 16
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Une taille de police se mesure en POINTS. Un texte en taille 36 est trois fois plus haut qu'un texte en taille 12."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je place les images"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche chaque case quand l'image est placée."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Le logo du collège, en haut à gauche.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Le blason de ma Maison, en haut à droite.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Une image en rapport avec la Technologie, DERRIÈRE le mot TECHNOLOGIE.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Pour mettre une image derrière du texte, j'utilise :   « habillage »   /   « rogner »   /   « pivoter »"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Une image trouvée sur internet peut être utilisée :   toujours   /   seulement si elle est libre de droits"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Une image libre de droits, c'est une image que son auteur autorise à réutiliser. On le vérifie AVANT de la copier."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "J'enregistre au bon endroit"
+  },
+  {
+   "type": "consigne",
+   "texte": "Enregistre ton fichier, puis complète les deux lignes ci-dessous."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le nom que j'ai donné à mon fichier : "
+    },
+    {
+     "t": "champ",
+     "points": 40
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le dossier dans lequel il est enregistré : "
+    },
+    {
+     "t": "champ",
+     "points": 40
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche le nom de fichier qui permettra de retrouver ton travail dans six mois."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "Document1",
+     "points": 0
+    },
+    {
+     "label": "page de garde",
+     "points": 0
+    },
+    {
+     "label": "PageDeGarde_NOM_Prenom",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un ordinateur fait exactement ce qu'on lui demande, donc une consigne doit être …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Mon identifiant s'écrit ; mon "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " de passe ne s'écrit jamais."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La taille d'un texte se mesure en "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "On ne réutilise une image que si elle est "
+     },
+     {
+      "t": "champ",
+      "points": 30
+     },
+     {
+      "t": "texte",
+      "v": " de droits."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un fichier bien nommé est un fichier qu'on "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " six mois plus tard."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "L'ordinateur ne devine rien : il obéit. C'est pour cela qu'il faut apprendre à lui parler.",
+   "auteur": ""
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+---
+code: "S1-A01"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S3"
+phase: "Représenter"
+titre: "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR"
+question: "PROBLÉMATIQUE : Comment donner un ordre précis à un ordinateur pour qu'il écrive exactement ce que je veux ?"
+objectif: "Ouvrir une session, produire une page de garde au traitement de texte en respectant une consigne de mise en forme, puis enregistrer le fichier au bon endroit et sous le bon nom."
+competences:
+  - "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
+prerequis: ""
+materiel: "Un poste par élève · traitement de texte · consigne projetée · logo du collège et blason de Maison"
+annee: "2026"
+seq: "seq01"
+seqTitre: "Séquence 01 — L'ORDINATEUR"
+fichePdf: "/2026/seq01/FICHE_S1-A01_PageDeGarde_4eme.pdf"
+ficheDocx: "/2026/seq01/FICHE_S1-A01_PageDeGarde_4eme.docx"
+ebepPdf: "/2026/seq01/EBEP_S1-A01_PageDeGarde_4eme.pdf"
+qr: "/qr/s1-a01-4eme.png"
+---

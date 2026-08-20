@@ -1,0 +1,21 @@
+---
+code: "S2-A02"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S14"
+phase: "Analyser"
+titre: "LE STYLO 4 COULEURS — DÉMONTER POUR COMPRENDRE"
+question: "PROBLÉMATIQUE : Comment un seul stylo peut-il écrire de quatre couleurs sans jamais les mélanger ?"
+objectif: "Observer un objet technique simple, nommer ses parties et dire ce que chacune fait."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S2-A01 — fonction principale et fonctions secondaires."
+materiel: "Un stylo 4 couleurs par élève · fiche S2-A02"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A02_Stylo_5eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A02_Stylo_5eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A02_Stylo_5eme.pdf"
+qr: "/qr/s2-a02-5eme.png"
+---

@@ -1,0 +1,754 @@
+{
+ "code": "S1-A06",
+ "niveau": "4eme",
+ "seq": "seq01",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE CAHIER DES CHARGES PROFESSIONNEL — QUANTIFIER UNE EXIGENCE"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "« L'ordinateur doit démarrer vite. » Deux techniciens lisent cette phrase, et l'un livre une machine qui met dix secondes, l'autre une machine qui en met quatre-vingt-dix. Aucun des deux n'a menti.",
+    "Un cahier des charges professionnel ajoute donc deux colonnes à celui de 5ème : COMMENT on vérifie, et À PARTIR DE QUELLE VALEUR c'est accepté."
+   ],
+   "question": "Comment écrire ce qu'on attend d'un objet, d'une façon que tout le monde comprenne pareil ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les quatre colonnes"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "FONCTION — ce que le système doit faire.  ·  CONTRAINTE — la limite à respecter."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "CRITÈRE D'ÉVALUATION — comment on MESURE ou on TESTE la contrainte."
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "NIVEAU EXIGÉ — la valeur à partir de laquelle c'est accepté, avec son unité."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris dans quelle colonne va chaque phrase. La première ligne est un exemple."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (un mot peut servir plusieurs fois, un mot peut ne pas servir) : niveau exigé · critère d'évaluation · contrainte · fonction"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "La phrase",
+    "Sa colonne"
+   ],
+   "largeurs": [
+    5760,
+    3600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — « donner accès aux ressources numériques »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "fonction"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« ≥ 10 Mbit/s par poste »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« la connexion doit rester stable »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "« mesure du débit descendant avec un test en ligne »"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Quantifier, ou ne pas quantifier"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche l'exigence VÉRIFIABLE dans chaque paire."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "« l'écran doit être assez grand »",
+     "points": 0
+    },
+    {
+     "label": "« l'écran doit mesurer au moins 24 pouces »",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "« le poste doit consommer moins de 65 W en veille »",
+     "points": 0
+    },
+    {
+     "label": "« le poste doit être économe »",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "« le clavier doit être solide »",
+     "points": 0
+    },
+    {
+     "label": "« le clavier doit supporter 10 millions de frappes »",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Une exigence non chiffrée est :   plus souple   /   invérifiable"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Le CDC du réseau de la salle 207"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète les trois lignes vides. Les deux premières sont données comme modèle."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fonction / Contrainte",
+    "Critère d'évaluation",
+    "Niveau exigé"
+   ],
+   "largeurs": [
+    3560,
+    3400,
+    2400
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FP — accès aux ressources numériques"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "débit descendant mesuré"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "≥ 10 Mbit/s par poste"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC — sécurité des données"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "test d'accès aux fichiers d'un autre élève"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "accès refusé"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC — "
+         },
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 18
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC — "
+         },
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 18
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "FC — "
+         },
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 18
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Un niveau exigé porte toujours une unité : Mbit/s, W, °C, secondes, francs."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Mon CDC — un système technique de Nouvelle-Calédonie"
+  },
+  {
+   "type": "consigne",
+   "texte": "Choisis un système technique autre que le réseau, puis écris deux lignes de son CDC."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le système que je choisis : "
+    },
+    {
+     "t": "champ",
+     "points": 46
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Sa fonction principale : "
+    },
+    {
+     "t": "champ",
+     "points": 54
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Contrainte",
+    "Critère d'évaluation",
+    "Niveau exigé"
+   ],
+   "largeurs": [
+    3560,
+    3400,
+    2400
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 18
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 18
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "« Le poste doit démarrer vite » ne suffit pas dans un cahier des charges professionnel, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Un CDC professionnel a quatre colonnes : fonction, contrainte, "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " , niveau."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le critère d'évaluation dit comment on "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " la contrainte."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Un niveau exigé porte toujours une "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " ."
+     }
+    ],
+    [
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " une contrainte, c'est la rendre vérifiable."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Quantifier une contrainte, c'est la rendre vérifiable.",
+   "auteur": ""
+  }
+ ]
+}

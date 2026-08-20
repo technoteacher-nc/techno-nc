@@ -1,0 +1,22 @@
+---
+code: "S2-A04"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S16"
+phase: "Analyser"
+titre: "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ"
+question: "PROBLÉMATIQUE : Où va un objet technique quand on ne s'en sert plus, et pourquoi est-ce un problème en Nouvelle-Calédonie ?"
+objectif: "Ordonner les cinq étapes du cycle de vie d'un objet, lire un indice de réparabilité et dire ce qui rend un objet réparable."
+competences:
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+  - "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+prerequis: "S2-A03 — les objets qui contiennent de l'électronique."
+materiel: "Fiche S2-A04 · étiquettes d'indice de réparabilité projetées · un objet cassé de la salle"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A04_CycleDeVie_5eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A04_CycleDeVie_5eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A04_CycleDeVie_5eme.pdf"
+qr: "/qr/s2-a04-5eme.png"
+---

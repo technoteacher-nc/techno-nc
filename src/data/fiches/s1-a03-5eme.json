@@ -1,0 +1,541 @@
+{
+ "code": "S1-A03",
+ "niveau": "5eme",
+ "seq": "seq01",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "L'UNITÉ CENTRALE — AU CŒUR DE L'ORDINATEUR"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Sur la table du professeur, une tour est ouverte. À l'intérieur : des cartes, des ventilateurs, des câbles.",
+    "Aucun de ces éléments ne sait faire quelque chose tout seul. C'est ensemble qu'ils forment l'unité centrale, la partie de l'ordinateur qui calcule et qui retient."
+   ],
+   "question": "Que contient le boîtier de l'ordinateur, et à quoi sert chacune de ses pièces ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "J'explore l'animation"
+  },
+  {
+   "type": "consigne",
+   "texte": "Ouvre l'adresse ci-dessous, puis coche chaque case quand tu as fait ce qui est écrit."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "techno-flash.com/animations/unicenligne/unite_centrale.html"
+    }
+   ]
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ai tapé l'adresse et attendu que l'animation charge.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ai cliqué sur CHACUN des composants.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "J'ai lu le nom, le rôle et l'unité de mesure de chacun.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "Je nomme les six composants"
+  },
+  {
+   "type": "consigne",
+   "texte": "Écris le nom du composant qui manque, en le choisissant dans la banque. La première ligne est un exemple : ne la remplis pas."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Banque de mots (un mot peut servir plusieurs fois, un mot peut ne pas servir) : la carte mère · le disque dur · l'alimentation · la mémoire vive (RAM) · la carte graphique"
+    }
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Composant",
+    "Son rôle",
+    "Ce qui le mesure"
+   ],
+   "largeurs": [
+    2900,
+    4300,
+    2160
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "EXEMPLE — le processeur (CPU)"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "exécute les instructions : c'est le cerveau"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une fréquence, en GHz"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "garde les données EN COURS d'utilisation ; tout s'efface à l'extinction"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une capacité, en Go"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "garde les fichiers même éteint"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une capacité, en Go ou To"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "relie tous les composants entre eux"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "un format (ATX, mATX…)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "calcule les images affichées à l'écran"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une VRAM, en Go"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 26
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "fournit l'énergie électrique à tout le reste"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "une puissance, en watts"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "Je lis les unités"
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le GHz mesure :   une quantité   /   une vitesse"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le Go mesure :   une quantité   /   une vitesse"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Le watt mesure :   une énergie consommée   /   une quantité de fichiers"
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche la phrase juste."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "8 Go de RAM, c'est plus rapide que 4 Go.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "8 Go de RAM, c'est plus de place pour travailler que 4 Go.",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "1 To = 1 000 Go. Un disque de 1 To contient environ 250 000 photos de téléphone."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Je place les composants sur un schéma"
+  },
+  {
+   "type": "consigne",
+   "texte": "Dessine le boîtier de l'unité centrale, puis écris à l'intérieur le nom des six composants. Tu peux abréger (CPU, RAM, HDD…)."
+  },
+  {
+   "type": "zone",
+   "label": "Mon schéma de l'unité centrale — utilise tout le cadre.",
+   "hauteur": 2600
+  },
+  {
+   "type": "partie",
+   "numero": "5",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Quand j'éteins l'ordinateur, je perds ce qui est dans la RAM et je garde ce qui est sur le disque dur, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " exécute les instructions : sa vitesse se mesure en GHz."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La mémoire "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " retient le travail en cours ; elle s'efface à l'extinction."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " dur garde les fichiers même éteint."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "La carte "
+     },
+     {
+      "t": "champ",
+      "points": 16
+     },
+     {
+      "t": "texte",
+      "v": " relie tous les composants entre eux."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "Comprendre l'outil, c'est la première étape pour le maîtriser.",
+   "auteur": ""
+  }
+ ]
+}

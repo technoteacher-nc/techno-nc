@@ -80,6 +80,39 @@ export const lexique = donneesLexique.themes.map(t => ({
 // élève qui travaille à la maison sur le téléphone familial.
 export const simulateurs: GroupeSimulateurs[] = [
   {
+    seq: 'seq01', titre: "L'ordinateur", repere: 'SÉQUENCE 01',
+    items: [
+      { nom: "L'unité centrale", source: 'Techno-Flash', navigateur: true,
+        desc: "Ce qu'il y a dans le boîtier, pièce par pièce, avec les unités de mesure de chacune.",
+        url: 'https://techno-flash.com/animations/unicenligne/unite_centrale.html',
+        // Rattachée à S1-A03, où la notion se CONSTRUIT — elle était jusqu'ici
+        // accrochée à S2-A07 seulement, qui ne fait que la réutiliser pour
+        // comparer deux ordinateurs. S2-A07 la garde à ce titre.
+        activites: ['s1-a03-5eme', 's1-a03-4eme', 's2-a07-5eme', 's2-a07-4eme'] },
+      { nom: 'Les périphériques', source: 'Techno-Flash', navigateur: true,
+        desc: "Entrée, sortie, entrée-sortie : le sens dans lequel l'information circule.",
+        url: 'https://techno-flash.com/animations/les_peripheriques/les_peripheriques.html',
+        activites: ['s1-a04-5eme', 's1-a04-4eme'] },
+      { nom: 'Le cahier des charges fonctionnel', source: 'Techno-Flash', navigateur: true,
+        desc: 'Besoin, fonction principale, contraintes — la démarche de la fiche S1-A06.',
+        url: 'https://techno-flash.com/animations/cahier_des_charges/cahier_des_charges_fonctionnel.html',
+        activites: ['s1-a06-5eme', 's1-a06-4eme'] },
+    ],
+  },
+  {
+    seq: 'seq02', titre: 'Usages des objets techniques', repere: 'SÉQUENCE 02',
+    items: [
+      { nom: 'Evolutech', source: 'Techno-Flash', navigateur: true,
+        desc: "L'évolution des objets techniques dans le temps : même besoin, solutions successives.",
+        url: 'https://techno-flash.com/animations/Evoulutech-dgka75bx/Evolutech.html',
+        activites: ['s2-a05-5eme', 's2-a05-4eme'] },
+      { nom: "La chaîne d'information", source: 'Techno-Flash', navigateur: true,
+        desc: 'Acquérir, traiter, communiquer — la chaîne des systèmes automatisés.',
+        url: 'https://techno-flash.com/animations/chaine_information/chaine_information.html',
+        activites: ['s2-a02-4eme', 's2-a03-4eme'] },
+    ],
+  },
+  {
     seq: 'seq03', titre: 'Réseaux et données', repere: 'SÉQUENCE 03',
     items: [
       { nom: 'Le réseau du collège', source: 'Techno-Flash', navigateur: true,
@@ -94,10 +127,6 @@ export const simulateurs: GroupeSimulateurs[] = [
         desc: 'Le simulateur de réseau utilisé en classe. Gratuit, à installer.',
         url: 'https://www.lernsoftware-filius.de/',
         activites: ['s3-a02-4eme', 's3-a03-4eme', 's3-a04-5eme'] },
-      { nom: "L'unité centrale · Les périphériques", source: 'Techno-Flash', navigateur: true,
-        desc: "Ce qu'il y a dans un ordinateur, pièce par pièce.",
-        url: 'https://techno-flash.com/animations/unicenligne/unite_centrale.html',
-        activites: ['s2-a07-4eme', 's2-a07-5eme'] },
     ],
   },
   {
@@ -175,9 +204,6 @@ export const simulateurs: GroupeSimulateurs[] = [
       { nom: 'La résistance des matériaux', source: 'Techno-Flash', navigateur: true,
         desc: 'Flexion, traction, compression : pourquoi une feuille pliée devient rigide.',
         url: 'https://techno-flash.com/animations/resistance_materiaux/resistance_materiaux.html' },
-      { nom: 'Evolutech', source: 'Techno-Flash', navigateur: true,
-        desc: "L'évolution des objets techniques dans le temps.",
-        url: 'https://techno-flash.com/animations/Evoulutech-dgka75bx/Evolutech.html' },
     ],
   },
 ];

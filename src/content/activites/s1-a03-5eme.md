@@ -1,0 +1,21 @@
+---
+code: "S1-A03"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "S7"
+phase: "Analyser"
+titre: "L'UNITÉ CENTRALE — AU CŒUR DE L'ORDINATEUR"
+question: "PROBLÉMATIQUE : Que contient le boîtier de l'ordinateur, et à quoi sert chacune de ses pièces ?"
+objectif: "Nommer les six composants de l'unité centrale, dire le rôle de chacun et lire l'unité de mesure qui le caractérise (GHz, Go, W)."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S1-A01 et S1-A02 — la session s'ouvre, le fichier s'enregistre."
+materiel: "Un poste par élève · animation Techno-Flash « l'unité centrale » · une tour ouverte sur la table du professeur"
+annee: "2026"
+seq: "seq01"
+seqTitre: "Séquence 01 — L'ORDINATEUR"
+fichePdf: "/2026/seq01/FICHE_S1-A03_UniteCentrale_5eme.pdf"
+ficheDocx: "/2026/seq01/FICHE_S1-A03_UniteCentrale_5eme.docx"
+ebepPdf: "/2026/seq01/EBEP_S1-A03_UniteCentrale_5eme.pdf"
+qr: "/qr/s1-a03-5eme.png"
+---

@@ -1,0 +1,21 @@
+---
+code: "S2-A03"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S15"
+phase: "Analyser"
+titre: "LA MONTRE CONNECTÉE"
+question: "PROBLÉMATIQUE : Que sait une montre connectée sur celui qui la porte, et comment l'apprend-elle ?"
+objectif: "Nommer les capteurs d'une montre connectée et la grandeur physique acquise, ordonner la chaîne d'information, distinguer fonction principale et fonctions secondaires."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S2-A02 — capteur, actionneur, chaîne d'information."
+materiel: "Fiche S2-A03 · vue éclatée projetée d'une montre connectée"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A03_MontreConnectee_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A03_MontreConnectee_4eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A03_MontreConnectee_4eme.pdf"
+qr: "/qr/s2-a03-4eme.png"
+---

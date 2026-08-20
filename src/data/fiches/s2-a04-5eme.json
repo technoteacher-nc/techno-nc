@@ -1,0 +1,520 @@
+{
+ "code": "S2-A04",
+ "niveau": "5eme",
+ "seq": "seq02",
+ "blocs": [
+  {
+   "type": "titre",
+   "texte": "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ"
+  },
+  {
+   "type": "situation",
+   "lignes": [
+    "Un téléphone qui ne s'allume plus finit à la poubelle. En Nouvelle-Calédonie, il ne part pas loin : il n'y a pas d'usine de recyclage sur le territoire, tout doit repartir par bateau.",
+    "Avant d'arriver dans ta main, cet objet a eu toute une vie — et il en a encore une après."
+   ],
+   "question": "Où va un objet technique quand on ne s'en sert plus, et pourquoi est-ce un problème en Nouvelle-Calédonie ?"
+  },
+  {
+   "type": "partie",
+   "numero": "1",
+   "titre": "Les cinq étapes de la vie d'un objet"
+  },
+  {
+   "type": "consigne",
+   "texte": "Numérote les cinq étapes de 1 à 5, dans l'ordre. Attention : elles ne sont pas dans le bon ordre."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Étape",
+    "N°"
+   ],
+   "largeurs": [
+    7360,
+    2000
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "On s'en sert tous les jours pendant deux ans."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "On sort le minerai de la mine et on fabrique les pièces."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "On le jette, ou on le donne à recycler."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "On le transporte du pays où il est fait jusqu'au magasin."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "On l'achète en magasin."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 6
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Ces cinq étapes forment le CYCLE DE VIE. Chacune coûte de l'énergie — même celles qu'on ne voit pas."
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "2",
+   "titre": "L'étape la plus coûteuse"
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche l'étape qui consomme le plus d'énergie pour un téléphone."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "la fabrication",
+     "points": 0
+    },
+    {
+     "label": "l'utilisation",
+     "points": 0
+    },
+    {
+     "label": "le transport",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Pour un téléphone, la fabrication consomme environ 80 % de toute l'énergie de sa vie. Le garder deux ans de plus vaut mieux que tous les gestes d'économie."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Entoure la bonne réponse."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Garder son téléphone plus longtemps est écologique :   vrai   /   faux"
+    }
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "3",
+   "titre": "L'indice de réparabilité"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "L'indice de réparabilité est une note sur 10, affichée sur l'étiquette. Plus elle est haute, plus l'objet est facile à réparer."
+    }
+   ]
+  },
+  {
+   "type": "consigne",
+   "texte": "Coche ce qui rend un objet FACILE à réparer. Plusieurs cases possibles."
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "les pièces détachées sont vendues séparément",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "la batterie est collée dans le boîtier",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "le boîtier s'ouvre avec un tournevis ordinaire",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "la notice de réparation est disponible gratuitement",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "coches",
+   "items": [
+    {
+     "label": "chaque vis est d'un modèle différent",
+     "points": 0
+    }
+   ],
+   "justif": 0
+  },
+  {
+   "type": "consigne",
+   "texte": "Lis les deux étiquettes projetées et écris leur note."
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Objet",
+    "Indice /10",
+    "Le plus réparable ? (coche)"
+   ],
+   "largeurs": [
+    4160,
+    2600,
+    2600
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Téléphone A"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Téléphone B"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "champ",
+          "points": 10
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "partie",
+   "numero": "4",
+   "titre": "Ce que j'ai compris"
+  },
+  {
+   "type": "consigne",
+   "texte": "Complète la phrase. Une seule phrase suffit : c'est la seule rédaction de la fiche."
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Réparer un objet plutôt que le remplacer est intéressant en Nouvelle-Calédonie, parce que …"
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 78
+  },
+  {
+   "type": "bilan",
+   "lignes": [
+    [
+     {
+      "t": "texte",
+      "v": "Le "
+     },
+     {
+      "t": "champ",
+      "points": 22
+     },
+     {
+      "t": "texte",
+      "v": " de vie d'un objet compte cinq étapes."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Pour un téléphone, c'est la "
+     },
+     {
+      "t": "champ",
+      "points": 24
+     },
+     {
+      "t": "texte",
+      "v": " qui consomme le plus d'énergie."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "L'indice de "
+     },
+     {
+      "t": "champ",
+      "points": 26
+     },
+     {
+      "t": "texte",
+      "v": " est une note sur 10."
+     }
+    ],
+    [
+     {
+      "t": "texte",
+      "v": "Une batterie "
+     },
+     {
+      "t": "champ",
+      "points": 14
+     },
+     {
+      "t": "texte",
+      "v": " fait baisser l'indice : on ne peut pas la changer."
+     }
+    ]
+   ]
+  },
+  {
+   "type": "citation",
+   "texte": "L'objet le plus écologique est celui qu'on n'a pas eu besoin de racheter.",
+   "auteur": ""
+  }
+ ]
+}

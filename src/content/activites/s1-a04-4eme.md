@@ -1,0 +1,21 @@
+---
+code: "S1-A04"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "S9"
+phase: "Analyser"
+titre: "LES PÉRIPHÉRIQUES — CE QUI SE CONNECTE À L'ORDINATEUR"
+question: "PROBLÉMATIQUE : Dans quel sens l'information circule-t-elle entre moi et l'ordinateur ?"
+objectif: "Classer un périphérique en entrée, sortie ou entrée-sortie selon le SENS de l'information, et donner sa fonction."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S1-A03 — l'unité centrale et ses six composants."
+materiel: "Un poste par élève · animation Techno-Flash « les périphériques » · périphériques réels de la salle"
+annee: "2026"
+seq: "seq01"
+seqTitre: "Séquence 01 — L'ORDINATEUR"
+fichePdf: "/2026/seq01/FICHE_S1-A04_Peripheriques_4eme.pdf"
+ficheDocx: "/2026/seq01/FICHE_S1-A04_Peripheriques_4eme.docx"
+ebepPdf: "/2026/seq01/EBEP_S1-A04_Peripheriques_4eme.pdf"
+qr: "/qr/s1-a04-4eme.png"
+---
