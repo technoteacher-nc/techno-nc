@@ -47,6 +47,14 @@ const aFicheEnLigne = existsSync(path.join(process.cwd(), 'src', 'data', 'fiches
 // Ressources.
 const pourAllerPlusLoin = simulateursDe(act.id);
 
+// Vingt-cinq fiches sur trente-sept portent « PROBLÉMATIQUE : » en tête de leur
+// question, les douze autres non. Affiché tel quel à côté du « ? » de la mise
+// en page, cela donnait « ? PROBLÉMATIQUE : Pourquoi… » — le mot double le
+// pictogramme, et la moitié des pages ne l'avaient pas. On le retire à
+// l'affichage plutôt que de retoucher vingt-cinq fichiers : la source reste
+// libre, la page est uniforme.
+const question = (d.question || '').replace(/^PROBL[ÉE]MATIQUE\s*:\s*/i, '');
+
 // Le vocabulaire réellement mobilisé par CETTE activité, lexique et
 // consolidation confondus. Mieux vaut trois mots au bon endroit qu'une liste
 // de dix-huit définitions à trier soi-même.
@@ -68,7 +76,7 @@ const donneesLd = [
     '@context': 'https://schema.org',
     '@type': 'LearningResource',
     name: `${d.code} — ${d.titre}`,
-    description: d.question,
+    description: question,
     url: urlPage,
     inLanguage: 'fr',
     educationalLevel: d.niveauLabel,
@@ -80,7 +88,7 @@ const donneesLd = [
   },
 ];
 ---
-<Base titre={`${d.code} ${d.niveauLabel} — ${d.titre}`} description={d.question}>
+<Base titre={`${d.code} ${d.niveauLabel} — ${d.titre}`} description={question}>
 
   <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
@@ -94,12 +102,11 @@ const donneesLd = [
       <span class="eyebrow-mini">étape {rang} sur {total}{d.semaine && ` · ${d.semaine}`}</span>
     </div>
     <h1 class="leve leve-1">{d.titre}</h1>
-    <p class="question leve leve-2">{d.question}</p>
+    <p class="question leve leve-2">{question}</p>
 
-    {/* La fiche papier passe en premier : c'est elle qu'on utilise en classe,
-        et l'écriture à la main est ce que le brevet demande. Le remplissage en
-        ligne reste offert, mais annoncé pour ce qu'il sert vraiment —
-        rattraper une absence et relire la correction. */}
+    {/* La fiche papier passe en premier : c'est elle qu'on utilise en classe.
+        Le remplissage en ligne reste offert, mais annoncé pour ce qu'il sert
+        vraiment — rattraper une absence et relire la correction. */}
     <div class="docs leve leve-3">
       <a class="btn btn--fort" href={u(d.fichePdf)} download>
         Télécharger la fiche{pFiche && <span class="btn-meta">PDF · {pFiche}</span>}

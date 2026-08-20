@@ -1405,3 +1405,62 @@ body {
   color: var(--bleu); margin-top: 1.1rem !important;
 }
 @media (max-width: 34rem) { .accueil-histoire { padding: 1.2rem 1.1rem; } }
+
+/* ---------- lexique : l'index alphabétique ----------
+   Les thèmes servent à apprendre, l'index à retrouver. Il est replié par
+   défaut : la page reste dominée par les thèmes, et l'index se déplie quand on
+   cherche un mot précis. */
+.lex-index {
+  margin: 1.5rem 0 1rem; border: 1.5px dashed var(--trait);
+  border-radius: var(--r); background: var(--papier);
+}
+.lex-index > summary {
+  cursor: pointer; padding: .8rem 1.1rem;
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+}
+.lex-index > summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: -2px; border-radius: var(--r); }
+.lex-index-titre {
+  font-family: var(--display); font-weight: 700; font-size: .98rem; color: var(--bleu);
+}
+.lex-alpha { padding: .2rem 1.1rem 1.1rem; }
+.lex-alpha-groupe {
+  display: grid; grid-template-columns: 2rem 1fr; gap: 0 .8rem;
+  padding: .45rem 0; border-top: 1px solid var(--trait);
+}
+.lex-alpha-lettre {
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: var(--vif);
+}
+.lex-alpha ul {
+  margin: 0; padding: 0; list-style: none;
+  display: flex; flex-wrap: wrap; gap: .3rem .5rem;
+}
+.lex-alpha li::after { content: '·'; color: var(--trait); margin-left: .5rem; }
+.lex-alpha li:last-child::after { content: ''; }
+.lex-alpha a { color: var(--encre); text-decoration: none; font-size: .92rem; }
+.lex-alpha a:hover { color: var(--bleu); text-decoration: underline; }
+
+/* Le mot visé par l'index, mis en évidence une seconde : dans soixante-dix
+   définitions, un simple défilement ne dit pas où l'on a atterri. */
+.lexique dt.mot-vise {
+  background: color-mix(in srgb, var(--vif) 22%, transparent);
+  border-radius: 4px; box-shadow: 0 0 0 .3rem color-mix(in srgb, var(--vif) 22%, transparent);
+  transition: background .3s, box-shadow .3s;
+}
+
+@media print { .lex-index { display: none; } }
+
+/* ---------- navigation : cinq onglets, pas six ----------
+   Le mode d'emploi se lit une fois, en septembre. Il occupait pourtant le plus
+   large onglet d'une barre collante qui, sur un téléphone de 375 px, mangeait
+   128 px de hauteur sur CHAQUE page. Il descend au pied de page, où on le
+   retrouve quand on le cherche. */
+.pied-liens { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.pied-liens a { color: inherit; }
+
+/* Sur un téléphone, l'en-tête cesse d'être collante : deux lignes d'onglets
+   figées en haut coûtent plus qu'elles ne rapportent. Elle reste accessible
+   d'une remontée de pouce. */
+@media (max-width: 30rem) {
+  .site-head { position: static; }
+}

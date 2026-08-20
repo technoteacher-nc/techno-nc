@@ -19,6 +19,26 @@ import path from 'node:path';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
+
+// Deux entrées pour un même lexique, parce qu'elles répondent à deux questions
+// différentes : les THÈMES pour apprendre (les mots d'un même thème
+// s'éclairent l'un l'autre), l'ORDRE ALPHABÉTIQUE pour retrouver un mot dont
+// on ne sait plus à quel thème il appartient — ce qui est le cas le plus
+// fréquent quand on relit sa fiche.
+const idDe = (mot) => 'mot-' + String(mot)
+  .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+const tousLesMots = lexique
+  .flatMap(sec => sec.termes.map(([mot]) => ({ mot, theme: sec.titre })))
+  .sort((x, y) => x.mot.localeCompare(y.mot, 'fr'));
+
+const parLettre = tousLesMots.reduce((acc, m) => {
+  const l = m.mot.normalize('NFD').replace(/[̀-ͯ]/g, '')[0].toUpperCase();
+  (acc[l] ||= []).push(m);
+  return acc;
+}, {});
+const lettres = Object.keys(parLettre).sort();
 function poids(rel) {
   try {
     const o = statSync(path.join(process.cwd(), 'public', rel)).size;
@@ -81,6 +101,25 @@ const donneesLd = {
     Vocabulaire de Technologie<span>{nbTermes} mots · attendus au Brevet</span>
   </h2>
 
+  <details class="lex-index">
+    <summary>
+      <span class="lex-index-titre">Chercher un mot par ordre alphabétique</span>
+      <span class="lex-theme-meta">{tousLesMots.length} mots</span>
+    </summary>
+    <nav class="lex-alpha" aria-label="Index alphabétique">
+      {lettres.map(l => (
+        <div class="lex-alpha-groupe">
+          <span class="lex-alpha-lettre" aria-hidden="true">{l}</span>
+          <ul>
+            {parLettre[l].map(m => (
+              <li><a href={'#' + idDe(m.mot)}>{m.mot}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </nav>
+  </details>
+
   <div class="lex-themes">
     {lexique.map((s, i) => (
       <details class="lex-theme" open={i === 0}>
@@ -89,7 +128,7 @@ const donneesLd = {
           <span class="lex-theme-meta">{s.repere} · {s.termes.length} mots</span>
         </summary>
         <dl class="lexique">
-          {s.termes.map(([mot, def]) => (<><dt>{mot}</dt><dd>{def}</dd></>))}
+          {s.termes.map(([mot, def]) => (<><dt id={idDe(mot)}>{mot}</dt><dd>{def}</dd></>))}
         </dl>
       </details>
     ))}
@@ -177,6 +216,29 @@ const donneesLd = {
     <a class="btn" href={u('/ressources/syntheses')}>Fiches de synthèse →</a>
     <a class="btn" href={u('/ressources/animations')}>Animations &amp; logiciels →</a>
   </nav>
+
+  <script>
+    // Un lien de l'index pointe vers un <dt> qui vit dans un <details> replié.
+    // Tous les navigateurs ne l'ouvrent pas tout seuls : on le fait ici, puis
+    // on met le mot en évidence une seconde, sinon on ne sait pas où on a
+    // atterri dans une liste de soixante-dix définitions.
+    function ouvrirVers(hash) {
+      if (!hash || !hash.startsWith('#mot-')) return;
+      const cible = document.querySelector(hash);
+      if (!cible) return;
+      let p = cible.parentElement;
+      while (p) { if (p.tagName === 'DETAILS') p.open = true; p = p.parentElement; }
+      cible.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      cible.classList.add('mot-vise');
+      setTimeout(() => cible.classList.remove('mot-vise'), 1600);
+    }
+    document.querySelectorAll('.lex-alpha a').forEach(a => {
+      a.addEventListener('click', e => { e.preventDefault();
+        history.replaceState(null, '', a.getAttribute('href'));
+        ouvrirVers(a.getAttribute('href')); });
+    });
+    if (location.hash) ouvrirVers(location.hash);
+  </script>
 
   <script>
     // Impression : tout déplier d'abord, sinon un thème replié s'imprime
