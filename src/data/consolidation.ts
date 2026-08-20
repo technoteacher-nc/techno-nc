@@ -217,3 +217,95 @@ export const notionsDe = (slug: string) =>
   consolidation.flatMap(b =>
     b.notions.filter(n => n.activites?.includes(slug))
       .map(n => ({ nom: n.nom, symbole: n.symbole, bloc: b.titre })));
+
+/* ---------------------------------------------------------------- conversions
+   Les tableaux de conversion des manuels de technologie, repris ici parce que
+   c'est la forme que les élèves reconnaissent — et parce qu'un tableau se
+   consulte pendant l'activité, là où une règle écrite en phrase ne se relit
+   jamais.
+
+   Chaque tableau porte SA règle de passage (× 10, × 100, × 1 000, × 60) : c'est
+   elle qu'on confond, pas les noms d'unités. Et le piège est celui qu'on voit
+   réellement sur les copies. */
+
+export type TableauConversion = {
+  titre: string;
+  regle: string;
+  unites: string[];
+  /** Une égalité par ligne, écrite comme on la lit. */
+  egalites: string[];
+  piege?: string;
+};
+
+export const conversions: TableauConversion[] = [
+  {
+    titre: 'Longueurs',
+    regle: 'D’une colonne à la suivante vers la droite : × 10. Vers la gauche : ÷ 10.',
+    unites: ['km', 'hm', 'dam', 'm', 'dm', 'cm', 'mm'],
+    egalites: [
+      '1 m = 10 dm = 100 cm = 1 000 mm',
+      '1 cm = 10 mm',
+      '2,5 m = 250 cm = 2 500 mm',
+      '1 km = 1 000 m',
+    ],
+    piege: 'En Technologie on cote en millimètres : 1,5 m s’écrit 1 500 mm, pas 150 mm.',
+  },
+  {
+    titre: 'Aires (surfaces)',
+    regle: 'D’une colonne à la suivante : × 100, et non × 10. Une aire a deux dimensions.',
+    unites: ['km²', 'hm²', 'dam²', 'm²', 'dm²', 'cm²', 'mm²'],
+    egalites: [
+      '1 m² = 100 dm² = 10 000 cm²',
+      '1 cm² = 100 mm²',
+      '1 dm² = 100 cm²',
+    ],
+    piege: '1 m² ne fait PAS 100 cm² mais 10 000 cm² : le côté est multiplié par 100, donc l’aire par 100 × 100.',
+  },
+  {
+    titre: 'Volumes et capacités',
+    regle: 'D’une colonne à la suivante : × 1 000. Un volume a trois dimensions.',
+    unites: ['m³', 'dm³', 'cm³', 'mm³'],
+    egalites: [
+      '1 dm³ = 1 L  (c’est la même chose)',
+      '1 cm³ = 1 mL',
+      '1 m³ = 1 000 dm³ = 1 000 L',
+      '1 L = 100 cL = 1 000 mL',
+    ],
+    piege: 'Le litre n’est pas une unité à part : 1 L EST un décimètre cube. Une brique de lait fait 1 dm³.',
+  },
+  {
+    titre: 'Masses',
+    regle: 'D’une colonne à la suivante vers la droite : × 10.',
+    unites: ['t', 'kg', 'hg', 'dag', 'g', 'dg', 'cg', 'mg'],
+    egalites: [
+      '1 kg = 1 000 g',
+      '1 t = 1 000 kg',
+      '250 g = 0,25 kg',
+      '1 g = 1 000 mg',
+    ],
+    piege: 'Entre la tonne et le kilogramme il y a trois colonnes, pas une : 1 t = 1 000 kg.',
+  },
+  {
+    titre: 'Durées',
+    regle: 'ATTENTION : × 60 d’une colonne à l’autre, jamais × 10. Les durées ne sont pas décimales.',
+    unites: ['h', 'min', 's'],
+    egalites: [
+      '1 h = 60 min = 3 600 s',
+      '1 min = 60 s',
+      '1 min 30 s = 90 s',
+      '2 h 15 min = 135 min',
+    ],
+    piege: '1,5 h vaut 1 h 30 min, pas 1 h 50 min. La calculatrice affiche 1,5 : c’est une demi-heure, donc 30 minutes.',
+  },
+  {
+    titre: 'Puissance et énergie',
+    regle: 'D’une unité à la suivante : × 1 000.',
+    unites: ['mW', 'W', 'kW', 'MW'],
+    egalites: [
+      '1 kW = 1 000 W',
+      '1 kWh = 1 000 Wh',
+      'Une LED de 8 W allumée 10 h consomme 80 Wh',
+    ],
+    piege: 'Le watt (W) est une PUISSANCE — ce que l’appareil demande à l’instant. Le wattheure (Wh) est une ÉNERGIE — ce qu’il a consommé au total. Ce ne sont pas les mêmes grandeurs.',
+  },
+];

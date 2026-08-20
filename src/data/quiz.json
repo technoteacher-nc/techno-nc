@@ -1,308 +1,104 @@
 {
  "quiz": [
   {
-   "id": "projets-5eme",
-   "seq": "projets",
-   "seqTitre": "Projets de fabrication",
-   "niveau": "5eme",
-   "niveauLabel": "5ème",
-   "titre": "Le pont en une feuille A4 — 5ème",
-   "sous": "Structure, portée, flexion, protocole d'essai et ratio.",
-   "xlsx": "/quiz/projets-5eme.xlsx",
-   "questions": [
-    {
-     "q": "Qu'appelle-t-on la PORTÉE d'un pont ?",
-     "r": [
-      "La longueur totale de la structure",
-      "La distance entre les deux appuis",
-      "La hauteur du tablier"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Quand une poutre fléchit sous une charge, le DESSUS est…",
-     "r": [
-      "comprimé",
-      "tendu",
-      "sans contrainte"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Quand une poutre fléchit sous une charge, le DESSOUS est…",
-     "r": [
-      "comprimé",
-      "sans contrainte",
-      "tendu"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "À quantité de matière égale, qu'est-ce qui fait la résistance ?",
-     "r": [
-      "La couleur",
-      "La forme",
-      "Le poids"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Comment calcule-t-on le ratio du projet ?",
-     "r": [
-      "Masse ÷ charge de rupture",
-      "Charge de rupture × masse",
-      "Charge de rupture ÷ masse de la structure"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Un ratio de 40 signifie que le pont porte…",
-     "r": [
-      "40 grammes",
-      "40 fois sa propre masse",
-      "40 % de sa masse"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Où le gobelet doit-il être posé pendant l'essai ?",
-     "r": [
-      "Au milieu de la portée",
-      "Près d'un appui",
-      "Sur un appui"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Deux mesures ne se comparent que si…",
-     "r": [
-      "elles sont faites le même jour",
-      "le protocole est identique",
-      "les groupes ont le même effectif"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Pour savoir si une modification améliore le pont, on change…",
-     "r": [
-      "tout en même temps",
-      "au moins deux choses",
-      "une seule chose à la fois"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "La fibre neutre d'une poutre…",
-     "r": [
-      "ne change pas de longueur",
-      "casse en premier",
-      "est toujours en bas"
-     ],
-     "bonne": 1
-    }
-   ]
-  },
-  {
-   "id": "projets-4eme",
-   "seq": "projets",
-   "seqTitre": "Projets de fabrication",
+   "id": "seq02-4eme",
+   "seq": "seq02",
+   "seqTitre": "Séquence 02 — Usages",
    "niveau": "4eme",
    "niveauLabel": "4ème",
-   "titre": "L'abat-jour paramétrique — 4ème",
-   "sous": "Critères antagonistes, taux d'ajour, développé du cylindre et procédés.",
-   "xlsx": "/quiz/projets-4eme.xlsx",
+   "titre": "Usages — 4ème",
+   "sous": "Les quatre critères de l'expérience utilisateur, l'accessibilité et le choix argumenté.",
+   "xlsx": "/quiz/seq02-4eme.xlsx",
    "questions": [
     {
-     "q": "Deux critères sont ANTAGONISTES quand…",
+     "q": "Combien de critères d'expérience utilisateur la fiche retient-elle ?",
      "r": [
-      "ils se mesurent pareil",
-      "améliorer l'un dégrade l'autre",
-      "ils sont tous les deux chiffrés"
+      "Trois",
+      "Quatre",
+      "Six"
      ],
      "bonne": 2
     },
     {
-     "q": "En quelle unité mesure-t-on l'éclairement ?",
+     "q": "« Est-ce que j'atteins mon but à coup sûr, sans erreur ? » Quel critère ?",
      "r": [
-      "En lux",
-      "En watts",
-      "En décibels"
+      "L'efficacité",
+      "Le confort",
+      "L'accessibilité"
      ],
      "bonne": 1
     },
     {
-     "q": "Comment calcule-t-on l'aire d'un disque ?",
+     "q": "« Est-ce que je comprends comment m'en servir vite, sans notice ? »",
      "r": [
-      "π × D",
-      "2 × π × r",
-      "π × r × r"
+      "Le confort",
+      "L'accessibilité",
+      "La facilité d'apprentissage"
      ],
      "bonne": 3
     },
     {
-     "q": "Le développé d'un cylindre est…",
+     "q": "« Tout le monde peut-il l'utiliser, quel que soit son âge ou son handicap ? »",
      "r": [
-      "un cercle",
-      "un rectangle de longueur π × D",
-      "un triangle"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Pour un diamètre de 120 mm, la longueur développée vaut environ…",
-     "r": [
-      "377 mm",
-      "120 mm",
-      "240 mm"
+      "L'accessibilité",
+      "L'efficacité",
+      "Le confort"
      ],
      "bonne": 1
     },
     {
-     "q": "Le pont de matière entre deux perçages doit valoir au moins…",
+     "q": "« Est-ce agréable, sans effort ni geste inutile ? » Quel critère ?",
      "r": [
-      "1 mm",
-      "10 mm",
-      "3 mm"
+      "L'efficacité",
+      "L'accessibilité",
+      "Le confort"
      ],
      "bonne": 3
     },
     {
-     "q": "Une pièce PLATE se fabrique de préférence…",
+     "q": "Augmenter fortement le contraste d'un écran améliore surtout…",
      "r": [
-      "à l'imprimante 3D",
-      "à la découpeuse laser",
-      "à la main"
+      "l'efficacité",
+      "l'accessibilité",
+      "la facilité d'apprentissage"
      ],
      "bonne": 2
     },
     {
-     "q": "Quel format exporte-t-on pour la découpe laser ?",
+     "q": "Rendre une application utilisable par une personne handicapée, c'est…",
      "r": [
-      "DXF",
-      "STL",
-      "OBJ"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Le taux d'ajour d'un panneau est…",
-     "r": [
-      "une longueur",
-      "une masse",
-      "un pourcentage"
+      "une option payante",
+      "une amélioration facultative",
+      "un droit"
      ],
      "bonne": 3
     },
     {
-     "q": "Le point de compromis, c'est le réglage où…",
+     "q": "Pour choisir un ordinateur pour la salle, on s'appuie sur…",
      "r": [
-      "la lumière est maximale",
-      "les deux critères passent encore",
-      "la structure est la plus solide"
-     ],
-     "bonne": 2
-    }
-   ]
-  },
-  {
-   "id": "projets-3eme",
-   "seq": "projets",
-   "seqTitre": "Projets de fabrication",
-   "niveau": "3eme",
-   "niveauLabel": "3ème",
-   "titre": "L'amplificateur de son passif — 3ème",
-   "sous": "Objet passif, plan d'expérience, développé du cône, décibels et risques auditifs.",
-   "xlsx": "/quiz/projets-3eme.xlsx",
-   "questions": [
-    {
-     "q": "Qu'est-ce qu'un objet PASSIF ?",
-     "r": [
-      "Un objet qui ne consomme aucune énergie",
-      "Un objet qui fonctionne sur batterie",
-      "Un objet sans aucune pièce mobile"
+      "les critères chiffrés du cahier des charges",
+      "la marque la plus connue",
+      "l'avis du vendeur"
      ],
      "bonne": 1
     },
     {
-     "q": "En quelle unité mesure-t-on le niveau sonore ?",
+     "q": "Dans un devis, le prix TTC est…",
      "r": [
-      "En hertz",
-      "En décibels",
-      "En lux"
+      "le prix avant taxes",
+      "le prix réellement payé",
+      "le prix hors livraison"
      ],
      "bonne": 2
     },
     {
-     "q": "Un GAIN, c'est…",
+     "q": "Une recommandation solide s'appuie sur…",
      "r": [
-      "la plus forte des mesures relevées",
-      "la moyenne des trois essais",
-      "la différence entre deux mesures"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Dans un plan d'expérience, combien de grandeurs change-t-on à la fois ?",
-     "r": [
-      "Une seule",
-      "Deux",
-      "Toutes"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Comment calcule-t-on la génératrice g d'un cône ?",
-     "r": [
-      "g = r + h",
-      "g² = r² + h²",
-      "g = 2 × π × r"
+      "une impression générale",
+      "au moins deux critères chiffrés",
+      "le prix seulement"
      ],
      "bonne": 2
-    },
-    {
-     "q": "Comment calcule-t-on l'angle du secteur à découper ?",
-     "r": [
-      "θ = 180° × r ÷ h",
-      "θ = 360° × h ÷ g",
-      "θ = 360° × r ÷ g"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Le développé d'un cône est…",
-     "r": [
-      "un secteur de disque",
-      "un rectangle très allongé",
-      "un triangle isocèle"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Au-delà de 85 dB, chaque hausse de 3 dB divise la durée sans danger par…",
-     "r": [
-      "3",
-      "2",
-      "10"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "À quoi sert de calculer l'étendue de trois essais ?",
-     "r": [
-      "À calculer plus vite le gain",
-      "À trouver la valeur moyenne",
-      "À savoir si la mesure est fiable"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Si on combine les meilleures modalités, le gain obtenu est…",
-     "r": [
-      "plus petit que la somme des gains",
-      "exactement égal à la somme des gains",
-      "deux fois la somme des gains"
-     ],
-     "bonne": 1
     }
    ]
   },
@@ -409,104 +205,104 @@
    ]
   },
   {
-   "id": "seq02-4eme",
-   "seq": "seq02",
-   "seqTitre": "Séquence 02 — Usages",
+   "id": "seq03-4eme",
+   "seq": "seq03",
+   "seqTitre": "Séquence 03 — Données et réseaux",
    "niveau": "4eme",
    "niveauLabel": "4ème",
-   "titre": "Usages — 4ème",
-   "sous": "Les quatre critères de l'expérience utilisateur, l'accessibilité et le choix argumenté.",
-   "xlsx": "/quiz/seq02-4eme.xlsx",
+   "titre": "Réseaux — 4ème",
+   "sous": "Deux réseaux, routeur, passerelle, DNS, et ce que « gratuit » veut dire.",
+   "xlsx": "/quiz/seq03-4eme.xlsx",
    "questions": [
     {
-     "q": "Combien de critères d'expérience utilisateur la fiche retient-elle ?",
+     "q": "Dans 192.168.0.10, que désigne le DERNIER nombre ?",
      "r": [
-      "Trois",
-      "Quatre",
-      "Six"
+      "Le réseau",
+      "La machine",
+      "Le pays"
      ],
      "bonne": 2
     },
     {
-     "q": "« Est-ce que j'atteins mon but à coup sûr, sans erreur ? » Quel critère ?",
+     "q": "Une machine en 192.168.0.10 et une en 192.168.1.10 sont…",
      "r": [
-      "L'efficacité",
-      "Le confort",
-      "L'accessibilité"
+      "sur un seul et même réseau local",
+      "sur deux réseaux différents",
+      "reliées par un simple câble"
      ],
-     "bonne": 1
+     "bonne": 2
     },
     {
-     "q": "« Est-ce que je comprends comment m'en servir vite, sans notice ? »",
+     "q": "La passerelle configurée sur un PC, c'est…",
      "r": [
-      "Le confort",
-      "L'accessibilité",
-      "La facilité d'apprentissage"
+      "l'adresse du serveur de fichiers du collège",
+      "l'adresse du serveur web à joindre",
+      "l'adresse du routeur, sa porte de sortie"
      ],
      "bonne": 3
     },
     {
-     "q": "« Tout le monde peut-il l'utiliser, quel que soit son âge ou son handicap ? »",
+     "q": "À quoi sert un serveur DNS ?",
      "r": [
-      "L'accessibilité",
-      "L'efficacité",
-      "Le confort"
+      "À traduire une URL en adresse IP",
+      "À stocker les pages web",
+      "À chiffrer les mots de passe"
      ],
      "bonne": 1
     },
     {
-     "q": "« Est-ce agréable, sans effort ni geste inutile ? » Quel critère ?",
+     "q": "Que montre la commande ipconfig ?",
      "r": [
-      "L'efficacité",
-      "L'accessibilité",
-      "Le confort"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Augmenter fortement le contraste d'un écran améliore surtout…",
-     "r": [
-      "l'efficacité",
-      "l'accessibilité",
-      "la facilité d'apprentissage"
+      "La liste des sites récemment visités",
+      "La configuration réseau de la machine",
+      "La vitesse de la connexion Internet"
      ],
      "bonne": 2
     },
     {
-     "q": "Rendre une application utilisable par une personne handicapée, c'est…",
+     "q": "Dans https://www.mobitag.nc/ncl, que désigne « .nc » ?",
      "r": [
-      "une option payante",
-      "une amélioration facultative",
-      "un droit"
+      "Le nom du serveur qui héberge",
+      "Le chemin de la page demandée",
+      "Le domaine de premier niveau"
      ],
      "bonne": 3
     },
     {
-     "q": "Pour choisir un ordinateur pour la salle, on s'appuie sur…",
+     "q": "Le « s » de https indique que la connexion est…",
      "r": [
-      "les critères chiffrés du cahier des charges",
-      "la marque la plus connue",
-      "l'avis du vendeur"
+      "plus rapide",
+      "chiffrée",
+      "gratuite"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Un service en ligne « gratuit » se paie le plus souvent…",
+     "r": [
+      "par la publicité et nos données",
+      "par l'État",
+      "par les dons des utilisateurs"
      ],
      "bonne": 1
     },
     {
-     "q": "Dans un devis, le prix TTC est…",
+     "q": "YouTube appartient à…",
      "r": [
-      "le prix avant taxes",
-      "le prix réellement payé",
-      "le prix hors livraison"
+      "Meta, propriétaire de Facebook",
+      "Microsoft, éditeur de Windows",
+      "Google (Alphabet)"
      ],
-     "bonne": 2
+     "bonne": 3
     },
     {
-     "q": "Une recommandation solide s'appuie sur…",
+     "q": "WhatsApp et Instagram appartiennent à…",
      "r": [
-      "une impression générale",
-      "au moins deux critères chiffrés",
-      "le prix seulement"
+      "Meta (Facebook)",
+      "Apple, le fabricant de l'iPhone",
+      "Amazon, le site de vente"
      ],
-     "bonne": 2
+     "bonne": 1
     }
    ]
   },
@@ -613,102 +409,102 @@
    ]
   },
   {
-   "id": "seq03-4eme",
-   "seq": "seq03",
-   "seqTitre": "Séquence 03 — Données et réseaux",
+   "id": "seq04-4eme",
+   "seq": "seq04",
+   "seqTitre": "Séquence 04 — Cybersécurité",
    "niveau": "4eme",
    "niveauLabel": "4ème",
-   "titre": "Réseaux — 4ème",
-   "sous": "Deux réseaux, routeur, passerelle, DNS, et ce que « gratuit » veut dire.",
-   "xlsx": "/quiz/seq03-4eme.xlsx",
+   "titre": "Cybersécurité — 4ème",
+   "sous": "Reconnaître un hameçonnage, et les droits que le RGPD te donne.",
+   "xlsx": "/quiz/seq04-4eme.xlsx",
    "questions": [
     {
-     "q": "Dans 192.168.0.10, que désigne le DERNIER nombre ?",
+     "q": "Que cherche à obtenir un message de phishing (hameçonnage) ?",
      "r": [
-      "Le réseau",
-      "La machine",
-      "Le pays"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Une machine en 192.168.0.10 et une en 192.168.1.10 sont…",
-     "r": [
-      "sur un seul et même réseau local",
-      "sur deux réseaux différents",
-      "reliées par un simple câble"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "La passerelle configurée sur un PC, c'est…",
-     "r": [
-      "l'adresse du serveur de fichiers du collège",
-      "l'adresse du serveur web à joindre",
-      "l'adresse du routeur, sa porte de sortie"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "À quoi sert un serveur DNS ?",
-     "r": [
-      "À traduire une URL en adresse IP",
-      "À stocker les pages web",
-      "À chiffrer les mots de passe"
+      "Mes identifiants ou mes coordonnées bancaires",
+      "Mon avis sur un produit",
+      "Une réponse polie"
      ],
      "bonne": 1
     },
     {
-     "q": "Que montre la commande ipconfig ?",
+     "q": "Devant un mail suspect, le premier réflexe est…",
      "r": [
-      "La liste des sites récemment visités",
-      "La configuration réseau de la machine",
-      "La vitesse de la connexion Internet"
+      "de cliquer pour voir",
+      "de vérifier l'adresse de l'expéditeur",
+      "de le transférer à un ami"
      ],
      "bonne": 2
     },
     {
-     "q": "Dans https://www.mobitag.nc/ncl, que désigne « .nc » ?",
+     "q": "Un message qui met la pression (« sous 24 h ou compte fermé ») est…",
      "r": [
-      "Le nom du serveur qui héberge",
-      "Le chemin de la page demandée",
-      "Le domaine de premier niveau"
+      "une procédure normale",
+      "une preuve de sérieux",
+      "un signal d'alerte"
      ],
      "bonne": 3
     },
     {
-     "q": "Le « s » de https indique que la connexion est…",
+     "q": "En quelle année le RGPD est-il entré en application ?",
      "r": [
-      "plus rapide",
-      "chiffrée",
-      "gratuite"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Un service en ligne « gratuit » se paie le plus souvent…",
-     "r": [
-      "par la publicité et nos données",
-      "par l'État",
-      "par les dons des utilisateurs"
+      "2018",
+      "2012",
+      "2021"
      ],
      "bonne": 1
     },
     {
-     "q": "YouTube appartient à…",
+     "q": "« Je veux savoir quelles données vous avez sur moi. » Quel droit ?",
      "r": [
-      "Meta, propriétaire de Facebook",
-      "Microsoft, éditeur de Windows",
-      "Google (Alphabet)"
+      "Le droit d'opposition",
+      "Le droit d'accès",
+      "Le droit à l'effacement"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "« Supprimez mon compte et mes données. » Quel droit ?",
+     "r": [
+      "Le droit de rectification",
+      "Le droit d'accès",
+      "Le droit à l'effacement"
      ],
      "bonne": 3
     },
     {
-     "q": "WhatsApp et Instagram appartiennent à…",
+     "q": "« Je refuse que mes données servent à la publicité. » Quel droit ?",
      "r": [
-      "Meta (Facebook)",
-      "Apple, le fabricant de l'iPhone",
-      "Amazon, le site de vente"
+      "Le droit d'opposition",
+      "Le droit à l'effacement",
+      "Le droit d'accès"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Sur une bannière de cookies, quel choix protège le plus ?",
+     "r": [
+      "Tout accepter",
+      "Tout refuser",
+      "Fermer la fenêtre"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Désactiver la publicité personnalisée…",
+     "r": [
+      "supprime toute publicité",
+      "ralentit la navigation",
+      "ne supprime pas la publicité"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "À quoi servent les cookies dits « essentiels » ?",
+     "r": [
+      "Au fonctionnement du site",
+      "À la publicité ciblée",
+      "À mesurer l'audience"
      ],
      "bonne": 1
     }
@@ -817,102 +613,102 @@
    ]
   },
   {
-   "id": "seq04-4eme",
-   "seq": "seq04",
-   "seqTitre": "Séquence 04 — Cybersécurité",
+   "id": "seq05-4eme",
+   "seq": "seq05",
+   "seqTitre": "Séquence 05 — Conception",
    "niveau": "4eme",
    "niveauLabel": "4ème",
-   "titre": "Cybersécurité — 4ème",
-   "sous": "Reconnaître un hameçonnage, et les droits que le RGPD te donne.",
-   "xlsx": "/quiz/seq04-4eme.xlsx",
+   "titre": "Conception — 4ème",
+   "sous": "Le support de smartphone : croquis coté, SketchUp, prototype et protocole de test.",
+   "xlsx": "/quiz/seq05-4eme.xlsx",
    "questions": [
     {
-     "q": "Que cherche à obtenir un message de phishing (hameçonnage) ?",
+     "q": "Que doit obligatoirement porter un croquis coté ?",
      "r": [
-      "Mes identifiants ou mes coordonnées bancaires",
-      "Mon avis sur un produit",
-      "Une réponse polie"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Devant un mail suspect, le premier réflexe est…",
-     "r": [
-      "de cliquer pour voir",
-      "de vérifier l'adresse de l'expéditeur",
-      "de le transférer à un ami"
+      "Des couleurs",
+      "Des cotes en millimètres",
+      "Une légende"
      ],
      "bonne": 2
     },
     {
-     "q": "Un message qui met la pression (« sous 24 h ou compte fermé ») est…",
+     "q": "Dans une perspective cavalière, les fuyantes sont…",
      "r": [
-      "une procédure normale",
-      "une preuve de sérieux",
-      "un signal d'alerte"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "En quelle année le RGPD est-il entré en application ?",
-     "r": [
-      "2018",
-      "2012",
-      "2021"
+      "parallèles entre elles",
+      "convergentes vers un point",
+      "toujours verticales"
      ],
      "bonne": 1
     },
     {
-     "q": "« Je veux savoir quelles données vous avez sur moi. » Quel droit ?",
+     "q": "À quoi sert l'outil « Pousser/Tirer » de SketchUp ?",
      "r": [
-      "Le droit d'opposition",
-      "Le droit d'accès",
-      "Le droit à l'effacement"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "« Supprimez mon compte et mes données. » Quel droit ?",
-     "r": [
-      "Le droit de rectification",
-      "Le droit d'accès",
-      "Le droit à l'effacement"
+      "À colorier une face",
+      "À mesurer une distance",
+      "À donner du volume à une surface"
      ],
      "bonne": 3
     },
     {
-     "q": "« Je refuse que mes données servent à la publicité. » Quel droit ?",
+     "q": "À quoi sert un prototype ?",
      "r": [
-      "Le droit d'opposition",
-      "Le droit à l'effacement",
-      "Le droit d'accès"
+      "À tester vite et à faible coût",
+      "À vendre l'objet",
+      "À remplacer le cahier des charges"
      ],
      "bonne": 1
     },
     {
-     "q": "Sur une bannière de cookies, quel choix protège le plus ?",
+     "q": "Dans le support de smartphone, quel est le rôle de la ficelle ?",
      "r": [
-      "Tout accepter",
-      "Tout refuser",
-      "Fermer la fenêtre"
+      "Décorer l'objet",
+      "Bloquer l'angle du dossier",
+      "Tenir le téléphone"
      ],
      "bonne": 2
     },
     {
-     "q": "Désactiver la publicité personnalisée…",
+     "q": "Un test n'a de valeur que si son protocole est…",
      "r": [
-      "supprime toute publicité",
-      "ralentit la navigation",
-      "ne supprime pas la publicité"
+      "rapide",
+      "original",
+      "précis et reproductible"
      ],
      "bonne": 3
     },
     {
-     "q": "À quoi servent les cookies dits « essentiels » ?",
+     "q": "Le cahier des charges impose un angle d'inclinaison compris entre…",
      "r": [
-      "Au fonctionnement du site",
-      "À la publicité ciblée",
-      "À mesurer l'audience"
+      "30° et 60°",
+      "0° et 15°",
+      "70° et 90°"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Quel format faut-il exporter pour une impression 3D ?",
+     "r": [
+      "DXF",
+      "STL",
+      "PDF"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Quel format faut-il exporter pour une découpe laser ?",
+     "r": [
+      "STL",
+      "JPG",
+      "DXF"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "La charge imposée par le protocole de test est de…",
+     "r": [
+      "250 g pendant 1 minute",
+      "1 kg pendant 10 s",
+      "50 g pendant 5 minutes"
      ],
      "bonne": 1
     }
@@ -1021,104 +817,104 @@
    ]
   },
   {
-   "id": "seq05-4eme",
-   "seq": "seq05",
-   "seqTitre": "Séquence 05 — Conception",
+   "id": "seq06-4eme",
+   "seq": "seq06",
+   "seqTitre": "Séquence 06 — MEI",
    "niveau": "4eme",
    "niveauLabel": "4ème",
-   "titre": "Conception — 4ème",
-   "sous": "Le support de smartphone : croquis coté, SketchUp, prototype et protocole de test.",
-   "xlsx": "/quiz/seq05-4eme.xlsx",
+   "titre": "Robotique mBot — 4ème",
+   "sous": "Chaînes d'énergie et d'information, capteurs, structure SI/ALORS/SINON.",
+   "xlsx": "/quiz/seq06-4eme.xlsx",
    "questions": [
     {
-     "q": "Que doit obligatoirement porter un croquis coté ?",
+     "q": "Dans quel ordre se lit la chaîne d'information ?",
      "r": [
-      "Des couleurs",
-      "Des cotes en millimètres",
-      "Une légende"
+      "TRAITER → ACQUÉRIR → COMMUNIQUER",
+      "ACQUÉRIR → TRAITER → COMMUNIQUER",
+      "COMMUNIQUER → TRAITER → ACQUÉRIR"
      ],
      "bonne": 2
     },
     {
-     "q": "Dans une perspective cavalière, les fuyantes sont…",
+     "q": "Que mesure le capteur à ultrasons du mBot ?",
      "r": [
-      "parallèles entre elles",
-      "convergentes vers un point",
-      "toujours verticales"
+      "Une distance",
+      "Une température",
+      "Une vitesse"
      ],
      "bonne": 1
     },
     {
-     "q": "À quoi sert l'outil « Pousser/Tirer » de SketchUp ?",
+     "q": "Dans le mBot, quel élément TRAITE l'information ?",
      "r": [
-      "À colorier une face",
-      "À mesurer une distance",
-      "À donner du volume à une surface"
+      "Le moteur",
+      "Le capteur",
+      "La carte mCore"
      ],
      "bonne": 3
     },
     {
-     "q": "À quoi sert un prototype ?",
+     "q": "Que distingue le capteur suiveur de ligne ?",
      "r": [
-      "À tester vite et à faible coût",
-      "À vendre l'objet",
-      "À remplacer le cahier des charges"
-     ],
-     "bonne": 1
-    },
-    {
-     "q": "Dans le support de smartphone, quel est le rôle de la ficelle ?",
-     "r": [
-      "Décorer l'objet",
-      "Bloquer l'angle du dossier",
-      "Tenir le téléphone"
+      "Le chaud et le froid",
+      "Le noir et le blanc",
+      "Le proche et le lointain"
      ],
      "bonne": 2
     },
     {
-     "q": "Un test n'a de valeur que si son protocole est…",
+     "q": "À quoi sert la structure SI / ALORS / SINON ?",
      "r": [
-      "rapide",
-      "original",
-      "précis et reproductible"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Le cahier des charges impose un angle d'inclinaison compris entre…",
-     "r": [
-      "30° et 60°",
-      "0° et 15°",
-      "70° et 90°"
+      "À décider selon la mesure d'un capteur",
+      "À répéter une action",
+      "À enregistrer une valeur"
      ],
      "bonne": 1
     },
     {
-     "q": "Quel format faut-il exporter pour une impression 3D ?",
+     "q": "« Répéter indéfiniment » fait tester la condition…",
      "r": [
-      "DXF",
-      "STL",
-      "PDF"
+      "une seule fois",
+      "au démarrage seulement",
+      "en boucle, sans arrêt"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Que veut dire « téléverser » un programme ?",
+     "r": [
+      "L'imprimer",
+      "L'envoyer dans le robot",
+      "Le sauvegarder sur le PC"
      ],
      "bonne": 2
     },
     {
-     "q": "Quel format faut-il exporter pour une découpe laser ?",
+     "q": "Un programme d'évitement où « > » remplace « < » fait que le robot…",
      "r": [
-      "STL",
-      "JPG",
-      "DXF"
+      "fait exactement l'inverse",
+      "ne démarre pas",
+      "avance plus vite"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Un capteur dont la mesure n'est reliée à aucune condition…",
+     "r": [
+      "protège le robot",
+      "accélère le programme",
+      "ne sert à rien : rien n'est décidé"
      ],
      "bonne": 3
     },
     {
-     "q": "La charge imposée par le protocole de test est de…",
+     "q": "Dans quel ordre se lit la chaîne d'énergie ?",
      "r": [
-      "250 g pendant 1 minute",
-      "1 kg pendant 10 s",
-      "50 g pendant 5 minutes"
+      "DISTRIBUER → ALIMENTER → CONVERTIR → TRANSMETTRE",
+      "ALIMENTER → DISTRIBUER → CONVERTIR → TRANSMETTRE",
+      "CONVERTIR → TRANSMETTRE → ALIMENTER → DISTRIBUER"
      ],
-     "bonne": 1
+     "bonne": 2
     }
    ]
   },
@@ -1225,104 +1021,308 @@
    ]
   },
   {
-   "id": "seq06-4eme",
-   "seq": "seq06",
-   "seqTitre": "Séquence 06 — MEI",
-   "niveau": "4eme",
-   "niveauLabel": "4ème",
-   "titre": "Robotique mBot — 4ème",
-   "sous": "Chaînes d'énergie et d'information, capteurs, structure SI/ALORS/SINON.",
-   "xlsx": "/quiz/seq06-4eme.xlsx",
+   "id": "projets-3eme",
+   "seq": "projets",
+   "seqTitre": "Projets de fabrication",
+   "niveau": "3eme",
+   "niveauLabel": "3ème",
+   "titre": "L'amplificateur de son passif — 3ème",
+   "sous": "Objet passif, plan d'expérience, développé du cône, décibels et risques auditifs.",
+   "xlsx": "/quiz/projets-3eme.xlsx",
    "questions": [
     {
-     "q": "Dans quel ordre se lit la chaîne d'information ?",
+     "q": "Qu'est-ce qu'un objet PASSIF ?",
      "r": [
-      "TRAITER → ACQUÉRIR → COMMUNIQUER",
-      "ACQUÉRIR → TRAITER → COMMUNIQUER",
-      "COMMUNIQUER → TRAITER → ACQUÉRIR"
-     ],
-     "bonne": 2
-    },
-    {
-     "q": "Que mesure le capteur à ultrasons du mBot ?",
-     "r": [
-      "Une distance",
-      "Une température",
-      "Une vitesse"
+      "Un objet qui ne consomme aucune énergie",
+      "Un objet qui fonctionne sur batterie",
+      "Un objet sans aucune pièce mobile"
      ],
      "bonne": 1
     },
     {
-     "q": "Dans le mBot, quel élément TRAITE l'information ?",
+     "q": "En quelle unité mesure-t-on le niveau sonore ?",
      "r": [
-      "Le moteur",
-      "Le capteur",
-      "La carte mCore"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Que distingue le capteur suiveur de ligne ?",
-     "r": [
-      "Le chaud et le froid",
-      "Le noir et le blanc",
-      "Le proche et le lointain"
+      "En hertz",
+      "En décibels",
+      "En lux"
      ],
      "bonne": 2
     },
     {
-     "q": "À quoi sert la structure SI / ALORS / SINON ?",
+     "q": "Un GAIN, c'est…",
      "r": [
-      "À décider selon la mesure d'un capteur",
-      "À répéter une action",
-      "À enregistrer une valeur"
+      "la plus forte des mesures relevées",
+      "la moyenne des trois essais",
+      "la différence entre deux mesures"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Dans un plan d'expérience, combien de grandeurs change-t-on à la fois ?",
+     "r": [
+      "Une seule",
+      "Deux",
+      "Toutes"
      ],
      "bonne": 1
     },
     {
-     "q": "« Répéter indéfiniment » fait tester la condition…",
+     "q": "Comment calcule-t-on la génératrice g d'un cône ?",
      "r": [
-      "une seule fois",
-      "au démarrage seulement",
-      "en boucle, sans arrêt"
-     ],
-     "bonne": 3
-    },
-    {
-     "q": "Que veut dire « téléverser » un programme ?",
-     "r": [
-      "L'imprimer",
-      "L'envoyer dans le robot",
-      "Le sauvegarder sur le PC"
+      "g = r + h",
+      "g² = r² + h²",
+      "g = 2 × π × r"
      ],
      "bonne": 2
     },
     {
-     "q": "Un programme d'évitement où « > » remplace « < » fait que le robot…",
+     "q": "Comment calcule-t-on l'angle du secteur à découper ?",
      "r": [
-      "fait exactement l'inverse",
-      "ne démarre pas",
-      "avance plus vite"
+      "θ = 180° × r ÷ h",
+      "θ = 360° × h ÷ g",
+      "θ = 360° × r ÷ g"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Le développé d'un cône est…",
+     "r": [
+      "un secteur de disque",
+      "un rectangle très allongé",
+      "un triangle isocèle"
      ],
      "bonne": 1
     },
     {
-     "q": "Un capteur dont la mesure n'est reliée à aucune condition…",
+     "q": "Au-delà de 85 dB, chaque hausse de 3 dB divise la durée sans danger par…",
      "r": [
-      "protège le robot",
-      "accélère le programme",
-      "ne sert à rien : rien n'est décidé"
+      "3",
+      "2",
+      "10"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "À quoi sert de calculer l'étendue de trois essais ?",
+     "r": [
+      "À calculer plus vite le gain",
+      "À trouver la valeur moyenne",
+      "À savoir si la mesure est fiable"
      ],
      "bonne": 3
     },
     {
-     "q": "Dans quel ordre se lit la chaîne d'énergie ?",
+     "q": "Si on combine les meilleures modalités, le gain obtenu est…",
      "r": [
-      "DISTRIBUER → ALIMENTER → CONVERTIR → TRANSMETTRE",
-      "ALIMENTER → DISTRIBUER → CONVERTIR → TRANSMETTRE",
-      "CONVERTIR → TRANSMETTRE → ALIMENTER → DISTRIBUER"
+      "plus petit que la somme des gains",
+      "exactement égal à la somme des gains",
+      "deux fois la somme des gains"
+     ],
+     "bonne": 1
+    }
+   ]
+  },
+  {
+   "id": "projets-4eme",
+   "seq": "projets",
+   "seqTitre": "Projets de fabrication",
+   "niveau": "4eme",
+   "niveauLabel": "4ème",
+   "titre": "L'abat-jour paramétrique — 4ème",
+   "sous": "Critères antagonistes, taux d'ajour, développé du cylindre et procédés.",
+   "xlsx": "/quiz/projets-4eme.xlsx",
+   "questions": [
+    {
+     "q": "Deux critères sont ANTAGONISTES quand…",
+     "r": [
+      "ils se mesurent pareil",
+      "améliorer l'un dégrade l'autre",
+      "ils sont tous les deux chiffrés"
      ],
      "bonne": 2
+    },
+    {
+     "q": "En quelle unité mesure-t-on l'éclairement ?",
+     "r": [
+      "En lux",
+      "En watts",
+      "En décibels"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Comment calcule-t-on l'aire d'un disque ?",
+     "r": [
+      "π × D",
+      "2 × π × r",
+      "π × r × r"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Le développé d'un cylindre est…",
+     "r": [
+      "un cercle",
+      "un rectangle de longueur π × D",
+      "un triangle"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Pour un diamètre de 120 mm, la longueur développée vaut environ…",
+     "r": [
+      "377 mm",
+      "120 mm",
+      "240 mm"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Le pont de matière entre deux perçages doit valoir au moins…",
+     "r": [
+      "1 mm",
+      "10 mm",
+      "3 mm"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Une pièce PLATE se fabrique de préférence…",
+     "r": [
+      "à l'imprimante 3D",
+      "à la découpeuse laser",
+      "à la main"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Quel format exporte-t-on pour la découpe laser ?",
+     "r": [
+      "DXF",
+      "STL",
+      "OBJ"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Le taux d'ajour d'un panneau est…",
+     "r": [
+      "une longueur",
+      "une masse",
+      "un pourcentage"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Le point de compromis, c'est le réglage où…",
+     "r": [
+      "la lumière est maximale",
+      "les deux critères passent encore",
+      "la structure est la plus solide"
+     ],
+     "bonne": 2
+    }
+   ]
+  },
+  {
+   "id": "projets-5eme",
+   "seq": "projets",
+   "seqTitre": "Projets de fabrication",
+   "niveau": "5eme",
+   "niveauLabel": "5ème",
+   "titre": "Le pont en une feuille A4 — 5ème",
+   "sous": "Structure, portée, flexion, protocole d'essai et ratio.",
+   "xlsx": "/quiz/projets-5eme.xlsx",
+   "questions": [
+    {
+     "q": "Qu'appelle-t-on la PORTÉE d'un pont ?",
+     "r": [
+      "La longueur totale de la structure",
+      "La distance entre les deux appuis",
+      "La hauteur du tablier"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Quand une poutre fléchit sous une charge, le DESSUS est…",
+     "r": [
+      "comprimé",
+      "tendu",
+      "sans contrainte"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Quand une poutre fléchit sous une charge, le DESSOUS est…",
+     "r": [
+      "comprimé",
+      "sans contrainte",
+      "tendu"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "À quantité de matière égale, qu'est-ce qui fait la résistance ?",
+     "r": [
+      "La couleur",
+      "La forme",
+      "Le poids"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Comment calcule-t-on le ratio du projet ?",
+     "r": [
+      "Masse ÷ charge de rupture",
+      "Charge de rupture × masse",
+      "Charge de rupture ÷ masse de la structure"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "Un ratio de 40 signifie que le pont porte…",
+     "r": [
+      "40 grammes",
+      "40 fois sa propre masse",
+      "40 % de sa masse"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Où le gobelet doit-il être posé pendant l'essai ?",
+     "r": [
+      "Au milieu de la portée",
+      "Près d'un appui",
+      "Sur un appui"
+     ],
+     "bonne": 1
+    },
+    {
+     "q": "Deux mesures ne se comparent que si…",
+     "r": [
+      "elles sont faites le même jour",
+      "le protocole est identique",
+      "les groupes ont le même effectif"
+     ],
+     "bonne": 2
+    },
+    {
+     "q": "Pour savoir si une modification améliore le pont, on change…",
+     "r": [
+      "tout en même temps",
+      "au moins deux choses",
+      "une seule chose à la fois"
+     ],
+     "bonne": 3
+    },
+    {
+     "q": "La fibre neutre d'une poutre…",
+     "r": [
+      "ne change pas de longueur",
+      "casse en premier",
+      "est toujours en bas"
+     ],
+     "bonne": 1
     }
    ]
   }

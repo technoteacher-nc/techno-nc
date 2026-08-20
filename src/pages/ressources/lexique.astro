@@ -13,7 +13,7 @@
 
 import Base from '../../layouts/Base.astro';
 import { lexique, lexiquePdf, lexiqueDocx, nbTermes } from '../../data/ressources';
-import { consolidation, nbNotions } from '../../data/consolidation';
+import { consolidation, nbNotions, conversions } from '../../data/consolidation';
 import { statSync } from 'node:fs';
 import path from 'node:path';
 
@@ -135,6 +135,41 @@ const donneesLd = {
           </ul>
         </div>
       </details>
+    ))}
+  </div>
+
+  <!-- Les tableaux de conversion, dans la forme des manuels de technologie :
+       c'est celle que les élèves reconnaissent, et un tableau se consulte
+       pendant l'activité — une règle écrite en phrase ne se relit jamais. -->
+  <h2 class="lex-bandeau lex-bandeau--conso" id="conversions">
+    Tableaux de conversion<span>{conversions.length} tableaux · à garder sous la main</span>
+  </h2>
+  <p class="conso-intro">
+    Chaque tableau porte <strong>sa</strong> règle de passage : × 10 pour les
+    longueurs, × 100 pour les aires, × 1 000 pour les volumes, × 60 pour les
+    durées. C'est la règle qu'on confond, jamais le nom des unités.
+  </p>
+
+  <div class="conv-liste">
+    {conversions.map(t => (
+      <section class="conv">
+        <h3>{t.titre}</h3>
+        <div class="conv-boite">
+          <table class="conv-table">
+            <thead>
+              <tr>{t.unites.map(un => <th scope="col">{un}</th>)}</tr>
+            </thead>
+            <tbody>
+              <tr>{t.unites.map(() => <td aria-hidden="true"></td>)}</tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="conv-regle">{t.regle}</p>
+        <ul class="conv-egalites">
+          {t.egalites.map(e => <li>{e}</li>)}
+        </ul>
+        {t.piege && <p class="conso-piege"><span>Piège</span>{t.piege}</p>}
+      </section>
     ))}
   </div>
 

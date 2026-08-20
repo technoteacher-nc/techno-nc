@@ -91,6 +91,16 @@ export const lexique = [
       ['Instruction conditionnelle', 'Structure de type « Si… alors… sinon » qui exécute des actions différentes selon une condition.', ['s6-a03-4eme','s6-a03-5eme']],
       ['Variable', "Donnée stockée par le programme (nombre, mot ou booléen) dont la valeur peut changer pendant l'exécution.", ['s6-a03-5eme']],
       ['Réseau local', "Ensemble d'équipements informatiques (terminaux, commutateurs…) reliés entre eux pour échanger des données au sein d'un bâtiment.", ['s3-a01-4eme','s3-a01-5eme','s3-a02-4eme','s3-a04-5eme']],
+      // Les élèves se sont perdus en salle Filius faute d'une définition
+      // explicite : ils lisaient « 192.168.0.10 » comme un nombre unique, sans
+      // voir les quatre parties ni comprendre que les valeurs sont attribuées.
+      ['Adresse IP', "Le numéro qui identifie une machine sur un réseau, comme un numéro de maison identifie une maison dans une rue. Elle s'écrit avec QUATRE nombres séparés par des points : 192.168.0.10. Chaque nombre va de 0 à 255, jamais plus. Ces valeurs ne se calculent pas et ne veulent rien dire en elles-mêmes : elles sont attribuées. Dans la salle, les trois premiers nombres (192.168.0) sont les mêmes pour toutes les machines — c'est le RÉSEAU ; seul le dernier change d'une machine à l'autre — c'est LA MACHINE.", ['s3-a01-4eme','s3-a01-5eme','s3-a02-4eme','s3-a03-4eme','s3-a04-5eme']],
+      ['Masque de sous-réseau', "Le nombre qui dit quelle partie de l'adresse IP désigne le réseau et quelle partie désigne la machine. Avec 255.255.255.0, les trois premiers nombres sont le réseau et le dernier est la machine.", ['s3-a02-4eme','s3-a04-5eme']],
+      ['Commutateur (switch)', "Boîtier qui relie entre elles les machines d'un MÊME réseau. Chaque machine y est branchée par un câble : c'est la topologie en étoile.", ['s3-a01-4eme','s3-a02-4eme','s3-a04-5eme']],
+      ['Routeur', "Appareil qui fait communiquer DEUX réseaux différents. Il possède une adresse dans chacun d'eux et aiguille les données de l'un vers l'autre.", ['s3-a01-4eme','s3-a03-4eme']],
+      ['Passerelle', "L'adresse du routeur, enregistrée dans chaque machine : c'est la porte de sortie du réseau. Sans elle, une machine ne peut joindre que ses voisines directes.", ['s3-a03-4eme']],
+      ['Serveur DNS', "L'annuaire d'Internet : il traduit une adresse écrite en toutes lettres (www.exemple.nc) en adresse IP, la seule que les machines savent utiliser.", ['s3-a03-4eme']],
+      ['ping', "Commande qui envoie un petit message à une machine et attend sa réponse. 0 % de paquets perdus : elle répond, la communication fonctionne. 100 % perdus : elle ne répond pas.", ['s3-a02-4eme','s3-a04-5eme']],
     ],
   },
   {

@@ -87,7 +87,7 @@ const soucis = [
   },
   {
     q: 'J\'ai perdu ma fiche papier / j\'étais absent',
-    r: 'Rien n\'est perdu : chaque activité reste en ligne toute l\'année. Tu peux la remplir en ligne, ou télécharger le PDF et l\'imprimer.',
+    r: 'Rien n\'est perdu : chaque activité reste en ligne toute l\'année. Télécharge le PDF et imprime-le — c\'est exactement la fiche distribuée en classe. Tu peux aussi la remplir en ligne si tu préfères.',
   },
   {
     q: 'Je n\'ai pas Internet à la maison',
@@ -113,7 +113,7 @@ const donneesLd = [
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'Utiliser le site de Technologie',
-    description: 'Trouver son activité, la remplir en ligne, garder son travail et le rendre.',
+    description: 'Récupérer une fiche, rattraper une séance, réviser, et remplir une activité en ligne si on le souhaite.',
     inLanguage: 'fr',
     url: urlPage,
     step: etapes.map((e, i) => ({
@@ -136,30 +136,72 @@ const donneesLd = [
 ---
 <Base
   titre="Mode d'emploi — comment utiliser le site"
-  description="Comment trouver ton activité, la remplir en ligne, garder ton travail d'une séance à l'autre et le rendre. Sept étapes, sans compte.">
+  description="Récupérer une fiche, rattraper une séance, réviser — et, si tu veux, remplir une activité en ligne. Sans compte.">
 
   <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
   <section class="hero leve">
     <span class="eyebrow leve leve-1">À lire une fois, en début d'année</span>
-    <h1 class="leve leve-1">Comment ça <em>marche</em></h1>
+    <h1 class="leve leve-1">À quoi sert ce <em>site</em></h1>
     <p class="leve leve-2">
-      Sept étapes pour trouver ton activité, la remplir directement en ligne,
-      garder ton travail d'une séance à l'autre et le comparer à la correction.
-      Aucun compte à créer : tu cliques et tu écris. Le seul mot de passe est
-      celui que le professeur donne en classe, à la dernière étape.
+      Ce site garde tout ce qu'on fait en classe : les fiches, les corrections
+      et les ressources. Tu viens y chercher ce qui te manque, quand il te
+      manque. Aucun compte à créer.
     </p>
   </section>
 
-  <!-- Dit une fois, en tête : le remplissage en ligne est un recours, pas le
-       mode de travail ordinaire. Sans cette phrase, la page entière se lit
-       comme une invitation à délaisser le papier. -->
-  <p class="mde-cadre">
-    <strong>En classe, on écrit sur la fiche papier.</strong> C'est l'écriture à
-    la main qui s'entraîne pour le brevet. Le remplissage en ligne sert surtout à
-    <strong>rattraper une absence</strong>, à <strong>refaire une activité</strong>
-    chez soi et à <strong>relire la correction</strong>.
-  </p>
+  <!-- La page décrivait le remplissage en ligne comme le chemin normal. Ce
+       n'est pas ce que le site est : il sert d'abord à récupérer une fiche, à
+       rattraper et à réviser. Les trois usages sont donc annoncés AVANT le
+       mode d'emploi de la saisie, qui n'en est qu'un parmi d'autres. -->
+  <section class="mde-usages">
+    <h2>Trois façons de t'en servir</h2>
+    <ol class="roles">
+      <li>
+        <span class="roles-num">1</span>
+        <div>
+          <h3>Récupérer ta fiche</h3>
+          <p>
+            Fiche perdue, oubliée, ou tu veux la refaire au propre : chaque
+            activité a son PDF, prêt à imprimer. C'est exactement la fiche
+            distribuée en classe.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span class="roles-num">2</span>
+        <div>
+          <h3>Rattraper une séance</h3>
+          <p>
+            Absent ? La page de l'activité dit ce qui a été fait : l'objectif,
+            le matériel, la question de départ. Tu reprends la séance sans
+            attendre le cours suivant.
+          </p>
+        </div>
+      </li>
+      <li>
+        <span class="roles-num">3</span>
+        <div>
+          <h3>Réviser et t'entraîner</h3>
+          <p>
+            Les <a href={u('/reviser')}>quiz</a> reprennent l'essentiel de
+            chaque séquence, le <a href={u('/ressources/lexique')}>lexique</a>
+            les mots à connaître, et la correction de chaque activité s'ouvre
+            avec le mot donné en classe.
+          </p>
+        </div>
+      </li>
+    </ol>
+    <p class="mde-cadre">
+      <strong>En classe, on travaille sur la fiche papier.</strong> Le
+      remplissage en ligne n'est pas obligatoire : c'est une possibilité, utile
+      surtout si tu as manqué la séance, si tu veux refaire une activité chez
+      toi, ou si tu préfères taper. La suite de cette page explique comment il
+      fonctionne, si tu t'en sers.
+    </p>
+  </section>
+
+  <h2 class="mde-titre-etapes">Remplir une fiche en ligne, étape par étape</h2>
 
   <ol class="mde-etapes">
     {etapes.map((e, i) => (

@@ -28,7 +28,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "RAPPEL — Une adresse IP a quatre nombres séparés par des points : 192.168.0.10. Les trois premiers (192.168.0) désignent le RÉSEAU et sont les mêmes pour toutes les machines de la salle. Le dernier désigne LA MACHINE : c'est le seul qui change."
+     "v": "RAPPEL — UNE ADRESSE IP, C'EST QUATRE NOMBRES SÉPARÉS PAR DES POINTS : 192.168.0.10 — comme 192 . 168 . 0 . 10. Chaque nombre va de 0 à 255, jamais plus. Ils ne se calculent pas, on les attribue : c'est un numéro, comme le numéro d'une maison dans une rue. Dans la salle, les TROIS PREMIERS (192.168.0) sont identiques sur toutes les machines — c'est le RÉSEAU, la rue. Seul le DERNIER change d'une machine à l'autre — c'est LA MACHINE, le numéro de la maison."
     }
    ]
   },
