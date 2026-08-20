@@ -77,7 +77,7 @@ const donneesLd = {
        un bouton vide au premier passage ne servirait qu'à occuper la place. -->
   <p class="reprendre" data-reprendre hidden>
     <span class="reprendre-label">Tu étais sur</span>
-    <a class="btn btn--fort" data-reprendre-lien href="#"></a>
+    <a class="btn btn--fort" data-reprendre-lien href="#"><span data-reprendre-titre></span> →</a>
   </p>
 
   <!-- La citation principale du site. Elle est placée ICI, juste après les deux
@@ -171,10 +171,21 @@ const donneesLd = {
 
   const d = dernierePage();
   const bloc = document.querySelector('[data-reprendre]');
+
+  // Le titre peut manquer : une mémoire écrite par une version antérieure du
+  // site n'en contenait pas, et `JSON.stringify` supprime les valeurs
+  // `undefined` au lieu de les conserver. Le bouton affichait alors « undefined »
+  // — ou, si le titre était une chaîne vide, une pastille noire vide, sans
+  // aucun texte : un élève voyait un bouton sans savoir où il menait.
+  //
+  // Le lien, lui, reste utilisable dans les deux cas. On ne cache donc pas le
+  // bloc : on remplace le titre manquant par un libellé qui a du sens tout seul.
   if (d && d.lien && bloc) {
     const a = bloc.querySelector('[data-reprendre-lien]');
+    const t = bloc.querySelector('[data-reprendre-titre]');
+    const titre = (d.titre || '').trim();
     a.href = d.lien;
-    a.textContent = d.titre + ' →';
+    t.textContent = titre || 'la dernière activité ouverte';
     bloc.hidden = false;
   }
 </script>

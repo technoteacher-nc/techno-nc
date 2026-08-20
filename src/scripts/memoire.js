@@ -44,12 +44,20 @@ function ecrire(etat) {
   try { localStorage.setItem(CLE, JSON.stringify(etat)); } catch { /* tant pis */ }
 }
 
-/** Note qu'une activité a été ouverte, et retient où reprendre. */
+/** Note qu'une activité a été ouverte, et retient où reprendre.
+ *
+ *  Les deux enregistrements sont indépendants, et c'est voulu : la VISITE se
+ *  note dès qu'on connaît le slug (elle ne sert qu'à la pastille « déjà
+ *  ouverte »), mais le point de REPRISE ne s'écrit que s'il est complet.
+ *  Un `dernier` sans titre produisait sur l'accueil un bouton vide — noir,
+ *  cliquable, muet — et `JSON.stringify` supprimant les `undefined`, le défaut
+ *  survivait ensuite à toutes les visites suivantes.
+ */
 export function noterVisite(slug, titre, lien) {
   if (!slug) return;
   const e = lire();
   e.vues[slug] = Date.now();
-  e.dernier = { slug, titre, lien };
+  if (titre && lien) e.dernier = { slug, titre, lien };
   ecrire(e);
 }
 
