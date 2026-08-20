@@ -8,7 +8,6 @@
    "niveauLabel": "4ème",
    "titre": "Usages — 4ème",
    "sous": "Les quatre critères de l'expérience utilisateur, l'accessibilité et le choix argumenté.",
-   "xlsx": "/quiz/seq02-4eme.xlsx",
    "questions": [
     {
      "q": "Combien de critères d'expérience utilisateur la fiche retient-elle ?",
@@ -110,7 +109,6 @@
    "niveauLabel": "5ème",
    "titre": "Usages — 5ème",
    "sous": "L'expérience utilisateur, et comment bien choisir un objet technique.",
-   "xlsx": "/quiz/seq02-5eme.xlsx",
    "questions": [
     {
      "q": "Que désigne « UX » ?",
@@ -212,7 +210,6 @@
    "niveauLabel": "4ème",
    "titre": "Réseaux — 4ème",
    "sous": "Deux réseaux, routeur, passerelle, DNS, et ce que « gratuit » veut dire.",
-   "xlsx": "/quiz/seq03-4eme.xlsx",
    "questions": [
     {
      "q": "Dans 192.168.0.10, que désigne le DERNIER nombre ?",
@@ -314,7 +311,6 @@
    "niveauLabel": "5ème",
    "titre": "Réseaux — 5ème",
    "sous": "Le réseau du collège, le voyage d'un message, les familles de logiciels, Filius.",
-   "xlsx": "/quiz/seq03-5eme.xlsx",
    "questions": [
     {
      "q": "À quoi sert une adresse IP ?",
@@ -416,7 +412,6 @@
    "niveauLabel": "4ème",
    "titre": "Cybersécurité — 4ème",
    "sous": "Reconnaître un hameçonnage, et les droits que le RGPD te donne.",
-   "xlsx": "/quiz/seq04-4eme.xlsx",
    "questions": [
     {
      "q": "Que cherche à obtenir un message de phishing (hameçonnage) ?",
@@ -518,7 +513,6 @@
    "niveauLabel": "5ème",
    "titre": "Cybersécurité — 5ème",
    "sous": "Mots de passe, traces numériques, et que faire face au cyberharcèlement.",
-   "xlsx": "/quiz/seq04-5eme.xlsx",
    "questions": [
     {
      "q": "Qu'est-ce qui rend d'abord un mot de passe solide ?",
@@ -620,7 +614,6 @@
    "niveauLabel": "4ème",
    "titre": "Conception — 4ème",
    "sous": "Le support de smartphone : croquis coté, SketchUp, prototype et protocole de test.",
-   "xlsx": "/quiz/seq05-4eme.xlsx",
    "questions": [
     {
      "q": "Que doit obligatoirement porter un croquis coté ?",
@@ -722,7 +715,6 @@
    "niveauLabel": "5ème",
    "titre": "Conception — 5ème",
    "sous": "Ma maison en NC : cahier des charges, plan aux normes, échelles et maquette.",
-   "xlsx": "/quiz/seq05-5eme.xlsx",
    "questions": [
     {
      "q": "Que dit un cahier des charges ?",
@@ -824,7 +816,6 @@
    "niveauLabel": "4ème",
    "titre": "Robotique mBot — 4ème",
    "sous": "Chaînes d'énergie et d'information, capteurs, structure SI/ALORS/SINON.",
-   "xlsx": "/quiz/seq06-4eme.xlsx",
    "questions": [
     {
      "q": "Dans quel ordre se lit la chaîne d'information ?",
@@ -926,7 +917,6 @@
    "niveauLabel": "5ème",
    "titre": "Algorithmique — 5ème",
    "sous": "Instructions, boucles, variables et événements — du débranché à Scratch.",
-   "xlsx": "/quiz/seq06-5eme.xlsx",
    "questions": [
     {
      "q": "Qu'est-ce qu'un algorithme ?",
@@ -1028,7 +1018,6 @@
    "niveauLabel": "3ème",
    "titre": "L'amplificateur de son passif — 3ème",
    "sous": "Objet passif, plan d'expérience, développé du cône, décibels et risques auditifs.",
-   "xlsx": "/quiz/projets-3eme.xlsx",
    "questions": [
     {
      "q": "Qu'est-ce qu'un objet PASSIF ?",
@@ -1130,7 +1119,6 @@
    "niveauLabel": "4ème",
    "titre": "L'abat-jour paramétrique — 4ème",
    "sous": "Critères antagonistes, taux d'ajour, développé du cylindre et procédés.",
-   "xlsx": "/quiz/projets-4eme.xlsx",
    "questions": [
     {
      "q": "Deux critères sont ANTAGONISTES quand…",
@@ -1232,7 +1220,6 @@
    "niveauLabel": "5ème",
    "titre": "Le pont en une feuille A4 — 5ème",
    "sous": "Structure, portée, flexion, protocole d'essai et ratio.",
-   "xlsx": "/quiz/projets-5eme.xlsx",
    "questions": [
     {
      "q": "Qu'appelle-t-on la PORTÉE d'un pont ?",
