@@ -39,8 +39,13 @@ export const citations: Record<string, Citation> = {
     texte: "Comprendre un objet, c'est pouvoir le réparer, l'améliorer — ou décider de ne pas l'acheter.",
   },
 
+  // La première version — « on le charge jusqu'à ce qu'il cède » — ne décrivait
+  // que le pont A4 : on ne charge jusqu'à la rupture ni un abat-jour ni un
+  // amplificateur. Celle-ci vaut pour les trois, et dit ce qu'un projet apporte
+  // de plus qu'une séquence : la fabrication fait apparaître ce que le dessin
+  // laissait passer.
   projets: {
-    texte: "Un projet ne se raconte pas : il se pose sur la table, et on le charge jusqu'à ce qu'il cède.",
+    texte: "Concevoir, c'est facile. Fabriquer, c'est là qu'on découvre ce qu'on avait oublié.",
   },
   // Une par projet : c'est la page où l'élève arrive en scannant le QR de sa
   // fiche, et chaque projet a sa propre leçon.
