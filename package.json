@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "content": "node scripts/build_content.cjs",
-    "build": "npm run content && astro build",
+    "typo": "node scripts/typographie-fr.cjs",
+    "build": "npm run content && astro build && npm run typo",
     "dev": "astro dev",
     "preview": "astro preview"
   },

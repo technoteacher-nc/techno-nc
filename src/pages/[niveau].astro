@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Citation from '../components/Citation.astro';
 import { getCollection } from 'astro:content';
+import donneesQuiz from '../data/quiz.json';
 
 export async function getStaticPaths() {
   return [
@@ -23,11 +24,18 @@ for (const a of acts) {
   if (!parSeq.has(a.data.seq)) parSeq.set(a.data.seq, { titre: a.data.seqTitre, items: [] });
   parSeq.get(a.data.seq).items.push(a);
 }
+// Le quiz de révision de chaque séquence, quand il existe. Sans ce lien, un
+// élève qui vient de finir une séquence n'avait aucun chemin vers le quiz qui
+// la révise : il fallait passer par l'onglet « Réviser » et retrouver le bon
+// parmi quinze. La question « et maintenant ? » se pose là, pas ailleurs.
+const quizExistants = new Set(donneesQuiz.quiz.map(q => q.id));
+
 const sequences = [...parSeq.entries()]
   .sort(([codeA], [codeB]) => codeA.localeCompare(codeB))
   .map(([code, v]) => ({
     code,
     titre: v.titre,
+    quiz: quizExistants.has(`${code}-${niveau}`) ? `${code}-${niveau}` : null,
     items: v.items.sort((x, y) => x.data.code.localeCompare(y.data.code)),
   }));
 ---
@@ -45,11 +53,21 @@ const sequences = [...parSeq.entries()]
   </section>
 
   {sequences.map(seq => (
-    <section class="niveau-bloc" id={seq.code} aria-labelledby={`titre-${seq.code}`}>
+    <section class="niveau-bloc" id={seq.code} aria-labelledby={`titre-${seq.code}`}
+             data-seq={seq.code} data-total={seq.items.length}>
       <h2 class="niveau-titre" id={`titre-${seq.code}`}>
         {seq.titre}
         <span>{seq.items.length} activité{seq.items.length > 1 ? 's' : ''}</span>
       </h2>
+      {/* Avancement de la séquence, rempli par le navigateur. Il dit
+          « ouvertes », jamais « réussies » : le site ne sait pas si l'élève a
+          compris, et lui faire croire le contraire serait malhonnête. Caché
+          tant que rien n'a été ouvert — un « 0 sur 6 » en tête de séquence
+          accueille mal. */}
+      <p class="seq-avance" data-avance hidden>
+        <span class="seq-avance-barre" aria-hidden="true"><span data-avance-jauge></span></span>
+        <span class="seq-avance-texte" data-avance-texte></span>
+      </p>
       <ol class="chaine">
         {seq.items.map((a, i) => (
           <li>
@@ -64,6 +82,15 @@ const sequences = [...parSeq.entries()]
           </li>
         ))}
       </ol>
+      {seq.quiz && (
+        <p class="seq-quiz">
+          <a href={`${base}/reviser/${seq.quiz}`}>
+            Réviser cette séquence en quiz
+            <span aria-hidden="true">→</span>
+          </a>
+          <span class="seq-quiz-note">Correction immédiate, aucune note.</span>
+        </p>
+      )}
     </section>
   ))}
   <Citation cle={niveau} />
@@ -84,5 +111,26 @@ const sequences = [...parSeq.entries()]
     marque.className = 'maillon-vu';
     marque.textContent = 'déjà ouverte';
     a.querySelector('.corps').appendChild(marque);
+  });
+
+  // L'avancement, séquence par séquence. Il rend visible ce que le site savait
+  // déjà mais gardait pour lui : combien d'étapes de la chaîne ont été
+  // ouvertes. Une séquence entièrement parcourue le dit — c'est le seul
+  // moment où le site félicite, et il ne le fait pas pour rien.
+  document.querySelectorAll('[data-seq]').forEach(bloc => {
+    const total = Number(bloc.dataset.total) || 0;
+    const faits = [...bloc.querySelectorAll('.maillon[data-slug]')]
+      .filter(a => vues[a.dataset.slug]).length;
+    if (!total || !faits) return;
+
+    const p = bloc.querySelector('[data-avance]');
+    const jauge = p.querySelector('[data-avance-jauge]');
+    const texte = p.querySelector('[data-avance-texte]');
+    jauge.style.width = Math.round(100 * faits / total) + '%';
+    texte.textContent = faits === total
+      ? 'Séquence parcourue en entier · ' + total + ' activités sur ' + total
+      : faits + ' activité' + (faits > 1 ? 's' : '') + ' ouverte' + (faits > 1 ? 's' : '') + ' sur ' + total;
+    if (faits === total) p.classList.add('seq-avance--complete');
+    p.hidden = false;
   });
 </script>

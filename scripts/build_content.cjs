@@ -31,23 +31,32 @@ const INTERDIT = /^(CORRIGE|EVAL)_/i;
 fs.mkdirSync(PUB_QR, { recursive: true });
 fs.mkdirSync(CONTENT, { recursive: true });
 
+// ⚠ NE JAMAIS ÉCRASER UN DOCUMENT DÉJÀ PUBLIÉ.
+//
+// `out/` est un dépôt de travail figé, antérieur à la réparation des fiches :
+// pagination, bandeau d'identité replié dans l'en-tête, schémas corrigés. Le
+// 21/08/2026, un `npm run build` a recopié 140 fichiers de `out/` par-dessus
+// les fiches réparées — soit, en une commande, l'annulation de tout le travail
+// de mise en page. Les DOCX de `public/2026/` sont la source de vérité
+// (voir CLAUDE.md) : ce script ne peut que les CRÉER, jamais les remplacer.
+const preserve = (src, dest) => {
+  if (!fs.existsSync(src)) return false;
+  if (fs.existsSync(dest) && !process.argv.includes("--force")) { preserves++; return true; }
+  fs.copyFileSync(src, dest);
+  return true;
+};
+
+let preserves = 0;
+
 function copie(nom, srcDocx, srcPdf, pubDocs) {
   if (!nom) return { pdf: false, docx: false };
-  let ok = { pdf: false, docx: false };
   if (INTERDIT.test(nom)) {
     throw new Error("REFUS publication : " + nom + " (corrigé/éval interdits sur le dépôt public)");
   }
-  const pdfSrc = path.join(srcPdf, nom + ".pdf");
-  if (fs.existsSync(pdfSrc)) {
-    fs.copyFileSync(pdfSrc, path.join(pubDocs, nom + ".pdf"));
-    ok.pdf = true;
-  }
-  const docxSrc = path.join(srcDocx, nom + ".docx");
-  if (fs.existsSync(docxSrc)) {
-    fs.copyFileSync(docxSrc, path.join(pubDocs, nom + ".docx"));
-    ok.docx = true;
-  }
-  return ok;
+  return {
+    pdf: preserve(path.join(srcPdf, nom + ".pdf"), path.join(pubDocs, nom + ".pdf")),
+    docx: preserve(path.join(srcDocx, nom + ".docx"), path.join(pubDocs, nom + ".docx")),
+  };
 }
 
 function yamlList(arr) {
@@ -56,7 +65,7 @@ function yamlList(arr) {
 }
 
 (async () => {
-  let totalN = 0;
+  let totalN = 0, gardes = 0;
   const manquants = [];
   const ignorees = [];
 
@@ -112,14 +121,31 @@ ebepPdf: "${a.ebep ? `/${ANNEE}/${SEQ.code}/${a.ebep}.pdf` : ""}"
 qr: "/qr/${s}.png"
 ---
 `;
-      fs.writeFileSync(path.join(CONTENT, s + ".md"), md);
+      // ⚠ NE JAMAIS ÉCRASER UN .md QUI EXISTE DÉJÀ.
+      //
+      // Ce script a longtemps été le seul à produire les fichiers d'activité.
+      // Ce n'est plus vrai : `tools/gen-fiches-seq.cjs --md` écrit ceux des
+      // séquences 01 et 02, et plusieurs frontmatters ont été enrichis à la
+      // main (les compétences T2b/T2c ajoutées à S6-A03 4ème, les versions
+      // adaptées de S2-A06 et S2-A07). Le registre `activites.cjs` d'ici, lui,
+      // n'a pas suivi.
+      //
+      // Le 21/08/2026, un simple `npm run build` a donc silencieusement effacé
+      // deux compétences du programme et quatre liens de fiche adaptée. Les
+      // .md sont désormais une SOURCE versionnée, pas une sortie de build.
+      // `--force` reste possible pour une régénération volontaire.
+      const dest = path.join(CONTENT, s + ".md");
+      if (fs.existsSync(dest) && !process.argv.includes("--force")) { gardes++; continue; }
+      fs.writeFileSync(dest, md);
       n++;
     }
     console.log(`✓ ${SEQ.code} (${SEQ.nom}) : ${n} activités`);
     totalN += n;
   }
 
-  console.log(`\n✓ total ${totalN} activités`);
+  console.log(`\n✓ total ${totalN} activité(s) écrite(s)`);
+  if (gardes) console.log(`✓ ${gardes} fichier(s) .md préservé(s) — déjà présents, non écrasés (--force pour forcer)`);
+  if (preserves) console.log(`✓ ${preserves} document(s) préservé(s) dans public/ — déjà publiés, non remplacés par ceux de out/`);
   console.log(`✓ QR codes → public/qr/`);
   console.log(`✓ documents → public/${ANNEE}/<seq>/`);
   if (ignorees.length) {

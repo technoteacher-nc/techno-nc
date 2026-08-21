@@ -239,6 +239,52 @@ body {
   color: var(--mine); letter-spacing: .08em;
 }
 
+/* Avancement d'une séquence. Discret par construction : une barre de 4 px et
+   une ligne de texte, sous le titre. Ce n'est pas une récompense — le site ne
+   sait pas si l'élève a compris —, c'est un repère : où j'en étais. */
+.seq-avance {
+  display: flex; align-items: center; gap: .7rem;
+  margin: 0 0 1.1rem;
+}
+.seq-avance-barre {
+  flex: 0 0 7rem; height: 4px; border-radius: 2px;
+  background: var(--calque); overflow: hidden;
+}
+.seq-avance-barre > span {
+  display: block; height: 100%; width: 0;
+  background: var(--vif); border-radius: 2px;
+}
+.seq-avance-texte {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+  color: var(--mine);
+}
+/* Une séquence terminée se dit en toutes lettres, pas seulement en couleur :
+   un élève daltonien lit la même chose que les autres. */
+.seq-avance--complete .seq-avance-texte { color: var(--vif-lisible); font-weight: 600; }
+@media print { .seq-avance { display: none; } }
+
+/* « Et maintenant ? », en fin de chaîne. Discret : c'est une proposition, pas
+   la suite obligatoire du parcours. */
+.seq-quiz {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .9rem;
+  margin: .9rem 0 0; padding-left: .2rem;
+}
+.seq-quiz a {
+  display: inline-flex; align-items: center; gap: .45rem;
+  min-height: 2.75rem;                       /* cible tactile : 44 px */
+  font-weight: 600; font-size: .95rem;
+  color: var(--vif-lisible); text-decoration: none;
+}
+.seq-quiz a:hover, .seq-quiz a:focus-visible { text-decoration: underline; }
+.seq-quiz a span { transition: transform .15s ease; }
+.seq-quiz a:hover span { transform: translateX(3px); }
+.seq-quiz-note {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .06em;
+  color: var(--mine);
+}
+@media (prefers-reduced-motion: reduce) { .seq-quiz a span { transition: none; } }
+@media print { .seq-quiz { display: none; } }
+
 .chaine { list-style: none; margin: 1.25rem 0 0; padding: 0; position: relative; }
 
 .chaine li { position: relative; }
