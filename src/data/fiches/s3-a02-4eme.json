@@ -273,7 +273,7 @@
     },
     {
      "t": "champ",
-     "points": 54
+     "points": 55
     }
    ]
   },
@@ -444,7 +444,7 @@
     },
     {
      "t": "champ",
-     "points": 13
+     "points": 33
     }
    ]
   },
@@ -503,7 +503,7 @@
          },
          {
           "t": "champ",
-          "points": 35
+          "points": 96
          }
         ]
        }
@@ -545,7 +545,7 @@
          },
          {
           "t": "champ",
-          "points": 35
+          "points": 96
          }
         ]
        }
@@ -587,7 +587,7 @@
          },
          {
           "t": "champ",
-          "points": 35
+          "points": 96
          }
         ]
        }
@@ -608,12 +608,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "bilan",

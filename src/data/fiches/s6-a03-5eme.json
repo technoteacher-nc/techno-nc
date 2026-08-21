@@ -101,7 +101,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -131,7 +131,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -161,7 +161,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -321,7 +321,7 @@
     },
     {
      "t": "champ",
-     "points": 53
+     "points": 83
     }
    ]
   },
@@ -343,14 +343,14 @@
     },
     {
      "t": "champ",
-     "points": 29
+     "points": 13
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "coches",

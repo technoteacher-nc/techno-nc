@@ -32,7 +32,7 @@
     },
     {
      "t": "champ",
-     "points": 30
+     "points": 35
     }
    ]
   },
@@ -48,7 +48,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",
@@ -309,7 +309,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",
@@ -360,7 +360,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "bilan",

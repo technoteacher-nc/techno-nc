@@ -61,7 +61,7 @@
          },
          {
           "t": "champ",
-          "points": 45
+          "points": 108
          }
         ]
        }
@@ -133,7 +133,7 @@
          },
          {
           "t": "champ",
-          "points": 45
+          "points": 103
          }
         ]
        }
@@ -268,7 +268,7 @@
           "points": 0
          }
         ],
-        "justif": 45
+        "justif": 102
        }
       ]
      }
@@ -303,7 +303,7 @@
           "points": 0
          }
         ],
-        "justif": 45
+        "justif": 102
        }
       ]
      }
@@ -338,7 +338,7 @@
           "points": 0
          }
         ],
-        "justif": 45
+        "justif": 102
        }
       ]
      }
@@ -373,7 +373,7 @@
           "points": 0
          }
         ],
-        "justif": 45
+        "justif": 102
        }
       ]
      }
@@ -408,7 +408,7 @@
           "points": 0
          }
         ],
-        "justif": 45
+        "justif": 102
        }
       ]
      }
@@ -443,7 +443,7 @@
           "points": 0
          }
         ],
-        "justif": 45
+        "justif": 102
        }
       ]
      }
@@ -484,7 +484,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",
@@ -498,12 +498,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "bilan",

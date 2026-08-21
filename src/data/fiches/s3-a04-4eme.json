@@ -61,7 +61,7 @@
          },
          {
           "t": "champ",
-          "points": 35
+          "points": 110
          }
         ]
        }
@@ -95,7 +95,7 @@
          },
          {
           "t": "champ",
-          "points": 35
+          "points": 124
          }
         ]
        }
@@ -129,7 +129,7 @@
          },
          {
           "t": "champ",
-          "points": 35
+          "points": 129
          }
         ]
        }
@@ -248,7 +248,7 @@
          },
          {
           "t": "champ",
-          "points": 44
+          "points": 116
          }
         ]
        }
@@ -282,7 +282,7 @@
          },
          {
           "t": "champ",
-          "points": 44
+          "points": 116
          }
         ]
        }
@@ -316,7 +316,7 @@
          },
          {
           "t": "champ",
-          "points": 44
+          "points": 116
          }
         ]
        }
@@ -350,7 +350,7 @@
          },
          {
           "t": "champ",
-          "points": 44
+          "points": 116
          }
         ]
        }
@@ -368,7 +368,7 @@
     },
     {
      "t": "champ",
-     "points": 47
+     "points": 60
     }
    ]
   },
@@ -413,7 +413,7 @@
     },
     {
      "t": "champ",
-     "points": 6
+     "points": 76
     }
    ]
   },
@@ -438,12 +438,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",
@@ -457,12 +457,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",

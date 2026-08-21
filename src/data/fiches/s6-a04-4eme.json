@@ -194,7 +194,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",
@@ -241,7 +241,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -255,7 +255,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -269,7 +269,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -283,7 +283,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 34
+          "points": 150
          }
         ]
        }
@@ -313,7 +313,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -327,7 +327,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -341,7 +341,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -355,7 +355,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 34
+          "points": 150
          }
         ]
        }
@@ -385,7 +385,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -399,7 +399,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -413,7 +413,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 150
          }
         ]
        }
@@ -462,12 +462,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",
@@ -481,7 +481,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "bilan",

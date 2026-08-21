@@ -277,14 +277,14 @@
     },
     {
      "t": "champ",
-     "points": 33
+     "points": 4
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",
@@ -705,7 +705,7 @@
     },
     {
      "t": "champ",
-     "points": 67
+     "points": 128
     }
    ]
   },
@@ -718,7 +718,7 @@
     },
     {
      "t": "champ",
-     "points": 67
+     "points": 128
     }
    ]
   },
@@ -743,12 +743,12 @@
      "points": 0
     }
    ],
-   "justif": 35
+   "justif": 57
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",

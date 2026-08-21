@@ -64,7 +64,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 20
+          "points": 150
          }
         ]
        }
@@ -108,7 +108,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 20
+          "points": 150
          }
         ]
        }
@@ -152,7 +152,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 20
+          "points": 150
          }
         ]
        }
@@ -196,7 +196,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 20
+          "points": 150
          }
         ]
        }
@@ -240,7 +240,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 20
+          "points": 150
          }
         ]
        }
@@ -311,7 +311,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 11
+          "points": 150
          }
         ]
        }
@@ -325,7 +325,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 11
+          "points": 150
          }
         ]
        }
@@ -339,7 +339,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 11
+          "points": 150
          }
         ]
        }
@@ -403,7 +403,7 @@
          },
          {
           "t": "champ",
-          "points": 12
+          "points": 129
          }
         ]
        }
@@ -421,7 +421,7 @@
          },
          {
           "t": "champ",
-          "points": 12
+          "points": 129
          }
         ]
        }
@@ -439,7 +439,7 @@
          },
          {
           "t": "champ",
-          "points": 8
+          "points": 102
          }
         ]
        }
@@ -506,12 +506,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "bilan",

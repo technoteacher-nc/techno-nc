@@ -573,17 +573,17 @@
      "points": 0
     }
    ],
-   "justif": 20
+   "justif": 69
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",
@@ -594,14 +594,14 @@
     },
     {
      "t": "champ",
-     "points": 18
+     "points": 26
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",
@@ -621,7 +621,7 @@
     },
     {
      "t": "champ",
-     "points": 70
+     "points": 137
     }
    ]
   },

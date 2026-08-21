@@ -61,7 +61,7 @@
          },
          {
           "t": "champ",
-          "points": 21
+          "points": 136
          }
         ]
        }
@@ -79,7 +79,7 @@
          },
          {
           "t": "champ",
-          "points": 40
+          "points": 129
          }
         ]
        }
@@ -99,7 +99,7 @@
          },
          {
           "t": "champ",
-          "points": 21
+          "points": 136
          }
         ]
        }
@@ -117,7 +117,7 @@
          },
          {
           "t": "champ",
-          "points": 40
+          "points": 129
          }
         ]
        }
@@ -137,7 +137,7 @@
          },
          {
           "t": "champ",
-          "points": 21
+          "points": 136
          }
         ]
        }
@@ -155,7 +155,7 @@
          },
          {
           "t": "champ",
-          "points": 40
+          "points": 129
          }
         ]
        }
@@ -175,7 +175,7 @@
          },
          {
           "t": "champ",
-          "points": 21
+          "points": 136
          }
         ]
        }
@@ -193,7 +193,7 @@
          },
          {
           "t": "champ",
-          "points": 40
+          "points": 129
          }
         ]
        }
@@ -406,7 +406,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",

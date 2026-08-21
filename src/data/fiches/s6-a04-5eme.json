@@ -370,7 +370,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 16
+          "points": 150
          }
         ]
        }
@@ -384,7 +384,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 16
+          "points": 150
          }
         ]
        }
@@ -414,7 +414,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 16
+          "points": 150
          }
         ]
        }
@@ -428,7 +428,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 16
+          "points": 150
          }
         ]
        }
@@ -455,7 +455,7 @@
     },
     {
      "t": "champ",
-     "points": 71
+     "points": 102
     }
    ]
   },
@@ -468,7 +468,7 @@
     },
     {
      "t": "champ",
-     "points": 69
+     "points": 100
     }
    ]
   },
