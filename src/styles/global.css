@@ -44,6 +44,19 @@
   --mesure: 40rem;          /* texte courant — environ 66 signes */
   --mesure-large: 46rem;    /* listes de définitions et de données */
   --mesure-etroite: 32rem;  /* chapeau sous un grand titre : lu d'un coup d'œil */
+
+  /* LA BOÎTE — largeur d'un encadré qui ne contient que du texte courant.
+
+     Un aplat ou un filet DESSINE le vide qu'il enferme : une carte de 984 px
+     autour d'un texte de 640 laissait 344 px de fond coloré sans rien dedans,
+     et l'œil lit ce vide comme une erreur. Le texte, lui, ne doit pas
+     s'élargir pour autant — 640 px reste la bonne longueur de ligne.
+     La boîte se resserre donc sur son contenu : la mesure, plus son padding.
+
+     Ne s'applique PAS aux blocs dont le contenu remplit déjà la largeur —
+     grilles de cartes, tableaux — ni à la citation, dont le texte est centré
+     et l'espace symétrique par construction. */
+  --boite: calc(var(--mesure) + 3.5rem);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -442,8 +455,12 @@ body {
 }
 
 /* QR */
+/* Le bloc QR ne porte pas de texte courant mais une image et deux lignes : sa
+   largeur juste n'est pas la mesure, c'est celle de son contenu. `fit-content`
+   la lui donne sur grand écran, et reste plafonné par le parent sur petit —
+   la boîte remplit alors l'écran, comme il se doit. */
 .qr {
-  margin: 2.5rem 0; padding: 1.1rem; border-radius: var(--r);
+  margin: 2.5rem 0; padding: 1.1rem; border-radius: var(--r); max-width: fit-content;
   background: var(--calque);
   display: flex; gap: 1rem; align-items: center;
 }
@@ -1163,7 +1180,7 @@ body {
 
 .proj-liste { display: grid; gap: 1.25rem; margin: 2.5rem 0 0; }
 .proj-carte {
-  padding: 1.6rem 1.6rem 1.4rem;
+  padding: 1.6rem 1.6rem 1.4rem; max-width: var(--boite);
   border-radius: var(--r); border: 1.5px solid var(--trait); background: var(--papier);
 }
 .proj-carte--preparation { border-style: dashed; }
@@ -1193,7 +1210,7 @@ body {
 .proj-chiffres dd { margin: .15rem 0 0; font-family: var(--display); font-weight: 600; font-size: .98rem; }
 .proj-phases { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0 0 1.1rem; }
 
-.proj-note { margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--trait); }
+.proj-note { margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--trait); max-width: var(--boite); }
 .proj-note h2 { font-family: var(--display); font-weight: 700; font-size: 1.15rem;
   letter-spacing: -.02em; margin: 0 0 .6rem; }
 .proj-note p { color: var(--mine); max-width: var(--mesure); line-height: 1.6; margin: 0 0 .8rem; }
@@ -1485,7 +1502,7 @@ body {
 /* ---------- accueil : à quoi sert la Technologie ----------
    Le texte le plus long de la page, donc le seul où la mesure de ligne compte
    vraiment. La chute est détachée : c'est la phrase qu'on veut voir rester. */
-.accueil-histoire { margin: 3.5rem 0 0; padding: 1.6rem 1.8rem;
+.accueil-histoire { margin: 3.5rem 0 0; padding: 1.6rem 1.8rem; max-width: var(--boite);
   border-radius: var(--r); background: var(--calque); }
 .accueil-histoire > h2 {
   font-family: var(--display); font-weight: 700; font-size: 1.25rem;
@@ -1705,7 +1722,7 @@ body {
 /* « Reprendre » sur l'accueil */
 .reprendre {
   display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem;
-  margin: 1.5rem 0 0; padding: .9rem 1.1rem;
+  margin: 1.5rem 0 0; padding: .9rem 1.1rem; max-width: var(--boite);
   border: 1px dashed var(--trait); border-radius: var(--r);
 }
 /* Ce bloc déclare `display: flex` : sans la règle `[hidden]` posée en tête de
