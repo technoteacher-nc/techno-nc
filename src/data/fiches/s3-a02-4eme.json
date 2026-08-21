@@ -20,26 +20,174 @@
    "titre": "Deux machines qui se parlent"
   },
   {
+   "type": "tableau",
+   "entetes": [
+    "À SAVOIR — UNE ADRESSE IP"
+   ],
+   "largeurs": [
+    9360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Une adresse IP, c'est quatre nombres séparés par des points."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Exemple :        192  .  168  .  0  .  10"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Chaque nombre va de 0 à 255. Jamais plus."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Les TROIS PREMIERS  =  le RÉSEAU        ici : 192.168.0   (la rue)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Le DERNIER          =  LA MACHINE       ici : 10          (le numéro)"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Dans la salle, toutes les machines sont dans la même rue."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "À SAVOIR — LA COMMANDE ping"
+   ],
+   "largeurs": [
+    9360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ping envoie un petit message à une machine et attend sa réponse."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "0 % perdus        →   elle répond           →   ça fonctionne."
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "100 % perdus      →   elle ne répond pas    →   ça ne fonctionne pas."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
    "type": "consigne",
-   "texte": "Fais les étapes dans l'ordre. Coche chaque case dès que l'étape est réussie."
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "RAPPEL — UNE ADRESSE IP, C'EST QUATRE NOMBRES SÉPARÉS PAR DES POINTS : 192.168.0.10 — comme 192 . 168 . 0 . 10. Chaque nombre va de 0 à 255, jamais plus. Ils ne se calculent pas, on les attribue : c'est un numéro, comme le numéro d'une maison dans une rue. Dans la salle, les TROIS PREMIERS (192.168.0) sont identiques sur toutes les machines — c'est le RÉSEAU, la rue. Seul le DERNIER change d'une machine à l'autre — c'est LA MACHINE, le numéro de la maison."
-    }
-   ]
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "RAPPEL — La commande ping envoie un petit message à une machine et attend sa réponse. 0 % de paquets perdus : elle répond, la communication fonctionne. 100 % perdus : elle ne répond pas."
-    }
-   ]
+   "texte": "Fais les étapes dans l'ordre. Coche la case dès que l'étape est réussie."
   },
   {
    "type": "tableau",
@@ -76,7 +224,16 @@
         "v": [
          {
           "t": "texte",
-          "v": "Glisse 2 portables sur le plan, puis branche un câble entre les deux."
+          "v": "Glisse 2 portables sur le plan."
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Branche un câble entre les deux."
          }
         ]
        }
@@ -107,7 +264,43 @@
         "v": [
          {
           "t": "texte",
-          "v": "Double-clic sur chaque PC → adresse IP : 192.168.0.10 et 192.168.0.11 (masque 255.255.255.0). Mets l'IP comme nom."
+          "v": "Double-clic sur chaque PC, puis donne-lui son adresse :"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "PC n°1 — adresse IP 192.168.0.10"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "PC n°2 — adresse IP 192.168.0.11"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masque des deux PC — 255.255.255.0"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Mets l'adresse IP comme NOM du PC."
          }
         ]
        }
@@ -138,13 +331,35 @@
         "v": [
          {
           "t": "texte",
-          "v": "Mode simulation ▶ → sur le PC 192.168.0.10, installe la « Ligne de commande »."
+          "v": "Passe en mode simulation ▶."
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur le PC 192.168.0.10, installe la « Ligne de commande »."
          }
         ]
        }
       ]
      }
-    ],
+    ]
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
     [
      {
       "shade": false,
@@ -169,13 +384,140 @@
         "v": [
          {
           "t": "texte",
-          "v": "Tape : ping 192.168.0.11 → note le résultat en 1a."
+          "v": "Tape :  ping 192.168.0.11"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Relève ce que Filius affiche, dans le cadre ci-dessous."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "1a — CE QUE J'AI LU À L'ÉCRAN (ping vers 192.168.0.11)"
+   ],
+   "largeurs": [
+    9360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Paquets transmis : "
+         },
+         {
+          "t": "champ",
+          "points": 105
          }
         ]
        }
       ]
      }
     ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Paquets reçus : "
+         },
+         {
+          "t": "champ",
+          "points": 110
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Paquets perdus : "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " %"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "La communication fonctionne ?        "
+         }
+        ]
+       },
+       {
+        "t": "coches",
+        "items": [
+         {
+          "label": "OK",
+          "points": 0
+         },
+         {
+          "label": "ÉCHEC",
+          "points": 0
+         }
+        ],
+        "justif": 0
+       }
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "Fait",
+    "Étape"
+   ],
+   "largeurs": [
+    900,
+    8460
+   ],
+   "lignes": [
     [
      {
       "shade": false,
@@ -200,7 +542,16 @@
         "v": [
          {
           "t": "texte",
-          "v": "Tape : ping 192.168.0.12 (adresse inexistante) → note en 1b."
+          "v": "Tape :  ping 192.168.0.12"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Cette adresse n'existe sur aucune machine. Relève le résultat ci-dessous."
          }
         ]
        }
@@ -210,77 +561,68 @@
    ]
   },
   {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "1a. ping vers 192.168.0.11 : "
-    },
-    {
-     "t": "champ",
-     "points": 7
-    },
-    {
-     "t": "texte",
-     "v": " paquets transmis, "
-    },
-    {
-     "t": "champ",
-     "points": 7
-    },
-    {
-     "t": "texte",
-     "v": " reçus, "
-    },
-    {
-     "t": "champ",
-     "points": 7
-    },
-    {
-     "t": "texte",
-     "v": " % perdus  →  communication : "
-    }
-   ]
-  },
-  {
-   "type": "coches",
-   "items": [
-    {
-     "label": "OK",
-     "points": 0
-    },
-    {
-     "label": "échec",
-     "points": 0
-    }
+   "type": "tableau",
+   "entetes": [
+    "1b — CE QUE J'AI LU À L'ÉCRAN (ping vers 192.168.0.12)"
    ],
-   "justif": 0
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "1b. ping vers 192.168.0.12 : "
-    },
-    {
-     "t": "champ",
-     "points": 7
-    },
-    {
-     "t": "texte",
-     "v": " % perdus. Interprétation : "
-    },
-    {
-     "t": "champ",
-     "points": 55
-    }
+   "largeurs": [
+    9360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Paquets perdus : "
+         },
+         {
+          "t": "champ",
+          "points": 14
+         },
+         {
+          "t": "texte",
+          "v": " %"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Pourquoi ? « Le ping échoue parce que "
+         },
+         {
+          "t": "champ",
+          "points": 72
+         }
+        ]
+       }
+      ]
+     }
+    ]
    ]
   },
   {
    "type": "partie",
    "numero": "2",
    "titre": "Le réseau en étoile, comme une vraie salle"
+  },
+  {
+   "type": "consigne",
+   "texte": "Continue les étapes dans l'ordre. Coche la case dès que l'étape est réussie."
   },
   {
    "type": "tableau",
@@ -317,7 +659,25 @@
         "v": [
          {
           "t": "texte",
-          "v": "Mode conception : supprime le câble direct, ajoute un SWITCH et un SERVEUR (192.168.0.12)."
+          "v": "Repasse en mode conception."
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Supprime le câble direct entre les deux PC."
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Ajoute un SWITCH, puis un SERVEUR d'adresse 192.168.0.12."
          }
         ]
        }
@@ -348,7 +708,25 @@
         "v": [
          {
           "t": "texte",
-          "v": "Relie PC et serveur au switch (topologie en étoile)."
+          "v": "Branche les deux PC au switch."
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Branche le serveur au switch."
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Toutes les machines partent du switch : c'est la topologie EN ÉTOILE."
          }
         ]
        }
@@ -379,7 +757,25 @@
         "v": [
          {
           "t": "texte",
-          "v": "Simulation ▶ : ping du PC 192.168.0.10 vers 192.168.0.11, PUIS vers 192.168.0.12 → 0 % perdus exigé."
+          "v": "Repasse en simulation ▶, puis depuis le PC 192.168.0.10 :"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ping 192.168.0.11    →  0 % perdus exigé"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "ping 192.168.0.12    →  0 % perdus exigé"
          }
         ]
        }
@@ -410,7 +806,16 @@
         "v": [
          {
           "t": "texte",
-          "v": "Tape ipconfig sur le PC 192.168.0.10 et relève les informations en 2a."
+          "v": "Sur le PC 192.168.0.10, tape :  ipconfig"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Relève les trois informations dans le cadre ci-dessous."
          }
         ]
        }
@@ -420,32 +825,74 @@
    ]
   },
   {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "2a. ipconfig → Adresse IP : "
-    },
-    {
-     "t": "champ",
-     "points": 13
-    },
-    {
-     "t": "texte",
-     "v": " | Masque : "
-    },
-    {
-     "t": "champ",
-     "points": 13
-    },
-    {
-     "t": "texte",
-     "v": " | Adresse MAC : "
-    },
-    {
-     "t": "champ",
-     "points": 33
-    }
+   "type": "tableau",
+   "entetes": [
+    "2a — CE QU'AFFICHE ipconfig"
+   ],
+   "largeurs": [
+    9360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Adresse IP : "
+         },
+         {
+          "t": "champ",
+          "points": 116
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Masque : "
+         },
+         {
+          "t": "champ",
+          "points": 120
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Adresse MAC : "
+         },
+         {
+          "t": "champ",
+          "points": 111
+         }
+        ]
+       }
+      ]
+     }
+    ]
    ]
   },
   {
@@ -461,11 +908,13 @@
    "type": "tableau",
    "entetes": [
     "Test effectué",
-    "Rapport"
+    "Résultat affiché",
+    "Ma conclusion"
    ],
    "largeurs": [
-    3400,
-    5960
+    3000,
+    3180,
+    3180
    ],
    "lignes": [
     [
@@ -490,20 +939,22 @@
         "t": "seg",
         "v": [
          {
-          "t": "texte",
-          "v": "Résultat : "
-         },
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
          {
           "t": "champ",
-          "points": 14
-         },
-         {
-          "t": "texte",
-          "v": " | Conclusion : "
-         },
-         {
-          "t": "champ",
-          "points": 96
+          "points": 44
          }
         ]
        }
@@ -519,7 +970,16 @@
         "v": [
          {
           "t": "texte",
-          "v": "ping 192.168.0.12 (avant le serveur)"
+          "v": "ping 192.168.0.12"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "AVANT le serveur"
          }
         ]
        }
@@ -532,20 +992,22 @@
         "t": "seg",
         "v": [
          {
-          "t": "texte",
-          "v": "Résultat : "
-         },
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
          {
           "t": "champ",
-          "points": 14
-         },
-         {
-          "t": "texte",
-          "v": " | Conclusion : "
-         },
-         {
-          "t": "champ",
-          "points": 96
+          "points": 44
          }
         ]
        }
@@ -561,7 +1023,16 @@
         "v": [
          {
           "t": "texte",
-          "v": "ping 192.168.0.12 (étoile terminée)"
+          "v": "ping 192.168.0.12"
+         }
+        ]
+       },
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "étoile TERMINÉE"
          }
         ]
        }
@@ -574,20 +1045,22 @@
         "t": "seg",
         "v": [
          {
-          "t": "texte",
-          "v": "Résultat : "
-         },
+          "t": "champ",
+          "points": 44
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
          {
           "t": "champ",
-          "points": 14
-         },
-         {
-          "t": "texte",
-          "v": " | Conclusion : "
-         },
-         {
-          "t": "champ",
-          "points": 96
+          "points": 44
          }
         ]
        }
@@ -597,23 +1070,36 @@
    ]
   },
   {
+   "type": "consigne",
+   "texte": "Réponds en une phrase. C'est la seule rédaction de la fiche."
+  },
+  {
    "type": "texte",
    "segments": [
     {
      "t": "texte",
-     "v": "3a. Pourquoi la topologie en étoile (avec switch) est-elle utilisée dans les vraies salles plutôt qu'un câble entre chaque paire de machines ? Commence par : « L'étoile est utilisée parce que … »"
+     "v": "Pourquoi utilise-t-on l'étoile, avec un switch, dans les vraies salles, plutôt qu'un câble entre chaque paire de machines ?"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "« L'étoile est utilisée parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 150
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 150
+   "points": 140
   },
   {
    "type": "bilan",
@@ -625,7 +1111,7 @@
      },
      {
       "t": "champ",
-      "points": 21
+      "points": 16
      },
      {
       "t": "texte",
@@ -633,7 +1119,7 @@
      },
      {
       "t": "champ",
-      "points": 21
+      "points": 16
      },
      {
       "t": "texte",
@@ -647,7 +1133,7 @@
      },
      {
       "t": "champ",
-      "points": 21
+      "points": 16
      },
      {
       "t": "texte",
@@ -659,7 +1145,7 @@
   {
    "type": "citation",
    "texte": "Tester, c'est prouver.",
-   "auteur": "devise du technicien réseau"
+   "auteur": ""
   }
  ]
 }
