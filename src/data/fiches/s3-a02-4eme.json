@@ -8,11 +8,47 @@
    "texte": "FILIUS (1) : MON RÉSEAU LOCAL OPÉRATIONNEL"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — À la fin de cette activité, tu sauras construire un réseau local dans Filius et PROUVER qu'il fonctionne, en lisant le résultat d'un ping."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le collège doit équiper une nouvelle salle informatique. Avant d'acheter des kilomètres de câbles, le technicien SIMULE le réseau : c'est ton travail aujourd'hui, avec le logiciel Filius."
    ],
    "question": "Comment construire un réseau local et PROUVER qu'il fonctionne ?"
+  },
+  {
+   "type": "tableau",
+   "entetes": [
+    "RESSOURCE 1 — le simulateur Filius"
+   ],
+   "largeurs": [
+    9360
+   ],
+   "lignes": [
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "Sur ton poste : menu Démarrer → Filius. Le logiciel est déjà installé sur les postes de la salle 207."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   ]
   },
   {
    "type": "partie",
