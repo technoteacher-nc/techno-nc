@@ -8,6 +8,15 @@
    "texte": "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras ouvrir ta session, faire une page de garde et enregistrer au bon endroit."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu retrouves la salle 207 et un poste identique à celui de l'an dernier. Mais cette année, ton classeur de Technologie sera relevé, et sa page de garde sera notée sur la CONFORMITÉ : chaque écart à la consigne se voit.",

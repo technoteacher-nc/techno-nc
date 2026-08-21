@@ -8,6 +8,15 @@
    "texte": "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras reconnaître un switch, un routeur, un serveur, et lire une adresse IP."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Depuis la salle des professeurs (réseau administratif), impossible d'ouvrir les dossiers de la salle 207 (réseau pédagogique). Pourtant, tout est « au collège » ! Le schéma ci-dessous montre les deux réseaux… et une bizarrerie : des ordinateurs ont la MÊME adresse IP."
@@ -61,7 +70,7 @@
          },
          {
           "t": "champ",
-          "points": 145
+          "points": 43
          }
         ]
        }
@@ -79,7 +88,7 @@
          },
          {
           "t": "champ",
-          "points": 140
+          "points": 69
          }
         ]
        }
@@ -99,7 +108,7 @@
          },
          {
           "t": "champ",
-          "points": 145
+          "points": 43
          }
         ]
        }
@@ -117,7 +126,7 @@
          },
          {
           "t": "champ",
-          "points": 140
+          "points": 69
          }
         ]
        }
@@ -137,7 +146,7 @@
          },
          {
           "t": "champ",
-          "points": 145
+          "points": 43
          }
         ]
        }
@@ -155,7 +164,7 @@
          },
          {
           "t": "champ",
-          "points": 140
+          "points": 69
          }
         ]
        }
@@ -175,7 +184,7 @@
          },
          {
           "t": "champ",
-          "points": 145
+          "points": 43
          }
         ]
        }
@@ -193,7 +202,7 @@
          },
          {
           "t": "champ",
-          "points": 140
+          "points": 69
          }
         ]
        }
@@ -213,7 +222,7 @@
          },
          {
           "t": "champ",
-          "points": 145
+          "points": 43
          }
         ]
        }
@@ -231,7 +240,7 @@
          },
          {
           "t": "champ",
-          "points": 140
+          "points": 69
          }
         ]
        }
@@ -377,7 +386,7 @@
          },
          {
           "t": "champ",
-          "points": 83
+          "points": 4
          }
         ]
        }
@@ -419,7 +428,7 @@
          },
          {
           "t": "champ",
-          "points": 83
+          "points": 4
          }
         ]
        }
@@ -456,7 +465,7 @@
           "points": 0
          }
         ],
-        "justif": 118
+        "justif": 39
        }
       ]
      }

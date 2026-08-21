@@ -8,6 +8,15 @@
    "texte": "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras fabriquer un mot de passe difficile à casser, et dire pourquoi il l'est."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le compte de jeu de Loïc a été piraté : son pseudo insulte ses amis, ses objets ont disparu. Son mot de passe ? « loic2013 ». Il l'utilisait aussi pour sa messagerie…"
@@ -43,7 +52,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -73,7 +82,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -103,7 +112,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -133,7 +142,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -163,7 +172,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -193,7 +202,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -228,7 +237,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "partie",
@@ -248,7 +257,7 @@
     },
     {
      "t": "champ",
-     "points": 70
+     "points": 90
     }
    ]
   },

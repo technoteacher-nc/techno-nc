@@ -8,6 +8,15 @@
    "texte": "mBLOCK : MES PREMIERS PROGRAMMES SUR SYSTÈME RÉEL"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras téléverser un programme et régler la rotation du robot par essais."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Sur un écran, une erreur ne casse rien. Sur un robot réel, un « tourner » mal réglé finit dans le mur ! Aujourd'hui : premiers programmes ET premier réglage d'ingénieur — calibrer la rotation à 90°."

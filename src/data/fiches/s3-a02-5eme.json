@@ -8,6 +8,15 @@
    "texte": "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras raconter le trajet d'un message, de ton poste jusqu'au destinataire."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu envoies une photo à ta correspondante à Paris. Deux secondes plus tard, elle répond « trop belle ! ». Pourtant, Paris est à plus de 16 000 km, de l'autre côté de la planète."
@@ -43,7 +52,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -73,7 +82,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -103,7 +112,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -133,7 +142,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -163,7 +172,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -193,7 +202,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -237,7 +246,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",
@@ -251,7 +260,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "texte",
@@ -265,7 +274,7 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 77
+   "points": 150
   },
   {
    "type": "definition",

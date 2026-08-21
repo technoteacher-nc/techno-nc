@@ -8,6 +8,15 @@
    "texte": "GRATUITS, VRAIMENT ? URL, MOTEURS ET GAFAM"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras lire une adresse web et dire ce qu'un service gratuit gagne sur toi."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Zéro franc pour le moteur de recherche, la messagerie, les vidéos, les cartes… Pourtant ces entreprises comptent parmi les plus riches du monde. Un détective se demanderait : d'où vient l'argent ?"
@@ -61,7 +70,7 @@
          },
          {
           "t": "champ",
-          "points": 110
+          "points": 57
          }
         ]
        }
@@ -95,7 +104,7 @@
          },
          {
           "t": "champ",
-          "points": 124
+          "points": 71
          }
         ]
        }
@@ -129,7 +138,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 76
          }
         ]
        }
@@ -248,7 +257,7 @@
          },
          {
           "t": "champ",
-          "points": 116
+          "points": 51
          }
         ]
        }
@@ -282,7 +291,7 @@
          },
          {
           "t": "champ",
-          "points": 116
+          "points": 51
          }
         ]
        }
@@ -316,7 +325,7 @@
          },
          {
           "t": "champ",
-          "points": 116
+          "points": 51
          }
         ]
        }
@@ -350,7 +359,7 @@
          },
          {
           "t": "champ",
-          "points": 116
+          "points": 51
          }
         ]
        }

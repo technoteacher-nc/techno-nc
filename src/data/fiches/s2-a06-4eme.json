@@ -8,6 +8,15 @@
    "texte": "L'EXPÉRIENCE UTILISATEUR — CONCEVOIR POUR L'UTILISATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras juger une application sur quatre critères et la rendre plus accessible."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "La compagnie maritime TransPacifik perd des clients : sur son application de réservation, acheter un billet demande 12 étapes, les boutons sont minuscules et rien n'est prévu pour les personnes malvoyantes. La direction te recrute pour réaliser un audit UX et proposer une nouvelle version."
@@ -52,7 +61,7 @@
          },
          {
           "t": "champ",
-          "points": 119
+          "points": 11
          }
         ]
        }
@@ -86,7 +95,7 @@
          },
          {
           "t": "champ",
-          "points": 90
+          "points": 4
          }
         ]
        }
@@ -120,7 +129,7 @@
          },
          {
           "t": "champ",
-          "points": 122
+          "points": 15
          }
         ]
        }
@@ -154,7 +163,7 @@
          },
          {
           "t": "champ",
-          "points": 113
+          "points": 6
          }
         ]
        }
@@ -192,7 +201,7 @@
   },
   {
    "type": "consigne",
-   "texte": "Écris ensuite UN fait précis qui explique ta note : « … parce que la version B demande 4 étapes au lieu de 2 »."
+   "texte": "Écris ensuite UN fait qui explique ta note : « … parce que B demande 4 étapes au lieu de 2 »."
   },
   {
    "type": "tableau",
@@ -330,11 +339,11 @@
   },
   {
    "type": "consigne",
-   "texte": "La nouvelle application doit être utilisable par une personne malvoyante. Écris DEUX modifications précises."
+   "texte": "L'application doit servir à une personne malvoyante. Écris DEUX modifications précises."
   },
   {
    "type": "consigne",
-   "texte": "Pour chaque modification, complète l'amorce : « Je propose … parce que cela améliore le critère … »."
+   "texte": "Amorce, pour chacune : « Je propose … parce que cela améliore le critère … »."
   },
   {
    "type": "texte",
@@ -456,11 +465,6 @@
      }
     ]
    ]
-  },
-  {
-   "type": "citation",
-   "texte": "Si l'utilisateur a besoin d'un mode d'emploi pour un geste simple, c'est la conception qui a échoué.",
-   "auteur": "d'après Don Norman, ingénieur en design"
   }
  ]
 }

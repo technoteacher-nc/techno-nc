@@ -8,6 +8,15 @@
    "texte": "L'UNITÉ CENTRALE — AU CŒUR DE L'ORDINATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras nommer les six composants d'une unité centrale et dire à quoi sert chacun."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Deux ordinateurs de la salle 207 se ressemblent à s'y méprendre. L'un ouvre un fichier en une seconde, l'autre met dix secondes.",

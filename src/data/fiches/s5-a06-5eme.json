@@ -8,6 +8,15 @@
    "texte": "L'ATELIER DE FABRICATION : IMPRIMANTE 3D ET DÉCOUPE LASER"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras distinguer l'impression 3D de l'usinage et respecter les règles d'atelier."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Dernière étape du bureau d'études : l'atelier. Aujourd'hui, les machines travaillent sous tes yeux : l'imprimante 3D fabrique du mobilier miniature pour vos maquettes, la découpeuse laser des façades."
@@ -395,7 +404,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 40
          }
         ]
        }
@@ -409,7 +418,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 39
          }
         ]
        }
@@ -499,7 +508,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 40
          }
         ]
        }
@@ -513,7 +522,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 39
          }
         ]
        }

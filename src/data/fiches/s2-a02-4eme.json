@@ -8,6 +8,15 @@
    "texte": "QUAND LA MAISON S'ALLUME TOUTE SEULE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras repérer capteur, microcontrôleur et actionneur, et suivre la chaîne."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Léo rentre chez lui à 18 h. Il pousse la porte. La lumière du couloir s'allume seule. Au même instant, le téléphone de sa mère, au travail, vibre : Léo est rentré.",

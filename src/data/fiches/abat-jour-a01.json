@@ -8,6 +8,15 @@
    "texte": "ÉCLAIRER SANS ÉBLOUIR : DEUX EXIGENCES OPPOSÉES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras écrire un cahier des charges avec deux exigences qui s'opposent."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Une ampoule nue éclaire beaucoup, mais elle éblouit. Un abat-jour fermé n'éblouit plus, mais il n'éclaire presque plus rien. Entre les deux, il faut choisir.",

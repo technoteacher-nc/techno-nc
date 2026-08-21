@@ -8,6 +8,15 @@
    "texte": "FILIUS : JE CONSTRUIS MON PREMIER RÉSEAU"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras câbler trois machines sur un switch et tester la liaison par un ping."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Impossible de débrancher les 15 ordinateurs de la salle pour faire des essais ! Les techniciens font comme les ingénieurs : avant de câbler pour de vrai, ils SIMULENT le réseau sur un logiciel."

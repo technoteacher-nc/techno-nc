@@ -8,6 +8,15 @@
    "texte": "OÙ VONT MES FICHIERS ? — LE RÉSEAU DU COLLÈGE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras retrouver tes fichiers sur le serveur du collège et ranger ton dossier."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Lundi, tu enregistres ton exposé sur l'ordinateur n°4 de la salle 207. Jeudi, tu ouvres ta session sur l'ordinateur n°9… et ton exposé est là ! « C'est magique », dit Kaï. « Non, il s'est copié partout », répond Léna. Les deux se trompent."
@@ -61,7 +70,7 @@
          },
          {
           "t": "champ",
-          "points": 136
+          "points": 37
          }
         ]
        }
@@ -79,7 +88,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 55
          }
         ]
        }
@@ -99,7 +108,7 @@
          },
          {
           "t": "champ",
-          "points": 136
+          "points": 37
          }
         ]
        }
@@ -117,7 +126,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 55
          }
         ]
        }
@@ -137,7 +146,7 @@
          },
          {
           "t": "champ",
-          "points": 136
+          "points": 37
          }
         ]
        }
@@ -155,7 +164,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 55
          }
         ]
        }
@@ -175,7 +184,7 @@
          },
          {
           "t": "champ",
-          "points": 136
+          "points": 37
          }
         ]
        }
@@ -193,7 +202,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 55
          }
         ]
        }

@@ -8,6 +8,15 @@
    "texte": "LES PÉRIPHÉRIQUES — CE QUI SE CONNECTE À L'ORDINATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras dire si un périphérique est une entrée, une sortie, ou les deux."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Un même objet peut changer de type selon ce qu'on lui demande : un écran affiche, un écran TACTILE affiche ET reçoit. Une clé USB ne fait rien d'autre que garder — mais elle donne autant qu'elle reçoit.",

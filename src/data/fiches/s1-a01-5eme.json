@@ -8,6 +8,15 @@
    "texte": "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras ouvrir ta session, faire une page de garde et enregistrer au bon endroit."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu entres pour la première fois en salle 207. Devant toi : un ordinateur éteint, un identifiant, un mot de passe.",

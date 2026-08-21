@@ -8,6 +8,15 @@
    "texte": "LES GAINS S'ADDITIONNENT-ILS ? BILAN ET RISQUES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras désigner la meilleure solution et parler des risques pour l'audition."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Chaque groupe a trouvé sa meilleure modalité. Si on assemblait toutes les meilleures modalités dans un seul pavillon, obtiendrait-on la somme de tous les gains ?",

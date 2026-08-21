@@ -8,6 +8,15 @@
    "texte": "AMPLIFIER OU DIRIGER : DEUX OBJETS, DEUX CHAÎNES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras montrer qu'un pavillon amplifie sans aucune énergie électrique."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Une enceinte Bluetooth contient une pile, un circuit et un haut-parleur. Un pavillon en carton ne contient rien du tout — et pourtant, un téléphone posé dedans s'entend nettement mieux.",

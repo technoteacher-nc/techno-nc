@@ -8,6 +8,15 @@
    "texte": "SKETCHUP (2) : LA COLLERETTE ET LES MÉTHODES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras modéliser la collerette et choisir entre laser et impression 3D."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le panneau roulé ne tient pas tout seul, et la douille de la lampe doit être fixée quelque part. C'est le rôle de la collerette : une pièce en volume, donc imprimée en 3D.",

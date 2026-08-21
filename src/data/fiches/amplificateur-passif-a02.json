@@ -8,6 +8,15 @@
    "texte": "LE PLAN D'EXPÉRIENCE DE LA CLASSE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras construire un plan d'expérience où une seule chose change."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Huit groupes vont fabriquer huit pavillons. Si chacun change tout en même temps — la forme, la matière, la longueur — personne ne saura ce qui a produit le gain.",

@@ -8,6 +8,15 @@
    "texte": "SCRATCH (1) : LE PARCOURS CARRÉ"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras traduire l'algorithme du carré en blocs Scratch et utiliser une boucle."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton algorithme papier fonctionne. Place au vrai langage : dans Scratch, chaque instruction est un BLOC qu'on emboîte. Le lutin exécute — sans jamais discuter."

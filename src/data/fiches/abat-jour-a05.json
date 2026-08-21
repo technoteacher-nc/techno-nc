@@ -8,6 +8,15 @@
    "texte": "DÉCOUPE, MONTAGE ET DOUBLE MESURE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras monter l'abat-jour et mesurer l'éclairement au luxmètre."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton abat-jour existe enfin. Reste à savoir s'il tient ses deux promesses : diffuser assez de lumière, et ne pas s'affaisser.",

@@ -8,6 +8,15 @@
    "texte": "SKETCHUP (2) : LE MODÈLE FINAL COTÉ"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras creuser une encoche, poser les cotes et exporter ton dossier."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton volume de base existe. Il manque l'essentiel : l'encoche qui tient le téléphone, la butée, et les COTES affichées — sans elles, l'atelier refuse le dossier."

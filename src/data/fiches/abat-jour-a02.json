@@ -8,6 +8,15 @@
    "texte": "PARAMÉTRER UN MOTIF : TROIS GRANDEURS SUFFISENT"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras décrire ton motif par trois paramètres et calculer son taux d'ajour."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Dessiner 96 trous un par un prendrait la séance entière — et il faudrait tout recommencer pour en changer un seul.",

@@ -8,6 +8,15 @@
    "texte": "LE DÉVELOPPÉ DU CÔNE : PYTHAGORE PUIS PROPORTION"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras calculer le développé du cône et l'exporter pour la découpe."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton pavillon est un cône. La découpeuse laser, elle, ne sait travailler qu'à plat. Il faut donc trouver la forme plate qui, une fois roulée, donnera exactement ce cône.",

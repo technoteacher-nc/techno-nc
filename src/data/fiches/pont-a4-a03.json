@@ -8,6 +8,15 @@
    "texte": "SWEET HOME 3D : IMPLANTER ET COTER L'OUVRAGE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras implanter l'ouvrage sur ton plan et convertir la portée à l'échelle."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton plan de maison est déjà ouvert dans Sweet Home 3D depuis le projet « Ma maison en NC ». Le creek passe sur ce terrain : c'est LUI qui décide de la portée à franchir, pas toi.",

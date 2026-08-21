@@ -8,6 +8,15 @@
    "texte": "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras ranger les cinq étapes du cycle de vie et lire un indice de réparabilité."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "En Nouvelle-Calédonie, un appareil hors d'usage ne peut pas être recyclé sur place : il repart par bateau, à 18 000 km, ou il reste sur le territoire.",

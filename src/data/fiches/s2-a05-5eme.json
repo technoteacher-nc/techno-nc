@@ -8,6 +8,15 @@
    "texte": "L'ÉVOLUTION DES OBJETS TECHNIQUES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras distinguer le besoin, qui ne change pas, de la solution, qui change."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le soir, tu allumes la lumière d'un simple geste — ou d'un mot. Il y a cent ans, il fallait craquer une allumette et surveiller une flamme.",

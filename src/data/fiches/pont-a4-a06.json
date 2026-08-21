@@ -8,6 +8,15 @@
    "texte": "LA V2 ET LES DONNÉES DE LA CLASSE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras améliorer ta structure, la retester, et tracer les résultats de la classe."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Toute la classe a mesuré. Le tableau projeté rassemble les 8 ratios : c'est maintenant lui qui commande, et non les impressions de chacun.",

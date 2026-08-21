@@ -8,6 +8,15 @@
    "texte": "L'ESSAI DESTRUCTIF : CHARGE DE RUPTURE ET RATIO"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras appliquer le protocole d'essai et calculer le rapport charge sur masse."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Huit groupes, huit ponts, huit résultats — qui ne voudront rien dire si chacun teste à sa façon. Le protocole ci-dessous est le même pour toute la classe.",

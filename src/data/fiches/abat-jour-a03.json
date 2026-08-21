@@ -8,6 +8,15 @@
    "texte": "SKETCHUP (1) : LE PANNEAU DÉVELOPPÉ"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras tracer le panneau à plat et vérifier les ponts de matière."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "La découpeuse laser travaille à plat. Ton abat-jour, lui, est un cylindre. Il faut donc le DÉROULER avant de le découper.",

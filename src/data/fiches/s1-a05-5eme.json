@@ -8,6 +8,15 @@
    "texte": "LES OBJETS ET SYSTÈMES TECHNIQUES DE NOUVELLE-CALÉDONIE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras dire ce qu'est un objet technique, à qui il sert et ce qu'il doit respecter."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "L'Académie Technologique recense les objets qui améliorent la vie en Nouvelle-Calédonie : la parabole qui capte la télévision aux Loyauté, la lampe solaire qui éclaire une case sans électricité, la pirogue qui traverse le lagon.",

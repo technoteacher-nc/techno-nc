@@ -8,6 +8,15 @@
    "texte": "LE GRAND DÉFI ROBOT DES MAISONS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras mesurer une performance et l'améliorer par essais successifs."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Épreuve finale : le parcours chronométré. Départ, slalom entre deux obstacles, franchissement de la ligne d'arrivée. Trois essais, un protocole strict — que la meilleure Maison gagne."
@@ -241,7 +250,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 21
          }
         ]
        }
@@ -255,7 +264,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 21
          }
         ]
        }
@@ -269,7 +278,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 22
          }
         ]
        }
@@ -283,7 +292,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 43
          }
         ]
        }
@@ -313,7 +322,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 21
          }
         ]
        }
@@ -327,7 +336,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 21
          }
         ]
        }
@@ -341,7 +350,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 22
          }
         ]
        }
@@ -355,7 +364,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 43
          }
         ]
        }
@@ -385,7 +394,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 21
          }
         ]
        }
@@ -399,7 +408,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 21
          }
         ]
        }
@@ -413,7 +422,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 22
          }
         ]
        }

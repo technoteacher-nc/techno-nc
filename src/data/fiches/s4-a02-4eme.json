@@ -8,6 +8,15 @@
    "texte": "TRACES, COOKIES, RGPD : REPRENDRE LA MAIN"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras expliquer comment on te cible, et régler tes paramètres de confidentialité."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu cherches UNE fois des chaussures de sport. Pendant deux semaines, des publicités de chaussures te suivent sur tous les sites. Coïncidence ? Non : une mécanique précise… encadrée par une loi qui te donne des droits."
@@ -43,7 +52,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -73,7 +82,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -103,7 +112,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -133,7 +142,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -163,7 +172,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -224,7 +233,7 @@
          },
          {
           "t": "champ",
-          "points": 6
+          "points": 12
          }
         ]
        }
@@ -258,7 +267,7 @@
          },
          {
           "t": "champ",
-          "points": 6
+          "points": 4
          }
         ]
        }
@@ -292,7 +301,7 @@
          },
          {
           "t": "champ",
-          "points": 6
+          "points": 4
          }
         ]
        }
@@ -326,7 +335,7 @@
          },
          {
           "t": "champ",
-          "points": 6
+          "points": 4
          }
         ]
        }
@@ -358,7 +367,7 @@
     },
     {
      "t": "champ",
-     "points": 39
+     "points": 42
     }
    ]
   },
@@ -420,7 +429,7 @@
           "points": 0
          }
         ],
-        "justif": 17
+        "justif": 4
        }
       ]
      }
@@ -459,7 +468,7 @@
           "points": 0
          }
         ],
-        "justif": 17
+        "justif": 5
        }
       ]
      }
@@ -494,7 +503,7 @@
           "points": 0
          }
         ],
-        "justif": 17
+        "justif": 32
        }
       ]
      }

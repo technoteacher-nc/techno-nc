@@ -8,6 +8,15 @@
    "texte": "LES DEUX COURBES ET LE POINT DE COMPROMIS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras tracer tes résultats et défendre le taux d'ajour que tu as choisi."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Chaque groupe a fabriqué un taux d'ajour différent. Rassemblés, les résultats de la classe dessinent deux courbes qui vont en sens contraire.",

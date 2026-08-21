@@ -8,6 +8,15 @@
    "texte": "LE CAHIER DES CHARGES — DIRE CE QU'ON ATTEND D'UN OBJET"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras écrire un cahier des charges : la fonction principale et les contraintes."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Avant de fabriquer quoi que ce soit, un ingénieur écrit ce que l'objet devra faire — et ce qu'il devra respecter. Ce document s'appelle le cahier des charges, ou CDC.",

@@ -8,6 +8,15 @@
    "texte": "COMPARER POUR CHOISIR — LES ORDINATEURS DE LA SALLE 207"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras comparer deux devis et recommander un achat en respectant un budget."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Cinq ordinateurs de la salle 207 doivent être remplacés. Le collège a reçu trois devis (projetés au tableau). Le budget est de 600 000 F CFP pour les 5 postes. Usage prévu : traitement de texte, recherches, programmation. La gestionnaire te demande une recommandation argumentée."

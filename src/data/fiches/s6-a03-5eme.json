@@ -8,6 +8,15 @@
    "texte": "SCRATCH (2) : VARIABLES ET ÉVÉNEMENTS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras créer une variable et la faire évoluer pour dessiner une spirale."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le robot aspirateur nettoie en SPIRALE : à chaque virage, il avance un peu PLUS loin. Impossible avec une simple boucle… il lui faut une mémoire : la VARIABLE."
@@ -101,7 +110,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 76
          }
         ]
        }
@@ -131,7 +140,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 76
          }
         ]
        }
@@ -161,7 +170,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 76
          }
         ]
        }

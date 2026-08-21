@@ -8,6 +8,15 @@
    "texte": "mBOT : UN VRAI SYSTÈME À DÉCORTIQUER"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras nommer les constituants du mBot et retrouver ses deux chaînes."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le mBot roule, rencontre un obstacle… et fait demi-tour tout seul. Entre l'obstacle et le demi-tour, il s'est passé quelque chose d'invisible — et c'est exactement ce que tu vas mettre au jour, robot en main."
@@ -64,7 +73,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -108,7 +117,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -152,7 +161,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -196,7 +205,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -240,7 +249,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -311,7 +320,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 41
          }
         ]
        }
@@ -325,7 +334,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 41
          }
         ]
        }
@@ -339,7 +348,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 41
          }
         ]
        }
@@ -403,7 +412,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 20
          }
         ]
        }
@@ -421,7 +430,7 @@
          },
          {
           "t": "champ",
-          "points": 129
+          "points": 20
          }
         ]
        }
@@ -439,7 +448,7 @@
          },
          {
           "t": "champ",
-          "points": 102
+          "points": 4
          }
         ]
        }

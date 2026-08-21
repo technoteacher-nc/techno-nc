@@ -8,6 +8,15 @@
    "texte": "LE STYLO 4 COULEURS — DÉMONTER POUR COMPRENDRE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras nommer les parties d'un objet technique et dire ce que chacune fait."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu as un stylo 4 couleurs dans ta trousse. Tu appuies sur un bouton, une mine sort ; tu appuies sur un autre, la première rentre toute seule.",

@@ -8,6 +8,15 @@
    "texte": "DÉCOUPE LASER DES DÉVELOPPÉS ET MONTAGE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras fabriquer ton pavillon et vérifier que rien d'autre n'a changé."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton groupe fabrique DEUX pavillons : la modalité 1 et la modalité 2 de ta variable. Tout le reste doit être rigoureusement identique entre les deux.",

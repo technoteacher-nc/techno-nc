@@ -8,6 +8,15 @@
    "texte": "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras ranger les cinq étapes du cycle de vie et lire un indice de réparabilité."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Un téléphone qui ne s'allume plus finit à la poubelle. En Nouvelle-Calédonie, il ne part pas loin : il n'y a pas d'usine de recyclage sur le territoire, tout doit repartir par bateau.",

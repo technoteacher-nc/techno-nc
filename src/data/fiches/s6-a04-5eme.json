@@ -8,6 +8,15 @@
    "texte": "LE DÉFI SCRATCH DES MAISONS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras améliorer ton programme jusqu'à ce qu'il passe le labyrinthe."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Grand final : chaque équipe programme son lutin pour traverser le labyrinthe projeté, du départ A à l'arrivée B, SANS toucher les murs. Le code le plus élégant marque des points bonus."
@@ -370,7 +379,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -384,7 +393,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 56
          }
         ]
        }
@@ -414,7 +423,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 57
          }
         ]
        }
@@ -428,7 +437,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 56
          }
         ]
        }

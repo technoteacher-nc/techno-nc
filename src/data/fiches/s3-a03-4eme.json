@@ -8,6 +8,15 @@
    "texte": "FILIUS (2) : UN INTERNET MINIATURE — ROUTEUR ET DNS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras relier deux réseaux par un routeur et faire fonctionner un serveur web."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton réseau local fonctionne. Mais Internet, ce sont des MILLIONS de réseaux reliés entre eux, et personne ne tape d'adresse IP : on tape www.filius.com. Aujourd'hui, tu construis un mini-Internet complet."
@@ -408,7 +417,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ? Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … »"
+     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ? Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … »"
     }
    ]
   },

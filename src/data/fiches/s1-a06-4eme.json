@@ -8,6 +8,15 @@
    "texte": "LE CAHIER DES CHARGES PROFESSIONNEL — QUANTIFIER UNE EXIGENCE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras écrire un cahier des charges avec des critères chiffrés et vérifiables."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "« L'ordinateur doit démarrer vite. » Deux techniciens lisent cette phrase, et l'un livre une machine qui met dix secondes, l'autre une machine qui en met quatre-vingt-dix. Aucun des deux n'a menti.",

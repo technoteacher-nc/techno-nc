@@ -8,6 +8,15 @@
    "texte": "LES SYSTÈMES TECHNIQUES AUTOUR DE MOI"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras repérer les contraintes et les flux matière, énergie, information d'un objet."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "L'Académie Technologique mandate ta Maison pour analyser les objets et systèmes techniques de ton quotidien. En tribu, en ville ou à l'école, ils transforment la façon de vivre.",

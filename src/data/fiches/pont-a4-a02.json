@@ -8,6 +8,15 @@
    "texte": "TROIS PROFILS IMPOSÉS : TUBE, U, ACCORDÉON"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras dessiner le profil de ton groupe et écrire ce que tu prévois avant l'essai."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Chaque groupe reçoit UN profil imposé : le tube, le U ou l'accordéon. Tous partent de la même feuille A4, donc de la même quantité de papier et de la même masse.",

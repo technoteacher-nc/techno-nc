@@ -12,14 +12,14 @@
    "segments": [
     {
      "t": "texte",
-     "v": "OBJECTIF — À la fin de cette activité, tu sauras construire un réseau local dans Filius et PROUVER qu'il fonctionne, en lisant le résultat d'un ping."
+     "v": "OBJECTIF — Tu sauras construire un réseau local dans Filius et prouver qu'il fonctionne."
     }
    ]
   },
   {
    "type": "situation",
    "lignes": [
-    "Le collège doit équiper une nouvelle salle informatique. Avant d'acheter des kilomètres de câbles, le technicien SIMULE le réseau : c'est ton travail aujourd'hui, avec le logiciel Filius."
+    "Le collège équipe une nouvelle salle informatique. Avant d'acheter les câbles, le technicien SIMULE le réseau : c'est ton travail aujourd'hui, avec Filius."
    ],
    "question": "Comment construire un réseau local et PROUVER qu'il fonctionne ?"
   },
@@ -56,169 +56,12 @@
    "titre": "Deux machines qui se parlent"
   },
   {
-   "type": "tableau",
-   "entetes": [
-    "À SAVOIR — UNE ADRESSE IP"
-   ],
-   "largeurs": [
-    9360
-   ],
-   "lignes": [
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "Une adresse IP, c'est quatre nombres séparés par des points."
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "Exemple :        192  .  168  .  0  .  10"
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "Chaque nombre va de 0 à 255. Jamais plus."
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "Les TROIS PREMIERS  =  le RÉSEAU        ici : 192.168.0   (la rue)"
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "Le DERNIER          =  LA MACHINE       ici : 10          (le numéro)"
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "Dans la salle, toutes les machines sont dans la même rue."
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   ]
-  },
-  {
-   "type": "tableau",
-   "entetes": [
-    "À SAVOIR — LA COMMANDE ping"
-   ],
-   "largeurs": [
-    9360
-   ],
-   "lignes": [
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "ping envoie un petit message à une machine et attend sa réponse."
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "0 % perdus        →   elle répond           →   ça fonctionne."
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    [
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "100 % perdus      →   elle ne répond pas    →   ça ne fonctionne pas."
-         }
-        ]
-       }
-      ]
-     }
-    ]
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "AU TABLEAU — pendant toute la séance : une adresse ip · la commande ping. Regarde l’écran dès que tu bloques."
+    }
    ]
   },
   {
@@ -396,10 +239,7 @@
   },
   {
    "type": "tableau",
-   "entetes": [
-    "Fait",
-    "Étape"
-   ],
+   "entetes": null,
    "largeurs": [
     900,
     8460
@@ -554,10 +394,7 @@
   },
   {
    "type": "tableau",
-   "entetes": [
-    "Fait",
-    "Étape"
-   ],
+   "entetes": null,
    "largeurs": [
     900,
     8460
@@ -664,10 +501,6 @@
    "type": "partie",
    "numero": "2",
    "titre": "Le réseau en étoile, comme une vraie salle"
-  },
-  {
-   "type": "consigne",
-   "texte": "Continue les étapes dans l'ordre. Coche la case dès que l'étape est réussie."
   },
   {
    "type": "tableau",
@@ -1185,11 +1018,6 @@
      }
     ]
    ]
-  },
-  {
-   "type": "citation",
-   "texte": "Tester, c'est prouver.",
-   "auteur": ""
   }
  ]
 }

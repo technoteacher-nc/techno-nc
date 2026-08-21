@@ -8,6 +8,15 @@
    "texte": "CAPTEURS : ÉVITER UN OBSTACLE, SUIVRE UNE LIGNE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras programmer un SI/ALORS/SINON avec un capteur, et réparer un programme."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton robot roule droit… dans le mur. Il lui manque l'essentiel : DÉCIDER en fonction de ce qu'il perçoit. La structure « SI … ALORS … SINON » va lui donner un début d'intelligence."

@@ -8,6 +8,15 @@
    "texte": "LE SOMMAIRE — UN TABLEAU QUI RANGE L'ANNÉE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras insérer un tableau, régler la hauteur des lignes et fusionner l'en-tête."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "En 5ème, tu as construit un sommaire à la main : trois colonnes, douze lignes, remplies une par une.",

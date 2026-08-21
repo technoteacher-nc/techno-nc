@@ -8,6 +8,15 @@
    "texte": "SWEET HOME 3D (1) : PIÈCES ET MURS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras créer tes pièces dans le logiciel et vérifier leurs surfaces."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton plan papier est validé ! Direction le bureau d'études : la maquette numérique permet de VISITER la maison avant même de poser la première brique."

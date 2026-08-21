@@ -8,6 +8,15 @@
    "texte": "ATELIER : IMPRESSION 3D ET DÉCOUPE LASER DU MODÈLE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras suivre une pièce du fichier à l'objet et choisir un procédé pour une série."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le prototype gagnant passe en fabrication réelle : impression 3D du modèle SketchUp, découpe laser du profil. Tu observes la chaîne numérique complète — du fichier à l'objet."
@@ -43,7 +52,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -73,7 +82,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -103,7 +112,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -133,7 +142,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 6
+          "points": 9
          }
         ]
        }
@@ -165,7 +174,7 @@
     },
     {
      "t": "champ",
-     "points": 69
+     "points": 93
     }
    ]
   },
@@ -458,7 +467,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 10
+          "points": 32
          }
         ]
        }
@@ -516,7 +525,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 10
+          "points": 32
          }
         ]
        }
@@ -551,12 +560,12 @@
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 150
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 150
   },
   {
    "type": "bilan",

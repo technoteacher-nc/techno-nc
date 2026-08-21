@@ -8,6 +8,15 @@
    "texte": "LE ROBOT ASPIRATEUR : PROGRAMMER SANS ORDINATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras écrire un algorithme en français et le faire exécuter sans erreur."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Un robot aspirateur ne comprend ni « va là-bas », ni les gestes, ni les cris. Il ne comprend qu'une chose : des instructions EXACTES, exécutées dans l'ordre, bêtement."

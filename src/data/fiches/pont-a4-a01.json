@@ -8,6 +8,15 @@
    "texte": "FRANCHIR LE CREEK : LE CAHIER DES CHARGES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras lire le cahier des charges du pont et repérer où la poutre est comprimée."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Sur le terrain de ta maison en Nouvelle-Calédonie, un creek coupe le chemin qui mène au portail. Après une grosse pluie, on ne passe plus. Il faut une passerelle.",

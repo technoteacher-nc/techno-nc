@@ -8,6 +8,15 @@
    "texte": "PHISHING : L'AUDIT DE LA BOÎTE MAIL"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras repérer les cinq indices d'un message piégé et prouver ton verdict."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ce matin, la boîte mail du secrétariat du collège contient 6 messages. Plusieurs sont des pièges (hameçonnage, ou « phishing ») : un seul clic malheureux et les comptes du collège sont piratés. La direction te recrute comme auditeur sécurité."
@@ -61,7 +70,7 @@
          },
          {
           "t": "champ",
-          "points": 108
+          "points": 63
          }
         ]
        }
@@ -133,7 +142,7 @@
          },
          {
           "t": "champ",
-          "points": 103
+          "points": 58
          }
         ]
        }
@@ -268,7 +277,7 @@
           "points": 0
          }
         ],
-        "justif": 102
+        "justif": 58
        }
       ]
      }
@@ -303,7 +312,7 @@
           "points": 0
          }
         ],
-        "justif": 102
+        "justif": 58
        }
       ]
      }
@@ -338,7 +347,7 @@
           "points": 0
          }
         ],
-        "justif": 102
+        "justif": 58
        }
       ]
      }
@@ -373,7 +382,7 @@
           "points": 0
          }
         ],
-        "justif": 102
+        "justif": 58
        }
       ]
      }
@@ -408,7 +417,7 @@
           "points": 0
          }
         ],
-        "justif": 102
+        "justif": 58
        }
       ]
      }
@@ -443,7 +452,7 @@
           "points": 0
          }
         ],
-        "justif": 102
+        "justif": 58
        }
       ]
      }

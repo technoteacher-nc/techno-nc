@@ -8,6 +8,15 @@
    "texte": "SKETCHUP (1) : FORMES EXACTES ET POUSSÉ-TIRÉ"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras modéliser une pièce aux cotes exactes et la contrôler à l'outil Mètre."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton croquis est choisi ! Le bureau d'études exige maintenant un modèle 3D AUX COTES EXACTES : dans SketchUp, on ne dessine pas « à peu près », on TAPE les dimensions."
@@ -396,7 +405,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 28
          }
         ]
        }
@@ -410,7 +419,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 34
          }
         ]
        }
@@ -455,7 +464,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 28
          }
         ]
        }
@@ -469,7 +478,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 34
          }
         ]
        }
@@ -514,7 +523,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 28
          }
         ]
        }
@@ -528,7 +537,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 34
          }
         ]
        }

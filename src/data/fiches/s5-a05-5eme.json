@@ -8,6 +8,15 @@
    "texte": "LA MAQUETTE PAPIER DE MA PIÈCE PRÉFÉRÉE (ÉCHELLE 1/20)"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras convertir à l'échelle 1/20, tracer un patron et monter ta maquette."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "L'écran, c'est bien ; le vrai volume, c'est mieux ! Les architectes fabriquent TOUJOURS des maquettes. Tu vas construire ta pièce préférée en papier, à l'échelle 1/20."

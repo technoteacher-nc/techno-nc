@@ -8,6 +8,15 @@
    "texte": "LE PLAN AUX NORMES : LES CODES DE REPRÉSENTATION"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras lire les symboles d'un plan et dessiner le tien à l'échelle 1/100."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu envoies ton croquis au maçon… et il construit une porte au milieu du salon ! Sans codes communs, chacun comprend ce qu'il veut. Les architectes du monde entier utilisent les MÊMES symboles."

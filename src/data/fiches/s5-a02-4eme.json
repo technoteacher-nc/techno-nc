@@ -8,6 +8,15 @@
    "texte": "CROQUIS COTÉ ET PERSPECTIVE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras faire un croquis coté en millimètres et choisir une solution avec ton CDC."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton idée est dans ta tête… mais le bureau d'études ne lit pas dans les pensées ! Le croquis coté est le langage universel entre celui qui imagine et celui qui fabrique."
@@ -96,7 +105,7 @@
          },
          {
           "t": "champ",
-          "points": 76
+          "points": 4
          }
         ]
        }

@@ -8,6 +8,15 @@
    "texte": "LE SOMMAIRE — UN TABLEAU QUI RANGE L'ANNÉE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras insérer un tableau, régler la hauteur des lignes et fusionner l'en-tête."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ton classeur de Technologie va recevoir une vingtaine de fiches d'ici décembre. Sans sommaire, retrouver « la fiche sur les périphériques » demandera de toutes les feuilleter.",

@@ -8,6 +8,15 @@
    "texte": "LA MONTRE CONNECTÉE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras nommer les capteurs d'une montre connectée et ce que chacun mesure."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Une montre connectée sait combien de pas tu as faits, à quelle heure tu t'es endormi, et où tu étais à 15 h.",

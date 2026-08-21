@@ -8,6 +8,15 @@
    "texte": "FABRICATION DU PONT V1 ET CONTRÔLE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras fabriquer ta structure avec le ruban imposé et contrôler sa conformité."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Tu as ton profil, ta portée et tes cotes. Il reste à fabriquer — proprement, et avec exactement ce que le cahier des charges autorise : une feuille, 300 mm de ruban.",

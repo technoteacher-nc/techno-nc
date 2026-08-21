@@ -8,6 +8,15 @@
    "texte": "LE SUPPORT DE SMARTPHONE : DU BESOIN AU CDC"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras formuler un besoin et écrire un cahier des charges aux critères mesurables."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "En salle 207, les téléphones qui filment les expériences glissent, tombent, finissent à plat sur la table. Le collège te commande un support de smartphone, fabricable en classe, budget quasi nul."
@@ -57,7 +66,7 @@
          },
          {
           "t": "champ",
-          "points": 147
+          "points": 67
          }
         ]
        }
@@ -91,7 +100,7 @@
          },
          {
           "t": "champ",
-          "points": 143
+          "points": 64
          }
         ]
        }
@@ -125,7 +134,7 @@
          },
          {
           "t": "champ",
-          "points": 141
+          "points": 62
          }
         ]
        }
@@ -229,7 +238,7 @@
          },
          {
           "t": "champ",
-          "points": 130
+          "points": 38
          }
         ]
        }
@@ -464,7 +473,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 44
          }
         ]
        }
@@ -478,7 +487,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 43
          }
         ]
        }
@@ -508,7 +517,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 44
          }
         ]
        }
@@ -522,7 +531,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 43
          }
         ]
        }
@@ -552,7 +561,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 44
          }
         ]
        }
@@ -566,7 +575,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 43
          }
         ]
        }

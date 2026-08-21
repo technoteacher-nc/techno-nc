@@ -8,6 +8,15 @@
    "texte": "LES PÉRIPHÉRIQUES — CE QUI SE CONNECTE À L'ORDINATEUR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras dire si un périphérique est une entrée, une sortie, ou les deux."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "L'unité centrale est maintenant connue. Mais seule, elle ne montre rien et ne reçoit rien : sans écran ni clavier, elle calcule dans le vide.",

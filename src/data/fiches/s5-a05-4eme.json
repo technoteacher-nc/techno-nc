@@ -8,6 +8,15 @@
    "texte": "PROTOTYPE CARTON : JE TESTE MA SOLUTION"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras fabriquer ton prototype et le tester selon un protocole précis."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Avant de lancer la « vraie » fabrication, tout industriel construit un PROTOTYPE rapide et pas cher. Le tien : carton, ficelle, colle — et un protocole de test digne d'un laboratoire."

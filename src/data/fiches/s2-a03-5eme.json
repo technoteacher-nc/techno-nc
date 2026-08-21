@@ -8,6 +8,15 @@
    "texte": "LES OBJETS QUI PENSENT"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras distinguer un objet simple d'un objet qui capte et agit tout seul."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Une lampe qui s'allume à ta voix, une porte de magasin qui s'ouvre quand tu approches, une montre qui compte tes pas.",

@@ -8,6 +8,15 @@
    "texte": "SWEET HOME 3D (2) : OUVERTURES, MEUBLES ET VUES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras poser portes et fenêtres, puis produire ton dossier client."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Des murs nus, personne n'y habite ! Aujourd'hui : portes, fenêtres, meubles… puis la visite en 3D. À la fin, tu livres ton dossier au client : vues 2D et 3D commentées."

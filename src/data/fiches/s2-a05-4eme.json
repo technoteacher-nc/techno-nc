@@ -8,6 +8,15 @@
    "texte": "L'ÉVOLUTION DES OBJETS TECHNIQUES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras distinguer le besoin, qui ne change pas, de la solution, qui change."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Cinq objets pour s'éclairer, cent cinquante ans d'écart entre le premier et le dernier. Le besoin n'a pas bougé d'un pouce.",

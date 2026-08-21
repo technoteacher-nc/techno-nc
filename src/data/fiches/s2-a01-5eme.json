@@ -8,6 +8,15 @@
    "texte": "LES OBJETS TECHNIQUES AUTOUR DE MOI"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras nommer la fonction principale et les fonctions secondaires de trois objets."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Dans ta salle, dans ton sac, dans ta case : des dizaines d'objets techniques. Tu les utilises sans y penser.",

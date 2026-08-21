@@ -8,6 +8,15 @@
    "texte": "CAMPAGNE DE MESURES : LE GAIN EN DÉCIBELS"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras mesurer le gain en décibels selon un protocole commun."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Toute la classe mesure aujourd'hui, avec le même téléphone source et le même protocole. Le tableau commun n'aura de valeur que si personne ne s'en écarte.",

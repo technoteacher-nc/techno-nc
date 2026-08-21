@@ -8,6 +8,15 @@
    "texte": "OBJETS ET SYSTÈMES TECHNIQUES — LES FLUX QUI LES TRAVERSENT"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras distinguer un objet technique d'un système, et repérer ses trois flux."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "En tribu, l'eau de pluie ne tombe pas dans le robinet toute seule : un toit la capte, une gouttière la conduit, un réservoir la garde, une pompe la remonte, un robinet la donne.",

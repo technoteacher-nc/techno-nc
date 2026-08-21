@@ -8,6 +8,15 @@
    "texte": "L'EXPÉRIENCE UTILISATEUR — FACILE OU GALÈRE ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras dire si un objet est agréable à utiliser, et proposer une amélioration."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Deux distributeurs de boissons vendent exactement les mêmes produits, au même prix. Devant le premier, tout le monde achète en quelques secondes. Devant le second, les clients s'énervent, se trompent… puis abandonnent."

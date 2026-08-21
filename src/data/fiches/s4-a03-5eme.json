@@ -8,6 +8,15 @@
    "texte": "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras reconnaître le harcèlement, et quoi faire, que tu sois victime ou témoin."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Depuis une semaine, le téléphone de Théo vibre sans arrêt : moqueries répétées d'un groupe de la classe, photo détournée, exclusion du groupe de discussion. Théo n'ose rien dire à personne."

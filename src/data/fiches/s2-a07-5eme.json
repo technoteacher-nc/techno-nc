@@ -8,6 +8,15 @@
    "texte": "BIEN CHOISIR UN OBJET TECHNIQUE"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras comparer des fiches produits et choisir en justifiant avec des chiffres."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Le collège veut équiper 15 postes de la salle 207 avec des écouteurs pour les activités sur ordinateur. Trois modèles sont proposés (fiches produits projetées au tableau). Le budget est de 4 000 F CFP maximum par poste. C'est toi qui conseilles le collège !"

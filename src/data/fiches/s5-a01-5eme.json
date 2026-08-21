@@ -8,6 +8,15 @@
    "texte": "MA MAISON EN NC : DU BESOIN AU CAHIER DES CHARGES"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "OBJECTIF — Tu sauras distinguer un besoin d'une envie et écrire ton cahier des charges."
+    }
+   ]
+  },
+  {
    "type": "situation",
    "lignes": [
     "Ta famille obtient un terrain. Avant le premier coup de crayon, l'architecte pose UNE seule question : « de quoi avez-vous vraiment besoin ? » Chaleur, cyclones, famille nombreuse : en Nouvelle-Calédonie, une maison ne se conçoit pas comme à Paris."
@@ -538,7 +547,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 19
          }
         ]
        }
@@ -566,7 +575,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 33
          }
         ]
        }
@@ -596,7 +605,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 19
          }
         ]
        }
@@ -624,7 +633,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 33
          }
         ]
        }
@@ -654,7 +663,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 19
          }
         ]
        }
@@ -682,7 +691,7 @@
         "v": [
          {
           "t": "champ",
-          "points": 150
+          "points": 33
          }
         ]
        }
