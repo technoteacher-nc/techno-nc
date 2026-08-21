@@ -413,19 +413,19 @@
     },
     {
      "t": "champ",
-     "points": 46
+     "points": 6
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",

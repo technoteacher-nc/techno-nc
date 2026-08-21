@@ -457,19 +457,19 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Quand j'éteins l'ordinateur, je perds ce qui est dans la RAM et je garde ce qui est sur le disque dur, parce que …"
+     "v": "Quand j'éteins l'ordinateur, je perds ce qui est dans la RAM et je garde ce qui est sur le disque dur, parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",

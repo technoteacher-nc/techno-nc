@@ -881,19 +881,19 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Le vent qui fait tourner une éolienne n'est pas un OST, alors que l'éolienne en est un, parce que …"
+     "v": "Le vent qui fait tourner une éolienne n'est pas un OST, alors que l'éolienne en est un, parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",

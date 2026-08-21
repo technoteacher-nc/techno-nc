@@ -506,7 +506,7 @@
     },
     {
      "t": "champ",
-     "points": 46
+     "points": 104
     }
    ]
   },
@@ -627,19 +627,19 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Un cahier des charges ne dit jamais comment fabriquer l'objet, parce que …"
+     "v": "Un cahier des charges ne dit jamais comment fabriquer l'objet, parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",

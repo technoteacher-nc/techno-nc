@@ -313,7 +313,7 @@
     },
     {
      "t": "champ",
-     "points": 54
+     "points": 121
     }
    ]
   },
@@ -555,7 +555,7 @@
     },
     {
      "t": "champ",
-     "points": 10
+     "points": 85
     }
    ]
   },
@@ -645,19 +645,19 @@
    "segments": [
     {
      "t": "texte",
-     "v": "La bougie et l'ampoule LED sont deux objets très différents qui répondent au même besoin, parce que …"
+     "v": "La bougie et l'ampoule LED sont deux objets très différents qui répondent au même besoin, parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",

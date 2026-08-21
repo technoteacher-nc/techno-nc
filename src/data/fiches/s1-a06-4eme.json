@@ -540,7 +540,7 @@
     },
     {
      "t": "champ",
-     "points": 46
+     "points": 96
     }
    ]
   },
@@ -553,7 +553,7 @@
     },
     {
      "t": "champ",
-     "points": 54
+     "points": 102
     }
    ]
   },
@@ -674,19 +674,19 @@
    "segments": [
     {
      "t": "texte",
-     "v": "« Le poste doit démarrer vite » ne suffit pas dans un cahier des charges professionnel, parce que …"
+     "v": "« Le poste doit démarrer vite » ne suffit pas dans un cahier des charges professionnel, parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",

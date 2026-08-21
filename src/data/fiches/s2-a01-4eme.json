@@ -246,7 +246,7 @@
     },
     {
      "t": "champ",
-     "points": 46
+     "points": 104
     }
    ]
   },
@@ -882,19 +882,19 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Un même objet peut être indispensable en tribu et inutile en ville, parce que …"
+     "v": "Un même objet peut être indispensable en tribu et inutile en ville, parce que …"
     }
    ]
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "lignes",
    "n": 1,
-   "points": 78
+   "points": 140
   },
   {
    "type": "bilan",
