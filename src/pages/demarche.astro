@@ -1,0 +1,356 @@
+---
+// /demarche — « Comment on travaille en technologie ».
+//
+// POURQUOI CETTE PAGE EXISTE. Le site publiait 77 fiches et pas une ligne sur
+// la façon dont elles s'enchaînent, sur le programme qu'elles couvrent, ni sur
+// ce qui est évalué. Un élève absent, un parent, un collègue ou un inspecteur
+// qui ouvrait l'adresse tombait sur une liste de PDF. Tout existait déjà — la
+// progression, les déroulés, les démarches — mais seulement dans des documents
+// professeur non publiés.
+//
+// TOUT EST LU, RIEN N'EST RÉÉCRIT. Le contenu vient de src/data/demarche.json,
+// produit par `node tools/gen-demarche.cjs` depuis les mêmes sources que la
+// progression et les déroulés. Les chiffres affichés sont comptés sur les
+// activités réellement publiées : ils ne peuvent pas devenir faux sans que la
+// construction le montre.
+//
+// LE PARTI PRIS D'ÉCRITURE. La page s'adresse d'abord à l'élève et à sa
+// famille — deuxième personne, phrases courtes. Ce qui intéresse un
+// professionnel (référence du BO, thèmes, attendus de fin de cycle, CRCN) est
+// là aussi, mais rangé dans les blocs dépliables : c'est une information
+// exacte, pas le sujet de la page.
+
+import Base from '../layouts/Base.astro';
+import Citation from '../components/Citation.astro';
+import d from '../data/demarche.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+// La couleur d'une démarche est la même partout sur la page : le lecteur
+// apprend le code une fois, en tête, puis le retrouve dans chaque tableau.
+const TEINTE = {
+  investigation: 'inv',
+  dirige: 'dir',
+  tp: 'tp',
+  projet: 'proj',
+};
+
+const EXPLICATION = {
+  investigation: "Tu cherches d'abord, on t'explique après. Tu manipules, tu observes, tu te trompes — et c'est en comparant ce que tu croyais à ce que tu as vu que la notion se met en place.",
+  dirige: "On avance ensemble, pas à pas. La forme du travail est imposée parce que c'est elle qu'il faut apprendre : un croquis coté, un cahier des charges, un tableau de comparaison.",
+  tp: "Tu manipules un logiciel ou un système réel, en suivant un protocole. Ce qui compte, c'est de PROUVER que ça marche : un résultat relevé, pas une impression.",
+  projet: "Tu as une réalisation à mener et des choix à assumer. Personne ne te donne la bonne solution : tu la défends avec tes mesures.",
+};
+
+const NIVEAU_CRCN = { 1: 'niveau 1 — découverte', 2: 'niveau 2 — application', 3: 'niveau 3 — autonomie', 4: 'niveau 4 — expertise' };
+
+const urlPage = new URL(u('/demarche/'), Astro.site).href;
+const donneesLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Comment on travaille en technologie',
+  description: "Le programme suivi, les séquences de l'année, les démarches pédagogiques et ce qui est évalué en Technologie au cycle 4.",
+  url: urlPage,
+  inLanguage: 'fr',
+};
+---
+<Base
+  titre="Comment on travaille en technologie — cycle 4"
+  description="Le programme suivi (BO n°9 du 29 février 2024), les séquences de l'année en 5ème et en 4ème, les quatre démarches de travail et ce qui est évalué.">
+
+  <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
+
+  <section class="hero leve">
+    <span class="eyebrow leve leve-1">La méthode, pas les fiches</span>
+    <h1 class="leve leve-1">Comment on <em>travaille</em> en technologie</h1>
+    <p class="leve leve-2">
+      Cette page dit ce qu'on fait pendant l'année, dans quel ordre, et pourquoi.
+      Elle sert à l'élève qui reprend après une absence, à la famille qui veut
+      comprendre, et à tout collègue qui voudrait réutiliser ce travail.
+    </p>
+  </section>
+
+  <section class="chiffres leve leve-3" aria-label="Le travail de l'année en chiffres">
+    <p><b>{d.chiffres.activites}</b><span>activités</span></p>
+    <p><b>{d.chiffres.sequences}</b><span>séquences</span></p>
+    <p><b>{d.chiffres.projets}</b><span>projets de fabrication</span></p>
+    <p><b>{d.chiffres.ebep}</b><span>versions adaptées</span></p>
+    <p><b>{d.chiffres.termesLexique}</b><span>mots de lexique</span></p>
+    <p><b>{d.chiffres.quizQuestions}</b><span>questions de quiz</span></p>
+  </section>
+
+  <section class="bloc">
+    <h2>Les quatre façons de travailler</h2>
+    <p class="chapo">
+      Une activité n'est pas l'autre. Le bandeau de couleur, en haut de chaque
+      fiche du tableau plus bas, dit laquelle tu vas vivre — et donc ce qu'on
+      attend de toi.
+    </p>
+    <ul class="demarches">
+      {d.demarches.map(dem => (
+        <li class={'dem dem--' + TEINTE[dem.cle]}>
+          <h3>{dem.label}</h3>
+          <p class="dem-nb">{dem.nombre} activité{dem.nombre > 1 ? 's' : ''} sur {d.chiffres.activites}</p>
+          <p>{EXPLICATION[dem.cle]}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="bloc">
+    <h2>Ce qu'il y a dans chaque fiche</h2>
+    <p class="chapo">
+      Toutes les fiches sont bâties pareil. Ce n'est pas une coquetterie : tu ne
+      dois jamais avoir à chercher OÙ regarder, seulement à réfléchir.
+    </p>
+    <ol class="anatomie">
+      <li><b>L'objectif</b> — une phrase, en haut : ce que tu sauras faire à la fin.</li>
+      <li><b>La situation</b> — pourquoi cette question se pose, et où.</li>
+      <li><b>La problématique</b> — la question à laquelle la séance répond.</li>
+      <li><b>Les parties numérotées</b> — une consigne = un geste à faire.</li>
+      <li><b>Le bilan</b> — les phrases à compléter, à recopier dans ton classeur.</li>
+      <li><b>Le vocabulaire</b> — les mots de l'activité, définis dans le <a href={u('/ressources/lexique')}>lexique</a>.</li>
+    </ol>
+    <p class="note">
+      Une seule question par fiche demande une vraie rédaction : celle du bilan.
+      Partout ailleurs, tu coches, tu entoures, tu complètes — et chaque
+      justification commence par une amorce, pour que tu saches quelle forme de
+      réponse est attendue.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Personne n'est laissé de côté</h2>
+    <div class="deux">
+      <div>
+        <h3>Une version adaptée pour chaque activité</h3>
+        <p>
+          Les {d.chiffres.ebep} activités ont leur <b>version adaptée</b> : une
+          seule page, aucune rédaction, deux temps — « je fais », puis
+          « j'entoure ». Le contenu travaillé est le même, l'exigence d'écriture
+          ne l'est pas. Elle se télécharge depuis la page de l'activité, par tout
+          le monde et sans rien demander.
+        </p>
+      </div>
+      <div>
+        <h3>La fiche se remplit aussi en ligne</h3>
+        <p>
+          Chaque activité existe en version remplissable dans le navigateur :
+          mêmes questions, cadres qui s'agrandissent, sauvegarde automatique.
+          Utile si écrire à la main est difficile, si tu as été absent, ou si tu
+          veux relire au propre. Rien n'est envoyé sur Internet : tout reste sur
+          ton appareil.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloc">
+    <h2>Comment on est évalué</h2>
+    <div class="deux">
+      <div>
+        <h3>Pendant la séance</h3>
+        <p>
+          Les fiches d'activité ne sont ni ramassées ni notées : elles restent
+          dans ton classeur. Ce sont des traces de travail, pas des contrôles.
+          C'est pour ça qu'elles ne portent pas de case NOM.
+        </p>
+      </div>
+      <div>
+        <h3>Pour réviser</h3>
+        <p>
+          {d.chiffres.quizQuestions} questions de quiz réparties en
+          {' '}{d.chiffres.quizSeries} séries, dans <a href={u('/reviser')}>Réviser</a>.
+          Chaque réponse est expliquée, juste ou fausse — et l'ordre des
+          questions change à chaque partie, pour qu'on révise la notion et non
+          la position de la bonne case.
+        </p>
+      </div>
+      <div>
+        <h3>Les évaluations</h3>
+        <p>
+          Elles sont annoncées à l'avance, portent la mention TRAVAIL INDIVIDUEL,
+          et leur barème est écrit sur le sujet. Elles reprennent exactement ce
+          qui a été travaillé en activité — jamais autre chose.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloc">
+    <h2>L'année, séquence par séquence</h2>
+    <p class="chapo">
+      L'ordre est le même en 5ème et en 4ème ; ce sont les exigences qui montent.
+      Le projet de fabrication occupe le même moment de l'année que la séquence
+      de conception : ce sont deux parcours pour le même créneau.
+    </p>
+
+    {d.parcours.map(p => (
+      <div class="niveau">
+        <h3 class="niveau-titre">{p.niveauLabel}</h3>
+        {p.nonEnseigne && (
+          <p class="non-enseigne">
+            Niveau <b>non enseigné cette année</b> dans l'établissement. Le projet
+            est prêt, ses fiches et son corrigé sont publiés, mais il n'a jamais
+            été mené en classe.
+          </p>
+        )}
+        {p.sequences.map(s => (
+          <details class="seq">
+            <summary>
+              <span class="seq-nom">{s.titre}</span>
+              <span class="seq-meta">{s.semaines}{s.heures ? ` · ${s.heures} h` : ''} · {s.activites.length} séances</span>
+            </summary>
+
+            {s.presentation && <p class="seq-presentation">{s.presentation}</p>}
+
+            <table class="seances">
+              <thead>
+                <tr><th>Sem.</th><th>Activité</th><th>Façon de travailler</th><th>Ce que tu sauras faire</th></tr>
+              </thead>
+              <tbody>
+                {s.activites.map(a => (
+                  <tr>
+                    <td class="sem">{a.semaine}</td>
+                    <td><b>{a.code}</b> — {a.titre}</td>
+                    <td><span class={'puce puce--' + TEINTE[a.demarche]}>{a.demarcheLabel}</span></td>
+                    <td>{a.objectif}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            <dl class="cadre-officiel">
+              {s.theme && <><dt>Thème du programme</dt><dd>{s.theme}</dd></>}
+              {s.attendu && <><dt>Attendu de fin de cycle</dt><dd>{s.attendu}</dd></>}
+              {s.crcn.length > 0 && (
+                <><dt>Compétences numériques (CRCN)</dt>
+                <dd><ul class="crcn">{s.crcn.map(c => (
+                  <li><b>{c.code}</b> {c.intitule} — <i>{NIVEAU_CRCN[c.niveauVise] || ('niveau ' + c.niveauVise)}</i></li>
+                ))}</ul></dd></>
+              )}
+            </dl>
+          </details>
+        ))}
+      </div>
+    ))}
+  </section>
+
+  <section class="bloc">
+    <h2>Le programme suivi</h2>
+    <p class="chapo">
+      Ce site suit le <b>{d.programme.reference}</b>. Ce n'est pas une collection
+      d'idées : chaque activité est rattachée à un repère de progressivité du
+      programme, et les {d.programme.reperes} repères du cycle sont pointés un
+      par un — y compris les trois qui ne sont pas travaillés cette année, avec
+      la raison écrite.
+    </p>
+    <details class="seq">
+      <summary><span class="seq-nom">Les {d.programme.competences.length} compétences de fin de cycle</span></summary>
+      <ul class="competences">
+        {d.programme.competences.map(c => <li><b>{c.code}</b> — {c.libelle}</li>)}
+      </ul>
+      <p class="note">
+        Texte officiel : <a href={d.programme.url} rel="noopener">{d.programme.reference}</a>.
+      </p>
+    </details>
+  </section>
+
+  <p class="maj">Page construite le {d.genere} à partir des activités réellement publiées.</p>
+
+  <Citation cle="demarche" />
+
+</Base>
+
+<style>
+  .chiffres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: .8rem;
+    margin: 0 0 2.6rem;
+  }
+  .chiffres p {
+    margin: 0;
+    padding: .9rem .6rem;
+    text-align: center;
+    border: 1px solid var(--trait, #d5d9de);
+    border-radius: 10px;
+  }
+  .chiffres b { display: block; font-size: 1.7rem; line-height: 1.1; }
+  .chiffres span { display: block; font-size: .82rem; color: var(--mine, #5b6572); margin-top: .2rem; }
+
+  .bloc { margin: 0 0 3rem; }
+  .bloc h2 { margin: 0 0 .5rem; }
+  .chapo { max-width: 62ch; margin: 0 0 1.2rem; }
+  .note { font-size: .92rem; color: var(--mine, #5b6572); max-width: 68ch; }
+
+  .demarches { list-style: none; padding: 0; margin: 0; display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .9rem; }
+  .dem { border: 1px solid var(--trait, #d5d9de); border-left-width: 6px; border-radius: 0 10px 10px 0;
+    padding: .9rem 1.1rem; }
+  .dem h3 { margin: 0 0 .15rem; font-size: 1.02rem; }
+  .dem p { margin: .35rem 0 0; font-size: .93rem; }
+  .dem-nb { font-size: .82rem !important; color: var(--mine, #5b6572); margin-top: 0 !important; }
+
+  /* Les quatre teintes sont distinguables aussi en niveaux de gris : la fiche
+     est photocopiée en noir et blanc, et le tableau se lit sur papier. */
+  .dem--inv  { border-left-color: #1E7A5F; }
+  .dem--dir  { border-left-color: #8A5A00; }
+  .dem--tp   { border-left-color: #0A3D8F; }
+  .dem--proj { border-left-color: #7A2E86; }
+
+  .puce { display: inline-block; font-size: .8rem; padding: .12rem .5rem; border-radius: 999px;
+    border: 1px solid currentColor; white-space: nowrap; }
+  .puce--inv  { color: #1E7A5F; }
+  .puce--dir  { color: #8A5A00; }
+  .puce--tp   { color: #0A3D8F; }
+  .puce--proj { color: #7A2E86; }
+
+  .anatomie { max-width: 68ch; padding-left: 1.2rem; }
+  .anatomie li { margin: .3rem 0; }
+
+  .deux { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.4rem; }
+  .deux h3 { margin: 0 0 .3rem; font-size: 1rem; }
+  .deux p { margin: 0; font-size: .95rem; }
+
+  .niveau { margin: 0 0 1.6rem; }
+  .non-enseigne { margin: 0 0 .7rem; padding: .55rem .8rem; font-size: .9rem;
+    border-left: 4px solid var(--mine, #5b6572); background: var(--calque, #f2f4f7);
+    border-radius: 0 6px 6px 0; max-width: 68ch; }
+  .niveau-titre { margin: 1.4rem 0 .5rem; font-size: 1.15rem; }
+
+  .seq { border: 1px solid var(--trait, #d5d9de); border-radius: 10px; margin: 0 0 .55rem;
+    padding: .6rem .9rem; }
+  .seq > summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: .3rem 1rem;
+    align-items: baseline; justify-content: space-between; }
+  .seq-nom { font-weight: 600; }
+  .seq-meta { font-size: .84rem; color: var(--mine, #5b6572); }
+  .seq-presentation { margin: .9rem 0 .8rem; max-width: 74ch; }
+
+  /* Le tableau des séances va jusqu'à quatre colonnes : sur un téléphone il
+     défile DANS son cadre, la page ne défile jamais latéralement. */
+  .seances { display: block; overflow-x: auto; width: 100%; border-collapse: collapse;
+    font-size: .9rem; margin: 0 0 1rem; }
+  .seances th, .seances td { border: 1px solid var(--trait, #d5d9de); padding: .35rem .55rem;
+    text-align: left; vertical-align: top; }
+  .seances th { background: var(--calque, #f2f4f7); font-weight: 600; }
+  .seances .sem { white-space: nowrap; text-align: center; }
+
+  .cadre-officiel { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: .3rem .9rem;
+    margin: 0; font-size: .88rem; border-top: 1px dashed var(--trait, #d5d9de); padding-top: .7rem; }
+  .cadre-officiel dt { font-weight: 600; color: var(--mine, #5b6572); }
+  .cadre-officiel dd { margin: 0; }
+  .crcn { margin: 0; padding-left: 1.1rem; }
+  .crcn li { margin: .12rem 0; }
+
+  .competences { max-width: 74ch; padding-left: 1.2rem; }
+  .competences li { margin: .25rem 0; font-size: .93rem; }
+
+  .maj { font-size: .82rem; color: var(--mine, #5b6572); margin: 2rem 0 0; }
+
+  @media (max-width: 560px) {
+    .cadre-officiel { grid-template-columns: 1fr; }
+    .cadre-officiel dd { margin-bottom: .5rem; }
+  }
+</style>

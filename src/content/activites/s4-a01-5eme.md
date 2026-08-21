@@ -10,7 +10,7 @@ objectif: "Comprendre ce qui rend un mot de passe robuste (longueur, phrase de p
 competences:
   - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "SEQ03 : session, identifiants."
-materiel: "PPTX (tableau temps de cassage + modèle affichette) · salle info (groupe) · fiches S4-A01 (+ EBEP)"
+materiel: "à projeter (tableau temps de cassage + modèle affichette) · salle info (groupe) · fiches S4-A01 (+ EBEP)"
 annee: "2026"
 seq: "seq04"
 seqTitre: "Séquence 04 — CYBERSEC"

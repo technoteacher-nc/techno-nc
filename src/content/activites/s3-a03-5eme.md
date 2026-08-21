@@ -10,7 +10,7 @@ objectif: "Distinguer OS / navigateur / moteur de recherche ; décrire un logici
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "S3-A01/A02."
-materiel: "PPTX (étiquettes 3 familles + tableau GAFAM) · salle info · fiches S3-A03 (+ EBEP) · ÉVAL E1 (15 min, DG)"
+materiel: "à projeter (étiquettes 3 familles + tableau GAFAM) · salle info · fiches S3-A03 (+ EBEP) · ÉVAL E1 (15 min, DG)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

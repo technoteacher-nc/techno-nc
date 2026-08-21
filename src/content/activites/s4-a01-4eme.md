@@ -10,7 +10,7 @@ objectif: "Repérer les 5 indices d'un message piégé, auditer un corpus de 6 e
 competences:
   - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "SEQ03 : URL, nom de domaine (indispensable pour l'indice « adresse imitée »)."
-materiel: "PPTX (exemple annoté + corpus de 6 e-mails fictifs) · fiches S4-A01 (+ EBEP)"
+materiel: "à projeter (exemple annoté + corpus de 6 e-mails fictifs) · fiches S4-A01 (+ EBEP)"
 annee: "2026"
 seq: "seq04"
 seqTitre: "Séquence 04 — CYBERSEC"

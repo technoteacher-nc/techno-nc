@@ -10,7 +10,7 @@ objectif: "Lire des fiches produits, comparer selon des critères adaptés au be
 competences:
   - "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
 prerequis: ""
-materiel: "Fiche S2-A07 · PPTX (fiches produits)"
+materiel: "Fiche S2-A07 · à projeter (fiches produits)"
 annee: "2026"
 seq: "seq02"
 seqTitre: "Séquence 02 — USAGES"

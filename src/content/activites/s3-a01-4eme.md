@@ -10,7 +10,7 @@ objectif: "Identifier terminal/switch/routeur/serveur, comprendre la structure d
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "SEQ01 (périphériques), notion de serveur."
-materiel: "PPTX (schéma 2 réseaux admin/pédago + structure IP) · fiches S3-A01 (+ EBEP)"
+materiel: "à projeter (schéma 2 réseaux admin/pédago + structure IP) · fiches S3-A01 (+ EBEP)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

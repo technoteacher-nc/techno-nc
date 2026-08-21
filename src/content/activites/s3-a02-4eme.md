@@ -10,7 +10,7 @@ objectif: "Construire et tester un réseau local simulé (câble, IP, ping, swit
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "S3-A01 (IP, switch)."
-materiel: "Filius · PPTX (écrans clés) · fiches S3-A02 (+ EBEP)"
+materiel: "Filius · à projeter (écrans clés) · fiches S3-A02 (+ EBEP)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

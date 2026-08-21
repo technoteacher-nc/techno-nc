@@ -367,6 +367,26 @@ body {
   content: ''; width: 6px; height: 6px; border-radius: 50%; flex: none;
   background: var(--phase, var(--mine));
 }
+
+/* LA DÉMARCHE PÉDAGOGIQUE, à côté de la phase. Deux informations différentes
+   qu'il ne faut pas confondre : la PHASE dit où l'on en est dans le processus
+   technologique (analyser, représenter, réaliser…), la DÉMARCHE dit ce qu'on
+   attend de l'élève pendant l'heure — chercher, suivre, manipuler, décider.
+   D'où une forme distincte : contour plutôt qu'aplat, pas de pastille ronde. */
+.demarche {
+  display: inline-flex; align-items: center;
+  font-family: var(--mono); font-size: .64rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: .16rem .55rem; border-radius: 100px;
+  border: 1px solid currentColor;
+  color: var(--demarche-encre, var(--mine));
+}
+[data-demarche="investigation"] { --demarche-encre: #1E7A5F; }
+[data-demarche="dirige"]        { --demarche-encre: #8A5A00; }
+[data-demarche="tp"]            { --demarche-encre: #0A3D8F; }
+[data-demarche="projet"]        { --demarche-encre: #7A2E86; }
+
+.meta-lien { margin: .8rem 0 0; font-size: .85rem; color: var(--mine); }
 .titre {
   font-family: var(--display); font-weight: 600; font-size: 1.02rem;
   line-height: 1.25; letter-spacing: -.01em;

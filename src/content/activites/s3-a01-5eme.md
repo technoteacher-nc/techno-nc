@@ -10,7 +10,7 @@ objectif: "Comprendre que les fichiers sont stockés sur un serveur et que la se
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "SEQ01 : enregistrer, nommer un fichier."
-materiel: "Vidéoprojecteur + support PPTX (schéma réseau salle 207) · salle info · fiches S3-A01 (+ EBEP)"
+materiel: "à projeter (schéma réseau salle 207) · salle info · fiches S3-A01 (+ EBEP)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

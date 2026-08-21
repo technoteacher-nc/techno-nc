@@ -10,7 +10,7 @@ objectif: "Simuler un réseau de 2 puis 3 machines (switch), attribuer des adres
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "S3-A01 (switch), S3-A02 (adresse IP)."
-materiel: "Filius installé sur les postes · PPTX (écrans clés Filius) · fiches S3-A04 (+ EBEP)"
+materiel: "Filius installé sur les postes · à projeter (écrans clés Filius) · fiches S3-A04 (+ EBEP)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

@@ -10,7 +10,7 @@ objectif: "Comprendre la mécanique du ciblage publicitaire (cookies), connaîtr
 competences:
   - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "S3-A04 (données/GAFAM), S4-A01."
-materiel: "PPTX (chaîne du ciblage, droits RGPD, bannière cookies) · fiches S4-A02 (+ EBEP) · ÉVAL E2 · consignes brevet blanc à lire en fin de séance"
+materiel: "à projeter (chaîne du ciblage, droits RGPD, bannière cookies) · fiches S4-A02 (+ EBEP) · ÉVAL E2 · consignes brevet blanc à lire en fin de séance"
 annee: "2026"
 seq: "seq04"
 seqTitre: "Séquence 04 — CYBERSEC"

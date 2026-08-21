@@ -1,0 +1,152 @@
+---
+// /mentions-legales — l'obligation qui manquait.
+//
+// Un site public accessible à des élèves doit dire qui l'édite, qui l'héberge,
+// ce qu'il fait des données, et sous quelles conditions on peut le réutiliser.
+// Rien de tout cela n'était écrit : le pied de page portait la licence et la
+// promesse « aucun cookie », ce qui est le fond mais pas la forme.
+//
+// ⚠ DEUX CHAMPS RESTENT À COMPLÉTER par le professeur, et ils sont signalés
+// comme tels dans la page plutôt que devinés : le nom du responsable de
+// publication, et l'adresse de contact. Écrire un nom ou un courriel à sa
+// place serait publier une information fausse sur une page qui existe
+// précisément pour dire le vrai.
+//
+// L'accessibilité est déclarée telle qu'elle est — des mesures prises, pas
+// d'audit RGAA réalisé — parce qu'une déclaration de conformité qu'on n'a pas
+// vérifiée est un faux.
+
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+const A_COMPLETER = '— à compléter —';
+---
+<Base
+  titre="Mentions légales"
+  description="Éditeur, hébergement, données personnelles, accessibilité et conditions de réutilisation du site."
+  robots="index,nofollow">
+
+  <section class="hero leve">
+    <span class="eyebrow leve leve-1">Informations obligatoires</span>
+    <h1 class="leve leve-1">Mentions <em>légales</em></h1>
+    <p class="leve leve-2">
+      Qui publie ce site, où il est hébergé, ce qu'il fait de tes données, et ce
+      que tu as le droit d'en faire.
+    </p>
+  </section>
+
+  <section class="ml">
+    <h2>Éditeur du site</h2>
+    <p>
+      Site pédagogique de Technologie du <b>collège d'Auteuil</b>, Nouvelle-Calédonie.
+      Il est réalisé et tenu par le professeur de technologie de l'établissement,
+      à titre de ressource de classe.
+    </p>
+    <p class="acompleter">
+      <b>Responsable de la publication :</b> {A_COMPLETER}<br />
+      <b>Contact :</b> {A_COMPLETER}
+    </p>
+    <p class="note">
+      Ce site n'est pas le site officiel de l'établissement, ni celui du
+      vice-rectorat. Il ne publie ni note, ni information sur un élève.
+    </p>
+
+    <h2>Hébergement</h2>
+    <p>
+      Le site est hébergé par <b>GitHub Pages</b> — GitHub, Inc., 88 Colin P.
+      Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+      Il s'agit de pages <b>statiques</b> : aucun programme ne s'exécute côté
+      serveur, aucun formulaire n'est transmis, aucune base de données n'existe.
+    </p>
+
+    <h2>Données personnelles</h2>
+    <p>
+      <b>Le site ne collecte aucune donnée personnelle.</b> Il n'y a ni compte,
+      ni inscription, ni formulaire, ni cookie, ni traceur, ni mesure d'audience.
+    </p>
+    <p>
+      Trois choses sont mémorisées <b>sur ton appareil</b>, dans le stockage
+      local de ton navigateur, et n'en sortent jamais :
+    </p>
+    <ul>
+      <li>les activités que tu as déjà ouvertes, pour afficher la pastille de suivi ;</li>
+      <li>ton <b>meilleur</b> score à chaque quiz — rejouer moins bien ne l'efface pas ;</li>
+      <li>la dernière page consultée, pour le bouton « reprendre » de l'accueil ;</li>
+      <li>tes réponses aux fiches remplies en ligne, tant que tu ne les effaces pas.</li>
+    </ul>
+    <p>
+      Le site étant statique, il n'a aucun serveur capable de recevoir quoi que
+      ce soit : ces données ne peuvent techniquement pas être transmises. Tu peux
+      tout effacer d'un clic depuis le
+      <a href={u('/mode-demploi#contenu')}>mode d'emploi</a>, ou en vidant les
+      données du site dans ton navigateur.
+    </p>
+    <p class="note">
+      Aucune donnée nominative n'est stockée : ni nom, ni classe, ni identifiant.
+      Si tu écris ton nom dans une fiche remplie en ligne, il reste sur ton
+      appareil comme le reste de tes réponses.
+    </p>
+
+    <h2>Propriété intellectuelle et réutilisation</h2>
+    <p>
+      Les documents produits pour ce site — fiches d'activité, lexique, synthèses,
+      quiz, schémas — sont publiés sous licence
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license noopener">CC BY-NC-SA 4.0</a>.
+      Tu peux les reprendre, les modifier et les diffuser, à trois conditions :
+      citer la source, ne pas en faire un usage commercial, et partager tes
+      versions modifiées sous la même licence.
+    </p>
+    <p>
+      Le <b>logo de l'établissement</b> n'est pas couvert par cette licence : il
+      appartient au collège d'Auteuil. Les <b>logiciels cités</b> (Filius,
+      Scratch, mBlock, SketchUp, Sweet Home 3D…) et leurs marques appartiennent à
+      leurs auteurs respectifs ; ils sont mentionnés à titre pédagogique.
+    </p>
+    <p class="note">
+      Le contenu de ce site est produit pour ses élèves. Il ne reproduit aucun
+      document d'éditeur scolaire ni aucune ressource de tiers.
+    </p>
+
+    <h2>Accessibilité</h2>
+    <p>
+      L'accessibilité est prise au sérieux, mais <b>aucun audit RGAA n'a été
+      réalisé</b> : cette page ne peut donc pas déclarer une conformité. Voici
+      ce qui a été fait et vérifié :
+    </p>
+    <ul>
+      <li>contrastes de texte contrôlés sur l'ensemble des teintes du site ;</li>
+      <li>navigation entière au clavier, sans piège au focus ;</li>
+      <li>structure de titres cohérente et repères de page explicites ;</li>
+      <li>texte alternatif sur les images porteuses d'information ;</li>
+      <li>animations désactivées si le système demande de réduire les animations ;</li>
+      <li>chaque activité existe en <b>version adaptée</b> (une page, sans rédaction)
+        et en <b>version remplissable</b> pour qui ne peut pas écrire à la main.</li>
+    </ul>
+    <p>
+      Un défaut d'accessibilité rencontré peut être signalé à l'adresse de
+      contact ci-dessus : il sera corrigé.
+    </p>
+
+    <h2>Liens vers d'autres sites</h2>
+    <p>
+      Certaines activités renvoient vers des ressources extérieures (animations,
+      logiciels, textes officiels). Ces sites ne sont pas sous notre contrôle :
+      leur contenu et leurs propres règles de confidentialité relèvent de leurs
+      éditeurs.
+    </p>
+  </section>
+
+</Base>
+
+<style>
+  .ml { max-width: 72ch; }
+  .ml h2 { margin: 2.2rem 0 .5rem; font-size: 1.1rem; }
+  .ml h2:first-child { margin-top: 0; }
+  .ml p, .ml li { line-height: 1.6; }
+  .ml ul { padding-left: 1.2rem; }
+  .ml li { margin: .3rem 0; }
+  .note { font-size: .92rem; color: var(--mine, #5b6572); }
+  .acompleter { border: 1px dashed var(--trait, #d5d9de); border-radius: 8px;
+    padding: .7rem .9rem; background: var(--calque, #f2f4f7); }
+</style>

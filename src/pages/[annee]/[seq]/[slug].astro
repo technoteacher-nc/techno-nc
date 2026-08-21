@@ -4,6 +4,7 @@ import Citation from '../../../components/Citation.astro';
 import { getCollection } from 'astro:content';
 import { simulateursDe, motsDe } from '../../../data/ressources';
 import { notionsDe } from '../../../data/consolidation';
+import demarche from '../../../data/demarche.json';
 import { statSync, existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
@@ -38,6 +39,20 @@ function poids(rel) {
   } catch { return null; }
 }
 const pFiche = poids(d.fichePdf), pEbep = poids(d.ebepPdf), pDocx = poids(d.ficheDocx);
+
+// LA FAÇON DE TRAVAILLER, ANNONCÉE. Une activité d'investigation et un TP ne
+// demandent pas la même chose à l'élève : il doit le savoir AVANT d'ouvrir la
+// fiche. La démarche et le rattachement CRCN sont déclarés une seule fois dans
+// tools/progression/deroules-2026.cjs et arrivent ici par demarche.json —
+// la page ne redéclare rien, elle affiche.
+const seqDeLActivite = demarche.parcours
+  .flatMap(p => p.sequences)
+  .find(sq => sq.activites.some(x => x.slug === act.id));
+const laDemarche = seqDeLActivite
+  ? seqDeLActivite.activites.find(x => x.slug === act.id)
+  : null;
+const crcn = seqDeLActivite ? seqDeLActivite.crcn : [];
+const NIVEAU_CRCN = { 1: 'découverte', 2: 'application', 3: 'autonomie', 4: 'expertise' };
 
 // Une version remplissable en ligne n'existe que si l'extraction du DOCX a
 // abouti (tools/extraire-fiches.cjs) : le bouton ne s'affiche que dans ce cas.
@@ -113,6 +128,7 @@ const donneesLd = [
   <header class="act-tete leve">
     <div class="act-repere leve leve-1">
       {d.phase && <span class="phase" data-phase={d.phase}>{d.phase}</span>}
+      {laDemarche && <span class="demarche" data-demarche={laDemarche.demarche}>{laDemarche.demarcheLabel}</span>}
       <span class="eyebrow-mini">étape {rang} sur {total}{d.semaine && ` · ${d.semaine}`}</span>
     </div>
     <h1 class="leve leve-1">{d.titre}</h1>
@@ -144,7 +160,13 @@ const donneesLd = [
         {d.competences.length > 0 && <><dt>Compétences</dt><dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd></>}
         {d.prerequis && <><dt>Prérequis</dt><dd>{d.prerequis}</dd></>}
         {d.materiel && <><dt>Matériel</dt><dd>{d.materiel}</dd></>}
+        {crcn.length > 0 && <><dt>Compétences numériques</dt><dd><ul>{crcn.map(c => (
+          <li>{c.code} — {c.intitule} <i>({NIVEAU_CRCN[c.niveauVise] || ('niveau ' + c.niveauVise)})</i></li>
+        ))}</ul></dd></>}
       </dl>
+      <p class="meta-lien">
+        Ce que veulent dire ces repères : <a href={u('/demarche')}>comment on travaille en technologie</a>.
+      </p>
     </section>
   )}
 

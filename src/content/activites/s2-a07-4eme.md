@@ -10,7 +10,7 @@ objectif: "Analyser des devis (RAM/SSD), comparer sur des critères chiffrés, r
 competences:
   - "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
 prerequis: ""
-materiel: "Fiche S2-A07 · PPTX (devis)"
+materiel: "Fiche S2-A07 · à projeter (devis)"
 annee: "2026"
 seq: "seq02"
 seqTitre: "Séquence 02 — USAGES"

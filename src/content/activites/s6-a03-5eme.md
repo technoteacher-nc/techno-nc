@@ -10,7 +10,7 @@ objectif: "Créer et faire évoluer une variable (spirale), utiliser un second �
 competences:
   - "Thème 3 — Concevoir, écrire, tester et mettre au point un programme"
 prerequis: "S6-A02 (boucle, blocs de base)."
-materiel: "Scratch · PPTX (programme spirale + table d'exécution) · fiches S6-A03 (+ EBEP)"
+materiel: "Scratch · à projeter (programme spirale + table d'exécution) · fiches S6-A03 (+ EBEP)"
 annee: "2026"
 seq: "seq06"
 seqTitre: "Séquence 06 — MEI"

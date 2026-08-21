@@ -10,7 +10,7 @@ objectif: "Définir instruction/séquence/boucle, exécuter et écrire un algori
 competences:
   - "Thème 2 — Comprendre et modifier un programme associé à une fonctionnalité d'un objet ou d'un système technique"
 prerequis: "Aucun (lancement de séquence)."
-materiel: "PPTX (vocabulaire + grille géante) · fiches S6-A01 (+ EBEP) · règles"
+materiel: "à projeter (vocabulaire + grille géante) · fiches S6-A01 (+ EBEP) · règles"
 annee: "2026"
 seq: "seq06"
 seqTitre: "Séquence 06 — MEI"

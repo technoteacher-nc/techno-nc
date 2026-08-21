@@ -1,0 +1,1396 @@
+{
+  "genere": "2026-08-21",
+  "programme": {
+    "reference": "Programme de technologie du cycle 4 — BO n°9 du 29 février 2024",
+    "url": "https://www.education.gouv.fr/bo/2024/Hebdo9/MENE2402580A",
+    "themes": [
+      "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+      "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+      "Usages et impacts sociétaux du numérique",
+      "Concevoir, créer, réaliser : des objets et des systèmes techniques à imaginer et à produire"
+    ],
+    "competences": [
+      {
+        "code": "T1a",
+        "libelle": "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+      },
+      {
+        "code": "T1b",
+        "libelle": "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
+      },
+      {
+        "code": "T1c",
+        "libelle": "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+      },
+      {
+        "code": "T2a",
+        "libelle": "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+      },
+      {
+        "code": "T2b",
+        "libelle": "Thème 2 — Identifier un dysfonctionnement d'un objet technique et y remédier"
+      },
+      {
+        "code": "T2c",
+        "libelle": "Thème 2 — Comprendre et modifier un programme associé à une fonctionnalité d'un objet ou d'un système technique"
+      },
+      {
+        "code": "T3a",
+        "libelle": "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+      },
+      {
+        "code": "T3b",
+        "libelle": "Thème 3 — Valider les solutions techniques par des simulations ou par des protocoles de tests"
+      },
+      {
+        "code": "T3c",
+        "libelle": "Thème 3 — Concevoir, écrire, tester et mettre au point un programme"
+      }
+    ],
+    "reperes": 38
+  },
+  "demarches": [
+    {
+      "cle": "investigation",
+      "label": "Démarche d'investigation",
+      "nombre": 34
+    },
+    {
+      "cle": "dirige",
+      "label": "Travail dirigé",
+      "nombre": 14
+    },
+    {
+      "cle": "tp",
+      "label": "Travaux pratiques",
+      "nombre": 17
+    },
+    {
+      "cle": "projet",
+      "label": "Démarche de projet",
+      "nombre": 12
+    }
+  ],
+  "chiffres": {
+    "activites": 77,
+    "sequences": 6,
+    "projets": 3,
+    "ebep": 77,
+    "termesLexique": 114,
+    "quizSeries": 15,
+    "quizQuestions": 150,
+    "activitesAvecProjection": 21
+  },
+  "parcours": [
+    {
+      "niveau": "5eme",
+      "niveauLabel": "5ème",
+      "nonEnseigne": false,
+      "sequences": [
+        {
+          "seq": "seq01",
+          "titre": "Séquence 01 — L'ORDINATEUR",
+          "semaines": "S1 → S12",
+          "heures": 24,
+          "presentation": "Les élèves prennent en main le poste et le classeur : ils produisent une page de garde et un sommaire au traitement de texte, en respectant une consigne de mise en forme au point près. Ils ouvrent ensuite l'unité centrale pour nommer ce qu'elle contient, distinguent les périphériques d'entrée et de sortie, puis élargissent aux objets et systèmes techniques de Nouvelle-Calédonie. La séquence se ferme sur le cahier des charges : dire ce qu'on attend d'un objet avant de le concevoir.",
+          "theme": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+          "attendu": "Décrire l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement.",
+          "crcn": [
+            {
+              "code": "C3.1",
+              "intitule": "Développer des documents textuels",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.1",
+              "intitule": "Résoudre des problèmes techniques",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.2",
+              "intitule": "Évoluer dans un environnement numérique",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s1-a01-5eme",
+              "code": "S1-A01",
+              "titre": "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR",
+              "semaine": "S3",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras ouvrir ta session, faire une page de garde et enregistrer au bon endroit.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a02-5eme",
+              "code": "S1-A02",
+              "titre": "LE SOMMAIRE — UN TABLEAU QUI RANGE L'ANNÉE",
+              "semaine": "S5",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras insérer un tableau, régler la hauteur des lignes et fusionner l'en-tête.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a03-5eme",
+              "code": "S1-A03",
+              "titre": "L'UNITÉ CENTRALE — AU CŒUR DE L'ORDINATEUR",
+              "semaine": "S7",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras nommer les six composants d'une unité centrale et dire à quoi sert chacun.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a04-5eme",
+              "code": "S1-A04",
+              "titre": "LES PÉRIPHÉRIQUES — CE QUI SE CONNECTE À L'ORDINATEUR",
+              "semaine": "S9",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras dire si un périphérique est une entrée, une sortie, ou les deux.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a05-5eme",
+              "code": "S1-A05",
+              "titre": "LES OBJETS ET SYSTÈMES TECHNIQUES DE NOUVELLE-CALÉDONIE",
+              "semaine": "S10",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras dire ce qu'est un objet technique, à qui il sert et ce qu'il doit respecter.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a06-5eme",
+              "code": "S1-A06",
+              "titre": "LE CAHIER DES CHARGES — DIRE CE QU'ON ATTEND D'UN OBJET",
+              "semaine": "S12",
+              "phase": "Modéliser",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras écrire un cahier des charges : la fonction principale et les contraintes.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq02",
+          "titre": "Séquence 02 — USAGES",
+          "semaines": "S13 → S18",
+          "heures": 12,
+          "presentation": "Les élèves partent d'objets qu'ils manipulent — un stylo quatre couleurs qu'ils démontent, un objet du quotidien qui « pense » — pour dégager les notions de fonction, de flux et de chaîne. Ils suivent ensuite un objet sur tout son cycle de vie, en pesant l'indice de réparabilité, puis comparent des générations d'un même objet. La séquence se termine par un choix argumenté entre plusieurs objets techniques.",
+          "theme": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+          "attendu": "Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques.",
+          "crcn": [
+            {
+              "code": "C4.3",
+              "intitule": "Protéger la santé, le bien-être et l'environnement",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.1",
+              "intitule": "Résoudre des problèmes techniques",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s2-a01-5eme",
+              "code": "S2-A01",
+              "titre": "LES OBJETS TECHNIQUES AUTOUR DE MOI",
+              "semaine": "S13",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras nommer la fonction principale et les fonctions secondaires de trois objets.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a02-5eme",
+              "code": "S2-A02",
+              "titre": "LE STYLO 4 COULEURS — DÉMONTER POUR COMPRENDRE",
+              "semaine": "S14",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras nommer les parties d'un objet technique et dire ce que chacune fait.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a03-5eme",
+              "code": "S2-A03",
+              "titre": "LES OBJETS QUI PENSENT",
+              "semaine": "S15",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer un objet simple d'un objet qui capte et agit tout seul.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a04-5eme",
+              "code": "S2-A04",
+              "titre": "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ",
+              "semaine": "S16",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras ranger les cinq étapes du cycle de vie et lire un indice de réparabilité.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a05-5eme",
+              "code": "S2-A05",
+              "titre": "L'ÉVOLUTION DES OBJETS TECHNIQUES",
+              "semaine": "S16",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer le besoin, qui ne change pas, de la solution, qui change.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a06-5eme",
+              "code": "S2-A06",
+              "titre": "L'EXPÉRIENCE UTILISATEUR — FACILE OU GALÈRE ?",
+              "semaine": "S17",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras dire si un objet est agréable à utiliser, et proposer une amélioration.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a07-5eme",
+              "code": "S2-A07",
+              "titre": "BIEN CHOISIR UN OBJET TECHNIQUE",
+              "semaine": "S18",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras comparer des fiches produits et choisir en justifiant avec des chiffres.",
+              "projete": true,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq03",
+          "titre": "Séquence 03 — DONNÉES",
+          "semaines": "S19 → S22",
+          "heures": 8,
+          "presentation": "Les élèves suivent le trajet d'un fichier, du poste de la salle au serveur du collège, puis d'un message de Nouméa à Paris — câbles sous-marins compris. Ils distinguent ce que fait le navigateur de ce que fait le moteur de recherche, et de ce que fait le système. La séquence se termine par la construction d'un premier réseau dans le simulateur Filius.",
+          "theme": "Usages et impacts sociétaux du numérique",
+          "attendu": "Décrire et caractériser l'organisation interne d'un système d'information et la circulation des données.",
+          "crcn": [
+            {
+              "code": "C1.1",
+              "intitule": "Mener une recherche et une veille d'information",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.2",
+              "intitule": "Évoluer dans un environnement numérique",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s3-a01-5eme",
+              "code": "S3-A01",
+              "titre": "OÙ VONT MES FICHIERS ? — LE RÉSEAU DU COLLÈGE",
+              "semaine": "S19",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras retrouver tes fichiers sur le serveur du collège et ranger ton dossier.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s3-a02-5eme",
+              "code": "S3-A02",
+              "titre": "LE VOYAGE D'UN MESSAGE : DE NOUMÉA À PARIS",
+              "semaine": "S20",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras raconter le trajet d'un message, de ton poste jusqu'au destinataire.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s3-a03-5eme",
+              "code": "S3-A03",
+              "titre": "NAVIGATEUR, MOTEUR, SYSTÈME : QUI FAIT QUOI ?",
+              "semaine": "S21",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer système, navigateur et moteur de recherche.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s3-a04-5eme",
+              "code": "S3-A04",
+              "titre": "FILIUS : JE CONSTRUIS MON PREMIER RÉSEAU",
+              "semaine": "S22",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras câbler trois machines sur un switch et tester la liaison par un ping.",
+              "projete": true,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq04",
+          "titre": "Séquence 04 — CYBERSEC",
+          "semaines": "S23 → S25",
+          "heures": 6,
+          "presentation": "Les élèves éprouvent la robustesse d'un mot de passe, puis remontent la piste de leurs propres traces numériques — cookies, géolocalisation, comptes ouverts. La séquence se termine sur le cyberharcèlement : reconnaître les signes, connaître les recours, savoir à qui parler.",
+          "theme": "Usages et impacts sociétaux du numérique",
+          "attendu": "Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques.",
+          "crcn": [
+            {
+              "code": "C2.4",
+              "intitule": "S'insérer dans le monde numérique",
+              "niveauVise": 2
+            },
+            {
+              "code": "C4.1",
+              "intitule": "Sécuriser l'environnement numérique",
+              "niveauVise": 2
+            },
+            {
+              "code": "C4.2",
+              "intitule": "Protéger les données personnelles et la vie privée",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s4-a01-5eme",
+              "code": "S4-A01",
+              "titre": "MOT DE PASSE : LA CLÉ DE MA VIE NUMÉRIQUE",
+              "semaine": "S23",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras fabriquer un mot de passe difficile à casser, et dire pourquoi il l'est.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s4-a02-5eme",
+              "code": "S4-A02",
+              "titre": "MES TRACES NUMÉRIQUES",
+              "semaine": "S24",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer les traces laissées exprès de celles laissées sans le savoir.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s4-a03-5eme",
+              "code": "S4-A03",
+              "titre": "CYBERHARCÈLEMENT : RECONNAÎTRE ET RÉAGIR",
+              "semaine": "S25",
+              "phase": "Produire",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras reconnaître le harcèlement, et quoi faire, que tu sois victime ou témoin.",
+              "projete": true,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq05",
+          "titre": "Séquence 05 — Conception",
+          "semaines": "S26 → S31",
+          "heures": 12,
+          "presentation": "Les élèves partent d'un besoin — habiter en Nouvelle-Calédonie — et le traduisent en cahier des charges. Ils apprennent à lire et produire un plan aux normes, modélisent leur pièce dans Sweet Home 3D, puis en fabriquent la maquette papier à l'échelle. La séquence se termine à l'atelier, imprimante 3D et découpe laser.",
+          "theme": "Concevoir, créer, réaliser : des objets et des systèmes techniques à imaginer et à produire",
+          "attendu": "Concevoir et réaliser tout ou partie d'un objet ou d'un système technique répondant à un besoin.",
+          "crcn": [
+            {
+              "code": "C3.2",
+              "intitule": "Développer des documents multimédia",
+              "niveauVise": 2
+            },
+            {
+              "code": "C3.3",
+              "intitule": "Adapter les documents à leur finalité",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s5-a01-5eme",
+              "code": "S5-A01",
+              "titre": "Ma maison en NC : du besoin au cahier des charges",
+              "semaine": "S26",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer un besoin d'une envie et écrire ton cahier des charges.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a02-5eme",
+              "code": "S5-A02",
+              "titre": "Le plan aux normes : les codes de représentation",
+              "semaine": "S27",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras lire les symboles d'un plan et dessiner le tien à l'échelle 1/100.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a03-5eme",
+              "code": "S5-A03",
+              "titre": "Sweet Home 3D (1) : pièces et murs",
+              "semaine": "S28",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras créer tes pièces dans le logiciel et vérifier leurs surfaces.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a04-5eme",
+              "code": "S5-A04",
+              "titre": "Sweet Home 3D (2) : ouvertures, meubles et vues",
+              "semaine": "S29",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras poser portes et fenêtres, puis produire ton dossier client.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a05-5eme",
+              "code": "S5-A05",
+              "titre": "La maquette papier de ma pièce préférée (échelle 1/20)",
+              "semaine": "S30",
+              "phase": "Fabriquer",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras convertir à l'échelle 1/20, tracer un patron et monter ta maquette.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a06-5eme",
+              "code": "S5-A06",
+              "titre": "L'atelier de fabrication : imprimante 3D et découpe laser",
+              "semaine": "S31",
+              "phase": "Produire",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras distinguer l'impression 3D de l'usinage et respecter les règles d'atelier.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq06",
+          "titre": "Séquence 06 — MEI",
+          "semaines": "S32 → S35",
+          "heures": 8,
+          "presentation": "Les élèves programment d'abord sans ordinateur — un robot aspirateur piloté par des instructions écrites — pour comprendre qu'un programme est une suite d'ordres exacts. Ils passent ensuite à Scratch : un parcours carré, puis des variables et des événements. La séquence se termine par un défi entre Maisons.",
+          "theme": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+          "attendu": "Décrire et programmer le comportement d'un objet ou d'un système technique piloté.",
+          "crcn": [
+            {
+              "code": "C3.4",
+              "intitule": "Programmer",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.1",
+              "intitule": "Résoudre des problèmes techniques",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s6-a01-5eme",
+              "code": "S6-A01",
+              "titre": "LE ROBOT ASPIRATEUR : PROGRAMMER SANS ORDINATEUR",
+              "semaine": "S32",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras écrire un algorithme en français et le faire exécuter sans erreur.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s6-a02-5eme",
+              "code": "S6-A02",
+              "titre": "SCRATCH (1) : LE PARCOURS CARRÉ",
+              "semaine": "S33",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras traduire l'algorithme du carré en blocs Scratch et utiliser une boucle.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s6-a03-5eme",
+              "code": "S6-A03",
+              "titre": "SCRATCH (2) : VARIABLES ET ÉVÉNEMENTS",
+              "semaine": "S34",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras créer une variable et la faire évoluer pour dessiner une spirale.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s6-a04-5eme",
+              "code": "S6-A04",
+              "titre": "LE DÉFI SCRATCH DES MAISONS",
+              "semaine": "S35",
+              "phase": "Produire",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras améliorer ton programme jusqu'à ce qu'il passe le labyrinthe.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "projet-5eme",
+          "titre": "Projet 5ème — Le pont en une feuille A4",
+          "semaines": "",
+          "heures": null,
+          "presentation": "Franchir un creek avec une seule feuille A4 et 300 mm de ruban. Les élèves découvrent qu'à matière égale, c'est la FORME qui porte : la même feuille roulée soutient cent fois ce qu'elle soutient à plat. Chaque groupe reçoit un profil imposé, écrit sa prévision AVANT l'essai, fabrique, puis charge la structure par paliers jusqu'à la rupture. Les résultats de la classe sont mis en commun, et chaque groupe fabrique une v2 justifiée par ces données.",
+          "theme": "Concevoir, créer, réaliser : des objets et des systèmes techniques à imaginer et à produire",
+          "attendu": "Imaginer, concevoir et programmer des objets et des systèmes techniques répondant à un besoin, en respectant un cahier des charges.",
+          "crcn": [
+            {
+              "code": "C3.2",
+              "intitule": "Développer des documents multimédia",
+              "niveauVise": 2
+            },
+            {
+              "code": "C3.4",
+              "intitule": "Programmer",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "pont-a4-a01",
+              "code": "S5-A01",
+              "titre": "Franchir le creek : le cahier des charges de la passerelle",
+              "semaine": "S26",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras lire le cahier des charges du pont et repérer où la poutre est comprimée.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "pont-a4-a02",
+              "code": "S5-A02",
+              "titre": "Trois profils imposés : tube, U, accordéon",
+              "semaine": "S27",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras dessiner le profil de ton groupe et écrire ce que tu prévois avant l'essai.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "pont-a4-a03",
+              "code": "S5-A03",
+              "titre": "Sweet Home 3D : implanter et coter l'ouvrage dans le plan",
+              "semaine": "S28",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras implanter l'ouvrage sur ton plan et convertir la portée à l'échelle.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "pont-a4-a04",
+              "code": "S5-A04",
+              "titre": "Fabrication du pont v1 et contrôle de conformité",
+              "semaine": "S29",
+              "phase": "Fabriquer",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras fabriquer ta structure avec le ruban imposé et contrôler sa conformité.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "pont-a4-a05",
+              "code": "S5-A05",
+              "titre": "L'essai destructif : charge de rupture et ratio",
+              "semaine": "S30",
+              "phase": "Tester",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras appliquer le protocole d'essai et calculer le rapport charge sur masse.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "pont-a4-a06",
+              "code": "S5-A06",
+              "titre": "La v2 et l'exploitation des données de la classe",
+              "semaine": "S31",
+              "phase": "Optimiser",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras améliorer ta structure, la retester, et tracer les résultats de la classe.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "niveau": "4eme",
+      "niveauLabel": "4ème",
+      "nonEnseigne": false,
+      "sequences": [
+        {
+          "seq": "seq01",
+          "titre": "Séquence 01 — L'ORDINATEUR",
+          "semaines": "S1 → S12",
+          "heures": 24,
+          "presentation": "Même parcours qu'en 5ème, mais la conformité devient le critère : la page de garde et le sommaire sont notés sur le respect de la consigne, pas sur l'apparence. L'analyse de l'unité centrale va plus loin — on relie chaque composant à ce qu'il fait, et on mesure. Le cahier des charges est écrit avec des niveaux exigés chiffrés, pas seulement des intentions.",
+          "theme": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+          "attendu": "Décrire l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement.",
+          "crcn": [
+            {
+              "code": "C3.1",
+              "intitule": "Développer des documents textuels",
+              "niveauVise": 3
+            },
+            {
+              "code": "C5.1",
+              "intitule": "Résoudre des problèmes techniques",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.2",
+              "intitule": "Évoluer dans un environnement numérique",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s1-a01-4eme",
+              "code": "S1-A01",
+              "titre": "LA PAGE DE GARDE — PRENDRE EN MAIN L'ORDINATEUR",
+              "semaine": "S3",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras ouvrir ta session, faire une page de garde et enregistrer au bon endroit.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a02-4eme",
+              "code": "S1-A02",
+              "titre": "LE SOMMAIRE — UN TABLEAU QUI RANGE L'ANNÉE",
+              "semaine": "S5",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras insérer un tableau, régler la hauteur des lignes et fusionner l'en-tête.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a03-4eme",
+              "code": "S1-A03",
+              "titre": "L'UNITÉ CENTRALE — AU CŒUR DE L'ORDINATEUR",
+              "semaine": "S7",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras nommer les six composants d'une unité centrale et dire à quoi sert chacun.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a04-4eme",
+              "code": "S1-A04",
+              "titre": "LES PÉRIPHÉRIQUES — CE QUI SE CONNECTE À L'ORDINATEUR",
+              "semaine": "S9",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras dire si un périphérique est une entrée, une sortie, ou les deux.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a05-4eme",
+              "code": "S1-A05",
+              "titre": "LES OBJETS ET SYSTÈMES TECHNIQUES DE NOUVELLE-CALÉDONIE",
+              "semaine": "S10",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer un objet technique d'un système, et repérer ses trois flux.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s1-a06-4eme",
+              "code": "S1-A06",
+              "titre": "LE CAHIER DES CHARGES — DIRE CE QU'ON ATTEND D'UN OBJET",
+              "semaine": "S12",
+              "phase": "Modéliser",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras écrire un cahier des charges avec des critères chiffrés et vérifiables.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq02",
+          "titre": "Séquence 02 — USAGES",
+          "semaines": "S13 → S18",
+          "heures": 12,
+          "presentation": "Même progression qu'en 5ème, appliquée à des systèmes plus riches : une maison domotisée, une montre connectée. Les élèves y lisent des chaînes d'énergie et d'information complètes, comparent des cycles de vie chiffrés, et évaluent l'expérience utilisateur d'objets de la salle. Le choix final porte sur les ordinateurs du collège, avec des critères qu'ils fixent eux-mêmes.",
+          "theme": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+          "attendu": "Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques.",
+          "crcn": [
+            {
+              "code": "C4.3",
+              "intitule": "Protéger la santé, le bien-être et l'environnement",
+              "niveauVise": 3
+            },
+            {
+              "code": "C5.1",
+              "intitule": "Résoudre des problèmes techniques",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s2-a01-4eme",
+              "code": "S2-A01",
+              "titre": "LES OBJETS TECHNIQUES AUTOUR DE MOI",
+              "semaine": "S13",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras repérer les contraintes et les flux matière, énergie, information d'un objet.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a02-4eme",
+              "code": "S2-A02",
+              "titre": "QUAND LA MAISON S'ALLUME TOUTE SEULE",
+              "semaine": "S14",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras repérer capteur, microcontrôleur et actionneur, et suivre la chaîne.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a03-4eme",
+              "code": "S2-A03",
+              "titre": "LA MONTRE CONNECTÉE",
+              "semaine": "S15",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras nommer les capteurs d'une montre connectée et ce que chacun mesure.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a04-4eme",
+              "code": "S2-A04",
+              "titre": "LE CYCLE DE VIE ET L'INDICE DE RÉPARABILITÉ",
+              "semaine": "S16",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras ranger les cinq étapes du cycle de vie et lire un indice de réparabilité.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a05-4eme",
+              "code": "S2-A05",
+              "titre": "L'ÉVOLUTION DES OBJETS TECHNIQUES",
+              "semaine": "S16",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras distinguer le besoin, qui ne change pas, de la solution, qui change.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a06-4eme",
+              "code": "S2-A06",
+              "titre": "L'EXPÉRIENCE UTILISATEUR — CONCEVOIR POUR L'UTILISATEUR",
+              "semaine": "S17",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras juger une application sur quatre critères et la rendre plus accessible.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a07-4eme",
+              "code": "S2-A07",
+              "titre": "COMPARER POUR CHOISIR — LES ORDINATEURS DE LA SALLE 207",
+              "semaine": "S18",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras comparer deux devis et recommander un achat en respectant un budget.",
+              "projete": true,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq03",
+          "titre": "Séquence 03 — DONNÉES",
+          "semaines": "S19 → S22",
+          "heures": 8,
+          "presentation": "Les élèves construisent et testent des réseaux dans le simulateur Filius : d'abord deux machines reliées par un câble, puis un réseau en étoile avec commutateur et serveur, enfin deux réseaux qu'un routeur relie, avec passerelle et DNS. Chaque construction doit être PROUVÉE par des tests ping consignés dans un compte-rendu. La séquence se ferme sur le modèle économique des services « gratuits ».",
+          "theme": "Usages et impacts sociétaux du numérique",
+          "attendu": "Décrire et caractériser l'organisation interne d'un système d'information et la circulation des données.",
+          "crcn": [
+            {
+              "code": "C1.1",
+              "intitule": "Mener une recherche et une veille d'information",
+              "niveauVise": 2
+            },
+            {
+              "code": "C5.2",
+              "intitule": "Évoluer dans un environnement numérique",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s3-a01-4eme",
+              "code": "S3-A01",
+              "titre": "DEUX RÉSEAUX AU COLLÈGE : IP, SWITCH, ROUTEUR",
+              "semaine": "S19",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras reconnaître un switch, un routeur, un serveur, et lire une adresse IP.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s3-a02-4eme",
+              "code": "S3-A02",
+              "titre": "FILIUS (1) : MON RÉSEAU LOCAL OPÉRATIONNEL",
+              "semaine": "S20",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras construire un réseau local dans Filius et prouver qu'il fonctionne.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s3-a03-4eme",
+              "code": "S3-A03",
+              "titre": "FILIUS (2) : UN INTERNET MINIATURE — ROUTEUR ET DNS",
+              "semaine": "S21",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras relier deux réseaux par un routeur et faire fonctionner un serveur web.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s3-a04-4eme",
+              "code": "S3-A04",
+              "titre": "GRATUITS, VRAIMENT ? URL, MOTEURS ET GAFAM",
+              "semaine": "S22",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras lire une adresse web et dire ce qu'un service gratuit gagne sur toi.",
+              "projete": true,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq04",
+          "titre": "Séquence 04 — CYBERSEC",
+          "semaines": "S23 → S25",
+          "heures": 6,
+          "presentation": "Les élèves auditent une boîte mail réelle pour y repérer les tentatives d'hameçonnage, indice par indice. Ils examinent ensuite ce qu'un service collecte d'eux, ce que le RGPD leur permet d'exiger, et comment reprendre la main sur leurs réglages.",
+          "theme": "Usages et impacts sociétaux du numérique",
+          "attendu": "Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques.",
+          "crcn": [
+            {
+              "code": "C2.4",
+              "intitule": "S'insérer dans le monde numérique",
+              "niveauVise": 3
+            },
+            {
+              "code": "C4.1",
+              "intitule": "Sécuriser l'environnement numérique",
+              "niveauVise": 3
+            },
+            {
+              "code": "C4.2",
+              "intitule": "Protéger les données personnelles et la vie privée",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s4-a01-4eme",
+              "code": "S4-A01",
+              "titre": "PHISHING : L'AUDIT DE LA BOÎTE MAIL",
+              "semaine": "S23",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras repérer les cinq indices d'un message piégé et prouver ton verdict.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s4-a02-4eme",
+              "code": "S4-A02",
+              "titre": "TRACES, COOKIES, RGPD : REPRENDRE LA MAIN",
+              "semaine": "S24",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras expliquer comment on te cible, et régler tes paramètres de confidentialité.",
+              "projete": true,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq05",
+          "titre": "Séquence 05 — Conception",
+          "semaines": "S26 → S31",
+          "heures": 12,
+          "presentation": "Les élèves conçoivent un support de smartphone, du besoin exprimé au cahier des charges chiffré. Ils passent par le croquis coté et la perspective, modélisent en volume dans SketchUp, éprouvent la solution sur un prototype carton, puis fabriquent la pièce à l'atelier.",
+          "theme": "Concevoir, créer, réaliser : des objets et des systèmes techniques à imaginer et à produire",
+          "attendu": "Concevoir et réaliser tout ou partie d'un objet ou d'un système technique répondant à un besoin.",
+          "crcn": [
+            {
+              "code": "C3.2",
+              "intitule": "Développer des documents multimédia",
+              "niveauVise": 3
+            },
+            {
+              "code": "C3.3",
+              "intitule": "Adapter les documents à leur finalité",
+              "niveauVise": 2
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s5-a01-4eme",
+              "code": "S5-A01",
+              "titre": "Le support de smartphone : du besoin au CDC",
+              "semaine": "S26",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras formuler un besoin et écrire un cahier des charges aux critères mesurables.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a02-4eme",
+              "code": "S5-A02",
+              "titre": "Croquis coté et perspective",
+              "semaine": "S27",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras faire un croquis coté en millimètres et choisir une solution avec ton CDC.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a03-4eme",
+              "code": "S5-A03",
+              "titre": "SketchUp (1) : formes exactes et poussé-tiré",
+              "semaine": "S28",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras modéliser une pièce aux cotes exactes et la contrôler à l'outil Mètre.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a04-4eme",
+              "code": "S5-A04",
+              "titre": "SketchUp (2) : le modèle final coté",
+              "semaine": "S29",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras creuser une encoche, poser les cotes et exporter ton dossier.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a05-4eme",
+              "code": "S5-A05",
+              "titre": "Prototype carton : je teste ma solution",
+              "semaine": "S30",
+              "phase": "Fabriquer",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras fabriquer ton prototype et le tester selon un protocole précis.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s5-a06-4eme",
+              "code": "S5-A06",
+              "titre": "Atelier : impression 3D et découpe laser du modèle",
+              "semaine": "S31",
+              "phase": "Produire",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras suivre une pièce du fichier à l'objet et choisir un procédé pour une série.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "seq06",
+          "titre": "Séquence 06 — MEI",
+          "semaines": "S32 → S36",
+          "heures": 10,
+          "presentation": "Les élèves décortiquent un robot mBot réel — capteurs, actionneurs, carte — avant de le programmer dans mBlock. Ils lui font éviter un obstacle, puis suivre une ligne, en réglant les seuils de leurs capteurs. La séquence se termine par un défi entre Maisons, sur un parcours imposé.",
+          "theme": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+          "attendu": "Décrire et programmer le comportement d'un objet ou d'un système technique piloté.",
+          "crcn": [
+            {
+              "code": "C3.4",
+              "intitule": "Programmer",
+              "niveauVise": 3
+            },
+            {
+              "code": "C5.1",
+              "intitule": "Résoudre des problèmes techniques",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "s6-a01-4eme",
+              "code": "S6-A01",
+              "titre": "mBOT : UN VRAI SYSTÈME À DÉCORTIQUER",
+              "semaine": "S32",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras nommer les constituants du mBot et retrouver ses deux chaînes.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s6-a02-4eme",
+              "code": "S6-A02",
+              "titre": "mBLOCK : MES PREMIERS PROGRAMMES SUR SYSTÈME RÉEL",
+              "semaine": "S33",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras téléverser un programme et régler la rotation du robot par essais.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s6-a03-4eme",
+              "code": "S6-A03",
+              "titre": "CAPTEURS : ÉVITER UN OBSTACLE, SUIVRE UNE LIGNE",
+              "semaine": "S34",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras programmer un SI/ALORS/SINON avec un capteur, et réparer un programme.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "s6-a04-4eme",
+              "code": "S6-A04",
+              "titre": "LE GRAND DÉFI ROBOT DES MAISONS",
+              "semaine": "S35",
+              "phase": "Produire",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras mesurer une performance et l'améliorer par essais successifs.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        },
+        {
+          "seq": "projet-4eme",
+          "titre": "Projet 4ème — L'abat-jour paramétrique",
+          "semaines": "",
+          "heures": null,
+          "presentation": "Éclairer sans éblouir. Les élèves rédigent un cahier des charges à deux exigences qui s'opposent — diffuser assez de lumière, tenir sans se déformer — puis paramètrent un motif de perçage par trois grandeurs. Ils tracent le panneau développé, modélisent la collerette, choisissent entre découpe laser et impression 3D en justifiant par le temps machine, fabriquent et mesurent à l'éclairemètre. Chacun défend ensuite son point de compromis devant la classe.",
+          "theme": "Concevoir, créer, réaliser : des objets et des systèmes techniques à imaginer et à produire",
+          "attendu": "Imaginer, concevoir et programmer des objets et des systèmes techniques répondant à un besoin, en respectant un cahier des charges.",
+          "crcn": [
+            {
+              "code": "C3.2",
+              "intitule": "Développer des documents multimédia",
+              "niveauVise": 3
+            },
+            {
+              "code": "C3.4",
+              "intitule": "Programmer",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "abat-jour-a01",
+              "code": "S5-A01",
+              "titre": "Éclairer sans éblouir : un CDC à critères opposés",
+              "semaine": "S26",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras écrire un cahier des charges avec deux exigences qui s'opposent.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "abat-jour-a02",
+              "code": "S5-A02",
+              "titre": "Paramétrer un motif : diamètre, entraxe, taux d'ajour",
+              "semaine": "S27",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras décrire ton motif par trois paramètres et calculer son taux d'ajour.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "abat-jour-a03",
+              "code": "S5-A03",
+              "titre": "SketchUp (1) : le panneau développé, L = π × D",
+              "semaine": "S28",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras tracer le panneau à plat et vérifier les ponts de matière.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "abat-jour-a04",
+              "code": "S5-A04",
+              "titre": "SketchUp (2) : la collerette et le bureau des méthodes",
+              "semaine": "S29",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras modéliser la collerette et choisir entre laser et impression 3D.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "abat-jour-a05",
+              "code": "S5-A05",
+              "titre": "Découpe, montage et double mesure",
+              "semaine": "S30",
+              "phase": "Fabriquer",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras monter l'abat-jour et mesurer l'éclairement au luxmètre.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "abat-jour-a06",
+              "code": "S5-A06",
+              "titre": "Les deux courbes et le point de compromis",
+              "semaine": "S31",
+              "phase": "Produire",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras tracer tes résultats et défendre le taux d'ajour que tu as choisi.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "niveau": "3eme",
+      "niveauLabel": "3ème",
+      "nonEnseigne": true,
+      "sequences": [
+        {
+          "seq": "projet-3eme",
+          "titre": "Projet 3ème — L'amplificateur de son passif",
+          "semaines": "",
+          "heures": null,
+          "presentation": "Amplifier un téléphone sans aucune électricité. Les élèves constatent qu'un pavillon passif n'a ni chaîne d'énergie ni chaîne d'information, construisent ensemble un plan d'expérience — une variable par groupe, une configuration de référence commune —, calculent le développé du cône par Pythagore, fabriquent, puis mesurent le gain en décibels selon un protocole partagé. Niveau non enseigné cette année : le projet est prêt, il n'a jamais été mené.",
+          "theme": "Concevoir, créer, réaliser : des objets et des systèmes techniques à imaginer et à produire",
+          "attendu": "Imaginer, concevoir et programmer des objets et des systèmes techniques répondant à un besoin, en respectant un cahier des charges.",
+          "crcn": [
+            {
+              "code": "C3.2",
+              "intitule": "Développer des documents multimédia",
+              "niveauVise": 3
+            },
+            {
+              "code": "C3.4",
+              "intitule": "Programmer",
+              "niveauVise": 3
+            }
+          ],
+          "activites": [
+            {
+              "slug": "amplificateur-passif-a01",
+              "code": "S5-A01",
+              "titre": "Amplifier ou diriger : deux objets, deux chaînes",
+              "semaine": "S26",
+              "phase": "Analyser",
+              "demarche": "investigation",
+              "demarcheLabel": "Démarche d'investigation",
+              "objectif": "Tu sauras montrer qu'un pavillon amplifie sans aucune énergie électrique.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "amplificateur-passif-a02",
+              "code": "S5-A02",
+              "titre": "Le plan d'expérience de la classe",
+              "semaine": "S27",
+              "phase": "Représenter",
+              "demarche": "dirige",
+              "demarcheLabel": "Travail dirigé",
+              "objectif": "Tu sauras construire un plan d'expérience où une seule chose change.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "amplificateur-passif-a03",
+              "code": "S5-A03",
+              "titre": "Le développé du cône : Pythagore puis proportion",
+              "semaine": "S28",
+              "phase": "Modéliser",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras calculer le développé du cône et l'exporter pour la découpe.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "amplificateur-passif-a04",
+              "code": "S5-A04",
+              "titre": "Découpe laser des développés et montage",
+              "semaine": "S29",
+              "phase": "Fabriquer",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras fabriquer ton pavillon et vérifier que rien d'autre n'a changé.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "amplificateur-passif-a05",
+              "code": "S5-A05",
+              "titre": "Campagne de mesures : le gain en décibels",
+              "semaine": "S30",
+              "phase": "Tester",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras mesurer le gain en décibels selon un protocole commun.",
+              "projete": false,
+              "ebep": true
+            },
+            {
+              "slug": "amplificateur-passif-a06",
+              "code": "S5-A06",
+              "titre": "Les gains s'additionnent-ils ? Bilan et risques auditifs",
+              "semaine": "S31",
+              "phase": "Produire",
+              "demarche": "projet",
+              "demarcheLabel": "Démarche de projet",
+              "objectif": "Tu sauras désigner la meilleure solution et parler des risques pour l'audition.",
+              "projete": false,
+              "ebep": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

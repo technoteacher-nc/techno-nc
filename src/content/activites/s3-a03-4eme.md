@@ -10,7 +10,7 @@ objectif: "Relier deux réseaux par un routeur (passerelles), installer serveur 
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "S3-A01, S3-A02."
-materiel: "Filius (+ fichier réseau de secours pré-monté) · PPTX (schéma routeur+DNS) · fiches S3-A03 (+ EBEP) · ÉVAL E1"
+materiel: "Filius (+ fichier réseau de secours pré-monté) · à projeter (schéma routeur+DNS) · fiches S3-A03 (+ EBEP) · ÉVAL E1"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

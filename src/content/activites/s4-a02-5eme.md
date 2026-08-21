@@ -10,7 +10,7 @@ objectif: "Distinguer traces volontaires/invisibles, comprendre la persistance d
 competences:
   - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "S4-A01 (identité numérique)."
-materiel: "PPTX (parcours d'une photo publiée + écran de réglages fictif) · fiches S4-A02 (+ EBEP) · ÉVAL E2"
+materiel: "à projeter (parcours d'une photo publiée + écran de réglages fictif) · fiches S4-A02 (+ EBEP) · ÉVAL E2"
 annee: "2026"
 seq: "seq04"
 seqTitre: "Séquence 04 — CYBERSEC"

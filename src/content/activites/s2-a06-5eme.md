@@ -10,7 +10,7 @@ objectif: "Distinguer usage/utilité/UX, tester des objets réels de la salle, c
 competences:
   - "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
 prerequis: ""
-materiel: "Fiche S2-A06 · PPTX (distributeurs)"
+materiel: "Fiche S2-A06 · à projeter (distributeurs)"
 annee: "2026"
 seq: "seq02"
 seqTitre: "Séquence 02 — USAGES"

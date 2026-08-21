@@ -10,7 +10,7 @@ objectif: "Analyser une URL, identifier les données collectées par les service
 competences:
   - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
 prerequis: "S3-A03 (DNS, URL → IP)."
-materiel: "PPTX (anatomie URL + tableau GAFAM/données) · salle info · fiches S3-A04 (+ EBEP)"
+materiel: "à projeter (anatomie URL + tableau GAFAM/données) · salle info · fiches S3-A04 (+ EBEP)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

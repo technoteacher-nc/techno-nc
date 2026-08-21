@@ -79,6 +79,10 @@ export const citations: Record<string, Citation> = {
   'mode-demploi': {
     texte: "Un outil qu'on ne sait pas utiliser n'est pas un outil : c'est un objet posé là.",
   },
+
+  demarche: {
+    texte: "Savoir où l'on va ne dispense pas de marcher, mais évite de tourner en rond.",
+  },
 };
 
 export const citationDe = (cle: string): Citation | null => citations[cle] ?? null;

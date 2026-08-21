@@ -10,7 +10,7 @@ objectif: "Identifier les 4 critères UX, auditer deux versions d'une applicatio
 competences:
   - "Thème 1 — Décrire les interactions entre un objet ou un système technique, son environnement et les utilisateurs"
 prerequis: ""
-materiel: "Fiche S2-A06 · PPTX (app A/B)"
+materiel: "Fiche S2-A06 · à projeter (app A/B)"
 annee: "2026"
 seq: "seq02"
 seqTitre: "Séquence 02 — USAGES"

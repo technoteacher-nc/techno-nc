@@ -10,7 +10,7 @@ objectif: "Décrire le trajet d'un message sur Internet (paquets, serveurs, câb
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "S3-A01 : serveur, réseau local."
-materiel: "PPTX (carte Gondwana + doc chiffres) · vidéo « fonctionnement du réseau » · fiches S3-A02 (+ EBEP)"
+materiel: "à projeter (carte Gondwana + doc chiffres) · vidéo « fonctionnement du réseau » · fiches S3-A02 (+ EBEP)"
 annee: "2026"
 seq: "seq03"
 seqTitre: "Séquence 03 — DONNÉES"

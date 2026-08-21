@@ -10,7 +10,7 @@ objectif: "Identifier les constituants du mBot, reconstruire ses chaînes d'info
 competences:
   - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
 prerequis: "SEQ02 (chaînes vues sur documents) — ici on passe au RÉEL."
-materiel: "mBots (4-10, chargés, testés la veille) · PPTX (anatomie + chaînes) · fiches S6-A01 (+ EBEP)"
+materiel: "mBots (4-10, chargés, testés la veille) · à projeter (anatomie + chaînes) · fiches S6-A01 (+ EBEP)"
 annee: "2026"
 seq: "seq06"
 seqTitre: "Séquence 06 — MEI"

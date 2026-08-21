@@ -10,7 +10,7 @@ objectif: "Identifier les zones de Scratch, traduire l'algorithme du carré en b
 competences:
   - "Thème 3 — Concevoir, écrire, tester et mettre au point un programme"
 prerequis: "S6-A01 (algorithme du carré)."
-materiel: "Scratch sur les postes · PPTX (interface + programme en pseudo-blocs) · fiches S6-A02 (+ EBEP) · ÉVAL E5"
+materiel: "Scratch sur les postes · à projeter (interface + programme en pseudo-blocs) · fiches S6-A02 (+ EBEP) · ÉVAL E5"
 annee: "2026"
 seq: "seq06"
 seqTitre: "Séquence 06 — MEI"
