@@ -186,6 +186,15 @@
    ]
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "Les mots de cette activité — Réseau local · Adresse IP · Masque de sous-réseau · Commutateur (switch) · ping · Serveur — sont définis dans le LEXIQUE du site (QR en haut de la fiche)."
+    }
+   ]
+  },
+  {
    "type": "consigne",
    "texte": "Fais les étapes dans l'ordre. Coche la case dès que l'étape est réussie."
   },
@@ -1087,14 +1096,13 @@
    "segments": [
     {
      "t": "texte",
-     "v": "« L'étoile est utilisée parce que …"
+     "v": "« L'étoile est utilisée parce que … "
+    },
+    {
+     "t": "champ",
+     "points": 85
     }
    ]
-  },
-  {
-   "type": "lignes",
-   "n": 1,
-   "points": 140
   },
   {
    "type": "lignes",
