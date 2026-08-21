@@ -263,17 +263,6 @@
      "act": "s2-a02-4eme"
     },
     {
-     "q": "La chaîne d'information suit trois étapes : acquérir, traiter et…",
-     "r": [
-      "communiquer",
-      "fabriquer",
-      "alimenter"
-     ],
-     "bonne": 1,
-     "expli": "Acquérir, traiter, communiquer : toujours dans cet ordre, dans tout système automatisé.",
-     "act": "s2-a02-4eme"
-    },
-    {
      "q": "Que mesure un accéléromètre dans une montre connectée ?",
      "r": [
       "la température",
@@ -283,17 +272,6 @@
      "bonne": 2,
      "expli": "L'accéléromètre capte le mouvement : c'est lui qui permet de compter les pas. La position, c'est le GPS.",
      "act": "s2-a03-4eme"
-    },
-    {
-     "q": "L'indice de réparabilité est une note sur…",
-     "r": [
-      "100",
-      "20",
-      "10"
-     ],
-     "bonne": 3,
-     "expli": "Une note sur 10, affichée sur l'étiquette. Plus elle est haute, plus l'appareil se répare facilement.",
-     "act": "s2-a04-4eme"
     },
     {
      "q": "Une batterie collée dans le boîtier…",
@@ -316,17 +294,6 @@
      "bonne": 2,
      "expli": "Le besoin — s'éclairer — n'a pas changé en cent cinquante ans ; seule la solution technique a changé.",
      "act": "s2-a05-4eme"
-    },
-    {
-     "q": "Combien de critères d'expérience utilisateur la fiche retient-elle ?",
-     "r": [
-      "Trois",
-      "Quatre",
-      "Six"
-     ],
-     "bonne": 2,
-     "expli": "Efficacité, facilité d'apprentissage, accessibilité, confort : ce sont les quatre critères de la fiche.",
-     "act": "s2-a06-4eme"
     },
     {
      "q": "« Est-ce que j'atteins mon but à coup sûr, sans erreur ? » Quel critère ?",
@@ -373,28 +340,6 @@
      "act": "s2-a06-4eme"
     },
     {
-     "q": "Augmenter fortement le contraste d'un écran améliore surtout…",
-     "r": [
-      "l'efficacité",
-      "l'accessibilité",
-      "la facilité d'apprentissage"
-     ],
-     "bonne": 2,
-     "expli": "Un fort contraste sert d'abord à ceux qui voient mal : c'est de l'accessibilité.",
-     "act": "s2-a06-4eme"
-    },
-    {
-     "q": "Rendre une application utilisable par une personne handicapée, c'est…",
-     "r": [
-      "une option payante",
-      "une amélioration facultative",
-      "un droit"
-     ],
-     "bonne": 3,
-     "expli": "L'accessibilité numérique est une obligation légale, pas une option commerciale.",
-     "act": "s2-a06-4eme"
-    },
-    {
      "q": "Pour choisir un ordinateur pour la salle, on s'appuie sur…",
      "r": [
       "les critères chiffrés du cahier des charges",
@@ -403,17 +348,6 @@
      ],
      "bonne": 1,
      "expli": "C'est le cahier des charges qui décide, pas la marque ni le vendeur.",
-     "act": "s2-a07-4eme"
-    },
-    {
-     "q": "Dans un devis, le prix TTC est…",
-     "r": [
-      "le prix avant taxes",
-      "le prix réellement payé",
-      "le prix hors livraison"
-     ],
-     "bonne": 2,
-     "expli": "TTC signifie « toutes taxes comprises » : c'est la somme qui sort réellement du budget.",
      "act": "s2-a07-4eme"
     },
     {
@@ -447,17 +381,6 @@
      ],
      "bonne": 2,
      "expli": "La FP est la raison d'être de l'objet : la retirer, c'est retirer sa raison d'exister.",
-     "act": "s2-a01-5eme"
-    },
-    {
-     "q": "La lampe torche d'un téléphone portable est…",
-     "r": [
-      "sa fonction principale",
-      "une contrainte",
-      "une fonction secondaire"
-     ],
-     "bonne": 3,
-     "expli": "Un téléphone sans lampe torche reste un téléphone : la lampe est un service en plus.",
      "act": "s2-a01-5eme"
     },
     {
@@ -516,58 +439,14 @@
      "act": "s2-a06-5eme"
     },
     {
-     "q": "« Ces écouteurs servent à écouter de la musique sans fil. » Cette phrase parle de…",
-     "r": [
-      "l'utilité",
-      "l'usage",
-      "l'expérience utilisateur"
-     ],
-     "bonne": 1,
-     "expli": "L'utilité répond à « à quoi ça sert ? ». La phrase donne le service rendu, rien d'autre.",
-     "act": "s2-a06-5eme"
-    },
-    {
      "q": "« L'appairage est pénible : je m'y reprends à trois fois. » Cette phrase parle de…",
      "r": [
       "l'utilité",
-      "l'expérience utilisateur",
-      "l'usage"
-     ],
-     "bonne": 2,
-     "expli": "La phrase parle de ce qu'on ressent en s'en servant : c'est exactement l'expérience utilisateur.",
-     "act": "s2-a06-5eme"
-    },
-    {
-     "q": "« Je les utilise surtout le soir, pour ne pas déranger. » Cette phrase parle de…",
-     "r": [
       "l'usage",
-      "l'utilité",
       "l'expérience utilisateur"
      ],
-     "bonne": 1,
-     "expli": "L'usage dit QUAND et DANS QUELLES CIRCONSTANCES on se sert de l'objet.",
-     "act": "s2-a06-5eme"
-    },
-    {
-     "q": "Un objet peut être très utile et pourtant…",
-     "r": [
-      "ne servir à rien",
-      "être désagréable à utiliser",
-      "coûter cher"
-     ],
-     "bonne": 2,
-     "expli": "Utilité et expérience utilisateur sont deux choses différentes : un objet peut rendre le service et rester pénible.",
-     "act": "s2-a06-5eme"
-    },
-    {
-     "q": "Pour améliorer l'expérience utilisateur d'un objet, on commence par…",
-     "r": [
-      "changer sa couleur",
-      "baisser son prix",
-      "observer de vrais utilisateurs"
-     ],
      "bonne": 3,
-     "expli": "On ne devine pas l'expérience d'un utilisateur, on l'observe. C'est la première étape de toute amélioration.",
+     "expli": "La phrase parle de ce qu'on ressent en s'en servant : c'est exactement l'expérience utilisateur.",
      "act": "s2-a06-5eme"
     },
     {
@@ -580,17 +459,6 @@
      "bonne": 2,
      "expli": "Améliorer l'UX change la façon de s'en servir, pas le service rendu : des écouteurs restent des écouteurs.",
      "act": "s2-a06-5eme"
-    },
-    {
-     "q": "Pour comparer deux objets techniques, il faut d'abord…",
-     "r": [
-      "demander leur avis aux amis",
-      "regarder la publicité",
-      "choisir des critères mesurables"
-     ],
-     "bonne": 3,
-     "expli": "Sans critère mesurable, une comparaison n'est qu'une opinion. C'est ce qui sépare un choix technique d'une préférence.",
-     "act": "s2-a07-5eme"
     },
     {
      "q": "Parmi ces phrases, laquelle est un critère CHIFFRÉ ?",
@@ -607,10 +475,10 @@
      "q": "Le modèle le moins cher est-il toujours le meilleur choix ?",
      "r": [
       "Oui, c'est le seul critère",
-      "Non : il doit répondre au besoin",
-      "Oui, si la marque est connue"
+      "Oui, si la marque est connue",
+      "Non : il doit répondre au besoin"
      ],
-     "bonne": 2,
+     "bonne": 3,
      "expli": "Le prix n'est qu'un critère parmi d'autres : un objet qui ne répond pas au besoin est cher, même bon marché.",
      "act": "s2-a07-5eme"
     }
