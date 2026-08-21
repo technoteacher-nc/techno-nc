@@ -29,6 +29,21 @@
 
   --col: 64rem;
   --r: 10px;
+
+  /* LA JUSTIFICATION — la largeur des colonnes de texte.
+
+     Elle était jusqu'ici donnée en `ch`, unité qui vaut la largeur du zéro de
+     la police COURANTE. Deux blocs déclarant tous deux « 68ch » n'avaient donc
+     pas la même largeur à l'écran dès que leur corps différait : l'accueil
+     affichait cinq colonnes de 475, 481, 512, 623 et 758 px, sans qu'aucune de
+     ces variations ne veuille dire quelque chose.
+
+     Une page imprimée fixe sa justification en millimètres, pas en signes.
+     Ces trois mesures sont donc physiques, et il n'y en a que trois : une
+     variation de largeur doit se remarquer et vouloir dire quelque chose. */
+  --mesure: 40rem;          /* texte courant — environ 66 signes */
+  --mesure-large: 46rem;    /* listes de définitions et de données */
+  --mesure-etroite: 32rem;  /* chapeau sous un grand titre : lu d'un coup d'œil */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -161,7 +176,10 @@ body {
   /* le trait de cote sous le mot-clé */
   box-shadow: inset 0 -.14em 0 var(--vif);
 }
-.hero p { color: var(--mine); margin: 0; max-width: 54ch; font-size: 1.02rem; }
+/* Le chapeau sous le grand titre est plus étroit que le texte courant, et
+   c'est voulu : il doit se lire d'un coup d'œil, pas se parcourir. C'est la
+   SEULE variation de justification de la page — les autres ont disparu. */
+.hero p { color: var(--mine); margin: 0; max-width: var(--mesure-etroite); font-size: 1.02rem; }
 
 /* ---------- accueil : cartes niveau ---------- */
 .accueil-niveaux {
@@ -372,7 +390,7 @@ body {
   margin: .6rem 0 .75rem;
 }
 .question {
-  font-size: 1.05rem; color: var(--mine); margin: 0; max-width: 52ch;
+  font-size: 1.05rem; color: var(--mine); margin: 0; max-width: var(--mesure);
 }
 .question::before {
   content: '?'; font-family: var(--display); font-weight: 700;
@@ -415,9 +433,9 @@ body {
 /* La colonne de droite héritait de toute la largeur restante : 97 caractères
    par ligne, mesuré, là où la lecture décroche au-delà de ~75. C'est le seul
    endroit du site où le texte n'était pas borné. */
-.meta dd { margin: 0; padding: .75rem 0; border-top: 1px solid var(--trait); max-width: 72ch; }
+.meta dd { margin: 0; padding: .75rem 0; border-top: 1px solid var(--trait); max-width: var(--mesure-large); }
 .meta ul { margin: 0; padding-left: 1.1rem; }
-.meta li { margin-bottom: .35rem; max-width: 72ch; line-height: 1.55; }
+.meta li { margin-bottom: .35rem; max-width: var(--mesure-large); line-height: 1.55; }
 @media (max-width: 34rem) {
   .meta dl { grid-template-columns: 1fr; }
   .meta dd { border-top: none; padding-top: 0; }
@@ -460,10 +478,10 @@ body {
   font-family: var(--display); font-weight: 700; font-size: 1rem;
   margin: .25rem 0 .2rem; letter-spacing: -.01em;
 }
-.roles p { margin: 0; color: var(--mine); font-size: .93rem; line-height: 1.55; max-width: 60ch; }
+.roles p { margin: 0; color: var(--mine); font-size: .93rem; line-height: 1.55; max-width: var(--mesure); }
 .roles-note {
   margin: 1.4rem 0 0; padding-top: 1rem; border-top: 1px solid var(--trait);
-  font-size: .9rem; color: var(--mine); line-height: 1.6; max-width: 66ch;
+  font-size: .9rem; color: var(--mine); line-height: 1.6; max-width: var(--mesure);
 }
 
 /* suite : étape précédente / suivante */
@@ -510,7 +528,7 @@ body {
   background: var(--vif); transform: rotate(45deg) translateY(-1px);
 }
 .lexique dd {
-  margin: .3rem 0 .95rem; color: var(--mine); max-width: 68ch;
+  margin: .3rem 0 .95rem; color: var(--mine); max-width: var(--mesure);
   line-height: 1.55;
 }
 .synth-grille {
@@ -546,7 +564,7 @@ body {
   font-family: var(--display); font-weight: 700; font-size: 1.15rem;
   letter-spacing: -.02em; margin: 0 0 .35rem;
 }
-.accueil-mde p { margin: 0; color: var(--mine); max-width: 52ch; font-size: .95rem; line-height: 1.55; }
+.accueil-mde p { margin: 0; color: var(--mine); max-width: var(--mesure); font-size: .95rem; line-height: 1.55; }
 .accueil-mde .btn { flex: none; }
 
 /* ---------- mode d'emploi élève ----------
@@ -573,7 +591,7 @@ body {
   letter-spacing: -.02em; line-height: 1.25; margin: .35rem 0 .5rem;
   text-wrap: balance;
 }
-.mde-corps p { margin: 0 0 .5rem; max-width: 62ch; line-height: 1.6; }
+.mde-corps p { margin: 0 0 .5rem; max-width: var(--mesure); line-height: 1.6; }
 .mde-corps p:last-child { margin-bottom: 0; }
 
 .mde-attention, .mde-astuce {
@@ -589,7 +607,7 @@ body {
 }
 
 .mde-bloc { margin: 3rem 0 0; }
-.mde-intro { color: var(--mine); max-width: 62ch; margin: 1rem 0 0; }
+.mde-intro { color: var(--mine); max-width: var(--mesure); margin: 1rem 0 0; }
 .mde-bloc .docs { margin-top: 1.25rem; }
 
 .mde-faq { margin: 1.25rem 0 0; }
@@ -599,7 +617,7 @@ body {
   break-after: avoid; page-break-after: avoid;
 }
 .mde-faq dd {
-  margin: .3rem 0 1rem; color: var(--mine); max-width: 68ch; line-height: 1.55;
+  margin: .3rem 0 1rem; color: var(--mine); max-width: var(--mesure); line-height: 1.55;
 }
 
 @media (max-width: 30rem) {
@@ -624,7 +642,7 @@ body {
   letter-spacing: -.01em; margin-top: .8rem;
 }
 .mots-liste dt:first-of-type { margin-top: 0; }
-.mots-liste dd { margin: .15rem 0 0; color: var(--mine); font-size: .92rem; line-height: 1.5; max-width: 66ch; }
+.mots-liste dd { margin: .15rem 0 0; color: var(--mine); font-size: .92rem; line-height: 1.5; max-width: var(--mesure); }
 .mots-notions {
   display: flex; align-items: center; flex-wrap: wrap; gap: .4rem;
   margin: 1.1rem 0 0; padding-top: .9rem; border-top: 1px solid var(--trait);
@@ -695,7 +713,7 @@ body {
   font-family: var(--display); font-weight: 700; font-size: 1.45rem;
   letter-spacing: -.02em; line-height: 1.15;
 }
-.res-carte p { margin: .1rem 0 .35rem; color: var(--mine); max-width: 58ch; line-height: 1.55; }
+.res-carte p { margin: .1rem 0 .35rem; color: var(--mine); max-width: var(--mesure); line-height: 1.55; }
 .res-carte .aller { position: absolute; top: 1.5rem; right: 1.5rem; }
 
 .res-suite {
@@ -749,10 +767,10 @@ body {
 .lex-bandeau--conso { border-bottom-color: #6B4FCC; }
 .lex-bandeau--conso span { color: #6B4FCC; }
 
-.conso-intro { color: var(--mine); max-width: 66ch; margin: 0 0 1.25rem; line-height: 1.6; }
+.conso-intro { color: var(--mine); max-width: var(--mesure); margin: 0 0 1.25rem; line-height: 1.6; }
 .lex-theme--conso[open] { border-color: #6B4FCC; }
 .conso-corps { padding: 0 1.15rem 1.1rem; }
-.conso-chapeau { margin: 0 0 1rem; color: var(--mine); font-size: .93rem; line-height: 1.55; max-width: 66ch; }
+.conso-chapeau { margin: 0 0 1rem; color: var(--mine); font-size: .93rem; line-height: 1.55; max-width: var(--mesure); }
 .conso-schema { margin: 0 0 1.25rem; text-align: center; }
 .conso-schema img {
   max-width: 100%; height: auto;
@@ -769,11 +787,11 @@ body {
   background: color-mix(in srgb, #6B4FCC 12%, transparent);
   padding: .1rem .45rem; border-radius: 100px;
 }
-.conso-def { margin: 0; color: var(--mine); line-height: 1.55; max-width: 68ch; }
+.conso-def { margin: 0; color: var(--mine); line-height: 1.55; max-width: var(--mesure); }
 .conso-repere, .conso-piege {
   display: flex; gap: .55rem; flex-wrap: wrap; align-items: baseline;
   margin: .45rem 0 0; padding: .4rem .7rem; border-radius: 6px;
-  font-size: .89rem; line-height: 1.5; max-width: 68ch;
+  font-size: .89rem; line-height: 1.5; max-width: var(--mesure);
 }
 .conso-repere { background: color-mix(in srgb, var(--vif) 10%, transparent); }
 .conso-piege { background: color-mix(in srgb, #D9791E 13%, transparent); }
@@ -791,7 +809,7 @@ body {
    une décoration. */
 
 .simu-intro {
-  margin: 1rem 0 0; max-width: 68ch;
+  margin: 1rem 0 0; max-width: var(--mesure);
   color: var(--mine); font-size: .95rem; line-height: 1.55;
 }
 .simu-groupe { margin: 2rem 0 0; }
@@ -1168,7 +1186,7 @@ body {
 .proj-carte h2 a:focus-visible { outline: 2px solid var(--bleu); outline-offset: 3px; border-radius: 3px; }
 .proj-sous { margin: 0 0 .7rem; font-family: var(--mono); font-size: .74rem;
   letter-spacing: .04em; color: var(--bleu); }
-.proj-resume { margin: 0 0 1rem; color: var(--mine); line-height: 1.55; max-width: 64ch; }
+.proj-resume { margin: 0 0 1rem; color: var(--mine); line-height: 1.55; max-width: var(--mesure); }
 .proj-chiffres { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 0 0 1rem; }
 .proj-chiffres dt { font-family: var(--mono); font-size: .64rem; font-weight: 600;
   letter-spacing: .1em; text-transform: uppercase; color: var(--mine); }
@@ -1178,12 +1196,12 @@ body {
 .proj-note { margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--trait); }
 .proj-note h2 { font-family: var(--display); font-weight: 700; font-size: 1.15rem;
   letter-spacing: -.02em; margin: 0 0 .6rem; }
-.proj-note p { color: var(--mine); max-width: 68ch; line-height: 1.6; margin: 0 0 .8rem; }
+.proj-note p { color: var(--mine); max-width: var(--mesure); line-height: 1.6; margin: 0 0 .8rem; }
 
 .proj-avis {
   margin: 1.5rem 0; padding: .85rem 1.1rem; border-radius: var(--r);
   background: color-mix(in srgb, #D9791E 12%, transparent);
-  border-left: 3px solid #D9791E; font-size: .93rem; line-height: 1.55; max-width: 68ch;
+  border-left: 3px solid #D9791E; font-size: .93rem; line-height: 1.55; max-width: var(--mesure);
 }
 .proj-bloc { margin: 3rem 0 0; }
 .proj-chaine { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
@@ -1198,7 +1216,7 @@ body {
 .proj-seance-repere { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin: 0 0 .3rem; }
 .proj-seance h3 { font-family: var(--display); font-weight: 700; font-size: 1.08rem;
   letter-spacing: -.015em; line-height: 1.25; margin: 0 0 .25rem; text-wrap: balance; }
-.proj-question { margin: 0; color: var(--mine); font-size: .93rem; line-height: 1.5; max-width: 62ch; }
+.proj-question { margin: 0; color: var(--mine); font-size: .93rem; line-height: 1.5; max-width: var(--mesure); }
 .proj-detail { margin: .6rem 0 0; }
 .proj-detail summary {
   cursor: pointer; font-family: var(--mono); font-size: .68rem; font-weight: 600;
@@ -1209,7 +1227,7 @@ body {
 .proj-detail dt { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
   text-transform: uppercase; color: var(--mine); padding: .5rem 0; border-top: 1px solid var(--trait); }
 .proj-detail dd { margin: 0; padding: .5rem 0; border-top: 1px solid var(--trait);
-  font-size: .92rem; line-height: 1.55; max-width: 72ch; }
+  font-size: .92rem; line-height: 1.55; max-width: var(--mesure-large); }
 .proj-detail ul { margin: 0; padding-left: 1.1rem; }
 /* Le lien vers la fiche papier est ce que le professeur et l'élève absent
    viennent chercher : il sort du repli « Voir le détail » et reste visible
@@ -1232,7 +1250,7 @@ body {
 .proj-sous-titre { font-family: var(--display); font-weight: 700; font-size: 1rem;
   margin: 1.5rem 0 .5rem; }
 .proj-comp { margin: 1.25rem 0 0; padding-left: 1.2rem; }
-.proj-comp li { margin-bottom: .5rem; line-height: 1.55; max-width: 72ch; }
+.proj-comp li { margin-bottom: .5rem; line-height: 1.55; max-width: var(--mesure-large); }
 .proj-comp--transversal li { color: var(--mine); font-size: .93rem; }
 
 @media (max-width: 34rem) {
@@ -1327,7 +1345,7 @@ body {
   margin: 1.75rem 0 0; padding: 1rem 1.2rem;
   border-radius: var(--r); border-left: 3px solid var(--bleu);
   background: var(--calque);
-  font-size: .95rem; line-height: 1.65; max-width: 68ch;
+  font-size: .95rem; line-height: 1.65; max-width: var(--mesure);
 }
 
 /* ---------- quiz de révision ----------
@@ -1355,7 +1373,7 @@ body {
 .quiz-question {
   font-family: var(--display); font-weight: 700; font-size: 1.2rem;
   letter-spacing: -.015em; line-height: 1.35; margin: 0 0 1.2rem;
-  max-width: 60ch; text-wrap: balance;
+  max-width: var(--mesure); text-wrap: balance;
 }
 .quiz-reponses { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
 .quiz-choix {
@@ -1390,7 +1408,7 @@ body {
 }
 .quiz-fin h2 { font-family: var(--display); margin: 0 0 .5rem; font-size: 1.3rem; }
 .quiz-score { margin: 0 0 .3rem; font-size: 1.5rem; font-weight: 700; font-family: var(--display); }
-.quiz-conseil { margin: 0 0 1.2rem; color: var(--mine); max-width: 52ch; margin-inline: auto; }
+.quiz-conseil { margin: 0 0 1.2rem; color: var(--mine); max-width: var(--mesure); margin-inline: auto; }
 .quiz-fin .docs { justify-content: center; }
 
 /* index des quiz */
@@ -1448,7 +1466,7 @@ body {
 .conv-table td { height: 2.1rem; background: var(--papier); }
 .conv-regle {
   margin: .8rem 0 .6rem; font-size: .92rem; line-height: 1.5;
-  color: var(--encre); font-weight: 600; max-width: 70ch;
+  color: var(--encre); font-weight: 600; max-width: var(--mesure);
 }
 .conv-egalites {
   margin: 0; padding: .7rem .9rem; list-style: none;
@@ -1473,7 +1491,7 @@ body {
   font-family: var(--display); font-weight: 700; font-size: 1.25rem;
   letter-spacing: -.02em; margin: 0 0 .9rem; text-wrap: balance;
 }
-.accueil-histoire p { margin: 0 0 .85rem; line-height: 1.65; max-width: 68ch; }
+.accueil-histoire p { margin: 0 0 .85rem; line-height: 1.65; max-width: var(--mesure); }
 .accueil-histoire p:last-child { margin-bottom: 0; }
 .accueil-histoire-annee {
   padding: .9rem 1.1rem; border-radius: 8px; background: var(--papier);
