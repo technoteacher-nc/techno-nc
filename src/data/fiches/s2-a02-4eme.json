@@ -25,6 +25,20 @@
    "question": "Comment plusieurs objets se mettent-ils d'accord pour rendre un service que ni l'un ni l'autre ne rend seul ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les quatre rôles d'un système automatisé"
@@ -34,34 +48,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Un CAPTEUR acquiert une information du monde réel : mouvement, lumière, température, présence."
-    }
-   ]
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "Un MICROCONTRÔLEUR traite l'information et décide quoi faire."
-    }
-   ]
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "Un ACTIONNEUR transforme de l'énergie en action : s'allumer, ouvrir, sonner."
-    }
-   ]
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "Une IHM (interface homme-machine) communique avec l'utilisateur : écran, notification, voyant."
+     "v": "AU TABLEAU — l’apport de la séance reste projeté. Regarde l’écran dès que tu bloques."
     }
    ]
   },
@@ -319,15 +306,6 @@
    "titre": "La chaîne d'information"
   },
   {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "Dans tout système automatisé, l'information suit trois étapes, toujours dans le même ordre : ① ACQUÉRIR, ② TRAITER, ③ COMMUNIQUER."
-    }
-   ]
-  },
-  {
    "type": "consigne",
    "texte": "Écris le numéro de l'étape (1, 2 ou 3) devant chaque objet. La première ligne est un exemple."
   },
@@ -481,15 +459,6 @@
    "type": "partie",
    "numero": "3",
    "titre": "Je schématise en SysML"
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "Un schéma SysML représente un système par des blocs rectangulaires nommés, reliés par des flèches étiquetées avec ce qui circule."
-    }
-   ]
   },
   {
    "type": "consigne",

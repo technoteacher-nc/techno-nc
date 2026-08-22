@@ -6,11 +6,20 @@
 // Rien de tout cela n'était écrit : le pied de page portait la licence et la
 // promesse « aucun cookie », ce qui est le fond mais pas la forme.
 //
-// ⚠ DEUX CHAMPS RESTENT À COMPLÉTER par le professeur, et ils sont signalés
-// comme tels dans la page plutôt que devinés : le nom du responsable de
-// publication, et l'adresse de contact. Écrire un nom ou un courriel à sa
-// place serait publier une information fausse sur une page qui existe
-// précisément pour dire le vrai.
+// ─────────────────────────────────────────────────────────────────────────────
+// POURQUOI LE NOM DU RESPONSABLE N'EST PAS ÉCRIT ICI
+//
+// La LCEN (loi n° 2004-575 du 21 juin 2004, article 6-III) distingue deux cas.
+// Un éditeur PROFESSIONNEL doit publier son identité complète. Un éditeur NON
+// PROFESSIONNEL — celui qui publie hors activité commerciale, et c'est le cas
+// d'un site de classe sans publicité, sans vente et sans revenu — peut ne
+// publier QUE l'identité de son hébergeur, à condition d'avoir communiqué la
+// sienne à cet hébergeur. C'est fait : le compte GitHub qui héberge ce site
+// porte l'identité du professeur.
+//
+// La page nomme donc l'hébergeur en entier, et n'expose pas d'adresse
+// personnelle. Si le professeur préfère se nommer, il suffit de remplir
+// RESPONSABLE ci-dessous : le bloc apparaît alors de lui-même.
 //
 // L'accessibilité est déclarée telle qu'elle est — des mesures prises, pas
 // d'audit RGAA réalisé — parce qu'une déclaration de conformité qu'on n'a pas
@@ -20,7 +29,12 @@ import Base from '../layouts/Base.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
-const A_COMPLETER = '— à compléter —';
+
+// Laisser vide pour s'en tenir au régime « éditeur non professionnel ».
+// Renseigner pour publier son identité : le paragraphe s'affiche alors.
+const RESPONSABLE = '';
+
+const DEPOT = 'https://github.com/technoteacher-nc/techno-nc';
 ---
 <Base
   titre="Mentions légales"
@@ -43,10 +57,16 @@ const A_COMPLETER = '— à compléter —';
       Il est réalisé et tenu par le professeur de technologie de l'établissement,
       à titre de ressource de classe.
     </p>
-    <p class="acompleter">
-      <b>Responsable de la publication :</b> {A_COMPLETER}<br />
-      <b>Contact :</b> {A_COMPLETER}
-    </p>
+    {RESPONSABLE
+      ? <p><b>Responsable de la publication :</b> {RESPONSABLE}</p>
+      : <p class="note">
+          Ce site est édité à titre <b>non professionnel</b> : il ne vend rien, ne
+          diffuse aucune publicité et ne rapporte rien. Conformément à
+          l'article 6-III-2 de la loi n° 2004-575 du 21 juin 2004 pour la
+          confiance dans l'économie numérique, l'éditeur a communiqué son
+          identité à son hébergeur et n'est donc pas tenu de la publier ici.
+          L'identité de l'hébergeur, elle, figure ci-dessous en entier.
+        </p>}
     <p class="note">
       Ce site n'est pas le site officiel de l'établissement, ni celui du
       vice-rectorat. Il ne publie ni note, ni information sur un élève.
@@ -54,10 +74,39 @@ const A_COMPLETER = '— à compléter —';
 
     <h2>Hébergement</h2>
     <p>
-      Le site est hébergé par <b>GitHub Pages</b> — GitHub, Inc., 88 Colin P.
-      Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+      Le site est hébergé par <b>GitHub Pages</b>, service de :
+    </p>
+    <p class="adresse">
+      GitHub, Inc.<br />
+      88 Colin P. Kelly Jr. Street<br />
+      San Francisco, CA 94107<br />
+      États-Unis<br />
+      <a href="https://github.com" rel="noopener">github.com</a>
+    </p>
+    <p>
       Il s'agit de pages <b>statiques</b> : aucun programme ne s'exécute côté
       serveur, aucun formulaire n'est transmis, aucune base de données n'existe.
+      Les pages sont reconstruites automatiquement à partir du dépôt
+      <a href={DEPOT} rel="noopener">technoteacher-nc/techno-nc</a>,
+      à chaque modification.
+    </p>
+    <p class="note">
+      L'hébergement se fait aux États-Unis. Comme aucune donnée personnelle
+      n'est collectée ni transmise par ce site (voir ci-dessous), aucun
+      transfert de données hors Union européenne n'a lieu de ce fait.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Pour signaler une erreur, un lien mort ou un défaut d'accessibilité :
+      ouvrir un signalement sur le dépôt du site,
+      <a href={DEPOT + '/issues'} rel="noopener">technoteacher-nc/techno-nc/issues</a>.
+    </p>
+    <p>
+      Pour toute autre demande — droit de réponse, contenu, réutilisation —
+      passer par le <b>collège d'Auteuil</b>, qui transmettra à l'éditeur.
+      Les élèves et leurs familles peuvent aussi s'adresser directement au
+      professeur de technologie de l'établissement.
     </p>
 
     <h2>Données personnelles</h2>
@@ -124,8 +173,8 @@ const A_COMPLETER = '— à compléter —';
         et en <b>version remplissable</b> pour qui ne peut pas écrire à la main.</li>
     </ul>
     <p>
-      Un défaut d'accessibilité rencontré peut être signalé à l'adresse de
-      contact ci-dessus : il sera corrigé.
+      Un défaut d'accessibilité rencontré peut être signalé par l'un des moyens
+      indiqués plus haut : il sera corrigé.
     </p>
 
     <h2>Liens vers d'autres sites</h2>
@@ -147,6 +196,6 @@ const A_COMPLETER = '— à compléter —';
   .ml ul { padding-left: 1.2rem; }
   .ml li { margin: .3rem 0; }
   .note { font-size: .92rem; color: var(--mine, #5b6572); }
-  .acompleter { border: 1px dashed var(--trait, #d5d9de); border-radius: 8px;
-    padding: .7rem .9rem; background: var(--calque, #f2f4f7); }
+  .adresse { border-left: 3px solid var(--trait, #d5d9de); padding-left: .9rem;
+    font-style: normal; line-height: 1.5; }
 </style>

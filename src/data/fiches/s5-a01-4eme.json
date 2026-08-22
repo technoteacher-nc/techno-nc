@@ -24,6 +24,20 @@
    "question": "Comment traduire un besoin flou en cahier des charges précis et vérifiable ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Formuler le besoin : les 3 questions"

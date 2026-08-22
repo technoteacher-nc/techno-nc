@@ -25,6 +25,20 @@
    "question": "Où va un objet technique quand on ne s'en sert plus, et pourquoi est-ce un problème en Nouvelle-Calédonie ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les cinq étapes, et leur coût"

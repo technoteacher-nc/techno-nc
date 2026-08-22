@@ -25,6 +25,20 @@
    "question": "Pourquoi les objets techniques évoluent-ils au fil du temps ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Je remets la frise dans l'ordre"
@@ -589,7 +603,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Sur la route de Pouembout, des panneaux solaires sont montés sur des « trackers » qui tournent seuls pour suivre le soleil. Le panneau fixe ne sait rien ; le tracker sait où est le soleil."
+     "v": "AU TABLEAU — l’apport de la séance reste projeté. Regarde l’écran dès que tu bloques."
     }
    ]
   },
@@ -881,11 +895,6 @@
      }
     ]
    ]
-  },
-  {
-   "type": "citation",
-   "texte": "On ne fait pas mieux qu'hier avec les outils d'hier.",
-   "auteur": "Adage d'atelier"
   }
  ]
 }

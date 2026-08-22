@@ -25,6 +25,20 @@
    "question": "Comment un seul stylo peut-il écrire de quatre couleurs sans jamais les mélanger ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "J'observe"

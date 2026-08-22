@@ -1,5 +1,5 @@
 {
-  "genere": "2026-08-21",
+  "genere": "2026-08-22",
   "programme": {
     "reference": "Programme de technologie du cycle 4 — BO n°9 du 29 février 2024",
     "url": "https://www.education.gouv.fr/bo/2024/Hebdo9/MENE2402580A",
@@ -79,7 +79,7 @@
     "termesLexique": 114,
     "quizSeries": 15,
     "quizQuestions": 150,
-    "activitesAvecProjection": 21
+    "activitesAvecProjection": 23
   },
   "parcours": [
     {
@@ -839,7 +839,7 @@
               "demarche": "investigation",
               "demarcheLabel": "Démarche d'investigation",
               "objectif": "Tu sauras repérer capteur, microcontrôleur et actionneur, et suivre la chaîne.",
-              "projete": false,
+              "projete": true,
               "ebep": true
             },
             {
@@ -875,7 +875,7 @@
               "demarche": "investigation",
               "demarcheLabel": "Démarche d'investigation",
               "objectif": "Tu sauras distinguer le besoin, qui ne change pas, de la solution, qui change.",
-              "projete": false,
+              "projete": true,
               "ebep": true
             },
             {

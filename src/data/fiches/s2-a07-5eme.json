@@ -24,6 +24,20 @@
    "question": "Comment choisir l'objet le plus adapté à un besoin, sans se tromper ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Je lis les fiches produits  (documents projetés au tableau)"

@@ -25,6 +25,20 @@
    "question": "Pourquoi une feuille posée à plat s'effondre-t-elle, alors que la même feuille roulée porte cent fois plus ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Je lis le cahier des charges"

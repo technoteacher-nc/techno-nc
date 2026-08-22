@@ -24,6 +24,20 @@
    "question": "Comment mon travail peut-il me suivre d'un ordinateur à l'autre au collège ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D'APRÈS TOI ? Réponds AVANT de commencer, même sans être sûr. Ça ne se note pas."
+    }
+   ]
+  },
+  {
+   "type": "lignes",
+   "n": 1,
+   "points": 140
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Le voyage de mon fichier  (schéma ci-dessous)"
