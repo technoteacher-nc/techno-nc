@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import Citation from '../../../components/Citation.astro';
 import { getCollection } from 'astro:content';
-import { simulateursDe, motsDe } from '../../../data/ressources';
+import { simulateursDe, motsDe, syntheseDe } from '../../../data/ressources';
 import { notionsDe } from '../../../data/consolidation';
 import demarche from '../../../data/demarche.json';
 import { statSync, existsSync, readFileSync } from 'node:fs';
@@ -88,6 +88,11 @@ const question = (d.question || '').replace(/^PROBL[ÉE]MATIQUE\s*:\s*/i, '');
 // consolidation confondus. Mieux vaut trois mots au bon endroit qu'une liste
 // de dix-huit définitions à trier soi-même.
 const mots = motsDe(act.id);
+
+// La synthèse à trous de la séquence. Ces mots-ci y reviennent tous, en blanc :
+// dire où elle est, sur la page où l'élève les découvre, évite qu'il la cherche
+// dans /ressources au moment où il en a besoin — c'est-à-dire trop tard.
+const synthese = syntheseDe(act.id);
 const notions = notionsDe(act.id);
 
 const urlPage = new URL(u(`/${d.annee}/${d.seq}/${act.id}`) + '/', Astro.site).href;
@@ -186,6 +191,13 @@ const donneesLd = [
               {n.nom}{n.symbole && <em>{n.symbole}</em>}
             </a>
           ))}
+        </p>
+      )}
+      {synthese && (
+        <p class="mots-synthese">
+          <strong>Ces mots reviennent tous dans la synthèse de la séquence</strong>, en blanc à compléter :
+          {' '}<a href={u(synthese.pdf)} download>télécharger la synthèse (PDF)</a> —
+          {' '}<a href={u(synthese.pdfEbep)} download>version adaptée</a>.
         </p>
       )}
       <p class="mots-lien"><a href={u('/ressources/lexique')}>Tout le lexique →</a></p>

@@ -63,6 +63,39 @@ export const syntheses = [
   },
 ];
 
+// ---------------------------------------------------------------------------
+// LES SYNTHÈSES À TROUS, une par séquence et par niveau.
+//
+// Ce ne sont pas les mêmes documents que `syntheses` ci-dessus : celles-là
+// traitent une NOTION du cycle 4 et se lisent, celles-ci font la trace écrite
+// d'UNE séquence et se complètent, avec les mots du lexique rattachés à ses
+// activités. Les deux familles cohabitent sur /ressources/syntheses.
+//
+// ⚠ La liste n'est PAS écrite ici : elle est produite par
+// `node tools/gen-syntheses-seq.cjs`, en même temps que les documents. Une
+// synthèse ajoutée ou retirée suit toute seule — c'est le contraire de ce qui
+// était arrivé au lexique, dont la copie en ligne et la copie imprimable
+// avaient divergé sans que rien ne le signale.
+import donneesSynthesesSeq from './syntheses-seq.json';
+
+export type SyntheseSequence = {
+  nom: string; cle: string; niveau: string; niveauLabel: string;
+  titre: string; detail: string; projet: boolean;
+  mots: number; sections: number;
+  pdf: string; docx: string; pdfEbep: string; docxEbep: string;
+};
+
+export const synthesesSequence: SyntheseSequence[] = donneesSynthesesSeq.syntheses;
+
+// La synthèse qui correspond à une activité, s'il y en a une. Le slug d'une
+// activité de séquence est « s3-a02-4eme », celui d'une activité de projet
+// « pont-a4-a01 » : dans les deux cas, la clé de synthèse s'en déduit.
+export const syntheseDe = (slug: string): SyntheseSequence | undefined => {
+  const m = slug.match(/^(s\d+)-a\d+-(\w+)$/);
+  const cle = m ? `${m[1]}-${m[2]}` : 'projet-' + slug.replace(/-a\d+$/, '');
+  return synthesesSequence.find(s => s.cle === cle);
+};
+
 export const lexiquePdf = '/ressources/LEXIQUE_Technologie_Cycle4.pdf';
 export const lexiqueDocx = '/ressources/LEXIQUE_Technologie_Cycle4.docx';
 

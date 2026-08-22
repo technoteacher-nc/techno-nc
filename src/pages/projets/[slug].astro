@@ -10,6 +10,7 @@
 import Base from '../../layouts/Base.astro';
 import Citation from '../../components/Citation.astro';
 import donnees from '../../data/projets.json';
+import { synthesesSequence } from '../../data/ressources';
 
 export function getStaticPaths() {
   return donnees.projets.map(p => ({ params: { slug: p.slug }, props: { projet: p } }));
@@ -25,6 +26,10 @@ const competences = [...new Set(projet.activites.flatMap(a => a.competences))].s
 const transversal = [...new Set(projet.activites.map(a => a.transversal).filter(Boolean))];
 
 const urlPage = new URL(u(`/projets/${projet.slug}/`), Astro.site).href;
+
+// La synthèse à trous du projet : son vocabulaire, à retrouver de mémoire en
+// fin de parcours. Elle est rattachée au projet, pas à une de ses six séances.
+const synthese = synthesesSequence.find(s => s.cle === 'projet-' + projet.slug);
 const donneesLd = {
   '@context': 'https://schema.org',
   '@type': 'LearningResource',
@@ -123,6 +128,22 @@ const donneesLd = {
       </>
     )}
   </section>
+
+  {synthese && (
+    <section class="proj-synthese">
+      <h2 class="proj-sous-titre">La synthèse du projet</h2>
+      <p>
+        Le vocabulaire du projet, à compléter en fin de parcours :
+        <b>{synthese.mots} mots à placer</b>, tous définis dans le
+        {' '}<a href={u('/ressources/lexique')}>lexique</a>. À coller dans le classeur.
+      </p>
+      <div class="proj-fiche">
+        <a class="btn btn--fort btn--fiche" href={u(synthese.pdf)} download>Synthèse (PDF)</a>
+        <a class="btn btn--fiche" href={u(synthese.docx)} download>DOCX</a>
+        <a class="btn btn--fiche" href={u(synthese.pdfEbep)} download>Version adaptée</a>
+      </div>
+    </section>
+  )}
 
   <!-- Le QR mène à CETTE page : c'est lui qui est imprimé en tête de chaque
        fiche du projet, et il ramène l'élève au déroulé complet — pas à

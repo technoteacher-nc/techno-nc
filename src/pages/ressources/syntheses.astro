@@ -2,7 +2,7 @@
 // Fiches de synthèse — la ressource de révision n°1 avant une évaluation.
 import Base from '../../layouts/Base.astro';
 import Citation from '../../components/Citation.astro';
-import { syntheses } from '../../data/ressources';
+import { syntheses, synthesesSequence } from '../../data/ressources';
 import { statSync } from 'node:fs';
 import path from 'node:path';
 
@@ -18,20 +18,27 @@ function poids(rel) {
   } catch { return null; }
 }
 
+// Les synthèses de séquence, regroupées par niveau puis projets. L'ordre vient
+// du fichier produit par le générateur : il suit la progression de l'année.
+const GROUPES = [
+  { code: '5eme', titre: '5ème', filtre: s => s.niveau === '5eme' && !s.projet },
+  { code: '4eme', titre: '4ème', filtre: s => s.niveau === '4eme' && !s.projet },
+  { code: 'projets', titre: 'Projets de fabrication', filtre: s => s.projet },
+].map(g => ({ ...g, items: synthesesSequence.filter(g.filtre) }));
+
 const urlPage = new URL(u('/ressources/syntheses/'), Astro.site).href;
 const donneesLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Fiches de synthèse — Technologie cycle 4',
   url: urlPage,
-  itemListElement: syntheses.map((s, i) => ({
-    '@type': 'ListItem', position: i + 1, name: s.titre,
-  })),
+  itemListElement: [...synthesesSequence.map(s => s.titre), ...syntheses.map(s => s.titre)]
+    .map((name, i) => ({ '@type': 'ListItem', position: i + 1, name })),
 };
 ---
 <Base
   titre="Fiches de synthèse — Technologie cycle 4"
-  description="Les notions du cycle 4 résumées en une page chacune, avec schémas et quiz : les deux chaînes, le cycle de vie, les matériaux, le diagnostic de panne.">
+  description="La synthèse à trous de chaque séquence, à compléter avec les mots du lexique, et les fiches par notion : les deux chaînes, le cycle de vie, les matériaux, le diagnostic de panne.">
 
   <script type="application/ld+json" slot="tete" set:html={JSON.stringify(donneesLd)} />
 
@@ -43,10 +50,53 @@ const donneesLd = {
     <span class="eyebrow leve leve-1">À relire avant une éval</span>
     <h1 class="leve leve-1">Fiches de <em>synthèse</em></h1>
     <p class="leve leve-2">
-      Une notion par fiche, une page chacune : l'essentiel, un schéma et un quiz
-      pour te tester. Prends-les en PDF pour lire hors connexion.
+      Deux familles : la <strong>synthèse de ta séquence</strong>, à compléter
+      avec les mots du lexique, et les <strong>fiches par notion</strong>, à
+      lire. Prends-les en PDF pour travailler hors connexion.
     </p>
   </section>
+
+  <section class="synth-bloc leve leve-3">
+    <h2 class="synth-titre">La synthèse de ta séquence</h2>
+    <p class="synth-chapo">
+      Une feuille par séquence : tout ce qu'il fallait retenir, avec les
+      mots-clés laissés en blanc. Les mots à placer sont exactement ceux du
+      <a href={u('/ressources/lexique')}>lexique</a> rattachés aux activités de
+      la séquence — tu peux donc t'y reporter pour chaque définition. À coller
+      dans le classeur après la dernière séance.
+    </p>
+
+    {GROUPES.map(g => (
+      <div class="synth-groupe">
+        <h3 class="synth-niveau">{g.titre}</h3>
+        <ul class="synth-liste">
+          {g.items.map(s => {
+            const sp = poids(s.pdf), se = poids(s.pdfEbep);
+            return (
+              <li class="synth-ligne">
+                <div class="synth-quoi">
+                  <span class="eyebrow-mini">{s.detail}</span>
+                  <strong>{s.titre}</strong>
+                  <span class="synth-compte">{s.mots} mots à placer · {s.sections} parties</span>
+                </div>
+                <div class="docs">
+                  <a class="btn btn--fort" href={u(s.pdf)} download>PDF{sp && <span class="btn-meta">{sp}</span>}</a>
+                  <a class="btn" href={u(s.docx)} download>DOCX</a>
+                  <a class="btn" href={u(s.pdfEbep)} download title="Version adaptée : les idées essentielles, en gros caractères, sur une page">Version adaptée{se && <span class="btn-meta">{se}</span>}</a>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <h2 class="synth-titre">Les fiches par notion</h2>
+  <p class="synth-chapo">
+    Celles-ci ne se complètent pas : elles se lisent. Une notion du cycle 4 par
+    fiche, avec son schéma et son quiz.
+  </p>
 
   <div class="synth-grille leve leve-3">
     {syntheses.map(s => {

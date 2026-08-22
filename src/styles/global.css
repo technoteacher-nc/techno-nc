@@ -570,6 +570,39 @@ body {
   margin: .3rem 0 .95rem; color: var(--mine); max-width: var(--mesure);
   line-height: 1.55;
 }
+/* Les synthèses de SÉQUENCE. Elles sont listées, pas mises en cartes : il y en
+   a quinze, et ce qu'on y cherche est une ligne précise — « ma séquence, mon
+   niveau » — pas une vitrine à parcourir. */
+.synth-titre {
+  font-family: var(--display); font-weight: 700; font-size: 1.28rem;
+  letter-spacing: -.015em; margin: 2.4rem 0 .2rem;
+}
+.synth-chapo {
+  margin: .35rem 0 0; color: var(--mine); max-width: var(--mesure);
+  line-height: 1.55; font-size: .95rem;
+}
+.synth-bloc { margin: 0; }
+.synth-groupe { margin: 1.4rem 0 0; }
+.synth-niveau {
+  font-family: var(--mono); font-size: .76rem; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--mine);
+  margin: 0 0 .5rem; padding-bottom: .35rem;
+  border-bottom: 1px solid var(--trait);
+}
+.synth-liste { list-style: none; margin: 0; padding: 0; }
+.synth-ligne {
+  display: flex; flex-wrap: wrap; gap: .7rem 1rem;
+  align-items: center; justify-content: space-between;
+  padding: .8rem 0; border-bottom: 1px solid var(--trait);
+}
+.synth-quoi { display: flex; flex-direction: column; gap: .15rem; min-width: 16rem; flex: 1 1 20rem; }
+.synth-quoi strong { font-size: 1rem; line-height: 1.35; }
+.synth-compte { font-family: var(--mono); font-size: .74rem; color: var(--mine); }
+.synth-ligne .docs { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; }
+@media (max-width: 40rem) {
+  .synth-ligne { align-items: flex-start; }
+}
+
 .synth-grille {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
   margin: 1.25rem 0 0;
@@ -702,6 +735,17 @@ body {
 .mots-puce em { font-style: normal; font-family: var(--mono); font-size: .74rem; color: var(--mine); }
 .mots-lien { margin: .9rem 0 0; font-size: .85rem; }
 .mots-lien a { color: var(--bleu); }
+
+/* Le renvoi vers la synthèse de la séquence, sous le vocabulaire : c'est le
+   même vocabulaire, mais à retrouver de mémoire. */
+.mots-synthese {
+  margin: 1rem 0 0; padding: .7rem .9rem;
+  font-size: .88rem; line-height: 1.5;
+  border-left: 3px solid var(--bleu);
+  background: color-mix(in srgb, var(--bleu) 5%, transparent);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+.mots-synthese a { color: var(--bleu); }
 
 /* « Pour revoir cette notion » : une ou deux animations, sur la fiche même */
 .plus-loin {
@@ -1273,6 +1317,16 @@ body {
    sans avoir à déplier quoi que ce soit. */
 /* Deux boutons possibles : la fiche ordinaire et la version adaptée. Ils se
    mettent l'un sous l'autre plutôt que de déborder sur un écran de téléphone. */
+/* La synthèse du projet : un encart à part, après le déroulé — elle ne se
+   travaille pas pendant une séance, elle les récapitule toutes. */
+.proj-synthese {
+  margin: 2rem 0; padding: 1.15rem 1.35rem;
+  border-radius: var(--r); border: 1.5px solid var(--trait);
+  background: var(--papier);
+}
+.proj-synthese > p { margin: .3rem 0 0; color: var(--mine); line-height: 1.55; max-width: var(--mesure); }
+.proj-synthese .proj-sous-titre { margin-top: 0; }
+
 .proj-fiche { display: flex; flex-wrap: wrap; gap: .6rem; margin: .75rem 0 0; }
 .btn--fiche { font-size: .82rem; padding: .42rem .8rem; }
 .btn--fiche::before { content: "↓"; margin-right: .45rem; opacity: .65; }
