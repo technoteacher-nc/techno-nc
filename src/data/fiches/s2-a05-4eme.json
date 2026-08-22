@@ -39,6 +39,15 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Evolutech · Techno-Flash · rien à installer→ techno-flash.com/animations/Evoulutech-dgka75bx/Evolutech.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Je remets la frise dans l'ordre"

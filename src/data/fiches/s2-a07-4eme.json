@@ -38,6 +38,15 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — L’unité centrale · Techno-Flash · rien à installer→ techno-flash.com/animations/unicenligne/unite_centrale.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Je dépouille les devis  (documents projetés au tableau)"

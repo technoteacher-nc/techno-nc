@@ -24,6 +24,24 @@
    "question": "Comment un robot peut-il adapter son comportement à ce que mesurent ses capteurs ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Capteurs, actionneurs, interface · Techno-Flash · rien à installer→ techno-flash.com/animations/CAIkf46es/capteurs_actionneurs_interface.html"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 2 — mBlock · Makeblock · rien à installer→ ide.mblock.cc"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "La structure conditionnelle SI / SINON"

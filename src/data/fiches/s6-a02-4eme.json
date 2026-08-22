@@ -24,6 +24,15 @@
    "question": "Comment programmer un robot réel… et régler ce que la simulation ne montre pas ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — mBlock · Makeblock · rien à installer→ ide.mblock.cc"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "mBlock : connexion et blocs de base  (document projeté)"

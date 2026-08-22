@@ -24,6 +24,15 @@
    "question": "Comment reconnaître le cyberharcèlement, et que faire — que l'on soit victime ou témoin ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Internet Sans Crainte · Programme national · rien à installer→ www.internetsanscrainte.fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Harcèlement ou pas ?"

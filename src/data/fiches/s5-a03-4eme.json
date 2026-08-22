@@ -24,6 +24,24 @@
    "question": "Comment modéliser ma solution aux dimensions exactes de mon croquis ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Tinkercad · Autodesk · rien à installer→ www.tinkercad.com"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 2 — SketchUp · Trimble · rien à installer→ www.sketchup.com/fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "L'interface de SketchUp Make 2017  (document projeté)"

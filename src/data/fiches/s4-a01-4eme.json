@@ -38,6 +38,24 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Cybertech · Techno-Flash · rien à installer→ techno-flash.com/animations/Cybertech-45ejsu78f/cybertech.html"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 2 — Cybermalveillance.gouv.fr · Service public · rien à installer→ www.cybermalveillance.gouv.fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les 5 indices d'un message piégé  (document projeté)"

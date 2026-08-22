@@ -38,6 +38,15 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Le cahier des charges fonctionnel · Techno-Flash · rien à installer→ techno-flash.com/animations/cahier_des_charges/cahier_des_charges_fonctionnel.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Besoin ou simple envie ?"

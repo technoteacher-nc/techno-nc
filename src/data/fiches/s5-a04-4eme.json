@@ -24,6 +24,15 @@
    "question": "Comment finaliser un modèle 3D prêt pour la fabrication ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — SketchUp · Trimble · rien à installer→ www.sketchup.com/fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les fonctions du produit  (séance en groupe)"

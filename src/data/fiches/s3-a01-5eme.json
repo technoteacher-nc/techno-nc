@@ -38,6 +38,15 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Le réseau du collège · Techno-Flash · rien à installer→ techno-flash.com/animations/reseau_college/reseau_college.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Le voyage de mon fichier  (schéma ci-dessous)"

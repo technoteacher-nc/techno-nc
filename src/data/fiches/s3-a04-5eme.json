@@ -24,6 +24,15 @@
    "question": "Comment relier des ordinateurs pour qu'ils communiquent, et comment vérifier que ça marche ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Filius · Logiciel libre · à installer sur le poste→ www.lernsoftware-filius.de"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Avant de cliquer : ce que je vais construire"

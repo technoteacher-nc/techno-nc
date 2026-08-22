@@ -38,6 +38,15 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Internet Sans Crainte · Programme national · rien à installer→ www.internetsanscrainte.fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Traces volontaires, traces invisibles"

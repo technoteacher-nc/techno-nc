@@ -38,6 +38,24 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Chaîne d’énergie · Chaîne d’information · Techno-Flash · rien à installer→ techno-flash.com/animations/chaine_information/chaine_information.html"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 2 — Capteurs, actionneurs, interface · Techno-Flash · rien à installer→ techno-flash.com/animations/CAIkf46es/capteurs_actionneurs_interface.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Anatomie du robot  (robot en main + schéma ci-dessous)"

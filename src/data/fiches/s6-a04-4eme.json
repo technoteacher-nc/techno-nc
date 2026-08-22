@@ -24,6 +24,15 @@
    "question": "Comment mesurer et améliorer objectivement la performance d'un système programmé ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — mBlock · Makeblock · rien à installer→ ide.mblock.cc"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Le règlement (protocole de mesure)"

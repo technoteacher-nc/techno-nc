@@ -24,6 +24,24 @@
    "question": "Comment des réseaux différents communiquent-ils, et comment une URL devient-elle une adresse IP ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Fonctionnement des réseaux · Techno-Flash · rien à installer→ techno-flash.com/animations/FRju49qz/Fonctionnement_reseaux.html"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 2 — Filius · Logiciel libre · à installer sur le poste→ www.lernsoftware-filius.de"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Relier deux réseaux par un routeur"
@@ -417,7 +435,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ? Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … »"
+     "v": "2a. Que fait le serveur DNS quand tu tapes www.filius.com ? Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … » Complète : « Le serveur DNS … »"
     }
    ]
   },

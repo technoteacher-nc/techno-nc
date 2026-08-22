@@ -24,6 +24,15 @@
    "question": "Quel chemin parcourt un message qui voyage sur Internet ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Fonctionnement des réseaux · Techno-Flash · rien à installer→ techno-flash.com/animations/FRju49qz/Fonctionnement_reseaux.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Remets le voyage dans l'ordre"

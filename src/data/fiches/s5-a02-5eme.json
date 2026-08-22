@@ -24,6 +24,15 @@
    "question": "Comment dessiner un plan que tout le monde comprend, à la bonne échelle ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Le dessin technique · Techno-Flash · rien à installer→ techno-flash.com/animations/dessin_technique/dessin_technique.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les codes de l'architecte  (codes ci-dessous)"

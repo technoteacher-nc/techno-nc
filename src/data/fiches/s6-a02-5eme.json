@@ -24,6 +24,15 @@
    "question": "Comment traduire mon algorithme papier en programme qui s'exécute ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Scratch · MIT · rien à installer→ scratch.mit.edu"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "L'interface de Scratch  (document projeté)"

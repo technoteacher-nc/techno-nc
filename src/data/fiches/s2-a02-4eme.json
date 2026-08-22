@@ -39,6 +39,15 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — La chaîne d’information · Techno-Flash · rien à installer→ techno-flash.com/animations/chaine_information/chaine_information.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les quatre rôles d'un système automatisé"

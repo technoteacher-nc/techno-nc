@@ -24,6 +24,15 @@
    "question": "Comment concevoir, tester et améliorer un programme qui répond à un cahier des charges ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Scratch · MIT · rien à installer→ scratch.mit.edu"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Le cahier des charges du défi"

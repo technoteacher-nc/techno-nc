@@ -24,6 +24,15 @@
    "question": "Comment un programme peut-il mémoriser et faire évoluer une valeur ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Scratch · MIT · rien à installer→ scratch.mit.edu"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "La variable : la mémoire du programme"

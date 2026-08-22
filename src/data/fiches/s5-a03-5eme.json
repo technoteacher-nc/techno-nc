@@ -24,6 +24,15 @@
    "question": "Comment transformer mon plan papier en maquette numérique ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Sweet Home 3D · Logiciel libre · à installer sur le poste→ www.sweethome3d.com/fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Les 4 zones du logiciel  (document projeté)"

@@ -24,6 +24,15 @@
    "question": "Comment finaliser et présenter ma maquette numérique ?"
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Sweet Home 3D · Logiciel libre · à installer sur le poste→ www.sweethome3d.com/fr"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Portes, fenêtres, meubles  (séance en groupe)"

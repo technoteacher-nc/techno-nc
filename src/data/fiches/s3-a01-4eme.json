@@ -19,7 +19,7 @@
   {
    "type": "situation",
    "lignes": [
-    "Depuis la salle des professeurs (réseau administratif), impossible d'ouvrir les dossiers de la salle 207 (réseau pédagogique). Pourtant, tout est « au collège » ! Le schéma ci-dessous montre les deux réseaux… et une bizarrerie : des ordinateurs ont la MÊME adresse IP."
+    "Depuis la salle des professeurs (réseau administratif), impossible d'ouvrir les dossiers de la salle 207 (réseau pédagogique). Le schéma ci-dessous montre les deux réseaux, et une bizarrerie : des ordinateurs y ont la MÊME adresse IP."
    ],
    "question": "Comment les ordinateurs sont-ils organisés en réseaux, et comment deux réseaux différents communiquent-ils ?"
   },
@@ -38,13 +38,22 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Fonctionnement des réseaux · Techno-Flash · rien à installer→ techno-flash.com/animations/FRju49qz/Fonctionnement_reseaux.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "Anatomie du réseau  (schéma ci-dessous)"
   },
   {
    "type": "consigne",
-   "texte": "Reporte chaque numéro du schéma devant le bon élément et indique son rôle. Liste mélangée avec UN intrus."
+   "texte": "Reporte chaque numéro du schéma devant le bon élément et indique son rôle."
   },
   {
    "type": "schema",
@@ -56,7 +65,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "Liste mélangée : routeur — processeur — serveur — commutateur (switch) — terminal (poste) — câble réseau"
+     "v": "Liste mélangée, avec UN intrus : routeur — processeur — serveur — commutateur (switch) — terminal (poste) — câble réseau"
     }
    ]
   },

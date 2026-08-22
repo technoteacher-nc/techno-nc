@@ -39,22 +39,22 @@
    "points": 140
   },
   {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "RESSOURCE 1 — Les périphériques · Techno-Flash · rien à installer→ techno-flash.com/animations/les_peripheriques/les_peripheriques.html"
+    }
+   ]
+  },
+  {
    "type": "partie",
    "numero": "1",
    "titre": "J'explore l'animation"
   },
   {
    "type": "consigne",
-   "texte": "Ouvre l'adresse ci-dessous, puis coche chaque case quand tu as fait ce qui est écrit."
-  },
-  {
-   "type": "texte",
-   "segments": [
-    {
-     "t": "texte",
-     "v": "techno-flash.com/animations/les_peripheriques/les_peripheriques.html"
-    }
-   ]
+   "texte": "Ouvre l'adresse de la RESSOURCE 1 (en haut de la fiche), puis coche chaque case."
   },
   {
    "type": "coches",
