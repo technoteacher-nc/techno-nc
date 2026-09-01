@@ -577,7 +577,7 @@
               "phase": "Modéliser",
               "demarche": "tp",
               "demarcheLabel": "Travaux pratiques",
-              "objectif": "Tu sauras créer une variable et la faire évoluer pour dessiner une spirale.",
+              "objectif": "Tu sauras dire en français ce que fait un programme, et faire évoluer une variable.",
               "projete": true,
               "ebep": true
             },
