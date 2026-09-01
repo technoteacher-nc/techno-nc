@@ -294,7 +294,33 @@
             "s2-a07-4eme",
             "s2-a07-5eme",
             "s2-a04-5eme",
-            "s2-a04-4eme"
+            "s2-a04-4eme",
+            "s2-a08-5eme",
+            "s2-a08-4eme"
+          ]
+        },
+        {
+          "mot": "Panne",
+          "def": "Un objet en panne ne fait plus ce pour quoi il est fait. Attention : en panne ne veut pas dire cassé — un cheveu dans une molette suffit à mettre une souris en panne.",
+          "activites": [
+            "s2-a08-5eme",
+            "s2-a08-4eme"
+          ]
+        },
+        {
+          "mot": "Diagnostic",
+          "def": "Chercher CE QUI ne marche plus avant de réparer. On teste chaque fonction l'une après l'autre : c'est le diagnostic qui dit où intervenir, pas le tournevis.",
+          "activites": [
+            "s2-a08-5eme",
+            "s2-a08-4eme"
+          ]
+        },
+        {
+          "mot": "Protocole",
+          "def": "Une suite d'étapes numérotées à suivre dans l'ordre, sans en sauter. Un protocole permet à deux personnes différentes d'obtenir le même résultat.",
+          "activites": [
+            "s2-a08-5eme",
+            "s2-a08-4eme"
           ]
         },
         {

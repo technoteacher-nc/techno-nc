@@ -63,7 +63,7 @@
     {
       "cle": "tp",
       "label": "Travaux pratiques",
-      "nombre": 17
+      "nombre": 19
     },
     {
       "cle": "projet",
@@ -72,14 +72,14 @@
     }
   ],
   "chiffres": {
-    "activites": 77,
+    "activites": 79,
     "sequences": 6,
     "projets": 3,
-    "ebep": 77,
-    "termesLexique": 114,
+    "ebep": 79,
+    "termesLexique": 117,
     "quizSeries": 15,
     "quizQuestions": 150,
-    "activitesAvecProjection": 23
+    "activitesAvecProjection": 25
   },
   "parcours": [
     {
@@ -289,6 +289,18 @@
               "demarche": "investigation",
               "demarcheLabel": "Démarche d'investigation",
               "objectif": "Tu sauras comparer des fiches produits et choisir en justifiant avec des chiffres.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a08-5eme",
+              "code": "S2-A08",
+              "titre": "LA SOURIS QUI NE CLIQUE PLUS — DIAGNOSTIQUER ET RÉPARER",
+              "semaine": "BONUS",
+              "phase": "Produire",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras trouver la panne d'une souris et la réparer en suivant un protocole.",
               "projete": true,
               "ebep": true
             }
@@ -899,6 +911,18 @@
               "demarche": "investigation",
               "demarcheLabel": "Démarche d'investigation",
               "objectif": "Tu sauras comparer deux devis et recommander un achat en respectant un budget.",
+              "projete": true,
+              "ebep": true
+            },
+            {
+              "slug": "s2-a08-4eme",
+              "code": "S2-A08",
+              "titre": "LA SOURIS QUI NE CLIQUE PLUS — DIAGNOSTIQUER ET RÉPARER",
+              "semaine": "BONUS",
+              "phase": "Produire",
+              "demarche": "tp",
+              "demarcheLabel": "Travaux pratiques",
+              "objectif": "Tu sauras réparer une souris en suivant un protocole, et chiffrer sa réparabilité.",
               "projete": true,
               "ebep": true
             }

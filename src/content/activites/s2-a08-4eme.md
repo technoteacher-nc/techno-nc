@@ -1,0 +1,21 @@
+---
+code: "S2-A08"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "BONUS"
+phase: "Produire"
+titre: "LA SOURIS QUI NE CLIQUE PLUS — DIAGNOSTIQUER ET RÉPARER"
+question: "PROBLÉMATIQUE : Que faut-il pour qu'un objet en panne redevienne utilisable ?"
+objectif: "Constater une panne par trois tests, réaliser la réparation en suivant un protocole fourni, remettre l'objet en service et le vérifier ; en 4ème, chiffrer la réparabilité de l'objet ouvert."
+competences:
+  - "Thème 2 — Identifier un dysfonctionnement d'un objet technique et y remédier"
+prerequis: "S2-A04 — cycle de vie et indice de réparabilité."
+materiel: "Une souris filaire préparée et un tournevis cruciforme par binôme · coton-tiges et chiffon · une boîte à vis par îlot · à projeter (sécurité et matériel)"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A08_Reparation_4eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A08_Reparation_4eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A08_Reparation_4eme.pdf"
+qr: "/qr/s2-a08-4eme.png"
+---
