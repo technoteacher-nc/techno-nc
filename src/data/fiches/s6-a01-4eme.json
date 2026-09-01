@@ -12,7 +12,7 @@
    "segments": [
     {
      "t": "texte",
-     "v": "OBJECTIF — Tu sauras nommer les constituants du mBot et retrouver ses deux chaînes."
+     "v": "OBJECTIF — Tu sauras nommer les constituants du mBot et dire en français ce que fait son programme."
     }
    ]
   },
@@ -324,63 +324,74 @@
   {
    "type": "partie",
    "numero": "2",
-   "titre": "La chaîne d'information du demi-tour"
+   "titre": "Le programme du demi-tour, en français"
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "AU TABLEAU — l’apport de la séance reste projeté. Regarde l’écran dès que tu bloques."
+    }
+   ]
   },
   {
    "type": "consigne",
-   "texte": "Écris dans la ligne du haut l'un de ces trois mots : TRAITER — COMMUNIQUER — ACQUÉRIR. Chaque mot ne sert qu'une fois."
+   "texte": "Écris la LETTRE de la traduction qui convient. Chaque lettre ne sert qu'une fois. La première ligne est un exemple."
   },
   {
-   "type": "consigne",
-   "texte": "Écris ensuite, sous chaque bloc, le nom du composant du mBot qui fait ce travail."
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "A. il avance normalement   ·   B. il recommence sans jamais s’arrêter   ·   C. il regarde à quelle distance est l’obstacle"
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "D. il fait demi-tour   ·   E. il compare la distance mesurée à 10 cm"
+    }
+   ]
   },
   {
    "type": "tableau",
-   "entetes": null,
+   "entetes": [
+    "Ligne du programme projeté",
+    "Lettre"
+   ],
    "largeurs": [
-    3120,
-    3120,
-    3120
+    7500,
+    1860
    ],
    "lignes": [
     [
      {
-      "shade": true,
+      "shade": false,
       "contenu": [
        {
         "t": "seg",
         "v": [
          {
-          "t": "champ",
-          "points": 41
+          "t": "texte",
+          "v": "EXEMPLE — répéter indéfiniment"
          }
         ]
        }
       ]
      },
      {
-      "shade": true,
+      "shade": false,
       "contenu": [
        {
         "t": "seg",
         "v": [
          {
-          "t": "champ",
-          "points": 41
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "shade": true,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "champ",
-          "points": 41
+          "t": "texte",
+          "v": "B"
          }
         ]
        }
@@ -396,7 +407,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "l'obstacle est détecté"
+          "v": "lire la distance   (capteur à ultrasons)"
          }
         ]
        }
@@ -409,22 +420,8 @@
         "t": "seg",
         "v": [
          {
-          "t": "texte",
-          "v": "le programme décide"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "shade": false,
-      "contenu": [
-       {
-        "t": "seg",
-        "v": [
-         {
-          "t": "texte",
-          "v": "l'ordre part vers les moteurs"
+          "t": "champ",
+          "points": 24
          }
         ]
        }
@@ -440,11 +437,7 @@
         "v": [
          {
           "t": "texte",
-          "v": "Composant : "
-         },
-         {
-          "t": "champ",
-          "points": 20
+          "v": "si   distance < 10 cm"
          }
         ]
        }
@@ -457,12 +450,24 @@
         "t": "seg",
         "v": [
          {
-          "t": "texte",
-          "v": "Composant : "
-         },
-         {
           "t": "champ",
-          "points": 20
+          "points": 24
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
+          "t": "texte",
+          "v": "alors   reculer 0,5 s puis tourner à droite"
          }
         ]
        }
@@ -475,18 +480,70 @@
         "t": "seg",
         "v": [
          {
+          "t": "champ",
+          "points": 24
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    [
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
+         {
           "t": "texte",
-          "v": "Composant : IHM / signal aux "
-         },
+          "v": "sinon   avancer à 50 %"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "shade": false,
+      "contenu": [
+       {
+        "t": "seg",
+        "v": [
          {
           "t": "champ",
-          "points": 4
+          "points": 24
          }
         ]
        }
       ]
      }
     ]
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2a. Recopie la donnée que le programme UTILISE pour décider : "
+    },
+    {
+     "t": "champ",
+     "points": 35
+    }
+   ]
+  },
+  {
+   "type": "texte",
+   "segments": [
+    {
+     "t": "texte",
+     "v": "2b. Recopie le composant vers qui part l’ordre qu’il PRODUIT : "
+    },
+    {
+     "t": "champ",
+     "points": 39
+    }
    ]
   },
   {

@@ -1151,7 +1151,7 @@
               "phase": "Analyser",
               "demarche": "investigation",
               "demarcheLabel": "Démarche d'investigation",
-              "objectif": "Tu sauras nommer les constituants du mBot et retrouver ses deux chaînes.",
+              "objectif": "Tu sauras nommer les constituants du mBot et dire en français ce que fait son programme.",
               "projete": true,
               "ebep": true
             },
