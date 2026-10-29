@@ -460,6 +460,114 @@
         "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
         "Comment vérifier ensuite que l'objet répond à la demande ?"
       ]
+    },
+    "s5-a01-4eme": {
+      "visuel": "s5-a01-4eme.svg",
+      "legende": "Un téléphone posé à plat sur la table. Le support reste à imaginer.",
+      "reperes": [
+        "Quel est vraiment le besoin de l'utilisateur ?",
+        "Que doit faire le support, et que ne doit-il pas faire ?",
+        "Comment vérifier plus tard que le support répond au besoin ?"
+      ]
+    },
+    "s5-a02-4eme": {
+      "visuel": "s5-a02-4eme.svg",
+      "legende": "Une feuille, une règle, un crayon : de quoi dessiner une solution pour qu'un autre la fabrique.",
+      "reperes": [
+        "Que faut-il dessiner pour qu'un autre puisse fabriquer l'objet ?",
+        "Quelles cotes indiquer, et dans quelle unité ?",
+        "Comment choisir entre plusieurs solutions ?"
+      ]
+    },
+    "s5-a03-4eme": {
+      "visuel": "s5-a03-4eme.svg",
+      "legende": "Un volume en 3D, et trois cotes encore inconnues.",
+      "reperes": [
+        "Comment donner au volume ses dimensions exactes ?",
+        "Comment construire ce volume dans le logiciel ?",
+        "Comment contrôler qu'il respecte le croquis ?"
+      ]
+    },
+    "s5-a04-4eme": {
+      "visuel": "s5-a04-4eme.svg",
+      "legende": "Le modèle 3D est prêt ; le dossier de fabrication, lui, est encore vide.",
+      "reperes": [
+        "Le modèle remplit-il toutes ses fonctions ?",
+        "Que doit contenir le dossier pour l'atelier ?",
+        "Comment vérifier que le modèle respecte le cahier des charges ?"
+      ]
+    },
+    "s5-a05-4eme": {
+      "visuel": "s5-a05-4eme.svg",
+      "legende": "Le prototype en carton, un téléphone posé dessus, une charge et un angle à mesurer.",
+      "reperes": [
+        "Comment fabriquer le prototype à la bonne taille ?",
+        "Quelle charge doit-il supporter ?",
+        "Comment mesurer, et prouver, qu'il respecte le cahier des charges ?"
+      ]
+    },
+    "s5-a06-4eme": {
+      "visuel": "s5-a06.svg",
+      "legende": "Un fichier d'un côté, un objet fini de l'autre, et deux machines entre les deux.",
+      "reperes": [
+        "Que contient le fichier envoyé à la machine ?",
+        "Comment chaque machine fabrique-t-elle l'objet ?",
+        "Quel procédé choisir, et quelles règles de sécurité respecter ?"
+      ]
+    },
+    "s5-a06-5eme": {
+      "visuel": "s5-a06.svg",
+      "legende": "Un fichier d'un côté, un objet fini de l'autre, et deux machines entre les deux.",
+      "reperes": [
+        "Que contient le fichier envoyé à la machine ?",
+        "Comment chaque machine fabrique-t-elle l'objet ?",
+        "Quel procédé choisir, et quelles règles de sécurité respecter ?"
+      ]
+    },
+    "s5-a01-5eme": {
+      "visuel": "s5-a01-5eme.svg",
+      "legende": "Une maison à imaginer pour une famille, sous le soleil et la pluie de Nouvelle-Calédonie.",
+      "reperes": [
+        "De quoi la famille a-t-elle vraiment besoin ?",
+        "Que doit contenir la maison ?",
+        "Quelles contraintes impose le climat ?"
+      ]
+    },
+    "s5-a02-5eme": {
+      "visuel": "s5-a02-5eme.svg",
+      "legende": "Le plan de la maison, vu de dessus, et une barre d'échelle à compléter.",
+      "reperes": [
+        "Comment dessiner un plan que tout le monde comprend ?",
+        "Quelle est la taille réelle de cette pièce ?",
+        "Que représente 1 cm sur le plan ?"
+      ]
+    },
+    "s5-a03-5eme": {
+      "visuel": "s5-a03-5eme.svg",
+      "legende": "Le plan papier devient une maquette numérique : les murs montent.",
+      "reperes": [
+        "Que faut-il reporter du plan dans le logiciel ?",
+        "Dans quel ordre construire les pièces et les murs ?",
+        "Comment vérifier que les surfaces respectent le cahier des charges ?"
+      ]
+    },
+    "s5-a04-5eme": {
+      "visuel": "s5-a04-5eme.svg",
+      "legende": "Les murs sont montés ; portes, fenêtres et meubles restent à placer.",
+      "reperes": [
+        "Où placer la porte ?",
+        "Et la fenêtre ?",
+        "Comment présenter la maquette au client ?"
+      ]
+    },
+    "s5-a05-5eme": {
+      "visuel": "s5-a05-5eme.svg",
+      "legende": "La pièce numérique devient une maquette en papier, à l'échelle.",
+      "reperes": [
+        "Que veut dire l'échelle 1/20 ?",
+        "Comment le patron se plie-t-il pour former la pièce ?",
+        "Comment vérifier que la maquette est juste, à 2 mm près ?"
+      ]
     }
   }
 }

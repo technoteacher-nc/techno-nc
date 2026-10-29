@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s5a055eme-t v-s5a055eme-d" class="visuel-svg">
+  <title id="v-s5a055eme-t">La situation : la pièce numérique devient une maquette en papier</title>
+  <desc id="v-s5a055eme-d">À gauche, la pièce sur l'écran. Une flèche marquée « 1/20 ? » mène à une maquette en papier, dont les murs se plient à partir d'un patron. Trois repères numérotés posent les questions de l'activité.</desc>
+  <rect x="30" y="60" width="220" height="160" rx="8" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/><path d="M70 180 l 60 -24 l 90 12 l -60 24 z" fill="#EDF1F6" stroke="#11223D" stroke-width="2"/><path d="M70 180 v -60 l 60 -24 v 60 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2"/><path d="M130 156 v -60 l 90 12 v 60 z" fill="#DCE3EC" stroke="#11223D" stroke-width="2"/>
+    <line x1="262" y1="140" x2="340" y2="140" stroke="#1C5FBF" stroke-width="3"  stroke-linecap="round"/><path d="M338 131 L 352 140 L 338 149 Z" fill="#1C5FBF"/><text x="307" y="124" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="17" font-weight="700" text-anchor="middle" fill="#11223D">1/20 ?</text>
+    <rect x="460" y="140" width="110" height="80" fill="#EDF1F6" stroke="#11223D" stroke-width="2.2"/>
+    <path d="M460 140 l -60 -30 v 80 l 60 30 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M460 140 l 30 -70 h 110 l -30 70 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2.2" stroke-dasharray="7 5" stroke-linejoin="round"/>
+    <path d="M570 140 l 60 -10 v 80 l -60 10 z" fill="#DCE3EC" stroke="#11223D" stroke-width="2.2" stroke-linejoin="round"/>
+    <circle cx="307" cy="170" r="19" fill="#1C5FBF"/><text x="307" y="178" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">1</text><circle cx="545" cy="60" r="19" fill="#1C5FBF"/><text x="545" y="68" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">2</text><circle cx="640" cy="230" r="19" fill="#1C5FBF"/><text x="640" y="238" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">3</text>
+</svg>
