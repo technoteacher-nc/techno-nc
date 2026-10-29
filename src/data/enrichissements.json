@@ -1,5 +1,5 @@
 {
-  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié).",
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Une activité sans fiche en ligne donne ses étapes et sa phrase « tuSauras » ici, recopiées de la fiche DOCX. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié).",
   "activites": {
     "s6-a01-4eme": {
       "visuel": "s6-a01-4eme.svg",
@@ -585,6 +585,84 @@
         "Comment le patron se plie-t-il pour former la pièce ?",
         "Comment vérifier que la maquette est juste, à 2 mm près ?"
       ]
+    },
+    "s2-a09-5eme": {
+      "visuel": "s2-a09-5eme.svg",
+      "legende": "Un mini-ventilateur à main : on appuie sur le bouton, l'hélice tourne et l'air se met à bouger.",
+      "reperes": [
+        "Où se trouve l'énergie dans le ventilateur ?",
+        "Par où passe-t-elle pour arriver jusqu'à l'hélice ?",
+        "Que devient-elle à la fin ?"
+      ],
+      "etapes": [
+        {
+          "titre": "J'observe mon ventilateur"
+        },
+        {
+          "titre": "Qui fait quoi dans la chaîne d'énergie ?"
+        },
+        {
+          "titre": "Quelle énergie entre, quelle énergie sort ?"
+        },
+        {
+          "titre": "Ce que j'ai compris"
+        }
+      ],
+      "tuSauras": "Tu sauras nommer les éléments de la chaîne d'énergie d'un ventilateur et dire quelle énergie entre et sort de chacun."
+    },
+    "s6-a05-4eme": {
+      "visuel": "s6-a05-4eme.svg",
+      "legende": "Le local à vélos n'a pas de prise. Quatre solutions sont possibles pour l'éclairer le soir.",
+      "reperes": [
+        "De combien d'énergie la lampe a-t-elle besoin chaque soir ?",
+        "Sans prise, d'où peut venir l'énergie ?",
+        "Comment comparer des solutions qui n'ont ni le même prix ni les mêmes contraintes ?"
+      ],
+      "etapes": [
+        {
+          "titre": "Ce que la lampe doit respecter"
+        },
+        {
+          "titre": "Je compare les quatre solutions"
+        },
+        {
+          "titre": "Je choisis et je justifie"
+        },
+        {
+          "titre": "Qui transforme quoi ?"
+        },
+        {
+          "titre": "Ce que j'ai compris"
+        }
+      ],
+      "tuSauras": "Tu sauras comparer plusieurs sources d'énergie avec des critères chiffrés et choisir la plus adaptée à un besoin."
+    },
+    "s6-a06-4eme": {
+      "visuel": "s6-a06-4eme.svg",
+      "legende": "Les essais du défi robot, rangés dans un tableur : une ligne par essai, une colonne par mesure.",
+      "reperes": [
+        "Que représente chaque ligne du tableau ?",
+        "Que mesure chaque colonne ?",
+        "Comment faire apparaître le meilleur réglage parmi douze essais ?"
+      ],
+      "etapes": [
+        {
+          "titre": "Comment les mesures sont rangées"
+        },
+        {
+          "titre": "Je saisis et je calcule"
+        },
+        {
+          "titre": "Je trie et je filtre"
+        },
+        {
+          "titre": "J'interprète"
+        },
+        {
+          "titre": "Ce que j'ai compris"
+        }
+      ],
+      "tuSauras": "Tu sauras ranger des mesures dans un tableur, faire un calcul, trier, filtrer et en tirer une conclusion."
     }
   }
 }
