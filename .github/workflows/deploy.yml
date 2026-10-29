@@ -31,6 +31,10 @@ jobs:
       # Pour régénérer depuis les .docx, lancer scripts/build_content.js en local.
       - run: npm run build
 
+      # Bloque la publication si un document interdit, un corrigé en clair,
+      # un lien interne cassé ou une page mal formée est détecté.
+      - run: npm run verifier
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
