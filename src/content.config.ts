@@ -5,7 +5,7 @@ const activites = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/activites' }),
   schema: z.object({
     code: z.string(),
-    niveau: z.enum(['5eme', '4eme']),
+    niveau: z.enum(['5eme', '4eme', '3eme']),
     niveauLabel: z.string(),
     semaine: z.string(),
     phase: z.string(),

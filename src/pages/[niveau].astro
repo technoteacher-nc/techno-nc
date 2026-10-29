@@ -8,11 +8,14 @@ export async function getStaticPaths() {
   return [
     { params: { niveau: '5eme' }, props: { label: '5ème' } },
     { params: { niveau: '4eme' }, props: { label: '4ème' } },
+    // La 3ᵉ se construit pour l'année 2027 : la page existe dès qu'une
+    // séquence est prête, avec un avertissement tant que tout n'est pas écrit.
+    { params: { niveau: '3eme' }, props: { label: '3ème', preparation: true } },
   ];
 }
 
 const { niveau } = Astro.params;
-const { label } = Astro.props;
+const { label, preparation } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const acts = (await getCollection('activites')).filter(a => a.data.niveau === niveau);
@@ -51,6 +54,14 @@ const sequences = [...parSeq.entries()]
       chaque activité part de ce que tu as produit à la précédente.
     </p>
   </section>
+
+  {preparation && (
+    <p class="proj-avis">
+      <strong>Niveau en préparation, pour l'année 2027.</strong> Les séquences de
+      3ème sont publiées au fur et à mesure qu'elles sont écrites. Elles n'ont pas
+      encore été menées en classe.
+    </p>
+  )}
 
   {sequences.map(seq => (
     <section class="niveau-bloc" id={seq.code} aria-labelledby={`titre-${seq.code}`}

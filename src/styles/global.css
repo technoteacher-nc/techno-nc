@@ -1924,6 +1924,8 @@ kbd {
    nulle part — voir src/scripts/memoire.js. */
 
 /* « Reprendre » sur l'accueil */
+.accueil-3eme { margin: 1rem 0 0; font-size: .95rem; }
+.accueil-3eme a { color: var(--mine); }
 /* « Cette semaine en classe » (accueil) */
 .semaine { margin: 2rem 0 0; padding: 1.1rem 1.3rem; background: var(--calque); border-radius: var(--r); max-width: var(--boite); }
 .semaine .bloc-titre { margin-bottom: .35rem; }

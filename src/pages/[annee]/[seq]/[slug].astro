@@ -192,6 +192,13 @@ const donneesLd = [
     </div>
   </header>
 
+  {d.niveau === '3eme' && (
+    <p class="proj-avis">
+      <strong>Activité en préparation, pour l'année 2027.</strong> Elle n'a pas
+      encore été menée en classe.
+    </p>
+  )}
+
   {enr && (
     <section class="situation" aria-labelledby="situation-titre">
       <h2 id="situation-titre" class="bloc-titre">La situation</h2>
