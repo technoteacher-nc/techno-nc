@@ -1,5 +1,5 @@
 {
-  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur.",
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié).",
   "activites": {
     "s6-a01-4eme": {
       "visuel": "s6-a01-4eme.svg",
@@ -27,6 +27,11 @@
         "associer les composants (exemples : batterie, relais/interrupteur, engrenage, courroie, moteur, etc.) aux fonctions techniques (alimenter, distribuer, convertir, transmettre) correspondantes (et non l’inverse) ;",
         "identifier les capteurs ainsi que les composants d’IHM d’un OST ;",
         "compléter la description de la chaine d’information en indiquant pour chaque bloc fonctionnel les constituants associés."
+      ],
+      "masquerMots": [
+        "Chaîne d'énergie",
+        "Chaîne d'information",
+        "Information"
       ]
     },
     "s6-a01-5eme": {
@@ -117,6 +122,9 @@
         "Comment la maison sait-elle que quelqu'un entre ?",
         "Qui décide d'allumer la lumière ?",
         "Qui allume vraiment la lampe ?"
+      ],
+      "masquerMots": [
+        "Chaîne d'information"
       ]
     },
     "s2-a02-5eme": {
@@ -135,6 +143,9 @@
         "Que mesure chaque capteur, sous le boîtier ?",
         "Comment l'information va-t-elle du capteur jusqu'à l'écran ?",
         "Que sait la montre sur la personne qui la porte ?"
+      ],
+      "masquerMots": [
+        "Chaîne d'information"
       ]
     },
     "s2-a03-5eme": {
@@ -153,6 +164,9 @@
         "Où part un objet qu'on jette ?",
         "Pourquoi est-ce plus compliqué sur une île ?",
         "Comment savoir, avant d'acheter, si un objet se répare facilement ?"
+      ],
+      "masquerMots": [
+        "Cycle de vie"
       ]
     },
     "s2-a04-5eme": {
@@ -162,6 +176,9 @@
         "Où part un objet qu'on jette ?",
         "Pourquoi est-ce plus compliqué sur une île ?",
         "Comment savoir, avant d'acheter, si un objet se répare facilement ?"
+      ],
+      "masquerMots": [
+        "Cycle de vie"
       ]
     },
     "s2-a05-4eme": {

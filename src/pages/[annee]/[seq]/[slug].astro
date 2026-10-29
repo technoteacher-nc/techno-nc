@@ -115,7 +115,11 @@ const question = (d.question || '').replace(/^PROBL[ÉE]MATIQUE\s*:\s*/i, '');
 // Le vocabulaire réellement mobilisé par CETTE activité, lexique et
 // consolidation confondus. Mieux vaut trois mots au bon endroit qu'une liste
 // de dix-huit définitions à trier soi-même.
-const mots = motsDe(act.id);
+// Sauf ceux qui donneraient la réponse d'un exercice de la fiche, sur la page
+// même où l'élève doit la trouver (enrichissements.json › masquerMots). Le
+// lexique complet, lui, reste entier.
+const motsMasques = new Set(enr?.masquerMots ?? []);
+const mots = motsDe(act.id).filter(m => !motsMasques.has(m.mot));
 
 // La synthèse à trous de la séquence. Ces mots-ci y reviennent tous, en blanc :
 // dire où elle est, sur la page où l'élève les découvre, évite qu'il la cherche
