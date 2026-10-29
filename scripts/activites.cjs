@@ -537,64 +537,12 @@ const ACTIVITES_SEQ06 = [
   },
 ];
 
-// --- 3ᵉ, préparée pour l'année 2027 (progression : docs/progression-3eme.md)
-const SEQ_3E_SEQ01 = { code: "seq01", num: "01", nom: "NUMÉRIQUE ET IA", titre: "Séquence 01 — NUMÉRIQUE ET IA", annee: "2027" };
-const TH1_USAGES = "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques";
-const ACTIVITES_3E_SEQ01 = [
-  {
-    code: "S1-A01", niveau: "3eme", niveauLabel: "3ème", semaine: "S3", phase: "Analyser",
-    titre: "DU TÉLÉPHONE AU SMARTPHONE — LES RUPTURES",
-    question: "PROBLÉMATIQUE : Qu'est-ce qui fait qu'une innovation change tout ?",
-    objectif: "Ranger les objets d'une même lignée sur une frise, repérer les innovations de rupture et ce qui les a rendues possibles.",
-    competences: [TH1_USAGES], prerequis: "",
-    materiel: "Fiches S1-A01 (+ EBEP) · cartes-objets découpées (une série par binôme)",
-    fiche: "FICHE_S1-A01_Ruptures_3eme", ebep: "EBEP_S1-A01_Ruptures_3eme",
-  },
-  {
-    code: "S1-A02", niveau: "3eme", niveauLabel: "3ème", semaine: "S4", phase: "Analyser",
-    titre: "D'UNE DÉCOUVERTE À UN OBJET",
-    question: "PROBLÉMATIQUE : Comment une découverte de laboratoire finit-elle dans les objets de tous les jours ?",
-    objectif: "Relier une découverte scientifique à ses développements technologiques, puis à leurs effets sur la société.",
-    competences: [TH1_USAGES], prerequis: "S1-A01 (innovation de rupture).",
-    materiel: "Fiches S1-A02 (+ EBEP) · une cellule photovoltaïque et une petite lampe ou un moteur, si possible",
-    fiche: "FICHE_S1-A02_Decouverte_3eme", ebep: "EBEP_S1-A02_Decouverte_3eme",
-  },
-  {
-    code: "S1-A03", niveau: "3eme", niveauLabel: "3ème", semaine: "S5", phase: "Analyser",
-    titre: "MOTEUR DE RECHERCHE OU IA GÉNÉRATIVE ?",
-    question: "PROBLÉMATIQUE : Peut-on faire confiance à la réponse d'une IA générative pour se renseigner sur un objet ?",
-    objectif: "Comparer la réponse d'un moteur de recherche et celle de deux IA génératives, rédiger un prompt complet et expliquer les écarts entre les réponses.",
-    competences: [TH1_USAGES], prerequis: "",
-    materiel: "Fiches S1-A03 (+ EBEP) · vidéoprojecteur : les requêtes sont faites par le professeur, devant la classe",
-    fiche: "FICHE_S1-A03_IAGenerative_3eme", ebep: "EBEP_S1-A03_IAGenerative_3eme",
-  },
-  {
-    code: "S1-A04", niveau: "3eme", niveauLabel: "3ème", semaine: "S7", phase: "Analyser",
-    titre: "L'IA QUI RECONNAÎT : UTILE OU RISQUÉE ?",
-    question: "PROBLÉMATIQUE : Que gagne-t-on, et que risque-t-on, quand une machine reconnaît des images à notre place ?",
-    objectif: "Analyser deux usages de la reconnaissance d'images, peser bénéfices, risques et énergie consommée, puis défendre un avis dans un argumentaire court.",
-    competences: [TH1_USAGES], prerequis: "S1-A03 (IA générative).",
-    materiel: "Fiches S1-A04 (+ EBEP)",
-    fiche: "FICHE_S1-A04_Reconnaissance_3eme", ebep: "EBEP_S1-A04_Reconnaissance_3eme",
-  },
-  {
-    code: "S1-A05", niveau: "3eme", niveauLabel: "3ème", semaine: "S8", phase: "Analyser",
-    titre: "LE NUMÉRIQUE DANS LES MÉTIERS",
-    question: "PROBLÉMATIQUE : Quelle place le numérique prend-il dans ta vie et dans les métiers ?",
-    objectif: "Recenser ce qui est dématérialisé dans sa vie, comparer deux échelles de diffusion d'une information, et décrire la place du numérique dans un métier.",
-    competences: [TH1_USAGES], prerequis: "",
-    materiel: "Fiches S1-A05 (+ EBEP) · une fiche métier (ressource du CDI ou de l'orientation)",
-    fiche: "FICHE_S1-A05_Metiers_3eme", ebep: "EBEP_S1-A05_Metiers_3eme",
-  },
-];
-
 const SEQUENCES = [
   { SEQ, ACTIVITES: ACTIVITES_SEQ05 },
   { SEQ: SEQ_SEQ02, ACTIVITES: ACTIVITES_SEQ02 },
   { SEQ: SEQ_SEQ03, ACTIVITES: ACTIVITES_SEQ03 },
   { SEQ: SEQ_SEQ04, ACTIVITES: ACTIVITES_SEQ04 },
   { SEQ: SEQ_SEQ06, ACTIVITES: ACTIVITES_SEQ06 },
-  { SEQ: SEQ_3E_SEQ01, ACTIVITES: ACTIVITES_3E_SEQ01 },
 ];
 
 module.exports = { ANNEE, SEQ, ACTIVITES: ACTIVITES_SEQ05, SEQUENCES, slug };
