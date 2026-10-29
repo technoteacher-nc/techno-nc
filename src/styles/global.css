@@ -1914,6 +1914,15 @@ kbd {
    nulle part — voir src/scripts/memoire.js. */
 
 /* « Reprendre » sur l'accueil */
+/* « Cette semaine en classe » (accueil) */
+.semaine { margin: 2rem 0 0; padding: 1.1rem 1.3rem; background: var(--calque); border-radius: var(--r); max-width: var(--boite); }
+.semaine .bloc-titre { margin-bottom: .35rem; }
+.semaine-quand { margin: 0 0 .9rem; color: var(--mine); }
+.semaine-niveaux { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.semaine-niveau h3 { margin: 0 0 .4rem; font-family: var(--display); font-size: 1rem; }
+.semaine-niveau ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .5rem; }
+.semaine-niveau li { display: grid; gap: .1rem; line-height: 1.4; overflow-wrap: anywhere; }
+.semaine-etiquette { font-family: var(--mono); font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--mine); }
 .reprendre {
   display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem;
   margin: 1.5rem 0 0; padding: .9rem 1.1rem; max-width: var(--boite);
@@ -1950,7 +1959,7 @@ kbd {
 }
 .quiz-record--plein::before { content: '✓ '; font-weight: 700; }
 
-@media print { .reprendre, .maillon-vu, .quiz-record { display: none; } }
+@media print { .reprendre, .semaine, .maillon-vu, .quiz-record { display: none; } }
 
 .mde-efface {
   align-self: center;

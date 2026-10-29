@@ -1,0 +1,13 @@
+{
+  "statut": "valide",
+  "note": "Calendrier scolaire 2026 de la Nouvelle-Calédonie (arrêté n° 2025-841/GNC du 21 mai 2025, annexe ; dates relevées sur des sources qui le citent, l'arrêté lui-même n'a pas pu être consulté). Les semaines S1… S36 des activités sont des semaines de CLASSE : S1 est la semaine de la rentrée, les semaines de vacances ne comptent pas. « statut » : « valide » affiche le bloc « Cette semaine en classe » de l'accueil ; toute autre valeur le masque. Dates au format AAAA-MM-JJ ; « reprise » est le jour où les cours reprennent, « finCours » le premier jour sans cours.",
+  "annee": "2026",
+  "rentree": "2026-02-16",
+  "vacances": [
+    { "debut": "2026-04-04", "reprise": "2026-04-20" },
+    { "debut": "2026-06-06", "reprise": "2026-06-22" },
+    { "debut": "2026-08-08", "reprise": "2026-08-24" },
+    { "debut": "2026-10-10", "reprise": "2026-10-26" }
+  ],
+  "finCours": "2026-12-19"
+}

@@ -1,0 +1,97 @@
+---
+// « Cette semaine en classe » : la semaine de classe du jour (S1… S36) et,
+// pour chaque niveau, l'activité qui s'y fait. Le site est statique et n'est
+// reconstruit qu'à chaque publication : le calcul se fait donc dans le
+// navigateur, à partir du calendrier (src/data/calendrier.json) et de la
+// semaine de chaque activité. Sans JavaScript, ou hors année scolaire, le bloc
+// reste caché : il n'affiche jamais une semaine fausse.
+import { getCollection } from 'astro:content';
+import calendrier from '../data/calendrier.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const acts = await getCollection('activites');
+const niveaux = [{ id: '5eme', label: '5ème' }, { id: '4eme', label: '4ème' }];
+const donnees = {
+  ...calendrier,
+  niveaux: niveaux.map(n => ({
+    ...n,
+    activites: acts
+      .filter(a => a.data.niveau === n.id && /^S\d+$/.test(a.data.semaine))
+      .map(a => ({ s: +a.data.semaine.slice(1), code: a.data.code, titre: a.data.titre, url: `${base}/${a.data.annee}/${a.data.seq}/${a.id}` }))
+      .sort((a, b) => a.s - b.s || a.code.localeCompare(b.code)),
+  })),
+};
+const actif = calendrier.statut === 'valide';
+---
+{actif && (
+  <section class="semaine" data-semaine hidden aria-labelledby="semaine-titre">
+    <h2 id="semaine-titre" class="bloc-titre">Cette semaine en classe</h2>
+    <p class="semaine-quand" data-semaine-quand></p>
+    <div class="semaine-niveaux">
+      {niveaux.map(n => (
+        <div class="semaine-niveau" data-semaine-niveau={n.id}>
+          <h3>{n.label}</h3>
+          <ul></ul>
+        </div>
+      ))}
+    </div>
+    <script type="application/json" id="semaine-donnees" set:html={JSON.stringify(donnees)} />
+  </section>
+)}
+
+<script>
+  const bloc = document.querySelector('[data-semaine]');
+  const src = document.getElementById('semaine-donnees');
+  if (bloc && src) {
+    const d = JSON.parse(src.textContent);
+    // La date du jour en Nouvelle-Calédonie, quel que soit le réglage de l'appareil.
+    const ymd = new Intl.DateTimeFormat('en-CA', { timeZone: 'Pacific/Noumea' }).format(new Date());
+    const jour = s => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10));
+    const auj = jour(ymd);
+    const JOUR = 86400000, SEM = 7 * JOUR;
+    const fmt = t => new Intl.DateTimeFormat('fr-FR', { timeZone: 'UTC', weekday: 'long', day: 'numeric', month: 'long' }).format(new Date(t));
+
+    // Périodes de classe : de la rentrée (ou d'une reprise) au début des vacances suivantes.
+    const periodes = [];
+    let debut = jour(d.rentree);
+    for (const v of d.vacances) { periodes.push([debut, jour(v.debut)]); debut = jour(v.reprise); }
+    periodes.push([debut, jour(d.finCours)]);
+
+    let semaine = null, lundi = null, reprise = null, avant = 0;
+    for (const [a, b] of periodes) {
+      const n = Math.ceil((b - a) / SEM);
+      if (auj >= a && auj < b) { const k = Math.floor((auj - a) / SEM); semaine = avant + k + 1; lundi = a + k * SEM; break; }
+      if (auj < a) { if (avant > 0) reprise = { date: a, semaine: avant + 1 }; break; } // avant la rentrée : rien
+      avant += n;
+    }
+
+    const quand = bloc.querySelector('[data-semaine-quand]');
+    if (semaine) {
+      quand.innerHTML = `<strong>Semaine S${semaine}</strong> · du ${fmt(lundi)} au ${fmt(lundi + 4 * JOUR)}`;
+    } else if (reprise) {
+      quand.innerHTML = `<strong>Vacances.</strong> Reprise le ${fmt(reprise.date)} (semaine S${reprise.semaine}).`;
+    }
+    const cible = semaine || (reprise && reprise.semaine);
+
+    if (cible) {
+      const lien = (a, etiquette) => {
+        const li = document.createElement('li');
+        const e = document.createElement('span'); e.className = 'semaine-etiquette'; e.textContent = etiquette;
+        const l = document.createElement('a'); l.href = a.url; l.textContent = `${a.code} — ${a.titre}`;
+        li.append(e, l); return li;
+      };
+      let rien = true;
+      for (const n of d.niveaux) {
+        const ul = bloc.querySelector(`[data-semaine-niveau="${n.id}"] ul`);
+        const ici = n.activites.filter(a => a.s === cible);
+        const passees = n.activites.filter(a => a.s < cible);
+        const suivante = n.activites.find(a => a.s > cible);
+        if (ici.length) ici.forEach(a => ul.append(lien(a, semaine ? 'Cette semaine' : 'À la reprise')));
+        else if (passees.length) { const s = passees[passees.length - 1].s; passees.filter(a => a.s === s).forEach(a => ul.append(lien(a, `En cours depuis S${s}`))); }
+        if (suivante) ul.append(lien(suivante, `Ensuite, S${suivante.s}`));
+        if (ul.children.length) rien = false;
+      }
+      if (!rien) bloc.hidden = false;
+    }
+  }
+</script>
