@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import { simulateursDe, motsDe, syntheseDe } from '../../../data/ressources';
 import { notionsDe } from '../../../data/consolidation';
 import demarche from '../../../data/demarche.json';
+import { objectifsDe } from '../../../data/programme';
 import { statSync, existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
@@ -26,6 +27,7 @@ const { act, prec, suiv, rang, total } = Astro.props;
 const d = act.data;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const u = p => base + p;
+const objectifsProg = objectifsDe(act.id);
 
 // Poids d'un document de public/, mesuré au build : affiché sur le bouton
 // pour que l'élève sache ce qu'il télécharge (connexions lentes).
@@ -158,11 +160,12 @@ const donneesLd = [
     </div>
   </header>
 
-  {(d.objectif || d.competences.length || d.prerequis || d.materiel) && (
+  {(d.objectif || d.competences.length || objectifsProg.length || d.prerequis || d.materiel) && (
     <section class="meta" aria-label="Repères de l'activité">
       <dl>
         {d.objectif && <><dt>Objectif</dt><dd>{d.objectif}</dd></>}
         {d.competences.length > 0 && <><dt>Compétences</dt><dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd></>}
+        {objectifsProg.length > 0 && <><dt>Objectifs du programme</dt><dd><ul>{objectifsProg.map(o => <li>{o}</li>)}</ul></dd></>}
         {d.prerequis && <><dt>Prérequis</dt><dd>{d.prerequis}</dd></>}
         {d.materiel && <><dt>Matériel</dt><dd>{d.materiel}</dd></>}
         {crcn.length > 0 && <><dt>Compétences numériques</dt><dd><ul>{crcn.map(c => (

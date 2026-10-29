@@ -13,6 +13,8 @@
 //    devient une zone qui grandit avec ce que l'élève écrit — le manque de
 //    place ne peut plus se produire.
 
+import { dimensionsPng } from '../data/dimensions';
+
 const { blocs, code } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -20,6 +22,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // de sauvegarde locale — il doit donc rester constant d'un build à l'autre.
 let n = 0;
 const id = () => `${code}-c${n++}`;
+let nTableaux = 0; // libellé unique de chaque tableau défilant (landmark-unique)
 
 // Un champ long (beaucoup de pointillés) devient une zone extensible ;
 // un champ court reste sur la ligne, à la largeur que le professeur avait prévue.
@@ -64,7 +67,7 @@ for (const b of blocs) {
     case 'schema':
       return b.src ? (
         <figure class="fl-bloc fl-schema">
-          <img src={base + b.src} alt={`Schéma de l'activité ${code}`} loading="lazy" />
+          <img src={base + b.src} alt={`Schéma de l'activité ${code}`} loading="lazy" {...dimensionsPng(b.src)} />
         </figure>
       ) : null;
 
@@ -136,11 +139,13 @@ for (const b of blocs) {
 
     case 'tableau':
       return (
-        <div class="fl-bloc fl-tableau-boite">
+        // tabindex : un tableau plus large que l'écran défile, et doit pouvoir
+        // défiler au clavier même quand il ne contient aucun champ.
+        <div class="fl-bloc fl-tableau-boite" tabindex="0" role="region" aria-label={`Tableau ${++nTableaux}`}>
           <table class="fl-tableau">
             {b.entetes && (
               <thead>
-                <tr>{b.entetes.map(h => <th>{h}</th>)}</tr>
+                <tr>{b.entetes.map(h => h ? <th>{h}</th> : <td></td>)}</tr>
               </thead>
             )}
             <tbody>

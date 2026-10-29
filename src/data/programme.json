@@ -1,0 +1,554 @@
+{
+  "source": "Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ et 4ᵉ, libellés recopiés à l’identique, coquilles comprises.",
+  "themes": {
+    "1": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
+    "2": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
+    "3": "Création, conception, réalisation, innovations : des objets à concevoir et à réaliser"
+  },
+  "parties": [
+    {
+      "id": "evolution",
+      "theme": 1,
+      "nom": "L’évolution des OST",
+      "objectifs": [
+        {
+          "id": "evolution-5e1",
+          "niveau": "5eme",
+          "libelle": "Comparer des principes techniques pour une même fonction technique"
+        },
+        {
+          "id": "evolution-5e2",
+          "niveau": "5eme",
+          "libelle": "Collecter, trier et analyser des données recueillies sur les OST"
+        },
+        {
+          "id": "evolution-4e1",
+          "niveau": "4eme",
+          "libelle": "Mettre en relation les OST avec leurs usages"
+        },
+        {
+          "id": "evolution-4e2",
+          "niveau": "4eme",
+          "libelle": "Identifier les avantages et les inconvénients associés aux évolutions technologiques et informatiques"
+        },
+        {
+          "id": "evolution-4e3",
+          "niveau": "4eme",
+          "libelle": "Justifier l’évolution d’un OST pour répondre à l’évolution des besoins"
+        }
+      ]
+    },
+    {
+      "id": "numerique",
+      "theme": 1,
+      "nom": "Usages et impacts sociétaux du numérique",
+      "objectifs": [
+        {
+          "id": "numerique-5e1",
+          "niveau": "5eme",
+          "libelle": "Décrire le rôle des systèmes d’information dans le partage d’information"
+        },
+        {
+          "id": "numerique-5e2",
+          "niveau": "5eme",
+          "libelle": "Recenser des données, les identifier, les classer, les représenter, les stocker dans des fichiers, les retrouver dans une arborescence"
+        },
+        {
+          "id": "numerique-5e3",
+          "niveau": "5eme",
+          "libelle": "Connaître et appliquer des règles permettant de sécuriser un environnement numérique (bases de la cybersécurité)"
+        },
+        {
+          "id": "numerique-5e4",
+          "niveau": "5eme",
+          "libelle": "Appliquer des règles de respect de la propriété intellectuelle"
+        },
+        {
+          "id": "numerique-5e5",
+          "niveau": "5eme",
+          "libelle": "Appréhender la responsabilité de chacun dans les dérives liées aux système d’information (cyberviolence, attaque des données personnelle, usurpation d’identité)"
+        },
+        {
+          "id": "numerique-4e1",
+          "niveau": "4eme",
+          "libelle": "Identifier et appliquer les règles pour un usage raisonné des objets communicants et des environnements numériques (propriété intellectuelle, identité numérique, témoins de connexion, géolocalisation)"
+        }
+      ]
+    },
+    {
+      "id": "environnement",
+      "theme": 1,
+      "nom": "L’OST dans son environnement",
+      "objectifs": [
+        {
+          "id": "environnement-5e1",
+          "niveau": "5eme",
+          "libelle": "Faire la liste des interacteurs extérieurs d’un OST"
+        },
+        {
+          "id": "environnement-5e2",
+          "niveau": "5eme",
+          "libelle": "Repérer et expliquer les choix de conception dans les domaines de l’ergonomie et de la sécurité ou en lien avec des objectifs de développement durable"
+        },
+        {
+          "id": "environnement-4e1",
+          "niveau": "4eme",
+          "libelle": "Décrire l’expérience de l’utilisateur (ressenti et facilité d’usage) d’un OST en partant du langage naturel (texte, croquis) pour aboutir aux schémas, graphiques, algorithmes"
+        },
+        {
+          "id": "environnement-4e2",
+          "niveau": "4eme",
+          "libelle": "Repérer et expliquer les contraintes, exigences prises en compte (sécurité, incidences environnementales, formes et fonctions, ergonomie, qualité, fiabilité) pour répondre aux attentes des utilisateurs"
+        }
+      ]
+    },
+    {
+      "id": "choix-ost",
+      "theme": 1,
+      "nom": "Le choix d’un OST dans un contexte de développement durable",
+      "objectifs": [
+        {
+          "id": "choix-ost-5e1",
+          "niveau": "5eme",
+          "libelle": "Repérer pour un OST les matériaux, les sources et les formes d’énergie, le traitement de l’information"
+        },
+        {
+          "id": "choix-ost-5e2",
+          "niveau": "5eme",
+          "libelle": "Identifier les étapes du cycle de vie d’un OST influencées par les choix de matériaux et d’énergie"
+        },
+        {
+          "id": "choix-ost-5e3",
+          "niveau": "5eme",
+          "libelle": "Choisir un OST parmi plusieurs propositions en vue de répondre à un besoin"
+        },
+        {
+          "id": "choix-ost-4e1",
+          "niveau": "4eme",
+          "libelle": "Identifier les caractéristiques à prendre en compte dans le choix d’un OST en vue de répondre à un besoin"
+        },
+        {
+          "id": "choix-ost-4e2",
+          "niveau": "4eme",
+          "libelle": "Comparer qualitativement et/ou quantitativement (incidences environnementales, bilan carbone, efficacité énergétique) plusieurs OST répondant au même besoin et arrêter un choix"
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "theme": 1,
+      "nom": "La performance des OST",
+      "objectifs": [
+        {
+          "id": "performance-5e1",
+          "niveau": "5eme",
+          "libelle": "Mesurer et comparer une performance d’un OST à partir d’un protocole fourni"
+        },
+        {
+          "id": "performance-4e1",
+          "niveau": "4eme",
+          "libelle": "Choisir les appareils de mesure à utiliser pour mesurer une performance d’un OST à partir d’un protocole donné"
+        }
+      ]
+    },
+    {
+      "id": "chaine-energie",
+      "theme": 2,
+      "nom": "Fonctions, solutions, constituants de la chaine d’énergie",
+      "objectifs": [
+        {
+          "id": "chaine-energie-5e1",
+          "niveau": "5eme",
+          "libelle": "Associer des solutions techniques à une ou des fonctions techniques"
+        },
+        {
+          "id": "chaine-energie-5e2",
+          "niveau": "5eme",
+          "libelle": "Identifier des constituants de la chaîne d’énergie d’un objet technique (l’organisation de la chaîne d’énergie étant fournie)"
+        },
+        {
+          "id": "chaine-energie-5e3",
+          "niveau": "5eme",
+          "libelle": "Indiquer la nature des énergies en entrée et en sortie des constituants de la chaîne d’énergie"
+        },
+        {
+          "id": "chaine-energie-4e1",
+          "niveau": "4eme",
+          "libelle": "Identifier les constituants d’une chaîne d’énergie et les associer à leurs fonctions"
+        },
+        {
+          "id": "chaine-energie-4e2",
+          "niveau": "4eme",
+          "libelle": "Repérer les transformations d’énergie et les flux d’énergie au sein de l’OST"
+        }
+      ]
+    },
+    {
+      "id": "materiaux",
+      "theme": 2,
+      "nom": "Matériaux et procédés",
+      "objectifs": [
+        {
+          "id": "materiaux-5e1",
+          "niveau": "5eme",
+          "libelle": "Identifier les principaux matériaux constitutifs d’un OST"
+        },
+        {
+          "id": "materiaux-4e1",
+          "niveau": "4eme",
+          "libelle": "Mettre en relation la forme d’une pièce avec le procédé de réalisation"
+        }
+      ]
+    },
+    {
+      "id": "chaine-information",
+      "theme": 2,
+      "nom": "Fonctions, solutions, constituants de la chaine d’information",
+      "objectifs": [
+        {
+          "id": "chaine-information-5e1",
+          "niveau": "5eme",
+          "libelle": "Identifier les capteurs et les composants d’une interface homme machine (IHM) d’un OST"
+        },
+        {
+          "id": "chaine-information-4e1",
+          "niveau": "4eme",
+          "libelle": "Identifier les constituants de la chaîne d’information d’un objet réel et les associer à leur fonction"
+        }
+      ]
+    },
+    {
+      "id": "donnees",
+      "theme": 2,
+      "nom": "Structuration et traitement de données",
+      "objectifs": [
+        {
+          "id": "donnees-5e1",
+          "niveau": "5eme",
+          "libelle": "Déterminer des descripteurs permettant de décrire des objets sous forme de données en précisant leurs types et leurs formats"
+        },
+        {
+          "id": "donnees-4e1",
+          "niveau": "4eme",
+          "libelle": "Décrire et analyser le traitement réalisé par un OST sur les données qu’il reçoit et qu’il produit"
+        },
+        {
+          "id": "donnees-4e2",
+          "niveau": "4eme",
+          "libelle": "Décrire et analyser la structuration d’une table de données qui permet une exploitation et une interprétation du comportement d’un OST"
+        }
+      ]
+    },
+    {
+      "id": "reseau",
+      "theme": 2,
+      "nom": "La circulation de l’information dans un réseau informatique",
+      "objectifs": [
+        {
+          "id": "reseau-5e1",
+          "niveau": "5eme",
+          "libelle": "Identifier les composants qui constituent un réseau local (terminaux, commutateurs, liaisons filaires et sans fil (WiFi)) et sa topologie"
+        },
+        {
+          "id": "reseau-5e2",
+          "niveau": "5eme",
+          "libelle": "Justifier la nécessité d’identifier les terminaux pour communiquer sur un réseau local"
+        },
+        {
+          "id": "reseau-4e1",
+          "niveau": "4eme",
+          "libelle": "Paramétrer une adresse IP fixe pour ajouter un objet connecté à un réseau local."
+        },
+        {
+          "id": "reseau-4e2",
+          "niveau": "4eme",
+          "libelle": "Résoudre des problèmes pour assurer la communication entre les différents terminaux dans un réseau informatique"
+        },
+        {
+          "id": "reseau-4e3",
+          "niveau": "4eme",
+          "libelle": "Compléter une simulation fournie pour valider le comportement d’un réseau informatique"
+        }
+      ]
+    },
+    {
+      "id": "reparation",
+      "theme": 2,
+      "nom": "Le dépannage et la réparation",
+      "objectifs": [
+        {
+          "id": "reparation-5e1",
+          "niveau": "5eme",
+          "libelle": "Repérer visuellement une pièce défectueuse"
+        },
+        {
+          "id": "reparation-5e2",
+          "niveau": "5eme",
+          "libelle": "Réaliser une réparation en suivant un protocole fourni"
+        },
+        {
+          "id": "reparation-5e3",
+          "niveau": "5eme",
+          "libelle": "Découvrir les procédés de réalisation présents dans un atelier de fabrication collaboratif"
+        },
+        {
+          "id": "reparation-4e1",
+          "niveau": "4eme",
+          "libelle": "Proposer un protocole permettant de vérifier l’origine d’un dysfonctionnement"
+        },
+        {
+          "id": "reparation-4e2",
+          "niveau": "4eme",
+          "libelle": "Remplacer une pièce défectueuse sans protocole fourni (la pièce de remplacement étant fournie)"
+        },
+        {
+          "id": "reparation-4e3",
+          "niveau": "4eme",
+          "libelle": "Choisir les procédés de réalisation et les mettre en œuvre"
+        }
+      ]
+    },
+    {
+      "id": "nouvelle-fonctionnalite",
+      "theme": 2,
+      "nom": "La programmation d’une nouvelle fonctionnalité",
+      "objectifs": [
+        {
+          "id": "nouvelle-fonctionnalite-5e1",
+          "niveau": "5eme",
+          "libelle": "Identifier les données utilisées et produites par le programme associé à une fonctionnalité d’un OST (à partir d’un programme existant)"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-5e2",
+          "niveau": "5eme",
+          "libelle": "Comprendre et traduire par un algorithme en langage naturel le programme associé à une fonctionnalité d’un OST"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-5e3",
+          "niveau": "5eme",
+          "libelle": "Modifier les paramètres d’un programme et identifier ou évaluer ses effets en termes de fonctionnalité"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-4e1",
+          "niveau": "4eme",
+          "libelle": "Analyser les données et en déduire des modifications à apporter au programme"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-4e2",
+          "niveau": "4eme",
+          "libelle": "Compléter un programme pour répondre à une fonctionnalité d’un OST"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-4e3",
+          "niveau": "4eme",
+          "libelle": "Tester et valider, dans un environnement simulé ou réel, une modification du programme"
+        }
+      ]
+    },
+    {
+      "id": "gestion-projet",
+      "theme": 3,
+      "nom": "La gestion de projet technique",
+      "objectifs": [
+        {
+          "id": "gestion-projet-5e1",
+          "niveau": "5eme",
+          "libelle": "Suivre un processus de conception et de réalisation dans une durée, avec des tâches identifiées"
+        },
+        {
+          "id": "gestion-projet-4e1",
+          "niveau": "4eme",
+          "libelle": "Organiser un processus de conception et de réalisation dans une durée, avec des tâches identifiées"
+        }
+      ]
+    },
+    {
+      "id": "prototypage",
+      "theme": 3,
+      "nom": "Le prototypage de solutions",
+      "objectifs": [
+        {
+          "id": "prototypage-5e1",
+          "niveau": "5eme",
+          "libelle": "Fabriquer une solution pour améliorer un OST existant"
+        },
+        {
+          "id": "prototypage-4e1",
+          "niveau": "4eme",
+          "libelle": "Proposer et fabriquer une solution pour ajouter une nouvelle fonction à un OST (croquis, schéma, graphique, algorithme, modélisation)"
+        }
+      ]
+    },
+    {
+      "id": "choix-materiaux",
+      "theme": 3,
+      "nom": "Le choix des matériaux",
+      "objectifs": [
+        {
+          "id": "choix-materiaux-5e1",
+          "niveau": "5eme",
+          "libelle": "Choisir un matériau parmi plusieurs proposés en fonction de leurs caractéristiques"
+        },
+        {
+          "id": "choix-materiaux-4e1",
+          "niveau": "4eme",
+          "libelle": "Comparer différents matériaux pour choisir le plus adapté"
+        }
+      ]
+    },
+    {
+      "id": "choix-energie",
+      "theme": 3,
+      "nom": "Le choix d’une source d’énergie",
+      "objectifs": [
+        {
+          "id": "choix-energie-5e1",
+          "niveau": "5eme",
+          "libelle": "Choisir une source d’énergie et une forme d’énergie possible parmi plusieurs proposées"
+        },
+        {
+          "id": "choix-energie-4e1",
+          "niveau": "4eme",
+          "libelle": "Comparer différentes sources d’énergie pour choisir la plus adaptée"
+        }
+      ]
+    },
+    {
+      "id": "assemblage",
+      "theme": 3,
+      "nom": "L’assemblage de constituants",
+      "objectifs": [
+        {
+          "id": "assemblage-5e1",
+          "niveau": "5eme",
+          "libelle": "Assembler les constituants fournis pour réaliser un prototype"
+        },
+        {
+          "id": "assemblage-4e1",
+          "niveau": "4eme",
+          "libelle": "Identifier les constituants manquants dans un prototype et le compléter"
+        }
+      ]
+    },
+    {
+      "id": "modelisation",
+      "theme": 3,
+      "nom": "La modélisation et la fabrication",
+      "objectifs": [
+        {
+          "id": "modelisation-5e1",
+          "niveau": "5eme",
+          "libelle": "Mettre en œuvre les moyens pour réaliser une forme selon une procédure fournie"
+        },
+        {
+          "id": "modelisation-4e1",
+          "niveau": "4eme",
+          "libelle": "Modifier une forme à l’aide d’une modélisation"
+        },
+        {
+          "id": "modelisation-4e2",
+          "niveau": "4eme",
+          "libelle": "Choisir les moyens et produire la forme voulue"
+        }
+      ]
+    },
+    {
+      "id": "communicants",
+      "theme": 3,
+      "nom": "Les objets communicants",
+      "objectifs": [
+        {
+          "id": "communicants-4e1",
+          "niveau": "4eme",
+          "libelle": "Interfacer un objet technique avec un réseau"
+        }
+      ]
+    },
+    {
+      "id": "mecanique",
+      "theme": 3,
+      "nom": "La validation du comportement mécanique d’un matériau",
+      "objectifs": [
+        {
+          "id": "mecanique-5e1",
+          "niveau": "5eme",
+          "libelle": "Identifier la nature des sollicitations mécaniques des matériaux"
+        },
+        {
+          "id": "mecanique-5e2",
+          "niveau": "5eme",
+          "libelle": "Utiliser une simulation fournie pour valider la tenue mécanique d’un matériau soumis à une sollicitation simple"
+        },
+        {
+          "id": "mecanique-5e3",
+          "niveau": "5eme",
+          "libelle": "Mettre en œuvre un protocole de test fourni pour valider la tenue mécanique d’un matériau soumis à une sollicitation simple"
+        },
+        {
+          "id": "mecanique-4e1",
+          "niveau": "4eme",
+          "libelle": "Paramétrer une simulation fournie pour valider la tenue mécanique d’un matériau soumis à une sollicitation simple."
+        },
+        {
+          "id": "mecanique-4e2",
+          "niveau": "4eme",
+          "libelle": "Choisir et mettre en œuvre un protocole de test pour valider la tenue mécanique d’un matériau soumis à une sollicitation simple"
+        }
+      ]
+    },
+    {
+      "id": "validation-performances",
+      "theme": 3,
+      "nom": "La validation des performances d’un OST",
+      "objectifs": [
+        {
+          "id": "validation-performances-5e1",
+          "niveau": "5eme",
+          "libelle": "Vérifier le comportement et les performances d’un objet technique en suivant un protocole fourni"
+        },
+        {
+          "id": "validation-performances-4e1",
+          "niveau": "4eme",
+          "libelle": "Choisir les appareils pour mesurer les performances d’un OST à partir d’un protocole donné"
+        }
+      ]
+    },
+    {
+      "id": "programmation",
+      "theme": 3,
+      "nom": "La programmation des OST",
+      "objectifs": [
+        {
+          "id": "programmation-5e1",
+          "niveau": "5eme",
+          "libelle": "Analyser un programme simple fourni et tester s’il répond au besoin ou au problème posé"
+        },
+        {
+          "id": "programmation-5e2",
+          "niveau": "5eme",
+          "libelle": "Modifier un programme fourni pour répondre au besoin ou à un problème posé"
+        },
+        {
+          "id": "programmation-5e3",
+          "niveau": "5eme",
+          "libelle": "Réaliser et mettre au point un programme simple commandant un OST"
+        },
+        {
+          "id": "programmation-4e1",
+          "niveau": "4eme",
+          "libelle": "Modifier un algorithme permettant de répondre au besoin ou au problème posé"
+        },
+        {
+          "id": "programmation-4e2",
+          "niveau": "4eme",
+          "libelle": "Traduire un algorithme permettant de répondre à un besoin ou à un problème simple en un programme."
+        },
+        {
+          "id": "programmation-4e3",
+          "niveau": "4eme",
+          "libelle": "Réaliser et mettre au point un programme commandant un système réel incluant éventuellement une interaction entre un humain et une machine"
+        }
+      ]
+    }
+  ]
+}
