@@ -1,5 +1,5 @@
 {
-  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Une activité sans fiche en ligne donne ses étapes et sa phrase « tuSauras » ici, recopiées de la fiche DOCX. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié).",
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Une activité sans fiche en ligne donne ses étapes et sa phrase « tuSauras » ici, recopiées de la fiche DOCX. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié). « plusLoin » reçoit ce qui a quitté la fiche papier pour l'alléger : une question de prolongement, un fichier à télécharger (jamais une correction).",
   "activites": {
     "s6-a01-4eme": {
       "visuel": "s6-a01-4eme.svg",
@@ -608,7 +608,12 @@
           "titre": "Ce que j'ai compris"
         }
       ],
-      "tuSauras": "Tu sauras nommer les éléments de la chaîne d'énergie d'un ventilateur et dire quelle énergie entre et sort de chacun."
+      "tuSauras": "Tu sauras nommer les éléments de la chaîne d'énergie d'un ventilateur et dire quelle énergie entre et sort de chacun.",
+      "plusLoin": [
+        {
+          "texte": "Compare avec un ventilateur qui se branche sur une prise : quel bloc de la chaîne d'énergie change, et lesquels restent les mêmes ?"
+        }
+      ]
     },
     "s6-a05-4eme": {
       "visuel": "s6-a05-4eme.svg",
@@ -635,7 +640,12 @@
           "titre": "Ce que j'ai compris"
         }
       ],
-      "tuSauras": "Tu sauras comparer plusieurs sources d'énergie avec des critères chiffrés et choisir la plus adaptée à un besoin."
+      "tuSauras": "Tu sauras comparer plusieurs sources d'énergie avec des critères chiffrés et choisir la plus adaptée à un besoin.",
+      "plusLoin": [
+        {
+          "texte": "Et si le local avait une prise électrique ? Refais le choix avec les trois mêmes critères : qu'est-ce qui change ?"
+        }
+      ]
     },
     "s6-a06-4eme": {
       "visuel": "s6-a06-4eme.svg",
@@ -662,7 +672,17 @@
           "titre": "Ce que j'ai compris"
         }
       ],
-      "tuSauras": "Tu sauras ranger des mesures dans un tableur, faire un calcul, trier, filtrer et en tirer une conclusion."
+      "tuSauras": "Tu sauras ranger des mesures dans un tableur, faire un calcul, trier, filtrer et en tirer une conclusion.",
+      "plusLoin": [
+        {
+          "texte": "Les douze mesures de la fiche, à ouvrir dans le tableur (LibreOffice Calc ou Excel).",
+          "fichier": "/2026/seq06/defi-robot.csv",
+          "libelle": "Fichier des mesures (CSV)"
+        },
+        {
+          "texte": "Trace un graphique « nuage de points » avec la vitesse en abscisse et l'écart en ordonnée. Que montre la forme du nuage ?"
+        }
+      ]
     }
   }
 }

@@ -467,7 +467,7 @@ body {
   font-family: var(--display); font-weight: 700; font-size: 1.15rem;
   letter-spacing: -.015em; margin: 0 0 .9rem;
 }
-.situation, .parcours, .je-sais { margin: 2.25rem 0 0; max-width: var(--boite); }
+.situation, .parcours, .je-sais, .plus-loin { margin: 2.25rem 0 0; max-width: var(--boite); }
 .situation-figure {
   margin: 0; padding: 1rem; background: var(--papier);
   border: 1.5px solid var(--trait); border-radius: var(--r);
@@ -490,6 +490,10 @@ body {
   margin: 0; max-width: var(--mesure); font-family: var(--display); font-weight: 600;
   font-size: 1.12rem; line-height: 1.45; letter-spacing: -.01em;
 }
+/* Ce qui a quitté la fiche papier pour l'alléger : une question de plus, un fichier. */
+.plus-loin ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .8rem; }
+.plus-loin li { max-width: var(--mesure); line-height: 1.55; }
+.plus-loin .btn { margin-top: .5rem; }
 .meta > dl + .meta-prof { margin-top: 1rem; }
 .meta-prof summary {
   cursor: pointer; padding: .5rem 0; font-family: var(--mono); font-size: .72rem;
