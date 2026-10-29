@@ -59,7 +59,7 @@ Décision du 29/10/2026 : le site reste un **carnet de plans**, pas un manuel nu
 
 ## Fiches papier
 
-Repères de mise en page, appliqués aux fiches S2-A09, S6-A05, S6-A06 et S5-A03 bis. Ils peuvent servir de modèle à l'outil qui produit les autres fiches.
+Repères de mise en page, appliqués à toutes les fiches élèves (`FICHE_*`). Les 79 fiches décrites dans `src/data/fiches/` sont régénérées par `scripts/fiches-papier/mettre-en-page.py` ; les quatre fiches ajoutées en octobre 2026 (S2-A09, S6-A05, S6-A06, S5-A03 bis) ont été écrites directement dans cette mise en page. Les versions adaptées (`EBEP_*`) gardent leur format propre : une page, texte en 20 pt gras.
 
 - **Deux pages, une feuille recto verso.** Le saut de page est choisi : une partie ou un tableau ne commence jamais en bas de page pour finir au verso.
 - **Écrite pour la main, pas pour le clavier.** Lignes d'écriture espacées de 1 cm, cases de tableau à remplir d'au moins 1 cm de haut, blancs dans les phrases d'au moins 4 cm, cases à cocher en 14 pt. Version adaptée : une page, texte en 12 pt, lignes à 1,1 cm.
