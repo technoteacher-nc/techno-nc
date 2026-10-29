@@ -218,7 +218,25 @@
         "À quoi sert cet objet pour chacune de ces personnes ?",
         "Qu'est-ce que l'objet fait pour tout le monde, quel que soit l'utilisateur ?",
         "Qu'est-ce qui change d'une personne à l'autre ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Choisis des objets que tu utilises vraiment, et donne-leur un nom précis : « chauffe-eau solaire » plutôt que « machin sur le toit »."
+        ],
+        "2": [
+          "La FP dit à quoi sert l'objet ; une FC dit une limite à respecter. Pour trouver une FC, pense à la sécurité, au prix, à l'encombrement…"
+        ],
+        "3": [
+          "Pour chaque flux, demande-toi ce qui rentre dans l'objet et ce qui en sort : de la matière, de l'énergie, de l'information ?",
+          "Si l'objet ne touche pas à un flux, écris « aucun » : c'est une vraie réponse."
+        ],
+        "4": [
+          "Pour chaque objet de la banque, demande-toi d'abord à quoi il sert, puis dans quel domaine ce service se range."
+        ],
+        "5": [
+          "Pense à un objet qui sert beaucoup loin du réseau (eau, électricité) et presque pas en ville : qu'est-ce qui change, l'objet ou le besoin ?"
+        ]
+      }
     },
     "s2-a01-5eme": {
       "visuel": "s2-a01.svg",
@@ -227,7 +245,24 @@
         "À quoi sert cet objet pour chacune de ces personnes ?",
         "Qu'est-ce que l'objet fait pour tout le monde, quel que soit l'utilisateur ?",
         "Qu'est-ce qui change d'une personne à l'autre ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Regarde autour de toi dans la salle et chez toi : choisis des objets fabriqués par des humains, et donne-leur un nom précis."
+        ],
+        "2": [
+          "Pour chaque phrase, demande-toi : si on retire ce service, l'objet sert-il encore à ce pour quoi il a été inventé ?"
+        ],
+        "3": [
+          "Reprends un objet de la partie 1 que tu connais bien, et réponds à chaque question de la fiche l'une après l'autre."
+        ],
+        "4": [
+          "Pour chaque objet de la banque, demande-toi à quoi il sert, puis range ce service dans un domaine."
+        ],
+        "5": [
+          "Relis les deux définitions de la partie 2 : laquelle dit que l'objet perd son sens sans elle ?"
+        ]
+      }
     },
     "s2-a02-4eme": {
       "visuel": "s2-a02-4eme.svg",
@@ -239,7 +274,25 @@
       ],
       "masquerMots": [
         "Chaîne d'information"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque objet du scénario, demande-toi s'il mesure quelque chose, s'il décide, s'il agit, ou s'il dialogue avec Léo.",
+          "En cas de doute, regarde l'apport projeté au tableau."
+        ],
+        "2": [
+          "Les trois étapes vont dans l'ordre : on prend l'information, on la traite, puis on la transmet. Place chaque objet à son moment."
+        ],
+        "3": [
+          "Reproduis d'abord les blocs, puis les flèches. Pour chaque flèche, demande-toi ce qui passe : de la matière, de l'énergie ou un message ?"
+        ],
+        "4": [
+          "Pour chaque besoin, demande-toi quelle grandeur le système doit surveiller : quelqu'un qui passe, la chaleur, la lumière ?"
+        ],
+        "5": [
+          "Imagine qu'on retire un des trois objets : que ne pourrait plus faire le système ?"
+        ]
+      }
     },
     "s2-a02-5eme": {
       "visuel": "s2-a02-5eme.svg",
@@ -248,7 +301,25 @@
         "Que se passe-t-il quand on appuie sur un bouton ?",
         "Comment le corps du stylo garde-t-il les quatre recharges séparées ?",
         "Pourquoi une seule pointe sort-elle à la fois ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Tourne le stylo dans tous les sens et compte lentement : les couleurs, puis les boutons."
+        ],
+        "2": [
+          "Fais chaque geste lentement en regardant la pointe du stylo.",
+          "Pour l'explication, regarde le bout du stylo : par où les mines peuvent-elles sortir ?"
+        ],
+        "3": [
+          "Dessine d'abord le contour du stylo, en grand, puis ajoute les parties une par une avec une flèche et leur nom."
+        ],
+        "4": [
+          "Pour chaque partie, demande-toi ce que tu fais avec elle quand tu utilises le stylo."
+        ],
+        "5": [
+          "Repense à ce que tu as observé en partie 2 : combien de mines peuvent sortir en même temps, et par où ?"
+        ]
+      }
     },
     "s2-a03-4eme": {
       "visuel": "s2-a03-4eme.svg",
@@ -260,7 +331,26 @@
       ],
       "masquerMots": [
         "Chaîne d'information"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Relis la définition du capteur, puis pour chaque capteur demande-toi ce qu'il « sent » sur la personne qui porte la montre."
+        ],
+        "2": [
+          "Commence par ce qui se passe en premier, quand la montre touche ta peau, et termine par ce que tu vois sur l'écran.",
+          "Pour la fonction, relis les trois étapes ① ② ③ en haut de la partie."
+        ],
+        "3": [
+          "Pour chaque service, demande-toi : si on le retire, est-ce encore une montre ?"
+        ],
+        "4": [
+          "Pour chaque donnée, demande-toi s'il existe un capteur capable de la mesurer.",
+          "Pour la deuxième question, pense à l'application du téléphone qui affiche tes résultats : d'où viennent-ils ?"
+        ],
+        "5": [
+          "Compare ce que mesure une montre ordinaire et ce que mesure une montre connectée : combien de capteurs chacune a-t-elle ?"
+        ]
+      }
     },
     "s2-a03-5eme": {
       "visuel": "s2-a03-5eme.svg",
@@ -269,7 +359,22 @@
         "Que faut-il faire pour allumer la première lampe ?",
         "Que doit « remarquer » la seconde pour s'allumer seule ?",
         "Quels objets, chez toi, agissent sans qu'on appuie sur un bouton ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Relis les deux conditions en haut de la partie : pour chaque objet, cherche ce qu'il capte, puis ce qu'il fait tout seul."
+        ],
+        "2": [
+          "Pour chaque objet, vérifie les deux conditions : capte-t-il quelque chose ? agit-il sans qu'on appuie ?",
+          "Pour la question à entourer, pense à un objet électrique de la maison qui ne fait rien tant qu'on n'appuie pas dessus."
+        ],
+        "3": [
+          "Pense aux objets qui se déclenchent tout seuls chez toi : une lumière, une alarme, un appareil qui s'arrête quand c'est fini…"
+        ],
+        "4": [
+          "Vérifie les deux conditions de la partie 1 pour chacun des deux objets."
+        ]
+      }
     },
     "s2-a04-4eme": {
       "visuel": "s2-a04.svg",
@@ -281,7 +386,24 @@
       ],
       "masquerMots": [
         "Cycle de vie"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Raconte la vie de l'objet dans l'ordre : d'où vient sa matière, comment il est fabriqué, comment il arrive jusqu'à toi, comment tu t'en sers, ce qu'il devient.",
+          "Pour l'énergie, relis les chiffres donnés au début de la partie 2."
+        ],
+        "2": [
+          "Fais les calculs dans l'ordre : d'abord la parenthèse, puis l'addition.",
+          "Pour la comparaison, regarde les résultats b et c : ils portent tous les deux sur 4 ans."
+        ],
+        "3": [
+          "Pour chaque phrase, cherche le mot qui renvoie à un critère : ouvrir, notice, trouver la pièce, prix…",
+          "Lis les notes sur les étiquettes projetées : la plus haute est la plus facile à réparer."
+        ],
+        "4": [
+          "Pense au trajet d'un appareil neuf ou d'une pièce détachée jusqu'en Nouvelle-Calédonie : temps, coût, distance."
+        ]
+      }
     },
     "s2-a04-5eme": {
       "visuel": "s2-a04.svg",
@@ -293,7 +415,22 @@
       ],
       "masquerMots": [
         "Cycle de vie"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Raconte la vie de l'objet dans l'ordre : d'où vient la matière, la fabrication, le transport, l'utilisation, la fin de vie."
+        ],
+        "2": [
+          "Relis le texte juste sous la question après avoir répondu : il te permet de vérifier."
+        ],
+        "3": [
+          "Pour chaque proposition, demande-toi si elle t'aiderait ou te gênerait pour ouvrir et réparer l'objet.",
+          "Sur les étiquettes, la note est sur 10 : plus elle est haute, plus c'est réparable."
+        ],
+        "4": [
+          "Pense au trajet d'un objet neuf jusqu'en Nouvelle-Calédonie, et à ce que devient l'objet qu'on jette."
+        ]
+      }
     },
     "s2-a05-4eme": {
       "visuel": "s2-a05.svg",
@@ -302,7 +439,27 @@
         "Qu'est-ce qui a changé entre ces deux objets ?",
         "Qu'est-ce qui, au contraire, n'a pas changé ?",
         "Pourquoi les objets techniques évoluent-ils ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Range les objets en te demandant lequel tes grands-parents auraient pu utiliser enfants, puis lequel est le plus récent.",
+          "Pour l'énergie, demande-toi s'il faut une flamme, une pile, une prise, ou aussi un réseau."
+        ],
+        "2": [
+          "Fais les calculs dans l'ordre a, b, c : chacun réutilise le précédent.",
+          "Relis la phrase d'introduction : les deux ampoules donnent-elles la même quantité de lumière ?"
+        ],
+        "3": [
+          "Pour chaque amélioration, demande-toi ce qu'elle a apporté : moins de danger, plus de confort, moins de consommation, plus de liberté ?",
+          "Une seule lettre ne sert pas : élimine celles que tu as déjà utilisées."
+        ],
+        "4": [
+          "Regarde l'apport projeté : qu'est-ce que le tracker a de plus qu'un panneau fixe ?"
+        ],
+        "5": [
+          "Compare l'énergie que consomme le capteur et ce que le panneau gagne en suivant le soleil toute la journée."
+        ]
+      }
     },
     "s2-a05-5eme": {
       "visuel": "s2-a05.svg",
@@ -311,7 +468,27 @@
         "Qu'est-ce qui a changé entre ces deux objets ?",
         "Qu'est-ce qui, au contraire, n'a pas changé ?",
         "Pourquoi les objets techniques évoluent-ils ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Range les objets en te demandant lequel existait avant l'électricité, puis lequel est le plus récent.",
+          "Pour l'énergie, demande-toi s'il faut une flamme, une pile, une prise, ou aussi un réseau."
+        ],
+        "2": [
+          "Demande-toi à quoi servent tous ces objets, de la bougie à la LED connectée.",
+          "Pour ce qui a changé, compare la bougie et la LED : de quoi ont-elles besoin pour fonctionner ? sont-elles aussi dangereuses ?"
+        ],
+        "3": [
+          "Pour chaque amélioration, demande-toi ce qu'elle a apporté : moins de danger, plus de confort, moins de consommation, plus de liberté ?",
+          "Une seule lettre ne sert pas : élimine celles que tu as déjà utilisées."
+        ],
+        "4": [
+          "Relis la phrase sur les trackers : que font-ils de plus qu'un panneau fixe, et pourquoi ?"
+        ],
+        "5": [
+          "Repense à la partie 2 : qu'est-ce qui n'a pas changé entre la bougie et la LED ?"
+        ]
+      }
     },
     "s2-a06-4eme": {
       "visuel": "s2-a06-4eme.svg",
@@ -320,7 +497,23 @@
         "Sur quelle version trouve-t-on le plus vite ce qu'on cherche ?",
         "Une personne qui voit mal peut-elle utiliser cette version ?",
         "Qu'est-ce qui rend un écran facile à utiliser ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque critère, imagine-toi devant une application : quelle question te poses-tu ?"
+        ],
+        "2": [
+          "Teste les deux versions avec la même tâche, et compte les étapes, les clics ou les erreurs : ce sont des faits.",
+          "Ta justification doit citer quelque chose que tout le monde peut vérifier, pas « j'aime mieux »."
+        ],
+        "3": [
+          "Mets-toi à la place d'une personne qui voit mal : qu'est-ce qui la gêne sur l'écran ? la taille, le contraste, le son ?",
+          "Pour chaque modification, nomme le critère UX qu'elle améliore."
+        ],
+        "4": [
+          "Dessine d'abord le cadre de l'écran, puis trois boutons au plus. Ajoute les légendes à la fin."
+        ]
+      }
     },
     "s2-a06-5eme": {
       "visuel": "s2-a06-5eme.svg",
@@ -329,7 +522,22 @@
         "Les deux rendent le même service : laquelle est la plus agréable ?",
         "Pourquoi celle-ci est-elle difficile à utiliser ?",
         "Qu'est-ce qui rend un objet agréable à utiliser ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Utilise chaque objet pour de vrai avant de remplir sa ligne, et note ce que tu as ressenti, pas ce que tu supposes."
+        ],
+        "2": [
+          "Pour chaque phrase, demande-toi : parle-t-on de ce qu'on fait avec l'objet, de ce à quoi il sert, ou de ce qu'on ressent en l'utilisant ?"
+        ],
+        "3": [
+          "Regarde la même chose sur les deux écrans : le nombre de boutons, la taille du texte, les étapes pour acheter.",
+          "Ta justification doit s'appuyer sur une des différences que tu as écrites."
+        ],
+        "4": [
+          "Choisis un objet qui t'a vraiment gêné en partie 1. Garde sa fonction : c'est seulement la façon de l'utiliser qu'on améliore."
+        ]
+      }
     },
     "s2-a07-4eme": {
       "visuel": "s2-a07-4eme.svg",
@@ -338,7 +546,23 @@
         "Quels critères comparer d'un devis à l'autre ?",
         "Lequel répond le mieux au besoin du collège ?",
         "Le budget est-il respecté ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Lis les devis ligne par ligne et recopie chaque caractéristique dans la même colonne que son PC."
+        ],
+        "2": [
+          "Pour 2a, multiplie le prix d'un PC par 5 et compare au budget.",
+          "Pour 2b et 2c, relis tes fiches de la séquence 01 sur la RAM et les disques."
+        ],
+        "3": [
+          "Commence par le modèle que tu recommandes, puis donne trois raisons, chacune avec un chiffre du tableau, et termine par le budget."
+        ],
+        "4": [
+          "Pour 4a, demande-toi ce qu'on paie quand une pièce tombe en panne : la pièce seule, ou tout l'ordinateur ?",
+          "Pour 4b, pense au temps sans ordinateur et au transport."
+        ]
+      }
     },
     "s2-a07-5eme": {
       "visuel": "s2-a07-5eme.svg",
@@ -347,7 +571,22 @@
         "Chaque utilisateur a-t-il besoin des mêmes critères ?",
         "Que disent les chiffres de chaque fiche produit ?",
         "Le choix tient-il dans le budget ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Lis les fiches produits ligne par ligne et recopie chaque caractéristique dans la colonne de son modèle."
+        ],
+        "2": [
+          "Imagine la journée de chaque utilisateur : où, quand et comment il se sert de ses écouteurs ?"
+        ],
+        "3": [
+          "Choisis d'abord ce qui compte pour le collège, puis cherche dans le tableau le modèle qui fait le mieux sur ces critères.",
+          "Chaque raison doit citer un chiffre du tableau de la partie 1."
+        ],
+        "4": [
+          "Multiplie le prix d'un modèle par le nombre de postes, puis compare au budget."
+        ]
+      }
     },
     "s2-a08-4eme": {
       "visuel": "s2-a08.svg",
@@ -356,7 +595,23 @@
         "Quel geste ne marche plus ?",
         "Que faut-il pour ouvrir la souris sans la casser ?",
         "Comment vérifier que la réparation a réussi ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Fais les trois gestes l'un après l'autre et observe l'écran à chaque fois."
+        ],
+        "2": [
+          "Suis les étapes dans l'ordre, sans en sauter, et pose les vis dans la boîte.",
+          "Regarde à l'intérieur avant de toucher : où est le problème, près de la molette, du capteur ou du bouton ?"
+        ],
+        "3": [
+          "Réponds pour la souris que TU as ouverte, ligne par ligne, puis compte les « oui ».",
+          "Pour passer sur 10, multiplie ton total par 2,5."
+        ],
+        "4": [
+          "Pense au trajet d'une souris neuve jusqu'en Nouvelle-Calédonie, et à ce que devient la souris jetée."
+        ]
+      }
     },
     "s2-a08-5eme": {
       "visuel": "s2-a08.svg",
@@ -365,7 +620,22 @@
         "Quel geste ne marche plus ?",
         "Que faut-il pour ouvrir la souris sans la casser ?",
         "Comment vérifier que la réparation a réussi ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Fais les trois gestes l'un après l'autre et observe l'écran à chaque fois."
+        ],
+        "2": [
+          "Suis les étapes dans l'ordre, sans en sauter, et pose les vis dans la boîte.",
+          "Regarde à l'intérieur avant de toucher : où est le problème, près de la molette, du capteur ou du bouton ?"
+        ],
+        "3": [
+          "Réponds pour la souris que TU as ouverte, ligne par ligne."
+        ],
+        "4": [
+          "Repense à ce que tu as trouvé à l'intérieur : la souris était-elle vraiment cassée ?"
+        ]
+      }
     },
     "s3-a01-4eme": {
       "visuel": "s3-a01-4eme.svg",
@@ -374,7 +644,20 @@
         "Comment les ordinateurs d'une même salle sont-ils reliés entre eux ?",
         "Qu'est-ce qui permet à deux réseaux différents de communiquer ?",
         "Comment chaque machine est-elle reconnue dans son réseau ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Suis chaque câble du schéma : chaque élément est relié aux autres d'une façon qui trahit son rôle.",
+          "Pour l'intrus, cherche dans la liste l'élément qui se trouve à l'intérieur d'un ordinateur, pas dans le réseau."
+        ],
+        "2": [
+          "Compare les trois premiers nombres des adresses IP : deux machines du même réseau local les ont identiques.",
+          "Pour 2c et 2d, demande-toi quel équipement du schéma relie les deux réseaux."
+        ],
+        "3": [
+          "Coupe chaque adresse comme l'exemple : les trois premiers nombres d'un côté, le dernier de l'autre."
+        ]
+      }
     },
     "s3-a01-5eme": {
       "visuel": "s3-a01-5eme.svg",
@@ -383,7 +666,19 @@
         "Où mon fichier est-il vraiment enregistré ?",
         "Comment le retrouver depuis un autre ordinateur ?",
         "Pourquoi faut-il ouvrir sa session avant de travailler ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Suis le trajet de ton fichier sur le schéma, de ton poste jusqu'à l'endroit où il est rangé : chaque élément traversé a un rôle.",
+          "Pour l'intrus, demande-toi quel élément on pourrait débrancher sans empêcher le fichier de circuler."
+        ],
+        "2": [
+          "Pour chaque affirmation, cherche sur le schéma de la partie 1 un élément qui la confirme ou la contredit."
+        ],
+        "3": [
+          "Fais les actions dans l'ordre et coche au fur et à mesure. Pour retrouver ton fichier, repars de ton espace personnel."
+        ]
+      }
     },
     "s3-a02-4eme": {
       "visuel": "s3-a02-4eme.svg",
@@ -392,7 +687,21 @@
         "Que faut-il pour que deux machines puissent se parler ?",
         "Comment prouver que le message est bien arrivé ?",
         "Comment ajouter une troisième machine au réseau ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Fais les étapes dans l'ordre et vérifie chaque adresse IP avant de passer en simulation.",
+          "Si le ping échoue, relis les adresses des deux machines caractère par caractère, et vérifie que le câble est bien branché des deux côtés."
+        ],
+        "2": [
+          "Ajoute le switch, puis relie chaque machine au switch, et à lui seul.",
+          "Lis le résultat de ipconfig ligne par ligne : il redonne l'adresse et le masque de la machine."
+        ],
+        "3": [
+          "Recopie ce que tu as vu à l'écran pendant tes tests, puis conclus en une phrase : ça marche, ou ça ne marche pas, et pourquoi.",
+          "Pour la dernière question, compte les câbles qu'il faudrait pour relier directement chaque paire de machines d'une salle de 15 postes."
+        ]
+      }
     },
     "s3-a02-5eme": {
       "visuel": "s3-a02-5eme.svg",
@@ -401,7 +710,19 @@
         "Par où la photo sort-elle de l'île ?",
         "Par combien d'étapes passe-t-elle avant d'arriver ?",
         "Combien de temps met-elle pour faire le voyage ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Raconte le voyage dans ta tête, depuis le téléphone qui prend la photo jusqu'à l'écran qui l'affiche à l'autre bout du monde."
+        ],
+        "2": [
+          "Cherche chaque réponse dans le document projeté : souligne les mots de la question dans le texte.",
+          "Pour 2c, demande-toi ce qui se passerait si l'unique câble était coupé."
+        ],
+        "3": [
+          "Dessine d'abord les trois territoires, même simplement, puis trace le trajet dans l'ordre de la partie 1."
+        ]
+      }
     },
     "s3-a03-4eme": {
       "visuel": "s3-a03-4eme.svg",
@@ -410,7 +731,20 @@
         "Comment un nom de site devient-il une adresse de machine ?",
         "Qu'est-ce qui relie deux réseaux différents ?",
         "Où se trouve la page web que l'on affiche ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Relis le rappel : c'est le troisième nombre de l'adresse qui distingue les deux réseaux.",
+          "Avant de configurer la passerelle, essaie le ping : lis le message d'erreur, il dit ce qui manque."
+        ],
+        "2": [
+          "Suis les étapes dans l'ordre, et teste le site avant de configurer le DNS, puis après.",
+          "Compare ce que tu tapes (un nom de site) et ce dont un ordinateur a besoin pour joindre une machine."
+        ],
+        "3": [
+          "Repense au trajet de la partie 2 : qui tape l'adresse, qui la traduit, qui envoie la page ?"
+        ]
+      }
     },
     "s3-a03-5eme": {
       "visuel": "s3-a03-5eme.svg",
@@ -419,7 +753,19 @@
         "Quel logiciel fait fonctionner l'ordinateur dès qu'on l'allume ?",
         "Quel logiciel ouvre les pages web, et lequel cherche ce qu'on demande ?",
         "Qui possède ces logiciels, et comment gagnent-ils de l'argent ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque étiquette, demande-toi : est-ce que ça fait démarrer l'appareil, est-ce que ça affiche les pages web, ou est-ce que ça cherche des pages ?"
+        ],
+        "2": [
+          "Inspire-toi de la ligne déjà remplie : pour chaque logiciel, sa famille, qui le fabrique, et s'il est gratuit."
+        ],
+        "3": [
+          "Cherche chaque service dans le document projeté pour trouver son propriétaire.",
+          "Pour la question d'enquêteur, pense à ce que ces services voient de toi pendant que tu les utilises."
+        ]
+      }
     },
     "s3-a04-4eme": {
       "visuel": "s3-a04-4eme.svg",
@@ -428,7 +774,21 @@
         "Ce service coûte 0 F : est-il vraiment gratuit ?",
         "Quelles données partent de ton téléphone quand tu l'utilises ?",
         "Qui reçoit ces données, et qu'en fait-il ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Découpe l'adresse en morceaux, comme le tableau, et demande-toi ce que chaque morceau désigne : la façon de communiquer, le site, la page…",
+          "Pour 1a, repense au serveur qui traduit les noms de sites, vu en S3-A03."
+        ],
+        "2": [
+          "Pour chaque service, cherche dans le document projeté ce qu'il collecte, puis à qui cela peut servir.",
+          "Pour GAFAM, chaque lettre est l'initiale d'une entreprise du tableau."
+        ],
+        "3": [
+          "Pour chaque argument, donne un exemple précis tiré d'un service que tu utilises.",
+          "Le règlement de 3a sera étudié en séquence 04 : cherche son sigle dans le lexique."
+        ]
+      }
     },
     "s3-a04-5eme": {
       "visuel": "s3-a04-5eme.svg",
@@ -437,7 +797,21 @@
         "Que faut-il pour relier deux ordinateurs ?",
         "Comment vérifier que le message passe vraiment ?",
         "Comment brancher une troisième machine ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Repense à la salle de S3-A01 : comment les ordinateurs étaient-ils reliés entre eux ?",
+          "Pour 1b, pense à un courrier : que se passerait-il si deux maisons avaient la même adresse ?"
+        ],
+        "2": [
+          "Fais les étapes dans l'ordre et vérifie chaque adresse IP avant de lancer la simulation.",
+          "Pour 2b, lis bien le message affiché : combien de paquets sont perdus, et à qui les envoyais-tu ?"
+        ],
+        "3": [
+          "Relie chaque PC au switch, et seulement au switch, puis teste depuis chaque machine.",
+          "Pour 3a, essaie de relier trois ordinateurs sans switch : combien de prises réseau faudrait-il à chacun ?"
+        ]
+      }
     },
     "s4-a01-4eme": {
       "visuel": "s4-a01-4eme.svg",
@@ -446,7 +820,20 @@
         "Ce message vient-il vraiment de qui il prétend ?",
         "Où peut se cacher le piège ?",
         "Comment protéger un compte même si le mot de passe a fuité ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Regarde l'exemple annoté projeté : chaque flèche montre un indice. Recopie-les en une phrase courte."
+        ],
+        "2": [
+          "Pour chaque message, passe les 5 indices de la partie 1 en revue, un par un.",
+          "Ta preuve doit citer un détail précis du message : l'adresse de l'expéditeur, un lien, une faute, une urgence…"
+        ],
+        "3": [
+          "Pour 3a, compare la longueur des trois mots de passe et ce qu'on peut deviner sur toi.",
+          "Pour 3b, demande-toi ce qu'il manque au pirate qui a volé seulement le mot de passe."
+        ]
+      }
     },
     "s4-a01-5eme": {
       "visuel": "s4-a01-5eme.svg",
@@ -455,7 +842,20 @@
         "Combien de temps ce mot de passe résisterait-il ?",
         "Qu'est-ce qui rend un mot de passe solide ?",
         "Comment retenir un mot de passe solide sans l'écrire ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Utilise le tableau projeté : pour chaque mot de passe, compte ses caractères et regarde les types de caractères utilisés.",
+          "Pour 1a, compare dans le tableau un mot de passe court plein de symboles et un mot de passe long sans symboles."
+        ],
+        "2": [
+          "Choisis quatre mots qui font une image drôle dans ta tête : elle se retient mieux qu'une suite de lettres.",
+          "Ajoute le chiffre et le symbole, puis compte les caractères."
+        ],
+        "3": [
+          "Pour chaque affirmation, demande-toi si elle protège vraiment tes comptes, ou si c'est une idée reçue."
+        ]
+      }
     },
     "s4-a02-4eme": {
       "visuel": "s4-a02-4eme.svg",
@@ -464,7 +864,19 @@
         "Quelles traces laisse-t-on en naviguant ?",
         "Comment une publicité « devine »-t-elle ce qui t'intéresse ?",
         "Quels droits as-tu sur les données qu'on collecte sur toi ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Raconte le ciblage comme une histoire : tu visites un site, il garde une trace, puis tu vois une publicité ailleurs. Remets les étapes dans cet ordre."
+        ],
+        "2": [
+          "Pour chaque situation, demande-toi ce que la personne veut obtenir : voir ses données, les corriger, les effacer, refuser leur usage ?"
+        ],
+        "3": [
+          "Pour chaque réglage, demande-toi à qui il sert : à toi, ou à ceux qui font de la publicité ?",
+          "Ta justification commence par « parce que » et dit ce que tu protèges."
+        ]
+      }
     },
     "s4-a02-5eme": {
       "visuel": "s4-a02-5eme.svg",
@@ -473,7 +885,19 @@
         "Qui peut voir cette photo une fois publiée ?",
         "Peut-on vraiment la retirer ?",
         "Quels réglages protègent ce que je publie ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque trace, demande-toi : est-ce moi qui l'ai laissée exprès, ou s'est-elle faite sans que je m'en rende compte ?"
+        ],
+        "2": [
+          "Suis la photo sur le schéma projeté : par combien d'endroits passe-t-elle après la publication ?",
+          "Une copie faite ailleurs disparaît-elle quand tu supprimes l'original ?"
+        ],
+        "3": [
+          "Pour chaque réglage, demande-toi qui pourra voir ce que tu publies, et si c'est ce que tu veux."
+        ]
+      }
     },
     "s4-a03-5eme": {
       "visuel": "s4-a03-5eme.svg",
@@ -482,7 +906,19 @@
         "Quand des messages deviennent-ils du harcèlement ?",
         "Que peut faire la personne qui les reçoit ?",
         "Et celle qui voit la scène, que peut-elle faire ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque situation, vérifie les trois conditions de la définition, une par une : répétition, volonté de nuire, victime seule.",
+          "Pour 1a, cherche les mots qui disent « encore », « tous les jours », « plusieurs fois »…"
+        ],
+        "2": [
+          "Lis les réflexes de chaque rôle en t'imaginant dans la situation : lequel te demanderait le plus de courage ?"
+        ],
+        "3": [
+          "Choisissez trois réflexes courts, qui disent quoi faire plutôt que quoi ne pas faire, et vérifiez la liste à cocher avant d'enregistrer."
+        ]
+      }
     },
     "s1-a01-4eme": {
       "visuel": "s1-a01.svg",
@@ -491,7 +927,28 @@
         "Que demande exactement la consigne ?",
         "Comment vérifier que la page respecte la consigne, au point près ?",
         "Où, et sous quel nom, enregistrer le fichier ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Fais les gestes dans l'ordre de la liste et coche au fur et à mesure : si tu sautes une case, reviens-y avant de continuer.",
+          "Pour la question, demande-toi ce qui se passe si le courant saute alors que tu n'as encore rien enregistré."
+        ],
+        "2": [
+          "Lis la consigne projetée ligne par ligne, et recopie les réglages exactement : même police, même taille, même mise en forme.",
+          "Pour la définition, compare deux textes écrits dans deux polices différentes mais de la même taille : qu'est-ce qui change ?"
+        ],
+        "3": [
+          "Place les images une par une, en vérifiant chaque fois la position demandée (en haut à gauche, à droite, derrière le texte).",
+          "Sur le site où tu as trouvé l'image, cherche une mention de licence, souvent en bas de page ou sous l'image."
+        ],
+        "4": [
+          "Le chemin du dossier se lit dans la barre d'adresse de l'explorateur de fichiers, quand tu ouvres le dossier.",
+          "L'extension, ce sont les lettres après le point dans le nom complet du fichier."
+        ],
+        "5": [
+          "Compare une page jolie mais réglée à ton goût, et une page qui suit la consigne point par point : laquelle est conforme ?"
+        ]
+      }
     },
     "s1-a01-5eme": {
       "visuel": "s1-a01.svg",
@@ -500,7 +957,28 @@
         "Que demande exactement la consigne ?",
         "Comment vérifier que la page respecte la consigne, au point près ?",
         "Où, et sous quel nom, enregistrer le fichier ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Suis l'ordre de la liste : écran, unité centrale, identifiant, mot de passe. Coche chaque case dès que c'est fait.",
+          "Si ta session ne s'ouvre pas, vérifie la touche Majuscule et le clavier numérique avant de réessayer."
+        ],
+        "2": [
+          "Lis la consigne projetée ligne par ligne, et recopie exactement ce qui est demandé pour chaque élément.",
+          "Pour régler la taille, sélectionne d'abord le texte, puis change le nombre dans la case de la taille de police."
+        ],
+        "3": [
+          "Place les images une par une et vérifie chaque fois la position demandée.",
+          "Pour mettre une image derrière le texte, fais un clic droit sur l'image et cherche les options qui disent comment le texte l'entoure."
+        ],
+        "4": [
+          "Avant de cliquer sur « Enregistrer », regarde dans quel dossier tu te trouves en haut de la fenêtre.",
+          "Pour le nom de fichier, imagine que tu cherches ton travail dans six mois parmi cent autres : quel nom te ferait le retrouver tout de suite ?"
+        ],
+        "5": [
+          "Pense à une consigne vague, comme « mets un beau titre » : l'ordinateur saurait-il quoi faire ?"
+        ]
+      }
     },
     "s1-a02-4eme": {
       "visuel": "s1-a02.svg",
@@ -509,7 +987,24 @@
         "Pourquoi est-il difficile de retrouver une information ici ?",
         "Qu'est-ce que le tableau change ?",
         "À quoi sert chaque colonne ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Suis les étapes dans l'ordre : la hauteur des lignes se règle une fois le tableau entièrement créé.",
+          "Pour le nombre de cellules, multiplie le nombre de colonnes par le nombre de lignes."
+        ],
+        "2": [
+          "Pour chaque service, demande-toi quelle colonne tu regarderais pour l'obtenir.",
+          "Imagine le sommaire sans cette colonne : que ne pourrais-tu plus faire ?"
+        ],
+        "3": [
+          "Découpe le code en morceaux séparés par le tiret, et cherche ce que désigne chaque morceau dans l'exemple.",
+          "Dans la banque, compare les codes aux titres déjà écrits : chaque titre correspond à un seul numéro d'activité."
+        ],
+        "4": [
+          "Demande-toi ce que la troisième colonne permet de faire que les deux autres ne permettent pas."
+        ]
+      }
     },
     "s1-a02-5eme": {
       "visuel": "s1-a02.svg",
@@ -518,7 +1013,24 @@
         "Pourquoi est-il difficile de retrouver une information ici ?",
         "Qu'est-ce que le tableau change ?",
         "À quoi sert chaque colonne ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Suis les étapes dans l'ordre et coche au fur et à mesure : la hauteur des lignes se règle à la fin.",
+          "Les nombres demandés sont ceux que tu as tapés dans la fenêtre d'insertion du tableau."
+        ],
+        "2": [
+          "Écris les trois titres dans ton tableau d'abord, puis recopie-les sur la fiche.",
+          "Relis la petite explication sous la question : elle dit quand on fusionne et quand on ne fusionne pas."
+        ],
+        "3": [
+          "Lis le titre de chaque ligne et cherche dans quelle activité tu l'as fait ou le feras.",
+          "Chaque code de la banque ne correspond qu'à un seul titre : élimine ceux que tu as déjà placés."
+        ],
+        "4": [
+          "Pense au moment où tu cherches une fiche dans ton classeur : comment fais-tu sans sommaire ? Et avec ?"
+        ]
+      }
     },
     "s1-a03-4eme": {
       "visuel": "s1-a03.svg",
@@ -527,7 +1039,26 @@
         "Quelles pièces trouve-t-on dans le boîtier ?",
         "À quoi sert chacune d'elles ?",
         "Comment comparer deux ordinateurs à partir de leurs pièces ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Clique sur chaque composant de l'animation l'un après l'autre, et lis jusqu'au bout la fenêtre qui s'ouvre avant de passer au suivant."
+        ],
+        "2": [
+          "Lis le rôle et l'unité de chaque ligne : l'unité est un bon indice (GHz, Go, W…).",
+          "Chaque mot de la banque ne va qu'à un seul endroit : commence par ceux dont tu es sûr."
+        ],
+        "3": [
+          "Pour chaque besoin, demande-toi quelle caractéristique compte le plus : la vitesse, la place, la quantité de mémoire, la consommation ?",
+          "Compare les deux valeurs de cette caractéristique dans les fiches techniques."
+        ],
+        "4": [
+          "Commence par dessiner un grand rectangle pour le boîtier, puis place les composants les plus gros en premier."
+        ],
+        "5": [
+          "Pense à ce qui travaille quand l'ordinateur démarre : il va chercher le système d'exploitation… où ça ?"
+        ]
+      }
     },
     "s1-a03-5eme": {
       "visuel": "s1-a03.svg",
@@ -536,7 +1067,26 @@
         "Quelles pièces trouve-t-on dans le boîtier ?",
         "À quoi sert chacune d'elles ?",
         "Comment comparer deux ordinateurs à partir de leurs pièces ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Attends que l'animation soit entièrement chargée, puis clique sur chaque composant l'un après l'autre."
+        ],
+        "2": [
+          "Lis le rôle et l'unité de chaque ligne : l'unité est un bon indice.",
+          "Commence par les composants dont tu es sûr, puis place les autres par élimination."
+        ],
+        "3": [
+          "Demande-toi si l'unité répond à « combien ? » ou à « à quelle vitesse ? ».",
+          "Pour la RAM, pense à un bureau : est-ce qu'un bureau plus grand fait travailler plus vite, ou permet d'étaler plus de choses ?"
+        ],
+        "4": [
+          "Dessine un grand rectangle pour le boîtier, puis place les composants, en abrégeant si tu veux."
+        ],
+        "5": [
+          "Pense à ce qui se passe quand on coupe le courant : quelle mémoire a besoin d'électricité pour garder ce qu'elle contient ?"
+        ]
+      }
     },
     "s1-a04-4eme": {
       "visuel": "s1-a04.svg",
@@ -545,7 +1095,26 @@
         "Dans quel sens l'information circule-t-elle sur chaque trait ?",
         "Cet appareil reçoit-il l'information, l'envoie-t-il, ou les deux ?",
         "Par quelle prise chaque appareil se branche-t-il ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Clique sur chaque périphérique et repère, dans l'animation, l'endroit où il se branche."
+        ],
+        "2": [
+          "Pour chaque périphérique, demande-toi dans quel sens voyage l'information : vers l'unité centrale, depuis elle, ou dans les deux sens ?",
+          "Pense à ce que fait l'appareil quand tu t'en sers, pas à sa forme."
+        ],
+        "3": [
+          "Pour chaque prise, pense à l'appareil que tu y branches, puis à ce que cet appareil reçoit ou envoie.",
+          "Un mot de la banque peut servir deux fois : ne t'arrête pas parce qu'il est déjà utilisé."
+        ],
+        "4": [
+          "Une flèche va de celui qui envoie l'information vers celui qui la reçoit. Une entrée-sortie a deux flèches."
+        ],
+        "5": [
+          "Compare ce que tu fais avec un écran ordinaire et avec un écran tactile : dans quel cas l'écran envoie-t-il aussi de l'information ?"
+        ]
+      }
     },
     "s1-a04-5eme": {
       "visuel": "s1-a04.svg",
@@ -554,7 +1123,25 @@
         "Dans quel sens l'information circule-t-elle sur chaque trait ?",
         "Cet appareil reçoit-il l'information, l'envoie-t-il, ou les deux ?",
         "Par quelle prise chaque appareil se branche-t-il ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Clique sur chaque périphérique et lis son nom, son type et son rôle avant de passer au suivant."
+        ],
+        "2": [
+          "Relis les trois définitions en haut de la partie, puis demande-toi dans quel sens va l'information pour chaque appareil."
+        ],
+        "3": [
+          "Commence chaque fonction par un verbe : afficher, imprimer, saisir, pointer, enregistrer…",
+          "Pense à ce que tu fais quand tu utilises l'appareil."
+        ],
+        "4": [
+          "Une flèche va de celui qui envoie l'information vers celui qui la reçoit."
+        ],
+        "5": [
+          "Sépare le casque en deux : ce qui te permet d'entendre, et ce qui te permet de parler."
+        ]
+      }
     },
     "s1-a05-4eme": {
       "visuel": "s1-a05.svg",
@@ -563,7 +1150,25 @@
         "Lequel des deux a été fabriqué ?",
         "À quel besoin répond la rame ?",
         "Qui l'utilise, et dans quelles conditions doit-elle tenir ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Relis les deux définitions, puis demande-toi si l'objet fonctionne seul ou s'il a besoin d'autres objets reliés à lui pour rendre son service."
+        ],
+        "2": [
+          "Pour chaque mot, demande-toi : est-ce qu'on peut le toucher et le transporter (matière), est-ce que ça fait bouger ou chauffer (énergie), est-ce que ça porte un message (information) ?"
+        ],
+        "3": [
+          "Suis le chemin de l'eau, du toit jusqu'au robinet : chaque composant prend l'eau au précédent.",
+          "Pour le flux qui sort, demande-toi ce qui sort de chaque composant : de l'eau ? de l'énergie ? un message ?"
+        ],
+        "4": [
+          "Inspire-toi des trois lignes modèles : pour chaque sous-système, ce qu'il reçoit puis ce qu'il produit."
+        ],
+        "5": [
+          "Liste les sous-systèmes que tu as trouvés dans le smartphone : combien sont-ils, et sont-ils reliés ?"
+        ]
+      }
     },
     "s1-a05-5eme": {
       "visuel": "s1-a05.svg",
@@ -572,7 +1177,23 @@
         "Lequel des deux a été fabriqué ?",
         "À quel besoin répond la rame ?",
         "Qui l'utilise, et dans quelles conditions doit-elle tenir ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque objet, demande-toi : est-ce qu'une personne l'a conçu pour rendre un service ?",
+          "Un objet peut être fait d'une matière naturelle et être quand même un OST : regarde qui l'a fabriqué."
+        ],
+        "2": [
+          "Réponds aux trois questions dans l'ordre : qui s'en sert, pour quoi faire, quelles limites doit-il respecter ?",
+          "Inspire-toi de la ligne d'exemple, entièrement remplie."
+        ],
+        "3": [
+          "La FP dit à quoi sert l'objet ; une FC dit une limite à respecter (solidité, prix, sécurité…). Lis chaque phrase en te posant la question."
+        ],
+        "4": [
+          "Reprends la définition d'un OST de la partie 1 : qui a fabriqué le vent ? Et l'éolienne ?"
+        ]
+      }
     },
     "s1-a06-4eme": {
       "visuel": "s1-a06.svg",
@@ -581,7 +1202,28 @@
         "Que veut dire « solide » pour chacune de ces personnes ?",
         "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
         "Comment vérifier ensuite que l'objet répond à la demande ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Relis les quatre définitions en haut, puis pour chaque phrase demande-toi : est-ce une action, une limite, une façon de mesurer, ou une valeur avec son unité ?",
+          "Une phrase qui contient un nombre et une unité est souvent un niveau exigé."
+        ],
+        "2": [
+          "Dans chaque paire, demande-toi laquelle on peut vérifier avec un instrument ou un test.",
+          "Si deux personnes peuvent avoir deux avis différents, l'exigence n'est pas vérifiable."
+        ],
+        "3": [
+          "Inspire-toi des deux lignes modèles : pour chaque contrainte, comment la mesurer, puis quelle valeur exiger.",
+          "N'oublie pas l'unité dans la colonne du niveau exigé."
+        ],
+        "4": [
+          "Choisis un système que tu connais bien, pour pouvoir trouver ses contraintes.",
+          "Pour chaque contrainte, demande-toi avec quel instrument ou quel test on la vérifierait."
+        ],
+        "5": [
+          "Demande-toi comment on vérifierait que le poste démarre « vite » : à partir de combien de secondes ?"
+        ]
+      }
     },
     "s1-a06-5eme": {
       "visuel": "s1-a06.svg",
@@ -590,7 +1232,25 @@
         "Que veut dire « solide » pour chacune de ces personnes ?",
         "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
         "Comment vérifier ensuite que l'objet répond à la demande ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Lis chaque phrase en entier avant de choisir le mot : le sens doit être juste."
+        ],
+        "2": [
+          "La FP dit le service que rend l'ordinateur ; une FC dit une limite qu'il doit respecter. Lis chaque phrase avec cette question."
+        ],
+        "3": [
+          "Commence chaque phrase par « il doit », comme dans l'exemple, puis dis ce que l'ordinateur doit faire ou respecter.",
+          "Pour une contrainte, pense à la sécurité, au bruit, à la consommation, au prix…"
+        ],
+        "4": [
+          "Choisis un objet que tu connais bien, pour trouver facilement à quoi il sert et ses limites."
+        ],
+        "5": [
+          "Pense à qui écrit le cahier des charges, et à qui fabrique l'objet : est-ce la même personne ?"
+        ]
+      }
     },
     "s5-a01-4eme": {
       "visuel": "s5-a01-4eme.svg",
@@ -599,7 +1259,19 @@
         "Quel est vraiment le besoin de l'utilisateur ?",
         "Que doit faire le support, et que ne doit-il pas faire ?",
         "Comment vérifier plus tard que le support répond au besoin ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Réponds aux trois questions dans l'ordre : à qui le support rend-il service, sur quoi agit-il, dans quel but ?"
+        ],
+        "2": [
+          "Pour chaque ligne, demande-toi comment on vérifierait l'exigence avec un instrument ou un test.",
+          "Un niveau exigé a toujours une valeur et une unité : des millimètres, des grammes, des degrés…"
+        ],
+        "3": [
+          "Pour chaque support projeté, cherche un point fort et un point faible par rapport à ton cahier des charges."
+        ]
+      }
     },
     "s5-a02-4eme": {
       "visuel": "s5-a02-4eme.svg",
@@ -608,7 +1280,20 @@
         "Que faut-il dessiner pour qu'un autre puisse fabriquer l'objet ?",
         "Quelles cotes indiquer, et dans quelle unité ?",
         "Comment choisir entre plusieurs solutions ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Observe l'exemple annoté : chaque flèche montre une règle. Recopie-la avec tes mots."
+        ],
+        "2": [
+          "Varie vraiment les solutions : une autre forme, une autre façon de tenir le téléphone, pas seulement une autre taille.",
+          "Pour la cotation, pense à la longueur, la largeur et la hauteur, en millimètres."
+        ],
+        "3": [
+          "Pour chaque critère du CDC, compare tes trois solutions entre elles avant de choisir.",
+          "Ta justification doit s'appuyer sur un critère du tableau."
+        ]
+      }
     },
     "s5-a03-4eme": {
       "visuel": "s5-a03-4eme.svg",
@@ -617,7 +1302,19 @@
         "Comment donner au volume ses dimensions exactes ?",
         "Comment construire ce volume dans le logiciel ?",
         "Comment contrôler qu'il respecte le croquis ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Repère chaque élément sur le document projeté et sur ton écran en même temps."
+        ],
+        "2": [
+          "Tape les dimensions au clavier pendant que l'outil est actif, plutôt que de les tracer à la souris.",
+          "Si le volume n'est pas exact, annule et recommence l'étape plutôt que de corriger à la main."
+        ],
+        "3": [
+          "Mesure chaque cote avec l'outil Mètre, d'une arête à l'autre, et compare à la valeur prévue."
+        ]
+      }
     },
     "s5-a04-4eme": {
       "visuel": "s5-a04-4eme.svg",
@@ -626,7 +1323,18 @@
         "Le modèle remplit-il toutes ses fonctions ?",
         "Que doit contenir le dossier pour l'atelier ?",
         "Comment vérifier que le modèle respecte le cahier des charges ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Suis les étapes dans l'ordre, et vérifie chaque cote avec l'outil Mètre après l'avoir tracée."
+        ],
+        "2": [
+          "Avant d'exporter, vérifie que les vues et les cotes demandées sont toutes visibles."
+        ],
+        "3": [
+          "Pour chaque exigence du CDC, mesure ou observe ton modèle, puis compare au niveau exigé."
+        ]
+      }
     },
     "s5-a05-4eme": {
       "visuel": "s5-a05-4eme.svg",
@@ -635,7 +1343,20 @@
         "Comment fabriquer le prototype à la bonne taille ?",
         "Quelle charge doit-il supporter ?",
         "Comment mesurer, et prouver, qu'il respecte le cahier des charges ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Mesure chaque cote dans SketchUp avec l'outil Mètre et reporte-la telle quelle, en millimètres : à l'échelle 1:1, on ne divise rien."
+        ],
+        "2": [
+          "Trace tout avant de découper, et vérifie chaque cote une dernière fois.",
+          "Coupe toujours lame tirée vers toi, le long de la règle métal, doigts derrière la lame."
+        ],
+        "3": [
+          "Écris le protocole assez précisément pour qu'un autre groupe refasse exactement le même test.",
+          "Si un test échoue, ne change qu'une chose à la fois, puis refais le test."
+        ]
+      }
     },
     "s5-a06-4eme": {
       "visuel": "s5-a06.svg",
@@ -644,7 +1365,20 @@
         "Que contient le fichier envoyé à la machine ?",
         "Comment chaque machine fabrique-t-elle l'objet ?",
         "Quel procédé choisir, et quelles règles de sécurité respecter ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Repense à la démo dans l'ordre : ce qui se passe à l'ordinateur, puis à la machine.",
+          "Pour 1a, regarde comment l'objet apparaît pendant l'impression : la matière est-elle ajoutée ou enlevée ?"
+        ],
+        "2": [
+          "Note pendant la démo ce que fait le laser à la matière et les consignes de sécurité données."
+        ],
+        "3": [
+          "Pour chaque critère, compare les trois procédés avec les valeurs du tableau.",
+          "Pour 3a, pense au temps de fabrication de 30 pièces, et au coût."
+        ]
+      }
     },
     "s5-a06-5eme": {
       "visuel": "s5-a06.svg",
@@ -653,7 +1387,19 @@
         "Que contient le fichier envoyé à la machine ?",
         "Comment chaque machine fabrique-t-elle l'objet ?",
         "Quel procédé choisir, et quelles règles de sécurité respecter ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Observe comment la pièce apparaît : couche par couche, ou découpée dans une plaque ?"
+        ],
+        "2": [
+          "Observe ce que fait le laser à la plaque, et note les consignes de sécurité."
+        ],
+        "3": [
+          "Pour chaque critère, compare ce que tu as noté pendant les deux démos.",
+          "Pour 3a, pense au temps qu'il faut pour fabriquer 30 pièces identiques."
+        ]
+      }
     },
     "s5-a01-5eme": {
       "visuel": "s5-a01-5eme.svg",
@@ -662,7 +1408,20 @@
         "De quoi la famille a-t-elle vraiment besoin ?",
         "Que doit contenir la maison ?",
         "Quelles contraintes impose le climat ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque élément, demande-toi : pourrait-on vivre dans la maison sans lui ?"
+        ],
+        "2": [
+          "Lis le document projeté et cherche ce qu'il impose en Nouvelle-Calédonie : le climat, le vent, la chaleur…",
+          "Inspire-toi de la ligne déjà remplie : écris une précision que l'on pourrait vérifier."
+        ],
+        "3": [
+          "Pour chaque pièce, multiplie la surface minimale par le nombre de pièces, puis additionne les sous-totaux.",
+          "Les 10 % de dégagements : divise le total par 10, puis ajoute le résultat au total."
+        ]
+      }
     },
     "s5-a02-5eme": {
       "visuel": "s5-a02-5eme.svg",
@@ -671,7 +1430,19 @@
         "Comment dessiner un plan que tout le monde comprend ?",
         "Quelle est la taille réelle de cette pièce ?",
         "Que représente 1 cm sur le plan ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Reproduis chaque symbole en regardant le modèle : trait épais ou fin, arc de cercle pour l'ouverture."
+        ],
+        "2": [
+          "Au 1/100, 1 m en vrai devient 1 cm sur le plan : divise chaque dimension en mètres par 100, puis écris-la en centimètres."
+        ],
+        "3": [
+          "Commence par placer les pièces les plus grandes, en comptant les carreaux pour respecter les surfaces.",
+          "Garde de la place pour les couloirs avant de dessiner les dernières pièces."
+        ]
+      }
     },
     "s5-a03-5eme": {
       "visuel": "s5-a03-5eme.svg",
@@ -680,7 +1451,19 @@
         "Que faut-il reporter du plan dans le logiciel ?",
         "Dans quel ordre construire les pièces et les murs ?",
         "Comment vérifier que les surfaces respectent le cahier des charges ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Repère chaque zone sur le document projeté et sur ton écran en même temps."
+        ],
+        "2": [
+          "Applique la règle des 3R : Relire l'étape, Réessayer, puis Réclamer de l'aide.",
+          "Si une pièce n'a pas de surface, vérifie que ses quatre coins sont bien fermés."
+        ],
+        "3": [
+          "Lis la surface affichée dans chaque pièce, puis compare à la surface minimale de ton CDC."
+        ]
+      }
     },
     "s5-a04-5eme": {
       "visuel": "s5-a04-5eme.svg",
@@ -689,7 +1472,19 @@
         "Où placer la porte ?",
         "Et la fenêtre ?",
         "Comment présenter la maquette au client ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Place d'abord les portes et les fenêtres dans les murs, puis les meubles.",
+          "Vérifie dans la vue 3D que chaque porte s'ouvre du bon côté."
+        ],
+        "2": [
+          "Vérifie la liste du dossier avant de rendre : vues, noms des pièces, nom du fichier."
+        ],
+        "3": [
+          "Regarde ta maison en vue 3D comme si tu étais le client : où circules-tu mal ? qu'est-ce qui manque ?"
+        ]
+      }
     },
     "s5-a05-5eme": {
       "visuel": "s5-a05-5eme.svg",
@@ -698,7 +1493,18 @@
         "Que veut dire l'échelle 1/20 ?",
         "Comment le patron se plie-t-il pour former la pièce ?",
         "Comment vérifier que la maquette est juste, à 2 mm près ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Reprends les dimensions dans Sweet Home 3D, convertis-les en centimètres, puis divise par 20."
+        ],
+        "2": [
+          "Trace tout le patron avant de découper. Plie le long d'une règle pour des plis bien droits."
+        ],
+        "3": [
+          "Mesure ta maquette avec la règle, puis calcule l'écart avec la valeur prévue en partie 1."
+        ]
+      }
     },
     "s2-a09-5eme": {
       "visuel": "s2-a09-5eme.svg",
@@ -727,7 +1533,23 @@
         {
           "texte": "Compare avec un ventilateur qui se branche sur une prise : quel bloc de la chaîne d'énergie change, et lesquels restent les mêmes ?"
         }
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Fais chaque geste ventilateur éteint, sauf pour l'allumer. Repère les numéros sur le schéma un par un, en suivant le ventilateur du bas vers le haut.",
+          "Pour l'intrus, cherche ce que tu ne trouves nulle part sur ton ventilateur."
+        ],
+        "2": [
+          "Pour chaque case, demande-toi ce que fait l'élément avec l'énergie : il la fournit, il la laisse passer ou la coupe, il la transforme, il la transmet ?"
+        ],
+        "3": [
+          "Pour chaque élément, demande-toi ce qu'il reçoit, puis ce qu'il donne : de l'électricité ou un mouvement ?",
+          "Pour la dernière phrase, repense à ce que tu sens en touchant le moteur."
+        ],
+        "4": [
+          "Imagine le ventilateur sans piles : quelle case de la chaîne d'énergie devient vide ?"
+        ]
+      }
     },
     "s6-a05-4eme": {
       "visuel": "s6-a05-4eme.svg",
