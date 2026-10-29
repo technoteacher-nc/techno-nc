@@ -1,6 +1,6 @@
 # Progression de 3ᵉ — proposition
 
-> **Statut : proposition, validée dans son principe ; la séquence 3-01 est écrite** (fiches, versions adaptées, pages en ligne sous `/2027/seq01/`, marquées « en préparation »). Le reste de ce document n'est pas publié. Les objectifs sont ceux de la classe de 3ᵉ du projet d'aménagement des programmes (CSP, juin 2025, projet n'engageant pas le ministère), recopiés à l'identique dans `src/data/programme.json`. Le programme en vigueur reste celui de 2024 (BO n° 9) ; l'application en Nouvelle-Calédonie relève du vice-rectorat et n'a pas été vérifiée.
+> **Statut : proposition à valider par l'enseignant.** Rien de ce document n'est publié sur le site. Les objectifs sont ceux de la classe de 3ᵉ du projet d'aménagement des programmes (CSP, juin 2025, projet n'engageant pas le ministère), recopiés à l'identique dans `src/data/programme.json`. Le programme en vigueur reste celui de 2024 (BO n° 9) ; l'application en Nouvelle-Calédonie relève du vice-rectorat et n'a pas été vérifiée.
 
 ## Principes
 

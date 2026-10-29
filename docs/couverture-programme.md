@@ -92,17 +92,17 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 3 | La programmation des OST | Traduire un algorithme permettant de répondre à un besoin ou à un problème simple en un programme. | **aucune** |
 | 3 | La programmation des OST | Réaliser et mettre au point un programme commandant un système réel incluant éventuellement une interaction entre un humain et une machine | s6-a02-4eme, s6-a03-4eme |
 
-## 3ᵉ — 5/38 objectifs travaillés
+## 3ᵉ — 0/38 objectifs travaillés
 
-Les séances du projet de 3ᵉ ne sont pas encore rattachées aux objectifs : voir `docs/progression-3eme.md`.
+Les séances du projet de 3ᵉ ne sont pas encore rattachées aux objectifs : voir `docs/progression-3eme.md` (proposition).
 
 | Thème | Partie | Objectif | Activités |
 |---|---|---|---|
-| 1 | L’évolution des OST | Identifier les innovations de rupture qui sont attachées à l’évolution d’un OST | s1-a01-3eme |
-| 1 | L’évolution des OST | Mettre en relation une découverte scientifique avec ses développements technologiques et leurs effets sur la société | s1-a02-3eme |
-| 1 | L’évolution des OST | Exprimer dans un argumentaire court l’incidence d’un OST sur la société | s1-a03-3eme, s1-a04-3eme |
-| 1 | L’évolution des OST | Exprimer dans un argumentaire court l’incidence des contraintes sociétales sur les OST | s1-a03-3eme, s1-a04-3eme |
-| 1 | Usages et impacts sociétaux du numérique | Exprimer dans un argumentaire court le rôle du développement stratégique du numérique au sein de la société et des environnements professionnels (ou des métiers) | s1-a05-3eme |
+| 1 | L’évolution des OST | Identifier les innovations de rupture qui sont attachées à l’évolution d’un OST | **aucune** |
+| 1 | L’évolution des OST | Mettre en relation une découverte scientifique avec ses développements technologiques et leurs effets sur la société | **aucune** |
+| 1 | L’évolution des OST | Exprimer dans un argumentaire court l’incidence d’un OST sur la société | **aucune** |
+| 1 | L’évolution des OST | Exprimer dans un argumentaire court l’incidence des contraintes sociétales sur les OST | **aucune** |
+| 1 | Usages et impacts sociétaux du numérique | Exprimer dans un argumentaire court le rôle du développement stratégique du numérique au sein de la société et des environnements professionnels (ou des métiers) | **aucune** |
 | 1 | L’OST dans son environnement | Décrire l’expérience de l’utilisateur d’un OST à l’aide de modes de représentation choisis | **aucune** |
 | 1 | Le choix d’un OST dans un contexte de développement durable | Établir une liste d’OST possibles en vue de répondre à un besoin | **aucune** |
 | 1 | Le choix d’un OST dans un contexte de développement durable | Choisir un OST et argumenter ce choix en prenant en compte son cycle de vie et les trois piliers du développement durable | **aucune** |
