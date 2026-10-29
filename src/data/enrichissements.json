@@ -235,6 +235,78 @@
         "Que faut-il pour ouvrir la souris sans la casser ?",
         "Comment vérifier que la réparation a réussi ?"
       ]
+    },
+    "s3-a01-4eme": {
+      "visuel": "s3-a01-4eme.svg",
+      "legende": "Deux réseaux dans le même collège, chacun avec ses ordinateurs.",
+      "reperes": [
+        "Comment les ordinateurs d'une même salle sont-ils reliés entre eux ?",
+        "Qu'est-ce qui permet à deux réseaux différents de communiquer ?",
+        "Comment chaque machine est-elle reconnue dans son réseau ?"
+      ]
+    },
+    "s3-a01-5eme": {
+      "visuel": "s3-a01-5eme.svg",
+      "legende": "J'enregistre mon travail sur un poste de la salle ; la séance suivante, je suis sur un autre poste.",
+      "reperes": [
+        "Où mon fichier est-il vraiment enregistré ?",
+        "Comment le retrouver depuis un autre ordinateur ?",
+        "Pourquoi faut-il ouvrir sa session avant de travailler ?"
+      ]
+    },
+    "s3-a02-4eme": {
+      "visuel": "s3-a02-4eme.svg",
+      "legende": "Deux ordinateurs reliés par un câble, dans le simulateur. Un troisième attend d'être branché.",
+      "reperes": [
+        "Que faut-il pour que deux machines puissent se parler ?",
+        "Comment prouver que le message est bien arrivé ?",
+        "Comment ajouter une troisième machine au réseau ?"
+      ]
+    },
+    "s3-a02-5eme": {
+      "visuel": "s3-a02-5eme.svg",
+      "legende": "Une photo envoyée depuis Nouméa vers un proche en France.",
+      "reperes": [
+        "Par où la photo sort-elle de l'île ?",
+        "Par combien d'étapes passe-t-elle avant d'arriver ?",
+        "Combien de temps met-elle pour faire le voyage ?"
+      ]
+    },
+    "s3-a03-4eme": {
+      "visuel": "s3-a03-4eme.svg",
+      "legende": "On tape un nom de site ; la machine, elle, a besoin d'une adresse. Et le site n'est pas dans notre réseau.",
+      "reperes": [
+        "Comment un nom de site devient-il une adresse de machine ?",
+        "Qu'est-ce qui relie deux réseaux différents ?",
+        "Où se trouve la page web que l'on affiche ?"
+      ]
+    },
+    "s3-a03-5eme": {
+      "visuel": "s3-a03-5eme.svg",
+      "legende": "Derrière un seul écran, plusieurs logiciels travaillent ensemble.",
+      "reperes": [
+        "Quel logiciel fait fonctionner l'ordinateur dès qu'on l'allume ?",
+        "Quel logiciel ouvre les pages web, et lequel cherche ce qu'on demande ?",
+        "Qui possède ces logiciels, et comment gagnent-ils de l'argent ?"
+      ]
+    },
+    "s3-a04-4eme": {
+      "visuel": "s3-a04-4eme.svg",
+      "legende": "Une application gratuite, des données qui partent : vers qui, et pour quoi faire ?",
+      "reperes": [
+        "Ce service coûte 0 F : est-il vraiment gratuit ?",
+        "Quelles données partent de ton téléphone quand tu l'utilises ?",
+        "Qui reçoit ces données, et qu'en fait-il ?"
+      ]
+    },
+    "s3-a04-5eme": {
+      "visuel": "s3-a04-5eme.svg",
+      "legende": "Dans le simulateur Filius : deux portables à relier, et de quoi en brancher un troisième.",
+      "reperes": [
+        "Que faut-il pour relier deux ordinateurs ?",
+        "Comment vérifier que le message passe vraiment ?",
+        "Comment brancher une troisième machine ?"
+      ]
     }
   }
 }
