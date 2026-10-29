@@ -56,3 +56,12 @@ Décision du 29/10/2026 : le site reste un **carnet de plans**, pas un manuel nu
 - **Repères numérotés dans le dessin, questions écrites en HTML dessous** : le texte reste lisible sur téléphone et par un lecteur d'écran.
 - **Photos de l'enseignant bienvenues** (objets réels, atelier 207, contexte calédonien), compressées, sans visage ni nom d'élève.
 - **Proscrit** : photos d'ambiance, illustrations « flat » génériques, mascottes, images générées décoratives, et toute image dont la licence n'est pas vérifiée.
+
+## Fiches papier
+
+Repères de mise en page, appliqués aux fiches S2-A09, S6-A05, S6-A06 et S5-A03 bis. Ils peuvent servir de modèle à l'outil qui produit les autres fiches.
+
+- **Deux pages, une feuille recto verso.** Le saut de page est choisi : une partie ou un tableau ne commence jamais en bas de page pour finir au verso.
+- **Écrite pour la main, pas pour le clavier.** Lignes d'écriture espacées de 1 cm, cases de tableau à remplir d'au moins 1 cm de haut, blancs dans les phrases d'au moins 4 cm, cases à cocher en 14 pt. Version adaptée : une page, texte en 12 pt, lignes à 1,1 cm.
+- **De l'air entre les parties.** Chaque partie s'ouvre sur un numéro en pastille et un filet ; les consignes commencent par ▸. Noir et gris seulement : la fiche est photocopiée.
+- **Ce qui n'a pas besoin du papier va sur le site.** Une question de prolongement, un fichier à ouvrir dans un logiciel, une citation : bloc « Pour aller plus loin » de la page de l'activité (`plusLoin` dans `src/data/enrichissements.json`). Jamais une correction.
