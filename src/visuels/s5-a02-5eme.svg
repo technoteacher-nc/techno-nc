@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s5a025eme-t v-s5a025eme-d" class="visuel-svg">
+  <title id="v-s5a025eme-t">La situation : un plan à la bonne échelle</title>
+  <desc id="v-s5a025eme-d">Le plan d'une maison vu de dessus, avec des pièces vides. Sous le plan, une barre d'échelle dont la valeur est un point d'interrogation. Trois repères numérotés posent les questions de l'activité.</desc>
+  <rect x="120" y="30" width="400" height="200" fill="#FCFCFA" stroke="#11223D" stroke-width="5"/>
+    <g stroke="#11223D" stroke-width="3"><line x1="300" y1="30" x2="300" y2="150"/><line x1="120" y1="150" x2="400" y2="150"/><line x1="400" y1="110" x2="400" y2="230"/></g>
+    <rect x="300" y="146" width="40" height="8" fill="#FCFCFA"/><rect x="180" y="226" width="44" height="8" fill="#FCFCFA"/>
+    <rect x="200" y="262" width="100" height="10" fill="#11223D"/><rect x="300" y="262" width="100" height="10" fill="#FCFCFA" stroke="#11223D" stroke-width="2"/><text x="450" y="274" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" font-weight="700" text-anchor="middle" fill="#11223D">1/… ?</text>
+    <circle cx="120" cy="30" r="19" fill="#1C5FBF"/><text x="120" y="38" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">1</text><circle cx="210" cy="90" r="19" fill="#1C5FBF"/><text x="210" y="98" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">2</text><circle cx="580" cy="266" r="19" fill="#1C5FBF"/><text x="580" y="274" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">3</text>
+</svg>

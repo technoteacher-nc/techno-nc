@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s5a045eme-t v-s5a045eme-d" class="visuel-svg">
+  <title id="v-s5a045eme-t">La situation : une pièce à finir et à présenter</title>
+  <desc id="v-s5a045eme-d">Une pièce de la maison en trois dimensions : les murs sont montés, mais les emplacements des portes et des fenêtres sont en pointillés, et la pièce est vide de meubles. Trois repères numérotés posent les questions de l'activité.</desc>
+  <path d="M120 230 l 200 -60 l 240 40 l -200 60 z" fill="#EDF1F6" stroke="#11223D" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M120 230 v -140 l 200 -60 v 140 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2.2" stroke-linejoin="round"/><path d="M320 170 v -140 l 240 40 v 140 z" fill="#E6EBF2" stroke="#11223D" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M170 215 v -80 l 50 -15 v 80 z" fill="none" stroke="#1C5FBF" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <path d="M400 110 l 80 13 v 46 l -80 -13 z" fill="none" stroke="#1C5FBF" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <text x="340" y="236" font-family="Space Grotesk, system-ui, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#1C5FBF">?</text>
+    <circle cx="195" cy="110" r="19" fill="#1C5FBF"/><text x="195" y="118" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">1</text><circle cx="440" cy="90" r="19" fill="#1C5FBF"/><text x="440" y="98" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">2</text><circle cx="340" cy="272" r="19" fill="#1C5FBF"/><text x="340" y="280" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">3</text>
+</svg>

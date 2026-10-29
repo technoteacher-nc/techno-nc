@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s2a035eme-t v-s2a035eme-d" class="visuel-svg">
+  <title id="v-s2a035eme-t">La situation : deux lampes, deux façons de s'allumer</title>
+  <desc id="v-s2a035eme-d">À gauche, une lampe avec un interrupteur et une main qui appuie. À droite, une lampe avec un petit boîtier, qui s'allume quand une personne passe. Trois repères numérotés posent les questions de l'activité.</desc>
+  <line x1="340" y1="20" x2="340" y2="280" stroke="#C3CEDC" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M130 70 h 80 l -16 60 h -48 z" fill="#EDF1F6" stroke="#11223D" stroke-width="2.5" stroke-linejoin="round"/><line x1="170" y1="130" x2="170" y2="250" stroke="#11223D" stroke-width="3"/><rect x="130" y="250" width="80" height="14" rx="4" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/>
+    <rect x="236" y="170" width="34" height="50" rx="5" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/><rect x="246" y="182" width="14" height="22" rx="3" fill="#EDF1F6" stroke="#11223D" stroke-width="2"/>
+    <path d="M300 196 h -26" stroke="#11223D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M430 70 h 80 l -16 60 h -48 z" fill="#F2D27A" stroke="#11223D" stroke-width="2.5" stroke-linejoin="round"/><line x1="470" y1="130" x2="470" y2="250" stroke="#11223D" stroke-width="3"/><rect x="430" y="250" width="80" height="14" rx="4" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/>
+    <g stroke="#D9A520" stroke-width="2" stroke-linecap="round"><line x1="470" y1="40" x2="470" y2="56"/><line x1="420" y1="56" x2="430" y2="66"/><line x1="520" y1="56" x2="510" y2="66"/></g>
+    <rect x="482" y="160" width="22" height="16" rx="4" fill="#EDF1F6" stroke="#11223D" stroke-width="2"/>
+    <circle cx="590" cy="170" r="16" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/><path d="M562 228 q 0 -36 28 -36 q 28 0 28 36" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/>
+    <circle cx="253" cy="140" r="19" fill="#1C5FBF"/><text x="253" y="148" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">1</text><circle cx="520" cy="196" r="19" fill="#1C5FBF"/><text x="520" y="204" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">2</text><circle cx="620" cy="260" r="19" fill="#1C5FBF"/><text x="620" y="268" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">3</text>
+</svg>

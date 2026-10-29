@@ -1,5 +1,5 @@
 {
-  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur.",
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié).",
   "activites": {
     "s6-a01-4eme": {
       "visuel": "s6-a01-4eme.svg",
@@ -27,6 +27,11 @@
         "associer les composants (exemples : batterie, relais/interrupteur, engrenage, courroie, moteur, etc.) aux fonctions techniques (alimenter, distribuer, convertir, transmettre) correspondantes (et non l’inverse) ;",
         "identifier les capteurs ainsi que les composants d’IHM d’un OST ;",
         "compléter la description de la chaine d’information en indiquant pour chaque bloc fonctionnel les constituants associés."
+      ],
+      "masquerMots": [
+        "Chaîne d'énergie",
+        "Chaîne d'information",
+        "Information"
       ]
     },
     "s6-a01-5eme": {
@@ -90,6 +95,495 @@
         "Que mesure-t-on : le temps, la précision à l'arrivée, ou les deux ?",
         "Comment rendre la mesure identique pour toutes les équipes ?",
         "Que modifie-t-on d'un essai à l'autre pour progresser ?"
+      ]
+    },
+    "s2-a01-4eme": {
+      "visuel": "s2-a01.svg",
+      "legende": "Le même téléphone, entre les mains de trois personnes différentes.",
+      "reperes": [
+        "À quoi sert cet objet pour chacune de ces personnes ?",
+        "Qu'est-ce que l'objet fait pour tout le monde, quel que soit l'utilisateur ?",
+        "Qu'est-ce qui change d'une personne à l'autre ?"
+      ]
+    },
+    "s2-a01-5eme": {
+      "visuel": "s2-a01.svg",
+      "legende": "Le même téléphone, entre les mains de trois personnes différentes.",
+      "reperes": [
+        "À quoi sert cet objet pour chacune de ces personnes ?",
+        "Qu'est-ce que l'objet fait pour tout le monde, quel que soit l'utilisateur ?",
+        "Qu'est-ce qui change d'une personne à l'autre ?"
+      ]
+    },
+    "s2-a02-4eme": {
+      "visuel": "s2-a02-4eme.svg",
+      "legende": "La nuit, quelqu'un rentre : la lumière s'allume sans qu'on touche à rien.",
+      "reperes": [
+        "Comment la maison sait-elle que quelqu'un entre ?",
+        "Qui décide d'allumer la lumière ?",
+        "Qui allume vraiment la lampe ?"
+      ],
+      "masquerMots": [
+        "Chaîne d'information"
+      ]
+    },
+    "s2-a02-5eme": {
+      "visuel": "s2-a02-5eme.svg",
+      "legende": "Un stylo, quatre boutons de couleur, une seule pointe.",
+      "reperes": [
+        "Que se passe-t-il quand on appuie sur un bouton ?",
+        "Comment le corps du stylo garde-t-il les quatre recharges séparées ?",
+        "Pourquoi une seule pointe sort-elle à la fois ?"
+      ]
+    },
+    "s2-a03-4eme": {
+      "visuel": "s2-a03-4eme.svg",
+      "legende": "Le cadran affiche des mesures ; le dessous du boîtier cache des capteurs.",
+      "reperes": [
+        "Que mesure chaque capteur, sous le boîtier ?",
+        "Comment l'information va-t-elle du capteur jusqu'à l'écran ?",
+        "Que sait la montre sur la personne qui la porte ?"
+      ],
+      "masquerMots": [
+        "Chaîne d'information"
+      ]
+    },
+    "s2-a03-5eme": {
+      "visuel": "s2-a03-5eme.svg",
+      "legende": "Deux lampes : l'une attend qu'on appuie, l'autre s'allume quand quelqu'un passe.",
+      "reperes": [
+        "Que faut-il faire pour allumer la première lampe ?",
+        "Que doit « remarquer » la seconde pour s'allumer seule ?",
+        "Quels objets, chez toi, agissent sans qu'on appuie sur un bouton ?"
+      ]
+    },
+    "s2-a04-4eme": {
+      "visuel": "s2-a04.svg",
+      "legende": "Un téléphone jeté, sur une île. Où part-il ensuite ?",
+      "reperes": [
+        "Où part un objet qu'on jette ?",
+        "Pourquoi est-ce plus compliqué sur une île ?",
+        "Comment savoir, avant d'acheter, si un objet se répare facilement ?"
+      ],
+      "masquerMots": [
+        "Cycle de vie"
+      ]
+    },
+    "s2-a04-5eme": {
+      "visuel": "s2-a04.svg",
+      "legende": "Un téléphone jeté, sur une île. Où part-il ensuite ?",
+      "reperes": [
+        "Où part un objet qu'on jette ?",
+        "Pourquoi est-ce plus compliqué sur une île ?",
+        "Comment savoir, avant d'acheter, si un objet se répare facilement ?"
+      ],
+      "masquerMots": [
+        "Cycle de vie"
+      ]
+    },
+    "s2-a05-4eme": {
+      "visuel": "s2-a05.svg",
+      "legende": "Deux téléphones, deux époques.",
+      "reperes": [
+        "Qu'est-ce qui a changé entre ces deux objets ?",
+        "Qu'est-ce qui, au contraire, n'a pas changé ?",
+        "Pourquoi les objets techniques évoluent-ils ?"
+      ]
+    },
+    "s2-a05-5eme": {
+      "visuel": "s2-a05.svg",
+      "legende": "Deux téléphones, deux époques.",
+      "reperes": [
+        "Qu'est-ce qui a changé entre ces deux objets ?",
+        "Qu'est-ce qui, au contraire, n'a pas changé ?",
+        "Pourquoi les objets techniques évoluent-ils ?"
+      ]
+    },
+    "s2-a06-4eme": {
+      "visuel": "s2-a06-4eme.svg",
+      "legende": "La même application, en deux versions.",
+      "reperes": [
+        "Sur quelle version trouve-t-on le plus vite ce qu'on cherche ?",
+        "Une personne qui voit mal peut-elle utiliser cette version ?",
+        "Qu'est-ce qui rend un écran facile à utiliser ?"
+      ]
+    },
+    "s2-a06-5eme": {
+      "visuel": "s2-a06-5eme.svg",
+      "legende": "Deux télécommandes pour le même appareil.",
+      "reperes": [
+        "Les deux rendent le même service : laquelle est la plus agréable ?",
+        "Pourquoi celle-ci est-elle difficile à utiliser ?",
+        "Qu'est-ce qui rend un objet agréable à utiliser ?"
+      ]
+    },
+    "s2-a07-4eme": {
+      "visuel": "s2-a07-4eme.svg",
+      "legende": "Trois devis pour les ordinateurs de la salle, et un budget à ne pas dépasser.",
+      "reperes": [
+        "Quels critères comparer d'un devis à l'autre ?",
+        "Lequel répond le mieux au besoin du collège ?",
+        "Le budget est-il respecté ?"
+      ]
+    },
+    "s2-a07-5eme": {
+      "visuel": "s2-a07-5eme.svg",
+      "legende": "Trois produits, trois utilisateurs, un budget de 60 000 F CFP.",
+      "reperes": [
+        "Chaque utilisateur a-t-il besoin des mêmes critères ?",
+        "Que disent les chiffres de chaque fiche produit ?",
+        "Le choix tient-il dans le budget ?"
+      ]
+    },
+    "s2-a08-4eme": {
+      "visuel": "s2-a08.svg",
+      "legende": "La souris est branchée, mais le pointeur ne réagit plus au clic.",
+      "reperes": [
+        "Quel geste ne marche plus ?",
+        "Que faut-il pour ouvrir la souris sans la casser ?",
+        "Comment vérifier que la réparation a réussi ?"
+      ]
+    },
+    "s2-a08-5eme": {
+      "visuel": "s2-a08.svg",
+      "legende": "La souris est branchée, mais le pointeur ne réagit plus au clic.",
+      "reperes": [
+        "Quel geste ne marche plus ?",
+        "Que faut-il pour ouvrir la souris sans la casser ?",
+        "Comment vérifier que la réparation a réussi ?"
+      ]
+    },
+    "s3-a01-4eme": {
+      "visuel": "s3-a01-4eme.svg",
+      "legende": "Deux réseaux dans le même collège, chacun avec ses ordinateurs.",
+      "reperes": [
+        "Comment les ordinateurs d'une même salle sont-ils reliés entre eux ?",
+        "Qu'est-ce qui permet à deux réseaux différents de communiquer ?",
+        "Comment chaque machine est-elle reconnue dans son réseau ?"
+      ]
+    },
+    "s3-a01-5eme": {
+      "visuel": "s3-a01-5eme.svg",
+      "legende": "J'enregistre mon travail sur un poste de la salle ; la séance suivante, je suis sur un autre poste.",
+      "reperes": [
+        "Où mon fichier est-il vraiment enregistré ?",
+        "Comment le retrouver depuis un autre ordinateur ?",
+        "Pourquoi faut-il ouvrir sa session avant de travailler ?"
+      ]
+    },
+    "s3-a02-4eme": {
+      "visuel": "s3-a02-4eme.svg",
+      "legende": "Deux ordinateurs reliés par un câble, dans le simulateur. Un troisième attend d'être branché.",
+      "reperes": [
+        "Que faut-il pour que deux machines puissent se parler ?",
+        "Comment prouver que le message est bien arrivé ?",
+        "Comment ajouter une troisième machine au réseau ?"
+      ]
+    },
+    "s3-a02-5eme": {
+      "visuel": "s3-a02-5eme.svg",
+      "legende": "Une photo envoyée depuis Nouméa vers un proche en France.",
+      "reperes": [
+        "Par où la photo sort-elle de l'île ?",
+        "Par combien d'étapes passe-t-elle avant d'arriver ?",
+        "Combien de temps met-elle pour faire le voyage ?"
+      ]
+    },
+    "s3-a03-4eme": {
+      "visuel": "s3-a03-4eme.svg",
+      "legende": "On tape un nom de site ; la machine, elle, a besoin d'une adresse. Et le site n'est pas dans notre réseau.",
+      "reperes": [
+        "Comment un nom de site devient-il une adresse de machine ?",
+        "Qu'est-ce qui relie deux réseaux différents ?",
+        "Où se trouve la page web que l'on affiche ?"
+      ]
+    },
+    "s3-a03-5eme": {
+      "visuel": "s3-a03-5eme.svg",
+      "legende": "Derrière un seul écran, plusieurs logiciels travaillent ensemble.",
+      "reperes": [
+        "Quel logiciel fait fonctionner l'ordinateur dès qu'on l'allume ?",
+        "Quel logiciel ouvre les pages web, et lequel cherche ce qu'on demande ?",
+        "Qui possède ces logiciels, et comment gagnent-ils de l'argent ?"
+      ]
+    },
+    "s3-a04-4eme": {
+      "visuel": "s3-a04-4eme.svg",
+      "legende": "Une application gratuite, des données qui partent : vers qui, et pour quoi faire ?",
+      "reperes": [
+        "Ce service coûte 0 F : est-il vraiment gratuit ?",
+        "Quelles données partent de ton téléphone quand tu l'utilises ?",
+        "Qui reçoit ces données, et qu'en fait-il ?"
+      ]
+    },
+    "s3-a04-5eme": {
+      "visuel": "s3-a04-5eme.svg",
+      "legende": "Dans le simulateur Filius : deux portables à relier, et de quoi en brancher un troisième.",
+      "reperes": [
+        "Que faut-il pour relier deux ordinateurs ?",
+        "Comment vérifier que le message passe vraiment ?",
+        "Comment brancher une troisième machine ?"
+      ]
+    },
+    "s4-a01-4eme": {
+      "visuel": "s4-a01-4eme.svg",
+      "legende": "Un message reçu dans la boîte mail. Faut-il cliquer ?",
+      "reperes": [
+        "Ce message vient-il vraiment de qui il prétend ?",
+        "Où peut se cacher le piège ?",
+        "Comment protéger un compte même si le mot de passe a fuité ?"
+      ]
+    },
+    "s4-a01-5eme": {
+      "visuel": "s4-a01-5eme.svg",
+      "legende": "Un mot de passe, un cadenas, et le temps qu'il faudrait pour le casser.",
+      "reperes": [
+        "Combien de temps ce mot de passe résisterait-il ?",
+        "Qu'est-ce qui rend un mot de passe solide ?",
+        "Comment retenir un mot de passe solide sans l'écrire ?"
+      ]
+    },
+    "s4-a02-4eme": {
+      "visuel": "s4-a02-4eme.svg",
+      "legende": "On navigue sur son téléphone… et une publicité semble nous connaître.",
+      "reperes": [
+        "Quelles traces laisse-t-on en naviguant ?",
+        "Comment une publicité « devine »-t-elle ce qui t'intéresse ?",
+        "Quels droits as-tu sur les données qu'on collecte sur toi ?"
+      ]
+    },
+    "s4-a02-5eme": {
+      "visuel": "s4-a02-5eme.svg",
+      "legende": "Une photo publiée depuis un téléphone se retrouve sur de nombreux écrans.",
+      "reperes": [
+        "Qui peut voir cette photo une fois publiée ?",
+        "Peut-on vraiment la retirer ?",
+        "Quels réglages protègent ce que je publie ?"
+      ]
+    },
+    "s4-a03-5eme": {
+      "visuel": "s4-a03-5eme.svg",
+      "legende": "Des messages arrivent de partout vers une même personne. Quelqu'un regarde.",
+      "reperes": [
+        "Quand des messages deviennent-ils du harcèlement ?",
+        "Que peut faire la personne qui les reçoit ?",
+        "Et celle qui voit la scène, que peut-elle faire ?"
+      ]
+    },
+    "s1-a01-4eme": {
+      "visuel": "s1-a01.svg",
+      "legende": "La consigne d'un côté, la page à produire de l'autre, et un dossier où l'enregistrer.",
+      "reperes": [
+        "Que demande exactement la consigne ?",
+        "Comment vérifier que la page respecte la consigne, au point près ?",
+        "Où, et sous quel nom, enregistrer le fichier ?"
+      ]
+    },
+    "s1-a01-5eme": {
+      "visuel": "s1-a01.svg",
+      "legende": "La consigne d'un côté, la page à produire de l'autre, et un dossier où l'enregistrer.",
+      "reperes": [
+        "Que demande exactement la consigne ?",
+        "Comment vérifier que la page respecte la consigne, au point près ?",
+        "Où, et sous quel nom, enregistrer le fichier ?"
+      ]
+    },
+    "s1-a02-4eme": {
+      "visuel": "s1-a02.svg",
+      "legende": "Les mêmes informations, écrites à la suite ou rangées dans un tableau.",
+      "reperes": [
+        "Pourquoi est-il difficile de retrouver une information ici ?",
+        "Qu'est-ce que le tableau change ?",
+        "À quoi sert chaque colonne ?"
+      ]
+    },
+    "s1-a02-5eme": {
+      "visuel": "s1-a02.svg",
+      "legende": "Les mêmes informations, écrites à la suite ou rangées dans un tableau.",
+      "reperes": [
+        "Pourquoi est-il difficile de retrouver une information ici ?",
+        "Qu'est-ce que le tableau change ?",
+        "À quoi sert chaque colonne ?"
+      ]
+    },
+    "s1-a03-4eme": {
+      "visuel": "s1-a03.svg",
+      "legende": "Le boîtier de l'ordinateur, ouvert : six pièces, aucun nom.",
+      "reperes": [
+        "Quelles pièces trouve-t-on dans le boîtier ?",
+        "À quoi sert chacune d'elles ?",
+        "Comment comparer deux ordinateurs à partir de leurs pièces ?"
+      ]
+    },
+    "s1-a03-5eme": {
+      "visuel": "s1-a03.svg",
+      "legende": "Le boîtier de l'ordinateur, ouvert : six pièces, aucun nom.",
+      "reperes": [
+        "Quelles pièces trouve-t-on dans le boîtier ?",
+        "À quoi sert chacune d'elles ?",
+        "Comment comparer deux ordinateurs à partir de leurs pièces ?"
+      ]
+    },
+    "s1-a04-4eme": {
+      "visuel": "s1-a04.svg",
+      "legende": "L'ordinateur au centre, quatre appareils branchés autour. Les traits n'ont pas encore de sens.",
+      "reperes": [
+        "Dans quel sens l'information circule-t-elle sur chaque trait ?",
+        "Cet appareil reçoit-il l'information, l'envoie-t-il, ou les deux ?",
+        "Par quelle prise chaque appareil se branche-t-il ?"
+      ]
+    },
+    "s1-a04-5eme": {
+      "visuel": "s1-a04.svg",
+      "legende": "L'ordinateur au centre, quatre appareils branchés autour. Les traits n'ont pas encore de sens.",
+      "reperes": [
+        "Dans quel sens l'information circule-t-elle sur chaque trait ?",
+        "Cet appareil reçoit-il l'information, l'envoie-t-il, ou les deux ?",
+        "Par quelle prise chaque appareil se branche-t-il ?"
+      ]
+    },
+    "s1-a05-4eme": {
+      "visuel": "s1-a05.svg",
+      "legende": "Deux objets en bois : une branche ramassée au sol, une rame de pirogue.",
+      "reperes": [
+        "Lequel des deux a été fabriqué ?",
+        "À quel besoin répond la rame ?",
+        "Qui l'utilise, et dans quelles conditions doit-elle tenir ?"
+      ]
+    },
+    "s1-a05-5eme": {
+      "visuel": "s1-a05.svg",
+      "legende": "Deux objets en bois : une branche ramassée au sol, une rame de pirogue.",
+      "reperes": [
+        "Lequel des deux a été fabriqué ?",
+        "À quel besoin répond la rame ?",
+        "Qui l'utilise, et dans quelles conditions doit-elle tenir ?"
+      ]
+    },
+    "s1-a06-4eme": {
+      "visuel": "s1-a06.svg",
+      "legende": "Le même mot, « solide », et deux personnes qui n'imaginent pas la même chose.",
+      "reperes": [
+        "Que veut dire « solide » pour chacune de ces personnes ?",
+        "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
+        "Comment vérifier ensuite que l'objet répond à la demande ?"
+      ]
+    },
+    "s1-a06-5eme": {
+      "visuel": "s1-a06.svg",
+      "legende": "Le même mot, « solide », et deux personnes qui n'imaginent pas la même chose.",
+      "reperes": [
+        "Que veut dire « solide » pour chacune de ces personnes ?",
+        "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
+        "Comment vérifier ensuite que l'objet répond à la demande ?"
+      ]
+    },
+    "s5-a01-4eme": {
+      "visuel": "s5-a01-4eme.svg",
+      "legende": "Un téléphone posé à plat sur la table. Le support reste à imaginer.",
+      "reperes": [
+        "Quel est vraiment le besoin de l'utilisateur ?",
+        "Que doit faire le support, et que ne doit-il pas faire ?",
+        "Comment vérifier plus tard que le support répond au besoin ?"
+      ]
+    },
+    "s5-a02-4eme": {
+      "visuel": "s5-a02-4eme.svg",
+      "legende": "Une feuille, une règle, un crayon : de quoi dessiner une solution pour qu'un autre la fabrique.",
+      "reperes": [
+        "Que faut-il dessiner pour qu'un autre puisse fabriquer l'objet ?",
+        "Quelles cotes indiquer, et dans quelle unité ?",
+        "Comment choisir entre plusieurs solutions ?"
+      ]
+    },
+    "s5-a03-4eme": {
+      "visuel": "s5-a03-4eme.svg",
+      "legende": "Un volume en 3D, et trois cotes encore inconnues.",
+      "reperes": [
+        "Comment donner au volume ses dimensions exactes ?",
+        "Comment construire ce volume dans le logiciel ?",
+        "Comment contrôler qu'il respecte le croquis ?"
+      ]
+    },
+    "s5-a04-4eme": {
+      "visuel": "s5-a04-4eme.svg",
+      "legende": "Le modèle 3D est prêt ; le dossier de fabrication, lui, est encore vide.",
+      "reperes": [
+        "Le modèle remplit-il toutes ses fonctions ?",
+        "Que doit contenir le dossier pour l'atelier ?",
+        "Comment vérifier que le modèle respecte le cahier des charges ?"
+      ]
+    },
+    "s5-a05-4eme": {
+      "visuel": "s5-a05-4eme.svg",
+      "legende": "Le prototype en carton, un téléphone posé dessus, une charge et un angle à mesurer.",
+      "reperes": [
+        "Comment fabriquer le prototype à la bonne taille ?",
+        "Quelle charge doit-il supporter ?",
+        "Comment mesurer, et prouver, qu'il respecte le cahier des charges ?"
+      ]
+    },
+    "s5-a06-4eme": {
+      "visuel": "s5-a06.svg",
+      "legende": "Un fichier d'un côté, un objet fini de l'autre, et deux machines entre les deux.",
+      "reperes": [
+        "Que contient le fichier envoyé à la machine ?",
+        "Comment chaque machine fabrique-t-elle l'objet ?",
+        "Quel procédé choisir, et quelles règles de sécurité respecter ?"
+      ]
+    },
+    "s5-a06-5eme": {
+      "visuel": "s5-a06.svg",
+      "legende": "Un fichier d'un côté, un objet fini de l'autre, et deux machines entre les deux.",
+      "reperes": [
+        "Que contient le fichier envoyé à la machine ?",
+        "Comment chaque machine fabrique-t-elle l'objet ?",
+        "Quel procédé choisir, et quelles règles de sécurité respecter ?"
+      ]
+    },
+    "s5-a01-5eme": {
+      "visuel": "s5-a01-5eme.svg",
+      "legende": "Une maison à imaginer pour une famille, sous le soleil et la pluie de Nouvelle-Calédonie.",
+      "reperes": [
+        "De quoi la famille a-t-elle vraiment besoin ?",
+        "Que doit contenir la maison ?",
+        "Quelles contraintes impose le climat ?"
+      ]
+    },
+    "s5-a02-5eme": {
+      "visuel": "s5-a02-5eme.svg",
+      "legende": "Le plan de la maison, vu de dessus, et une barre d'échelle à compléter.",
+      "reperes": [
+        "Comment dessiner un plan que tout le monde comprend ?",
+        "Quelle est la taille réelle de cette pièce ?",
+        "Que représente 1 cm sur le plan ?"
+      ]
+    },
+    "s5-a03-5eme": {
+      "visuel": "s5-a03-5eme.svg",
+      "legende": "Le plan papier devient une maquette numérique : les murs montent.",
+      "reperes": [
+        "Que faut-il reporter du plan dans le logiciel ?",
+        "Dans quel ordre construire les pièces et les murs ?",
+        "Comment vérifier que les surfaces respectent le cahier des charges ?"
+      ]
+    },
+    "s5-a04-5eme": {
+      "visuel": "s5-a04-5eme.svg",
+      "legende": "Les murs sont montés ; portes, fenêtres et meubles restent à placer.",
+      "reperes": [
+        "Où placer la porte ?",
+        "Et la fenêtre ?",
+        "Comment présenter la maquette au client ?"
+      ]
+    },
+    "s5-a05-5eme": {
+      "visuel": "s5-a05-5eme.svg",
+      "legende": "La pièce numérique devient une maquette en papier, à l'échelle.",
+      "reperes": [
+        "Que veut dire l'échelle 1/20 ?",
+        "Comment le patron se plie-t-il pour former la pièce ?",
+        "Comment vérifier que la maquette est juste, à 2 mm près ?"
       ]
     }
   }

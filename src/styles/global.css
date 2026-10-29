@@ -784,11 +784,9 @@ kbd {
 }
 .mde-attention {
   background: color-mix(in srgb, #D9791E 14%, transparent);
-  border-left: 3px solid #D9791E;
 }
 .mde-astuce {
   background: var(--calque);
-  border-left: 3px solid var(--vif);
 }
 
 .mde-bloc { margin: 3rem 0 0; }
@@ -814,7 +812,6 @@ kbd {
 .mots-cles {
   margin: 2.25rem 0; padding: 1.15rem 1.35rem;
   border-radius: var(--r); background: var(--calque);
-  border-left: 3px solid var(--bleu);
 }
 .mots-cles h2 {
   font-family: var(--mono); font-size: .7rem; font-weight: 600;
@@ -854,7 +851,6 @@ kbd {
 .mots-synthese {
   margin: 1rem 0 0; padding: .7rem .9rem;
   font-size: .88rem; line-height: 1.5;
-  border-left: 3px solid var(--bleu);
   background: color-mix(in srgb, var(--bleu) 5%, transparent);
   border-radius: 0 var(--r) var(--r) 0;
 }
@@ -1115,7 +1111,6 @@ kbd {
 .fl-situation {
   padding: 1.1rem 1.25rem; margin: 0 0 1.75rem;
   border-radius: var(--r); background: var(--calque);
-  border-left: 3px solid var(--bleu);
 }
 .fl-situation p { margin: 0 0 .6rem; font-size: .97rem; line-height: 1.6; }
 .fl-probleme {
@@ -1268,7 +1263,6 @@ kbd {
 .fl-bilan {
   margin: 2.25rem 0 1.5rem; padding: 1.15rem 1.35rem;
   border-radius: var(--r); background: var(--calque);
-  border-left: 3px solid var(--vif);
 }
 .fl-bilan ul { margin: 0; padding-left: 1.1rem; }
 .fl-bilan li { margin-bottom: .75rem; line-height: 2.2; }
@@ -1399,8 +1393,7 @@ kbd {
 
 .proj-avis {
   margin: 1.5rem 0; padding: .85rem 1.1rem; border-radius: var(--r);
-  background: color-mix(in srgb, #D9791E 12%, transparent);
-  border-left: 3px solid #D9791E; font-size: .93rem; line-height: 1.55; max-width: var(--mesure);
+  background: color-mix(in srgb, #D9791E 12%, transparent); font-size: .93rem; line-height: 1.55; max-width: var(--mesure);
 }
 .proj-bloc { margin: 3rem 0 0; }
 .proj-chaine { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
@@ -1553,7 +1546,7 @@ kbd {
    travail normal. */
 .mde-cadre {
   margin: 1.75rem 0 0; padding: 1rem 1.2rem;
-  border-radius: var(--r); border-left: 3px solid var(--bleu);
+  border-radius: var(--r);
   background: var(--calque);
   font-size: .95rem; line-height: 1.65; max-width: var(--mesure);
 }
@@ -1709,7 +1702,6 @@ kbd {
 .accueil-histoire p:last-child { margin-bottom: 0; }
 .accueil-histoire-annee {
   padding: .9rem 1.1rem; border-radius: 8px; background: var(--papier);
-  border-left: 3px solid var(--vif);
 }
 .accueil-histoire-chute {
   font-family: var(--display); font-size: 1.08rem; font-weight: 500;
@@ -1871,8 +1863,7 @@ kbd {
   margin: .6rem 0 0;
   padding: .75rem .9rem;
   background: var(--calque);
-  border-left: 3px solid var(--bleu);
-  border-radius: 0 6px 6px 0;
+  border-radius: 6px;
   font-size: .95rem; line-height: 1.55;
 }
 
