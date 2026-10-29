@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Citation from '../components/Citation.astro';
 import { getCollection } from 'astro:content';
 import donneesQuiz from '../data/quiz.json';
+import calendrier from '../data/calendrier.json';
 
 export async function getStaticPaths() {
   return [
@@ -52,6 +53,17 @@ const sequences = [...parSeq.entries()]
     </p>
   </section>
 
+  {/* Le sommaire : sur téléphone, la page fait cinq écrans de haut. Un élève
+      qui cherche sa séquence y saute directement. */}
+  <nav class="seq-sommaire" aria-label="Séquences de l'année">
+    {sequences.map(seq => (
+      <a href={`#${seq.code}`} data-sommaire={seq.code}>
+        <span class="seq-sommaire-num">{seq.code.replace('seq', '')}</span>
+        {seq.titre.split(' — ')[1] ?? seq.titre}
+      </a>
+    ))}
+  </nav>
+
   {sequences.map(seq => (
     <section class="niveau-bloc" id={seq.code} aria-labelledby={`titre-${seq.code}`}
              data-seq={seq.code} data-total={seq.items.length}>
@@ -71,9 +83,12 @@ const sequences = [...parSeq.entries()]
       <ol class="chaine">
         {seq.items.map((a, i) => (
           <li>
-            <a class="maillon" data-phase={a.data.phase} data-slug={a.id} href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
+            <a class="maillon" data-phase={a.data.phase} data-slug={a.id} data-semaine={a.data.semaine} data-sequence={seq.code} href={`${base}/${a.data.annee}/${a.data.seq}/${a.id}`}>
               <span class="num">{i + 1}</span>
               <span class="corps">
+                {/* le code est celui de l'en-tête de la fiche papier : c'est lui
+                    que l'élève a sous les yeux quand il cherche sa fiche */}
+                <span class="maillon-code">{a.data.code}</span>
                 {a.data.phase && <span class="phase">{a.data.phase}</span>}
                 <span class="titre">{a.data.titre}</span>
               </span>
@@ -94,11 +109,35 @@ const sequences = [...parSeq.entries()]
     </section>
   ))}
   <Citation cle={niveau} />
+  {calendrier.statut === 'valide' && <script type="application/json" id="calendrier" set:html={JSON.stringify(calendrier)} />}
 
 </Base>
 
 <script>
   import { activitesVues } from '../scripts/memoire.js';
+  import { semaineDeClasse } from '../scripts/calendrier.js';
+
+  // « En ce moment » : l'activité de la semaine de classe en cours (ou la
+  // dernière commencée), d'après le calendrier. Rien pendant les vacances ni
+  // hors année scolaire : le site ne devine pas.
+  const cal = document.getElementById('calendrier');
+  const r = cal && semaineDeClasse(JSON.parse(cal.textContent));
+  if (r && r.semaine) {
+    const datees = [...document.querySelectorAll('.maillon[data-semaine]')]
+      .map(a => ({ a, s: Number(a.dataset.semaine.replace(/^S/, '')) }))
+      .filter(x => x.s && x.s <= r.semaine);
+    if (datees.length) {
+      const s = Math.max(...datees.map(x => x.s));
+      datees.filter(x => x.s === s).forEach(({ a }) => {
+        a.classList.add('maillon--maintenant');
+        const m = document.createElement('span');
+        m.className = 'maillon-maintenant';
+        m.textContent = 'en ce moment';
+        a.querySelector('.corps').prepend(m);
+        document.querySelector(`[data-sommaire="${a.dataset.sequence}"]`)?.classList.add('seq-sommaire--maintenant');
+      });
+    }
+  }
 
   // Une pastille sur les activités déjà ouvertes. Elle ne dit pas « réussi »
   // — le site ne le sait pas — mais « déjà vu » : c'est ce qui permet à un
