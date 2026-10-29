@@ -1,0 +1,21 @@
+---
+code: "S1-A02"
+niveau: "3eme"
+niveauLabel: "3ème"
+semaine: "S4"
+phase: "Analyser"
+titre: "D'UNE DÉCOUVERTE À UN OBJET"
+question: "PROBLÉMATIQUE : Comment une découverte de laboratoire finit-elle dans les objets de tous les jours ?"
+objectif: "Relier une découverte scientifique à ses développements technologiques, puis à leurs effets sur la société."
+competences:
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+prerequis: "S1-A01 (innovation de rupture)."
+materiel: "Fiches S1-A02 (+ EBEP) · une cellule photovoltaïque et une petite lampe ou un moteur, si possible"
+annee: "2027"
+seq: "seq01"
+seqTitre: "Séquence 01 — NUMÉRIQUE ET IA"
+fichePdf: "/2027/seq01/FICHE_S1-A02_Decouverte_3eme.pdf"
+ficheDocx: "/2027/seq01/FICHE_S1-A02_Decouverte_3eme.docx"
+ebepPdf: "/2027/seq01/EBEP_S1-A02_Decouverte_3eme.pdf"
+qr: "/qr/s1-a02-3eme.png"
+---

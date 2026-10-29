@@ -1,0 +1,21 @@
+---
+code: "S1-A03"
+niveau: "3eme"
+niveauLabel: "3ème"
+semaine: "S5"
+phase: "Analyser"
+titre: "MOTEUR DE RECHERCHE OU IA GÉNÉRATIVE ?"
+question: "PROBLÉMATIQUE : Peut-on faire confiance à la réponse d'une IA générative pour se renseigner sur un objet ?"
+objectif: "Comparer la réponse d'un moteur de recherche et celle de deux IA génératives, rédiger un prompt complet et expliquer les écarts entre les réponses."
+competences:
+  - "Thème 1 — Décrire les liens entre usages et évolutions technologiques des objets et des systèmes techniques"
+prerequis: ""
+materiel: "Fiches S1-A03 (+ EBEP) · vidéoprojecteur : les requêtes sont faites par le professeur, devant la classe"
+annee: "2027"
+seq: "seq01"
+seqTitre: "Séquence 01 — NUMÉRIQUE ET IA"
+fichePdf: "/2027/seq01/FICHE_S1-A03_IAGenerative_3eme.pdf"
+ficheDocx: "/2027/seq01/FICHE_S1-A03_IAGenerative_3eme.docx"
+ebepPdf: "/2027/seq01/EBEP_S1-A03_IAGenerative_3eme.pdf"
+qr: "/qr/s1-a03-3eme.png"
+---
