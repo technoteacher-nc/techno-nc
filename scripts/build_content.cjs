@@ -1,5 +1,5 @@
-// build_content.js — assemble le contenu du site à partir de /out
-// Usage : node scripts/build_content.js
+// build_content.cjs — assemble le contenu du site à partir de /out
+// Usage : node scripts/build_content.cjs
 //
 // 1. copie PDF + docx dans public/{annee}/{seq}/
 // 2. génère un QR code PNG par activité (public/qr/)

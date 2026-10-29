@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
 
       # Les PDF sont versionnés dans public/ : pas de LibreOffice en CI.
-      # Pour régénérer depuis les .docx, lancer scripts/build_content.js en local.
+      # Pour régénérer depuis les .docx, lancer scripts/build_content.cjs en local.
       - run: npm run build
 
       # Bloque la publication si un document interdit, un corrigé en clair,
