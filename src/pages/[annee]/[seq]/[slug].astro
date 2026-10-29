@@ -216,7 +216,25 @@ const donneesLd = [
         {etapes.map((e, i) => (
           <li>
             <span class="roles-num">{i + 1}</span>
-            <div><h3>{e.titre}</h3>{e.texte && <p>{e.texte}</p>}</div>
+            <div>
+              <h3>{e.titre}</h3>{e.texte && <p>{e.texte}</p>}
+              {/* Aide graduée, repliée : une méthode, jamais la réponse. */}
+              {enr?.coupsDePouce?.[String(i + 1)] && (() => {
+                const [a, b] = enr.coupsDePouce[String(i + 1)];
+                return (
+                  <details class="pouce">
+                    <summary>Un coup de pouce</summary>
+                    <p>{a}</p>
+                    {b && (
+                      <details class="pouce pouce--2">
+                        <summary>Encore un coup de pouce</summary>
+                        <p>{b}</p>
+                      </details>
+                    )}
+                  </details>
+                );
+              })()}
+            </div>
           </li>
         ))}
       </ol>

@@ -1,5 +1,5 @@
 {
-  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Une activité sans fiche en ligne donne ses étapes et sa phrase « tuSauras » ici, recopiées de la fiche DOCX. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié). « plusLoin » reçoit ce qui a quitté la fiche papier pour l'alléger : une question de prolongement, un fichier à télécharger (jamais une correction).",
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Une activité sans fiche en ligne donne ses étapes et sa phrase « tuSauras » ici, recopiées de la fiche DOCX. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur. « masquerMots » retire du bloc vocabulaire de la page les définitions qui donnent la réponse d'un exercice de la fiche (le lexique complet et imprimable n'est pas modifié). « plusLoin » reçoit ce qui a quitté la fiche papier pour l'alléger : une question de prolongement, un fichier à télécharger (jamais une correction). « coupsDePouce » : pour chaque étape (clé = son numéro), une ou deux aides graduées, repliées sur la page ; elles donnent une méthode ou une question intermédiaire, jamais la réponse.",
   "activites": {
     "s6-a01-4eme": {
       "visuel": "s6-a01-4eme.svg",
@@ -32,7 +32,20 @@
         "Chaîne d'énergie",
         "Chaîne d'information",
         "Information"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Retourne le robot et suis les fils : chacun part de la carte et mène à un élément de la liste.",
+          "Pour l'intrus, cherche ce que tu ne trouves nulle part sur ton robot, même en le tournant dans tous les sens."
+        ],
+        "2": [
+          "Repère le mot-clé de chaque ligne du programme (répéter, distance, si, moteur…) et cherche le même mot dans les traductions."
+        ],
+        "3": [
+          "Pars de la source : d'où vient l'énergie quand le robot n'est branché à rien ?",
+          "Pour chaque bloc, demande-toi ce qu'il fait de l'énergie : il la fournit, il la laisse passer, il la transforme, ou il la fait passer plus loin ?"
+        ]
+      }
     },
     "s6-a01-5eme": {
       "visuel": "s6-a01-5eme.svg",
@@ -41,7 +54,21 @@
         "Quels ordres le robot sait-il exécuter ?",
         "Dans quel ordre faut-il les écrire pour qu'il arrive au bon endroit ?",
         "Comment parcourir le quadrillage sans écrire dix fois le même ordre ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Une boucle, c'est ce qui fait recommencer : cherche le mot qui annonce combien de fois.",
+          "Une instruction est un ordre simple, qui se fait en une seule fois."
+        ],
+        "2": [
+          "Pose ton doigt sur la case D et garde en tête où « regarde » le robot : il ne change de direction que quand on lui dit de tourner.",
+          "Tourner à droite, c'est à droite du robot, pas de ta feuille : tourne la feuille avec lui si ça t'aide."
+        ],
+        "3": [
+          "Un carré, c'est toujours le même morceau qui revient : un côté, puis un virage. Écris d'abord ce morceau.",
+          "Pour la version avec boucle, écris le morceau une seule fois, puis demande-toi combien de fois il revient."
+        ]
+      }
     },
     "s6-a02-5eme": {
       "visuel": "s6-a02-5eme.svg",
@@ -50,7 +77,21 @@
         "Où construit-on le programme, et avec quoi ?",
         "Quel bloc correspond à chaque ligne de l'algorithme ?",
         "Comment tracer les quatre côtés sans assembler quatre fois les mêmes blocs ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pointe chaque zone de Scratch avec la souris en lisant le document projeté.",
+          "Pour chaque zone, demande-toi : est-ce que j'y regarde, j'y choisis, ou j'y assemble ?"
+        ],
+        "2": [
+          "Teste après chaque étape : si le lutin ne fait pas ce que tu attends, c'est la dernière étape qu'il faut relire.",
+          "Si rien ne se dessine, vérifie que le stylo est posé avant d'avancer."
+        ],
+        "3": [
+          "Écris d'abord l'escalier sans boucle, marche par marche, puis cherche le morceau qui se répète.",
+          "Après une marche, le lutin doit regarder du même côté qu'au départ : vérifie-le avant de répéter."
+        ]
+      }
     },
     "s6-a03-5eme": {
       "visuel": "s6-a03-5eme.svg",
@@ -59,7 +100,21 @@
         "Pourquoi chaque côté est-il plus long que le précédent ?",
         "Où le programme garde-t-il la longueur du prochain côté ?",
         "Que doit faire le lutin quand il touche le bord de la scène ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Avance tour par tour : note la valeur de « pas », puis applique la ligne qui la modifie avant de passer au tour suivant.",
+          "Une variable garde sa valeur d'un tour à l'autre : elle ne repart pas de sa valeur de départ."
+        ],
+        "2": [
+          "Crée la variable avant de l'utiliser : elle doit apparaître dans la liste des variables.",
+          "Pour 2a, refais le tableau de la partie 1 avec 10 au lieu de 20, et regarde comment les côtés grandissent."
+        ],
+        "3": [
+          "Place « si touche le bord, rebondir » à l'intérieur de la boucle : en dehors, il ne serait vérifié qu'une fois.",
+          "Un événement déclenche un script : regarde le tout premier bloc de chacun de tes scripts."
+        ]
+      }
     },
     "s6-a04-5eme": {
       "visuel": "s6-a04-5eme.svg",
@@ -68,7 +123,21 @@
         "Que demande exactement le cahier des charges du défi ?",
         "Comment savoir que le lutin est vraiment arrivé ?",
         "Que change-t-on d'un essai à l'autre, et comment le noter ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Lis le barème en entier avant de coder : il dit ce qui rapporte des points, et ce qui en fait perdre.",
+          "Pour découper le chemin, compte les pas entre deux virages et écris chaque tronçon sur une ligne."
+        ],
+        "2": [
+          "Après chaque essai, ne change qu'une chose et note-la : sinon tu ne sauras pas ce qui a marché.",
+          "Si le lutin touche toujours le mur au même endroit, c'est le tronçon juste avant qu'il faut régler."
+        ],
+        "3": [
+          "Une qualité, c'est ce qui rend leur programme facile à lire : une boucle bien placée, des blocs rangés, peu de répétitions.",
+          "Une amélioration doit être précise : dis quel bloc changer, et pourquoi."
+        ]
+      }
     },
     "s6-a02-4eme": {
       "visuel": "s6-a02-4eme.svg",
@@ -77,7 +146,20 @@
         "Le programme demande 90°. Le robot tourne-t-il vraiment de 90° ?",
         "Pourquoi deux robots n'ont-ils pas exactement le même comportement ?",
         "Comment régler le programme, essai après essai, et garder la trace des réglages ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Les réponses sont sur le document projeté : cherche dans le document les mots de la question."
+        ],
+        "2": [
+          "Un programme à la fois : regarde le robot faire avant de passer au suivant.",
+          "Si le robot ne bouge pas, vérifie dans l'ordre : il est allumé, il est connecté, la vitesse et la durée ne valent pas 0."
+        ],
+        "3": [
+          "Ne change qu'une chose à chaque essai : le temps de rotation. Garde la même vitesse et le même sol.",
+          "Angle trop grand : raccourcis le temps. Angle trop petit : allonge-le. Note chaque essai avant le suivant."
+        ]
+      }
     },
     "s6-a03-4eme": {
       "visuel": "s6-a03-4eme.svg",
@@ -86,7 +168,25 @@
         "Que mesure le capteur placé à l'avant ?",
         "Comment le programme choisit-il entre deux actions ?",
         "Que « voit » le capteur placé sous le robot ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Mets-toi à la place du robot : que faut-il faire quand l'obstacle est trop près ? Et quand la voie est libre ?",
+          "Le SINON, c'est ce que fait le robot quand la condition est fausse, c'est-à-dire tout le reste du temps."
+        ],
+        "2": [
+          "Construis le programme bloc par bloc, en suivant l'algorithme de la partie 1 ligne par ligne.",
+          "Teste d'abord avec ta main devant le capteur, robot tenu en l'air, avant de le poser par terre."
+        ],
+        "3": [
+          "Pose le robot sur la piste et regarde les petites lumières sous le capteur : observe ce qu'elles font sur le noir, puis sur le blanc.",
+          "Mets ton programme d'évitement à côté de celui-ci : repère les blocs qui ont la même forme."
+        ],
+        "4": [
+          "Joue le programme dans ta tête deux fois : robot à 30 cm du mur, puis à 5 cm. Que fait-il dans chaque cas ?",
+          "Compare ce que tu as coché pour « loin » et pour « près » avec ce que doit faire un robot qui évite les obstacles."
+        ]
+      }
     },
     "s6-a04-4eme": {
       "visuel": "s6-a04-4eme.svg",
@@ -95,7 +195,21 @@
         "Que mesure-t-on : le temps, la précision à l'arrivée, ou les deux ?",
         "Comment rendre la mesure identique pour toutes les équipes ?",
         "Que modifie-t-on d'un essai à l'autre pour progresser ?"
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Imagine que chaque équipe ait sa propre ligne de départ et son propre chronométreur : pourrais-tu encore comparer les temps ?",
+          "Relis chaque règle en te demandant ce qui se passerait si une seule équipe ne la respectait pas."
+        ],
+        "2": [
+          "Ne modifie qu'un levier entre deux essais, et écris-le dans la dernière colonne avant de relancer.",
+          "Calcule le temps final juste après l'essai, tant que tu as les pénalités en tête."
+        ],
+        "3": [
+          "Compare les essais deux à deux : cherche où le temps final a le plus baissé, puis regarde ce qui avait changé juste avant.",
+          "Pour 3b, regarde aussi la colonne des pénalités, pas seulement le temps brut."
+        ]
+      }
     },
     "s2-a01-4eme": {
       "visuel": "s2-a01.svg",
@@ -645,7 +759,27 @@
         {
           "texte": "Et si le local avait une prise électrique ? Refais le choix avec les trois mêmes critères : qu'est-ce qui change ?"
         }
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Pour chaque solution, cherche dans le tableau des données ce qu'il faut faire chaque semaine, puis compare au niveau exigé."
+        ],
+        "2": [
+          "Pour chaque élément, demande-toi ce qu'il reçoit (de la lumière ? un mouvement ? de l'électricité ?) et ce qu'il donne.",
+          "La batterie ne fabrique rien : demande-toi ce qu'elle fait de l'énergie entre le jour et le soir."
+        ],
+        "3": [
+          "Coût sur 3 ans : le prix d'achat, plus tout ce qu'il faut racheter pendant ces 3 ans.",
+          "Pour chaque critère, compare ta valeur au niveau exigé : « oui » seulement si elle le respecte."
+        ],
+        "4": [
+          "Cherche dans ton tableau la ligne qui respecte tous les critères.",
+          "Pour justifier, recopie deux chiffres du tableau et compare-les au cahier des charges."
+        ],
+        "5": [
+          "Reprends la solution la moins chère à l'achat : regarde son prix d'achat, puis son coût sur 3 ans."
+        ]
+      }
     },
     "s6-a06-4eme": {
       "visuel": "s6-a06-4eme.svg",
@@ -682,7 +816,28 @@
         {
           "texte": "Trace un graphique « nuage de points » avec la vitesse en abscisse et l'écart en ordonnée. Que montre la forme du nuage ?"
         }
-      ]
+      ],
+      "coupsDePouce": {
+        "1": [
+          "Lis une ligne en entier, de gauche à droite : de quoi parle-t-elle ?",
+          "Pour le type de donnée, demande-toi si on peut faire un calcul avec le contenu de la colonne."
+        ],
+        "2": [
+          "Tape la formule exactement comme sur la fiche, puis Entrée : le résultat prend la place de la formule.",
+          "Si une erreur s'affiche, vérifie les deux-points entre les cellules, et que les décimales sont écrites avec une virgule."
+        ],
+        "3": [
+          "Avant de trier, sélectionne tout le tableau, titres compris : sinon les lignes se mélangent.",
+          "Un filtre ne supprime rien : les lignes cachées reviennent quand tu l'enlèves."
+        ],
+        "4": [
+          "Pour une moyenne : additionne les écarts de la même vitesse, puis divise par leur nombre.",
+          "Pour le temps, compare la colonne D des essais à 50 % et à 90 %."
+        ],
+        "5": [
+          "Imagine faire tout cela à la main, sur papier, avec les douze lignes : calculer, ranger, retrouver."
+        ]
+      }
     }
   }
 }

@@ -490,6 +490,16 @@ body {
   margin: 0; max-width: var(--mesure); font-family: var(--display); font-weight: 600;
   font-size: 1.12rem; line-height: 1.45; letter-spacing: -.01em;
 }
+/* Coups de pouce : aide graduée sous chaque étape */
+.pouce { margin: .5rem 0 0; }
+.pouce summary {
+  cursor: pointer; display: inline-flex; align-items: center; min-height: 24px; padding: .15rem 0;
+  font-family: var(--mono); font-size: .74rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--bleu);
+}
+.pouce summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; border-radius: 3px; }
+.pouce > p { margin: .35rem 0 0; padding: .6rem .8rem; background: var(--calque); border-radius: var(--r); max-width: var(--mesure); line-height: 1.5; }
+.pouce--2 { margin-top: .4rem; }
+@media print { .pouce { display: none; } }
 /* Ce qui a quitté la fiche papier pour l'alléger : une question de plus, un fichier. */
 .plus-loin ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .8rem; }
 .plus-loin li { max-width: var(--mesure); line-height: 1.55; }
