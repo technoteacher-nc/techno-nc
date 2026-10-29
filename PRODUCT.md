@@ -46,3 +46,13 @@ Ton du texte (accueil, intitulés, micro-copie) : direct, jamais infantilisant, 
 - `prefers-reduced-motion` déjà respecté (transitions désactivées) — à étendre à toute nouvelle animation.
 - Lien d'évitement clavier, `aria-label` sur les navigations, focus visibles déjà en place — à maintenir strictement, ce public inclut des élèves EBEP qui naviguent parfois au clavier ou avec un lecteur d'écran.
 - Les besoins EBEP les plus spécifiques (fiches en version adaptée : police, densité, formulation) sont traités au niveau du contenu du document, pas du site — le site doit rester un vecteur neutre et accessible vers les deux versions.
+
+## Illustrations
+
+Décision du 29/10/2026 : le site reste un **carnet de plans**, pas un manuel numérisé, mais il **montre** avant de raconter. Ce qui fait qu'un élève s'y retrouve et a envie d'y revenir, c'est de reconnaître *son* robot, *sa* salle, *sa* situation, pas une image de banque d'images.
+
+- **Schémas de situation en SVG en ligne**, dessinés au trait dans les couleurs de la charte (encre, bleu de tracé, hachures et cotes de dessin technique). Quelques Ko, nets à toute taille, lisibles en 3G. Fichiers dans `src/visuels/`, déclarés dans `src/data/enrichissements.json`.
+- **Un schéma montre la question, jamais la réponse.** Une page d'activité est publique : rien de ce que la fiche demande de compléter (légendes, chaînes, constituants) n'y apparaît déjà rempli. La correction reste chiffrée dans « Remplir en ligne ».
+- **Repères numérotés dans le dessin, questions écrites en HTML dessous** : le texte reste lisible sur téléphone et par un lecteur d'écran.
+- **Photos de l'enseignant bienvenues** (objets réels, atelier 207, contexte calédonien), compressées, sans visage ni nom d'élève.
+- **Proscrit** : photos d'ambiance, illustrations « flat » génériques, mascottes, images générées décoratives, et toute image dont la licence n'est pas vérifiée.

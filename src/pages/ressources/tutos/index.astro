@@ -1,0 +1,37 @@
+---
+// Tutos logiciels — l'index. Un tuto apprend les gestes d'un logiciel sur une
+// forme simple, avant l'activité qui s'en sert.
+import Base from '../../../layouts/Base.astro';
+import donnees from '../../../data/tutos.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+---
+<Base
+  titre="Tutos logiciels de Technologie — cycle 4"
+  description="Des tutos pas à pas pour apprendre un logiciel de Technologie : une action par étape, la valeur à taper, et une vérification à chaque fois.">
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/ressources')}>Ressources</a> / Tutos
+  </nav>
+
+  <section class="hero hero--court leve">
+    <span class="eyebrow leve leve-1">Pour apprendre un logiciel</span>
+    <h1 class="leve leve-1">Tutos <em>pas à pas</em></h1>
+    <p class="leve leve-2">
+      Une action par étape, la valeur à taper au clavier, et une vérification à
+      chaque fois : tu sais tout de suite si tu es sur la bonne voie.
+    </p>
+  </section>
+
+  <div class="res-hub leve leve-3">
+    {donnees.tutos.map(t => (
+      <a class="res-carte" href={u(`/ressources/tutos/${t.slug}`)}>
+        <span class="res-quand">{t.logiciel}</span>
+        <span class="res-titre">{t.titre}</span>
+        <p>{t.resume}</p>
+        <span class="aller" aria-hidden="true">→</span>
+      </a>
+    ))}
+  </div>
+</Base>

@@ -159,12 +159,14 @@ body {
 .site-head nav a[aria-current='page'] {
   color: var(--papier); background: var(--encre); border-color: var(--encre);
 }
-/* Sur un écran de téléphone, les onglets se resserrent avant de se replier :
-   deux lignes d'onglets valent mieux qu'une barre coupée. */
+/* Sur un écran de téléphone, la marque prend sa ligne et les cinq onglets
+   tiennent sur UNE ligne en dessous, répartis sur toute la largeur : un seul
+   onglet seul sur une deuxième ligne coûtait 30 px de hauteur sur chaque
+   écran. Le repli (flex-wrap) reste le filet sous 340 px. */
 @media (max-width: 30rem) {
-  .site-head .wrap { gap: .6rem; padding-top: .7rem; padding-bottom: .7rem; }
-  .site-head nav { gap: .3rem; row-gap: .4rem; }
-  .site-head nav a { padding: .3rem .62rem; font-size: .8rem; }
+  .site-head .wrap { gap: .5rem; padding-top: .65rem; padding-bottom: .55rem; }
+  .site-head nav { width: 100%; justify-content: space-between; gap: .1rem; row-gap: .3rem; }
+  .site-head nav a { padding: .3rem .45rem; font-size: .8rem; }
 }
 
 /* ---------- hero ---------- */
@@ -456,6 +458,115 @@ body {
 .btn--fort .btn-meta { color: var(--papier); opacity: .75; border-left-color: rgba(252, 252, 250, .35); }
 
 /* méta */
+/* ---------- activité, côté élève (activités enrichies) ----------
+   La situation dessinée, les étapes, ce que l'élève saura faire. Le schéma est
+   un SVG en ligne : quelques Ko, net à toute taille, dans les couleurs de la
+   charte. Ses repères numérotés renvoient aux questions écrites dessous en HTML
+   (lisibles sur téléphone et par un lecteur d'écran). */
+.bloc-titre {
+  font-family: var(--display); font-weight: 700; font-size: 1.15rem;
+  letter-spacing: -.015em; margin: 0 0 .9rem;
+}
+.situation, .parcours, .je-sais { margin: 2.25rem 0 0; max-width: var(--boite); }
+.situation-figure {
+  margin: 0; padding: 1rem; background: var(--papier);
+  border: 1.5px solid var(--trait); border-radius: var(--r);
+}
+.situation-figure svg { display: block; width: 100%; height: auto; }
+.situation-figure figcaption { margin: .6rem 0 0; font-size: .85rem; color: var(--mine); line-height: 1.5; }
+.situation-reperes { counter-reset: repere; list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .55rem; }
+.situation-reperes li {
+  counter-increment: repere; display: grid; grid-template-columns: 1.75rem 1fr;
+  gap: 0 .7rem; align-items: start; line-height: 1.5; max-width: var(--mesure);
+}
+.situation-reperes li::before {
+  content: counter(repere); width: 1.75rem; height: 1.75rem; border-radius: 50%;
+  display: grid; place-items: center; background: var(--bleu); color: var(--papier);
+  font-family: var(--display); font-weight: 700; font-size: .9rem;
+}
+.je-sais { padding: 1.1rem 1.3rem; background: var(--calque); border-radius: var(--r); }
+.je-sais ul { margin: 0; padding-left: 1.1rem; }
+.je-sais li { margin-bottom: .4rem; line-height: 1.55; max-width: var(--mesure); }
+.je-sais-source {
+  margin: .7rem 0 0; font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .06em; color: var(--mine);
+}
+.meta > dl + .meta-prof { margin-top: 1rem; }
+.meta-prof summary {
+  cursor: pointer; padding: .5rem 0; font-family: var(--mono); font-size: .72rem;
+  font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--bleu);
+}
+.meta-prof summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; border-radius: 3px; }
+.meta-prof[open] summary { margin-bottom: .4rem; }
+
+/* ---------- tutos logiciels ----------
+   Modèle : la fiche Tinkercad 4-A4-E1. Une étape = une carte : l'action à
+   gauche, le dessin « ça doit ressembler à » à droite (dessous sur téléphone).
+   La valeur à taper est isolée dans une case façon « Mesures » de SketchUp. */
+.tuto-intro { max-width: var(--mesure); margin: 1.5rem 0 0; line-height: 1.6; }
+.tuto-intro p { margin: 0 0 .7rem; }
+.tuto-unite, .tuto-regle {
+  padding: .8rem 1rem; background: var(--calque); border-radius: var(--r);
+  line-height: 1.55; max-width: var(--mesure);
+}
+.tuto-regle { margin: 1rem 0 0; }
+.tuto-texte { margin: 0; line-height: 1.55; max-width: var(--mesure); }
+.tuto-etapes { margin: 2.25rem 0 0; }
+.tuto-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.tuto-etape {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 15rem); gap: 1.25rem;
+  align-items: center; padding: 1rem 1.1rem;
+  border: 1.5px solid var(--trait); border-radius: var(--r); background: var(--papier);
+  break-inside: avoid;
+}
+.tuto-corps { display: grid; gap: .55rem; min-width: 0; }
+.tuto-corps h3 {
+  display: flex; align-items: center; gap: .6rem; margin: 0;
+  font-family: var(--display); font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em;
+}
+.tuto-num {
+  flex: none; width: 1.9rem; height: 1.9rem; border-radius: 50%; display: grid; place-items: center;
+  background: var(--bleu); color: var(--papier); font-size: .9rem;
+}
+.tuto-etiquette {
+  font-family: var(--mono); font-size: .66rem; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--mine); margin-right: .35rem;
+}
+.tuto-outil { margin: 0; font-family: var(--display); font-weight: 600; }
+kbd {
+  font-family: var(--mono); font-size: .78rem; font-weight: 600; padding: .1rem .4rem;
+  border: 1.5px solid var(--trait); border-bottom-width: 3px; border-radius: 5px;
+  background: var(--papier); color: var(--encre); white-space: nowrap;
+}
+.tuto-valeur { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; }
+.tuto-saisie {
+  font-family: var(--mono); font-weight: 700; font-size: .95rem; color: var(--encre);
+  padding: .25rem .6rem; border: 1.5px solid var(--encre); border-radius: 4px; background: #fff;
+  overflow-wrap: anywhere; white-space: normal;
+}
+.tuto-valeur--rien { font-size: .92rem; color: var(--mine); }
+.tuto-verifie { margin: 0; font-size: .92rem; line-height: 1.5; color: var(--mine); max-width: var(--mesure); }
+.tuto-verifie strong { color: var(--vif-lisible); }
+.tuto-figure { margin: 0; }
+.tuto-figure svg { display: block; width: 100%; height: auto; }
+.tuto-aide, .tuto-outils-bloc, .tuto-suite { margin: 2.25rem 0 0; max-width: var(--boite); }
+.tuto-pannes { margin: 0; display: grid; gap: 0; }
+.tuto-pannes dt { font-weight: 600; padding: .7rem 0 .15rem; border-top: 1px solid var(--trait); }
+.tuto-pannes dd { margin: 0 0 .3rem; color: var(--mine); line-height: 1.55; max-width: var(--mesure); }
+.tuto-table-boite { overflow-x: auto; }
+.tuto-table-boite:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.tuto-table { border-collapse: collapse; width: 100%; min-width: 20rem; font-size: .92rem; }
+.tuto-table th, .tuto-table td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--trait); vertical-align: top; }
+.tuto-table thead th {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mine);
+}
+.tuto-table tbody th { font-family: var(--display); font-weight: 600; white-space: nowrap; }
+.tuto-suite ul { margin: 0; padding-left: 1.1rem; line-height: 1.7; }
+@media (max-width: 40rem) {
+  .tuto-etape { grid-template-columns: 1fr; }
+  .tuto-figure { max-width: 18rem; }
+}
+
 .meta { margin: 2.25rem 0; }
 .meta dl {
   margin: 0; display: grid; grid-template-columns: 8.5rem 1fr; gap: 0 1.5rem;

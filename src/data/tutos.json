@@ -1,0 +1,200 @@
+{
+  "note": "Tutos logiciels, côté élève. Une étape = une action, la valeur à taper isolée, une vérification. Modèle : la fiche Tinkercad 4-A4-E1. Aucun corrigé ici : le document professeur reste hors du site. Images : scripts/gen-tuto-cabane.cjs → src/visuels/tuto-cabane/.",
+  "tutos": [
+    {
+      "slug": "sketchup-cabane",
+      "titre": "Ma première maquette SketchUp : la cabane",
+      "logiciel": "SketchUp Make 2017",
+      "resume": "Construire une cabane de jardin aux cotes du croquis : dalle, murs, toit à deux pans, porte creusée. Onze étapes, une vérification à chacune.",
+      "question": "Comment passer d'un croquis coté à une maquette numérique aux bonnes dimensions ?",
+      "pourquoi": "Toutes les modélisations de l'année reposent sur les mêmes gestes : tracer, tirer, taper la valeur au clavier, vérifier. Ici, on les apprend sur une forme simple.",
+      "unite": "Le croquis est coté en mètres : la maquette aussi. Tu tapes les valeurs en mètres, avec une virgule pour les décimales (0,2 = 20 cm).",
+      "dossierVisuels": "tuto-cabane",
+      "preparer": [
+        "Ouvre SketchUp. Dans la fenêtre d'accueil, choisis un modèle dont le nom se termine par « Mètres », puis clique sur Commencer à utiliser SketchUp.",
+        "Vérifie l'unité : menu Fenêtre › Infos sur le modèle › Unités. Format : Décimal, en Mètres.",
+        "Repère la case Mesures, en bas à droite de l'écran : c'est là que s'affiche ce que tu tapes."
+      ],
+      "regleClavier": "Tu ne cliques jamais dans la case Mesures : tu commences le geste à la souris, puis tu tapes la valeur au clavier et tu valides avec Entrée.",
+      "etapes": [
+        {
+          "titre": "La dalle : le rectangle au sol",
+          "faire": "Clique sur le point où les axes se croisent, éloigne un peu la souris, puis tape la valeur.",
+          "outil": "Rectangle",
+          "touche": "R",
+          "valeur": "5;3",
+          "verifie": "La case Mesures affiche 5,00m; 3,00m. Le rectangle est posé à plat, entre l'axe rouge et l'axe vert."
+        },
+        {
+          "titre": "La dalle : son épaisseur",
+          "faire": "Clique sur le rectangle, monte la souris, puis tape la valeur.",
+          "outil": "Pousser/Tirer",
+          "touche": "P",
+          "valeur": "0,2",
+          "verifie": "La dalle a une épaisseur : 0,2 m, soit 20 cm."
+        },
+        {
+          "titre": "La limite de la terrasse",
+          "faire": "Clique sur un petit côté du dessus de la dalle, glisse vers l'intérieur, puis tape la valeur.",
+          "outil": "Mètre",
+          "touche": "T",
+          "valeur": "1",
+          "verifie": "Une ligne en pointillés traverse la dalle, à 1 m du bord, parallèle à lui."
+        },
+        {
+          "titre": "Le sol de la cabane",
+          "faire": "Clique au croisement de la ligne en pointillés et d'un grand côté, puis sur le coin opposé, au fond de la dalle.",
+          "outil": "Rectangle",
+          "touche": "R",
+          "valeur": "",
+          "verifie": "La case Mesures affiche 4,00m; 3,00m. La terrasse de 1 m reste libre devant.",
+          "sansValeur": "Rien à taper : tu cliques les deux coins."
+        },
+        {
+          "titre": "Les murs",
+          "faire": "Clique sur le rectangle que tu viens de tracer, monte la souris, puis tape la valeur.",
+          "outil": "Pousser/Tirer",
+          "touche": "P",
+          "valeur": "2",
+          "verifie": "Le volume de la cabane fait 2 m de haut. La terrasse, elle, ne monte pas."
+        },
+        {
+          "titre": "La ligne du faîtage",
+          "faire": "Sur le dessus du volume, clique au milieu d'un petit côté, puis au milieu de l'autre. Attends que l'info-bulle « Point milieu » s'affiche avant chaque clic.",
+          "outil": "Ligne",
+          "touche": "L",
+          "valeur": "",
+          "verifie": "La ligne coupe le dessus en deux parties égales, dans le sens de la longueur.",
+          "sansValeur": "Rien à taper : tu cliques les deux milieux."
+        },
+        {
+          "titre": "Le toit à deux pans",
+          "faire": "Clique sur la ligne du faîtage, monte la souris en suivant l'axe bleu (info-bulle « Sur l'axe bleu »), puis tape la valeur.",
+          "outil": "Déplacer",
+          "touche": "M",
+          "valeur": "1",
+          "verifie": "Le toit apparaît tout seul : deux pans, et deux murs en pointe (les pignons) à l'avant et à l'arrière."
+        },
+        {
+          "titre": "Le repère de la porte",
+          "faire": "Sur le mur avant, côté terrasse, clique sur le bord vertical de gauche, glisse vers la droite, puis tape la valeur.",
+          "outil": "Mètre",
+          "touche": "T",
+          "valeur": "1,1",
+          "verifie": "Une ligne en pointillés verticale apparaît sur le mur avant, à 1,1 m du bord."
+        },
+        {
+          "titre": "Le rectangle de la porte",
+          "faire": "Clique en bas du mur, au pied de la ligne en pointillés. Tire vers le haut et vers la droite, puis tape la valeur.",
+          "outil": "Rectangle",
+          "touche": "R",
+          "valeur": "0,8;1,8",
+          "verifie": "La case Mesures affiche 0,80m; 1,80m. La porte est posée sur le bas du mur, pas au milieu."
+        },
+        {
+          "titre": "Creuser la porte",
+          "faire": "Clique sur le rectangle de la porte, pousse la souris vers l'intérieur de la cabane, puis tape la valeur.",
+          "outil": "Pousser/Tirer",
+          "touche": "P",
+          "valeur": "0,1",
+          "verifie": "La porte s'enfonce de 10 cm dans le mur. Si elle ressort, tu as tiré au lieu de pousser : Ctrl + Z et recommence."
+        },
+        {
+          "titre": "Les matières, puis l'enregistrement",
+          "faire": "Choisis une matière dans la fenêtre Matières, puis clique sur la face à peindre : béton pour la dalle, bois pour les murs, tuiles pour le toit. Efface les lignes en pointillés avec l'outil Effacer (touche E). Enregistre : Fichier › Enregistrer sous.",
+          "outil": "Colorier",
+          "touche": "B",
+          "valeur": "cabane-prénom-classe",
+          "verifie": "Chaque partie a sa matière, plus aucune ligne en pointillés, et le fichier est enregistré dans ton dossier.",
+          "etiquetteValeur": "Nom du fichier"
+        }
+      ],
+      "siCaNeMarchePas": [
+        {
+          "probleme": "Ce que je tape ne s'écrit nulle part.",
+          "solution": "Commence le geste à la souris (premier clic), puis tape sans cliquer ailleurs. La valeur s'écrit toute seule dans la case Mesures."
+        },
+        {
+          "probleme": "La case Mesures affiche des pouces (″) ou des centimètres.",
+          "solution": "Le modèle n'est pas en mètres : Fenêtre › Infos sur le modèle › Unités, choisis Décimal et Mètres."
+        },
+        {
+          "probleme": "Une face est gris-bleu au lieu de blanc.",
+          "solution": "Elle est à l'envers. Clic droit sur la face › Inverser les faces."
+        },
+        {
+          "probleme": "La porte est couchée : plus large que haute.",
+          "solution": "Sur un mur, l'ordre des deux cotes dépend du sens dans lequel tu as tiré. Ctrl + Z, puis tape les deux valeurs dans l'autre ordre : 1,8;0,8."
+        },
+        {
+          "probleme": "Je me suis trompé.",
+          "solution": "Ctrl + Z annule le dernier geste. Tu peux l'utiliser plusieurs fois."
+        },
+        {
+          "probleme": "Je ne vois plus ma cabane.",
+          "solution": "Zoom étendu (Maj + Z) recadre tout le modèle à l'écran."
+        },
+        {
+          "probleme": "L'info-bulle « Point milieu » ne s'affiche pas.",
+          "solution": "Passe la souris lentement sur l'arête : elle apparaît quand tu es exactement au milieu."
+        }
+      ],
+      "outils": [
+        {
+          "outil": "Sélectionner",
+          "touche": "Espace",
+          "role": "Choisir une face, une arête ou un objet."
+        },
+        {
+          "outil": "Ligne",
+          "touche": "L",
+          "role": "Tracer une arête, d'un point à un autre."
+        },
+        {
+          "outil": "Rectangle",
+          "touche": "R",
+          "role": "Tracer un rectangle ; ses deux cotes se tapent séparées par un point-virgule."
+        },
+        {
+          "outil": "Pousser/Tirer",
+          "touche": "P",
+          "role": "Donner du volume à une face, ou la creuser."
+        },
+        {
+          "outil": "Déplacer",
+          "touche": "M",
+          "role": "Déplacer une arête, une face ou un objet, d'une distance tapée au clavier."
+        },
+        {
+          "outil": "Mètre",
+          "touche": "T",
+          "role": "Mesurer, et poser une ligne de construction en pointillés à la distance voulue."
+        },
+        {
+          "outil": "Colorier",
+          "touche": "B",
+          "role": "Appliquer une matière ou une couleur à une face."
+        },
+        {
+          "outil": "Effacer",
+          "touche": "E",
+          "role": "Supprimer une arête ou une ligne de construction."
+        },
+        {
+          "outil": "Orbite",
+          "touche": "O",
+          "role": "Tourner autour du modèle. Raccourci : maintenir la molette de la souris."
+        },
+        {
+          "outil": "Zoom étendu",
+          "touche": "Maj + Z",
+          "role": "Voir tout le modèle à l'écran."
+        }
+      ],
+      "lienActivites": [
+        "s5-a03-4eme",
+        "s5-a04-4eme"
+      ]
+    }
+  ]
+}

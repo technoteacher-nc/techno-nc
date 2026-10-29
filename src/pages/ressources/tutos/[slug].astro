@@ -1,0 +1,124 @@
+---
+// Un tuto logiciel, pas à pas.
+//
+// Construit sur le modèle de la fiche Tinkercad 4-A4-E1, celle qui marche en
+// classe : une action par étape, l'outil et sa touche, la valeur à taper isolée,
+// et une vérification que l'élève fait seul (« Vérifie : … »). Les images sont
+// calculées à partir des vraies cotes (scripts/gen-tuto-cabane.cjs) : ce que
+// l'élève voit est exactement ce qu'il doit obtenir. Aucun corrigé ici.
+import Base from '../../../layouts/Base.astro';
+import donnees from '../../../data/tutos.json';
+import { getCollection } from 'astro:content';
+import { readFileSync, existsSync } from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  return donnees.tutos.map(t => ({ params: { slug: t.slug }, props: { tuto: t } }));
+}
+
+const { tuto } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const u = p => base + p;
+
+const visuel = i => {
+  const f = path.join(process.cwd(), 'src', 'visuels', tuto.dossierVisuels, `etape-${String(i + 1).padStart(2, '0')}.svg`);
+  return existsSync(f) ? readFileSync(f, 'utf8') : null;
+};
+
+const acts = await getCollection('activites');
+const activites = (tuto.lienActivites || [])
+  .map(id => acts.find(a => a.id === id))
+  .filter(Boolean);
+---
+<Base titre={`Tuto ${tuto.logiciel} — ${tuto.titre}`} description={tuto.resume}>
+
+  <nav class="fil" aria-label="Fil d'Ariane">
+    <a href={u('/')}>Accueil</a> / <a href={u('/ressources')}>Ressources</a> / <a href={u('/ressources/tutos')}>Tutos</a> / {tuto.logiciel}
+  </nav>
+
+  <header class="act-tete leve">
+    <div class="act-repere leve leve-1">
+      <span class="eyebrow-mini">Tuto · {tuto.logiciel} · {tuto.etapes.length} étapes</span>
+    </div>
+    <h1 class="leve leve-1">{tuto.titre}</h1>
+    <p class="question leve leve-2">{tuto.question}</p>
+  </header>
+
+  <section class="tuto-intro">
+    <p>{tuto.pourquoi}</p>
+    <p class="tuto-unite"><strong>Les unités.</strong> {tuto.unite}</p>
+  </section>
+
+  <section class="parcours" aria-labelledby="preparer-titre">
+    <h2 id="preparer-titre" class="bloc-titre">Avant de commencer</h2>
+    <ol class="roles">
+      {tuto.preparer.map((p, i) => (
+        <li><span class="roles-num">{i + 1}</span><div><p class="tuto-texte">{p}</p></div></li>
+      ))}
+    </ol>
+    <p class="tuto-regle"><strong>La règle d'or.</strong> {tuto.regleClavier}</p>
+  </section>
+
+  <section class="tuto-etapes" aria-labelledby="etapes-titre">
+    <h2 id="etapes-titre" class="bloc-titre">Les étapes</h2>
+    <ol class="tuto-liste">
+      {tuto.etapes.map((e, i) => {
+        const svg = visuel(i);
+        return (
+          <li class="tuto-etape">
+            <div class="tuto-corps">
+              <h3><span class="tuto-num">{i + 1}</span>{e.titre}</h3>
+              <p class="tuto-outil">
+                <span class="tuto-etiquette">Outil</span> {e.outil} <kbd>{e.touche}</kbd>
+              </p>
+              <p class="tuto-texte">{e.faire}</p>
+              {e.valeur
+                ? <p class="tuto-valeur">
+                    <span class="tuto-etiquette">{e.etiquetteValeur || 'Je tape'}</span>
+                    <kbd class="tuto-saisie">{e.valeur}</kbd>
+                  </p>
+                : <p class="tuto-valeur tuto-valeur--rien">{e.sansValeur}</p>}
+              <p class="tuto-verifie"><strong>Vérifie :</strong> {e.verifie}</p>
+            </div>
+            {svg && (
+              <figure class="tuto-figure">
+                <Fragment set:html={svg} />
+                <figcaption class="hors-ecran">Ça doit ressembler à ce dessin.</figcaption>
+              </figure>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+  </section>
+
+  <section class="tuto-aide" aria-labelledby="aide-titre">
+    <h2 id="aide-titre" class="bloc-titre">Si ça ne marche pas</h2>
+    <dl class="tuto-pannes">
+      {tuto.siCaNeMarchePas.map(c => (<><dt>{c.probleme}</dt><dd>{c.solution}</dd></>))}
+    </dl>
+  </section>
+
+  <section class="tuto-outils-bloc" aria-labelledby="outils-titre">
+    <h2 id="outils-titre" class="bloc-titre">Les outils et leurs touches</h2>
+    <div class="tuto-table-boite" tabindex="0" role="region" aria-label="Tableau des outils">
+      <table class="tuto-table">
+        <thead><tr><th scope="col">Outil</th><th scope="col">Touche</th><th scope="col">À quoi il sert</th></tr></thead>
+        <tbody>
+          {tuto.outils.map(o => (<tr><th scope="row">{o.outil}</th><td><kbd>{o.touche}</kbd></td><td>{o.role}</td></tr>))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  {activites.length > 0 && (
+    <section class="tuto-suite">
+      <h2 class="bloc-titre">Tu t'en serviras pour</h2>
+      <ul>
+        {activites.map(a => (
+          <li><a href={u(`/${a.data.annee}/${a.data.seq}/${a.id}`)}>{a.data.code} {a.data.niveauLabel} — {a.data.titre}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>

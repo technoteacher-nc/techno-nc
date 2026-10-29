@@ -1,0 +1,24 @@
+{
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025).",
+  "activites": {
+    "s6-a01-4eme": {
+      "visuel": "s6-a01-4eme.svg",
+      "legende": "Vue de dessus. Le robot arrivait tout droit ; à moins de 10 cm de l'obstacle, il recule puis fait demi-tour.",
+      "reperes": [
+        "Comment le robot repère-t-il l'obstacle ?",
+        "Qui décide de faire demi-tour, et à quel moment ?",
+        "Qu'est-ce qui fait tourner les roues ?"
+      ],
+      "etapes": [
+        { "titre": "Anatomie du robot", "texte": "Retrouve chaque élément sur TON robot, et repère l'intrus de la liste." },
+        { "titre": "Le programme du demi-tour", "texte": "Traduis chaque ligne du programme en français." },
+        { "titre": "La chaîne d'énergie", "texte": "Suis le chemin de l'énergie, des piles jusqu'aux roues." }
+      ],
+      "jeSais": [
+        "associer les composants (exemples : batterie, relais/interrupteur, engrenage, courroie, moteur, etc.) aux fonctions techniques (alimenter, distribuer, convertir, transmettre) correspondantes (et non l’inverse) ;",
+        "identifier les capteurs ainsi que les composants d’IHM d’un OST ;",
+        "compléter la description de la chaine d’information en indiquant pour chaque bloc fonctionnel les constituants associés."
+      ]
+    }
+  }
+}
