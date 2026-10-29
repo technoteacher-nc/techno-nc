@@ -1,0 +1,21 @@
+---
+code: "S6-A05"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "BONUS"
+phase: "Analyser"
+titre: "UNE LUMIÈRE SANS PRISE — CHOISIR SA SOURCE D'ÉNERGIE"
+question: "PROBLÉMATIQUE : Quelle source d'énergie choisir pour que la lampe marche tous les soirs, sans surveillance et sans trop coûter ?"
+objectif: "Comparer quatre sources d'énergie avec des critères chiffrés (autonomie, coût sur 3 ans, déchets), choisir la plus adaptée au besoin et justifier ce choix."
+competences:
+  - "Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"
+prerequis: "Notions de chaîne d'énergie (séquence 02)."
+materiel: "Fiches S6-A05 (+ EBEP) · calculatrice"
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A05_SourceEnergie_4eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A05_SourceEnergie_4eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A05_SourceEnergie_4eme.pdf"
+qr: "/qr/s6-a05-4eme.png"
+---
