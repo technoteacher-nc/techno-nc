@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Citation from '../components/Citation.astro';
+import CetteSemaine from '../components/CetteSemaine.astro';
 import { getCollection } from 'astro:content';
 
 const acts = await getCollection('activites');
@@ -71,6 +72,10 @@ const donneesLd = {
       );
     })}
   </div>
+
+  <!-- Ce qui se fait en classe cette semaine, par niveau : le premier geste
+       d'un élève absent. Calculé dans le navigateur depuis le calendrier. -->
+  <CetteSemaine />
 
   <!-- « Reprendre » : rempli par le navigateur si la mémoire locale contient
        une dernière activité ouverte. Caché tant qu'il n'y a rien à reprendre —
