@@ -91,6 +91,150 @@
         "Comment rendre la mesure identique pour toutes les équipes ?",
         "Que modifie-t-on d'un essai à l'autre pour progresser ?"
       ]
+    },
+    "s2-a01-4eme": {
+      "visuel": "s2-a01.svg",
+      "legende": "Le même téléphone, entre les mains de trois personnes différentes.",
+      "reperes": [
+        "À quoi sert cet objet pour chacune de ces personnes ?",
+        "Qu'est-ce que l'objet fait pour tout le monde, quel que soit l'utilisateur ?",
+        "Qu'est-ce qui change d'une personne à l'autre ?"
+      ]
+    },
+    "s2-a01-5eme": {
+      "visuel": "s2-a01.svg",
+      "legende": "Le même téléphone, entre les mains de trois personnes différentes.",
+      "reperes": [
+        "À quoi sert cet objet pour chacune de ces personnes ?",
+        "Qu'est-ce que l'objet fait pour tout le monde, quel que soit l'utilisateur ?",
+        "Qu'est-ce qui change d'une personne à l'autre ?"
+      ]
+    },
+    "s2-a02-4eme": {
+      "visuel": "s2-a02-4eme.svg",
+      "legende": "La nuit, quelqu'un rentre : la lumière s'allume sans qu'on touche à rien.",
+      "reperes": [
+        "Comment la maison sait-elle que quelqu'un entre ?",
+        "Qui décide d'allumer la lumière ?",
+        "Qui allume vraiment la lampe ?"
+      ]
+    },
+    "s2-a02-5eme": {
+      "visuel": "s2-a02-5eme.svg",
+      "legende": "Un stylo, quatre boutons de couleur, une seule pointe.",
+      "reperes": [
+        "Que se passe-t-il quand on appuie sur un bouton ?",
+        "Comment le corps du stylo garde-t-il les quatre recharges séparées ?",
+        "Pourquoi une seule pointe sort-elle à la fois ?"
+      ]
+    },
+    "s2-a03-4eme": {
+      "visuel": "s2-a03-4eme.svg",
+      "legende": "Le cadran affiche des mesures ; le dessous du boîtier cache des capteurs.",
+      "reperes": [
+        "Que mesure chaque capteur, sous le boîtier ?",
+        "Comment l'information va-t-elle du capteur jusqu'à l'écran ?",
+        "Que sait la montre sur la personne qui la porte ?"
+      ]
+    },
+    "s2-a03-5eme": {
+      "visuel": "s2-a03-5eme.svg",
+      "legende": "Deux lampes : l'une attend qu'on appuie, l'autre s'allume quand quelqu'un passe.",
+      "reperes": [
+        "Que faut-il faire pour allumer la première lampe ?",
+        "Que doit « remarquer » la seconde pour s'allumer seule ?",
+        "Quels objets, chez toi, agissent sans qu'on appuie sur un bouton ?"
+      ]
+    },
+    "s2-a04-4eme": {
+      "visuel": "s2-a04.svg",
+      "legende": "Un téléphone jeté, sur une île. Où part-il ensuite ?",
+      "reperes": [
+        "Où part un objet qu'on jette ?",
+        "Pourquoi est-ce plus compliqué sur une île ?",
+        "Comment savoir, avant d'acheter, si un objet se répare facilement ?"
+      ]
+    },
+    "s2-a04-5eme": {
+      "visuel": "s2-a04.svg",
+      "legende": "Un téléphone jeté, sur une île. Où part-il ensuite ?",
+      "reperes": [
+        "Où part un objet qu'on jette ?",
+        "Pourquoi est-ce plus compliqué sur une île ?",
+        "Comment savoir, avant d'acheter, si un objet se répare facilement ?"
+      ]
+    },
+    "s2-a05-4eme": {
+      "visuel": "s2-a05.svg",
+      "legende": "Deux téléphones, deux époques.",
+      "reperes": [
+        "Qu'est-ce qui a changé entre ces deux objets ?",
+        "Qu'est-ce qui, au contraire, n'a pas changé ?",
+        "Pourquoi les objets techniques évoluent-ils ?"
+      ]
+    },
+    "s2-a05-5eme": {
+      "visuel": "s2-a05.svg",
+      "legende": "Deux téléphones, deux époques.",
+      "reperes": [
+        "Qu'est-ce qui a changé entre ces deux objets ?",
+        "Qu'est-ce qui, au contraire, n'a pas changé ?",
+        "Pourquoi les objets techniques évoluent-ils ?"
+      ]
+    },
+    "s2-a06-4eme": {
+      "visuel": "s2-a06-4eme.svg",
+      "legende": "La même application, en deux versions.",
+      "reperes": [
+        "Sur quelle version trouve-t-on le plus vite ce qu'on cherche ?",
+        "Une personne qui voit mal peut-elle utiliser cette version ?",
+        "Qu'est-ce qui rend un écran facile à utiliser ?"
+      ]
+    },
+    "s2-a06-5eme": {
+      "visuel": "s2-a06-5eme.svg",
+      "legende": "Deux télécommandes pour le même appareil.",
+      "reperes": [
+        "Les deux rendent le même service : laquelle est la plus agréable ?",
+        "Pourquoi celle-ci est-elle difficile à utiliser ?",
+        "Qu'est-ce qui rend un objet agréable à utiliser ?"
+      ]
+    },
+    "s2-a07-4eme": {
+      "visuel": "s2-a07-4eme.svg",
+      "legende": "Trois devis pour les ordinateurs de la salle, et un budget à ne pas dépasser.",
+      "reperes": [
+        "Quels critères comparer d'un devis à l'autre ?",
+        "Lequel répond le mieux au besoin du collège ?",
+        "Le budget est-il respecté ?"
+      ]
+    },
+    "s2-a07-5eme": {
+      "visuel": "s2-a07-5eme.svg",
+      "legende": "Trois produits, trois utilisateurs, un budget de 60 000 F CFP.",
+      "reperes": [
+        "Chaque utilisateur a-t-il besoin des mêmes critères ?",
+        "Que disent les chiffres de chaque fiche produit ?",
+        "Le choix tient-il dans le budget ?"
+      ]
+    },
+    "s2-a08-4eme": {
+      "visuel": "s2-a08.svg",
+      "legende": "La souris est branchée, mais le pointeur ne réagit plus au clic.",
+      "reperes": [
+        "Quel geste ne marche plus ?",
+        "Que faut-il pour ouvrir la souris sans la casser ?",
+        "Comment vérifier que la réparation a réussi ?"
+      ]
+    },
+    "s2-a08-5eme": {
+      "visuel": "s2-a08.svg",
+      "legende": "La souris est branchée, mais le pointeur ne réagit plus au clic.",
+      "reperes": [
+        "Quel geste ne marche plus ?",
+        "Que faut-il pour ouvrir la souris sans la casser ?",
+        "Comment vérifier que la réparation a réussi ?"
+      ]
     }
   }
 }

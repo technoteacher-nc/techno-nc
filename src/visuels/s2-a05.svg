@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s2a05-t v-s2a05-d" class="visuel-svg">
+  <title id="v-s2a05-t">La situation : deux objets, deux époques</title>
+  <desc id="v-s2a05-d">À gauche, un téléphone à cadran d'autrefois, relié par un fil. À droite, un smartphone. Entre les deux, une flèche du temps. Trois repères numérotés posent les questions de l'activité.</desc>
+  <path d="M80 200 h 170 l -20 -70 h -130 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="165" cy="166" r="26" fill="#EDF1F6" stroke="#11223D" stroke-width="2"/><circle cx="165" cy="166" r="6" fill="#11223D"/>
+    <path d="M90 118 q 75 -40 150 0 l -12 16 q -63 -26 -126 0 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M250 190 q 40 30 10 60 q -20 20 10 30" fill="none" stroke="#11223D" stroke-width="2"/>
+    <line x1="290" y1="150" x2="440" y2="150" stroke="#1C5FBF" stroke-width="3"/><path d="M440 140 L 458 150 L 440 160 Z" fill="#1C5FBF"/><text x="374" y="136" font-family="Space Grotesk, system-ui, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1C5FBF">le temps</text>
+    <rect x="500" y="70" width="84" height="150" rx="12" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/><rect x="508" y="84" width="68" height="116" rx="3" fill="#EDF1F6"/><circle cx="542" cy="210" r="4" fill="#11223D"/>
+    <circle cx="374" cy="190" r="19" fill="#1C5FBF"/><text x="374" y="198" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">1</text><circle cx="80" cy="100" r="19" fill="#1C5FBF"/><text x="80" y="108" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">2</text><circle cx="610" cy="70" r="19" fill="#1C5FBF"/><text x="610" y="78" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">3</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s2a08-t v-s2a08-d" class="visuel-svg">
+  <title id="v-s2a08-t">La situation : la souris qui ne clique plus</title>
+  <desc id="v-s2a08-d">Une souris vue de dessus, à côté d'un écran où le pointeur reste immobile. Un tournevis est posé à côté. Trois repères numérotés posent les questions de l'activité.</desc>
+  <path d="M120 90 q 0 -60 60 -60 q 60 0 60 60 v 90 q 0 70 -60 70 q -60 0 -60 -70 z" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/>
+    <line x1="180" y1="30" x2="180" y2="110" stroke="#11223D" stroke-width="2"/><path d="M120 110 h 120" stroke="#11223D" stroke-width="2"/>
+    <rect x="172" y="56" width="16" height="30" rx="8" fill="#EDF1F6" stroke="#11223D" stroke-width="2"/>
+    <path d="M128 90 q 0 -50 48 -52 v 68 h -48 z" fill="#D6E3F6"/>
+    <rect x="320" y="40" width="300" height="180" rx="8" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/><rect x="452" y="220" width="36" height="26" fill="#EDF1F6" stroke="#11223D" stroke-width="2"/>
+    <path d="M460 110 l 0 34 l 9 -8 l 7 15 l 6 -3 l -7 -14 l 12 -1 z" fill="#11223D"/>
+    <g transform="rotate(-20 300 262)"><rect x="240" y="252" width="60" height="18" rx="5" fill="#1C5FBF"/><rect x="300" y="257" width="70" height="8" fill="#5B6B80"/></g>
+    <circle cx="130" cy="50" r="19" fill="#1C5FBF"/><text x="130" y="58" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">1</text><circle cx="380" cy="270" r="19" fill="#1C5FBF"/><text x="380" y="278" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">2</text><circle cx="620" cy="40" r="19" fill="#1C5FBF"/><text x="620" y="48" font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FCFCFA">3</text>
+</svg>
