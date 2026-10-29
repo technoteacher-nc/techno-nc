@@ -77,12 +77,27 @@ const aFicheEnLigne = existsSync(cheminFiche);
 // « remplir en ligne », que la plupart des élèves n'ouvrent jamais. Elle
 // appartient pourtant à l'activité : c'est sa phrase de fin.
 let citation = null;
+// La fiche dit aussi, pour l'élève, ce qu'il saura faire (« OBJECTIF — Tu
+// sauras… ») et dans quel ordre il va travailler (ses titres de partie). Les
+// pages enrichies les lisent ici plutôt que de les recopier : la fiche reste
+// la seule source.
+let tuSauras = null;
+let partiesFiche = [];
 if (aFicheEnLigne) {
   try {
     const blocs = JSON.parse(readFileSync(cheminFiche, 'utf8')).blocs || [];
     citation = blocs.find(b => b.type === 'citation') || null;
+    const objectifFiche = blocs
+      .filter(b => b.type === 'texte')
+      .map(b => (b.segments || []).filter(x => x.t === 'texte').map(x => x.v).join(''))
+      .find(t => /^OBJECTIF\s*[—-]/.test(t));
+    tuSauras = objectifFiche ? objectifFiche.replace(/^OBJECTIF\s*[—-]\s*/, '') : null;
+    partiesFiche = blocs
+      .filter(b => b.type === 'partie' && b.titre)
+      .map(b => ({ titre: b.titre.replace(/\s*\([^)]*\)\s*$/, '').trim() }));
   } catch { citation = null; }
 }
+const etapes = enr ? (enr.etapes ?? partiesFiche) : [];
 
 // Les animations qui parlent de CETTE activité. Proposées ici plutôt que dans
 // un index : au moment où l'élève bloque, il est sur la fiche, pas sur la page
@@ -188,25 +203,24 @@ const donneesLd = [
     </section>
   )}
 
-  {enr?.etapes?.length > 0 && (
+  {etapes.length > 0 && (
     <section class="parcours" aria-labelledby="parcours-titre">
       <h2 id="parcours-titre" class="bloc-titre">Ce que tu vas faire</h2>
       <ol class="roles">
-        {enr.etapes.map((e, i) => (
+        {etapes.map((e, i) => (
           <li>
             <span class="roles-num">{i + 1}</span>
-            <div><h3>{e.titre}</h3><p>{e.texte}</p></div>
+            <div><h3>{e.titre}</h3>{e.texte && <p>{e.texte}</p>}</div>
           </li>
         ))}
       </ol>
     </section>
   )}
 
-  {enr?.jeSais?.length > 0 && (
+  {enr && tuSauras && (
     <section class="je-sais" aria-labelledby="je-sais-titre">
-      <h2 id="je-sais-titre" class="bloc-titre">À la fin, tu sais…</h2>
-      <ul>{enr.jeSais.map(j => <li>{j}</li>)}</ul>
-      <p class="je-sais-source">Exemples de réussite du programme de {d.niveauLabel}.</p>
+      <h2 id="je-sais-titre" class="bloc-titre">À la fin de l'activité</h2>
+      <p class="je-sais-phrase">{tuSauras}</p>
     </section>
   )}
 
@@ -215,12 +229,13 @@ const donneesLd = [
       {enr ? (
         <>
           <dl>
-            {d.objectif && <><dt>Objectif</dt><dd>{d.objectif}</dd></>}
             {d.prerequis && <><dt>Prérequis</dt><dd>{d.prerequis}</dd></>}
           </dl>
           <details class="meta-prof">
             <summary>Repères pour le professeur</summary>
             <dl>
+              {d.objectif && <><dt>Objectif</dt><dd>{d.objectif}</dd></>}
+              {enr.jeSais?.length > 0 && <><dt>Exemples de réussite</dt><dd><ul>{enr.jeSais.map(j => <li>{j}</li>)}</ul></dd></>}
               {d.competences.length > 0 && <><dt>Compétences</dt><dd><ul>{d.competences.map(c => <li>{c}</li>)}</ul></dd></>}
               {objectifsProg.length > 0 && <><dt>Objectifs du programme</dt><dd><ul>{objectifsProg.map(o => <li>{o}</li>)}</ul></dd></>}
               {d.materiel && <><dt>Matériel</dt><dd>{d.materiel}</dd></>}

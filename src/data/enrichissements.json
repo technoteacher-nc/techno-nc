@@ -1,5 +1,5 @@
 {
-  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025).",
+  "note": "Contenu ajouté aux pages d'activité, côté élève. Règle : rien ici ne donne une réponse de la fiche (la correction reste chiffrée dans « Remplir en ligne »). « Ce que tu vas faire » et « Tu sauras… » sont lus dans la fiche (src/data/fiches/) au build ; « etapes » ici ne sert qu'à les préciser. Les « jeSais » sont recopiés à l'identique des exemples de réussite du projet d'aménagement des programmes (CSP, juin 2025) et s'affichent dans les repères professeur.",
   "activites": {
     "s6-a01-4eme": {
       "visuel": "s6-a01-4eme.svg",
@@ -10,14 +10,86 @@
         "Qu'est-ce qui fait tourner les roues ?"
       ],
       "etapes": [
-        { "titre": "Anatomie du robot", "texte": "Retrouve chaque élément sur TON robot, et repère l'intrus de la liste." },
-        { "titre": "Le programme du demi-tour", "texte": "Traduis chaque ligne du programme en français." },
-        { "titre": "La chaîne d'énergie", "texte": "Suis le chemin de l'énergie, des piles jusqu'aux roues." }
+        {
+          "titre": "Anatomie du robot",
+          "texte": "Retrouve chaque élément sur TON robot, et repère l'intrus de la liste."
+        },
+        {
+          "titre": "Le programme du demi-tour",
+          "texte": "Traduis chaque ligne du programme en français."
+        },
+        {
+          "titre": "La chaîne d'énergie",
+          "texte": "Suis le chemin de l'énergie, des piles jusqu'aux roues."
+        }
       ],
       "jeSais": [
         "associer les composants (exemples : batterie, relais/interrupteur, engrenage, courroie, moteur, etc.) aux fonctions techniques (alimenter, distribuer, convertir, transmettre) correspondantes (et non l’inverse) ;",
         "identifier les capteurs ainsi que les composants d’IHM d’un OST ;",
         "compléter la description de la chaine d’information en indiquant pour chaque bloc fonctionnel les constituants associés."
+      ]
+    },
+    "s6-a01-5eme": {
+      "visuel": "s6-a01-5eme.svg",
+      "legende": "Vue de dessus. Le robot part de la case D, tourné vers le haut. Il ne fait que ce qu'on lui dit, exactement.",
+      "reperes": [
+        "Quels ordres le robot sait-il exécuter ?",
+        "Dans quel ordre faut-il les écrire pour qu'il arrive au bon endroit ?",
+        "Comment parcourir le quadrillage sans écrire dix fois le même ordre ?"
+      ]
+    },
+    "s6-a02-5eme": {
+      "visuel": "s6-a02-5eme.svg",
+      "legende": "L'algorithme du carré, écrit sur papier, doit devenir un programme que le lutin exécute sur la scène.",
+      "reperes": [
+        "Où construit-on le programme, et avec quoi ?",
+        "Quel bloc correspond à chaque ligne de l'algorithme ?",
+        "Comment tracer les quatre côtés sans assembler quatre fois les mêmes blocs ?"
+      ]
+    },
+    "s6-a03-5eme": {
+      "visuel": "s6-a03-5eme.svg",
+      "legende": "Le lutin trace une spirale carrée : à chaque tour, le côté s'allonge.",
+      "reperes": [
+        "Pourquoi chaque côté est-il plus long que le précédent ?",
+        "Où le programme garde-t-il la longueur du prochain côté ?",
+        "Que doit faire le lutin quand il touche le bord de la scène ?"
+      ]
+    },
+    "s6-a04-5eme": {
+      "visuel": "s6-a04-5eme.svg",
+      "legende": "Le lutin part de l'entrée et doit atteindre le drapeau. Aucun chemin n'est donné : c'est à ton équipe de le trouver.",
+      "reperes": [
+        "Que demande exactement le cahier des charges du défi ?",
+        "Comment savoir que le lutin est vraiment arrivé ?",
+        "Que change-t-on d'un essai à l'autre, et comment le noter ?"
+      ]
+    },
+    "s6-a02-4eme": {
+      "visuel": "s6-a02-4eme.svg",
+      "legende": "Vue de dessus. En pointillés, le quart de tour demandé par le programme ; en bleu, celui que fait le robot réel.",
+      "reperes": [
+        "Le programme demande 90°. Le robot tourne-t-il vraiment de 90° ?",
+        "Pourquoi deux robots n'ont-ils pas exactement le même comportement ?",
+        "Comment régler le programme, essai après essai, et garder la trace des réglages ?"
+      ]
+    },
+    "s6-a03-4eme": {
+      "visuel": "s6-a03-4eme.svg",
+      "legende": "À gauche, un obstacle devant le robot ; à droite, une ligne noire sous lui. Le même robot doit réagir aux deux.",
+      "reperes": [
+        "Que mesure le capteur placé à l'avant ?",
+        "Comment le programme choisit-il entre deux actions ?",
+        "Que « voit » le capteur placé sous le robot ?"
+      ]
+    },
+    "s6-a04-4eme": {
+      "visuel": "s6-a04-4eme.svg",
+      "legende": "Le robot part de la ligne de départ et doit s'arrêter sur la cible. Le temps et l'écart sont à mesurer.",
+      "reperes": [
+        "Que mesure-t-on : le temps, la précision à l'arrivée, ou les deux ?",
+        "Comment rendre la mesure identique pour toutes les équipes ?",
+        "Que modifie-t-on d'un essai à l'autre pour progresser ?"
       ]
     }
   }

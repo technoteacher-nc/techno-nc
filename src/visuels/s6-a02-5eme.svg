@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s6a025-t v-s6a025-d" class="visuel-svg">
+  <title id="v-s6a025-t">La situation : de l'algorithme papier au programme à l'écran</title>
+  <desc id="v-s6a025-d">À gauche, une feuille où l'algorithme est écrit en lignes. Une flèche mène à un écran. Sur l'écran, une zone de blocs vide et une scène où le lutin, représenté par une flèche, doit tracer un carré dessiné en pointillés. Trois repères numérotés posent les questions de l'activité.</desc>
+  <rect x="30" y="40" width="160" height="210" rx="4" fill="#FCFCFA" stroke="#11223D" stroke-width="2"/>
+  <text x="110" y="74" text-anchor="middle" font-family="Space Grotesk, system-ui, sans-serif" font-size="19" font-weight="700" fill="#11223D">algorithme</text>
+  <g stroke="#5B6B80" stroke-width="5" stroke-linecap="round"><line x1="52" y1="104" x2="160" y2="104"/><line x1="52" y1="130" x2="140" y2="130"/><line x1="52" y1="156" x2="160" y2="156"/><line x1="52" y1="182" x2="140" y2="182"/><line x1="52" y1="208" x2="150" y2="208"/></g>
+  <path d="M206 145 H 250" stroke="#1C5FBF" stroke-width="3" fill="none"/><path d="M250 136 L 264 145 L 250 154 Z" fill="#1C5FBF"/>
+  <rect x="276" y="30" width="380" height="240" rx="10" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/>
+  <rect x="292" y="48" width="150" height="204" rx="6" fill="#EDF1F6" stroke="#C3CEDC" stroke-width="1.5"/>
+  <text x="367" y="80" text-anchor="middle" font-family="Space Grotesk, system-ui, sans-serif" font-size="18" font-weight="600" fill="#5B6B80">blocs</text>
+  <rect x="456" y="48" width="184" height="204" rx="6" fill="#FCFCFA" stroke="#C3CEDC" stroke-width="1.5"/>
+  <rect x="500" y="92" width="96" height="96" fill="none" stroke="#1C5FBF" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <path d="M500 200 l -9 -16 l 18 0 z" fill="#11223D" transform="rotate(0 500 192)"/>
+  <g font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+    <circle cx="367" cy="150" r="19" fill="#1C5FBF"/><text x="367" y="158" fill="#FCFCFA">1</text>
+    <circle cx="190" cy="40" r="19" fill="#1C5FBF"/><text x="190" y="48" fill="#FCFCFA">2</text>
+    <circle cx="596" cy="92" r="19" fill="#1C5FBF"/><text x="596" y="100" fill="#FCFCFA">3</text>
+  </g>
+</svg>
