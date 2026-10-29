@@ -4,7 +4,7 @@ Statut de la correspondance : **valide**. Source des objectifs : Projet d’amé
 
 Généré par `npm run couverture` — ne pas éditer à la main.
 
-## 5ᵉ — 25/40 objectifs travaillés
+## 5ᵉ — 28/40 objectifs travaillés
 
 | Thème | Partie | Objectif | Activités |
 |---|---|---|---|
@@ -21,9 +21,9 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 1 | Le choix d’un OST dans un contexte de développement durable | Identifier les étapes du cycle de vie d’un OST influencées par les choix de matériaux et d’énergie | s2-a04-5eme |
 | 1 | Le choix d’un OST dans un contexte de développement durable | Choisir un OST parmi plusieurs propositions en vue de répondre à un besoin | s2-a07-5eme |
 | 1 | La performance des OST | Mesurer et comparer une performance d’un OST à partir d’un protocole fourni | pont-a4-a05 |
-| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Associer des solutions techniques à une ou des fonctions techniques | s2-a02-5eme |
-| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Identifier des constituants de la chaîne d’énergie d’un objet technique (l’organisation de la chaîne d’énergie étant fournie) | **aucune** |
-| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Indiquer la nature des énergies en entrée et en sortie des constituants de la chaîne d’énergie | **aucune** |
+| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Associer des solutions techniques à une ou des fonctions techniques | s2-a02-5eme, s2-a09-5eme |
+| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Identifier des constituants de la chaîne d’énergie d’un objet technique (l’organisation de la chaîne d’énergie étant fournie) | s2-a09-5eme |
+| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Indiquer la nature des énergies en entrée et en sortie des constituants de la chaîne d’énergie | s2-a09-5eme |
 | 2 | Matériaux et procédés | Identifier les principaux matériaux constitutifs d’un OST | **aucune** |
 | 2 | Fonctions, solutions, constituants de la chaine d’information | Identifier les capteurs et les composants d’une interface homme machine (IHM) d’un OST | s1-a04-5eme, s2-a03-5eme |
 | 2 | Structuration et traitement de données | Déterminer des descripteurs permettant de décrire des objets sous forme de données en précisant leurs types et leurs formats | s3-a03-5eme |
@@ -35,7 +35,7 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 2 | La programmation d’une nouvelle fonctionnalité | Identifier les données utilisées et produites par le programme associé à une fonctionnalité d’un OST (à partir d’un programme existant) | **aucune** |
 | 2 | La programmation d’une nouvelle fonctionnalité | Comprendre et traduire par un algorithme en langage naturel le programme associé à une fonctionnalité d’un OST | s6-a03-5eme |
 | 2 | La programmation d’une nouvelle fonctionnalité | Modifier les paramètres d’un programme et identifier ou évaluer ses effets en termes de fonctionnalité | **aucune** |
-| 3 | La gestion de projet technique | Suivre un processus de conception et de réalisation dans une durée, avec des tâches identifiées | **aucune** |
+| 3 | La gestion de projet technique | Suivre un processus de conception et de réalisation dans une durée, avec des tâches identifiées | pont-a4-planifier |
 | 3 | Le prototypage de solutions | Fabriquer une solution pour améliorer un OST existant | **aucune** |
 | 3 | Le choix des matériaux | Choisir un matériau parmi plusieurs proposés en fonction de leurs caractéristiques | **aucune** |
 | 3 | Le choix d’une source d’énergie | Choisir une source d’énergie et une forme d’énergie possible parmi plusieurs proposées | **aucune** |
@@ -49,7 +49,7 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 3 | La programmation des OST | Modifier un programme fourni pour répondre au besoin ou à un problème posé | **aucune** |
 | 3 | La programmation des OST | Réaliser et mettre au point un programme simple commandant un OST | s6-a04-5eme |
 
-## 4ᵉ — 21/38 objectifs travaillés
+## 4ᵉ — 24/38 objectifs travaillés
 
 | Thème | Partie | Objectif | Activités |
 |---|---|---|---|
@@ -60,14 +60,14 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 1 | L’OST dans son environnement | Décrire l’expérience de l’utilisateur (ressenti et facilité d’usage) d’un OST en partant du langage naturel (texte, croquis) pour aboutir aux schémas, graphiques, algorithmes | s2-a06-4eme |
 | 1 | L’OST dans son environnement | Repérer et expliquer les contraintes, exigences prises en compte (sécurité, incidences environnementales, formes et fonctions, ergonomie, qualité, fiabilité) pour répondre aux attentes des utilisateurs | s1-a05-4eme, s1-a06-4eme, s2-a01-4eme, s5-a01-4eme, abat-jour-a01 |
 | 1 | Le choix d’un OST dans un contexte de développement durable | Identifier les caractéristiques à prendre en compte dans le choix d’un OST en vue de répondre à un besoin | s2-a07-4eme |
-| 1 | Le choix d’un OST dans un contexte de développement durable | Comparer qualitativement et/ou quantitativement (incidences environnementales, bilan carbone, efficacité énergétique) plusieurs OST répondant au même besoin et arrêter un choix | **aucune** |
+| 1 | Le choix d’un OST dans un contexte de développement durable | Comparer qualitativement et/ou quantitativement (incidences environnementales, bilan carbone, efficacité énergétique) plusieurs OST répondant au même besoin et arrêter un choix | s6-a05-4eme |
 | 1 | La performance des OST | Choisir les appareils de mesure à utiliser pour mesurer une performance d’un OST à partir d’un protocole donné | **aucune** |
 | 2 | Fonctions, solutions, constituants de la chaine d’énergie | Identifier les constituants d’une chaîne d’énergie et les associer à leurs fonctions | s6-a01-4eme |
 | 2 | Fonctions, solutions, constituants de la chaine d’énergie | Repérer les transformations d’énergie et les flux d’énergie au sein de l’OST | **aucune** |
 | 2 | Matériaux et procédés | Mettre en relation la forme d’une pièce avec le procédé de réalisation | s5-a06-4eme, abat-jour-a04 |
 | 2 | Fonctions, solutions, constituants de la chaine d’information | Identifier les constituants de la chaîne d’information d’un objet réel et les associer à leur fonction | s1-a03-4eme, s1-a04-4eme, s2-a02-4eme, s2-a03-4eme, s6-a01-4eme |
 | 2 | Structuration et traitement de données | Décrire et analyser le traitement réalisé par un OST sur les données qu’il reçoit et qu’il produit | **aucune** |
-| 2 | Structuration et traitement de données | Décrire et analyser la structuration d’une table de données qui permet une exploitation et une interprétation du comportement d’un OST | **aucune** |
+| 2 | Structuration et traitement de données | Décrire et analyser la structuration d’une table de données qui permet une exploitation et une interprétation du comportement d’un OST | s6-a06-4eme |
 | 2 | La circulation de l’information dans un réseau informatique | Paramétrer une adresse IP fixe pour ajouter un objet connecté à un réseau local. | s3-a02-4eme |
 | 2 | La circulation de l’information dans un réseau informatique | Résoudre des problèmes pour assurer la communication entre les différents terminaux dans un réseau informatique | s3-a02-4eme |
 | 2 | La circulation de l’information dans un réseau informatique | Compléter une simulation fournie pour valider le comportement d’un réseau informatique | s3-a02-4eme |
@@ -80,7 +80,7 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 3 | La gestion de projet technique | Organiser un processus de conception et de réalisation dans une durée, avec des tâches identifiées | **aucune** |
 | 3 | Le prototypage de solutions | Proposer et fabriquer une solution pour ajouter une nouvelle fonction à un OST (croquis, schéma, graphique, algorithme, modélisation) | s5-a02-4eme, s5-a05-4eme |
 | 3 | Le choix des matériaux | Comparer différents matériaux pour choisir le plus adapté | **aucune** |
-| 3 | Le choix d’une source d’énergie | Comparer différentes sources d’énergie pour choisir la plus adaptée | **aucune** |
+| 3 | Le choix d’une source d’énergie | Comparer différentes sources d’énergie pour choisir la plus adaptée | s6-a05-4eme |
 | 3 | L’assemblage de constituants | Identifier les constituants manquants dans un prototype et le compléter | **aucune** |
 | 3 | La modélisation et la fabrication | Modifier une forme à l’aide d’une modélisation | s5-a03-4eme, s5-a04-4eme, abat-jour-a02, abat-jour-a03 |
 | 3 | La modélisation et la fabrication | Choisir les moyens et produire la forme voulue | s5-a06-4eme, abat-jour-a04 |
