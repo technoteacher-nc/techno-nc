@@ -35,6 +35,10 @@ jobs:
       # un lien interne cassé ou une page mal formée est détecté.
       - run: npm run verifier
 
+      # Correspondance activités → objectifs du programme cohérente
+      # (objectifs connus, niveaux concordants). Sortie non publiée.
+      - run: npm run couverture > /dev/null
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

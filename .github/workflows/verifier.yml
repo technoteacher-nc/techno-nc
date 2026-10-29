@@ -25,3 +25,7 @@ jobs:
       - run: npm run build
 
       - run: npm run verifier
+
+      # Correspondance activités → objectifs du programme cohérente
+      # (objectifs connus, niveaux concordants). Sortie non publiée.
+      - run: npm run couverture > /dev/null

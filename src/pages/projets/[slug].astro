@@ -11,6 +11,7 @@ import Base from '../../layouts/Base.astro';
 import Citation from '../../components/Citation.astro';
 import donnees from '../../data/projets.json';
 import { synthesesSequence } from '../../data/ressources';
+import { objectifsDe } from '../../data/programme';
 
 export function getStaticPaths() {
   return donnees.projets.map(p => ({ params: { slug: p.slug }, props: { projet: p } }));
@@ -91,6 +92,7 @@ const donneesLd = {
                 <dt>Objectif</dt><dd>{a.objectif}</dd>
                 <dt>Compétences du programme</dt>
                 <dd><ul>{a.competences.map(c => <li>{c}</li>)}</ul></dd>
+                {objectifsDe(a.id).length > 0 && <><dt>Objectifs du programme</dt><dd><ul>{objectifsDe(a.id).map(o => <li>{o}</li>)}</ul></dd></>}
                 {a.prerequis && <><dt>Prérequis</dt><dd>{a.prerequis}</dd></>}
                 {a.materiel && <><dt>Matériel</dt><dd>{a.materiel}</dd></>}
                 {a.transversal && <><dt>Autres disciplines</dt><dd>{a.transversal}</dd></>}
