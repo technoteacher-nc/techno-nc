@@ -15,6 +15,7 @@ import Base from '../../layouts/Base.astro';
 import Citation from '../../components/Citation.astro';
 import { lexique, lexiquePdf, lexiqueDocx, nbTermes } from '../../data/ressources';
 import { consolidation, nbNotions, conversions } from '../../data/consolidation';
+import { dimensionsPng } from '../../data/dimensions';
 import { statSync } from 'node:fs';
 import path from 'node:path';
 
@@ -158,7 +159,7 @@ const donneesLd = {
           <p class="conso-chapeau">{b.intro}</p>
           {b.schema && (
             <figure class="conso-schema">
-              <img src={u(b.schema)} alt={`Schéma — ${b.titre}`} loading="lazy" />
+              <img src={u(b.schema)} alt={`Schéma — ${b.titre}`} loading="lazy" {...dimensionsPng(b.schema)} />
             </figure>
           )}
           <ul class="conso-liste">

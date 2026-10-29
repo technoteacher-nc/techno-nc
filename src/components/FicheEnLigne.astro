@@ -13,6 +13,8 @@
 //    devient une zone qui grandit avec ce que l'élève écrit — le manque de
 //    place ne peut plus se produire.
 
+import { dimensionsPng } from '../data/dimensions';
+
 const { blocs, code } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -65,7 +67,7 @@ for (const b of blocs) {
     case 'schema':
       return b.src ? (
         <figure class="fl-bloc fl-schema">
-          <img src={base + b.src} alt={`Schéma de l'activité ${code}`} loading="lazy" />
+          <img src={base + b.src} alt={`Schéma de l'activité ${code}`} loading="lazy" {...dimensionsPng(b.src)} />
         </figure>
       ) : null;
 
