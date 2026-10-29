@@ -194,7 +194,7 @@ const donneesLd = {
     {conversions.map(t => (
       <section class="conv">
         <h3>{t.titre}</h3>
-        <div class="conv-boite">
+        <div class="conv-boite" tabindex="0" role="region" aria-label={`Tableau de conversion : ${t.titre}`}>
           <table class="conv-table">
             <thead>
               <tr>{t.unites.map(un => <th scope="col">{un}</th>)}</tr>

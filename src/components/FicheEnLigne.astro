@@ -20,6 +20,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // de sauvegarde locale — il doit donc rester constant d'un build à l'autre.
 let n = 0;
 const id = () => `${code}-c${n++}`;
+let nTableaux = 0; // libellé unique de chaque tableau défilant (landmark-unique)
 
 // Un champ long (beaucoup de pointillés) devient une zone extensible ;
 // un champ court reste sur la ligne, à la largeur que le professeur avait prévue.
@@ -136,11 +137,13 @@ for (const b of blocs) {
 
     case 'tableau':
       return (
-        <div class="fl-bloc fl-tableau-boite">
+        // tabindex : un tableau plus large que l'écran défile, et doit pouvoir
+        // défiler au clavier même quand il ne contient aucun champ.
+        <div class="fl-bloc fl-tableau-boite" tabindex="0" role="region" aria-label={`Tableau ${++nTableaux}`}>
           <table class="fl-tableau">
             {b.entetes && (
               <thead>
-                <tr>{b.entetes.map(h => <th>{h}</th>)}</tr>
+                <tr>{b.entetes.map(h => h ? <th>{h}</th> : <td></td>)}</tr>
               </thead>
             )}
             <tbody>

@@ -544,6 +544,9 @@ body {
 .suite-titre {
   font-family: var(--display); font-weight: 600; font-size: .95rem;
   line-height: 1.3; color: var(--encre); letter-spacing: -.01em;
+  /* un titre d'un seul mot long (« CYBERHARCÈLEMENT ») dépassait la demi-largeur
+     d'un téléphone : on autorise la césure plutôt que le débordement. */
+  hyphens: auto; overflow-wrap: anywhere;
 }
 
 /* ---------- ressources : lexique ---------- */
@@ -1046,7 +1049,9 @@ body {
   border: 1px solid var(--trait); border-radius: 6px; background: #fff;
 }
 
-.fl-ligne { margin: 0 0 1rem; line-height: 2.4; }
+.fl-ligne { margin: 0 0 1rem; line-height: 2.4; overflow-wrap: anywhere; }
+/* anywhere : certaines fiches citent une longue URL sans espace, qui faisait
+   déborder la page sur téléphone. */
 
 /* Champs : le trait de réponse du papier, transposé. Souligné plutôt
    qu'encadré — c'est le geste du cahier, pas celui du formulaire administratif. */
@@ -1134,6 +1139,7 @@ body {
 /* tableaux : la boîte gère le débordement horizontal sur mobile,
    la table ne se coupe jamais verticalement */
 .fl-tableau-boite { overflow-x: auto; margin: 0 0 1.5rem; }
+.fl-tableau-boite:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
 .fl-tableau {
   width: 100%; border-collapse: collapse; font-size: .93rem;
 }
@@ -1304,6 +1310,7 @@ body {
 .proj-detail summary {
   cursor: pointer; font-family: var(--mono); font-size: .68rem; font-weight: 600;
   letter-spacing: .08em; text-transform: uppercase; color: var(--bleu);
+  padding: .45rem 0; /* cible tactile ≥ 24 px */
 }
 .proj-detail summary:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; border-radius: 3px; }
 .proj-detail dl { margin: .7rem 0 0; display: grid; grid-template-columns: 9rem 1fr; gap: 0 1.2rem; }
@@ -1539,6 +1546,9 @@ body {
    Elle est masquée aux lecteurs d'écran (aria-hidden) puisqu'elle ne porte
    aucune information. */
 .conv-liste { display: grid; gap: 1.5rem; margin: 1.75rem 0 0; }
+/* min-width: 0 : sans lui, la table (min-width 18rem) élargit la carte au lieu
+   de défiler dans .conv-boite, et la page déborde à 320 px de large. */
+.conv-liste > * { min-width: 0; }
 .conv {
   border: 1.5px solid var(--trait); border-radius: var(--r);
   padding: 1.1rem 1.3rem; background: var(--papier);
@@ -1548,6 +1558,7 @@ body {
   margin: 0 0 .7rem; letter-spacing: -.015em;
 }
 .conv-boite { overflow-x: auto; }
+.conv-boite:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
 .conv-table { border-collapse: collapse; width: 100%; min-width: 18rem; }
 .conv-table th, .conv-table td {
   border: 1px solid var(--trait); text-align: center; padding: .4rem .3rem;
@@ -1654,7 +1665,9 @@ body {
    128 px de hauteur sur CHAQUE page. Il descend au pied de page, où on le
    retrouve quand on le cherche. */
 .pied-liens { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
-.pied-liens a { color: inherit; }
+.pied-liens a { color: inherit; display: inline-flex; align-items: center; min-height: 2rem; }
+/* 2rem : au moins 24 px de cible tactile (WCAG 2.2, critère 2.5.8) — ces
+   liens sont empilés sur téléphone et tapés au doigt. */
 
 /* Sur un téléphone, l'en-tête cesse d'être collante : deux lignes d'onglets
    figées en haut coûtent plus qu'elles ne rapportent. Elle reste accessible
