@@ -56,10 +56,12 @@ const lignes = [
   "Généré par `npm run couverture` — ne pas éditer à la main.",
   "",
 ];
-for (const niv of ["5eme", "4eme"]) {
+const ETIQ = { "5eme": "5ᵉ", "4eme": "4ᵉ", "3eme": "3ᵉ" };
+for (const niv of ["5eme", "4eme", "3eme"]) {
   const liste = Object.values(objectifs).filter(o => o.niveau === niv);
   const couverts = liste.filter(o => o.par.length);
-  lignes.push(`## ${niv === "5eme" ? "5ᵉ" : "4ᵉ"} — ${couverts.length}/${liste.length} objectifs travaillés`, "");
+  lignes.push(`## ${ETIQ[niv]} — ${couverts.length}/${liste.length} objectifs travaillés`, "");
+  if (niv === "3eme") lignes.push("Les séances du projet de 3ᵉ ne sont pas encore rattachées aux objectifs : voir `docs/progression-3eme.md` (proposition).", "");
   lignes.push("| Thème | Partie | Objectif | Activités |", "|---|---|---|---|");
   for (const o of liste) {
     lignes.push(`| ${o.theme} | ${o.partie} | ${o.libelle} | ${o.par.length ? o.par.join(", ") : "**aucune**"} |`);

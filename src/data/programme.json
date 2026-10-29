@@ -1,5 +1,5 @@
 {
-  "source": "Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ et 4ᵉ, libellés recopiés à l’identique, coquilles comprises.",
+  "source": "Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ, 4ᵉ et 3ᵉ, libellés recopiés à l’identique, coquilles comprises.",
   "themes": {
     "1": "Les objets et les systèmes techniques : leurs usages et leurs interactions à découvrir et à analyser",
     "2": "Structure, fonctionnement, comportement : des objets et des systèmes techniques à comprendre",
@@ -35,6 +35,26 @@
           "id": "evolution-4e3",
           "niveau": "4eme",
           "libelle": "Justifier l’évolution d’un OST pour répondre à l’évolution des besoins"
+        },
+        {
+          "id": "evolution-3e1",
+          "niveau": "3eme",
+          "libelle": "Identifier les innovations de rupture qui sont attachées à l’évolution d’un OST"
+        },
+        {
+          "id": "evolution-3e2",
+          "niveau": "3eme",
+          "libelle": "Mettre en relation une découverte scientifique avec ses développements technologiques et leurs effets sur la société"
+        },
+        {
+          "id": "evolution-3e3",
+          "niveau": "3eme",
+          "libelle": "Exprimer dans un argumentaire court l’incidence d’un OST sur la société"
+        },
+        {
+          "id": "evolution-3e4",
+          "niveau": "3eme",
+          "libelle": "Exprimer dans un argumentaire court l’incidence des contraintes sociétales sur les OST"
         }
       ]
     },
@@ -72,6 +92,11 @@
           "id": "numerique-4e1",
           "niveau": "4eme",
           "libelle": "Identifier et appliquer les règles pour un usage raisonné des objets communicants et des environnements numériques (propriété intellectuelle, identité numérique, témoins de connexion, géolocalisation)"
+        },
+        {
+          "id": "numerique-3e1",
+          "niveau": "3eme",
+          "libelle": "Exprimer dans un argumentaire court le rôle du développement stratégique du numérique au sein de la société et des environnements professionnels (ou des métiers)"
         }
       ]
     },
@@ -99,6 +124,11 @@
           "id": "environnement-4e2",
           "niveau": "4eme",
           "libelle": "Repérer et expliquer les contraintes, exigences prises en compte (sécurité, incidences environnementales, formes et fonctions, ergonomie, qualité, fiabilité) pour répondre aux attentes des utilisateurs"
+        },
+        {
+          "id": "environnement-3e1",
+          "niveau": "3eme",
+          "libelle": "Décrire l’expérience de l’utilisateur d’un OST à l’aide de modes de représentation choisis"
         }
       ]
     },
@@ -131,6 +161,21 @@
           "id": "choix-ost-4e2",
           "niveau": "4eme",
           "libelle": "Comparer qualitativement et/ou quantitativement (incidences environnementales, bilan carbone, efficacité énergétique) plusieurs OST répondant au même besoin et arrêter un choix"
+        },
+        {
+          "id": "choix-ost-3e1",
+          "niveau": "3eme",
+          "libelle": "Établir une liste d’OST possibles en vue de répondre à un besoin"
+        },
+        {
+          "id": "choix-ost-3e2",
+          "niveau": "3eme",
+          "libelle": "Choisir un OST et argumenter ce choix en prenant en compte son cycle de vie et les trois piliers du développement durable"
+        },
+        {
+          "id": "choix-ost-3e3",
+          "niveau": "3eme",
+          "libelle": "Évaluer les OST selon des exigences ou des critères identifiés (caractéristiques, performances, coût, indice de réparabilité)"
         }
       ]
     },
@@ -148,6 +193,11 @@
           "id": "performance-4e1",
           "niveau": "4eme",
           "libelle": "Choisir les appareils de mesure à utiliser pour mesurer une performance d’un OST à partir d’un protocole donné"
+        },
+        {
+          "id": "performance-3e1",
+          "niveau": "3eme",
+          "libelle": "Définir et mettre en œuvre un protocole pour mesurer une caractéristique, une performance d’un OST"
         }
       ]
     },
@@ -180,6 +230,11 @@
           "id": "chaine-energie-4e2",
           "niveau": "4eme",
           "libelle": "Repérer les transformations d’énergie et les flux d’énergie au sein de l’OST"
+        },
+        {
+          "id": "chaine-energie-3e1",
+          "niveau": "3eme",
+          "libelle": "Élaborer, à l’aide d’un schéma bloc, la chaîne d’énergie d’un OST"
         }
       ]
     },
@@ -197,6 +252,11 @@
           "id": "materiaux-4e1",
           "niveau": "4eme",
           "libelle": "Mettre en relation la forme d’une pièce avec le procédé de réalisation"
+        },
+        {
+          "id": "materiaux-3e1",
+          "niveau": "3eme",
+          "libelle": "Justifier le choix d’un matériau et de son procédé de mise en forme au regard des contraintes techniques et environnementales"
         }
       ]
     },
@@ -214,6 +274,16 @@
           "id": "chaine-information-4e1",
           "niveau": "4eme",
           "libelle": "Identifier les constituants de la chaîne d’information d’un objet réel et les associer à leur fonction"
+        },
+        {
+          "id": "chaine-information-3e1",
+          "niveau": "3eme",
+          "libelle": "Décrire un OST en caractérisant sa chaîne d’information"
+        },
+        {
+          "id": "chaine-information-3e2",
+          "niveau": "3eme",
+          "libelle": "Associer des grandeurs analogiques issues d’un OST à des données exploitables"
         }
       ]
     },
@@ -236,6 +306,16 @@
           "id": "donnees-4e2",
           "niveau": "4eme",
           "libelle": "Décrire et analyser la structuration d’une table de données qui permet une exploitation et une interprétation du comportement d’un OST"
+        },
+        {
+          "id": "donnees-3e1",
+          "niveau": "3eme",
+          "libelle": "Représenter sous forme de données les informations de diverses natures utilisées par un OST"
+        },
+        {
+          "id": "donnees-3e2",
+          "niveau": "3eme",
+          "libelle": "Identifier, selon les cas, leur mise en forme, leur transmission, ou leur stockage dans des fichiers (texte, image, nombre) afin de comprendre le fonctionnement de l’OST"
         }
       ]
     },
@@ -268,6 +348,16 @@
           "id": "reseau-4e3",
           "niveau": "4eme",
           "libelle": "Compléter une simulation fournie pour valider le comportement d’un réseau informatique"
+        },
+        {
+          "id": "reseau-3e1",
+          "niveau": "3eme",
+          "libelle": "Identifier et représenter la circulation d’une information dans le réseau Internet"
+        },
+        {
+          "id": "reseau-3e2",
+          "niveau": "3eme",
+          "libelle": "Justifier la nécessité d’un protocole de routage pour faire communiquer plusieurs réseaux (activité débranchée, table de routage donnée)"
         }
       ]
     },
@@ -305,6 +395,26 @@
           "id": "reparation-4e3",
           "niveau": "4eme",
           "libelle": "Choisir les procédés de réalisation et les mettre en œuvre"
+        },
+        {
+          "id": "reparation-3e1",
+          "niveau": "3eme",
+          "libelle": "Formuler des hypothèses expliquant le dysfonctionnement d’un objet technique"
+        },
+        {
+          "id": "reparation-3e2",
+          "niveau": "3eme",
+          "libelle": "Proposer un protocole de dépannage puis de réparation"
+        },
+        {
+          "id": "reparation-3e3",
+          "niveau": "3eme",
+          "libelle": "Réaliser le dépannage ou la réparation d’un système défectueux"
+        },
+        {
+          "id": "reparation-3e4",
+          "niveau": "3eme",
+          "libelle": "Réaliser une pièce sur mesure pour réparer un objet technique"
         }
       ]
     },
@@ -342,6 +452,21 @@
           "id": "nouvelle-fonctionnalite-4e3",
           "niveau": "4eme",
           "libelle": "Tester et valider, dans un environnement simulé ou réel, une modification du programme"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-3e1",
+          "niveau": "3eme",
+          "libelle": "Déterminer les données utilisées et produites par un programme associé à une fonctionnalité en vue de le modifier"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-3e2",
+          "niveau": "3eme",
+          "libelle": "Programmer un algorithme lié à une nouvelle fonctionnalité"
+        },
+        {
+          "id": "nouvelle-fonctionnalite-3e3",
+          "niveau": "3eme",
+          "libelle": "Modifier et tester le programme associé à une nouvelle fonctionnalité d’un OST"
         }
       ]
     },
@@ -359,6 +484,11 @@
           "id": "gestion-projet-4e1",
           "niveau": "4eme",
           "libelle": "Organiser un processus de conception et de réalisation dans une durée, avec des tâches identifiées"
+        },
+        {
+          "id": "gestion-projet-3e1",
+          "niveau": "3eme",
+          "libelle": "Élaborer un processus de conception et de réalisation dans une durée, avec des tâches identifiées"
         }
       ]
     },
@@ -376,6 +506,11 @@
           "id": "prototypage-4e1",
           "niveau": "4eme",
           "libelle": "Proposer et fabriquer une solution pour ajouter une nouvelle fonction à un OST (croquis, schéma, graphique, algorithme, modélisation)"
+        },
+        {
+          "id": "prototypage-3e1",
+          "niveau": "3eme",
+          "libelle": "Proposer et fabriquer un ensemble de solutions pour produire un nouvel OST (croquis, schéma, graphique, algorithme, modélisation)"
         }
       ]
     },
@@ -393,6 +528,11 @@
           "id": "choix-materiaux-4e1",
           "niveau": "4eme",
           "libelle": "Comparer différents matériaux pour choisir le plus adapté"
+        },
+        {
+          "id": "choix-materiaux-3e1",
+          "niveau": "3eme",
+          "libelle": "Choisir un matériau constitutif d’un objet et/ou système technique"
         }
       ]
     },
@@ -410,6 +550,11 @@
           "id": "choix-energie-4e1",
           "niveau": "4eme",
           "libelle": "Comparer différentes sources d’énergie pour choisir la plus adaptée"
+        },
+        {
+          "id": "choix-energie-3e1",
+          "niveau": "3eme",
+          "libelle": "Choisir une source d’énergie pour un OST"
         }
       ]
     },
@@ -427,6 +572,11 @@
           "id": "assemblage-4e1",
           "niveau": "4eme",
           "libelle": "Identifier les constituants manquants dans un prototype et le compléter"
+        },
+        {
+          "id": "assemblage-3e1",
+          "niveau": "3eme",
+          "libelle": "Choisir les constituants et assembler un prototype"
         }
       ]
     },
@@ -449,6 +599,16 @@
           "id": "modelisation-4e2",
           "niveau": "4eme",
           "libelle": "Choisir les moyens et produire la forme voulue"
+        },
+        {
+          "id": "modelisation-3e1",
+          "niveau": "3eme",
+          "libelle": "Modéliser une forme voulue"
+        },
+        {
+          "id": "modelisation-3e2",
+          "niveau": "3eme",
+          "libelle": "Choisir les moyens et produire la forme voulue"
         }
       ]
     },
@@ -461,6 +621,11 @@
           "id": "communicants-4e1",
           "niveau": "4eme",
           "libelle": "Interfacer un objet technique avec un réseau"
+        },
+        {
+          "id": "communicants-3e1",
+          "niveau": "3eme",
+          "libelle": "Interfacer deux objets techniques communicants"
         }
       ]
     },
@@ -493,6 +658,16 @@
           "id": "mecanique-4e2",
           "niveau": "4eme",
           "libelle": "Choisir et mettre en œuvre un protocole de test pour valider la tenue mécanique d’un matériau soumis à une sollicitation simple"
+        },
+        {
+          "id": "mecanique-3e1",
+          "niveau": "3eme",
+          "libelle": "Paramétrer une simulation fournie pour valider la tenue mécanique d’un matériau"
+        },
+        {
+          "id": "mecanique-3e2",
+          "niveau": "3eme",
+          "libelle": "Proposer et mettre en œuvre un protocole de test pour valider la tenue mécanique d’un matériau"
         }
       ]
     },
@@ -510,6 +685,11 @@
           "id": "validation-performances-4e1",
           "niveau": "4eme",
           "libelle": "Choisir les appareils pour mesurer les performances d’un OST à partir d’un protocole donné"
+        },
+        {
+          "id": "validation-performances-3e1",
+          "niveau": "3eme",
+          "libelle": "Proposer un protocole de test pour valider le comportement et les performances d’un objet technique"
         }
       ]
     },
@@ -547,6 +727,16 @@
           "id": "programmation-4e3",
           "niveau": "4eme",
           "libelle": "Réaliser et mettre au point un programme commandant un système réel incluant éventuellement une interaction entre un humain et une machine"
+        },
+        {
+          "id": "programmation-3e1",
+          "niveau": "3eme",
+          "libelle": "Élaborer ou concevoir un algorithme permettant de répondre au besoin visé, puis le traduire en un programme structuré (appel de sous-programmes ou de fonctions), le tester et le mettre au point"
+        },
+        {
+          "id": "programmation-3e2",
+          "niveau": "3eme",
+          "libelle": "Réaliser et mettre au point un programme commandant un système réel incluant une interaction entre un humain et une machine"
         }
       ]
     }

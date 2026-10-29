@@ -1,6 +1,6 @@
 # Couverture des objectifs du programme
 
-Statut de la correspondance : **valide**. Source des objectifs : Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ et 4ᵉ, libellés recopiés à l’identique, coquilles comprises.
+Statut de la correspondance : **valide**. Source des objectifs : Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ, 4ᵉ et 3ᵉ, libellés recopiés à l’identique, coquilles comprises.
 
 Généré par `npm run couverture` — ne pas éditer à la main.
 
@@ -91,6 +91,51 @@ Généré par `npm run couverture` — ne pas éditer à la main.
 | 3 | La programmation des OST | Modifier un algorithme permettant de répondre au besoin ou au problème posé | s6-a04-4eme |
 | 3 | La programmation des OST | Traduire un algorithme permettant de répondre à un besoin ou à un problème simple en un programme. | **aucune** |
 | 3 | La programmation des OST | Réaliser et mettre au point un programme commandant un système réel incluant éventuellement une interaction entre un humain et une machine | s6-a02-4eme, s6-a03-4eme |
+
+## 3ᵉ — 0/38 objectifs travaillés
+
+Les séances du projet de 3ᵉ ne sont pas encore rattachées aux objectifs : voir `docs/progression-3eme.md` (proposition).
+
+| Thème | Partie | Objectif | Activités |
+|---|---|---|---|
+| 1 | L’évolution des OST | Identifier les innovations de rupture qui sont attachées à l’évolution d’un OST | **aucune** |
+| 1 | L’évolution des OST | Mettre en relation une découverte scientifique avec ses développements technologiques et leurs effets sur la société | **aucune** |
+| 1 | L’évolution des OST | Exprimer dans un argumentaire court l’incidence d’un OST sur la société | **aucune** |
+| 1 | L’évolution des OST | Exprimer dans un argumentaire court l’incidence des contraintes sociétales sur les OST | **aucune** |
+| 1 | Usages et impacts sociétaux du numérique | Exprimer dans un argumentaire court le rôle du développement stratégique du numérique au sein de la société et des environnements professionnels (ou des métiers) | **aucune** |
+| 1 | L’OST dans son environnement | Décrire l’expérience de l’utilisateur d’un OST à l’aide de modes de représentation choisis | **aucune** |
+| 1 | Le choix d’un OST dans un contexte de développement durable | Établir une liste d’OST possibles en vue de répondre à un besoin | **aucune** |
+| 1 | Le choix d’un OST dans un contexte de développement durable | Choisir un OST et argumenter ce choix en prenant en compte son cycle de vie et les trois piliers du développement durable | **aucune** |
+| 1 | Le choix d’un OST dans un contexte de développement durable | Évaluer les OST selon des exigences ou des critères identifiés (caractéristiques, performances, coût, indice de réparabilité) | **aucune** |
+| 1 | La performance des OST | Définir et mettre en œuvre un protocole pour mesurer une caractéristique, une performance d’un OST | **aucune** |
+| 2 | Fonctions, solutions, constituants de la chaine d’énergie | Élaborer, à l’aide d’un schéma bloc, la chaîne d’énergie d’un OST | **aucune** |
+| 2 | Matériaux et procédés | Justifier le choix d’un matériau et de son procédé de mise en forme au regard des contraintes techniques et environnementales | **aucune** |
+| 2 | Fonctions, solutions, constituants de la chaine d’information | Décrire un OST en caractérisant sa chaîne d’information | **aucune** |
+| 2 | Fonctions, solutions, constituants de la chaine d’information | Associer des grandeurs analogiques issues d’un OST à des données exploitables | **aucune** |
+| 2 | Structuration et traitement de données | Représenter sous forme de données les informations de diverses natures utilisées par un OST | **aucune** |
+| 2 | Structuration et traitement de données | Identifier, selon les cas, leur mise en forme, leur transmission, ou leur stockage dans des fichiers (texte, image, nombre) afin de comprendre le fonctionnement de l’OST | **aucune** |
+| 2 | La circulation de l’information dans un réseau informatique | Identifier et représenter la circulation d’une information dans le réseau Internet | **aucune** |
+| 2 | La circulation de l’information dans un réseau informatique | Justifier la nécessité d’un protocole de routage pour faire communiquer plusieurs réseaux (activité débranchée, table de routage donnée) | **aucune** |
+| 2 | Le dépannage et la réparation | Formuler des hypothèses expliquant le dysfonctionnement d’un objet technique | **aucune** |
+| 2 | Le dépannage et la réparation | Proposer un protocole de dépannage puis de réparation | **aucune** |
+| 2 | Le dépannage et la réparation | Réaliser le dépannage ou la réparation d’un système défectueux | **aucune** |
+| 2 | Le dépannage et la réparation | Réaliser une pièce sur mesure pour réparer un objet technique | **aucune** |
+| 2 | La programmation d’une nouvelle fonctionnalité | Déterminer les données utilisées et produites par un programme associé à une fonctionnalité en vue de le modifier | **aucune** |
+| 2 | La programmation d’une nouvelle fonctionnalité | Programmer un algorithme lié à une nouvelle fonctionnalité | **aucune** |
+| 2 | La programmation d’une nouvelle fonctionnalité | Modifier et tester le programme associé à une nouvelle fonctionnalité d’un OST | **aucune** |
+| 3 | La gestion de projet technique | Élaborer un processus de conception et de réalisation dans une durée, avec des tâches identifiées | **aucune** |
+| 3 | Le prototypage de solutions | Proposer et fabriquer un ensemble de solutions pour produire un nouvel OST (croquis, schéma, graphique, algorithme, modélisation) | **aucune** |
+| 3 | Le choix des matériaux | Choisir un matériau constitutif d’un objet et/ou système technique | **aucune** |
+| 3 | Le choix d’une source d’énergie | Choisir une source d’énergie pour un OST | **aucune** |
+| 3 | L’assemblage de constituants | Choisir les constituants et assembler un prototype | **aucune** |
+| 3 | La modélisation et la fabrication | Modéliser une forme voulue | **aucune** |
+| 3 | La modélisation et la fabrication | Choisir les moyens et produire la forme voulue | **aucune** |
+| 3 | Les objets communicants | Interfacer deux objets techniques communicants | **aucune** |
+| 3 | La validation du comportement mécanique d’un matériau | Paramétrer une simulation fournie pour valider la tenue mécanique d’un matériau | **aucune** |
+| 3 | La validation du comportement mécanique d’un matériau | Proposer et mettre en œuvre un protocole de test pour valider la tenue mécanique d’un matériau | **aucune** |
+| 3 | La validation des performances d’un OST | Proposer un protocole de test pour valider le comportement et les performances d’un objet technique | **aucune** |
+| 3 | La programmation des OST | Élaborer ou concevoir un algorithme permettant de répondre au besoin visé, puis le traduire en un programme structuré (appel de sous-programmes ou de fonctions), le tester et le mettre au point | **aucune** |
+| 3 | La programmation des OST | Réaliser et mettre au point un programme commandant un système réel incluant une interaction entre un humain et une machine | **aucune** |
 
 ## Activités sans objectif direct identifié (20)
 
