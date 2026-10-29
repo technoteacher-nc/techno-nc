@@ -214,6 +214,19 @@ const ACTIVITES_SEQ02 = [
     fiche: "FICHE_S2-A07_CHOISIR_5eme",
     ebep: null,
   },
+  {
+    code: "S2-A09", niveau: "5eme", niveauLabel: "5ème",
+    semaine: "BONUS",
+    phase: "Analyser",
+    titre: "LE MINI-VENTILATEUR — LE CHEMIN DE L'ÉNERGIE",
+    question: "PROBLÉMATIQUE : Comment l'énergie cachée dans les piles devient-elle un courant d'air ?",
+    objectif: "Repérer les constituants de la chaîne d'énergie d'un mini-ventilateur, leur associer une fonction (alimenter, distribuer, convertir, transmettre) et indiquer la nature de l'énergie en entrée et en sortie.",
+    competences: ["Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"],
+    prerequis: "S2-A02 (une partie, une fonction) et S2-A03 (un objet qui capte et agit).",
+    materiel: "Un mini-ventilateur à piles par binôme (trappe accessible) · piles de rechange · fiches S2-A09 (+ EBEP)",
+    fiche: "FICHE_S2-A09_Ventilateur_5eme",
+    ebep: "EBEP_S2-A09_Ventilateur_5eme",
+  },
 ];
 const SEQ_SEQ03 = { code: "seq03", num: "03", nom: "DONNÉES", titre: "Séquence 03 — DONNÉES" };
 const ACTIVITES_SEQ03 = [
@@ -495,6 +508,32 @@ const ACTIVITES_SEQ06 = [
     materiel: "Scratch + fond de scène labyrinthe (préparé la veille) · chrono · fiches S6-A04 (+ EBEP) · ÉVAL E6 · Kahoot bilan (S36)",
     fiche: "FICHE_S6-A04_DefiScratch_5eme",
     ebep: "EBEP_S6-A04_Defi_5eme",
+  },
+  {
+    code: "S6-A05", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "BONUS",
+    phase: "Analyser",
+    titre: "UNE LUMIÈRE SANS PRISE — CHOISIR SA SOURCE D'ÉNERGIE",
+    question: "PROBLÉMATIQUE : Quelle source d'énergie choisir pour que la lampe marche tous les soirs, sans surveillance et sans trop coûter ?",
+    objectif: "Comparer quatre sources d'énergie avec des critères chiffrés (autonomie, coût sur 3 ans, déchets), choisir la plus adaptée au besoin et justifier ce choix.",
+    competences: ["Thème 1 — Caractériser et choisir un objet ou un système technique selon différents critères"],
+    prerequis: "Notions de chaîne d'énergie (séquence 02).",
+    materiel: "Fiches S6-A05 (+ EBEP) · calculatrice",
+    fiche: "FICHE_S6-A05_SourceEnergie_4eme",
+    ebep: "EBEP_S6-A05_SourceEnergie_4eme",
+  },
+  {
+    code: "S6-A06", niveau: "4eme", niveauLabel: "4ème",
+    semaine: "BONUS",
+    phase: "Analyser",
+    titre: "LES MESURES DU DÉFI ROBOT — EXPLOITER UN TABLEUR",
+    question: "PROBLÉMATIQUE : Comment un tableur aide-t-il à trouver le meilleur réglage du robot ?",
+    objectif: "Ranger des mesures dans un tableur, calculer, trier et filtrer les essais, puis tirer une conclusion argumentée sur le meilleur réglage.",
+    competences: ["Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"],
+    prerequis: "S6-A04 (défi robot et protocole de mesure).",
+    materiel: "Un poste avec tableur (LibreOffice Calc ou équivalent) par élève ou binôme · fichier de mesures fourni par le professeur · fiches S6-A06 (+ EBEP)",
+    fiche: "FICHE_S6-A06_Tableur_4eme",
+    ebep: "EBEP_S6-A06_Tableur_4eme",
   },
 ];
 

@@ -97,6 +97,8 @@ if (aFicheEnLigne) {
       .map(b => ({ titre: b.titre.replace(/\s*\([^)]*\)\s*$/, '').trim() }));
   } catch { citation = null; }
 }
+// Sans fiche en ligne, la phrase vient de l'enrichissement (recopiée du DOCX).
+tuSauras ??= enr?.tuSauras ?? null;
 const etapes = enr ? (enr.etapes ?? partiesFiche) : [];
 
 // Les animations qui parlent de CETTE activité. Proposées ici plutôt que dans

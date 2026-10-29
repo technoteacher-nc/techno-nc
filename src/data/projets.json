@@ -77,6 +77,26 @@
      "ebepPdf": "/2026/projets/EBEP_S5-A03_SweetHomeOuvrage_5eme.pdf"
     },
     {
+     "id": "pont-a4-planifier",
+     "code": "S5-A03 bis",
+     "semaine": "BONUS",
+     "phase": "Fabriquer",
+     "titre": "50 minutes pour fabriquer le pont : planifier le travail",
+     "question": "Comment organiser le travail du groupe pour finir le pont à temps ?",
+     "objectif": "Ranger les tâches de fabrication dans l'ordre, repérer celles qui peuvent avoir lieu en même temps, tracer et lire un diagramme de planification avant la séance de fabrication.",
+     "competences": [
+      "Thème 3 — Imaginer, concevoir et réaliser une ou des solutions en réponse à un besoin"
+     ],
+     "codesCompetences": [
+      "T3a"
+     ],
+     "prerequis": "S5-A03 (portée relevée) ; à faire juste avant S5-A04 (fabrication v1).",
+     "materiel": "Fiche S5-A03 bis (+ EBEP) · crayons de couleur",
+     "transversal": "Mathématiques : durées, addition de temps.",
+     "fichePdf": "/2026/projets/FICHE_S5-A03bis_Planifier_5eme.pdf",
+     "ebepPdf": "/2026/projets/EBEP_S5-A03bis_Planifier_5eme.pdf"
+    },
+    {
      "id": "pont-a4-a04",
      "code": "S5-A04",
      "semaine": "S29",

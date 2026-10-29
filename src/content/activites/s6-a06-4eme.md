@@ -1,0 +1,21 @@
+---
+code: "S6-A06"
+niveau: "4eme"
+niveauLabel: "4ème"
+semaine: "BONUS"
+phase: "Analyser"
+titre: "LES MESURES DU DÉFI ROBOT — EXPLOITER UN TABLEUR"
+question: "PROBLÉMATIQUE : Comment un tableur aide-t-il à trouver le meilleur réglage du robot ?"
+objectif: "Ranger des mesures dans un tableur, calculer, trier et filtrer les essais, puis tirer une conclusion argumentée sur le meilleur réglage."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S6-A04 (défi robot et protocole de mesure)."
+materiel: "Un poste avec tableur (LibreOffice Calc ou équivalent) par élève ou binôme · fichier de mesures fourni par le professeur · fiches S6-A06 (+ EBEP)"
+annee: "2026"
+seq: "seq06"
+seqTitre: "Séquence 06 — MEI"
+fichePdf: "/2026/seq06/FICHE_S6-A06_Tableur_4eme.pdf"
+ficheDocx: "/2026/seq06/FICHE_S6-A06_Tableur_4eme.docx"
+ebepPdf: "/2026/seq06/EBEP_S6-A06_Tableur_4eme.pdf"
+qr: "/qr/s6-a06-4eme.png"
+---

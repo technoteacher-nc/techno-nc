@@ -1,0 +1,21 @@
+---
+code: "S2-A09"
+niveau: "5eme"
+niveauLabel: "5ème"
+semaine: "BONUS"
+phase: "Analyser"
+titre: "LE MINI-VENTILATEUR — LE CHEMIN DE L'ÉNERGIE"
+question: "PROBLÉMATIQUE : Comment l'énergie cachée dans les piles devient-elle un courant d'air ?"
+objectif: "Repérer les constituants de la chaîne d'énergie d'un mini-ventilateur, leur associer une fonction (alimenter, distribuer, convertir, transmettre) et indiquer la nature de l'énergie en entrée et en sortie."
+competences:
+  - "Thème 2 — Décrire et caractériser l'organisation interne d'un objet ou d'un système technique et ses échanges avec son environnement (énergies, données)"
+prerequis: "S2-A02 (une partie, une fonction) et S2-A03 (un objet qui capte et agit)."
+materiel: "Un mini-ventilateur à piles par binôme (trappe accessible) · piles de rechange · fiches S2-A09 (+ EBEP)"
+annee: "2026"
+seq: "seq02"
+seqTitre: "Séquence 02 — USAGES"
+fichePdf: "/2026/seq02/FICHE_S2-A09_Ventilateur_5eme.pdf"
+ficheDocx: "/2026/seq02/FICHE_S2-A09_Ventilateur_5eme.docx"
+ebepPdf: "/2026/seq02/EBEP_S2-A09_Ventilateur_5eme.pdf"
+qr: "/qr/s2-a09-5eme.png"
+---
