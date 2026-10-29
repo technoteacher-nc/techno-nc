@@ -159,12 +159,14 @@ body {
 .site-head nav a[aria-current='page'] {
   color: var(--papier); background: var(--encre); border-color: var(--encre);
 }
-/* Sur un écran de téléphone, les onglets se resserrent avant de se replier :
-   deux lignes d'onglets valent mieux qu'une barre coupée. */
+/* Sur un écran de téléphone, la marque prend sa ligne et les cinq onglets
+   tiennent sur UNE ligne en dessous, répartis sur toute la largeur : un seul
+   onglet seul sur une deuxième ligne coûtait 30 px de hauteur sur chaque
+   écran. Le repli (flex-wrap) reste le filet sous 340 px. */
 @media (max-width: 30rem) {
-  .site-head .wrap { gap: .6rem; padding-top: .7rem; padding-bottom: .7rem; }
-  .site-head nav { gap: .3rem; row-gap: .4rem; }
-  .site-head nav a { padding: .3rem .62rem; font-size: .8rem; }
+  .site-head .wrap { gap: .5rem; padding-top: .65rem; padding-bottom: .55rem; }
+  .site-head nav { width: 100%; justify-content: space-between; gap: .1rem; row-gap: .3rem; }
+  .site-head nav a { padding: .3rem .45rem; font-size: .8rem; }
 }
 
 /* ---------- hero ---------- */
