@@ -59,7 +59,7 @@ const retour = u(`/${d.annee}/${d.seq}/${act.id}`);
       <span class="eyebrow-mini">{d.seqTitre} · {d.niveauLabel}</span>
     </div>
     <h1>{d.titre}</h1>
-    <p class="question">{d.question}</p>
+    <p class="question">{(d.question || '').replace(/^PROBL[ÉE]MATIQUE\s*:\s*/i, '')}</p>
   </header>
 
   <!-- Barre d'état : tout ce que l'élève doit savoir sur ses réponses.
