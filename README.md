@@ -74,6 +74,37 @@ cd techno-nc && npm run build
 
 Les PDF sont versionnés dans `public/` : la CI n'a pas besoin de LibreOffice.
 
+### Remettre en page les fiches élèves
+
+Les fiches `FICHE_*` suivent la mise en page décrite dans `PRODUCT.md`
+(« Fiches papier »). Pour les régénérer depuis `src/data/fiches/` — après une
+nouvelle extraction, ou si l'outil de génération a réécrit les DOCX dans
+l'ancien format :
+
+```bash
+npm install --no-save docx@9
+python3 scripts/fiches-papier/mettre-en-page.py          # toutes les fiches
+python3 scripts/fiches-papier/mettre-en-page.py s2-a08-5eme   # une seule
+```
+
+Le script reprend l'en-tête, le QR et les schémas du DOCX en place, et choisit
+pour chaque fiche le saut de page qui tient en deux pages sans couper de partie.
+Il ne touche pas aux versions adaptées (`EBEP_*`).
+
+### Corrigés à remplir en ligne
+
+Les pages « Remplir en ligne » embarquent le corrigé **chiffré**
+(`src/data/corriges/`, AES-GCM, clé dérivée par PBKDF2) : il ne s'ouvre qu'avec
+le mot de passe donné en classe. Le chiffré est public : sa solidité tient au mot
+de passe. Règles à respecter dans l'outil qui les produit :
+
+- un mot de passe différent par activité, d'au moins trois mots tirés au hasard ;
+- jamais le mot de passe dans le dépôt, sur le site ou dans un document distribué
+  avant la correction.
+
+`npm run verifier` bloque la publication si un corrigé est en clair, s'il a moins
+de 310 000 itérations, ou si un sel ou un vecteur d'initialisation est réutilisé.
+
 ## Ajouter une séquence
 
 1. Ajouter les entrées dans `scripts/activites.cjs` (changer `SEQ`)

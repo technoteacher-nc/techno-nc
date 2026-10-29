@@ -55,6 +55,7 @@ function existe(url) {
 
 const html = fichiers.filter(f => f.endsWith(".html"));
 let liens = 0;
+const sels = new Set(), ivs = new Set();
 
 for (const f of html) {
   const src = fs.readFileSync(f, "utf8");
@@ -67,6 +68,13 @@ for (const f of html) {
       const o = JSON.parse(paquet[1]);
       ok = typeof o.sel === "string" && typeof o.iv === "string" && typeof o.charge === "string"
         && !("champs" in o) && !("notes" in o);
+      // Le chiffré est public : sa solidité tient au mot de passe et à ces
+      // trois garanties. Un sel ou un vecteur réutilisé d'une page à l'autre,
+      // ou moins d'itérations, affaiblit tous les corrigés d'un coup.
+      if (ok && !(o.it >= 310000)) err(f, `corrigé chiffré avec ${o.it} itérations (310 000 au moins)`);
+      if (ok && sels.has(o.sel)) err(f, "sel déjà utilisé par un autre corrigé");
+      if (ok && ivs.has(o.iv)) err(f, "vecteur d'initialisation déjà utilisé par un autre corrigé");
+      if (ok) { sels.add(o.sel); ivs.add(o.iv); }
     } catch { ok = false; }
     if (!ok) err(f, "corrigé embarqué non chiffré ou illisible");
   }
