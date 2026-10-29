@@ -16,7 +16,7 @@
 const fs = require("fs");
 const path = require("path");
 const QRCode = require("qrcode");
-const { ANNEE: ANNEE_SITE, SEQUENCES, slug } = require("./activites.cjs");
+const { ANNEE, SEQUENCES, slug } = require("./activites.cjs");
 
 const SRC_ROOT = process.env.SRC_ROOT || "C:\\cowork-technoNC\\out";
 const ROOT = path.join(__dirname, "..");
@@ -70,9 +70,6 @@ function yamlList(arr) {
   const ignorees = [];
 
   for (const { SEQ, ACTIVITES } of SEQUENCES) {
-    // Une séquence peut appartenir à une autre année que le reste du site
-    // (la 3ᵉ, préparée pour 2027) : l'année est dans l'URL et dans le QR.
-    const ANNEE = SEQ.annee || ANNEE_SITE;
     const srcDocx = path.join(SRC_ROOT, SEQ.code);
     const srcPdf = path.join(srcDocx, "pdf");
     const hasSource = fs.existsSync(srcDocx);
@@ -150,7 +147,7 @@ qr: "/qr/${s}.png"
   if (gardes) console.log(`✓ ${gardes} fichier(s) .md préservé(s) — déjà présents, non écrasés (--force pour forcer)`);
   if (preserves) console.log(`✓ ${preserves} document(s) préservé(s) dans public/ — déjà publiés, non remplacés par ceux de out/`);
   console.log(`✓ QR codes → public/qr/`);
-  console.log(`✓ documents → public/<année>/<seq>/`);
+  console.log(`✓ documents → public/${ANNEE}/<seq>/`);
   if (ignorees.length) {
     console.log(`⏭ séquences ignorées (pas de dossier source sous ${SRC_ROOT}) : ${ignorees.join(", ")}`);
   }
