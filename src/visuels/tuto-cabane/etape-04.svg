@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 210" role="img" aria-label="Étape 4 : Le rectangle du sol de la cabane, de la ligne en pointillés jusqu'au fond de la dalle." class="visuel-svg">
+  <polygon points="126.5,187.3 314.0,79.0 201.5,14.1 14.0,122.3" fill="#EDF1F6" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="126.5,196.0 314.0,87.7 314.0,79.0 126.5,187.3" fill="#DCE3EC" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="126.5,196.0 14.0,131.0 14.0,122.3 126.5,187.3" fill="#FCFCFA" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,165.6 314.0,79.0 201.5,14.0 51.5,100.6" fill="#D6E3F6" stroke="#1C5FBF" stroke-width="2.8" stroke-linejoin="round"/>
+  <line x1="164.0" y1="165.6" x2="51.5" y2="100.7" stroke="#11223D" stroke-width="1.2" stroke-dasharray="5 4"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 307" role="img" aria-label="Étape 7 : La ligne montée de 1 m : le toit à deux pans apparaît tout seul." class="visuel-svg">
+  <polygon points="126.5,284.6 314.0,176.4 201.5,111.4 14.0,219.7" fill="#EDF1F6" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="107.8,100.6 257.8,14.0 201.5,24.8 51.5,111.4" fill="#EDF1F6" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="126.5,293.3 314.0,185.0 314.0,176.4 126.5,284.6" fill="#DCE3EC" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,263.0 314.0,176.4 314.0,89.8 164.0,176.4" fill="#DCE3EC" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="126.5,293.3 14.0,228.3 14.0,219.7 126.5,284.6" fill="#FCFCFA" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,176.4 314.0,89.8 257.8,14.0 107.8,100.6" fill="#EDF1F6" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,263.0 51.5,198.0 51.5,111.4 107.8,100.6 164.0,176.4" fill="#FCFCFA" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <line x1="107.8" y1="100.6" x2="257.8" y2="14.0" stroke="#1C5FBF" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

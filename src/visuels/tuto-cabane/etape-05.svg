@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 296" role="img" aria-label="Étape 5 : Le volume de la cabane : le rectangle tiré de 2 m." class="visuel-svg">
+  <polygon points="126.5,273.8 314.0,165.6 201.5,100.6 14.0,208.9" fill="#EDF1F6" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="126.5,282.5 314.0,174.2 314.0,165.6 126.5,273.8" fill="#DCE3EC" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,165.6 314.0,79.0 201.5,14.0 51.5,100.6" fill="#EDF1F6" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,252.2 314.0,165.6 314.0,79.0 164.0,165.6" fill="#DCE3EC" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="126.5,282.5 14.0,217.5 14.0,208.9 126.5,273.8" fill="#FCFCFA" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="164.0,252.2 51.5,187.2 51.5,100.6 164.0,165.6" fill="#FCFCFA" stroke="#11223D" stroke-width="1.6" stroke-linejoin="round"/>
+  
+</svg>
