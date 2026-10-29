@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="v-s6a044-t v-s6a044-d" class="visuel-svg">
+  <title id="v-s6a044-t">La situation : le défi chronométré</title>
+  <desc id="v-s6a044-d">Vue de dessus d'une piste. Le robot part de la ligne de départ et doit s'arrêter sur la cible d'arrivée. Un chronomètre affiche un point d'interrogation, et une cote marque l'écart à la cible, lui aussi inconnu. Trois repères numérotés posent les questions de l'activité.</desc>
+  <rect x="20" y="70" width="560" height="150" rx="10" fill="#EDF1F6" stroke="#C3CEDC" stroke-width="1.5"/>
+  <line x1="120" y1="80" x2="120" y2="210" stroke="#11223D" stroke-width="3"/>
+  <text x="120" y="250" text-anchor="middle" font-family="Space Grotesk, system-ui, sans-serif" font-size="20" font-weight="700" fill="#11223D">départ</text>
+  <g stroke="#11223D" stroke-width="2.5" fill="#FCFCFA">
+    <rect x="40" y="118" width="72" height="54" rx="8"/><circle cx="118" cy="134" r="6"/><circle cx="118" cy="156" r="6"/>
+  </g>
+  <circle cx="480" cy="145" r="42" fill="#FCFCFA" stroke="#11223D" stroke-width="2"/><circle cx="480" cy="145" r="24" fill="none" stroke="#11223D" stroke-width="2"/><circle cx="480" cy="145" r="6" fill="#11223D"/>
+  <text x="480" y="250" text-anchor="middle" font-family="Space Grotesk, system-ui, sans-serif" font-size="20" font-weight="700" fill="#11223D">arrivée</text>
+  <line x1="140" y1="145" x2="420" y2="145" stroke="#1C5FBF" stroke-width="2.5" stroke-dasharray="10 7"/>
+  <line x1="452" y1="196" x2="480" y2="196" stroke="#11223D" stroke-width="1.5"/>
+  <text x="466" y="214" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" font-weight="700" fill="#11223D">? cm</text>
+  <circle cx="620" cy="60" r="34" fill="#FCFCFA" stroke="#11223D" stroke-width="2.5"/><rect x="612" y="18" width="16" height="10" rx="2" fill="#11223D"/>
+  <text x="620" y="68" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" font-weight="700" fill="#11223D">? s</text>
+  <g font-family="Space Grotesk, system-ui, sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+    <circle cx="620" cy="126" r="19" fill="#1C5FBF"/><text x="620" y="134" fill="#FCFCFA">1</text>
+    <circle cx="120" cy="50" r="19" fill="#1C5FBF"/><text x="120" y="58" fill="#FCFCFA">2</text>
+    <circle cx="300" cy="110" r="19" fill="#1C5FBF"/><text x="300" y="118" fill="#FCFCFA">3</text>
+  </g>
+</svg>
