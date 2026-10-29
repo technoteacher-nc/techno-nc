@@ -230,6 +230,20 @@ const donneesLd = [
     </section>
   )}
 
+  {enr?.plusLoin?.length > 0 && (
+    <section class="plus-loin" aria-labelledby="plus-loin-titre">
+      <h2 id="plus-loin-titre" class="bloc-titre">Pour aller plus loin</h2>
+      <ul>
+        {enr.plusLoin.map(x => (
+          <li>
+            {x.texte}
+            {x.fichier && <> <a class="btn" href={u(x.fichier)} download>{x.libelle}</a></>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
   {(d.objectif || d.competences.length || objectifsProg.length || d.prerequis || d.materiel) && (
     <section class="meta" aria-label="Repères de l'activité">
       {enr ? (
