@@ -352,6 +352,114 @@
         "Que peut faire la personne qui les reçoit ?",
         "Et celle qui voit la scène, que peut-elle faire ?"
       ]
+    },
+    "s1-a01-4eme": {
+      "visuel": "s1-a01.svg",
+      "legende": "La consigne d'un côté, la page à produire de l'autre, et un dossier où l'enregistrer.",
+      "reperes": [
+        "Que demande exactement la consigne ?",
+        "Comment vérifier que la page respecte la consigne, au point près ?",
+        "Où, et sous quel nom, enregistrer le fichier ?"
+      ]
+    },
+    "s1-a01-5eme": {
+      "visuel": "s1-a01.svg",
+      "legende": "La consigne d'un côté, la page à produire de l'autre, et un dossier où l'enregistrer.",
+      "reperes": [
+        "Que demande exactement la consigne ?",
+        "Comment vérifier que la page respecte la consigne, au point près ?",
+        "Où, et sous quel nom, enregistrer le fichier ?"
+      ]
+    },
+    "s1-a02-4eme": {
+      "visuel": "s1-a02.svg",
+      "legende": "Les mêmes informations, écrites à la suite ou rangées dans un tableau.",
+      "reperes": [
+        "Pourquoi est-il difficile de retrouver une information ici ?",
+        "Qu'est-ce que le tableau change ?",
+        "À quoi sert chaque colonne ?"
+      ]
+    },
+    "s1-a02-5eme": {
+      "visuel": "s1-a02.svg",
+      "legende": "Les mêmes informations, écrites à la suite ou rangées dans un tableau.",
+      "reperes": [
+        "Pourquoi est-il difficile de retrouver une information ici ?",
+        "Qu'est-ce que le tableau change ?",
+        "À quoi sert chaque colonne ?"
+      ]
+    },
+    "s1-a03-4eme": {
+      "visuel": "s1-a03.svg",
+      "legende": "Le boîtier de l'ordinateur, ouvert : six pièces, aucun nom.",
+      "reperes": [
+        "Quelles pièces trouve-t-on dans le boîtier ?",
+        "À quoi sert chacune d'elles ?",
+        "Comment comparer deux ordinateurs à partir de leurs pièces ?"
+      ]
+    },
+    "s1-a03-5eme": {
+      "visuel": "s1-a03.svg",
+      "legende": "Le boîtier de l'ordinateur, ouvert : six pièces, aucun nom.",
+      "reperes": [
+        "Quelles pièces trouve-t-on dans le boîtier ?",
+        "À quoi sert chacune d'elles ?",
+        "Comment comparer deux ordinateurs à partir de leurs pièces ?"
+      ]
+    },
+    "s1-a04-4eme": {
+      "visuel": "s1-a04.svg",
+      "legende": "L'ordinateur au centre, quatre appareils branchés autour. Les traits n'ont pas encore de sens.",
+      "reperes": [
+        "Dans quel sens l'information circule-t-elle sur chaque trait ?",
+        "Cet appareil reçoit-il l'information, l'envoie-t-il, ou les deux ?",
+        "Par quelle prise chaque appareil se branche-t-il ?"
+      ]
+    },
+    "s1-a04-5eme": {
+      "visuel": "s1-a04.svg",
+      "legende": "L'ordinateur au centre, quatre appareils branchés autour. Les traits n'ont pas encore de sens.",
+      "reperes": [
+        "Dans quel sens l'information circule-t-elle sur chaque trait ?",
+        "Cet appareil reçoit-il l'information, l'envoie-t-il, ou les deux ?",
+        "Par quelle prise chaque appareil se branche-t-il ?"
+      ]
+    },
+    "s1-a05-4eme": {
+      "visuel": "s1-a05.svg",
+      "legende": "Deux objets en bois : une branche ramassée au sol, une rame de pirogue.",
+      "reperes": [
+        "Lequel des deux a été fabriqué ?",
+        "À quel besoin répond la rame ?",
+        "Qui l'utilise, et dans quelles conditions doit-elle tenir ?"
+      ]
+    },
+    "s1-a05-5eme": {
+      "visuel": "s1-a05.svg",
+      "legende": "Deux objets en bois : une branche ramassée au sol, une rame de pirogue.",
+      "reperes": [
+        "Lequel des deux a été fabriqué ?",
+        "À quel besoin répond la rame ?",
+        "Qui l'utilise, et dans quelles conditions doit-elle tenir ?"
+      ]
+    },
+    "s1-a06-4eme": {
+      "visuel": "s1-a06.svg",
+      "legende": "Le même mot, « solide », et deux personnes qui n'imaginent pas la même chose.",
+      "reperes": [
+        "Que veut dire « solide » pour chacune de ces personnes ?",
+        "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
+        "Comment vérifier ensuite que l'objet répond à la demande ?"
+      ]
+    },
+    "s1-a06-5eme": {
+      "visuel": "s1-a06.svg",
+      "legende": "Le même mot, « solide », et deux personnes qui n'imaginent pas la même chose.",
+      "reperes": [
+        "Que veut dire « solide » pour chacune de ces personnes ?",
+        "Comment écrire ce qu'on attend pour que tout le monde comprenne pareil ?",
+        "Comment vérifier ensuite que l'objet répond à la demande ?"
+      ]
     }
   }
 }
