@@ -307,6 +307,51 @@
         "Comment vérifier que le message passe vraiment ?",
         "Comment brancher une troisième machine ?"
       ]
+    },
+    "s4-a01-4eme": {
+      "visuel": "s4-a01-4eme.svg",
+      "legende": "Un message reçu dans la boîte mail. Faut-il cliquer ?",
+      "reperes": [
+        "Ce message vient-il vraiment de qui il prétend ?",
+        "Où peut se cacher le piège ?",
+        "Comment protéger un compte même si le mot de passe a fuité ?"
+      ]
+    },
+    "s4-a01-5eme": {
+      "visuel": "s4-a01-5eme.svg",
+      "legende": "Un mot de passe, un cadenas, et le temps qu'il faudrait pour le casser.",
+      "reperes": [
+        "Combien de temps ce mot de passe résisterait-il ?",
+        "Qu'est-ce qui rend un mot de passe solide ?",
+        "Comment retenir un mot de passe solide sans l'écrire ?"
+      ]
+    },
+    "s4-a02-4eme": {
+      "visuel": "s4-a02-4eme.svg",
+      "legende": "On navigue sur son téléphone… et une publicité semble nous connaître.",
+      "reperes": [
+        "Quelles traces laisse-t-on en naviguant ?",
+        "Comment une publicité « devine »-t-elle ce qui t'intéresse ?",
+        "Quels droits as-tu sur les données qu'on collecte sur toi ?"
+      ]
+    },
+    "s4-a02-5eme": {
+      "visuel": "s4-a02-5eme.svg",
+      "legende": "Une photo publiée depuis un téléphone se retrouve sur de nombreux écrans.",
+      "reperes": [
+        "Qui peut voir cette photo une fois publiée ?",
+        "Peut-on vraiment la retirer ?",
+        "Quels réglages protègent ce que je publie ?"
+      ]
+    },
+    "s4-a03-5eme": {
+      "visuel": "s4-a03-5eme.svg",
+      "legende": "Des messages arrivent de partout vers une même personne. Quelqu'un regarde.",
+      "reperes": [
+        "Quand des messages deviennent-ils du harcèlement ?",
+        "Que peut faire la personne qui les reçoit ?",
+        "Et celle qui voit la scène, que peut-elle faire ?"
+      ]
     }
   }
 }
