@@ -1,5 +1,5 @@
 {
-  "statut": "proposition",
+  "statut": "valide",
   "note": "Correspondance activité → objectifs d'apprentissage (identifiants de programme.json), établie à partir des seuls champs titre/objectif des activités et des séances de projet. PROPOSITION À VALIDER par l'enseignant : tant que \"statut\" ne vaut pas \"valide\", rien n'est affiché sur le site. Une liste vide signifie : aucun objectif du programme identifié comme objectif direct de l'activité.",
   "activites": {
     "s1-a01-5eme": ["numerique-5e2"],

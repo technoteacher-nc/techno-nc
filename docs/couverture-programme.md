@@ -1,6 +1,6 @@
 # Couverture des objectifs du programme
 
-Statut de la correspondance : **proposition**. Source des objectifs : Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ et 4ᵉ, libellés recopiés à l’identique, coquilles comprises.
+Statut de la correspondance : **valide**. Source des objectifs : Projet d’aménagement des programmes de technologie du cycle 4, Conseil supérieur des programmes, juin 2025 (projet n’engageant pas le ministère à ce stade). Objectifs d’apprentissage des classes de 5ᵉ et 4ᵉ, libellés recopiés à l’identique, coquilles comprises.
 
 Généré par `npm run couverture` — ne pas éditer à la main.
 
