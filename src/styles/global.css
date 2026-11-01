@@ -159,6 +159,7 @@ body {
 .site-head nav a[aria-current='page'] {
   color: var(--papier); background: var(--encre); border-color: var(--encre);
 }
+.site-head nav a[aria-current='true'] { color: var(--encre); border-color: var(--encre); }
 /* Sur un écran de téléphone, la marque prend sa ligne et les cinq onglets
    tiennent sur UNE ligne en dessous, répartis sur toute la largeur : un seul
    onglet seul sur une deuxième ligne coûtait 30 px de hauteur sur chaque
@@ -358,6 +359,32 @@ body {
 }
 
 .corps { min-width: 0; }
+.maillon-code {
+  font-family: var(--mono); font-size: .66rem; font-weight: 600; letter-spacing: .06em;
+  color: var(--mine); margin-right: .45rem;
+}
+.maillon-maintenant {
+  display: inline-block; margin-right: .45rem; padding: .12rem .5rem; border-radius: 100px;
+  font-family: var(--mono); font-size: .64rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  background: var(--encre); color: var(--papier);
+}
+.maillon--maintenant { background: var(--calque); }
+/* sommaire des séquences, en tête de la page de niveau */
+.seq-sommaire { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.5rem 0 0; max-width: var(--boite); }
+.seq-sommaire a {
+  display: inline-flex; align-items: center; gap: .4rem; min-height: 36px; padding: .3rem .8rem .3rem .35rem;
+  border: 1px solid var(--trait); border-radius: 100px; background: var(--papier);
+  font-family: var(--display); font-weight: 600; font-size: .85rem; color: var(--encre); text-decoration: none;
+}
+.seq-sommaire a:hover { background: var(--calque); }
+.seq-sommaire a:focus-visible { outline: 2px solid var(--bleu); outline-offset: 2px; }
+.seq-sommaire-num {
+  display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--calque); font-family: var(--mono); font-size: .72rem;
+}
+.seq-sommaire--maintenant { border-color: var(--encre) !important; }
+.seq-sommaire--maintenant .seq-sommaire-num { background: var(--encre); color: var(--papier); }
+.niveau-bloc { scroll-margin-top: 1rem; }
 .phase {
   display: inline-flex; align-items: center; gap: .35rem;
   font-family: var(--mono); font-size: .64rem; font-weight: 600;

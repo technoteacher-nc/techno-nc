@@ -6,6 +6,12 @@ const path = Astro.url.pathname;
 const canonique = new URL(path.endsWith('/') ? path : path + '/', Astro.site);
 const imageOg = new URL(base + '/og-cover.png', Astro.site);
 const annee = new Date().getFullYear();
+// L'onglet du niveau reste allumé sur toutes ses pages (activité, fiche en
+// ligne) : un élève arrivé par QR code doit voir tout de suite où il est.
+// « page » sur la page du niveau elle-même, « true » (élément courant) ailleurs.
+const niveauDeLaPage = !path.includes('/reviser') && !path.includes('/projets')
+  ? (path.match(/[-/](5eme|4eme)(?:\/|$)/) || [])[1] : null;
+const courant = (n: string) => path.replace(/\/$/, '').endsWith('/' + n) ? 'page' : (niveauDeLaPage === n ? 'true' : undefined);
 ---
 <!doctype html>
 <html lang="fr">
@@ -50,8 +56,8 @@ const annee = new Date().getFullYear();
     <div class="wrap">
       <a class="marque" href={base + '/'}>ACADÉMIE TECHNOLOGIQUE</a>
       <nav aria-label="Navigation principale">
-        <a href={base + '/5eme'} aria-current={path.includes('/5eme') ? 'page' : undefined}>5ème</a>
-        <a href={base + '/4eme'} aria-current={path.includes('/4eme') ? 'page' : undefined}>4ème</a>
+        <a href={base + '/5eme'} aria-current={courant('5eme')}>5ème</a>
+        <a href={base + '/4eme'} aria-current={courant('4eme')}>4ème</a>
         <a href={base + '/projets'} aria-current={path.includes('/projets') ? 'page' : undefined}>Projets</a>
         <a href={base + '/ressources'} aria-current={path.includes('/ressources') ? 'page' : undefined}>Ressources</a>
         <a href={base + '/reviser'} aria-current={path.includes('/reviser') ? 'page' : undefined}>Réviser</a>

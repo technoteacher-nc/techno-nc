@@ -40,30 +40,15 @@ const actif = calendrier.statut === 'valide';
 )}
 
 <script>
+  import { semaineDeClasse, JOUR } from '../scripts/calendrier.js';
+
   const bloc = document.querySelector('[data-semaine]');
   const src = document.getElementById('semaine-donnees');
   if (bloc && src) {
     const d = JSON.parse(src.textContent);
-    // La date du jour en Nouvelle-Calédonie, quel que soit le réglage de l'appareil.
-    const ymd = new Intl.DateTimeFormat('en-CA', { timeZone: 'Pacific/Noumea' }).format(new Date());
-    const jour = s => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10));
-    const auj = jour(ymd);
-    const JOUR = 86400000, SEM = 7 * JOUR;
     const fmt = t => new Intl.DateTimeFormat('fr-FR', { timeZone: 'UTC', weekday: 'long', day: 'numeric', month: 'long' }).format(new Date(t));
-
-    // Périodes de classe : de la rentrée (ou d'une reprise) au début des vacances suivantes.
-    const periodes = [];
-    let debut = jour(d.rentree);
-    for (const v of d.vacances) { periodes.push([debut, jour(v.debut)]); debut = jour(v.reprise); }
-    periodes.push([debut, jour(d.finCours)]);
-
-    let semaine = null, lundi = null, reprise = null, avant = 0;
-    for (const [a, b] of periodes) {
-      const n = Math.ceil((b - a) / SEM);
-      if (auj >= a && auj < b) { const k = Math.floor((auj - a) / SEM); semaine = avant + k + 1; lundi = a + k * SEM; break; }
-      if (auj < a) { if (avant > 0) reprise = { date: a, semaine: avant + 1 }; break; } // avant la rentrée : rien
-      avant += n;
-    }
+    const r = semaineDeClasse(d) || {};
+    const { semaine = null, lundi = null, reprise = null } = r;
 
     const quand = bloc.querySelector('[data-semaine-quand]');
     if (semaine) {
