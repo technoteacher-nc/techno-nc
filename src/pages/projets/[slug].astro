@@ -80,9 +80,12 @@ const donneesLd = {
         <li id={a.id}>
           <span class="num" data-phase={a.phase}>{i + 1}</span>
           <div class="proj-seance">
+            {/* Pas de semaine S… ici : le registre place les projets sur S26–S31,
+                comme la séquence 05. L'élève y lirait deux activités la même
+                semaine. Le numéro de séance suffit à l'ordre ; le professeur
+                annonce le début du projet. */}
             <p class="proj-seance-repere">
               <span class="phase" data-phase={a.phase}>{a.phase}</span>
-              <span class="eyebrow-mini">{a.semaine}</span>
             </p>
             <h3>{a.titre}</h3>
             <p class="proj-question">{a.question}</p>
